@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/NearestNeighborTwoOpt.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d3/d02/_nearest_neighbor_two_opt_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NearestNeighborTwoOpt.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d02/_nearest_neighbor_two_opt_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html">    8</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html">NearestNeighborTwoOpt</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5399163a13e56400b86db5a3d0a6f5f6">   13</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> List&lt;PathPoint&gt; <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5399163a13e56400b86db5a3d0a6f5f6">OptimizeCluster</a>(IReadOnlyList&lt;PathPoint&gt; points)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">if</span> (points == <span class="keyword">null</span> || points.Count == 0)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;PathPoint&gt;();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (points.Count &lt;= 2)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">return</span> points.ToList();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            var seeded = <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#ada182502bf1a93d4d0368afb269f6a6c">BuildNearestNeighbor</a>(points);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5569571effbb3055c5f71c9c466dc245">TwoOpt</a>(seeded);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#ada182502bf1a93d4d0368afb269f6a6c">   34</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> List&lt;PathPoint&gt; <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#ada182502bf1a93d4d0368afb269f6a6c">BuildNearestNeighbor</a>(IReadOnlyList&lt;PathPoint&gt; points)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            var remaining = <span class="keyword">new</span> List&lt;PathPoint&gt;(points);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            var ordered = <span class="keyword">new</span> List&lt;PathPoint&gt;(points.Count);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            var current = remaining</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                .OrderBy(p =&gt; p.Position.X)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                .ThenBy(p =&gt; p.Position.Y)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                .ThenBy(p =&gt; p.Position.Z)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                .First();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            ordered.Add(current);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            remaining.Remove(current);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">while</span> (remaining.Count &gt; 0)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                var next = remaining</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    .OrderBy(p =&gt; p.Position.DistanceTo(current.Position))</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    .First();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                ordered.Add(next);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                remaining.Remove(next);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                current = next;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> ordered;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5569571effbb3055c5f71c9c466dc245">   67</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> List&lt;PathPoint&gt; <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5569571effbb3055c5f71c9c466dc245">TwoOpt</a>(List&lt;PathPoint&gt; route)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span> (route.Count &lt; 4)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">return</span> route;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordtype">bool</span> improved;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                improved = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; route.Count - 2; i++)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; route.Count - 1; j++)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        <span class="keywordtype">double</span> currentCost = <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">Distance</a>(route[i - 1], route[i]) + <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">Distance</a>(route[j], route[j + 1]);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        <span class="keywordtype">double</span> newCost = <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">Distance</a>(route[i - 1], route[j]) + <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">Distance</a>(route[i], route[j + 1]);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                        <span class="keywordflow">if</span> (newCost + 1e-6 &lt; currentCost)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                            route.Reverse(i, j - i + 1);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                            improved = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            } <span class="keywordflow">while</span> (improved);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> route;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">  103</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">Distance</a>(<a class="code hl_class" href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html">PathPoint</a> a, <a class="code hl_class" href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html">PathPoint</a> b)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">return</span> a.<a class="code hl_property" href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html#aed525a234682a86b6e643764d09eebd2">Position</a>.DistanceTo(b.<a class="code hl_property" href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html#aed525a234682a86b6e643764d09eebd2">Position</a>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt_html"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms.NearestNeighborTwoOpt</a></div><div class="ttdoc">Provides a lightweight combination of Nearest-Neighbor seeding followed by a 2-Opt improvement pass....</div><div class="ttdef"><b>Definição</b> <a href="#l00008">NearestNeighborTwoOpt.cs:9</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt_html_a37602286a21a5916bc99a209d494af3e"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e">HirEV_SmartFitSystemsApp.Utilities.Algorithms.NearestNeighborTwoOpt.Distance</a></div><div class="ttdeci">static double Distance(PathPoint a, PathPoint b)</div><div class="ttdoc">Calculates the distance between two path points.</div><div class="ttdef"><b>Definição</b> <a href="#l00103">NearestNeighborTwoOpt.cs:103</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt_html_a5399163a13e56400b86db5a3d0a6f5f6"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5399163a13e56400b86db5a3d0a6f5f6">HirEV_SmartFitSystemsApp.Utilities.Algorithms.NearestNeighborTwoOpt.OptimizeCluster</a></div><div class="ttdeci">static List&lt; PathPoint &gt; OptimizeCluster(IReadOnlyList&lt; PathPoint &gt; points)</div><div class="ttdoc">Optimizes the ordering of a face cluster.</div><div class="ttdef"><b>Definição</b> <a href="#l00013">NearestNeighborTwoOpt.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt_html_a5569571effbb3055c5f71c9c466dc245"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a5569571effbb3055c5f71c9c466dc245">HirEV_SmartFitSystemsApp.Utilities.Algorithms.NearestNeighborTwoOpt.TwoOpt</a></div><div class="ttdeci">static List&lt; PathPoint &gt; TwoOpt(List&lt; PathPoint &gt; route)</div><div class="ttdoc">Optimizes the route using the 2-opt local search algorithm to remove path crossovers.</div><div class="ttdef"><b>Definição</b> <a href="#l00067">NearestNeighborTwoOpt.cs:67</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt_html_ada182502bf1a93d4d0368afb269f6a6c"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#ada182502bf1a93d4d0368afb269f6a6c">HirEV_SmartFitSystemsApp.Utilities.Algorithms.NearestNeighborTwoOpt.BuildNearestNeighbor</a></div><div class="ttdeci">static List&lt; PathPoint &gt; BuildNearestNeighbor(IReadOnlyList&lt; PathPoint &gt; points)</div><div class="ttdoc">Builds an initial route using a simple nearest neighbor heuristic.</div><div class="ttdef"><b>Definição</b> <a href="#l00034">NearestNeighborTwoOpt.cs:34</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point_html"><div class="ttname"><a href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html">HirEV_SmartFitSystemsApp.Utilities.PathPoint</a></div><div class="ttdoc">Represents a point in the path planning process, holding references to its 3D position and parent fac...</div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00047">PathManager.cs:48</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point_html_aed525a234682a86b6e643764d09eebd2"><div class="ttname"><a href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html#aed525a234682a86b6e643764d09eebd2">HirEV_SmartFitSystemsApp.Utilities.PathPoint.Position</a></div><div class="ttdeci">Point3D Position</div><div class="ttdoc">Gets or sets the 3D position of this path point.</div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00050">PathManager.cs:50</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_html"><div class="ttname"><a href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div><div class="ttdef"><b>Definição</b> <a href="../../dc/d03/_approach_point_generator_8cs_source.html#l00005">ApproachPointGenerator.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

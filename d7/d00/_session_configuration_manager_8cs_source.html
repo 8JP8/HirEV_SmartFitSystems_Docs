@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/SessionConfigurationManager.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d7/d00/_session_configuration_manager_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SessionConfigurationManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d00/_session_configuration_manager_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">HirEV_SmartFitSystemsApp.Models.Configuration</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Security.Cryptography;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Text.Json;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Text.Json.Serialization;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">HirEV_SmartFitSystemsApp.Utilities.Configuration</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html">   15</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html">SessionConfigurationManager</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">   21</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ae16bde37b75671d1fce20ee0cd1ae05e">   27</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ae16bde37b75671d1fce20ee0cd1ae05e">MaxSessionFiles</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 20;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="comment">// ──────────────────────────────────────────────────────────────────────────────</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">//  Private helpers</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">// ──────────────────────────────────────────────────────────────────────────────</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">   37</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">GetSaveDirectory</a>()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">string</span> appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">string</span> dir = Path.Combine(appData, <span class="stringliteral">&quot;SKK_HirEV_SmartFitSystemsApp_Data&quot;</span>, <span class="stringliteral">&quot;SaveFiles&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span> (!Directory.Exists(dir))</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                Directory.CreateDirectory(dir);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> dir;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028">   50</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> JsonSerializerOptions <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028">GetOptions</a>() =&gt; <span class="keyword">new</span> JsonSerializerOptions</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            WriteIndented = <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            NumberHandling = System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            ReferenceHandler = ReferenceHandler.IgnoreCycles,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            Converters = { <span class="keyword">new</span> <a class="code hl_class" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter.html">Point4DConverter</a>(), <span class="keyword">new</span> <a class="code hl_class" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html">ColorJsonConverter</a>() }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        };</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad">   63</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad">PruneOldSessionFiles</a>(<span class="keywordtype">string</span> dir)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                var toDelete = <span class="keyword">new</span> DirectoryInfo(dir)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    .GetFiles(<span class="stringliteral">&quot;Session_*.json&quot;</span>)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    .OrderByDescending(f =&gt; f.LastWriteTime)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    .Skip(<a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ae16bde37b75671d1fce20ee0cd1ae05e">MaxSessionFiles</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">foreach</span> (var old <span class="keywordflow">in</span> toDelete)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        old.Delete();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                        System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;🗑️ SessionConfigurationManager: Pruned old session → {old.Name}&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;⚠️ Could not delete old session file {old.Name}: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;⚠️ PruneOldSessionFiles failed: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">// ──────────────────────────────────────────────────────────────────────────────</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="comment">//  Public API</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="comment">// ──────────────────────────────────────────────────────────────────────────────</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da">  100</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da">CreateNewSessionFile</a>()</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <span class="keywordtype">string</span> dir = <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">GetSaveDirectory</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="comment">// Timestamp-based name: Session_20260520_200613.json</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <span class="keywordtype">string</span> timestamp = DateTime.Now.ToString(<span class="stringliteral">&quot;yyyyMMdd_HHmmss&quot;</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordtype">string</span> candidatePath = Path.Combine(dir, $<span class="stringliteral">&quot;Session_{timestamp}.json&quot;</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                <span class="comment">// Guard against two sessions starting within the exact same second</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordtype">int</span> counter = 1;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">while</span> (File.Exists(candidatePath))</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    candidatePath = Path.Combine(dir, $<span class="stringliteral">&quot;Session_{timestamp}_{counter}.json&quot;</span>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    counter++;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a> = candidatePath;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="comment">// Prune oldest files to keep within limit</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad">PruneOldSessionFiles</a>(dir);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;📂 SessionConfigurationManager: New session file → {CurrentSessionFilePath}&quot;</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;Failed to create new session file: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">  135</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">SaveSession</a>(<a class="code hl_class" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a> config)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordtype">string</span>? tempFile = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a>))</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da">CreateNewSessionFile</a>();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;💾 SessionConfigurationManager: Saving session to {CurrentSessionFilePath}&quot;</span>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordtype">string</span> dir = Path.GetDirectoryName(<a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a>)!;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                tempFile = Path.Combine(dir, Guid.NewGuid().ToString() + <span class="stringliteral">&quot;.tmp&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="keywordtype">string</span> json = JsonSerializer.Serialize(config, <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028">GetOptions</a>());</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <span class="comment">// Write to a temp file first, then atomically replace the target to prevent corruption</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                File.WriteAllText(tempFile, json);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                File.Move(tempFile, <a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a>, overwrite: <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                System.Diagnostics.Debug.WriteLine(</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                    $<span class="stringliteral">&quot;✅ SessionConfigurationManager: Save successful. Size: {new FileInfo(CurrentSessionFilePath).Length} bytes&quot;</span>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;❌ SessionConfigurationManager: Failed to save session config: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                <span class="keywordflow">if</span> (tempFile != <span class="keyword">null</span> &amp;&amp; File.Exists(tempFile))</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                    <span class="keywordflow">try</span> { File.Delete(tempFile); } <span class="keywordflow">catch</span> { }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span></div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912">  169</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a>? <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912">LoadSpecificConfiguration</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">if</span> (File.Exists(filePath))</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    <span class="keywordtype">string</span> json = File.ReadAllText(filePath);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    var config = JsonSerializer.Deserialize&lt;<a class="code hl_class" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a>&gt;(json, <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028">GetOptions</a>());</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    <span class="keywordflow">if</span> (config != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                        <span class="comment">// Update current session timestamp so it reflects the moment it was copied</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                        config.Timestamp = DateTime.Now;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                        <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_property" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a>))</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                        {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                            <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da">CreateNewSessionFile</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                        }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                        <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">SaveSession</a>(config);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                        System.Diagnostics.Debug.WriteLine(</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                            $<span class="stringliteral">&quot;📂 SessionConfigurationManager: Loaded save → {Path.GetFileName(filePath)} (copied to active session {Path.GetFileName(CurrentSessionFilePath)})&quot;</span>);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                    }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    <span class="keywordflow">return</span> config;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;Failed to load session config: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
+</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275">  205</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a>? <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275">LoadLatestConfiguration</a>()</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordtype">string</span> dir = <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">GetSaveDirectory</a>();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                var latestFile = <span class="keyword">new</span> DirectoryInfo(dir)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                    .GetFiles(<span class="stringliteral">&quot;Session_*.json&quot;</span>)</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                    .OrderByDescending(f =&gt; f.LastWriteTime)</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                    .FirstOrDefault();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                <span class="keywordflow">if</span> (latestFile != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912">LoadSpecificConfiguration</a>(latestFile.FullName);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;Failed to load latest session: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
+</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
+<div class="foldopen" id="foldopen00229" data-start="{" data-end="}">
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#add503ec8fd90f7d0d271ca5e4cf3b967">  229</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IReadOnlyList&lt;FileInfo&gt; <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#add503ec8fd90f7d0d271ca5e4cf3b967">GetAllSavedSessions</a>()</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="keywordtype">string</span> dir = <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">GetSaveDirectory</a>();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> DirectoryInfo(dir)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                    .GetFiles(<span class="stringliteral">&quot;Session_*.json&quot;</span>)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                    .OrderByDescending(f =&gt; f.LastWriteTime)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    .ToList()</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    .AsReadOnly();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">catch</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <span class="keywordflow">return</span> Array.Empty&lt;FileInfo&gt;();</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }</div>
+</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="foldopen" id="foldopen00249" data-start="{" data-end="}">
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734">  249</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734">CalculateFileHash</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">if</span> (!File.Exists(filePath)) <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keyword">using </span>var sha256 = SHA256.Create();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keyword">using </span>var stream = File.OpenRead(filePath);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordtype">byte</span>[] hashBytes = sha256.ComputeHash(stream);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            <span class="keywordflow">return</span> BitConverter.ToString(hashBytes).Replace(<span class="stringliteral">&quot;-&quot;</span>, <span class="stringliteral">&quot;&quot;</span>).ToLowerInvariant();</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span></div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a772e7dc47dce2327a7edc1e574e8d0a0">  261</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a772e7dc47dce2327a7edc1e574e8d0a0">ComputeFileHash</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734">CalculateFileHash</a>(filePath);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        }</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
+</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
+</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig</a></div><div class="ttdoc">Represents the configuration options for a saved user session.</div><div class="ttdef"><b>Definição</b> <a href="../../df/d00/_session_config_8cs_source.html#l00010">SessionConfig.cs:11</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter_html"><div class="ttname"><a href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html">HirEV_SmartFitSystemsApp.Utilities.ColorJsonConverter</a></div><div class="ttdoc">Custom JSON converter for Color objects. Handles serialization and deserialization of Color to/from h...</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d03/_color_json_converter_8cs_source.html#l00011">ColorJsonConverter.cs:12</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager</a></div><div class="ttdoc">Manages session file creation, saving, and loading for the application. Each application launch gener...</div><div class="ttdef"><b>Definição</b> <a href="#l00015">SessionConfigurationManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_a2d8305d79c50f7686788ca9a7556f912"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadSpecificConfiguration</a></div><div class="ttdeci">static ? SessionConfig LoadSpecificConfiguration(string filePath)</div><div class="ttdoc">Loads the session stored at filePath , setting its content as the active session. It copies the conte...</div><div class="ttdef"><b>Definição</b> <a href="#l00169">SessionConfigurationManager.cs:169</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_a772e7dc47dce2327a7edc1e574e8d0a0"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a772e7dc47dce2327a7edc1e574e8d0a0">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.ComputeFileHash</a></div><div class="ttdeci">static string ComputeFileHash(string filePath)</div><div class="ttdoc">Alias for CalculateFileHash to maintain compatibility with other parts of the application.</div><div class="ttdef"><b>Definição</b> <a href="#l00261">SessionConfigurationManager.cs:261</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_a7814065a4417dba469024c6a54eda028"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetOptions</a></div><div class="ttdeci">static JsonSerializerOptions GetOptions()</div><div class="ttdoc">Gets the configured JSON serializer options used for session serialization.</div><div class="ttdef"><b>Definição</b> <a href="#l00050">SessionConfigurationManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_a8463d1405b87255158939e74d50ef3cf"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetSaveDirectory</a></div><div class="ttdeci">static string GetSaveDirectory()</div><div class="ttdoc">Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis...</div><div class="ttdef"><b>Definição</b> <a href="#l00037">SessionConfigurationManager.cs:37</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.SaveSession</a></div><div class="ttdeci">static void SaveSession(SessionConfig config)</div><div class="ttdoc">Serialises config  and writes it atomically to CurrentSessionFilePath (creates a new file if none is ...</div><div class="ttdef"><b>Definição</b> <a href="#l00135">SessionConfigurationManager.cs:135</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_ad1ce204c72c084bf3f40753d97fbb0da"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CreateNewSessionFile</a></div><div class="ttdeci">static void CreateNewSessionFile()</div><div class="ttdoc">Creates a new, uniquely-named session file based on the current date and time. Call this once at appl...</div><div class="ttdef"><b>Definição</b> <a href="#l00100">SessionConfigurationManager.cs:100</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_add503ec8fd90f7d0d271ca5e4cf3b967"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#add503ec8fd90f7d0d271ca5e4cf3b967">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetAllSavedSessions</a></div><div class="ttdeci">static IReadOnlyList&lt; FileInfo &gt; GetAllSavedSessions()</div><div class="ttdoc">Returns all saved session files ordered from newest to oldest.</div><div class="ttdef"><b>Definição</b> <a href="#l00229">SessionConfigurationManager.cs:229</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_adebdc31107a36ddfc5854b4254ed2275"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadLatestConfiguration</a></div><div class="ttdeci">static ? SessionConfig LoadLatestConfiguration()</div><div class="ttdoc">Loads the most recently written session file from the SaveFiles folder.</div><div class="ttdef"><b>Definição</b> <a href="#l00205">SessionConfigurationManager.cs:205</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_ae16bde37b75671d1fce20ee0cd1ae05e"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ae16bde37b75671d1fce20ee0cd1ae05e">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.MaxSessionFiles</a></div><div class="ttdeci">static int MaxSessionFiles</div><div class="ttdoc">Maximum number of Session_*.json files to keep in the SaveFiles folder. Oldest files beyond this limi...</div><div class="ttdef"><b>Definição</b> <a href="#l00027">SessionConfigurationManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_aef87ae270963833163943a81457ca734"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CalculateFileHash</a></div><div class="ttdeci">static string CalculateFileHash(string filePath)</div><div class="ttdoc">Computes the SHA-256 hash of a file (used to detect model changes between sessions).</div><div class="ttdef"><b>Definição</b> <a href="#l00249">SessionConfigurationManager.cs:249</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_af49c2352fadef14ba8ff87288dde0a98"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af49c2352fadef14ba8ff87288dde0a98">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CurrentSessionFilePath</a></div><div class="ttdeci">static string CurrentSessionFilePath</div><div class="ttdoc">Gets the path of the currently active session file. All calls to SaveSession write to this path.</div><div class="ttdef"><b>Definição</b> <a href="#l00021">SessionConfigurationManager.cs:21</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_html_af75c137406529f2e927fa29f68deeaad"><div class="ttname"><a href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad">HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.PruneOldSessionFiles</a></div><div class="ttdeci">static void PruneOldSessionFiles(string dir)</div><div class="ttdoc">Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir .</div><div class="ttdef"><b>Definição</b> <a href="#l00063">SessionConfigurationManager.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter_html"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter.html">HirEV_SmartFitSystemsApp.Utilities.Point4DConverter</a></div><div class="ttdoc">Custom JSON converter for Point4D objects. Handles serialization and deserialization of Point4D to/fr...</div><div class="ttdef"><b>Definição</b> <a href="../../d7/d01/_point4_d_converter_8cs_source.html#l00011">Point4DConverter.cs:12</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_html"><div class="ttname"><a href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">HirEV_SmartFitSystemsApp.Models.Configuration</a></div><div class="ttdef"><b>Definição</b> <a href="../../df/d00/_session_config_8cs_source.html#l00005">SessionConfig.cs:6</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_html"><div class="ttname"><a href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">HirEV_SmartFitSystemsApp.Utilities.Configuration</a></div><div class="ttdef"><b>Definição</b> <a href="#l00007">SessionConfigurationManager.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

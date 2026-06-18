@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.UndoManager</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html','../../','da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.UndoManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manages the application undo and redo stacks.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.UndoManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_manager_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_manager_coll__map">
+<area shape="rect" title="Manages the application undo and redo stacks." alt="" coords="5,227,187,547"/>
+<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="5,5,187,155"/>
+<area shape="poly" title=" " alt="" coords="97,152,99,210,94,209,96,157"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a01a8fafdd8b79ab02ce155b5d9e6ccc7" id="r_a01a8fafdd8b79ab02ce155b5d9e6ccc7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a01a8fafdd8b79ab02ce155b5d9e6ccc7">PushCommand</a> (<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> command)</td></tr>
+<tr class="memdesc:a01a8fafdd8b79ab02ce155b5d9e6ccc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new command onto the undo stack and clears the redo stack.  <br /></td></tr>
+<tr class="memitem:a811b611572c45b178e2bbc41d2ba6909" id="r_a811b611572c45b178e2bbc41d2ba6909"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a811b611572c45b178e2bbc41d2ba6909">Undo</a> ()</td></tr>
+<tr class="memdesc:a811b611572c45b178e2bbc41d2ba6909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts the last command on the undo stack and moves it to the redo stack.  <br /></td></tr>
+<tr class="memitem:ac1952a6edb8fc6162dcf296e49dc08a2" id="r_ac1952a6edb8fc6162dcf296e49dc08a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac1952a6edb8fc6162dcf296e49dc08a2">Redo</a> ()</td></tr>
+<tr class="memdesc:ac1952a6edb8fc6162dcf296e49dc08a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reapplies the last command on the redo stack and moves it back to the undo stack.  <br /></td></tr>
+<tr class="memitem:a9341b859af69852942adab1592157684" id="r_a9341b859af69852942adab1592157684"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9341b859af69852942adab1592157684">Clear</a> ()</td></tr>
+<tr class="memdesc:a9341b859af69852942adab1592157684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all undo and redo history from the manager.  <br /></td></tr>
+<tr class="memitem:afb3fe5e0c2717f0fadec1d33c1f21e08" id="r_afb3fe5e0c2717f0fadec1d33c1f21e08"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb3fe5e0c2717f0fadec1d33c1f21e08">MarkSaved</a> ()</td></tr>
+<tr class="memdesc:afb3fe5e0c2717f0fadec1d33c1f21e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the current state as saved, establishing a reference checkpoint.  <br /></td></tr>
+<tr class="memitem:aacca7f80268cef026aeedd1fcc25a04a" id="r_aacca7f80268cef026aeedd1fcc25a04a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aacca7f80268cef026aeedd1fcc25a04a">HasUnsavedChanges</a> ()</td></tr>
+<tr class="memdesc:aacca7f80268cef026aeedd1fcc25a04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether there are any unsaved changes relative to the marked save point.  <br /></td></tr>
+<tr class="memitem:a77e4ee1553c2929bc6928879bd41462f" id="r_a77e4ee1553c2929bc6928879bd41462f"><td class="memItemLeft">List&lt; <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a77e4ee1553c2929bc6928879bd41462f">GetTimeline</a> ()</td></tr>
+<tr class="memdesc:a77e4ee1553c2929bc6928879bd41462f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the timeline sequence of commands in the undo stack.  <br /></td></tr>
+<tr class="memitem:aad1e4edd9f01fa1c25fd554edf2590f3" id="r_aad1e4edd9f01fa1c25fd554edf2590f3"><td class="memItemLeft">List&lt; <a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html">UndoHistoryEntryDTO</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aad1e4edd9f01fa1c25fd554edf2590f3">ExportTimeline</a> ()</td></tr>
+<tr class="memdesc:aad1e4edd9f01fa1c25fd554edf2590f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the undo timeline as lightweight <a class="el" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">DTOs</a> for session persistence.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a748bc0ae8d722eb123fc87d06e6d1d2f" id="r_a748bc0ae8d722eb123fc87d06e6d1d2f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a748bc0ae8d722eb123fc87d06e6d1d2f">CanUndo</a><code> [get]</code></td></tr>
+<tr class="memdesc:a748bc0ae8d722eb123fc87d06e6d1d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether an undo operation can be performed.  <br /></td></tr>
+<tr class="memitem:a1eefbbef5e65e415930d79039d1993b3" id="r_a1eefbbef5e65e415930d79039d1993b3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1eefbbef5e65e415930d79039d1993b3">CanRedo</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1eefbbef5e65e415930d79039d1993b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether a redo operation can be performed.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
+Eventos</h2></td></tr>
+<tr class="memitem:ad1a32deba8188ed66fd7953ee579dd7e" id="r_ad1a32deba8188ed66fd7953ee579dd7e"><td class="memItemLeft">EventHandler&lt; <a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html">UndoRedoEventArgs</a> &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#ad1a32deba8188ed66fd7953ee579dd7e">UndoPerformed</a></td></tr>
+<tr class="memdesc:ad1a32deba8188ed66fd7953ee579dd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised after an Undo operation completes.  <br /></td></tr>
+<tr class="memitem:aa20ff56ea3dcb8dc5f80f20166b63b51" id="r_aa20ff56ea3dcb8dc5f80f20166b63b51"><td class="memItemLeft">EventHandler&lt; <a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html">UndoRedoEventArgs</a> &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#aa20ff56ea3dcb8dc5f80f20166b63b51">RedoPerformed</a></td></tr>
+<tr class="memdesc:aa20ff56ea3dcb8dc5f80f20166b63b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised after a Redo operation completes.  <br /></td></tr>
+<tr class="memitem:a31f075c7224af6156344514857075b5c" id="r_a31f075c7224af6156344514857075b5c"><td class="memItemLeft">EventHandler?&#160;</td><td class="memItemRight"><a class="el" href="#a31f075c7224af6156344514857075b5c">CommandPushed</a></td></tr>
+<tr class="memdesc:a31f075c7224af6156344514857075b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised after a new command is pushed onto the undo stack.  <br /></td></tr>
+<tr class="memitem:ab840ad65b91563219f978ab2f552f969" id="r_ab840ad65b91563219f978ab2f552f969"><td class="memItemLeft">EventHandler?&#160;</td><td class="memItemRight"><a class="el" href="#ab840ad65b91563219f978ab2f552f969">Cleared</a></td></tr>
+<tr class="memdesc:ab840ad65b91563219f978ab2f552f969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when the undo/redo stacks are cleared.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:a9aa24fedefcdec8979d3630def07ae7e" id="r_a9aa24fedefcdec8979d3630def07ae7e"><td class="memItemLeft">static readonly Stack&lt; <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9aa24fedefcdec8979d3630def07ae7e">_globalUndoStack</a> = new Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt;()</td></tr>
+<tr class="memitem:a3a2bcd464233c6e3e8163ce54c40c3bd" id="r_a3a2bcd464233c6e3e8163ce54c40c3bd"><td class="memItemLeft">static readonly Stack&lt; <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3a2bcd464233c6e3e8163ce54c40c3bd">_globalRedoStack</a> = new Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt;()</td></tr>
+<tr class="memitem:a15b79f644ea37bbd5835896630db1016" id="r_a15b79f644ea37bbd5835896630db1016"><td class="memItemLeft">static ? <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&#160;</td><td class="memItemRight"><a class="el" href="#a15b79f644ea37bbd5835896630db1016">_savePoint</a> = null</td></tr>
+<tr class="memitem:ae8029b0a82265b5ed8d12e317503574f" id="r_ae8029b0a82265b5ed8d12e317503574f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae8029b0a82265b5ed8d12e317503574f">_hasBeenSaved</a> = false</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Manages the application undo and redo stacks. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00067">67</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a9341b859af69852942adab1592157684" name="a9341b859af69852942adab1592157684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9341b859af69852942adab1592157684">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.UndoManager.Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all undo and redo history from the manager. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">139</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00070">_globalRedoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00072">_hasBeenSaved</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00071">_savePoint</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00087">Cleared</a>.</p>
+
+</div>
+</div>
+<a id="aad1e4edd9f01fa1c25fd554edf2590f3" name="aad1e4edd9f01fa1c25fd554edf2590f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1e4edd9f01fa1c25fd554edf2590f3">&#9670;&#160;</a></span>ExportTimeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html">UndoHistoryEntryDTO</a> &gt; HirEV_SmartFitSystemsApp.Utilities.UndoManager.ExportTimeline </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports the undo timeline as lightweight <a class="el" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">DTOs</a> for session persistence. </p>
+<dl class="section return"><dt>Retorna</dt><dd>A list of lightweight history <a class="el" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">DTOs</a>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00186">186</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00175">GetTimeline()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_aad1e4edd9f01fa1c25fd554edf2590f3_cgraph.png" border="0" usemap="#ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_aad1e4edd9f01fa1c25fd554edf2590f3_cgraph" loading="lazy" alt=""/></div>
+<map name="ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_aad1e4edd9f01fa1c25fd554edf2590f3_cgraph" id="ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_aad1e4edd9f01fa1c25fd554edf2590f3_cgraph">
+<area shape="rect" title="Exports the undo timeline as lightweight DTOs for session persistence." alt="" coords="5,5,247,48"/>
+<area shape="rect" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html#a77e4ee1553c2929bc6928879bd41462f" title="Gets the timeline sequence of commands in the undo stack." alt="" coords="295,5,519,48"/>
+<area shape="poly" title=" " alt="" coords="247,24,282,27,276,27,247,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77e4ee1553c2929bc6928879bd41462f" name="a77e4ee1553c2929bc6928879bd41462f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e4ee1553c2929bc6928879bd41462f">&#9670;&#160;</a></span>GetTimeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> &gt; HirEV_SmartFitSystemsApp.Utilities.UndoManager.GetTimeline </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the timeline sequence of commands in the undo stack. </p>
+<dl class="section return"><dt>Retorna</dt><dd>A list of commands in the undo stack ordered from oldest to newest.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00175">175</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00186">ExportTimeline()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_a77e4ee1553c2929bc6928879bd41462f_icgraph.png" border="0" usemap="#ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_a77e4ee1553c2929bc6928879bd41462f_icgraph" loading="lazy" alt=""/></div>
+<map name="ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_a77e4ee1553c2929bc6928879bd41462f_icgraph" id="ad2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager_a77e4ee1553c2929bc6928879bd41462f_icgraph">
+<area shape="rect" title="Gets the timeline sequence of commands in the undo stack." alt="" coords="295,5,519,48"/>
+<area shape="rect" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html#aad1e4edd9f01fa1c25fd554edf2590f3" title="Exports the undo timeline as lightweight DTOs for session persistence." alt="" coords="5,5,247,48"/>
+<area shape="poly" title=" " alt="" coords="277,27,247,29,247,24,282,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aacca7f80268cef026aeedd1fcc25a04a" name="aacca7f80268cef026aeedd1fcc25a04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacca7f80268cef026aeedd1fcc25a04a">&#9670;&#160;</a></span>HasUnsavedChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.UndoManager.HasUnsavedChanges </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether there are any unsaved changes relative to the marked save point. </p>
+<dl class="section return"><dt>Retorna</dt><dd>True if unsaved changes exist, false otherwise.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00161">161</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00072">_hasBeenSaved</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00071">_savePoint</a>.</p>
+
+</div>
+</div>
+<a id="afb3fe5e0c2717f0fadec1d33c1f21e08" name="afb3fe5e0c2717f0fadec1d33c1f21e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3fe5e0c2717f0fadec1d33c1f21e08">&#9670;&#160;</a></span>MarkSaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.UndoManager.MarkSaved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marks the current state as saved, establishing a reference checkpoint. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00151">151</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00072">_hasBeenSaved</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00071">_savePoint</a>.</p>
+
+</div>
+</div>
+<a id="a01a8fafdd8b79ab02ce155b5d9e6ccc7" name="a01a8fafdd8b79ab02ce155b5d9e6ccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a8fafdd8b79ab02ce155b5d9e6ccc7">&#9670;&#160;</a></span>PushCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.UndoManager.PushCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a></td>          <td class="paramname"><span class="paramname"><em>command</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes a new command onto the undo stack and clears the redo stack. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>The undo command to record.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00093">93</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00070">_globalRedoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00085">CommandPushed</a>.</p>
+
+</div>
+</div>
+<a id="ac1952a6edb8fc6162dcf296e49dc08a2" name="ac1952a6edb8fc6162dcf296e49dc08a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1952a6edb8fc6162dcf296e49dc08a2">&#9670;&#160;</a></span>Redo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.UndoManager.Redo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reapplies the last command on the redo stack and moves it back to the undo stack. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00121">121</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00070">_globalRedoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00078">CanRedo</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00083">RedoPerformed</a>.</p>
+
+</div>
+</div>
+<a id="a811b611572c45b178e2bbc41d2ba6909" name="a811b611572c45b178e2bbc41d2ba6909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811b611572c45b178e2bbc41d2ba6909">&#9670;&#160;</a></span>Undo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.UndoManager.Undo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverts the last command on the undo stack and moves it to the redo stack. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00103">103</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00070">_globalRedoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">_globalUndoStack</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00075">CanUndo</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00081">UndoPerformed</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a3a2bcd464233c6e3e8163ce54c40c3bd" name="a3a2bcd464233c6e3e8163ce54c40c3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2bcd464233c6e3e8163ce54c40c3bd">&#9670;&#160;</a></span>_globalRedoStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt; HirEV_SmartFitSystemsApp.Utilities.UndoManager._globalRedoStack = new Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00070">70</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">Clear()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00093">PushCommand()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00121">Redo()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00103">Undo()</a>.</p>
+
+</div>
+</div>
+<a id="a9aa24fedefcdec8979d3630def07ae7e" name="a9aa24fedefcdec8979d3630def07ae7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa24fedefcdec8979d3630def07ae7e">&#9670;&#160;</a></span>_globalUndoStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt; HirEV_SmartFitSystemsApp.Utilities.UndoManager._globalUndoStack = new Stack&lt;<a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00069">69</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">Clear()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00175">GetTimeline()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00161">HasUnsavedChanges()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00151">MarkSaved()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00093">PushCommand()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00121">Redo()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00103">Undo()</a>.</p>
+
+</div>
+</div>
+<a id="ae8029b0a82265b5ed8d12e317503574f" name="ae8029b0a82265b5ed8d12e317503574f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8029b0a82265b5ed8d12e317503574f">&#9670;&#160;</a></span>_hasBeenSaved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.UndoManager._hasBeenSaved = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00072">72</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">Clear()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00161">HasUnsavedChanges()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00151">MarkSaved()</a>.</p>
+
+</div>
+</div>
+<a id="a15b79f644ea37bbd5835896630db1016" name="a15b79f644ea37bbd5835896630db1016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b79f644ea37bbd5835896630db1016">&#9670;&#160;</a></span>_savePoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> HirEV_SmartFitSystemsApp.Utilities.UndoManager._savePoint = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00071">71</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">Clear()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00161">HasUnsavedChanges()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00151">MarkSaved()</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="a1eefbbef5e65e415930d79039d1993b3" name="a1eefbbef5e65e415930d79039d1993b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eefbbef5e65e415930d79039d1993b3">&#9670;&#160;</a></span>CanRedo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.UndoManager.CanRedo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether a redo operation can be performed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00078">78</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00121">Redo()</a>.</p>
+
+</div>
+</div>
+<a id="a748bc0ae8d722eb123fc87d06e6d1d2f" name="a748bc0ae8d722eb123fc87d06e6d1d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748bc0ae8d722eb123fc87d06e6d1d2f">&#9670;&#160;</a></span>CanUndo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.UndoManager.CanUndo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether an undo operation can be performed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00075">75</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00103">Undo()</a>.</p>
+
+</div>
+</div>
+<a name="doc-event-members" id="doc-event-members"></a><h2 id="header-doc-event-members" class="groupheader">Documentação dos eventos</h2>
+<a id="ab840ad65b91563219f978ab2f552f969" name="ab840ad65b91563219f978ab2f552f969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab840ad65b91563219f978ab2f552f969">&#9670;&#160;</a></span>Cleared</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler? HirEV_SmartFitSystemsApp.Utilities.UndoManager.Cleared</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raised when the undo/redo stacks are cleared. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00087">87</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00139">Clear()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a>.</p>
+
+</div>
+</div>
+<a id="a31f075c7224af6156344514857075b5c" name="a31f075c7224af6156344514857075b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f075c7224af6156344514857075b5c">&#9670;&#160;</a></span>CommandPushed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler? HirEV_SmartFitSystemsApp.Utilities.UndoManager.CommandPushed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raised after a new command is pushed onto the undo stack. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00085">85</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00093">PushCommand()</a>.</p>
+
+</div>
+</div>
+<a id="aa20ff56ea3dcb8dc5f80f20166b63b51" name="aa20ff56ea3dcb8dc5f80f20166b63b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20ff56ea3dcb8dc5f80f20166b63b51">&#9670;&#160;</a></span>RedoPerformed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;<a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html">UndoRedoEventArgs</a>&gt;? HirEV_SmartFitSystemsApp.Utilities.UndoManager.RedoPerformed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raised after a Redo operation completes. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00083">83</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00121">Redo()</a>.</p>
+
+</div>
+</div>
+<a id="ad1a32deba8188ed66fd7953ee579dd7e" name="ad1a32deba8188ed66fd7953ee579dd7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a32deba8188ed66fd7953ee579dd7e">&#9670;&#160;</a></span>UndoPerformed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;<a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html">UndoRedoEventArgs</a>&gt;? HirEV_SmartFitSystemsApp.Utilities.UndoManager.UndoPerformed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raised after an Undo operation completes. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00081">81</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00103">Undo()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/<a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

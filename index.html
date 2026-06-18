@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: HirEV SmartFitSystems</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('index.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">HirEV SmartFitSystems </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>Welcome to the documentation for the <b>HirEV SmartFitSystems</b> application, a project developed by <b>SARKKIS Robotics</b> as an integral part of the <b>Hi-rEV</b> initiative. The Hi-rEV project aims to drive the technological modernization of the electric vehicle production industry.</p>
+<p>This application provides a sophisticated solution for the automatic quality control of machined parts. It leverages 3D CAD models to streamline and automate metrological inspection, ensuring that manufactured components adhere strictly to their design specifications.</p>
+<p>The broader Hi-rEV project encompasses two primary goals:</p><ol type="1">
+<li><b>Reverse Engineering:</b> Generating precise 3D models of real-world components using intelligent sensors (dense scanning, contact probes) when a CAD model is not available.</li>
+<li><b>Automated Inspection Planning:</b> Converting existing CAD models into safe and efficient measurement paths for metrology equipment to verify the geometry of machined parts.</li>
+</ol>
+<p>This application, <span class="tt"><a class="el" href="d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></span>, is dedicated to the second objective, providing a powerful platform for CAD-based inspection planning and execution.</p>
+<h1 class="doxsection"><a class="anchor" id="version_sec"></a>
+Current Version</h1>
+<p>v0.0.30**</p>
+<h1 class="doxsection"><a class="anchor" id="features_sec"></a>
+Key Features</h1>
+<p>The HirEV SmartFitSystems application is equipped with a range of advanced features to facilitate a seamless workflow from CAD model to quality inspection:</p>
+<ul>
+<li><b>CAD-Based Measurement Planning:</b> The core of the application is its ability to interpret 3D CAD models (STEP files) and automatically generate efficient and collision-free inspection paths for CMM probes and other metrology tools.</li>
+<li><b>Color-Coded Tolerancing:</b> A key innovation is the use of surface colors within the CAD model to define manufacturing tolerances. This allows for the rapid assignment of inspection requirements to large groups of similar faces, optimizing both measurement planning and the logic for tool changes.</li>
+<li><b>Advanced 3D Visualization:</b> Powered by the <span class="tt">devDept.Eyeshot</span> professional CAD control, the application provides high-performance 3D rendering and interaction. Users can load, pan, zoom, rotate, and select faces and features on complex 3D models with ease.</li>
+<li><b>Automatic Face and Feature Extraction:</b> The application intelligently processes the geometry of a loaded model to automatically extract all constituent faces. It further analyzes this data to detect and classify geometric features, such as holes, and groups them by color for simplified processing.</li>
+<li><b>Path Generation and Simulation:</b> Using sophisticated heuristic algorithms, the system generates optimized measurement paths. These paths can be visualized directly on the 3D model and simulated in real-time, providing a complete preview of the inspection routine, including tool movements.</li>
+<li><b>Dynamic Tool and Camera System:</b> The simulation environment is not limited to default probes. It fully supports the loading and visualization of custom 3D models for measurement tools. A robust camera-following system ensures the tool is always in focus during simulation, even for complex custom models.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="current_capabilities_sec"></a>
+Current Application Capabilities</h2>
+<p>The current application workflow expands those core features with:</p>
+<ul>
+<li><b>CAD and Feature Processing:</b> Load CAD parts into the Eyeshot workspace, extract faces, vertices, colors, normals, holes, and feature dimensions, and work with multiple parts and independent part origins.</li>
+<li><b>Hole Detection:</b> Detect cylindrical and conical hole features, including split, bridged, and single cylindrical faces.</li>
+<li><b>Probe Path Planning:</b> Generate point-by-point probing paths with approach, measurement, ascent, descent, and bridge waypoints, ordered by color or by part with proximity-based optimization.</li>
+<li><b>Scanner Path Planning:</b> Configure scanner profiles from <span class="tt">ScannerConfigurations.xml</span> and generate scanner poses using FOV, standoff, overlap, hole-scan, and coverage settings.</li>
+<li><b>Shell and Collision Support:</b> Generate offset shell meshes, use SDF and Marching Cubes planning envelopes, cache shell data in sessions, and validate or reroute path segments.</li>
+<li><b>Simulation and Visualization:</b> Simulate probe and scanner motion, control simulation speed, rotate tool models toward surface normals, follow the active tool with the camera, and inspect section views.</li>
+<li><b>Sessions and Export:</b> Save and load sessions with loaded parts, extracted faces, ignored items, paths, shell cache data, and UI state; export JSON/XML inspection data by color, tool, control point, or measurement point.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="quick_start_sec"></a>
+Quick Start Guide</h1>
+<h2 class="doxsection"><a class="anchor" id="quick_reqs_sec"></a>
+Requirements</h2>
+<ul>
+<li>Windows 10/11 x64.</li>
+<li>.NET 8 SDK or Runtime.</li>
+<li>devDept Eyeshot Ultimate license.</li>
+<li>Access to the SARKKIS proprietary NuGet packages used by the project.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="quick_build_sec"></a>
+Build</h2>
+<div class="fragment"><div class="line">dotnet build HirEV_SmartFitSystemsApp.sln -c Release</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="quick_run_sec"></a>
+Run</h2>
+<div class="fragment"><div class="line">dotnet run --project HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp.csproj</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="quick_config_sec"></a>
+Key Configuration Files</h2>
+<ul>
+<li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: language, CMM mode, scanner parameters, path planning, shell generation, simulation, export, and UI defaults.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: scanner presets, FOV data, standoff ranges, 3D model paths, and sensor transforms.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: measuring tool assignment by extracted face color.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/ColorTolerances.xml</span>: color matching tolerances.</li>
+<li><span class="tt">ProtectedConfig.dat</span>: encrypted machine and sensitive settings generated at runtime.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="workflow_sec"></a>
+Typical Workflow</h1>
+<ol type="1">
+<li>Load one or more CAD parts.</li>
+<li>Extract faces and holes.</li>
+<li>Assign or confirm tool or scanner configuration.</li>
+<li>Generate probe or scanner paths.</li>
+<li>Review paths, shell, points, and section views.</li>
+<li>Simulate the sequence and verify scanner coverage or probe movement.</li>
+<li>Edit paths or move parts if required.</li>
+<li>Load saved sessions to avoid repeated path generation and manual edits.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="tech_sec"></a>
+Technical Highlights</h1>
+<ul>
+<li><b>Platform:</b> Built on the modern .NET 8 framework using C# and Windows Presentation Foundation (WPF) for a responsive user interface.</li>
+<li><b>Architecture:</b> Employs the Model-View-ViewModel (MVVM) design pattern for a clean separation of concerns, with <span class="tt">MainViewModel</span> serving as the core of the application logic.</li>
+<li><b>3D Engine:</b> Leverages the powerful <span class="tt">devDept.Eyeshot</span> library for all CAD data processing, visualization, and interaction.</li>
+<li><b>Inspection Modes:</b> Supports probe and scanner planning, simulation, verification, and export workflows.</li>
+<li><b>Planning Support:</b> Uses shell generation, collision-aware routing, scan verification, path editing, and multi-part session persistence.</li>
+<li><b>Configuration:</b> Uses XML-backed scanner presets, color tolerances, tool assignments, and protected runtime settings.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="tech_details_sec"></a>
+Technical Details</h1>
+<p>This section provides key technical information for developers looking to build, run, and contribute to the project.</p>
+<h2 class="doxsection"><a class="anchor" id="reqs_sec"></a>
+System Requirements</h2>
+<ul>
+<li><b>Operating System:</b> Windows 10/11 x64.</li>
+<li><b>IDE:</b> Microsoft Visual Studio 2022 (recommended).</li>
+<li><b>SDK:</b> .NET 8 SDK or Runtime.</li>
+<li><b>CAD Control:</b> devDept Eyeshot Ultimate license.</li>
+<li><b>Package Sources:</b> Access to the SARKKIS proprietary NuGet packages used by the project.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="dependencies_sec"></a>
+Core Dependencies</h2>
+<p>The project relies on several key external and internal libraries:</p><ul>
+<li><b>ColorNamesSharp (1.0.0):</b> A utility library for working with color names.</li>
+<li><b>devDept.Eyeshot.Control.Wpf (2025.3.457):</b> A high-performance 3D CAD control for .NET WPF applications. This is a <b>commercial library</b>, and a valid license is required for development and compilation. The project must be able to resolve the references to its assemblies.</li>
+<li><b>Microsoft.Xaml.Behaviors.Wpf (1.1.135):</b> Provides a set of useful behaviors for WPF applications.</li>
+<li><b>SARKKIS.Utilities (3.6.2):</b> A custom utility library from SARKKIS Robotics.</li>
+<li><b>SARKKIS.WPFTools (2.12.4):</b> A custom WPF tools library from SARKKIS Robotics.</li>
+<li><b>.NET 8 &amp; WPF:</b> The application is built using the .NET 8 framework and Windows Presentation Foundation (WPF) for the user interface.</li>
+<li><b>Doxygen:</b> The tool used to generate this documentation. A local installation is required to run the documentation generation script.</li>
+<li><b>Graphviz (Optional):</b> To generate class diagrams and other graphs within the documentation, Graphviz must be installed and accessible from the system's PATH.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="build_sec"></a>
+Building the Project</h2>
+<ol type="1">
+<li><b>Clone the Repository:</b> Get a local copy of the source code.</li>
+<li><b>Install Dependencies:</b> Ensure the .NET 8 SDK and Visual Studio 2022 are installed.</li>
+<li><b>Install Eyeshot:</b> Make sure you have a licensed version of devDept Eyeshot Ultimate installed on your machine.</li>
+<li><b>Open the Solution:</b> Launch the <span class="tt">HirEV_SmartFitSystemsApp.sln</span> file in Visual Studio.</li>
+<li><b>Restore NuGet Packages:</b> Visual Studio should automatically restore the standard NuGet packages upon opening the solution.</li>
+<li><b>Build:</b> Build the solution (Ctrl+Shift+B). The primary output executable will be located in the <span class="tt">HirEV_SmartFitSystemsApp/bin/Debug</span> (or <span class="tt">Release</span>) directory.</li>
+</ol>
+<h2 class="doxsection"><a class="anchor" id="docs_sec"></a>
+Generating Documentation</h2>
+<p>This documentation is generated using Doxygen. To regenerate it:</p><ol type="1">
+<li>Ensure <b>Doxygen</b> is installed and its location is in your system's PATH environment variable.</li>
+<li>For full diagram support, ensure <b>Graphviz</b> is also installed and in the PATH.</li>
+<li>Execute the <b><span class="tt">generate_docs.bat</span></b> script located in the project's root directory.</li>
+<li>The script will process the source code and open the main page of the generated documentation in your default web browser.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="footer_sec"></a>
+Copyright</h1>
+<p>© 2025-2026 SARKKIS Robotics, Lda. All Rights Reserved. </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

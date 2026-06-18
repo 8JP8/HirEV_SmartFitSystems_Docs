@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/App.xaml</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dc/d03/_app_8xaml_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">App.xaml</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/d03/_app_8xaml.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;Application x:Class=&quot;HirEV_SmartFitSystemsApp.App&quot;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>             xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>             xmlns:local=&quot;clr-namespace:HirEV_SmartFitSystemsApp.Models&quot;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>             StartupUri=&quot;MainWindow.xaml&quot;&gt;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    &lt;Application.Resources&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        &lt;!-- Tool 1 --&gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        &lt;x:Array x:Key=&quot;Tool1Data&quot; Type=&quot;{x:Type local:FeatureRow_MHeadBody}&quot;&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M4&quot;  HeadDiameter=&quot;8.50&quot;  BodyDiameter=&quot;5.20&quot;/&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M5&quot;  HeadDiameter=&quot;10.00&quot; BodyDiameter=&quot;6.00&quot;/&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M6&quot;  HeadDiameter=&quot;12.00&quot; BodyDiameter=&quot;6.80&quot;/&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M8&quot;  HeadDiameter=&quot;14.50&quot; BodyDiameter=&quot;9.00&quot;/&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M10&quot; HeadDiameter=&quot;17.50&quot; BodyDiameter=&quot;11.00&quot;/&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M12&quot; HeadDiameter=&quot;20.50&quot; BodyDiameter=&quot;13.00&quot;/&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M14&quot; HeadDiameter=&quot;24.00&quot; BodyDiameter=&quot;15.00&quot;/&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M16&quot; HeadDiameter=&quot;27.00&quot; BodyDiameter=&quot;17.50&quot;/&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M20&quot; HeadDiameter=&quot;33.00&quot; BodyDiameter=&quot;21.50&quot;/&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M24&quot; HeadDiameter=&quot;42.00&quot; BodyDiameter=&quot;26.00&quot;/&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M30&quot; HeadDiameter=&quot;50.00&quot; BodyDiameter=&quot;33.00&quot;/&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        &lt;!-- Tool 2 --&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        &lt;x:Array x:Key=&quot;Tool2Data&quot; Type=&quot;{x:Type local:FeatureRow_MHeadBody}&quot;&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M3&quot;  HeadDiameter=&quot;6.50&quot;  BodyDiameter=&quot;4.00&quot;/&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M4&quot;  HeadDiameter=&quot;10.00&quot; BodyDiameter=&quot;5.20&quot;/&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M5&quot;  HeadDiameter=&quot;11.00&quot; BodyDiameter=&quot;6.00&quot;/&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M6&quot;  HeadDiameter=&quot;14.00&quot; BodyDiameter=&quot;6.80&quot;/&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M8&quot;  HeadDiameter=&quot;18.00&quot; BodyDiameter=&quot;9.00&quot;/&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M10&quot; HeadDiameter=&quot;22.50&quot; BodyDiameter=&quot;11.00&quot;/&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M12&quot; HeadDiameter=&quot;27.00&quot; BodyDiameter=&quot;14.00&quot;/&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M14&quot; HeadDiameter=&quot;34.00&quot; BodyDiameter=&quot;15.80&quot;/&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M16&quot; HeadDiameter=&quot;35.00&quot; BodyDiameter=&quot;17.50&quot;/&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            &lt;local:FeatureRow_MHeadBody M=&quot;M20&quot; HeadDiameter=&quot;40.50&quot; BodyDiameter=&quot;21.50&quot;/&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        &lt;!-- Tool 3 --&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        &lt;x:Array x:Key=&quot;Tool3Data&quot; Type=&quot;{x:Type local:FeatureRow_DiameterHeadClearance}&quot;&gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;3.00&quot;  HeadDiameter=&quot;3.00&quot;  ClearanceDiameter=&quot;4.00&quot;/&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;4.00&quot;  HeadDiameter=&quot;4.00&quot;  ClearanceDiameter=&quot;5.20&quot;/&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;5.00&quot;  HeadDiameter=&quot;5.00&quot;  ClearanceDiameter=&quot;6.00&quot;/&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;6.00&quot;  HeadDiameter=&quot;6.00&quot;  ClearanceDiameter=&quot;6.80&quot;/&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;8.00&quot;  HeadDiameter=&quot;8.00&quot;  ClearanceDiameter=&quot;9.00&quot;/&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;10.00&quot; HeadDiameter=&quot;10.00&quot; ClearanceDiameter=&quot;11.00&quot;/&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;12.00&quot; HeadDiameter=&quot;12.00&quot; ClearanceDiameter=&quot;13.00&quot;/&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;14.00&quot; HeadDiameter=&quot;14.00&quot; ClearanceDiameter=&quot;15.80&quot;/&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;16.00&quot; HeadDiameter=&quot;16.00&quot; ClearanceDiameter=&quot;17.50&quot;/&gt;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            &lt;local:FeatureRow_DiameterHeadClearance Diameter=&quot;20.00&quot; HeadDiameter=&quot;20.00&quot; ClearanceDiameter=&quot;21.00&quot;/&gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        &lt;!-- Tool 4 --&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        &lt;x:Array x:Key=&quot;Tool4Data&quot; Type=&quot;{x:Type local:FeatureRow_MBody}&quot;&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            &lt;local:FeatureRow_MBody M=&quot;M4&quot;  BodyDiameter=&quot;5.20&quot;/&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            &lt;local:FeatureRow_MBody M=&quot;M5&quot;  BodyDiameter=&quot;6.00&quot;/&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            &lt;local:FeatureRow_MBody M=&quot;M6&quot;  BodyDiameter=&quot;6.80&quot;/&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            &lt;local:FeatureRow_MBody M=&quot;M8&quot;  BodyDiameter=&quot;9.00&quot;/&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            &lt;local:FeatureRow_MBody M=&quot;M10&quot; BodyDiameter=&quot;11.00&quot;/&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            &lt;local:FeatureRow_MBody M=&quot;M12&quot; BodyDiameter=&quot;13.00&quot;/&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            &lt;local:FeatureRow_MBody M=&quot;M14&quot; BodyDiameter=&quot;15.80&quot;/&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            &lt;local:FeatureRow_MBody M=&quot;M16&quot; BodyDiameter=&quot;17.50&quot;/&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            &lt;local:FeatureRow_MBody M=&quot;M20&quot; BodyDiameter=&quot;21.50&quot;/&gt;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            &lt;local:FeatureRow_MBody M=&quot;M24&quot; BodyDiameter=&quot;26.00&quot;/&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            &lt;local:FeatureRow_MBody M=&quot;M30&quot; BodyDiameter=&quot;33.00&quot;/&gt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        &lt;!-- Tool 5 --&gt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        &lt;x:Array x:Key=&quot;Tool5Data&quot; Type=&quot;{x:Type local:FeatureRow_MPreDrill}&quot;&gt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M4&quot;  PreDrillDiameter=&quot;3.30&quot;/&gt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M5&quot;  PreDrillDiameter=&quot;4.30&quot;/&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M6&quot;  PreDrillDiameter=&quot;5.20&quot;/&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M8&quot;  PreDrillDiameter=&quot;6.80&quot;/&gt;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M10&quot; PreDrillDiameter=&quot;8.50&quot;/&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M12&quot; PreDrillDiameter=&quot;10.50&quot;/&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M14&quot; PreDrillDiameter=&quot;12.00&quot;/&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M16&quot; PreDrillDiameter=&quot;14.00&quot;/&gt;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M20&quot; PreDrillDiameter=&quot;17.50&quot;/&gt;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M24&quot; PreDrillDiameter=&quot;21.00&quot;/&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M27&quot; PreDrillDiameter=&quot;24.00&quot;/&gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            &lt;local:FeatureRow_MPreDrill M=&quot;M30&quot; PreDrillDiameter=&quot;26.50&quot;/&gt;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        &lt;!-- Tool 6 --&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        &lt;x:Array x:Key=&quot;Tool6Data&quot; Type=&quot;{x:Type local:FeatureRow_DiameterBody}&quot;&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;3.00&quot;  BodyDiameter=&quot;3.00&quot;/&gt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;4.00&quot;  BodyDiameter=&quot;4.00&quot;/&gt;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;5.00&quot;  BodyDiameter=&quot;5.00&quot;/&gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;6.00&quot;  BodyDiameter=&quot;6.00&quot;/&gt;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;8.00&quot;  BodyDiameter=&quot;8.00&quot;/&gt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;10.00&quot; BodyDiameter=&quot;10.00&quot;/&gt;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;12.00&quot; BodyDiameter=&quot;12.00&quot;/&gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;16.00&quot; BodyDiameter=&quot;16.00&quot;/&gt;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            &lt;local:FeatureRow_DiameterBody Diameter=&quot;20.00&quot; BodyDiameter=&quot;20.00&quot;/&gt;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        &lt;/x:Array&gt;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    &lt;/Application.Resources&gt;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>&lt;/Application&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

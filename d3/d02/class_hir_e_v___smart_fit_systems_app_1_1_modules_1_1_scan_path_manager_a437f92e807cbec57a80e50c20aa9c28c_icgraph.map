@@ -1,0 +1,17 @@
+<map id="HirEV_SmartFitSystemsApp.Modules.ScanPathManager.UnitVecFromCenter" name="HirEV_SmartFitSystemsApp.Modules.ScanPathManager.UnitVecFromCenter">
+<area shape="rect" id="Node000001" title="Executes the UnitVecFromCenter method." alt="" coords="1159,47,1390,105"/>
+<area shape="rect" id="Node000002" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a56564df4d3d3592bffc235042f50a00d" title="Generates steps &#160;intermediate waypoints along the shorter great&#45;circle arc from from &#160;to to &#160;on the s..." alt="" coords="872,9,1111,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1141,59,1111,57,1111,52,1146,59"/>
+<area shape="rect" id="Node000007" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a3efb2ea3ed7e752dc7d9c563c81acaf0" title="Orders scan positions using nearest&#45;neighbour TSP on the sphere. Arc&#45;distance = R · arccos(u₁·u₂) avo..." alt="" coords="584,88,818,147"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1146,85,819,112,818,106,1141,86"/>
+<area shape="rect" id="Node000003" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a25df19972389dbf1946281bc77706cdf" title="Inserts great&#45;circle arc waypoints between every pair of consecutive measurement positions so the sca..." alt="" coords="578,5,824,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="854,37,825,39,825,34,860,37"/>
+<area shape="rect" id="Node000004" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a1c4fe5144708cb38e0263ca195c60e80" title="Plans scan paths for every CAD part independently, then bridges consecutive parts through the apex of..." alt="" coords="292,5,530,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="560,35,531,37,530,32,565,34"/>
+<area shape="rect" id="Node000006" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a7b16a05f66a3214b3e02abe74ea3a0f1" title="Main entry point. Returns a single ScanPath that visits all required scanner positions in travel&#45;opti..." alt="" coords="292,88,530,147"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="584,68,517,90,516,85,578,69"/>
+<area shape="rect" id="Node000005" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#aa27401b4684551fb39cc9e313c669a58" title="Primary legacy entry point called from MainViewModel. Groups faces by CADFace.EntityIndex so each loa..." alt="" coords="5,5,244,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="274,35,244,37,243,32,279,34"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="578,83,516,67,517,62,584,83"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="566,117,531,120,531,115,571,117"/>
+</map>

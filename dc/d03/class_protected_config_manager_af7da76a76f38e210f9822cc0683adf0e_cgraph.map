@@ -1,0 +1,20 @@
+<map id="ProtectedConfigManager.WriteConfig" name="ProtectedConfigManager.WriteConfig">
+<area shape="rect" id="Node000001" title="Writes a key&#45;value pair to the encrypted configuration file." alt="" coords="5,5,205,48"/>
+<area shape="rect" id="Node000002" href="$dc/d03/class_protected_config_manager.html#ac1ec9ec2299fbc42f682ea4ad49a5cde" title="Encrypts a plaintext string to a Base64 encoded string." alt="" coords="775,9,989,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,22,511,17,726,17,762,20,757,21,726,23,511,23,206,27"/>
+<area shape="rect" id="Node000004" href="$dc/d03/class_protected_config_manager.html#aae524518235c0875bf5bcd8ce7f958af" title=" " alt="" coords="253,60,463,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,46,244,56,239,57,205,51"/>
+<area shape="rect" id="Node000003" href="$dc/d03/class_protected_config_manager.html#ae48ab1eb6a6300ec3b6f86877d05c035" title="Encrypts the given plain bytes using AES and prepends the Initialization Vector (IV)." alt="" coords="1038,9,1280,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="989,20,1025,22,1020,23,990,25"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="448,57,511,45,639,31,762,26,757,27,639,37,511,51,449,62"/>
+<area shape="rect" id="Node000005" href="$dc/d03/class_protected_config_manager.html#a538b2f571292b6cd868f787f85535da7" title="Ensures the application data folder exists." alt="" coords="514,60,724,103"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="463,79,501,81,495,82,464,84"/>
+<area shape="rect" id="Node000006" href="$dc/d03/class_protected_config_manager.html#a1c3ca76003c86a3352cf2f4b08b4b97d" title="Validates the existing configuration file and adds any missing keys with default values...." alt="" coords="511,127,726,169"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="415,101,498,126,493,126,414,106"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="697,123,725,112,791,78,846,46,851,44,794,82,727,117,698,129"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="559,126,478,106,478,100,564,126"/>
+<area shape="rect" id="Node000007" href="$dc/d03/class_protected_config_manager.html#a58a537ae2966a1da396d99cab8937cb1" title="Decrypts a Base64 encoded encrypted string to plaintext." alt="" coords="774,135,990,161"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="727,145,762,148,756,148,727,151"/>
+<area shape="rect" id="Node000008" href="$dc/d03/class_protected_config_manager.html#a31de4d567280afe8745a4f6ccf624e41" title="Decrypts the given cipher bytes, extracting the IV from the beginning." alt="" coords="1038,135,1281,161"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="990,145,1025,148,1019,148,990,151"/>
+</map>

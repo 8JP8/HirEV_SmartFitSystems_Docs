@@ -1,0 +1,6 @@
+var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result =
+[
+    [ "IsValid", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html#a480f8f3c8cf2ebecbeeba5ce24a24b6d", null ],
+    [ "PointIndices", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html#a35370859dc1f8880907d898d3e41fcee", null ],
+    [ "PointTypes", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html#af1bfba1072cd31b22a83e102dab770f8", null ]
+];

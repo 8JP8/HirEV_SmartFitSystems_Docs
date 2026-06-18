@@ -1,0 +1,19 @@
+<map id="HirEV_SmartFitSystemsApp.Modules.ScanPathManager.ComputeVisiblePoints" name="HirEV_SmartFitSystemsApp.Modules.ScanPathManager.ComputeVisiblePoints">
+<area shape="rect" id="Node000001" title="Returns every point in candidates &#160;that is inside the scanner FOV and not occluded,..." alt="" coords="5,80,244,139"/>
+<area shape="rect" id="Node000002" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#ad0391b434a9b387e74f82f5e2ffb87a8" title="Executes the CalculateFrustumBoundingBox method." alt="" coords="297,5,538,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,77,287,67,282,70,243,82"/>
+<area shape="rect" id="Node000003" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a613449e386befccfeebfe608d639b993" title="Returns true when the line of sight from scannerPos &#160;to target &#160;is blocked by the mesh...." alt="" coords="292,88,543,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,107,279,109,274,110,245,112"/>
+<area shape="rect" id="Node000009" href="$d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html#a21964c5fc2978a1f44a3985d7300c838" title="Tests whether point &#160;falls inside the rectangular FOV cone of the scanner at scannerPos &#160;facing orien..." alt="" coords="304,155,530,213"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="242,137,292,151,286,152,242,142"/>
+<area shape="rect" id="Node000004" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#ae2e6baa1499f867dc53d221807458f21" title="Intersects a ray with all triangles in a mesh and returns the closest intersection point." alt="" coords="591,80,796,139"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="543,107,578,109,573,110,544,112"/>
+<area shape="rect" id="Node000005" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a4aefd389c9a0efd583cd755b3adb1c10" title="Computes the Euclidean distance between two 3D points." alt="" coords="844,39,1050,97"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="797,90,826,88,831,87,797,95"/>
+<area shape="rect" id="Node000006" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a956914d5583c84740b29b73114590faf" title="Implements the Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="844,121,1050,180"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="797,123,832,131,826,131,797,129"/>
+<area shape="rect" id="Node000007" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="1098,80,1303,139"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1050,131,1080,129,1085,128,1051,137"/>
+<area shape="rect" id="Node000008" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0828c1055738cc4006683d6a947cb64c" title="Computes the dot product of two 3D vectors." alt="" coords="1098,163,1303,221"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1050,165,1085,173,1080,173,1050,170"/>
+</map>

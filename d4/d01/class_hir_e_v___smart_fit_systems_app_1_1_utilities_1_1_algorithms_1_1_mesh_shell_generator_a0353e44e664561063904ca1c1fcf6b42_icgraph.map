@@ -1,0 +1,19 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.ComputeTriangleNormal" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.ComputeTriangleNormal">
+<area shape="rect" id="Node000001" title="Computes the normal of a triangle." alt="" coords="913,47,1137,105"/>
+<area shape="rect" id="Node000002" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a0943ff774ed1fd73e2d4ab14d17dd04d" title="Builds triangles from a point cloud using proximity&#45;based triangulation. Creates a surface mesh by co..." alt="" coords="607,5,865,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="895,58,866,56,866,51,901,58"/>
+<area shape="rect" id="Node000005" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ad8dfdf3772ca0277fade16d25e02b990" title="Ensures all mesh normals point outward from the part centroid." alt="" coords="626,88,847,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="896,95,848,104,847,99,901,94"/>
+<area shape="rect" id="Node000003" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#aea89c158805dec235f32cafc52022ae4" title="Builds a shell mesh that uses ALL approach points as vertices. Uses Eyeshot ConvexHull as base,..." alt="" coords="317,5,542,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="589,35,543,37,542,32,594,34"/>
+<area shape="rect" id="Node000004" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a2df4b2c5a7f0904404057b45967a31b9" title="Builds a spline&#45;knitted shell directly from approach points. This makes each approach point a vertex ..." alt="" coords="5,31,253,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="299,50,254,57,252,52,304,48"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="608,84,541,67,541,62,614,83"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="608,109,253,81,253,75,611,105"/>
+<area shape="rect" id="Node000006" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ae74cdf83fee3f57a0c79348213b4a884" title="LEGACY: Builds a shell mesh by offsetting existing part face meshes outward using VERTEX normals...." alt="" coords="328,139,532,197"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="608,139,533,154,532,148,613,138"/>
+<area shape="rect" id="Node000007" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#afd75bdaf00104774ea32f4a270f07ec4" title="Fallback method: builds shell by manually offsetting mesh vertices. Used when Surface...." alt="" coords="301,221,559,280"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="673,154,560,212,530,223,529,218,558,207,668,155"/>
+<area shape="rect" id="Node000008" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a964700a1c54783a5dc8a44628ffaced6" title="Builds a shell by offsetting the part&#39;s exterior surfaces outward. This method:" alt="" coords="6,221,252,280"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="282,251,253,253,253,248,288,250"/>
+</map>

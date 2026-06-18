@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/MainWindow.xaml.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d6/d03/_main_window_8xaml_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MainWindow.xaml.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d03/_main_window_8xaml_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Windows;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Windows.Controls;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Windows.Input;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Windows.Media;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">    6</a></span><span class="keyword">using </span><a class="code hl_typedef" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> = System.Windows.Point;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html">   22</a></span>    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#afa58f0b258112aa73537a8327dd407c4">MainWindow</a> : Window</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">        #region Fields</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4efd875122438e34608307ecf8799b8f">   26</a></span>        <span class="keyword">private</span> <a class="code hl_typedef" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4efd875122438e34608307ecf8799b8f">scrollMousePoint</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab0eeac70bc0a7ae99e42d5079df4dbd8">   28</a></span>        <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab0eeac70bc0a7ae99e42d5079df4dbd8">verticalOffset</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">   30</a></span>        <span class="keyword">private</span> ScrollViewer? <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">   32</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">isDraggingScrollBar</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">   34</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a805d4723da45c0c249e1f3650ced4ea0">   36</a></span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a805d4723da45c0c249e1f3650ced4ea0">DragThreshold</a> = 1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">   38</a></span>        <span class="keyword">private</span> <a class="code hl_typedef" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">_mousePosition</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">   40</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">_isDragging</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">   42</a></span>        <span class="keyword">private</span> SplashScreen <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">splashScreen</a> = <span class="keyword">new</span> SplashScreen(<span class="stringliteral">&quot;Images/App_Resources/SplashScreen.png&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">        #region Constructor</span></div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#afa58f0b258112aa73537a8327dd407c4">   59</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#afa58f0b258112aa73537a8327dd407c4">MainWindow</a>()</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="comment">// Show Splash Screen on Top of everything and automatically close later</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">splashScreen</a>.Show(<span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="comment">// Init</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                InitializeComponent();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="comment">// Set Decimal Separator</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                customCulture.NumberFormat.NumberDecimalSeparator = <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="comment">// Create Main View Model</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                DataContext = <span class="keyword">new</span> <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="comment">// renderer enforcement removed inline</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                designControl.Loaded += <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7fd1e1426895d03c12575be1d84084ed">DesignControl_Loaded</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">catch</span> (Exception e)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="comment">// Close splash screen if it was shown</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">try</span> { <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">splashScreen</a>.Close(TimeSpan.Zero); } <span class="keywordflow">catch</span> { }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="comment">// Show error message and schedule shutdown after dialog closes</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="comment">// Using Dispatcher to ensure the message box is shown on UI thread and app doesn&#39;t crash</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                Dispatcher.BeginInvoke(<span class="keyword">new</span> Action(() =&gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                        MessageBox.Show(</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            $<span class="stringliteral">&quot;Application failed to initialize:\n\n{e.Message}\n\nDetails:\n{e.StackTrace}&quot;</span>,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                            System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + <span class="stringliteral">&quot; - Internal Error&quot;</span>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                            MessageBoxButton.OK,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            MessageBoxImage.Error);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">finally</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                        <span class="comment">// Always shutdown after showing the error, regardless of how the dialog was closed</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                        Environment.Exit(1);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                }), System.Windows.Threading.DispatcherPriority.Normal);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7fd1e1426895d03c12575be1d84084ed">  111</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7fd1e1426895d03c12575be1d84084ed">DesignControl_Loaded</a>(<span class="keywordtype">object</span> sender, RoutedEventArgs e)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">splashScreen</a>.Close(TimeSpan.FromMilliseconds(300)); <span class="comment">//Ensure closing of splashscreen right after the Eyeshot designer has been loaded with a 300ms animation</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">        #region Events</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">        #region TreeView</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa6f8d1a53561b1602b5a857cc0d439ae">  124</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa6f8d1a53561b1602b5a857cc0d439ae">FacesTreeView_PreviewMouseRightButtonDown</a>(<span class="keywordtype">object</span> sender, MouseButtonEventArgs e)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            var originalSource = e.OriginalSource as DependencyObject;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">if</span> (originalSource == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            var treeViewItem = FindVisualParent&lt;TreeViewItem&gt;(originalSource);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">if</span> (treeViewItem != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <span class="comment">// Select the item on right-click</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                treeViewItem.IsSelected = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                var viewModel = DataContext as <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">if</span> (viewModel != <span class="keyword">null</span> &amp;&amp; treeViewItem.Tag != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    <span class="comment">// Call the ViewModel to handle the context menu logic</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    viewModel.ShowContextMenuFor(treeViewItem.Tag);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                e.Handled = <span class="keyword">true</span>; <span class="comment">// Prevent the event from bubbling further</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span></div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a0a5877ca76ebada4de6e0691e095cba7">  150</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a0a5877ca76ebada4de6e0691e095cba7">TreeScrollViewer_PreviewMouseLeftButtonDown</a>(<span class="keywordtype">object</span> sender, MouseButtonEventArgs e)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">if</span> (sender is TreeView tv)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="comment">// Get the ScrollViewer from the TreeView</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a> == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a> = FindVisualChild&lt;ScrollViewer&gt;(tv);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                <span class="comment">// Check if user clicked on a scrollbar thumb</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                var depObj = e.OriginalSource as DependencyObject;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <span class="keywordflow">if</span> (FindVisualParent&lt;System.Windows.Controls.Primitives.Thumb&gt;(depObj!) != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">isDraggingScrollBar</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="comment">// NEW: Check if clicked on a TreeViewItem - if so, don&#39;t interfere</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                var treeViewItem = FindVisualParent&lt;TreeViewItem&gt;(depObj!);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                <span class="keywordflow">if</span> (treeViewItem != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    treeViewItem.IsSelected = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    <span class="keywordflow">if</span> (DataContext is <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a> viewModel &amp;&amp; treeViewItem.Tag != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                        viewModel.HighlightGeometryItem(treeViewItem.Tag);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    <span class="comment">// User clicked on an actual item, let TreeView handle expansion and focus.</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                <span class="comment">// User clicked on empty space or scrollviewer background</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">isDraggingScrollBar</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a> = <span class="keyword">false</span>; <span class="comment">// Reset drag state</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4efd875122438e34608307ecf8799b8f">scrollMousePoint</a> = e.GetPosition(tv);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab0eeac70bc0a7ae99e42d5079df4dbd8">verticalOffset</a> = <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a>.VerticalOffset;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        }</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span></div>
+<div class="foldopen" id="foldopen00194" data-start="{" data-end="}">
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ae5628e22d3d96ed6fef3730c3c808914">  194</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ae5628e22d3d96ed6fef3730c3c808914">TreeScrollViewer_MouseMove</a>(<span class="keywordtype">object</span> sender, MouseEventArgs e)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">isDraggingScrollBar</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            <span class="keywordflow">if</span> (sender is TreeView tv &amp;&amp; e.LeftButton == MouseButtonState.Pressed)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                var currentPosition = e.GetPosition(tv);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                <span class="keywordtype">double</span> distance = Math.Abs(currentPosition.Y - <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4efd875122438e34608307ecf8799b8f">scrollMousePoint</a>.Y);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="comment">// NEW: Only start dragging if moved beyond threshold</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a> &amp;&amp; distance &gt; <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a805d4723da45c0c249e1f3650ced4ea0">DragThreshold</a>)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                    tv.CaptureMouse();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                <span class="comment">// Only scroll if we&#39;re actually dragging</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a>)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                    <span class="keywordtype">double</span> newVerticalOffset = <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab0eeac70bc0a7ae99e42d5079df4dbd8">verticalOffset</a> + (scrollMousePoint.Y - currentPosition.Y);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">treeScrollViewer</a>.ScrollToVerticalOffset(newVerticalOffset);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span></div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a1b9ee1634caa3a37c73903efe9db8f78">  226</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a1b9ee1634caa3a37c73903efe9db8f78">TreeScrollViewer_PreviewMouseLeftButtonUp</a>(<span class="keywordtype">object</span> sender, MouseButtonEventArgs e)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">if</span> (sender is TreeView tv)</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="comment">// Only release if we actually captured</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a>)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    tv.ReleaseMouseCapture();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">isDraggingScrollBar</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">isScrollDragging</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        }</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">        #region HeaderGrid Drag</span></div>
+<div class="foldopen" id="foldopen00246" data-start="{" data-end="}">
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ad9ff6b3879faba6338348aa9ca0c3f8d">  246</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ad9ff6b3879faba6338348aa9ca0c3f8d">grid_MouseLeftButtonDown</a>(<span class="keywordtype">object</span> sender, MouseButtonEventArgs e)</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">if</span> (e.LeftButton == MouseButtonState.Pressed)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <span class="comment">// If the window is maximized, set it to Normal before dragging</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                <span class="keywordflow">if</span> (WindowState == WindowState.Normal)</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                    <span class="comment">// Start dragging the window</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                    DragMove();</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
+</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span></div>
+<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#add200cc9f1f50cbb83523e8971f2ce11">  264</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#add200cc9f1f50cbb83523e8971f2ce11">grid_MouseMove</a>(<span class="keywordtype">object</span> sender, MouseEventArgs e)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="comment">// Check if the left mouse button is pressed</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keywordflow">if</span> (e.LeftButton == MouseButtonState.Pressed)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">_isDragging</a>)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                    <span class="comment">// Initialize dragging when first detected</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">_mousePosition</a> = e.GetPosition(<span class="keyword">this</span>); <span class="comment">// Capture the initial mouse position</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">_isDragging</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                <span class="comment">// Calculate the difference from the original mouse position</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                var currentPosition = e.GetPosition(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                var delta = currentPosition - <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">_mousePosition</a>;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                <span class="comment">// If the mouse has moved significantly, exit maximized state</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                <span class="keywordflow">if</span> (Math.Abs(delta.X) &gt; SystemParameters.MinimumHorizontalDragDistance ||</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                    Math.Abs(delta.Y) &gt; SystemParameters.MinimumVerticalDragDistance)</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                    <span class="keywordflow">if</span> (WindowState == WindowState.Maximized)</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                    {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                        <span class="comment">// Calculate the relative position to set the window&#39;s position accordingly</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                        var mousePositionOnScreen = PointToScreen(<a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">_mousePosition</a>);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                        <span class="keywordtype">double</span> widthRatio = _mousePosition.X / ActualWidth;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                        <span class="comment">// Restore the window state</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                        WindowState = WindowState.Normal;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                        <span class="comment">// Set the new window position to keep the cursor in the same position</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                        Left = mousePositionOnScreen.X - (widthRatio * ActualWidth);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                        Top = mousePositionOnScreen.Y - <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">_mousePosition</a>.Y;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    <span class="comment">// Start dragging the window</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                    DragMove();</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">_isDragging</a> = <span class="keyword">false</span>; <span class="comment">// End dragging</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                <span class="comment">// Reset dragging state if the left mouse button is not pressed</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                <a class="code hl_variable" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">_isDragging</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        }</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">        #region Helper Methods</span></div>
+<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab4096d5c141e32c858bab26b855d3b04">  319</a></span>        <span class="keyword">private</span> T <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab4096d5c141e32c858bab26b855d3b04">FindVisualChild&lt;T&gt;</a>(DependencyObject parent) where T : DependencyObject</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            <span class="keywordflow">if</span> (parent == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; VisualTreeHelper.GetChildrenCount(parent); i++)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                var child = VisualTreeHelper.GetChild(parent, i);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                <span class="keywordflow">if</span> (child is T typedChild)</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                {</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                    <span class="keywordflow">return</span> typedChild;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                var result = <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab4096d5c141e32c858bab26b855d3b04">FindVisualChild&lt;T&gt;</a>(child);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                <span class="keywordflow">if</span> (result != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            }</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        }</div>
+</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span></div>
+<div class="foldopen" id="foldopen00345" data-start="{" data-end="}">
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aab2f8b0b121ae6722126dd8bdf527381">  345</a></span>        <span class="keyword">private</span> T? <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aab2f8b0b121ae6722126dd8bdf527381">FindVisualParent&lt;T&gt;</a>(DependencyObject child) where T : DependencyObject</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            <span class="keywordflow">while</span> (child != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                    child = VisualTreeHelper.GetParent(child);</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                    <span class="keywordflow">if</span> (child is T parent)</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                    {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                        <span class="keywordflow">return</span> parent;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                    }</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                <span class="keywordflow">catch</span> (InvalidOperationException)</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                {</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                    <span class="comment">// Hit a non-visual element (like TextBlock content)</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                    <span class="comment">// This means we&#39;re inside a TreeViewItem, so return null to allow normal TreeView behavior</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                }</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            }</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">        #region Recent Parts Menu</span></div>
+<div class="foldopen" id="foldopen00375" data-start="{" data-end="}">
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7691b35817f9b7ec0a2ef4b64510a9c2">  375</a></span>        <span class="keyword">private</span> async <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7691b35817f9b7ec0a2ef4b64510a9c2">RecentPartMenuItem_Click</a>(<span class="keywordtype">object</span> sender, RoutedEventArgs e)</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>            <span class="keywordflow">if</span> (sender is MenuItem menuItem &amp;&amp; menuItem.Header is <span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>            {</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                <span class="keywordflow">if</span> (DataContext is <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a> viewModel)</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                {</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                    await viewModel.LoadPartFromPathAsync(filePath);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                }</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>            }</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        }</div>
+</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">        #region Toolbar Events</span></div>
+<div class="foldopen" id="foldopen00393" data-start="{" data-end="}">
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7146e862468abfaeaaac49f2b68af8cb">  393</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7146e862468abfaeaaac49f2b68af8cb">SectionViewMain_Click</a>(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            <span class="keywordflow">if</span> (DataContext is <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a> viewModel)</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                viewModel.SectionViewMain_Click(sender, e);</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        }</div>
+</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span></div>
+<div class="foldopen" id="foldopen00406" data-start="{" data-end="}">
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4f5bbc30c5e434e374826abf0ab0db3c">  406</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4f5bbc30c5e434e374826abf0ab0db3c">OnClosed</a>(EventArgs e)</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        {</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            base.OnClosed(e);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            <span class="keywordflow">if</span> (DataContext is <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a> viewModel)</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            {</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                viewModel.StopPathSimulation();</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            }</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        }</div>
+</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    }</div>
+</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>}</div>
+<div class="ttc" id="a_main_window_8xaml_8cs_html_af7183cff3a6e75db2170da28384d7419"><div class="ttname"><a href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a></div><div class="ttdeci">System.Windows.Point Point</div><div class="ttdef"><b>Definição</b> <a href="#l00006">MainWindow.xaml.cs:6</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a0a5877ca76ebada4de6e0691e095cba7"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a0a5877ca76ebada4de6e0691e095cba7">HirEV_SmartFitSystemsApp.MainWindow.TreeScrollViewer_PreviewMouseLeftButtonDown</a></div><div class="ttdeci">void TreeScrollViewer_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)</div><div class="ttdoc">Initiates custom scroll dragging for TreeView when clicking outside items.</div><div class="ttdef"><b>Definição</b> <a href="#l00150">MainWindow.xaml.cs:150</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a16678583b3ea7c0f33817224468c3f7d"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a16678583b3ea7c0f33817224468c3f7d">HirEV_SmartFitSystemsApp.MainWindow.isScrollDragging</a></div><div class="ttdeci">bool isScrollDragging</div><div class="ttdoc">Flag indicating if custom scroll dragging is active.</div><div class="ttdef"><b>Definição</b> <a href="#l00034">MainWindow.xaml.cs:34</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a1b9ee1634caa3a37c73903efe9db8f78"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a1b9ee1634caa3a37c73903efe9db8f78">HirEV_SmartFitSystemsApp.MainWindow.TreeScrollViewer_PreviewMouseLeftButtonUp</a></div><div class="ttdeci">void TreeScrollViewer_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)</div><div class="ttdoc">Ends custom scroll dragging and releases mouse capture.</div><div class="ttdef"><b>Definição</b> <a href="#l00226">MainWindow.xaml.cs:226</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a4efd875122438e34608307ecf8799b8f"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4efd875122438e34608307ecf8799b8f">HirEV_SmartFitSystemsApp.MainWindow.scrollMousePoint</a></div><div class="ttdeci">Point scrollMousePoint</div><div class="ttdoc">Initial mouse position for TreeView scroll dragging.</div><div class="ttdef"><b>Definição</b> <a href="#l00026">MainWindow.xaml.cs:26</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a4f5bbc30c5e434e374826abf0ab0db3c"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a4f5bbc30c5e434e374826abf0ab0db3c">HirEV_SmartFitSystemsApp.MainWindow.OnClosed</a></div><div class="ttdeci">override void OnClosed(EventArgs e)</div><div class="ttdoc">Handles the window Closed event. Stops path simulation if active.</div><div class="ttdef"><b>Definição</b> <a href="#l00406">MainWindow.xaml.cs:406</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a5c04ec6d592a53f58f0e643d89d6dfb3"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5c04ec6d592a53f58f0e643d89d6dfb3">HirEV_SmartFitSystemsApp.MainWindow.splashScreen</a></div><div class="ttdeci">SplashScreen splashScreen</div><div class="ttdoc">Application splash screen displayed during startup.</div><div class="ttdef"><b>Definição</b> <a href="#l00042">MainWindow.xaml.cs:42</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a5f40dd15860daa98cada314d0f812105"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a5f40dd15860daa98cada314d0f812105">HirEV_SmartFitSystemsApp.MainWindow._mousePosition</a></div><div class="ttdeci">Point _mousePosition</div><div class="ttdoc">Stored mouse position for window dragging from maximized state.</div><div class="ttdef"><b>Definição</b> <a href="#l00038">MainWindow.xaml.cs:38</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a6a58d8b388277a6449c46be645160519"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a6a58d8b388277a6449c46be645160519">HirEV_SmartFitSystemsApp.MainWindow.isDraggingScrollBar</a></div><div class="ttdeci">bool isDraggingScrollBar</div><div class="ttdoc">Flag indicating if user is dragging the scrollbar thumb.</div><div class="ttdef"><b>Definição</b> <a href="#l00032">MainWindow.xaml.cs:32</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a7146e862468abfaeaaac49f2b68af8cb"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7146e862468abfaeaaac49f2b68af8cb">HirEV_SmartFitSystemsApp.MainWindow.SectionViewMain_Click</a></div><div class="ttdeci">void SectionViewMain_Click(object sender, EventArgs e)</div><div class="ttdoc">Handles the click event for the Section View option in the toolbar.</div><div class="ttdef"><b>Definição</b> <a href="#l00393">MainWindow.xaml.cs:393</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a7691b35817f9b7ec0a2ef4b64510a9c2"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7691b35817f9b7ec0a2ef4b64510a9c2">HirEV_SmartFitSystemsApp.MainWindow.RecentPartMenuItem_Click</a></div><div class="ttdeci">async void RecentPartMenuItem_Click(object sender, RoutedEventArgs e)</div><div class="ttdoc">Handles the click event for recent part menu items. Loads the selected part file from the context men...</div><div class="ttdef"><b>Definição</b> <a href="#l00375">MainWindow.xaml.cs:375</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a7fd1e1426895d03c12575be1d84084ed"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a7fd1e1426895d03c12575be1d84084ed">HirEV_SmartFitSystemsApp.MainWindow.DesignControl_Loaded</a></div><div class="ttdeci">void DesignControl_Loaded(object sender, RoutedEventArgs e)</div><div class="ttdoc">Handles the Eyeshot Design control loaded event to close the splash screen.</div><div class="ttdef"><b>Definição</b> <a href="#l00111">MainWindow.xaml.cs:111</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_a805d4723da45c0c249e1f3650ced4ea0"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#a805d4723da45c0c249e1f3650ced4ea0">HirEV_SmartFitSystemsApp.MainWindow.DragThreshold</a></div><div class="ttdeci">const double DragThreshold</div><div class="ttdoc">Minimum pixel movement to start drag operation.</div><div class="ttdef"><b>Definição</b> <a href="#l00036">MainWindow.xaml.cs:36</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_aa6f8d1a53561b1602b5a857cc0d439ae"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa6f8d1a53561b1602b5a857cc0d439ae">HirEV_SmartFitSystemsApp.MainWindow.FacesTreeView_PreviewMouseRightButtonDown</a></div><div class="ttdeci">void FacesTreeView_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)</div><div class="ttdoc">Handles right-click on TreeView items to select them and show context menu.</div><div class="ttdef"><b>Definição</b> <a href="#l00124">MainWindow.xaml.cs:124</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_aa9c76373d60c67ece145acabfe7ea5a4"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aa9c76373d60c67ece145acabfe7ea5a4">HirEV_SmartFitSystemsApp.MainWindow._isDragging</a></div><div class="ttdeci">bool _isDragging</div><div class="ttdoc">Flag indicating if window drag is in progress.</div><div class="ttdef"><b>Definição</b> <a href="#l00040">MainWindow.xaml.cs:40</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_aab2f8b0b121ae6722126dd8bdf527381"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#aab2f8b0b121ae6722126dd8bdf527381">HirEV_SmartFitSystemsApp.MainWindow.FindVisualParent&lt; T &gt;</a></div><div class="ttdeci">T? FindVisualParent&lt; T &gt;(DependencyObject child)</div><div class="ttdoc">Recursively searches up the visual tree for a parent element of the specified type.</div><div class="ttdef"><b>Definição</b> <a href="#l00345">MainWindow.xaml.cs:345</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_ab0eeac70bc0a7ae99e42d5079df4dbd8"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab0eeac70bc0a7ae99e42d5079df4dbd8">HirEV_SmartFitSystemsApp.MainWindow.verticalOffset</a></div><div class="ttdeci">double verticalOffset</div><div class="ttdoc">Initial vertical offset for TreeView scroll dragging.</div><div class="ttdef"><b>Definição</b> <a href="#l00028">MainWindow.xaml.cs:28</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_ab2d9e5a525933bbf851cfa2d3671a203"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab2d9e5a525933bbf851cfa2d3671a203">HirEV_SmartFitSystemsApp.MainWindow.treeScrollViewer</a></div><div class="ttdeci">ScrollViewer? treeScrollViewer</div><div class="ttdoc">ScrollViewer reference for TreeView custom scrolling.</div><div class="ttdef"><b>Definição</b> <a href="#l00030">MainWindow.xaml.cs:30</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_ab4096d5c141e32c858bab26b855d3b04"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ab4096d5c141e32c858bab26b855d3b04">HirEV_SmartFitSystemsApp.MainWindow.FindVisualChild&lt; T &gt;</a></div><div class="ttdeci">T FindVisualChild&lt; T &gt;(DependencyObject parent)</div><div class="ttdoc">Recursively searches the visual tree for a child element of the specified type.</div><div class="ttdef"><b>Definição</b> <a href="#l00319">MainWindow.xaml.cs:319</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_ad9ff6b3879faba6338348aa9ca0c3f8d"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ad9ff6b3879faba6338348aa9ca0c3f8d">HirEV_SmartFitSystemsApp.MainWindow.grid_MouseLeftButtonDown</a></div><div class="ttdeci">void grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)</div><div class="ttdoc">Handles left mouse button down on header grid to enable window dragging.</div><div class="ttdef"><b>Definição</b> <a href="#l00246">MainWindow.xaml.cs:246</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_add200cc9f1f50cbb83523e8971f2ce11"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#add200cc9f1f50cbb83523e8971f2ce11">HirEV_SmartFitSystemsApp.MainWindow.grid_MouseMove</a></div><div class="ttdeci">void grid_MouseMove(object sender, MouseEventArgs e)</div><div class="ttdoc">Handles mouse movement on header grid to restore from maximized state and drag window.</div><div class="ttdef"><b>Definição</b> <a href="#l00264">MainWindow.xaml.cs:264</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_ae5628e22d3d96ed6fef3730c3c808914"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#ae5628e22d3d96ed6fef3730c3c808914">HirEV_SmartFitSystemsApp.MainWindow.TreeScrollViewer_MouseMove</a></div><div class="ttdeci">void TreeScrollViewer_MouseMove(object sender, MouseEventArgs e)</div><div class="ttdoc">Performs custom scroll dragging as mouse moves with left button pressed.</div><div class="ttdef"><b>Definição</b> <a href="#l00194">MainWindow.xaml.cs:194</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_main_window_html_afa58f0b258112aa73537a8327dd407c4"><div class="ttname"><a href="../../dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html#afa58f0b258112aa73537a8327dd407c4">HirEV_SmartFitSystemsApp.MainWindow.MainWindow</a></div><div class="ttdeci">MainWindow()</div><div class="ttdoc">Initializes the main window and sets up the application environment.</div><div class="ttdef"><b>Definição</b> <a href="#l00059">MainWindow.xaml.cs:59</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_html"><div class="ttname"><a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel</a></div><div class="ttdoc">Main ViewModel for the application, handling the main logic and data binding.</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00059">MainViewModel.cs:60</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_view_model_html"><div class="ttname"><a href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a></div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00038">MainViewModel.cs:39</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_html"><div class="ttname"><a href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></div><div class="ttdef"><b>Definição</b> <a href="../../db/d01/_app_8xaml_8cs_source.html#l00005">App.xaml.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+var _path_edit_dialog_8xaml_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathItemViewModel", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model" ],
+    [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog" ]
+];

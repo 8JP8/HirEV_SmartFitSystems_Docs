@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/Configuration/SessionConfig.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('df/d00/_session_config_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SessionConfig.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/d00/_session_config_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">HirEV_SmartFitSystemsApp.Models.Configuration</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac65913fea72c1593dec2766ff1cc4400">   15</a></span>        <span class="keyword">public</span> DateTime <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac65913fea72c1593dec2766ff1cc4400">Timestamp</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = DateTime.Now;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a10b9e40a08d5f87f7f31fc40f48a7c99">   21</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a10b9e40a08d5f87f7f31fc40f48a7c99">SessionName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a02e7e7e355f50eb6f0fe674922e120dc">   26</a></span>        <span class="keyword">public</span> List&lt;ModelFileInfo&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a02e7e7e355f50eb6f0fe674922e120dc">Models</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ModelFileInfo&gt;();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af75bd72bba96e4228f21151ca77e84eb">   31</a></span>        <span class="keyword">public</span> List&lt;int&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af75bd72bba96e4228f21151ca77e84eb">IgnoredFacesIndices</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;int&gt;();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1cf928a6d28172c8227fbb45af356e47">   36</a></span>        <span class="keyword">public</span> List&lt;int&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1cf928a6d28172c8227fbb45af356e47">IgnoredHolesIndices</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;int&gt;();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6ef2e8aaa22cf790853a51189385965b">   41</a></span>        <span class="keyword">public</span> List&lt;int&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6ef2e8aaa22cf790853a51189385965b">FlippedNormals</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;int&gt;();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a5fa812890150e988f7cb85ba11d92dfb">   46</a></span>        <span class="keyword">public</span> List&lt;ColorGroupedMeasurementPointsDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a5fa812890150e988f7cb85ba11d92dfb">MeasurementPoints</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ColorGroupedMeasurementPointsDTO&gt;();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1c93f10b1b7cf60a65e03465e242a219">   51</a></span>        <span class="keyword">public</span> List&lt;ColorGroupedControlPointsDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1c93f10b1b7cf60a65e03465e242a219">Faces</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ColorGroupedControlPointsDTO&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6017793b708d6deee5d2e5998584b64a">   56</a></span>        <span class="keyword">public</span> List&lt;CADHoleExportDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6017793b708d6deee5d2e5998584b64a">Holes</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;CADHoleExportDTO&gt;();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af34c33e0b33cab580eec3a5401cb80b6">   61</a></span>        <span class="keyword">public</span> List&lt;ColorGroupedExportDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af34c33e0b33cab580eec3a5401cb80b6">FullCADData</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ColorGroupedExportDTO&gt;();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a072ea9d5d7c0ed8334f1b93b7321dcfa">   66</a></span>        <span class="keyword">public</span> List&lt;ShellMeshDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a072ea9d5d7c0ed8334f1b93b7321dcfa">ShellMeshes</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ShellMeshDTO&gt;();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac1a16d40760a967dca3e3e8ce4fabd97">   71</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html">SdfShellCacheDTO</a>? <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac1a16d40760a967dca3e3e8ce4fabd97">SdfShellCache</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ad6a1230321382815411bcdae41eb07be">   76</a></span>        <span class="keyword">public</span> List&lt;ShellMeshDTO&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ad6a1230321382815411bcdae41eb07be">EyeshotFaceReferences</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;ShellMeshDTO&gt;();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#acb6ccee9fad8c46829b7a1289a7f1bc8">   81</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a>? <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#acb6ccee9fad8c46829b7a1289a7f1bc8">IgnoredFacesMesh</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a95a0006da6987f4db52228995d7913ed">   86</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html">PathExportDTO</a>? <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a95a0006da6987f4db52228995d7913ed">ProbePathPlanningInfo</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a37a2c64506f551c97ca8260f599eb95a">   91</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html">PathExportDTO</a>? <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a37a2c64506f551c97ca8260f599eb95a">ScannerPathPlanningInfo</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#aa6fa2d19903ecf2b6a99f74060ce85b7">   96</a></span>        <span class="keyword">public</span> Dictionary&lt;string, string&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#aa6fa2d19903ecf2b6a99f74060ce85b7">ColorTolerances</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> Dictionary&lt;string, string&gt;();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac2015ab868e7154928166a0c6b9a01ce">  102</a></span>        <span class="keyword">public</span> List&lt;string&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac2015ab868e7154928166a0c6b9a01ce">ModelFileOrder</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a7ad103dd15eb9d676e36cf4ef9669e1e">  107</a></span>        <span class="keyword">public</span> List&lt;<a class="code hl_namespace" href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a>.<a class="code hl_namespace" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">Utilities</a>.<a class="code hl_class" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html">UndoHistoryEntryDTO</a>&gt; <a class="code hl_property" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a7ad103dd15eb9d676e36cf4ef9669e1e">UndoHistory</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;<a class="code hl_namespace" href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a>.<a class="code hl_namespace" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">Utilities</a>.<a class="code hl_class" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html">UndoHistoryEntryDTO</a>&gt;();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="};">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html">  113</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html">ModelFileInfo</a></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a4afc162eb409d1b918c13d10cd2bcfb5">  118</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a4afc162eb409d1b918c13d10cd2bcfb5">FilePath</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a91b6e27ba3f18549119172d662fa1c54">  123</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a91b6e27ba3f18549119172d662fa1c54">Hash</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a9742b22588cf16a88ff7b185afe68993">  128</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code hl_property" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a9742b22588cf16a88ff7b185afe68993">OriginalTransform</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> <span class="keywordtype">double</span>[16];</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a0cd7c3bb71dd03914f9d8789136d9834">  133</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code hl_property" href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a0cd7c3bb71dd03914f9d8789136d9834">CurrentTransform</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> <span class="keywordtype">double</span>[16];</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info_html"><div class="ttname"><a href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html">HirEV_SmartFitSystemsApp.Models.Configuration.ModelFileInfo</a></div><div class="ttdoc">Holds information about a loaded CAD model file.</div><div class="ttdef"><b>Definição</b> <a href="#l00113">SessionConfig.cs:114</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info_html_a0cd7c3bb71dd03914f9d8789136d9834"><div class="ttname"><a href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a0cd7c3bb71dd03914f9d8789136d9834">HirEV_SmartFitSystemsApp.Models.Configuration.ModelFileInfo.CurrentTransform</a></div><div class="ttdeci">double[] CurrentTransform</div><div class="ttdoc">Gets or sets the current 4x4 transformation matrix array of the model.</div><div class="ttdef"><b>Definição</b> <a href="#l00133">SessionConfig.cs:133</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info_html_a4afc162eb409d1b918c13d10cd2bcfb5"><div class="ttname"><a href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a4afc162eb409d1b918c13d10cd2bcfb5">HirEV_SmartFitSystemsApp.Models.Configuration.ModelFileInfo.FilePath</a></div><div class="ttdeci">string FilePath</div><div class="ttdoc">Gets or sets the absolute path to the model file.</div><div class="ttdef"><b>Definição</b> <a href="#l00118">SessionConfig.cs:118</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info_html_a91b6e27ba3f18549119172d662fa1c54"><div class="ttname"><a href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a91b6e27ba3f18549119172d662fa1c54">HirEV_SmartFitSystemsApp.Models.Configuration.ModelFileInfo.Hash</a></div><div class="ttdeci">string Hash</div><div class="ttdoc">Gets or sets the hash string used to verify if the file has changed.</div><div class="ttdef"><b>Definição</b> <a href="#l00123">SessionConfig.cs:123</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info_html_a9742b22588cf16a88ff7b185afe68993"><div class="ttname"><a href="../../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html#a9742b22588cf16a88ff7b185afe68993">HirEV_SmartFitSystemsApp.Models.Configuration.ModelFileInfo.OriginalTransform</a></div><div class="ttdeci">double[] OriginalTransform</div><div class="ttdoc">Gets or sets the original 4x4 transformation matrix array of the model.</div><div class="ttdef"><b>Definição</b> <a href="#l00128">SessionConfig.cs:128</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig</a></div><div class="ttdoc">Represents the configuration options for a saved user session.</div><div class="ttdef"><b>Definição</b> <a href="#l00010">SessionConfig.cs:11</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a02e7e7e355f50eb6f0fe674922e120dc"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a02e7e7e355f50eb6f0fe674922e120dc">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.Models</a></div><div class="ttdeci">List&lt; ModelFileInfo &gt; Models</div><div class="ttdoc">Gets or sets the list of loaded CAD model file infos.</div><div class="ttdef"><b>Definição</b> <a href="#l00026">SessionConfig.cs:26</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a072ea9d5d7c0ed8334f1b93b7321dcfa"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a072ea9d5d7c0ed8334f1b93b7321dcfa">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.ShellMeshes</a></div><div class="ttdeci">List&lt; ShellMeshDTO &gt; ShellMeshes</div><div class="ttdoc">Gets or sets the list of exported shell mesh objects.</div><div class="ttdef"><b>Definição</b> <a href="#l00066">SessionConfig.cs:66</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a10b9e40a08d5f87f7f31fc40f48a7c99"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a10b9e40a08d5f87f7f31fc40f48a7c99">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.SessionName</a></div><div class="ttdeci">string SessionName</div><div class="ttdoc">Human-readable session name (e.g. the loaded part filename + date). Used to identify this session in ...</div><div class="ttdef"><b>Definição</b> <a href="#l00021">SessionConfig.cs:21</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a1c93f10b1b7cf60a65e03465e242a219"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1c93f10b1b7cf60a65e03465e242a219">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.Faces</a></div><div class="ttdeci">List&lt; ColorGroupedControlPointsDTO &gt; Faces</div><div class="ttdoc">Gets or sets the face control points grouped by color.</div><div class="ttdef"><b>Definição</b> <a href="#l00051">SessionConfig.cs:51</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a1cf928a6d28172c8227fbb45af356e47"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a1cf928a6d28172c8227fbb45af356e47">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.IgnoredHolesIndices</a></div><div class="ttdeci">List&lt; int &gt; IgnoredHolesIndices</div><div class="ttdoc">Gets or sets the indices of holes ignored during analysis.</div><div class="ttdef"><b>Definição</b> <a href="#l00036">SessionConfig.cs:36</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a37a2c64506f551c97ca8260f599eb95a"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a37a2c64506f551c97ca8260f599eb95a">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.ScannerPathPlanningInfo</a></div><div class="ttdeci">PathExportDTO? ScannerPathPlanningInfo</div><div class="ttdoc">Gets or sets the path planning info for scanner-based paths.</div><div class="ttdef"><b>Definição</b> <a href="#l00091">SessionConfig.cs:91</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a5fa812890150e988f7cb85ba11d92dfb"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a5fa812890150e988f7cb85ba11d92dfb">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.MeasurementPoints</a></div><div class="ttdeci">List&lt; ColorGroupedMeasurementPointsDTO &gt; MeasurementPoints</div><div class="ttdoc">Gets or sets the measurement points grouped by color.</div><div class="ttdef"><b>Definição</b> <a href="#l00046">SessionConfig.cs:46</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a6017793b708d6deee5d2e5998584b64a"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6017793b708d6deee5d2e5998584b64a">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.Holes</a></div><div class="ttdeci">List&lt; CADHoleExportDTO &gt; Holes</div><div class="ttdoc">Gets or sets the CAD holes exported data.</div><div class="ttdef"><b>Definição</b> <a href="#l00056">SessionConfig.cs:56</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a6ef2e8aaa22cf790853a51189385965b"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a6ef2e8aaa22cf790853a51189385965b">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.FlippedNormals</a></div><div class="ttdeci">List&lt; int &gt; FlippedNormals</div><div class="ttdoc">Gets or sets the indices of faces with flipped normal vectors.</div><div class="ttdef"><b>Definição</b> <a href="#l00041">SessionConfig.cs:41</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a7ad103dd15eb9d676e36cf4ef9669e1e"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a7ad103dd15eb9d676e36cf4ef9669e1e">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.UndoHistory</a></div><div class="ttdeci">List&lt; HirEV_SmartFitSystemsApp.Utilities.UndoHistoryEntryDTO &gt; UndoHistory</div><div class="ttdoc">Lightweight list representing the timeline of undo/redo actions in this session.</div><div class="ttdef"><b>Definição</b> <a href="#l00107">SessionConfig.cs:107</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_a95a0006da6987f4db52228995d7913ed"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#a95a0006da6987f4db52228995d7913ed">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.ProbePathPlanningInfo</a></div><div class="ttdeci">PathExportDTO? ProbePathPlanningInfo</div><div class="ttdoc">Gets or sets the path planning info for probe/CMM measurement paths.</div><div class="ttdef"><b>Definição</b> <a href="#l00086">SessionConfig.cs:86</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_aa6fa2d19903ecf2b6a99f74060ce85b7"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#aa6fa2d19903ecf2b6a99f74060ce85b7">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.ColorTolerances</a></div><div class="ttdeci">Dictionary&lt; string, string &gt; ColorTolerances</div><div class="ttdoc">Gets or sets the dictionary mapping face colors to tolerance config strings.</div><div class="ttdef"><b>Definição</b> <a href="#l00096">SessionConfig.cs:96</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_ac1a16d40760a967dca3e3e8ce4fabd97"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac1a16d40760a967dca3e3e8ce4fabd97">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.SdfShellCache</a></div><div class="ttdeci">SdfShellCacheDTO? SdfShellCache</div><div class="ttdoc">Gets or sets the signed distance field (SDF) shell cache data.</div><div class="ttdef"><b>Definição</b> <a href="#l00071">SessionConfig.cs:71</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_ac2015ab868e7154928166a0c6b9a01ce"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac2015ab868e7154928166a0c6b9a01ce">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.ModelFileOrder</a></div><div class="ttdeci">List&lt; string &gt; ModelFileOrder</div><div class="ttdoc">Ordered list of model file paths reflecting the user-defined processing order set in the Entity Filte...</div><div class="ttdef"><b>Definição</b> <a href="#l00102">SessionConfig.cs:102</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_ac65913fea72c1593dec2766ff1cc4400"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ac65913fea72c1593dec2766ff1cc4400">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.Timestamp</a></div><div class="ttdeci">DateTime Timestamp</div><div class="ttdoc">Gets or sets the date and time when the session was saved.</div><div class="ttdef"><b>Definição</b> <a href="#l00015">SessionConfig.cs:15</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_acb6ccee9fad8c46829b7a1289a7f1bc8"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#acb6ccee9fad8c46829b7a1289a7f1bc8">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.IgnoredFacesMesh</a></div><div class="ttdeci">ShellMeshDTO? IgnoredFacesMesh</div><div class="ttdoc">Gets or sets the mesh object representing the ignored faces of the models.</div><div class="ttdef"><b>Definição</b> <a href="#l00081">SessionConfig.cs:81</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_ad6a1230321382815411bcdae41eb07be"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#ad6a1230321382815411bcdae41eb07be">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.EyeshotFaceReferences</a></div><div class="ttdeci">List&lt; ShellMeshDTO &gt; EyeshotFaceReferences</div><div class="ttdoc">Gets or sets the Eyeshot visual mesh references for each face.</div><div class="ttdef"><b>Definição</b> <a href="#l00076">SessionConfig.cs:76</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_af34c33e0b33cab580eec3a5401cb80b6"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af34c33e0b33cab580eec3a5401cb80b6">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.FullCADData</a></div><div class="ttdeci">List&lt; ColorGroupedExportDTO &gt; FullCADData</div><div class="ttdoc">Gets or sets the complete CAD data export information.</div><div class="ttdef"><b>Definição</b> <a href="#l00061">SessionConfig.cs:61</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config_html_af75bd72bba96e4228f21151ca77e84eb"><div class="ttname"><a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html#af75bd72bba96e4228f21151ca77e84eb">HirEV_SmartFitSystemsApp.Models.Configuration.SessionConfig.IgnoredFacesIndices</a></div><div class="ttdeci">List&lt; int &gt; IgnoredFacesIndices</div><div class="ttdoc">Gets or sets the indices of faces ignored during analysis.</div><div class="ttdef"><b>Definição</b> <a href="#l00031">SessionConfig.cs:31</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o_html"><div class="ttname"><a href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathExportDTO</a></div><div class="ttdoc">DTO for exporting complete path data with execution order and metadata.</div><div class="ttdef"><b>Definição</b> <a href="../../d3/d00/_path_export_d_t_o_8cs_source.html#l00006">PathExportDTO.cs:7</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o_html"><div class="ttname"><a href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO</a></div><div class="ttdoc">Data Transfer Object for caching signed distance field (SDF) shell computations. Used for serializati...</div><div class="ttdef"><b>Definição</b> <a href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00011">SdfShellCacheDTO.cs:12</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO</a></div><div class="ttdoc">Data Transfer Object representing a mesh shell. Used to serialize and deserialize geometry data effic...</div><div class="ttdef"><b>Definição</b> <a href="../../d5/d03/_shell_mesh_d_t_o_8cs_source.html#l00012">ShellMeshDTO.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o_html"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html">HirEV_SmartFitSystemsApp.Utilities.UndoHistoryEntryDTO</a></div><div class="ttdoc">Lightweight DTO for persisting undo history entries into session configuration.</div><div class="ttdef"><b>Definição</b> <a href="../../dd/d02/_undo_manager_8cs_source.html#l00201">UndoManager.cs:202</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_html"><div class="ttname"><a href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">HirEV_SmartFitSystemsApp.Models.Configuration</a></div><div class="ttdef"><b>Definição</b> <a href="#l00005">SessionConfig.cs:6</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_html"><div class="ttname"><a href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div><div class="ttdef"><b>Definição</b> <a href="../../d4/d00/_c_a_d_grouped_export_d_t_o_8cs_source.html#l00001">CADGroupedExportDTO.cs:2</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_html"><div class="ttname"><a href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00022">PathManager.cs:23</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_html"><div class="ttname"><a href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></div><div class="ttdef"><b>Definição</b> <a href="../../db/d01/_app_8xaml_8cs_source.html#l00005">App.xaml.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html','../../','dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ant Colony Optimization (ACO) algorithm for optimizing CMM measurement paths. Solves the Traveling Salesman Problem (TSP) to minimize total distance.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_ant_colony_optimization_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_ant_colony_optimization_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_ant_colony_optimization_coll__map">
+<area shape="rect" title="Ant Colony Optimization (ACO) algorithm for optimizing CMM measurement paths. Solves the Traveling Sa..." alt="" coords="5,5,205,411"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:AntPath" id="r_AntPath"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a solution (path) constructed by an ant.  <a href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a66ae0762efda9826b4893c1601fe9ac9" id="r_a66ae0762efda9826b4893c1601fe9ac9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a66ae0762efda9826b4893c1601fe9ac9">AntColonyOptimization</a> ()</td></tr>
+<tr class="memdesc:a66ae0762efda9826b4893c1601fe9ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html" title="Ant Colony Optimization (ACO) algorithm for optimizing CMM measurement paths. Solves the Traveling Sa...">AntColonyOptimization</a> class.  <br /></td></tr>
+<tr class="memitem:abe27310c6d14a1bc5097cf142982a51a" id="r_abe27310c6d14a1bc5097cf142982a51a"><td class="memItemLeft">List&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abe27310c6d14a1bc5097cf142982a51a">OptimizePathACO</a> (List&lt; Point3D &gt; points, int numAnts=10, int numIterations=50, double alpha=1.0, double beta=2.0, double rho=0.1)</td></tr>
+<tr class="memdesc:abe27310c6d14a1bc5097cf142982a51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony Optimization.  <br /></td></tr>
+<tr class="memitem:afb12344f225f337d75ece238e8e60629" id="r_afb12344f225f337d75ece238e8e60629"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#afb12344f225f337d75ece238e8e60629">CalculatePathDistance</a> (List&lt; int &gt; cityOrder)</td></tr>
+<tr class="memdesc:afb12344f225f337d75ece238e8e60629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total distance of a path given as a list of indices.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a05972e9de1fafd8e525aa5b4949cadf3" id="r_a05972e9de1fafd8e525aa5b4949cadf3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a05972e9de1fafd8e525aa5b4949cadf3">BuildDistanceMatrix</a> (List&lt; Point3D &gt; points)</td></tr>
+<tr class="memdesc:a05972e9de1fafd8e525aa5b4949cadf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix of Euclidean distances between all point pairs.  <br /></td></tr>
+<tr class="memitem:a1eee746bad0148e9c04a70d490b1295c" id="r_a1eee746bad0148e9c04a70d490b1295c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1eee746bad0148e9c04a70d490b1295c">InitializePheromoneMatrix</a> ()</td></tr>
+<tr class="memdesc:a1eee746bad0148e9c04a70d490b1295c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes pheromone matrix with uniform value τ₀ = 1.0.  <br /></td></tr>
+<tr class="memitem:aa7a7aa8412b0cae00d85f6eed3021bd5" id="r_aa7a7aa8412b0cae00d85f6eed3021bd5"><td class="memItemLeft"><a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7a7aa8412b0cae00d85f6eed3021bd5">ConstructAntSolution</a> (int startCity)</td></tr>
+<tr class="memdesc:aa7a7aa8412b0cae00d85f6eed3021bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a solution (path) for an ant using probabilistic transition rules.  <br /></td></tr>
+<tr class="memitem:a37ee899624338cb8a25e01ca97482ecf" id="r_a37ee899624338cb8a25e01ca97482ecf"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a37ee899624338cb8a25e01ca97482ecf">SelectNextCity</a> (int currentCity, HashSet&lt; int &gt; unvisited)</td></tr>
+<tr class="memdesc:a37ee899624338cb8a25e01ca97482ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,j]^α * η[i,j]^β) / Σ(τ[i,k]^α * η[i,k]^β) where η[i,j] = 1/d[i,j] (proximity heuristic).  <br /></td></tr>
+<tr class="memitem:a6c483f4b3ec2ac49fd24787d2ae6608b" id="r_a6c483f4b3ec2ac49fd24787d2ae6608b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c483f4b3ec2ac49fd24787d2ae6608b">UpdatePheromone</a> (List&lt; <a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a> &gt; iterationPaths, <a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a>? globalBest)</td></tr>
+<tr class="memdesc:a6c483f4b3ec2ac49fd24787d2ae6608b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates pheromone matrix after iteration. Formula: τ'[i,j] = (1-ρ)·τ[i,j] + Δτ[i,j] where Δτ[i,j] = Q/L (L = path length).  <br /></td></tr>
+<tr class="memitem:a4cae768cf4421e12e452813ee8d3f8f7" id="r_a4cae768cf4421e12e452813ee8d3f8f7"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a4cae768cf4421e12e452813ee8d3f8f7">CalculateSequentialDistance</a> (List&lt; Point3D &gt; points)</td></tr>
+<tr class="memdesc:a4cae768cf4421e12e452813ee8d3f8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates sequential path distance (baseline for comparison).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:acca65f96d832eaede56a4076047e595e" id="r_acca65f96d832eaede56a4076047e595e"><td class="memItemLeft">double?[,]&#160;</td><td class="memItemRight"><a class="el" href="#acca65f96d832eaede56a4076047e595e">_distanceMatrix</a></td></tr>
+<tr class="memitem:af765f288d2963762eb5feb4283c087b0" id="r_af765f288d2963762eb5feb4283c087b0"><td class="memItemLeft">double?[,]&#160;</td><td class="memItemRight"><a class="el" href="#af765f288d2963762eb5feb4283c087b0">_pheromoneMatrix</a></td></tr>
+<tr class="memitem:ab7f1e4eaa2c778325896cb5c89ab2bc1" id="r_ab7f1e4eaa2c778325896cb5c89ab2bc1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab7f1e4eaa2c778325896cb5c89ab2bc1">_numCities</a></td></tr>
+<tr class="memitem:a659e0603dd405f4a037cc19eaf0177e6" id="r_a659e0603dd405f4a037cc19eaf0177e6"><td class="memItemLeft">Random&#160;</td><td class="memItemRight"><a class="el" href="#a659e0603dd405f4a037cc19eaf0177e6">_random</a></td></tr>
+<tr class="memitem:a35936a49f1ac7fb344f148cebd9718fb" id="r_a35936a49f1ac7fb344f148cebd9718fb"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a35936a49f1ac7fb344f148cebd9718fb">_alpha</a> = 1.0</td></tr>
+<tr class="memitem:a02689e650646c56793b0a33d053adea4" id="r_a02689e650646c56793b0a33d053adea4"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a02689e650646c56793b0a33d053adea4">_beta</a> = 2.0</td></tr>
+<tr class="memitem:a48a59a8828e70c6b58dd8e6ccd7a201a" id="r_a48a59a8828e70c6b58dd8e6ccd7a201a"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a48a59a8828e70c6b58dd8e6ccd7a201a">_rho</a> = 0.1</td></tr>
+<tr class="memitem:a19cba035bd7b4ce2044c8c6dd3b87483" id="r_a19cba035bd7b4ce2044c8c6dd3b87483"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a19cba035bd7b4ce2044c8c6dd3b87483">_q</a> = 100.0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Ant Colony Optimization (ACO) algorithm for optimizing CMM measurement paths. Solves the Traveling Salesman Problem (TSP) to minimize total distance. </p>
+<p>Based on: Stojadinovic et al. (2016) - "Towards an intelligent approach for CMM inspection planning" Section 3.4: ACO Optimization</p>
+<p>Experimental results from the papers:</p><ul>
+<li>20% shorter vs ZEISS UMM500 online programming</li>
+<li>10% shorter vs CMM Pro/ENGINEER module</li>
+</ul>
+<p>Typical parameters:</p><ul>
+<li>α (alpha): 1.0 - pheromone weight</li>
+<li>β (beta): 2.0 - heuristic distance weight</li>
+<li>ρ (rho): 0.1 - pheromone evaporation rate</li>
+<li>Q: 100.0 - pheromone deposit intensity </li>
+</ul>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a66ae0762efda9826b4893c1601fe9ac9" name="a66ae0762efda9826b4893c1601fe9ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ae0762efda9826b4893c1601fe9ac9">&#9670;&#160;</a></span>AntColonyOptimization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.AntColonyOptimization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html" title="Ant Colony Optimization (ACO) algorithm for optimizing CMM measurement paths. Solves the Traveling Sa...">AntColonyOptimization</a> class. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00087">87</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00072">_random</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a05972e9de1fafd8e525aa5b4949cadf3" name="a05972e9de1fafd8e525aa5b4949cadf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05972e9de1fafd8e525aa5b4949cadf3">&#9670;&#160;</a></span>BuildDistanceMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.BuildDistanceMatrix </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds a matrix of Euclidean distances between all point pairs. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00235">235</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00069">_distanceMatrix</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a05972e9de1fafd8e525aa5b4949cadf3_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a05972e9de1fafd8e525aa5b4949cadf3_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a05972e9de1fafd8e525aa5b4949cadf3_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a05972e9de1fafd8e525aa5b4949cadf3_icgraph">
+<area shape="rect" title="Builds a matrix of Euclidean distances between all point pairs." alt="" coords="261,5,468,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb12344f225f337d75ece238e8e60629" name="afb12344f225f337d75ece238e8e60629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb12344f225f337d75ece238e8e60629">&#9670;&#160;</a></span>CalculatePathDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.CalculatePathDistance </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>cityOrder</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the total distance of a path given as a list of indices. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00212">212</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00069">_distanceMatrix</a>.</p>
+
+</div>
+</div>
+<a id="a4cae768cf4421e12e452813ee8d3f8f7" name="a4cae768cf4421e12e452813ee8d3f8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cae768cf4421e12e452813ee8d3f8f7">&#9670;&#160;</a></span>CalculateSequentialDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.CalculateSequentialDistance </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates sequential path distance (baseline for comparison). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00411">411</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a4cae768cf4421e12e452813ee8d3f8f7_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a4cae768cf4421e12e452813ee8d3f8f7_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a4cae768cf4421e12e452813ee8d3f8f7_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a4cae768cf4421e12e452813ee8d3f8f7_icgraph">
+<area shape="rect" title="Calculates sequential path distance (baseline for comparison)." alt="" coords="261,5,468,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa7a7aa8412b0cae00d85f6eed3021bd5" name="aa7a7aa8412b0cae00d85f6eed3021bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a7aa8412b0cae00d85f6eed3021bd5">&#9670;&#160;</a></span>ConstructAntSolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a> HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.ConstructAntSolution </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>startCity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a solution (path) for an ant using probabilistic transition rules. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00277">277</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00069">_distanceMatrix</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_cgraph">
+<area shape="rect" title="Constructs a solution (path) for an ant using probabilistic transition rules." alt="" coords="5,5,213,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a37ee899624338cb8a25e01ca97482ecf" title="Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,..." alt="" coords="261,5,468,64"/>
+<area shape="poly" title=" " alt="" coords="213,32,248,34,243,35,213,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_aa7a7aa8412b0cae00d85f6eed3021bd5_icgraph">
+<area shape="rect" title="Constructs a solution (path) for an ant using probabilistic transition rules." alt="" coords="261,5,468,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1eee746bad0148e9c04a70d490b1295c" name="a1eee746bad0148e9c04a70d490b1295c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eee746bad0148e9c04a70d490b1295c">&#9670;&#160;</a></span>InitializePheromoneMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.InitializePheromoneMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes pheromone matrix with uniform value τ₀ = 1.0. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00261">261</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00070">_pheromoneMatrix</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a1eee746bad0148e9c04a70d490b1295c_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a1eee746bad0148e9c04a70d490b1295c_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a1eee746bad0148e9c04a70d490b1295c_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a1eee746bad0148e9c04a70d490b1295c_icgraph">
+<area shape="rect" title="Initializes pheromone matrix with uniform value τ₀ = 1.0." alt="" coords="261,5,468,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe27310c6d14a1bc5097cf142982a51a" name="abe27310c6d14a1bc5097cf142982a51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe27310c6d14a1bc5097cf142982a51a">&#9670;&#160;</a></span>OptimizePathACO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; int &gt; HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.OptimizePathACO </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numAnts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>beta</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>rho</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony Optimization. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>List of 3D points to order</td></tr>
+    <tr><td class="paramname">numAnts</td><td>Number of ants per iteration (recommended: min(10, N/5))</td></tr>
+    <tr><td class="paramname">numIterations</td><td>Number of iterations (recommended: 30-50)</td></tr>
+    <tr><td class="paramname">alpha</td><td>Pheromone weight (default: 1.0)</td></tr>
+    <tr><td class="paramname">beta</td><td>Distance weight (default: 2.0)</td></tr>
+    <tr><td class="paramname">rho</td><td>Evaporation rate (default: 0.1)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>List of indices representing the optimized order</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">107</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00075">_alpha</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00076">_beta</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00077">_rho</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00235">BuildDistanceMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00411">CalculateSequentialDistance()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00035">HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.AntPath.CityOrder</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00055">HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.AntPath.Clone()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00277">ConstructAntSolution()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00261">InitializePheromoneMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00040">HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.AntPath.TotalDistance</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">UpdatePheromone()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_abe27310c6d14a1bc5097cf142982a51a_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_abe27310c6d14a1bc5097cf142982a51a_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_abe27310c6d14a1bc5097cf142982a51a_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_abe27310c6d14a1bc5097cf142982a51a_cgraph">
+<area shape="rect" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,212,213,271"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a05972e9de1fafd8e525aa5b4949cadf3" title="Builds a matrix of Euclidean distances between all point pairs." alt="" coords="261,5,468,64"/>
+<area shape="poly" title=" " alt="" coords="128,210,183,143,219,106,259,74,269,70,265,74,262,78,223,110,187,146,133,213"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a4cae768cf4421e12e452813ee8d3f8f7" title="Calculates sequential path distance (baseline for comparison)." alt="" coords="261,88,468,147"/>
+<area shape="poly" title=" " alt="" coords="159,209,259,156,274,152,270,155,262,161,163,214"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html#a7e7ece535cd72f2b8692a555626d1002" title="Creates a deep copy of this path." alt="" coords="261,171,468,229"/>
+<area shape="poly" title=" " alt="" coords="212,222,247,218,243,221,214,227"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#aa7a7aa8412b0cae00d85f6eed3021bd5" title="Constructs a solution (path) for an ant using probabilistic transition rules." alt="" coords="261,253,468,312"/>
+<area shape="poly" title=" " alt="" coords="212,256,248,262,243,264,214,261"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a1eee746bad0148e9c04a70d490b1295c" title="Initializes pheromone matrix with uniform value τ₀ = 1.0." alt="" coords="261,336,468,395"/>
+<area shape="poly" title=" " alt="" coords="161,269,262,322,275,329,269,329,259,326,161,274"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a6c483f4b3ec2ac49fd24787d2ae6608b" title="Updates pheromone matrix after iteration. Formula: τ&#39;[i,j] = (1&#45;ρ)·τ[i,j] + Δτ[i,j] where Δτ[i,..." alt="" coords="261,419,468,477"/>
+<area shape="poly" title=" " alt="" coords="131,268,187,336,223,372,262,405,270,411,264,410,259,409,219,376,183,340,130,273"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html#a30989de62d341eb95df92272c052c30d" title="Initializes a new instance of the AntPath class." alt="" coords="516,171,723,229"/>
+<area shape="poly" title=" " alt="" coords="468,197,503,199,498,201,469,203"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a37ee899624338cb8a25e01ca97482ecf" title="Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,..." alt="" coords="516,253,723,312"/>
+<area shape="poly" title=" " alt="" coords="468,280,503,282,498,283,469,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a37ee899624338cb8a25e01ca97482ecf" name="a37ee899624338cb8a25e01ca97482ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ee899624338cb8a25e01ca97482ecf">&#9670;&#160;</a></span>SelectNextCity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.SelectNextCity </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>currentCity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HashSet&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>unvisited</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,j]^α * η[i,j]^β) / Σ(τ[i,k]^α * η[i,k]^β) where η[i,j] = 1/d[i,j] (proximity heuristic). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">306</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00075">_alpha</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00076">_beta</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00069">_distanceMatrix</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00070">_pheromoneMatrix</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00072">_random</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00277">ConstructAntSolution()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a37ee899624338cb8a25e01ca97482ecf_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a37ee899624338cb8a25e01ca97482ecf_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a37ee899624338cb8a25e01ca97482ecf_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a37ee899624338cb8a25e01ca97482ecf_icgraph">
+<area shape="rect" title="Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,..." alt="" coords="516,5,723,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#aa7a7aa8412b0cae00d85f6eed3021bd5" title="Constructs a solution (path) for an ant using probabilistic transition rules." alt="" coords="261,5,468,64"/>
+<area shape="poly" title=" " alt="" coords="498,35,468,37,468,32,503,35"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c483f4b3ec2ac49fd24787d2ae6608b" name="a6c483f4b3ec2ac49fd24787d2ae6608b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c483f4b3ec2ac49fd24787d2ae6608b">&#9670;&#160;</a></span>UpdatePheromone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.UpdatePheromone </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>iterationPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html">AntPath</a>?</td>          <td class="paramname"><span class="paramname"><em>globalBest</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates pheromone matrix after iteration. Formula: τ'[i,j] = (1-ρ)·τ[i,j] + Δτ[i,j] where Δτ[i,j] = Q/L (L = path length). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">354</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">_numCities</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00070">_pheromoneMatrix</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00078">_q</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00077">_rho</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a6c483f4b3ec2ac49fd24787d2ae6608b_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a6c483f4b3ec2ac49fd24787d2ae6608b_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a6c483f4b3ec2ac49fd24787d2ae6608b_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_a6c483f4b3ec2ac49fd24787d2ae6608b_icgraph">
+<area shape="rect" title="Updates pheromone matrix after iteration. Formula: τ&#39;[i,j] = (1&#45;ρ)·τ[i,j] + Δτ[i,j] where Δτ[i,..." alt="" coords="261,5,468,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#abe27310c6d14a1bc5097cf142982a51a" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,5,213,64"/>
+<area shape="poly" title=" " alt="" coords="242,35,213,37,213,32,248,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a35936a49f1ac7fb344f148cebd9718fb" name="a35936a49f1ac7fb344f148cebd9718fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35936a49f1ac7fb344f148cebd9718fb">&#9670;&#160;</a></span>_alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._alpha = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00075">75</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a>.</p>
+
+</div>
+</div>
+<a id="a02689e650646c56793b0a33d053adea4" name="a02689e650646c56793b0a33d053adea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02689e650646c56793b0a33d053adea4">&#9670;&#160;</a></span>_beta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._beta = 2.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00076">76</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a>.</p>
+
+</div>
+</div>
+<a id="acca65f96d832eaede56a4076047e595e" name="acca65f96d832eaede56a4076047e595e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca65f96d832eaede56a4076047e595e">&#9670;&#160;</a></span>_distanceMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double? [,] HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._distanceMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00069">69</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00235">BuildDistanceMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00212">CalculatePathDistance()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00277">ConstructAntSolution()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a>.</p>
+
+</div>
+</div>
+<a id="ab7f1e4eaa2c778325896cb5c89ab2bc1" name="ab7f1e4eaa2c778325896cb5c89ab2bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f1e4eaa2c778325896cb5c89ab2bc1">&#9670;&#160;</a></span>_numCities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._numCities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00071">71</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00235">BuildDistanceMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00277">ConstructAntSolution()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00261">InitializePheromoneMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">UpdatePheromone()</a>.</p>
+
+</div>
+</div>
+<a id="af765f288d2963762eb5feb4283c087b0" name="af765f288d2963762eb5feb4283c087b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af765f288d2963762eb5feb4283c087b0">&#9670;&#160;</a></span>_pheromoneMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double? [,] HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._pheromoneMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00070">70</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00261">InitializePheromoneMatrix()</a>, <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">UpdatePheromone()</a>.</p>
+
+</div>
+</div>
+<a id="a19cba035bd7b4ce2044c8c6dd3b87483" name="a19cba035bd7b4ce2044c8c6dd3b87483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cba035bd7b4ce2044c8c6dd3b87483">&#9670;&#160;</a></span>_q</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._q = 100.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00078">78</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">UpdatePheromone()</a>.</p>
+
+</div>
+</div>
+<a id="a659e0603dd405f4a037cc19eaf0177e6" name="a659e0603dd405f4a037cc19eaf0177e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659e0603dd405f4a037cc19eaf0177e6">&#9670;&#160;</a></span>_random</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Random HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._random</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00072">72</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00087">AntColonyOptimization()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00306">SelectNextCity()</a>.</p>
+
+</div>
+</div>
+<a id="a48a59a8828e70c6b58dd8e6ccd7a201a" name="a48a59a8828e70c6b58dd8e6ccd7a201a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a59a8828e70c6b58dd8e6ccd7a201a">&#9670;&#160;</a></span>_rho</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization._rho = 0.1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00077">77</a> do ficheiro <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00107">OptimizePathACO()</a> e <a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html#l00354">UpdatePheromone()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d5/d00/_ant_colony_optimization_8cs_source.html">AntColonyOptimization.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

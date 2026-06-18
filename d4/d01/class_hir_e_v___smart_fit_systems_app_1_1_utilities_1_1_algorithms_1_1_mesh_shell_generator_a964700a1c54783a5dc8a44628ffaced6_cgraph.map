@@ -1,0 +1,33 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildScaledSolidShellAsync" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildScaledSolidShellAsync">
+<area shape="rect" id="Node000001" title="Builds a shell by offsetting the part&#39;s exterior surfaces outward. This method:" alt="" coords="5,275,252,333"/>
+<area shape="rect" id="Node000002" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#afd75bdaf00104774ea32f4a270f07ec4" title="Fallback method: builds shell by manually offsetting mesh vertices. Used when Surface...." alt="" coords="306,92,564,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,272,224,224,298,175,341,156,337,159,301,180,227,228,166,276"/>
+<area shape="rect" id="Node000006" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a409d0b66a560fe61bc658e239edfeba1" title="Welds (merges) duplicate vertices that are within a tolerance distance. This creates a continuous she..." alt="" coords="664,171,860,229"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="176,272,234,242,299,219,389,201,482,192,570,189,651,192,646,194,570,194,482,197,390,207,300,224,236,247,180,276"/>
+<area shape="rect" id="Node000007" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a2470bed8b9834e326d157f4baafd8d76" title="Calculates the centroid of a single face mesh (average of all vertices)." alt="" coords="328,233,543,292"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="251,285,314,278,310,281,253,290"/>
+<area shape="rect" id="Node000008" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#abbba2f47685315b86badb5002620a518" title="Calculates vertex normals for a single face mesh by averaging adjacent triangle normals." alt="" coords="300,316,571,375"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="251,318,287,324,282,326,253,323"/>
+<area shape="rect" id="Node000009" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ace98e64f8bd110084df5ed319ab397a7" title="Simple stitching: connects adjacent offset faces with ruled surfaces (rectangles)." alt="" coords="314,399,557,457"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="186,331,301,384,319,393,314,393,299,389,186,337"/>
+<area shape="rect" id="Node000014" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#afc56168bb44d7d684d097065d809b569" title="Advanced stitching: uses Surface.Fillet() to create smooth transitions between adjacent faces...." alt="" coords="303,481,568,540"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="153,331,216,400,257,436,301,467,311,474,305,474,298,472,253,440,212,403,152,336"/>
+<area shape="rect" id="Node000003" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ad8dfdf3772ca0277fade16d25e02b990" title="Ensures all mesh normals point outward from the part centroid." alt="" coords="651,5,872,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="547,89,639,67,634,69,550,94"/>
+<area shape="rect" id="Node000005" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a2abb6836e537e23e9fcf184510b41576" title="Manually offsets a mesh by moving each vertex along its computed normal. Fallback method when Eyeshot..." alt="" coords="661,88,862,147"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="564,117,648,118,643,120,566,122"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="560,149,651,172,646,174,560,154"/>
+<area shape="rect" id="Node000004" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a0353e44e664561063904ca1c1fcf6b42" title="Computes the normal of a triangle." alt="" coords="952,5,1176,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="872,32,939,34,934,35,874,37"/>
+<area shape="rect" id="Node000010" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#afed6066c8e57efa5ca6fcaebf1442b39" title="Optimized: Builds adjacency map using spatial hashing for O(n) instead of O(n²)." alt="" coords="619,440,904,499"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="558,441,607,449,601,450,558,446"/>
+<area shape="rect" id="Node000012" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a352f5a4d0c711395e19ce98a8100ca33" title="Finds ALL shared edges between two face vertex arrays. Returns global mesh indices for stitching." alt="" coords="662,357,862,416"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="557,410,649,401,643,402,558,415"/>
+<area shape="rect" id="Node000011" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ab2cbf0f6c48e02f4f4d57827a2514db5" title=" " alt="" coords="966,440,1162,499"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="905,467,953,469,947,470,905,472"/>
+<area shape="rect" id="Node000013" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a94154836487ad82063a0e3209745bb4c" title="Creates a spatial hash for an edge to speed up matching." alt="" coords="966,357,1162,416"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="862,384,953,386,948,387,863,389"/>
+<area shape="poly" id="edge14_Node000014_Node000010" title=" " alt="" coords="568,491,606,489,601,490,569,496"/>
+<area shape="rect" id="Node000015" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a8dceff755c8f78e310c26966b74aafae" title="Converts AnalyticSurf to Surface using GetSurface() method." alt="" coords="642,523,881,597"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="568,528,630,540,624,540,568,533"/>
+</map>

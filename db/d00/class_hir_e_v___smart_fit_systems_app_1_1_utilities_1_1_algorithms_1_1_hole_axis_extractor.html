@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html','../../','d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Extracts hole axis information and generates axis-constrained probe paths for hole features. Implements the axis-only probing rule: travel along hole centerline, move radially to measurement points.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_axis_extractor_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_axis_extractor_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_axis_extractor_coll__map">
+<area shape="rect" title="Extracts hole axis information and generates axis&#45;constrained probe paths for hole features...." alt="" coords="5,5,236,293"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:HoleAxisInfo" id="r_HoleAxisInfo"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the extracted axis information for a hole feature.  <a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:HoleProbeStep" id="r_HoleProbeStep"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single step in a hole probing sequence.  <a href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:a03340f5888b97a74bfae31f56eeb2889" id="r_a03340f5888b97a74bfae31f56eeb2889"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a03340f5888b97a74bfae31f56eeb2889">HoleProbeStepType</a> { <br />
+&#160;&#160;<a class="el" href="#a03340f5888b97a74bfae31f56eeb2889ad6f695a90320313b16ccbd055930bd7a">MoveToAxisEntrance</a>
+, <a class="el" href="#a03340f5888b97a74bfae31f56eeb2889a2dcad69b84432b2699bc4d8789e110a8">MoveAlongAxis</a>
+, <a class="el" href="#a03340f5888b97a74bfae31f56eeb2889a6b1e6f31dadf6ed27bf7700ae8ab6467">MoveRadialToMeasurement</a>
+, <a class="el" href="#a03340f5888b97a74bfae31f56eeb2889a98591c841b317e00fc86510e4deac4de">MoveRadialToAxis</a>
+, <br />
+&#160;&#160;<a class="el" href="#a03340f5888b97a74bfae31f56eeb2889a3c419db7dd2723288a2eca99016632c3">ExitToShell</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a03340f5888b97a74bfae31f56eeb2889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single step in a hole probing sequence.  <a href="#a03340f5888b97a74bfae31f56eeb2889">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a79b9b90b8ace4912b7cbc0b8a47dcc52" id="r_a79b9b90b8ace4912b7cbc0b8a47dcc52"><td class="memItemLeft">static ? <a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a79b9b90b8ace4912b7cbc0b8a47dcc52">DetectHoleAxis</a> (<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> hole)</td></tr>
+<tr class="memdesc:a79b9b90b8ace4912b7cbc0b8a47dcc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects and extracts the axis information for a <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html" title="Data model representing a detected hole feature in a 3D CAD model. Holes are identified from pairs of...">CADHole</a>.  <br /></td></tr>
+<tr class="memitem:af0aaa68770aa3b1fe298e71458401cfb" id="r_af0aaa68770aa3b1fe298e71458401cfb"><td class="memItemLeft">static Point3D&#160;</td><td class="memItemRight"><a class="el" href="#af0aaa68770aa3b1fe298e71458401cfb">ComputeAxisEntranceFromShell</a> (<a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a> holeAxis, double shellSafeDistance=5.0)</td></tr>
+<tr class="memdesc:af0aaa68770aa3b1fe298e71458401cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the axis entrance point on the shell mesh for a given hole. This is the point where the probe enters the shell to approach the hole.  <br /></td></tr>
+<tr class="memitem:a872a89c5759f18c4ae2d6cc008984214" id="r_a872a89c5759f18c4ae2d6cc008984214"><td class="memItemLeft">static List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a872a89c5759f18c4ae2d6cc008984214">GenerateHoleProbeSequence</a> (<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> hole, List&lt; Point3D &gt; measurementPoints, <a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a>? axisInfo=null, double shellSafeDistance=5.0)</td></tr>
+<tr class="memdesc:a872a89c5759f18c4ae2d6cc008984214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the complete probing sequence for measuring points inside a hole. Follows the axis-only rule: enter via axis, move radially to each measurement, exit via axis.  <br /></td></tr>
+<tr class="memitem:aec5eb6335ffb370072f561707fb1fefb" id="r_aec5eb6335ffb370072f561707fb1fefb"><td class="memItemLeft">static List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aec5eb6335ffb370072f561707fb1fefb">ConvertSequenceToPath</a> (List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt; steps)</td></tr>
+<tr class="memdesc:aec5eb6335ffb370072f561707fb1fefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hole probe sequence to a list of 3D points for path generation.  <br /></td></tr>
+<tr class="memitem:a284c8871310ce3c89877165f89ff7bfd" id="r_a284c8871310ce3c89877165f89ff7bfd"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a284c8871310ce3c89877165f89ff7bfd">ConvertSequenceToPathWithNormals</a> (List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt; steps, out List&lt; Point3D &gt; points, out List&lt; Vector3D &gt; normals)</td></tr>
+<tr class="memdesc:a284c8871310ce3c89877165f89ff7bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hole probe sequence to points and normals for path generation.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a7784909db0a582ea54371122f410ea5e" id="r_a7784909db0a582ea54371122f410ea5e"><td class="memItemLeft">static ? Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#a7784909db0a582ea54371122f410ea5e">TryParseAxisFromGeometricInfo</a> (string geometricInfo)</td></tr>
+<tr class="memdesc:a7784909db0a582ea54371122f410ea5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse axis direction from a GeometricInfo string.  <br /></td></tr>
+<tr class="memitem:aa8f84dacb01708bef6d299491df48682" id="r_aa8f84dacb01708bef6d299491df48682"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#aa8f84dacb01708bef6d299491df48682">GetDepthAlongAxis</a> (Point3D point, <a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a> axis)</td></tr>
+<tr class="memdesc:aa8f84dacb01708bef6d299491df48682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the depth of a point along the hole axis from the top.  <br /></td></tr>
+<tr class="memitem:a93ed15230bc3dafa813aff67b8bed686" id="r_a93ed15230bc3dafa813aff67b8bed686"><td class="memItemLeft">static Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a93ed15230bc3dafa813aff67b8bed686">GetAxisPointAtZ</a> (<a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a> axis, double z)</td></tr>
+<tr class="memdesc:a93ed15230bc3dafa813aff67b8bed686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the point on the hole axis at a specific Z coordinate. Assumes axis is primarily vertical; adjusts for non-vertical holes.  <br /></td></tr>
+<tr class="memitem:ad8eb09c3ee05899fa0dbc0bf99dc11dd" id="r_ad8eb09c3ee05899fa0dbc0bf99dc11dd"><td class="memItemLeft">static Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#ad8eb09c3ee05899fa0dbc0bf99dc11dd">ComputeRadialDirection</a> (Point3D axisPoint, Point3D measurePoint)</td></tr>
+<tr class="memdesc:ad8eb09c3ee05899fa0dbc0bf99dc11dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the radial direction from axis point to measurement point.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Extracts hole axis information and generates axis-constrained probe paths for hole features. Implements the axis-only probing rule: travel along hole centerline, move radially to measurement points. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00011">11</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentação das enumerações</h2>
+<a id="a03340f5888b97a74bfae31f56eeb2889" name="a03340f5888b97a74bfae31f56eeb2889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03340f5888b97a74bfae31f56eeb2889">&#9670;&#160;</a></span>HoleProbeStepType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a03340f5888b97a74bfae31f56eeb2889">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleProbeStepType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents a single step in a hole probing sequence. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="a03340f5888b97a74bfae31f56eeb2889ad6f695a90320313b16ccbd055930bd7a" name="a03340f5888b97a74bfae31f56eeb2889ad6f695a90320313b16ccbd055930bd7a"></a>MoveToAxisEntrance&#160;</td><td class="fielddoc"><p>Move to axis entrance point on shell. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a03340f5888b97a74bfae31f56eeb2889a2dcad69b84432b2699bc4d8789e110a8" name="a03340f5888b97a74bfae31f56eeb2889a2dcad69b84432b2699bc4d8789e110a8"></a>MoveAlongAxis&#160;</td><td class="fielddoc"><p>Move along hole axis (descent or ascent). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a03340f5888b97a74bfae31f56eeb2889a6b1e6f31dadf6ed27bf7700ae8ab6467" name="a03340f5888b97a74bfae31f56eeb2889a6b1e6f31dadf6ed27bf7700ae8ab6467"></a>MoveRadialToMeasurement&#160;</td><td class="fielddoc"><p>Move radially from axis to measurement point. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a03340f5888b97a74bfae31f56eeb2889a98591c841b317e00fc86510e4deac4de" name="a03340f5888b97a74bfae31f56eeb2889a98591c841b317e00fc86510e4deac4de"></a>MoveRadialToAxis&#160;</td><td class="fielddoc"><p>Move radially from measurement point back to axis. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a03340f5888b97a74bfae31f56eeb2889a3c419db7dd2723288a2eca99016632c3" name="a03340f5888b97a74bfae31f56eeb2889a3c419db7dd2723288a2eca99016632c3"></a>ExitToShell&#160;</td><td class="fielddoc"><p>Exit hole via axis to shell. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00055">55</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="af0aaa68770aa3b1fe298e71458401cfb" name="af0aaa68770aa3b1fe298e71458401cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0aaa68770aa3b1fe298e71458401cfb">&#9670;&#160;</a></span>ComputeAxisEntranceFromShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.ComputeAxisEntranceFromShell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a></td>          <td class="paramname"><span class="paramname"><em>holeAxis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>shellSafeDistance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5::0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the axis entrance point on the shell mesh for a given hole. This is the point where the probe enters the shell to approach the hole. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">holeAxis</td><td>The hole axis information.</td></tr>
+    <tr><td class="paramname">shellSafeDistance</td><td>Safety distance above the hole top.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Axis entrance point on or near the shell surface.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00196">196</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00027">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisDirection</a> e <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisTop</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">GenerateHoleProbeSequence()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_af0aaa68770aa3b1fe298e71458401cfb_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_af0aaa68770aa3b1fe298e71458401cfb_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_af0aaa68770aa3b1fe298e71458401cfb_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_af0aaa68770aa3b1fe298e71458401cfb_icgraph">
+<area shape="rect" title="Calculates the axis entrance point on the shell mesh for a given hole. This is the point where the pr..." alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8eb09c3ee05899fa0dbc0bf99dc11dd" name="ad8eb09c3ee05899fa0dbc0bf99dc11dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8eb09c3ee05899fa0dbc0bf99dc11dd">&#9670;&#160;</a></span>ComputeRadialDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.ComputeRadialDirection </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>axisPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurePoint</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the radial direction from axis point to measurement point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00314">314</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">GenerateHoleProbeSequence()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_ad8eb09c3ee05899fa0dbc0bf99dc11dd_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_ad8eb09c3ee05899fa0dbc0bf99dc11dd_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_ad8eb09c3ee05899fa0dbc0bf99dc11dd_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_ad8eb09c3ee05899fa0dbc0bf99dc11dd_icgraph">
+<area shape="rect" title="Computes the radial direction from axis point to measurement point." alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec5eb6335ffb370072f561707fb1fefb" name="aec5eb6335ffb370072f561707fb1fefb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5eb6335ffb370072f561707fb1fefb">&#9670;&#160;</a></span>ConvertSequenceToPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.ConvertSequenceToPath </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>steps</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a hole probe sequence to a list of 3D points for path generation. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">steps</td><td>The probe steps.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>List of 3D points representing the probe path.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00338">338</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+</div>
+</div>
+<a id="a284c8871310ce3c89877165f89ff7bfd" name="a284c8871310ce3c89877165f89ff7bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284c8871310ce3c89877165f89ff7bfd">&#9670;&#160;</a></span>ConvertSequenceToPathWithNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.ConvertSequenceToPathWithNormals </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>steps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out List&lt; Vector3D &gt;</td>          <td class="paramname"><span class="paramname"><em>normals</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a hole probe sequence to points and normals for path generation. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">steps</td><td>The probe steps.</td></tr>
+    <tr><td class="paramname">points</td><td>Output: path points.</td></tr>
+    <tr><td class="paramname">normals</td><td>Output: probe normals at each point.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00349">349</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+</div>
+</div>
+<a id="a79b9b90b8ace4912b7cbc0b8a47dcc52" name="a79b9b90b8ace4912b7cbc0b8a47dcc52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b9b90b8ace4912b7cbc0b8a47dcc52">&#9670;&#160;</a></span>DetectHoleAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.DetectHoleAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></td>          <td class="paramname"><span class="paramname"><em>hole</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detects and extracts the axis information for a <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html" title="Data model representing a detected hole feature in a 3D CAD model. Holes are identified from pairs of...">CADHole</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hole</td><td>The hole to analyze.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html" title="Represents the extracted axis information for a hole feature.">HoleAxisInfo</a> with axis parameters, or null if extraction failed.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00106">106</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00147">HirEV_SmartFitSystemsApp.Models.CADHole.AxisDirection</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00101">HirEV_SmartFitSystemsApp.Models.CADHole.BottomCenterPoint</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00124">HirEV_SmartFitSystemsApp.Models.CADHole.BottomDiameter</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00137">HirEV_SmartFitSystemsApp.Models.CADHole.Depth</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00198">HirEV_SmartFitSystemsApp.Models.CADHole.GeometricInfo</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00091">HirEV_SmartFitSystemsApp.Models.CADHole.TopCenterPoint</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00113">HirEV_SmartFitSystemsApp.Models.CADHole.TopDiameter</a> e <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00150">TryParseAxisFromGeometricInfo()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">GenerateHoleProbeSequence()</a> e <a class="el" href="../../d3/d00/_eyeshot_camera_utils_8cs_source.html#l00578">HirEV_SmartFitSystemsApp.Utilities.EyeshotCameraUtils.ZoomToHole()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_cgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_cgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_cgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_cgraph">
+<area shape="rect" title="Detects and extracts the axis information for a CADHole." alt="" coords="5,5,251,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a7784909db0a582ea54371122f410ea5e" title="Attempts to parse axis direction from a GeometricInfo string." alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="251,32,286,34,281,35,251,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a79b9b90b8ace4912b7cbc0b8a47dcc52_icgraph">
+<area shape="rect" title="Detects and extracts the axis information for a CADHole." alt="" coords="299,47,544,105"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,57,251,55,251,49,286,56"/>
+<area shape="rect" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_camera_utils.html#a95529de5d0ec5080d7e442c74e63a197" title="Zooms the camera to fit all faces that constitute a hole." alt="" coords="14,88,242,147"/>
+<area shape="poly" title=" " alt="" coords="281,96,242,104,242,99,286,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a872a89c5759f18c4ae2d6cc008984214" name="a872a89c5759f18c4ae2d6cc008984214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872a89c5759f18c4ae2d6cc008984214">&#9670;&#160;</a></span>GenerateHoleProbeSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html">HoleProbeStep</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.GenerateHoleProbeSequence </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></td>          <td class="paramname"><span class="paramname"><em>hole</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>measurementPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a>?</td>          <td class="paramname"><span class="paramname"><em>axisInfo</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>shellSafeDistance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5::0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates the complete probing sequence for measuring points inside a hole. Follows the axis-only rule: enter via axis, move radially to each measurement, exit via axis. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hole</td><td>The hole being probed.</td></tr>
+    <tr><td class="paramname">measurementPoints</td><td>Points inside the hole to measure.</td></tr>
+    <tr><td class="paramname">axisInfo</td><td>Pre-computed hole axis (optional, will be computed if null).</td></tr>
+    <tr><td class="paramname">shellSafeDistance</td><td>Safe distance above hole for axis entrance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ordered list of probe steps.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">218</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00196">ComputeAxisEntranceFromShell()</a>, <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00314">ComputeRadialDirection()</a>, <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00106">DetectHoleAxis()</a>, <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00295">GetAxisPointAtZ()</a> e <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00281">GetDepthAlongAxis()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a872a89c5759f18c4ae2d6cc008984214_cgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a872a89c5759f18c4ae2d6cc008984214_cgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a872a89c5759f18c4ae2d6cc008984214_cgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a872a89c5759f18c4ae2d6cc008984214_cgraph">
+<area shape="rect" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,171,251,229"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#af0aaa68770aa3b1fe298e71458401cfb" title="Calculates the axis entrance point on the shell mesh for a given hole. This is the point where the pr..." alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="162,168,223,120,297,74,312,69,308,72,300,78,226,125,165,172"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#ad8eb09c3ee05899fa0dbc0bf99dc11dd" title="Computes the radial direction from axis point to measurement point." alt="" coords="299,88,544,147"/>
+<area shape="poly" title=" " alt="" coords="234,168,303,150,298,153,236,172"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a79b9b90b8ace4912b7cbc0b8a47dcc52" title="Detects and extracts the axis information for a CADHole." alt="" coords="299,171,544,229"/>
+<area shape="poly" title=" " alt="" coords="250,197,286,199,281,201,252,203"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a93ed15230bc3dafa813aff67b8bed686" title="Gets the point on the hole axis at a specific Z coordinate. Assumes axis is primarily vertical; adjus..." alt="" coords="299,253,544,312"/>
+<area shape="poly" title=" " alt="" coords="235,227,303,248,298,249,235,233"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#aa8f84dacb01708bef6d299491df48682" title="Calculates the depth of a point along the hole axis from the top." alt="" coords="299,336,544,395"/>
+<area shape="poly" title=" " alt="" coords="164,227,226,275,300,322,312,330,307,329,297,326,223,280,163,233"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a7784909db0a582ea54371122f410ea5e" title="Attempts to parse axis direction from a GeometricInfo string." alt="" coords="592,171,837,229"/>
+<area shape="poly" title=" " alt="" coords="544,197,579,200,574,200,545,203"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93ed15230bc3dafa813aff67b8bed686" name="a93ed15230bc3dafa813aff67b8bed686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ed15230bc3dafa813aff67b8bed686">&#9670;&#160;</a></span>GetAxisPointAtZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.GetAxisPointAtZ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a></td>          <td class="paramname"><span class="paramname"><em>axis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the point on the hole axis at a specific Z coordinate. Assumes axis is primarily vertical; adjusts for non-vertical holes. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00295">295</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00027">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisDirection</a> e <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisTop</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">GenerateHoleProbeSequence()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a93ed15230bc3dafa813aff67b8bed686_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a93ed15230bc3dafa813aff67b8bed686_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a93ed15230bc3dafa813aff67b8bed686_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a93ed15230bc3dafa813aff67b8bed686_icgraph">
+<area shape="rect" title="Gets the point on the hole axis at a specific Z coordinate. Assumes axis is primarily vertical; adjus..." alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8f84dacb01708bef6d299491df48682" name="aa8f84dacb01708bef6d299491df48682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f84dacb01708bef6d299491df48682">&#9670;&#160;</a></span>GetDepthAlongAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.GetDepthAlongAxis </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_axis_info.html">HoleAxisInfo</a></td>          <td class="paramname"><span class="paramname"><em>axis</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the depth of a point along the hole axis from the top. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00281">281</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00027">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisDirection</a> e <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleAxisInfo.AxisTop</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00218">GenerateHoleProbeSequence()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_aa8f84dacb01708bef6d299491df48682_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_aa8f84dacb01708bef6d299491df48682_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_aa8f84dacb01708bef6d299491df48682_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_aa8f84dacb01708bef6d299491df48682_icgraph">
+<area shape="rect" title="Calculates the depth of a point along the hole axis from the top." alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7784909db0a582ea54371122f410ea5e" name="a7784909db0a582ea54371122f410ea5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7784909db0a582ea54371122f410ea5e">&#9670;&#160;</a></span>TryParseAxisFromGeometricInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? Vector3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.TryParseAxisFromGeometricInfo </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>geometricInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to parse axis direction from a GeometricInfo string. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00150">150</a> do ficheiro <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html#l00106">DetectHoleAxis()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a7784909db0a582ea54371122f410ea5e_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a7784909db0a582ea54371122f410ea5e_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a7784909db0a582ea54371122f410ea5e_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_a7784909db0a582ea54371122f410ea5e_icgraph">
+<area shape="rect" title="Attempts to parse axis direction from a GeometricInfo string." alt="" coords="592,47,837,105"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a79b9b90b8ace4912b7cbc0b8a47dcc52" title="Detects and extracts the axis information for a CADHole." alt="" coords="299,47,544,105"/>
+<area shape="poly" title=" " alt="" coords="574,76,544,79,544,73,579,76"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html#a872a89c5759f18c4ae2d6cc008984214" title="Generates the complete probing sequence for measuring points inside a hole. Follows the axis&#45;only rul..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,57,251,55,251,49,286,56"/>
+<area shape="rect" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_camera_utils.html#a95529de5d0ec5080d7e442c74e63a197" title="Zooms the camera to fit all faces that constitute a hole." alt="" coords="14,88,242,147"/>
+<area shape="poly" title=" " alt="" coords="281,96,242,104,242,99,286,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d7/d01/_hole_axis_extractor_8cs_source.html">HoleAxisExtractor.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

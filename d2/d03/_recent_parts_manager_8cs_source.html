@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/RecentPartsManager.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d2/d03/_recent_parts_manager_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RecentPartsManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d03/_recent_parts_manager_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Diagnostics;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Text.Json;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adf9a167ffc2fd9a655d4e687ff59adcd">RecentPartsManager</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a0fce7ee56c9b1abd2f1ba5043dee060b">   13</a></span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a0fce7ee56c9b1abd2f1ba5043dee060b">RECENT_PARTS_FILENAME</a> = <span class="stringliteral">&quot;RecentParts.json&quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c">   14</a></span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c">MAX_RECENT_FILES</a> = 10;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">   15</a></span>        <span class="keyword">private</span> readonly <span class="keywordtype">string</span> <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">_recentPartsFilePath</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">   16</a></span>        <span class="keyword">private</span> List&lt;string&gt; <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adf9a167ffc2fd9a655d4e687ff59adcd">   21</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adf9a167ffc2fd9a655d4e687ff59adcd">RecentPartsManager</a>()</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="comment">// Use centralized AppDataFolder from MainViewModel</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordtype">string</span> appDataPath = <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a>.<a class="code hl_variable" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adcad1dfa61e94447334be476d0282856">AppDataFolder</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            Directory.CreateDirectory(appDataPath);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">_recentPartsFilePath</a> = Path.Combine(appDataPath, <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a0fce7ee56c9b1abd2f1ba5043dee060b">RECENT_PARTS_FILENAME</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a> = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab1156bf014f0f4bdea2fbe86eebf0f84">LoadRecentParts</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab1156bf014f0f4bdea2fbe86eebf0f84">   36</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab1156bf014f0f4bdea2fbe86eebf0f84">LoadRecentParts</a>()</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">if</span> (File.Exists(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">_recentPartsFilePath</a>))</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordtype">string</span> json = File.ReadAllText(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">_recentPartsFilePath</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    var allParts = JsonSerializer.Deserialize&lt;List&lt;string&gt;&gt;(json) ?? <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="comment">// Validate each file and keep only existing ones</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a> = allParts.Where(path =&gt; File.Exists(path)).ToList();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="comment">// If any files were removed, save the cleaned list</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Count != allParts.Count)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">SaveRecentParts</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        Debug.WriteLine($<span class="stringliteral">&quot;Cleaned recent parts list: removed {allParts.Count - _recentParts.Count} invalid entries&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                Debug.WriteLine($<span class="stringliteral">&quot;Error loading recent parts: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a> = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">   66</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">SaveRecentParts</a>()</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                var options = <span class="keyword">new</span> JsonSerializerOptions { WriteIndented = <span class="keyword">true</span> };</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordtype">string</span> json = JsonSerializer.Serialize(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>, options);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                File.WriteAllText(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">_recentPartsFilePath</a>, json);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                Debug.WriteLine($<span class="stringliteral">&quot;Error saving recent parts: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab668d02574c21a007d964c49e6b27d75">   86</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab668d02574c21a007d964c49e6b27d75">AddRecentFile</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrWhiteSpace(filePath) || !File.Exists(filePath))</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="comment">// Normalize the path</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                filePath = Path.GetFullPath(filePath);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="comment">// Remove if already in list</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Remove(filePath);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="comment">// Add to the beginning</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Insert(0, filePath);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="comment">// Trim to max size</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Count &gt; <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c">MAX_RECENT_FILES</a>)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a> = <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Take(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c">MAX_RECENT_FILES</a>).ToList();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">SaveRecentParts</a>();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                Debug.WriteLine($<span class="stringliteral">&quot;Added recent part: {Path.GetFileName(filePath)}&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                Debug.WriteLine($<span class="stringliteral">&quot;Error adding recent file: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a811b2db23c23bc260b4433774e922216">  121</a></span>        <span class="keyword">public</span> List&lt;string&gt; <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a811b2db23c23bc260b4433774e922216">GetRecentFiles</a>()</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="comment">// Validate files before returning</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a> = <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Where(path =&gt; File.Exists(path)).ToList();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;string&gt;(<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span></div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adace7dac3e2a078a3659a4d906836241">  132</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span>? <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adace7dac3e2a078a3659a4d906836241">GetLastValidFile</a>()</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            var validFiles = <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a811b2db23c23bc260b4433774e922216">GetRecentFiles</a>();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">return</span> validFiles.FirstOrDefault();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span></div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a2e0d99dec923c7016e31852a792b5d82">  142</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a2e0d99dec923c7016e31852a792b5d82">HasValidRecentFiles</a>()</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a811b2db23c23bc260b4433774e922216">GetRecentFiles</a>().Any();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        }</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a057da73860f5ab436e5f6844686efd7b">  150</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a057da73860f5ab436e5f6844686efd7b">ClearRecentParts</a>()</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Clear();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">SaveRecentParts</a>();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            Debug.WriteLine(<span class="stringliteral">&quot;Recent parts list cleared&quot;</span>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        }</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399">  161</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399">RemoveRecentFile</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">_recentParts</a>.Remove(filePath))</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <a class="code hl_function" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">SaveRecentParts</a>();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                Debug.WriteLine($<span class="stringliteral">&quot;Removed recent part: {Path.GetFileName(filePath)}&quot;</span>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
+</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a057da73860f5ab436e5f6844686efd7b"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a057da73860f5ab436e5f6844686efd7b">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.ClearRecentParts</a></div><div class="ttdeci">void ClearRecentParts()</div><div class="ttdoc">Clears all recent parts from the list.</div><div class="ttdef"><b>Definição</b> <a href="#l00150">RecentPartsManager.cs:150</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a0fce7ee56c9b1abd2f1ba5043dee060b"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a0fce7ee56c9b1abd2f1ba5043dee060b">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.RECENT_PARTS_FILENAME</a></div><div class="ttdeci">const string RECENT_PARTS_FILENAME</div><div class="ttdef"><b>Definição</b> <a href="#l00013">RecentPartsManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a2e0d99dec923c7016e31852a792b5d82"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a2e0d99dec923c7016e31852a792b5d82">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.HasValidRecentFiles</a></div><div class="ttdeci">bool HasValidRecentFiles()</div><div class="ttdoc">Checks if there are any valid recent files.</div><div class="ttdef"><b>Definição</b> <a href="#l00142">RecentPartsManager.cs:142</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a67bfecb375e9c2f95483de37bd427c30"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a67bfecb375e9c2f95483de37bd427c30">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager._recentParts</a></div><div class="ttdeci">List&lt; string &gt; _recentParts</div><div class="ttdef"><b>Definição</b> <a href="#l00016">RecentPartsManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a811b2db23c23bc260b4433774e922216"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a811b2db23c23bc260b4433774e922216">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.GetRecentFiles</a></div><div class="ttdeci">List&lt; string &gt; GetRecentFiles()</div><div class="ttdoc">Gets the list of all valid recent parts (files that currently exist).</div><div class="ttdef"><b>Definição</b> <a href="#l00121">RecentPartsManager.cs:121</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_a8135690c46dec561cb40559592887bca"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#a8135690c46dec561cb40559592887bca">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.SaveRecentParts</a></div><div class="ttdeci">void SaveRecentParts()</div><div class="ttdoc">Saves the recent parts list to disk.</div><div class="ttdef"><b>Definição</b> <a href="#l00066">RecentPartsManager.cs:66</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_ab1156bf014f0f4bdea2fbe86eebf0f84"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab1156bf014f0f4bdea2fbe86eebf0f84">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.LoadRecentParts</a></div><div class="ttdeci">void LoadRecentParts()</div><div class="ttdoc">Loads recent parts list from disk and validates each file. Removes any entries for files that no long...</div><div class="ttdef"><b>Definição</b> <a href="#l00036">RecentPartsManager.cs:36</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_ab668d02574c21a007d964c49e6b27d75"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab668d02574c21a007d964c49e6b27d75">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.AddRecentFile</a></div><div class="ttdeci">void AddRecentFile(string filePath)</div><div class="ttdoc">Adds a file path to the recent parts list. If the path already exists, moves it to the top....</div><div class="ttdef"><b>Definição</b> <a href="#l00086">RecentPartsManager.cs:86</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_ab81669be137e91814c422e8a44ff0b3c"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.MAX_RECENT_FILES</a></div><div class="ttdeci">const int MAX_RECENT_FILES</div><div class="ttdef"><b>Definição</b> <a href="#l00014">RecentPartsManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_ad7782ca25d8a47eb0956081f4785f399"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.RemoveRecentFile</a></div><div class="ttdeci">void RemoveRecentFile(string filePath)</div><div class="ttdoc">Removes a specific file from the recent parts list.</div><div class="ttdef"><b>Definição</b> <a href="#l00161">RecentPartsManager.cs:161</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_adace7dac3e2a078a3659a4d906836241"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adace7dac3e2a078a3659a4d906836241">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.GetLastValidFile</a></div><div class="ttdeci">string? GetLastValidFile()</div><div class="ttdoc">Gets the most recently opened valid file.</div><div class="ttdef"><b>Definição</b> <a href="#l00132">RecentPartsManager.cs:132</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_adf9a167ffc2fd9a655d4e687ff59adcd"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adf9a167ffc2fd9a655d4e687ff59adcd">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager.RecentPartsManager</a></div><div class="ttdeci">RecentPartsManager()</div><div class="ttdoc">Initializes a new instance of RecentPartsManager with file path in AppData.</div><div class="ttdef"><b>Definição</b> <a href="#l00021">RecentPartsManager.cs:21</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager_html_af20ff9e5ad645acac488a08c39f7cefd"><div class="ttname"><a href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#af20ff9e5ad645acac488a08c39f7cefd">HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager._recentPartsFilePath</a></div><div class="ttdeci">readonly string _recentPartsFilePath</div><div class="ttdef"><b>Definição</b> <a href="#l00015">RecentPartsManager.cs:15</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_html"><div class="ttname"><a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel</a></div><div class="ttdoc">Main ViewModel for the application, handling the main logic and data binding.</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00059">MainViewModel.cs:60</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_html_adcad1dfa61e94447334be476d0282856"><div class="ttname"><a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adcad1dfa61e94447334be476d0282856">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.AppDataFolder</a></div><div class="ttdeci">static readonly string AppDataFolder</div><div class="ttdoc">The path to the application data folder.</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00073">MainViewModel.cs:73</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_html"><div class="ttname"><a href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00022">PathManager.cs:23</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_view_model_html"><div class="ttname"><a href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a></div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00038">MainViewModel.cs:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/CADHole.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d7/d00/_c_a_d_hole_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CADHole.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d00/_c_a_d_hole_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Drawing;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">   23</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a8f103fb526f142c8496a0c237ddfe51b">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a8f103fb526f142c8496a0c237ddfe51b">HoleId</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a0c1487c259311dbce9e264b67304f80b">   45</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HoleTypeEnum</a> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a0c1487c259311dbce9e264b67304f80b">HoleType</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HoleTypeEnum</a>.Unknown;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a16c38ff5c4133d86d21c9dbcde0e2e9e">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a16c38ff5c4133d86d21c9dbcde0e2e9e">HoleStandard</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;Unknown&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a7c3f0c607e3ec935565c211d49cc4090">   70</a></span>        <span class="keyword">public</span> Color <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a7c3f0c607e3ec935565c211d49cc4090">HoleColor</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = Color.White;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a93cd24f7e7e509d3a4d68cab4e3cc166">   81</a></span>        <span class="keyword">public</span> List&lt;int&gt; <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a93cd24f7e7e509d3a4d68cab4e3cc166">FaceGlobalIndices</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;int&gt;();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2f5ace0737ebe95cbe393900c922b9f8">   91</a></span>        <span class="keyword">public</span> Point3D? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2f5ace0737ebe95cbe393900c922b9f8">TopCenterPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aaabbc77e835e278024bcc7cac998e29c">  101</a></span>        <span class="keyword">public</span> Point3D? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aaabbc77e835e278024bcc7cac998e29c">BottomCenterPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#af4c41a46c8273c532b875db350eedf79">  113</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#af4c41a46c8273c532b875db350eedf79">TopDiameter</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">double</span>.NaN;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#ac2692b16b10d9c00a12d5a69a21660da">  124</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#ac2692b16b10d9c00a12d5a69a21660da">BottomDiameter</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">double</span>.NaN;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a172960e029898cc6711a75cd0d0c6934">  137</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a172960e029898cc6711a75cd0d0c6934">Depth</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">double</span>.NaN;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adceb5c92adbb3b17e9214af6a6a6a885">  147</a></span>        <span class="keyword">public</span> Vector3D? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adceb5c92adbb3b17e9214af6a6a6a885">AxisDirection</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a1044b18f1a123e3f26a2872024d83058">  157</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a1044b18f1a123e3f26a2872024d83058">ThreadSize</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a9d4a7a4e5155c2881cf4ddfe6913d4a7">  168</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a9d4a7a4e5155c2881cf4ddfe6913d4a7">IsNested</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#afcf62621b77111b4643692b4c062af27">  178</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#afcf62621b77111b4643692b4c062af27">ParentHoleId</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a3081016a875878b6b138f91a4f3db19c">  188</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a3081016a875878b6b138f91a4f3db19c">RemovedBottomFaceIndex</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a345dd7fb3ac75a8f9ae6d40dd17f55ef">  198</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a345dd7fb3ac75a8f9ae6d40dd17f55ef">GeometricInfo</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2349eb871d4da25f9ef8bc92d6533705">  208</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2349eb871d4da25f9ef8bc92d6533705">MatchedToolType</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a4cd86d07fa4932af06655f8cfeee0b8f">  218</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span>? <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a4cd86d07fa4932af06655f8cfeee0b8f">MatchedToolSize</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adea611e5f69918c5f258ad35572cd80a">  230</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adea611e5f69918c5f258ad35572cd80a">IsIgnored</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span></div>
+<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aa7119f5ccebebe19adae93a16830a173">  235</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> <a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aa7119f5ccebebe19adae93a16830a173">FromDTO</a>(<a class="code hl_namespace" href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a>.<a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">Models</a>.<a class="code hl_namespace" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">DTOs</a>.<a class="code hl_class" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html">CADHoleExportDTO</a> dto)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordflow">if</span> (dto == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a>();</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a8f103fb526f142c8496a0c237ddfe51b">HoleId</a> = dto.HoleId,</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a0c1487c259311dbce9e264b67304f80b">HoleType</a> = (<a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HoleTypeEnum</a>)System.Enum.Parse(typeof(<a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HoleTypeEnum</a>), dto.HoleType),</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a16c38ff5c4133d86d21c9dbcde0e2e9e">HoleStandard</a> = dto.HoleStandard,</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a7c3f0c607e3ec935565c211d49cc4090">HoleColor</a> = ColorTranslator.FromHtml(dto.HoleColor),</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a93cd24f7e7e509d3a4d68cab4e3cc166">FaceGlobalIndices</a> = dto.FaceGlobalIndices ?? <span class="keyword">new</span> System.Collections.Generic.List&lt;<span class="keywordtype">int</span>&gt;(),</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2f5ace0737ebe95cbe393900c922b9f8">TopCenterPoint</a> = dto.TopCenterPoint != <span class="keyword">null</span> ? <span class="keyword">new</span> Point3D(dto.TopCenterPoint.X, dto.TopCenterPoint.Y, dto.TopCenterPoint.Z) : <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aaabbc77e835e278024bcc7cac998e29c">BottomCenterPoint</a> = dto.BottomCenterPoint != <span class="keyword">null</span> ? <span class="keyword">new</span> Point3D(dto.BottomCenterPoint.X, dto.BottomCenterPoint.Y, dto.BottomCenterPoint.Z) : <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#af4c41a46c8273c532b875db350eedf79">TopDiameter</a> = dto.TopDiameter,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#ac2692b16b10d9c00a12d5a69a21660da">BottomDiameter</a> = dto.BottomDiameter,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a172960e029898cc6711a75cd0d0c6934">Depth</a> = dto.Depth,</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adceb5c92adbb3b17e9214af6a6a6a885">AxisDirection</a> = dto.AxisDirection != <span class="keyword">null</span> ? <span class="keyword">new</span> Vector3D(dto.AxisDirection.X, dto.AxisDirection.Y, dto.AxisDirection.Z) : <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a1044b18f1a123e3f26a2872024d83058">ThreadSize</a> = dto.ThreadSize,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a9d4a7a4e5155c2881cf4ddfe6913d4a7">IsNested</a> = dto.IsNested,</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#afcf62621b77111b4643692b4c062af27">ParentHoleId</a> = dto.ParentHoleId,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a3081016a875878b6b138f91a4f3db19c">RemovedBottomFaceIndex</a> = dto.RemovedBottomFaceIndex,</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a345dd7fb3ac75a8f9ae6d40dd17f55ef">GeometricInfo</a> = dto.GeometricInfo,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2349eb871d4da25f9ef8bc92d6533705">MatchedToolType</a> = dto.MatchedToolType,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a4cd86d07fa4932af06655f8cfeee0b8f">MatchedToolSize</a> = dto.MatchedToolSize,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                <a class="code hl_property" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adea611e5f69918c5f258ad35572cd80a">IsIgnored</a> = dto.IsIgnored</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            };</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }</div>
+</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    }</div>
+</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span></div>
+<div class="foldopen" id="foldopen00281" data-start="{" data-end="};">
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">  281</a></span>    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HoleTypeEnum</a></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a88183b946cc5f0e8c96b2e66e1c74a7e">  286</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>,</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63abbb46b1587d763b4427ad23369efdbec">  293</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63abbb46b1587d763b4427ad23369efdbec">CylindricalSimple</a>,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a167a801de39c735e5198d42335b62fbe">  300</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a167a801de39c735e5198d42335b62fbe">CylindricalCounterbore</a>,</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a7a28dd2f6919126a0dd98174cd1dec55">  307</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a7a28dd2f6919126a0dd98174cd1dec55">CylindricalCountersink</a>,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a339632c512036fbe871d5dfdd752dfde">  313</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a339632c512036fbe871d5dfdd752dfde">ConicalSimple</a>,</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63afdfe71d175df192375b967110d240ba8">  319</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63afdfe71d175df192375b967110d240ba8">Threaded</a>,</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a6ef8cba42744be1b4e80a1593c69b854">  325</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a6ef8cba42744be1b4e80a1593c69b854">ThroughHole</a>,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63aae089e9788422398835890fa4f2af0b0">  332</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63aae089e9788422398835890fa4f2af0b0">BlindHole</a></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    }</div>
+</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">HirEV_SmartFitSystemsApp.Models.CADHole</a></div><div class="ttdoc">Data model representing a detected hole feature in a 3D CAD model. Holes are identified from pairs of...</div><div class="ttdef"><b>Definição</b> <a href="#l00023">CADHole.cs:24</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a0c1487c259311dbce9e264b67304f80b"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a0c1487c259311dbce9e264b67304f80b">HirEV_SmartFitSystemsApp.Models.CADHole.HoleType</a></div><div class="ttdeci">HoleTypeEnum HoleType</div><div class="ttdoc">Gets or sets the geometric classification of the hole. Determines measurement strategy and tooling re...</div><div class="ttdef"><b>Definição</b> <a href="#l00045">CADHole.cs:45</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a1044b18f1a123e3f26a2872024d83058"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a1044b18f1a123e3f26a2872024d83058">HirEV_SmartFitSystemsApp.Models.CADHole.ThreadSize</a></div><div class="ttdeci">string? ThreadSize</div><div class="ttdoc">Gets or sets the thread size designation for threaded holes. Extracted from HoleStandard for convenie...</div><div class="ttdef"><b>Definição</b> <a href="#l00157">CADHole.cs:157</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a16c38ff5c4133d86d21c9dbcde0e2e9e"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a16c38ff5c4133d86d21c9dbcde0e2e9e">HirEV_SmartFitSystemsApp.Models.CADHole.HoleStandard</a></div><div class="ttdeci">string HoleStandard</div><div class="ttdoc">Gets or sets the standard thread designation or hole classification. Result of matching measured diam...</div><div class="ttdef"><b>Definição</b> <a href="#l00059">CADHole.cs:59</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a172960e029898cc6711a75cd0d0c6934"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a172960e029898cc6711a75cd0d0c6934">HirEV_SmartFitSystemsApp.Models.CADHole.Depth</a></div><div class="ttdeci">double Depth</div><div class="ttdoc">Gets or sets the depth of the hole in millimeters. Calculated as the distance between TopCenterPoint ...</div><div class="ttdef"><b>Definição</b> <a href="#l00137">CADHole.cs:137</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a2349eb871d4da25f9ef8bc92d6533705"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2349eb871d4da25f9ef8bc92d6533705">HirEV_SmartFitSystemsApp.Models.CADHole.MatchedToolType</a></div><div class="ttdeci">string? MatchedToolType</div><div class="ttdoc">Gets or sets the type of matched measuring tool for this hole. Result of tool-to-feature matching alg...</div><div class="ttdef"><b>Definição</b> <a href="#l00208">CADHole.cs:208</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a2f5ace0737ebe95cbe393900c922b9f8"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a2f5ace0737ebe95cbe393900c922b9f8">HirEV_SmartFitSystemsApp.Models.CADHole.TopCenterPoint</a></div><div class="ttdeci">Point3D? TopCenterPoint</div><div class="ttdoc">Gets or sets the 3D coordinates of the hole&#39;s top center point (entry point). Calculated from the top...</div><div class="ttdef"><b>Definição</b> <a href="#l00091">CADHole.cs:91</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a3081016a875878b6b138f91a4f3db19c"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a3081016a875878b6b138f91a4f3db19c">HirEV_SmartFitSystemsApp.Models.CADHole.RemovedBottomFaceIndex</a></div><div class="ttdeci">int? RemovedBottomFaceIndex</div><div class="ttdoc">Gets or sets the face index of a removed bottom face during hole creation. Tracks faces that were mer...</div><div class="ttdef"><b>Definição</b> <a href="#l00188">CADHole.cs:188</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a345dd7fb3ac75a8f9ae6d40dd17f55ef"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a345dd7fb3ac75a8f9ae6d40dd17f55ef">HirEV_SmartFitSystemsApp.Models.CADHole.GeometricInfo</a></div><div class="ttdeci">string? GeometricInfo</div><div class="ttdoc">Gets or sets additional human-readable geometric information about the hole. Provides detailed parame...</div><div class="ttdef"><b>Definição</b> <a href="#l00198">CADHole.cs:198</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a4cd86d07fa4932af06655f8cfeee0b8f"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a4cd86d07fa4932af06655f8cfeee0b8f">HirEV_SmartFitSystemsApp.Models.CADHole.MatchedToolSize</a></div><div class="ttdeci">string? MatchedToolSize</div><div class="ttdoc">Gets or sets the size specification of the matched measuring tool. Provides detailed tool sizing info...</div><div class="ttdef"><b>Definição</b> <a href="#l00218">CADHole.cs:218</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a7c3f0c607e3ec935565c211d49cc4090"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a7c3f0c607e3ec935565c211d49cc4090">HirEV_SmartFitSystemsApp.Models.CADHole.HoleColor</a></div><div class="ttdeci">Color HoleColor</div><div class="ttdoc">Gets or sets the display color of the hole. Inherited from the constituent CADFace colors (typically ...</div><div class="ttdef"><b>Definição</b> <a href="#l00070">CADHole.cs:70</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a8f103fb526f142c8496a0c237ddfe51b"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a8f103fb526f142c8496a0c237ddfe51b">HirEV_SmartFitSystemsApp.Models.CADHole.HoleId</a></div><div class="ttdeci">int HoleId</div><div class="ttdoc">Gets or sets the unique identifier for this hole within the model. Sequential integer assigned during...</div><div class="ttdef"><b>Definição</b> <a href="#l00034">CADHole.cs:34</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a93cd24f7e7e509d3a4d68cab4e3cc166"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a93cd24f7e7e509d3a4d68cab4e3cc166">HirEV_SmartFitSystemsApp.Models.CADHole.FaceGlobalIndices</a></div><div class="ttdeci">List&lt; int &gt; FaceGlobalIndices</div><div class="ttdoc">Gets or sets the list of face global indices that make up this hole. References back to the CADFace o...</div><div class="ttdef"><b>Definição</b> <a href="#l00081">CADHole.cs:81</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_a9d4a7a4e5155c2881cf4ddfe6913d4a7"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#a9d4a7a4e5155c2881cf4ddfe6913d4a7">HirEV_SmartFitSystemsApp.Models.CADHole.IsNested</a></div><div class="ttdeci">bool IsNested</div><div class="ttdoc">Gets or sets a value indicating whether this hole is nested inside another hole. Nested holes occur i...</div><div class="ttdef"><b>Definição</b> <a href="#l00168">CADHole.cs:168</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_aa7119f5ccebebe19adae93a16830a173"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aa7119f5ccebebe19adae93a16830a173">HirEV_SmartFitSystemsApp.Models.CADHole.FromDTO</a></div><div class="ttdeci">static CADHole FromDTO(HirEV_SmartFitSystemsApp.Models.DTOs.CADHoleExportDTO dto)</div><div class="ttdoc">Creates a CADHole from a CADHoleExportDTO.</div><div class="ttdef"><b>Definição</b> <a href="#l00235">CADHole.cs:235</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_aaabbc77e835e278024bcc7cac998e29c"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#aaabbc77e835e278024bcc7cac998e29c">HirEV_SmartFitSystemsApp.Models.CADHole.BottomCenterPoint</a></div><div class="ttdeci">Point3D? BottomCenterPoint</div><div class="ttdoc">Gets or sets the 3D coordinates of the hole&#39;s bottom center point (exit point or blind end)....</div><div class="ttdef"><b>Definição</b> <a href="#l00101">CADHole.cs:101</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_ac2692b16b10d9c00a12d5a69a21660da"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#ac2692b16b10d9c00a12d5a69a21660da">HirEV_SmartFitSystemsApp.Models.CADHole.BottomDiameter</a></div><div class="ttdeci">double BottomDiameter</div><div class="ttdoc">Gets or sets the diameter at the bottom (exit or blind end) of the hole in millimeters....</div><div class="ttdef"><b>Definição</b> <a href="#l00124">CADHole.cs:124</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_adceb5c92adbb3b17e9214af6a6a6a885"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adceb5c92adbb3b17e9214af6a6a6a885">HirEV_SmartFitSystemsApp.Models.CADHole.AxisDirection</a></div><div class="ttdeci">Vector3D? AxisDirection</div><div class="ttdoc">Gets or sets the normalized axis direction vector of the hole. Points from top to bottom along the ho...</div><div class="ttdef"><b>Definição</b> <a href="#l00147">CADHole.cs:147</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_adea611e5f69918c5f258ad35572cd80a"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#adea611e5f69918c5f258ad35572cd80a">HirEV_SmartFitSystemsApp.Models.CADHole.IsIgnored</a></div><div class="ttdeci">bool IsIgnored</div><div class="ttdoc">Gets or sets a value indicating whether this hole should be ignored in processing....</div><div class="ttdef"><b>Definição</b> <a href="#l00230">CADHole.cs:230</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_af4c41a46c8273c532b875db350eedf79"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#af4c41a46c8273c532b875db350eedf79">HirEV_SmartFitSystemsApp.Models.CADHole.TopDiameter</a></div><div class="ttdeci">double TopDiameter</div><div class="ttdoc">Gets or sets the diameter at the top (entry) of the hole in millimeters. Measured from the cylindrica...</div><div class="ttdef"><b>Definição</b> <a href="#l00113">CADHole.cs:113</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole_html_afcf62621b77111b4643692b4c062af27"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html#afcf62621b77111b4643692b4c062af27">HirEV_SmartFitSystemsApp.Models.CADHole.ParentHoleId</a></div><div class="ttdeci">int? ParentHoleId</div><div class="ttdoc">Gets or sets the HoleId of the parent hole if this hole is nested. Creates a hierarchical relationshi...</div><div class="ttdef"><b>Definição</b> <a href="#l00178">CADHole.cs:178</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o_html"><div class="ttname"><a href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.CADHoleExportDTO</a></div><div class="ttdoc">Simplified DTO for hole export.</div><div class="ttdef"><b>Definição</b> <a href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00008">CADHoleExportDTO.cs:9</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_html"><div class="ttname"><a href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div><div class="ttdef"><b>Definição</b> <a href="../../d4/d00/_c_a_d_grouped_export_d_t_o_8cs_source.html#l00001">CADGroupedExportDTO.cs:2</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum</a></div><div class="ttdeci">HoleTypeEnum</div><div class="ttdoc">Enumeration of hole types that can be detected and classified in CAD models. Used to categorize holes...</div><div class="ttdef"><b>Definição</b> <a href="#l00281">CADHole.cs:282</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63a167a801de39c735e5198d42335b62fbe"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a167a801de39c735e5198d42335b62fbe">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.CylindricalCounterbore</a></div><div class="ttdeci">@ CylindricalCounterbore</div><div class="ttdoc">Cylindrical hole with a larger diameter counterbore at the top. Used for recessing bolt heads or nuts...</div><div class="ttdef"><b>Definição</b> <a href="#l00300">CADHole.cs:300</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63a339632c512036fbe871d5dfdd752dfde"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a339632c512036fbe871d5dfdd752dfde">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.ConicalSimple</a></div><div class="ttdeci">@ ConicalSimple</div><div class="ttdoc">Simple conical hole without cylindrical portion. Uncommon in mechanical parts; typically chamfers or ...</div><div class="ttdef"><b>Definição</b> <a href="#l00313">CADHole.cs:313</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63a6ef8cba42744be1b4e80a1593c69b854"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a6ef8cba42744be1b4e80a1593c69b854">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.ThroughHole</a></div><div class="ttdeci">@ ThroughHole</div><div class="ttdoc">Hole that completely penetrates the part (depth ≈ local thickness). Has both entry and exit points wi...</div><div class="ttdef"><b>Definição</b> <a href="#l00325">CADHole.cs:325</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63a7a28dd2f6919126a0dd98174cd1dec55"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a7a28dd2f6919126a0dd98174cd1dec55">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.CylindricalCountersink</a></div><div class="ttdeci">@ CylindricalCountersink</div><div class="ttdoc">Cylindrical hole with a conical countersink at the top. Used for flush-mounting flat-head screws....</div><div class="ttdef"><b>Definição</b> <a href="#l00307">CADHole.cs:307</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63a88183b946cc5f0e8c96b2e66e1c74a7e"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63a88183b946cc5f0e8c96b2e66e1c74a7e">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdoc">Hole type could not be determined. Default state before classification.</div><div class="ttdef"><b>Definição</b> <a href="#l00286">CADHole.cs:286</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63aae089e9788422398835890fa4f2af0b0"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63aae089e9788422398835890fa4f2af0b0">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.BlindHole</a></div><div class="ttdeci">@ BlindHole</div><div class="ttdoc">Hole that does not penetrate completely (depth &lt; local thickness). Has entry point but ends within th...</div><div class="ttdef"><b>Definição</b> <a href="#l00332">CADHole.cs:332</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63abbb46b1587d763b4427ad23369efdbec"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63abbb46b1587d763b4427ad23369efdbec">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.CylindricalSimple</a></div><div class="ttdeci">@ CylindricalSimple</div><div class="ttdoc">Simple cylindrical hole with constant diameter. Can be through-hole or blind-hole (distinguished by d...</div><div class="ttdef"><b>Definição</b> <a href="#l00293">CADHole.cs:293</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_af2286c5506d8a02995173b845e16cd63afdfe71d175df192375b967110d240ba8"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#af2286c5506d8a02995173b845e16cd63afdfe71d175df192375b967110d240ba8">HirEV_SmartFitSystemsApp.Models.HoleTypeEnum.Threaded</a></div><div class="ttdeci">@ Threaded</div><div class="ttdoc">Hole identified as threaded based on diameter matching tap drill size. Requires thread gauge or speci...</div><div class="ttdef"><b>Definição</b> <a href="#l00319">CADHole.cs:319</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_html"><div class="ttname"><a href="../../d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></div><div class="ttdef"><b>Definição</b> <a href="../../db/d01/_app_8xaml_8cs_source.html#l00005">App.xaml.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

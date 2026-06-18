@@ -1,0 +1,872 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html','../../','d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS.md §3.4 &amp; §7 Phase 4.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_path_planner_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_path_planner_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_path_planner_coll__map">
+<area shape="rect" title="Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS...." alt="" coords="5,5,233,368"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a6b9ec029c6f4e27779f8e19b2d5419cd" id="r_a6b9ec029c6f4e27779f8e19b2d5419cd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6b9ec029c6f4e27779f8e19b2d5419cd">JumpPathPlanner</a> (int maxWaypointsPerSegment=50, double minWaypointSpacing=2.0, int descentSteps=5)</td></tr>
+<tr class="memdesc:a6b9ec029c6f4e27779f8e19b2d5419cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html" title="Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS....">JumpPathPlanner</a>.  <br /></td></tr>
+<tr class="memitem:af234f85e7bcd1cec3ab9aafeebee544f" id="r_af234f85e7bcd1cec3ab9aafeebee544f"><td class="memItemLeft"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a>&#160;</td><td class="memItemRight"><a class="el" href="#af234f85e7bcd1cec3ab9aafeebee544f">PlanPath</a> (Point3D startApproach, Point3D endApproach, <a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a> graph)</td></tr>
+<tr class="memdesc:af234f85e7bcd1cec3ab9aafeebee544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4.  <br /></td></tr>
+<tr class="memitem:af5fb053c893998b6c3dc2eb0a1f4fb71" id="r_af5fb053c893998b6c3dc2eb0a1f4fb71"><td class="memItemLeft">List&lt; <a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html">PathWaypoint</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af5fb053c893998b6c3dc2eb0a1f4fb71">GenerateDescentWaypoints</a> (Point3D approachPoint, Point3D measurementPoint, Vector3D normal, int? parentFaceIndex)</td></tr>
+<tr class="memdesc:af5fb053c893998b6c3dc2eb0a1f4fb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates descent waypoints from approach point to measurement point. Per REQUIREMENTS.md §3.6 Movement Sequence.  <br /></td></tr>
+<tr class="memitem:ac70d02bc71d7a1850bd3c2d296bbf4e6" id="r_ac70d02bc71d7a1850bd3c2d296bbf4e6"><td class="memItemLeft">List&lt; <a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html">PathWaypoint</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac70d02bc71d7a1850bd3c2d296bbf4e6">GenerateAscentWaypoints</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D normal, int? parentFaceIndex)</td></tr>
+<tr class="memdesc:ac70d02bc71d7a1850bd3c2d296bbf4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates ascent waypoints from measurement point back to approach point. Per REQUIREMENTS.md §3.6 Movement Sequence.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a10e5aa1de4fc425e7a0e1103040afd7e" id="r_a10e5aa1de4fc425e7a0e1103040afd7e"><td class="memItemLeft">static <a class="el" href="#a6b9ec029c6f4e27779f8e19b2d5419cd">JumpPathPlanner</a>&#160;</td><td class="memItemRight"><a class="el" href="#a10e5aa1de4fc425e7a0e1103040afd7e">CreateFromConfig</a> ()</td></tr>
+<tr class="memdesc:a10e5aa1de4fc425e7a0e1103040afd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html" title="Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS....">JumpPathPlanner</a> with configuration from App.config.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:afb2f853a7ca5ccae20e1bfe7dd58811a" id="r_afb2f853a7ca5ccae20e1bfe7dd58811a"><td class="memItemLeft"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a>?&#160;</td><td class="memItemRight"><a class="el" href="#afb2f853a7ca5ccae20e1bfe7dd58811a">FindNearestNode</a> (Point3D point, <a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a> graph)</td></tr>
+<tr class="memdesc:afb2f853a7ca5ccae20e1bfe7dd58811a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest node in the graph to the given point. Used as a robust fallback when exact Point3D key isn't found due to floating point differences.  <br /></td></tr>
+<tr class="memitem:a232b820b00fbc8e153e05e7cbb33b6b7" id="r_a232b820b00fbc8e153e05e7cbb33b6b7"><td class="memItemLeft">List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a232b820b00fbc8e153e05e7cbb33b6b7">AStarSearch</a> (<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> start, <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> end, <a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a> graph)</td></tr>
+<tr class="memdesc:a232b820b00fbc8e153e05e7cbb33b6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A* search implementation on jump graph.  <br /></td></tr>
+<tr class="memitem:a1584ccf4753983af9909e0721de21806" id="r_a1584ccf4753983af9909e0721de21806"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1584ccf4753983af9909e0721de21806">Heuristic</a> (<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> a, <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> b)</td></tr>
+<tr class="memdesc:a1584ccf4753983af9909e0721de21806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heuristic function for A* (Euclidean distance).  <br /></td></tr>
+<tr class="memitem:acd5e8ae67170c9c277496021a1b03fcf" id="r_acd5e8ae67170c9c277496021a1b03fcf"><td class="memItemLeft">List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt;?&#160;</td><td class="memItemRight"><a class="el" href="#acd5e8ae67170c9c277496021a1b03fcf">ReconstructPath</a> (Dictionary&lt; <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a>,(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> prevNode, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a> edge)&gt; cameFrom, <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> endNode)</td></tr>
+<tr class="memdesc:acd5e8ae67170c9c277496021a1b03fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstructs path from A* search result.  <br /></td></tr>
+<tr class="memitem:aa9b23171e63318367ec729fa1798b2c1" id="r_aa9b23171e63318367ec729fa1798b2c1"><td class="memItemLeft"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9b23171e63318367ec729fa1798b2c1">ConvertToDiscretePath</a> (List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt; rawPath, <a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a> graph)</td></tr>
+<tr class="memdesc:aa9b23171e63318367ec729fa1798b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts A* path to discrete waypoints.  <br /></td></tr>
+<tr class="memitem:a1eeb6051ad44a49bfb656e6772cba88d" id="r_a1eeb6051ad44a49bfb656e6772cba88d"><td class="memItemLeft">List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1eeb6051ad44a49bfb656e6772cba88d">FindClosestIntermediatePoints</a> (Point3D from, Point3D to, <a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a> graph, double maxCorridor=10.0)</td></tr>
+<tr class="memdesc:a1eeb6051ad44a49bfb656e6772cba88d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds approach points on the mesh between two waypoints that could safely bridge the gap, ensuring no direct jumps across corners.  <br /></td></tr>
+<tr class="memitem:a8fd609c419082bd8e471697e11939d47" id="r_a8fd609c419082bd8e471697e11939d47"><td class="memItemLeft"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8fd609c419082bd8e471697e11939d47">SimplifyPath</a> (<a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a> path)</td></tr>
+<tr class="memdesc:a8fd609c419082bd8e471697e11939d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplifies path using Douglas-Peucker algorithm and spacing enforcement. Per REQUIREMENTS.md §3.7.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:acf93bfb596c19564a116e8f6205392e7" id="r_acf93bfb596c19564a116e8f6205392e7"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#acf93bfb596c19564a116e8f6205392e7">_maxWaypointsPerSegment</a></td></tr>
+<tr class="memitem:aaca702417f9196f298519fefaee24cc7" id="r_aaca702417f9196f298519fefaee24cc7"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#aaca702417f9196f298519fefaee24cc7">_minWaypointSpacing</a></td></tr>
+<tr class="memitem:af92fb3e9118270049cbeac7fad93f618" id="r_af92fb3e9118270049cbeac7fad93f618"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#af92fb3e9118270049cbeac7fad93f618">_descentSteps</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS.md §3.4 &amp; §7 Phase 4. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00012">12</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a6b9ec029c6f4e27779f8e19b2d5419cd" name="a6b9ec029c6f4e27779f8e19b2d5419cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9ec029c6f4e27779f8e19b2d5419cd">&#9670;&#160;</a></span>JumpPathPlanner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.JumpPathPlanner </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxWaypointsPerSegment</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>minWaypointSpacing</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>descentSteps</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html" title="Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS....">JumpPathPlanner</a>. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00016">_descentSteps</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00014">_maxWaypointsPerSegment</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00015">_minWaypointSpacing</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00410">CreateFromConfig()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a6b9ec029c6f4e27779f8e19b2d5419cd_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a6b9ec029c6f4e27779f8e19b2d5419cd_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a6b9ec029c6f4e27779f8e19b2d5419cd_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a6b9ec029c6f4e27779f8e19b2d5419cd_icgraph">
+<area shape="rect" title="Initializes a new JumpPathPlanner." alt="" coords="296,5,538,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a10e5aa1de4fc425e7a0e1103040afd7e" title="Creates a JumpPathPlanner with configuration from App.config." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a232b820b00fbc8e153e05e7cbb33b6b7" name="a232b820b00fbc8e153e05e7cbb33b6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232b820b00fbc8e153e05e7cbb33b6b7">&#9670;&#160;</a></span>AStarSearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt;? HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.AStarSearch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A* search implementation on jump graph. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00124">124</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00022">HirEV_SmartFitSystemsApp.Models.JumpGraph.Adjacency</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00177">Heuristic()</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00185">ReconstructPath()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">PlanPath()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_cgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_cgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_cgraph">
+<area shape="rect" title="A* search implementation on jump graph." alt="" coords="5,47,248,105"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1584ccf4753983af9909e0721de21806" title="Heuristic function for A* (Euclidean distance)." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="248,56,283,53,278,55,249,61"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#acd5e8ae67170c9c277496021a1b03fcf" title="Reconstructs path from A* search result." alt="" coords="296,88,538,147"/>
+<area shape="poly" title=" " alt="" coords="248,91,283,98,277,98,248,96"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a232b820b00fbc8e153e05e7cbb33b6b7_icgraph">
+<area shape="rect" title="A* search implementation on jump graph." alt="" coords="296,5,538,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9b23171e63318367ec729fa1798b2c1" name="aa9b23171e63318367ec729fa1798b2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b23171e63318367ec729fa1798b2c1">&#9670;&#160;</a></span>ConvertToDiscretePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.ConvertToDiscretePath </td>
+          <td>(</td>
+          <td class="paramtype">List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt;</td>          <td class="paramname"><span class="paramname"><em>rawPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts A* path to discrete waypoints. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00207">207</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00117">HirEV_SmartFitSystemsApp.Models.AdjacentFace</a>, <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00056">HirEV_SmartFitSystemsApp.Models.JumpNode.ApproachPoint</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00278">FindClosestIntermediatePoints()</a>, <a class="el" href="../../d1/d01/_discrete_path_8cs_source.html#l00130">HirEV_SmartFitSystemsApp.Models.Jump</a>, <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00061">HirEV_SmartFitSystemsApp.Models.JumpNode.ParentFaceIndex</a> e <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00114">HirEV_SmartFitSystemsApp.Models.SameFace</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">PlanPath()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_cgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_cgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_cgraph">
+<area shape="rect" title="Converts A* path to discrete waypoints." alt="" coords="5,5,248,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1eeb6051ad44a49bfb656e6772cba88d" title="Finds approach points on the mesh between two waypoints that could safely bridge the gap,..." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="248,32,283,34,277,35,248,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_aa9b23171e63318367ec729fa1798b2c1_icgraph">
+<area shape="rect" title="Converts A* path to discrete waypoints." alt="" coords="296,5,538,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10e5aa1de4fc425e7a0e1103040afd7e" name="a10e5aa1de4fc425e7a0e1103040afd7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e5aa1de4fc425e7a0e1103040afd7e">&#9670;&#160;</a></span>CreateFromConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a6b9ec029c6f4e27779f8e19b2d5419cd">JumpPathPlanner</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.CreateFromConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html" title="Plans paths between approach points using A* search on the jump graph. Per REQUIREMENTS....">JumpPathPlanner</a> with configuration from App.config. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00410">410</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00021">JumpPathPlanner()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a10e5aa1de4fc425e7a0e1103040afd7e_cgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a10e5aa1de4fc425e7a0e1103040afd7e_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a10e5aa1de4fc425e7a0e1103040afd7e_cgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a10e5aa1de4fc425e7a0e1103040afd7e_cgraph">
+<area shape="rect" title="Creates a JumpPathPlanner with configuration from App.config." alt="" coords="5,5,248,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a6b9ec029c6f4e27779f8e19b2d5419cd" title="Initializes a new JumpPathPlanner." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="248,32,283,34,277,35,248,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1eeb6051ad44a49bfb656e6772cba88d" name="a1eeb6051ad44a49bfb656e6772cba88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eeb6051ad44a49bfb656e6772cba88d">&#9670;&#160;</a></span>FindClosestIntermediatePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.FindClosestIntermediatePoints </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxCorridor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10::0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds approach points on the mesh between two waypoints that could safely bridge the gap, ensuring no direct jumps across corners. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00278">278</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00207">ConvertToDiscretePath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1eeb6051ad44a49bfb656e6772cba88d_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1eeb6051ad44a49bfb656e6772cba88d_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1eeb6051ad44a49bfb656e6772cba88d_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1eeb6051ad44a49bfb656e6772cba88d_icgraph">
+<area shape="rect" title="Finds approach points on the mesh between two waypoints that could safely bridge the gap,..." alt="" coords="586,5,828,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#aa9b23171e63318367ec729fa1798b2c1" title="Converts A* path to discrete waypoints." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="568,35,539,37,538,32,573,35"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb2f853a7ca5ccae20e1bfe7dd58811a" name="afb2f853a7ca5ccae20e1bfe7dd58811a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2f853a7ca5ccae20e1bfe7dd58811a">&#9670;&#160;</a></span>FindNearestNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a>? HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.FindNearestNode </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the nearest node in the graph to the given point. Used as a robust fallback when exact Point3D key isn't found due to floating point differences. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00098">98</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00016">HirEV_SmartFitSystemsApp.Models.JumpGraph.Nodes</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">PlanPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_afb2f853a7ca5ccae20e1bfe7dd58811a_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_afb2f853a7ca5ccae20e1bfe7dd58811a_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_afb2f853a7ca5ccae20e1bfe7dd58811a_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_afb2f853a7ca5ccae20e1bfe7dd58811a_icgraph">
+<area shape="rect" title="Finds the nearest node in the graph to the given point. Used as a robust fallback when exact Point3D ..." alt="" coords="296,5,538,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac70d02bc71d7a1850bd3c2d296bbf4e6" name="ac70d02bc71d7a1850bd3c2d296bbf4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70d02bc71d7a1850bd3c2d296bbf4e6">&#9670;&#160;</a></span>GenerateAscentWaypoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html">PathWaypoint</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.GenerateAscentWaypoints </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int?</td>          <td class="paramname"><span class="paramname"><em>parentFaceIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates ascent waypoints from measurement point back to approach point. Per REQUIREMENTS.md §3.6 Movement Sequence. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00383">383</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00016">_descentSteps</a> e <a class="el" href="../../d1/d01/_discrete_path_8cs_source.html#l00133">HirEV_SmartFitSystemsApp.Models.Approach</a>.</p>
+
+</div>
+</div>
+<a id="af5fb053c893998b6c3dc2eb0a1f4fb71" name="af5fb053c893998b6c3dc2eb0a1f4fb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fb053c893998b6c3dc2eb0a1f4fb71">&#9670;&#160;</a></span>GenerateDescentWaypoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html">PathWaypoint</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.GenerateDescentWaypoints </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int?</td>          <td class="paramname"><span class="paramname"><em>parentFaceIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates descent waypoints from approach point to measurement point. Per REQUIREMENTS.md §3.6 Movement Sequence. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00355">355</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00016">_descentSteps</a> e <a class="el" href="../../d1/d01/_discrete_path_8cs_source.html#l00136">HirEV_SmartFitSystemsApp.Models.Measurement</a>.</p>
+
+</div>
+</div>
+<a id="a1584ccf4753983af9909e0721de21806" name="a1584ccf4753983af9909e0721de21806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1584ccf4753983af9909e0721de21806">&#9670;&#160;</a></span>Heuristic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.Heuristic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Heuristic function for A* (Euclidean distance). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00177">177</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00056">HirEV_SmartFitSystemsApp.Models.JumpNode.ApproachPoint</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00124">AStarSearch()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1584ccf4753983af9909e0721de21806_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1584ccf4753983af9909e0721de21806_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1584ccf4753983af9909e0721de21806_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a1584ccf4753983af9909e0721de21806_icgraph">
+<area shape="rect" title="Heuristic function for A* (Euclidean distance)." alt="" coords="586,5,828,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a232b820b00fbc8e153e05e7cbb33b6b7" title="A* search implementation on jump graph." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="568,35,539,37,538,32,573,35"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af234f85e7bcd1cec3ab9aafeebee544f" name="af234f85e7bcd1cec3ab9aafeebee544f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af234f85e7bcd1cec3ab9aafeebee544f">&#9670;&#160;</a></span>PlanPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.PlanPath </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>startApproach</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>endApproach</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">32</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00014">_maxWaypointsPerSegment</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00124">AStarSearch()</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00207">ConvertToDiscretePath()</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00098">FindNearestNode()</a>, <a class="el" href="../../d5/d03/_jump_graph_8cs_source.html#l00016">HirEV_SmartFitSystemsApp.Models.JumpGraph.Nodes</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00325">SimplifyPath()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_af234f85e7bcd1cec3ab9aafeebee544f_cgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_af234f85e7bcd1cec3ab9aafeebee544f_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_af234f85e7bcd1cec3ab9aafeebee544f_cgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_af234f85e7bcd1cec3ab9aafeebee544f_cgraph">
+<area shape="rect" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,212,248,271"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a232b820b00fbc8e153e05e7cbb33b6b7" title="A* search implementation on jump graph." alt="" coords="296,88,538,147"/>
+<area shape="poly" title=" " alt="" coords="183,209,295,156,313,151,308,154,297,161,185,214"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#aa9b23171e63318367ec729fa1798b2c1" title="Converts A* path to discrete waypoints." alt="" coords="296,171,538,229"/>
+<area shape="poly" title=" " alt="" coords="247,222,283,218,278,220,249,227"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#afb2f853a7ca5ccae20e1bfe7dd58811a" title="Finds the nearest node in the graph to the given point. Used as a robust fallback when exact Point3D ..." alt="" coords="296,253,538,312"/>
+<area shape="poly" title=" " alt="" coords="248,256,283,263,278,264,248,261"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a8fd609c419082bd8e471697e11939d47" title="Simplifies path using Douglas&#45;Peucker algorithm and spacing enforcement. Per REQUIREMENTS...." alt="" coords="296,336,538,395"/>
+<area shape="poly" title=" " alt="" coords="185,269,297,322,313,330,308,330,295,326,184,274"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1584ccf4753983af9909e0721de21806" title="Heuristic function for A* (Euclidean distance)." alt="" coords="586,5,828,64"/>
+<area shape="poly" title=" " alt="" coords="521,85,589,68,584,70,523,90"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#acd5e8ae67170c9c277496021a1b03fcf" title="Reconstructs path from A* search result." alt="" coords="586,88,828,147"/>
+<area shape="poly" title=" " alt="" coords="538,115,573,117,568,118,539,120"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1eeb6051ad44a49bfb656e6772cba88d" title="Finds approach points on the mesh between two waypoints that could safely bridge the gap,..." alt="" coords="586,171,828,229"/>
+<area shape="poly" title=" " alt="" coords="538,197,573,200,568,200,539,203"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd5e8ae67170c9c277496021a1b03fcf" name="acd5e8ae67170c9c277496021a1b03fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5e8ae67170c9c277496021a1b03fcf">&#9670;&#160;</a></span>ReconstructPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a>? edge)&gt;? HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.ReconstructPath </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a>,(<a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> prevNode, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a> edge)&gt;</td>          <td class="paramname"><span class="paramname"><em>cameFrom</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></td>          <td class="paramname"><span class="paramname"><em>endNode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reconstructs path from A* search result. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00185">185</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00124">AStarSearch()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_acd5e8ae67170c9c277496021a1b03fcf_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_acd5e8ae67170c9c277496021a1b03fcf_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_acd5e8ae67170c9c277496021a1b03fcf_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_acd5e8ae67170c9c277496021a1b03fcf_icgraph">
+<area shape="rect" title="Reconstructs path from A* search result." alt="" coords="586,5,828,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a232b820b00fbc8e153e05e7cbb33b6b7" title="A* search implementation on jump graph." alt="" coords="296,5,538,64"/>
+<area shape="poly" title=" " alt="" coords="568,35,539,37,538,32,573,35"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8fd609c419082bd8e471697e11939d47" name="a8fd609c419082bd8e471697e11939d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd609c419082bd8e471697e11939d47">&#9670;&#160;</a></span>SimplifyPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.SimplifyPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html">DiscretePath</a></td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Simplifies path using Douglas-Peucker algorithm and spacing enforcement. Per REQUIREMENTS.md §3.7. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00325">325</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00014">_maxWaypointsPerSegment</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00015">_minWaypointSpacing</a>, <a class="el" href="../../d1/d01/_discrete_path_8cs_source.html#l00035">HirEV_SmartFitSystemsApp.Models.DiscretePath.Count</a> e <a class="el" href="../../d1/d01/_discrete_path_8cs_source.html#l00014">HirEV_SmartFitSystemsApp.Models.DiscretePath.Waypoints</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">PlanPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a8fd609c419082bd8e471697e11939d47_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a8fd609c419082bd8e471697e11939d47_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a8fd609c419082bd8e471697e11939d47_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner_a8fd609c419082bd8e471697e11939d47_icgraph">
+<area shape="rect" title="Simplifies path using Douglas&#45;Peucker algorithm and spacing enforcement. Per REQUIREMENTS...." alt="" coords="296,5,538,64"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#af234f85e7bcd1cec3ab9aafeebee544f" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="277,35,248,37,248,32,283,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="af92fb3e9118270049cbeac7fad93f618" name="af92fb3e9118270049cbeac7fad93f618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92fb3e9118270049cbeac7fad93f618">&#9670;&#160;</a></span>_descentSteps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner._descentSteps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00383">GenerateAscentWaypoints()</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00355">GenerateDescentWaypoints()</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00021">JumpPathPlanner()</a>.</p>
+
+</div>
+</div>
+<a id="acf93bfb596c19564a116e8f6205392e7" name="acf93bfb596c19564a116e8f6205392e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf93bfb596c19564a116e8f6205392e7">&#9670;&#160;</a></span>_maxWaypointsPerSegment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner._maxWaypointsPerSegment</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00014">14</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00021">JumpPathPlanner()</a>, <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00032">PlanPath()</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00325">SimplifyPath()</a>.</p>
+
+</div>
+</div>
+<a id="aaca702417f9196f298519fefaee24cc7" name="aaca702417f9196f298519fefaee24cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaca702417f9196f298519fefaee24cc7">&#9670;&#160;</a></span>_minWaypointSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner._minWaypointSpacing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00021">JumpPathPlanner()</a> e <a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html#l00325">SimplifyPath()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../de/d02/_jump_path_planner_8cs_source.html">JumpPathPlanner.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

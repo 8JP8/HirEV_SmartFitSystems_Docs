@@ -1,0 +1,31 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.FindPath" name="HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.FindPath">
+<area shape="rect" id="Node000001" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,379,241,421"/>
+<area shape="rect" id="Node000002" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a9bd3a5376b22bcd2b1f469be2bc99207" title="Calculates the rewire radius based on number of nodes (RRT* formula)." alt="" coords="310,5,548,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,377,143,317,174,235,195,192,221,149,252,109,287,74,298,68,295,72,290,78,256,112,226,152,200,194,179,238,148,319,132,379"/>
+<area shape="rect" id="Node000003" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a7b0ca9e3d24182f55915033b04345907" title="Expands bounds to include a point." alt="" coords="316,88,543,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,377,152,331,186,272,231,210,258,181,287,157,304,148,300,152,290,161,261,185,235,213,190,274,157,334,136,379"/>
+<area shape="rect" id="Node000004" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a9be85b9103ecc8e0f7c0d635ccde60d4" title="Finds the nearest node to a point." alt="" coords="325,171,534,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,377,200,309,241,271,287,239,313,228,309,232,290,244,245,276,203,313,143,380"/>
+<area shape="rect" id="Node000005" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a7373956c12db1bcced9d79958b6d1105" title="Finds all nodes within a given radius of a point." alt="" coords="325,253,534,312"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,376,288,328,326,316,322,319,290,333,176,380"/>
+<area shape="rect" id="Node000006" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aae6893fa247f03e201688e2e9015800b" title="Checks if a point is in collision with obstacles." alt="" coords="881,320,1075,379"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="241,390,866,353,864,358,242,396"/>
+<area shape="rect" id="Node000008" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="618,395,812,453"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="241,402,604,417,601,422,242,407"/>
+<area shape="rect" id="Node000010" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#afadb104bfef7bb347f7d961dd2c76e37" title="Propagates cost update to descendants after rewiring." alt="" coords="308,437,550,496"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="223,419,296,436,291,438,225,424"/>
+<area shape="rect" id="Node000011" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aaf71e6dab806dd18a3ac9e81adfa6b95" title="Reconstructs path from goal node to start." alt="" coords="289,520,570,563"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="151,419,213,463,251,486,290,506,308,514,303,515,288,510,248,491,211,468,151,425"/>
+<area shape="rect" id="Node000012" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a799f7b7ec38dbc7d96801cc5659eb99f" title="Samples a random point within bounds." alt="" coords="316,587,543,645"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="139,419,200,495,243,537,290,572,304,582,299,582,287,577,239,541,196,498,139,424"/>
+<area shape="rect" id="Node000013" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="302,669,557,712"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="132,419,154,470,187,534,232,600,260,630,290,655,298,662,292,661,287,659,256,633,228,603,182,537,149,472,132,425"/>
+<area shape="rect" id="Node000014" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a81cf2a2c641f9bfec62a9eefe785305d" title="Steers from one point towards another, limited by step size." alt="" coords="322,736,536,779"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="129,419,147,482,178,563,199,607,224,649,255,688,290,722,311,737,306,736,287,726,251,692,220,652,194,609,173,566,142,483,128,424"/>
+<area shape="rect" id="Node000007" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae6d53d216c5ee4165d87b8d4001f862b" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="1144,320,1351,379"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1075,347,1130,349,1125,350,1076,352"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="812,394,868,380,863,382,814,399"/>
+<area shape="rect" id="Node000009" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#adf865be22821ba867e9ee29b1a169183" title="Segment&#45;triangle intersection." alt="" coords="860,403,1096,461"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="812,424,847,427,842,428,813,430"/>
+<area shape="poly" id="edge14_Node000013_Node000008" title=" " alt="" coords="550,666,568,655,613,613,649,563,677,512,697,470,701,466,681,515,654,566,617,617,572,659,552,671"/>
+</map>

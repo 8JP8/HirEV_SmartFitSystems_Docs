@@ -1,0 +1,191 @@
+var annotated_dup =
+[
+    [ "HirEV_SmartFitSystemsApp", "d1/d00/namespace_hir_e_v___smart_fit_systems_app.html", [
+      [ "Models", "d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html", [
+        [ "Configuration", "d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html", [
+          [ "SessionConfig", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config" ],
+          [ "ModelFileInfo", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info" ]
+        ] ],
+        [ "DTOs", "d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html", [
+          [ "ColorGroupedExportDTO", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_export_d_t_o.html", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_export_d_t_o" ],
+          [ "CADHoleExportDTO", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o" ],
+          [ "PointExportDTO", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o" ],
+          [ "VectorExportDTO", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_vector_export_d_t_o.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_vector_export_d_t_o" ],
+          [ "ColorGroupedControlPointsDTO", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_control_points_d_t_o.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_control_points_d_t_o" ],
+          [ "ControlPointWithFaceIndex", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index.html", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index" ],
+          [ "ColorGroupedMeasurementPointsDTO", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_measurement_points_d_t_o.html", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_measurement_points_d_t_o" ],
+          [ "MeasurementPointWithFaceIndex", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_measurement_point_with_face_index.html", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_measurement_point_with_face_index" ],
+          [ "PathExportDTO", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o" ],
+          [ "ColorPathExportDTO", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_path_export_d_t_o.html", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_path_export_d_t_o" ],
+          [ "PathPointExportDTO", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o" ],
+          [ "PointEditEventDTO", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_edit_event_d_t_o.html", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_edit_event_d_t_o" ],
+          [ "SdfShellCacheDTO", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o" ],
+          [ "SdfShellModelFingerprintDTO", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_model_fingerprint_d_t_o.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_model_fingerprint_d_t_o" ],
+          [ "SdfContextCacheDTO", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o" ],
+          [ "SdfShellCacheValidationInput", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input" ],
+          [ "ShellMeshDTO", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o" ]
+        ] ],
+        [ "CADFace", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face" ],
+        [ "CADHole", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole" ],
+        [ "DiscretePath", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_discrete_path" ],
+        [ "PathWaypoint", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint" ],
+        [ "MeasuringToolTypes", "d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_measuring_tool_types.html", "d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_measuring_tool_types" ],
+        [ "ScannerTypes", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_types.html", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_types" ],
+        [ "FacePoint", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point.html", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point" ],
+        [ "FeatureRow_MHeadBody", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_head_body.html", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_head_body" ],
+        [ "FeatureRow_DiameterHeadClearance", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___diameter_head_clearance.html", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___diameter_head_clearance" ],
+        [ "FeatureRow_MBody", "de/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_body.html", "de/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_body" ],
+        [ "FeatureRow_MPreDrill", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_pre_drill.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_pre_drill" ],
+        [ "FeatureRow_DiameterBody", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___diameter_body.html", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___diameter_body" ],
+        [ "JumpGraph", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph" ],
+        [ "JumpNode", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node" ],
+        [ "JumpEdge", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge" ],
+        [ "ScannerModel", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_model.html", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_model" ],
+        [ "ScannerProperties", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties" ],
+        [ "ScannerPropertiesLoader", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader" ],
+        [ "ToolTransformation", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation" ]
+      ] ],
+      [ "Modules", "dc/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_modules.html", [
+        [ "PostProcessors", "d9/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors.html", [
+          [ "PartInspectL", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html", null ]
+        ] ],
+        [ "FaceExtractor", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor" ],
+        [ "Point3DComparer", "de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_point3_d_comparer.html", "de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_point3_d_comparer" ],
+        [ "HoleDetector", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector" ],
+        [ "ScanPathOptions", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options" ],
+        [ "DetectedHole", "dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_detected_hole.html", "dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_detected_hole" ],
+        [ "ScanPathProgressEventArgs", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args" ],
+        [ "ScanPathManager", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager.html", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager" ],
+        [ "PartBoundingSphere", "d2/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_bounding_sphere.html", "d2/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_bounding_sphere" ],
+        [ "PartScanGroup", "dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_scan_group.html", "dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_scan_group" ],
+        [ "SurfaceGridPoint", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_surface_grid_point.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_surface_grid_point" ],
+        [ "ScanPoint", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_point.html", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_point" ],
+        [ "ScanPath", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path.html", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path" ],
+        [ "ScannerConfig", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scanner_config.html", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scanner_config" ]
+      ] ],
+      [ "Utilities", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html", [
+        [ "Algorithms", "d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html", [
+          [ "ApproachPointGenerator", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_point_generator.html", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_point_generator" ],
+          [ "CollisionHeuristics", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics" ],
+          [ "HoleAxisExtractor", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor.html", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor" ],
+          [ "JumpCollisionValidator", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator" ],
+          [ "JumpGraphBuilder", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_graph_builder.html", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_graph_builder" ],
+          [ "JumpPathPlanner", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner" ],
+          [ "NearestNeighborTwoOpt", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt" ],
+          [ "PathVolumeValidator", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator" ],
+          [ "SdfShellGenerator", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator" ],
+          [ "SdfShellVisualizer", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer" ],
+          [ "Triangle3D", "d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html", "d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d" ],
+          [ "SegmentCollisionValidator", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator" ],
+          [ "SegmentValidationResult", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result" ],
+          [ "ShellBasedPathPlanner", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner" ],
+          [ "HoleFeature", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_feature.html", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_feature" ],
+          [ "ShellGeodesicNavigator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator" ],
+          [ "MeshShellGenerator", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator" ],
+          [ "ApproachMeasurementPair", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair" ],
+          [ "ShellProjectionUtils", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils" ]
+        ] ],
+        [ "Diagnostics", "df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics.html", [
+          [ "PathPlanningDiagnostics", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics" ]
+        ] ],
+        [ "Configuration", "d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html", [
+          [ "SessionConfigurationManager", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager" ]
+        ] ],
+        [ "PathPoint", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point" ],
+        [ "ColorPath", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path" ],
+        [ "ControlPointFilterConfig", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config" ],
+        [ "WaypointData", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_data.html", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_data" ],
+        [ "PathSegmentData", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data.html", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data" ],
+        [ "BridgePathConsumer", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path_consumer.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path_consumer" ],
+        [ "BridgePath", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path" ],
+        [ "PathManager", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager" ],
+        [ "SimulationEventArgs", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args" ],
+        [ "ColorGroupEventArgs", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group_event_args.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group_event_args" ],
+        [ "PathGenerationProgressEventArgs", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args.html", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args" ],
+        [ "AntColonyOptimization", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization" ],
+        [ "CollisionAvoidanceAlgorithm", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm" ],
+        [ "RRTStarPathfinder", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder" ],
+        [ "VisibilityGraphPathfinder", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder" ],
+        [ "ColorJsonConverter", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter" ],
+        [ "ColorNamer", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer" ],
+        [ "ColorToolMappingUtils", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils" ],
+        [ "DynamicToolScanner", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner.html", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner" ],
+        [ "EyeshotCameraUtils", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_camera_utils.html", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_camera_utils" ],
+        [ "EyeshotGeometryUtils", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils" ],
+        [ "EyeshotSelectionUtils", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_selection_utils.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_selection_utils" ],
+        [ "EyeshotTreeViewHelper", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper" ],
+        [ "EyeshotVisualsManager", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html", "d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager" ],
+        [ "GridPointGenerator", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_grid_point_generator.html", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_grid_point_generator" ],
+        [ "HirEVDesign", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_hir_e_v_design.html", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_hir_e_v_design" ],
+        [ "IgnoredItemManager", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager" ],
+        [ "JsonExportUtils", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils" ],
+        [ "MeasuringToolConfigManager", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager" ],
+        [ "Point3DComparer", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer" ],
+        [ "Point4DConverter", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter" ],
+        [ "Point3DJsonConverter", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_json_converter.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_json_converter" ],
+        [ "Vector3DJsonConverter", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_vector3_d_json_converter.html", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_vector3_d_json_converter" ],
+        [ "EntityJsonConverterFactory", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_entity_json_converter_factory.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_entity_json_converter_factory" ],
+        [ "RecentPartsManager", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager" ],
+        [ "ScannerConfigurationSaver", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver" ],
+        [ "ToolModelLoader", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader" ],
+        [ "IUndoCommand", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command" ],
+        [ "UndoRedoEventArgs", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args" ],
+        [ "UndoManager", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager" ],
+        [ "UndoHistoryEntryDTO", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o" ],
+        [ "CompositeCommand", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command.html", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command" ],
+        [ "UpdateColorPathCommand", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command" ],
+        [ "TranslatePathsCommand", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_translate_paths_command.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_translate_paths_command" ],
+        [ "BroadUndoCommand", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command" ],
+        [ "InsertWaypointCommand", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command" ],
+        [ "MoveWaypointBatchCommand", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command" ],
+        [ "MoveWaypointCommand", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command" ],
+        [ "DeleteWaypointCommand", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command" ],
+        [ "MovePartCommand", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command" ],
+        [ "ActionUndoCommand", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command" ],
+        [ "ColorGroup", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group" ],
+        [ "XmlExportUtils", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils.html", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils" ]
+      ] ],
+      [ "Properties", "d1/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_properties.html", [
+        [ "Settings", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_properties_1_1_settings.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_properties_1_1_settings" ]
+      ] ],
+      [ "Resource_Tools", "db/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools.html", [
+        [ "CustomControls", "d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls.html", [
+          [ "ToleranceSliderTemplate", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_slider_template.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_slider_template" ],
+          [ "ToleranceSlidersViewModel", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model" ]
+        ] ],
+        [ "CustomDialogs", "d7/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs.html", [
+          [ "EyeshotEntityFilterDialog", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog" ],
+          [ "PasswordInputDialog", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog" ],
+          [ "PathItemViewModel", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model" ],
+          [ "PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog" ]
+        ] ],
+        [ "Validation", "da/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation.html", [
+          [ "NumericValidationRule", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_numeric_validation_rule.html", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_numeric_validation_rule" ],
+          [ "IPv4ValidationRule", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_i_pv4_validation_rule.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_i_pv4_validation_rule" ]
+        ] ]
+      ] ],
+      [ "ViewModel", "de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html", [
+        [ "RecentPartItem", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_recent_part_item.html", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_recent_part_item" ],
+        [ "MainViewModel", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model" ]
+      ] ],
+      [ "Windows", "db/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_windows.html", [
+        [ "SectionViewWindow", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window" ],
+        [ "SectionViewDesign", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_design.html", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_design" ],
+        [ "MarkerData", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_marker_data.html", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_marker_data" ],
+        [ "DimensionAnchor", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_dimension_anchor.html", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_dimension_anchor" ]
+      ] ],
+      [ "App", "d2/d00/class_hir_e_v___smart_fit_systems_app_1_1_app.html", "d2/d00/class_hir_e_v___smart_fit_systems_app_1_1_app" ],
+      [ "MainWindow", "dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window.html", "dd/d01/class_hir_e_v___smart_fit_systems_app_1_1_main_window" ],
+      [ "FocusBehavior", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_focus_behavior.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_focus_behavior" ],
+      [ "ScannerConfigurationDialog", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog" ],
+      [ "About_SidePanel", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_about___side_panel.html", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_about___side_panel" ],
+      [ "LogNode", "da/d02/class_hir_e_v___smart_fit_systems_app_1_1_log_node.html", "da/d02/class_hir_e_v___smart_fit_systems_app_1_1_log_node" ],
+      [ "Measuring_SidePanel", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel" ],
+      [ "ColorToolItem", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item" ],
+      [ "Planning_SidePanel", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel" ],
+      [ "Settings_SidePanel", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel" ]
+    ] ],
+    [ "ProtectedConfigManager", "dc/d03/class_protected_config_manager.html", "dc/d03/class_protected_config_manager" ],
+    [ "SecurePasswordManager", "d7/d03/class_secure_password_manager.html", "d7/d03/class_secure_password_manager" ],
+    [ "ToleranceConfigManager", "d0/d01/class_tolerance_config_manager.html", "d0/d01/class_tolerance_config_manager" ]
+];

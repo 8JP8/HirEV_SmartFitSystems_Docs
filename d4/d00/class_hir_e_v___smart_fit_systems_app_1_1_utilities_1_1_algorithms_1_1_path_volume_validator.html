@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html','../../','dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Validates approach points against the SDF shell mesh. Core rule: no approach point may sit more than half the shell offset INSIDE the shell surface (i.e. SDF value &lt; -offsetDistance/2). Points that violate this are pushed out to the nearest shell surface point.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_path_volume_validator_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_path_volume_validator_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_path_volume_validator_coll__map">
+<area shape="rect" title="Validates approach points against the SDF shell mesh. Core rule: no approach point may sit more than ..." alt="" coords="8,1352,233,1576"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html" title="Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field ..." alt="" coords="5,5,236,1280"/>
+<area shape="poly" title=" " alt="" coords="121,1277,123,1335,118,1334,120,1283"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a119dfccd4a592d0fe64ab1ae681a10fb" id="r_a119dfccd4a592d0fe64ab1ae681a10fb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a119dfccd4a592d0fe64ab1ae681a10fb">PathVolumeValidator</a> (<a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a> shellGenerator, List&lt; Brep?&gt; partObstacles)</td></tr>
+<tr class="memdesc:a119dfccd4a592d0fe64ab1ae681a10fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html" title="Validates approach points against the SDF shell mesh. Core rule: no approach point may sit more than ...">PathVolumeValidator</a> class.  <br /></td></tr>
+<tr class="memitem:a27344d26d8af148e352ca6b739f4b189" id="r_a27344d26d8af148e352ca6b739f4b189"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a27344d26d8af148e352ca6b739f4b189">IsInsidePartVolume</a> (Point3D point)</td></tr>
+<tr class="memdesc:a27344d26d8af148e352ca6b739f4b189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface). Uses Brep.IsPointInside when available; falls back to the SDF sign.  <br /></td></tr>
+<tr class="memitem:aa3e367a442c69ffcf81a76b42a87e4c6" id="r_aa3e367a442c69ffcf81a76b42a87e4c6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa3e367a442c69ffcf81a76b42a87e4c6">ValidateAndCorrectApproachPoints</a> (List&lt; <a class="el" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html">ApproachMeasurementPair</a> &gt; pairs, double tolerance=1.5)</td></tr>
+<tr class="memdesc:aa3e367a442c69ffcf81a76b42a87e4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates and corrects approach points so that none sits more than half the shell offset distance inside the shell mesh surface.  <br /></td></tr>
+<tr class="memitem:a58f8394919e8258bea7ed9127239ce52" id="r_a58f8394919e8258bea7ed9127239ce52"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a58f8394919e8258bea7ed9127239ce52">ValidateAndCorrectPath</a> (List&lt; Point3D &gt; pathPoints, List&lt; bool &gt; measurementMask, double tolerance=1.5)</td></tr>
+<tr class="memdesc:a58f8394919e8258bea7ed9127239ce52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that all path points stay outside the part volume (shell interior check).  <br /></td></tr>
+<tr class="memitem:ac9415078871635e092f2fe20bb1d225b" id="r_ac9415078871635e092f2fe20bb1d225b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac9415078871635e092f2fe20bb1d225b">ValidateSegmentsClearOfVolume</a> (List&lt; Point3D &gt; pathPoints, int samplesPerSegment=5)</td></tr>
+<tr class="memdesc:ac9415078871635e092f2fe20bb1d225b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that all path segments are fully outside of the part volume.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:ab81112ab49282a6d13f83655789e0ad2" id="r_ab81112ab49282a6d13f83655789e0ad2"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#ab81112ab49282a6d13f83655789e0ad2">PushToShellSurface</a> (Point3D interiorPoint, double tolerance)</td></tr>
+<tr class="memdesc:ab81112ab49282a6d13f83655789e0ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects an interior point back onto the outer shell boundary surface.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:ac3652deed39f9a408c08dc12981dbdab" id="r_ac3652deed39f9a408c08dc12981dbdab"><td class="memItemLeft">readonly <a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a></td></tr>
+<tr class="memitem:a7c949bbd07cbeffeb8d905af461366cf" id="r_a7c949bbd07cbeffeb8d905af461366cf"><td class="memItemLeft">readonly List&lt; Brep?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7c949bbd07cbeffeb8d905af461366cf">_partObstacles</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Validates approach points against the SDF shell mesh. Core rule: no approach point may sit more than half the shell offset INSIDE the shell surface (i.e. SDF value &lt; -offsetDistance/2). Points that violate this are pushed out to the nearest shell surface point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00013">13</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a119dfccd4a592d0fe64ab1ae681a10fb" name="a119dfccd4a592d0fe64ab1ae681a10fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119dfccd4a592d0fe64ab1ae681a10fb">&#9670;&#160;</a></span>PathVolumeValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.PathVolumeValidator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a></td>          <td class="paramname"><span class="paramname"><em>shellGenerator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Brep?&gt;</td>          <td class="paramname"><span class="paramname"><em>partObstacles</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html" title="Validates approach points against the SDF shell mesh. Core rule: no approach point may sit more than ...">PathVolumeValidator</a> class. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shellGenerator</td><td>The signed distance field shell generator.</td></tr>
+    <tr><td class="paramname">partObstacles</td><td>The list of Brep objects representing part obstacles.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00016">_partObstacles</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00015">_shellGenerator</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a27344d26d8af148e352ca6b739f4b189" name="a27344d26d8af148e352ca6b739f4b189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27344d26d8af148e352ca6b739f4b189">&#9670;&#160;</a></span>IsInsidePartVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.IsInsidePartVolume </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface). Uses Brep.IsPointInside when available; falls back to the SDF sign. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00016">_partObstacles</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00015">_shellGenerator</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00109">ValidateAndCorrectPath()</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00148">ValidateSegmentsClearOfVolume()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a27344d26d8af148e352ca6b739f4b189_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a27344d26d8af148e352ca6b739f4b189_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a27344d26d8af148e352ca6b739f4b189_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a27344d26d8af148e352ca6b739f4b189_icgraph">
+<area shape="rect" title="Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface)...." alt="" coords="322,47,527,105"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a58f8394919e8258bea7ed9127239ce52" title="Validates that all path points stay outside the part volume (shell interior check)." alt="" coords="32,5,247,64"/>
+<area shape="poly" title=" " alt="" coords="304,59,247,53,247,48,309,58"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac9415078871635e092f2fe20bb1d225b" title="Validates that all path segments are fully outside of the part volume." alt="" coords="5,88,274,147"/>
+<area shape="poly" title=" " alt="" coords="304,94,274,100,274,95,309,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab81112ab49282a6d13f83655789e0ad2" name="ab81112ab49282a6d13f83655789e0ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81112ab49282a6d13f83655789e0ad2">&#9670;&#160;</a></span>PushToShellSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D? HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.PushToShellSurface </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>interiorPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Projects an interior point back onto the outer shell boundary surface. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interiorPoint</td><td>The point inside the part volume.</td></tr>
+    <tr><td class="paramname">tolerance</td><td>The boundary distance tolerance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The projected point on the shell surface, or null if calculation fails.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00137">137</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00015">_shellGenerator</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00109">ValidateAndCorrectPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ab81112ab49282a6d13f83655789e0ad2_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ab81112ab49282a6d13f83655789e0ad2_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ab81112ab49282a6d13f83655789e0ad2_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ab81112ab49282a6d13f83655789e0ad2_icgraph">
+<area shape="rect" title="Projects an interior point back onto the outer shell boundary surface." alt="" coords="268,5,473,64"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a58f8394919e8258bea7ed9127239ce52" title="Validates that all path points stay outside the part volume (shell interior check)." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="249,35,220,37,220,32,254,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa3e367a442c69ffcf81a76b42a87e4c6" name="aa3e367a442c69ffcf81a76b42a87e4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e367a442c69ffcf81a76b42a87e4c6">&#9670;&#160;</a></span>ValidateAndCorrectApproachPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateAndCorrectApproachPoints </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html">ApproachMeasurementPair</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>pairs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates and corrects approach points so that none sits more than half the shell offset distance inside the shell mesh surface. </p>
+<p>Correction strategy:</p><ol type="1">
+<li>Query SDF value at the approach point.</li>
+<li>If sdf &lt; (offsetDistance / 2) → point is too close to or inside the shell.</li>
+<li>Push the point to the nearest shell surface point.</li>
+<li>If nearest shell point is null, push along the stored normal by the required delta. </li>
+</ol>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00063">63</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00015">_shellGenerator</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05425">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_aa3e367a442c69ffcf81a76b42a87e4c6_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_aa3e367a442c69ffcf81a76b42a87e4c6_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_aa3e367a442c69ffcf81a76b42a87e4c6_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_aa3e367a442c69ffcf81a76b42a87e4c6_icgraph">
+<area shape="rect" title="Validates and corrects approach points so that none sits more than half the shell offset distance ins..." alt="" coords="270,5,549,64"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,5,222,64"/>
+<area shape="poly" title=" " alt="" coords="251,35,222,37,222,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58f8394919e8258bea7ed9127239ce52" name="a58f8394919e8258bea7ed9127239ce52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f8394919e8258bea7ed9127239ce52">&#9670;&#160;</a></span>ValidateAndCorrectPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateAndCorrectPath </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>pathPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>measurementMask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates that all path points stay outside the part volume (shell interior check). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00109">109</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00033">IsInsidePartVolume()</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00137">PushToShellSurface()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a58f8394919e8258bea7ed9127239ce52_cgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a58f8394919e8258bea7ed9127239ce52_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a58f8394919e8258bea7ed9127239ce52_cgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_a58f8394919e8258bea7ed9127239ce52_cgraph">
+<area shape="rect" title="Validates that all path points stay outside the part volume (shell interior check)." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189" title="Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface)...." alt="" coords="268,5,473,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,54,221,61"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ab81112ab49282a6d13f83655789e0ad2" title="Projects an interior point back onto the outer shell boundary surface." alt="" coords="268,88,473,147"/>
+<area shape="poly" title=" " alt="" coords="220,91,255,98,250,99,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9415078871635e092f2fe20bb1d225b" name="ac9415078871635e092f2fe20bb1d225b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9415078871635e092f2fe20bb1d225b">&#9670;&#160;</a></span>ValidateSegmentsClearOfVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateSegmentsClearOfVolume </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>pathPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>samplesPerSegment</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates that all path segments are fully outside of the part volume. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathPoints</td><td>The sequence of points defining the path.</td></tr>
+    <tr><td class="paramname">samplesPerSegment</td><td>The number of test sample points per segment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True if all segments are clear of the part volume, false otherwise.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00148">148</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00033">IsInsidePartVolume()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ac9415078871635e092f2fe20bb1d225b_cgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ac9415078871635e092f2fe20bb1d225b_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ac9415078871635e092f2fe20bb1d225b_cgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_ac9415078871635e092f2fe20bb1d225b_cgraph">
+<area shape="rect" title="Validates that all path segments are fully outside of the part volume." alt="" coords="5,5,274,64"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189" title="Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface)...." alt="" coords="322,5,527,64"/>
+<area shape="poly" title=" " alt="" coords="274,32,309,35,303,35,274,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a7c949bbd07cbeffeb8d905af461366cf" name="a7c949bbd07cbeffeb8d905af461366cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c949bbd07cbeffeb8d905af461366cf">&#9670;&#160;</a></span>_partObstacles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;Brep?&gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator._partObstacles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00033">IsInsidePartVolume()</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00023">PathVolumeValidator()</a>.</p>
+
+</div>
+</div>
+<a id="ac3652deed39f9a408c08dc12981dbdab" name="ac3652deed39f9a408c08dc12981dbdab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3652deed39f9a408c08dc12981dbdab">&#9670;&#160;</a></span>_shellGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator._shellGenerator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00033">IsInsidePartVolume()</a>, <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00023">PathVolumeValidator()</a>, <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00137">PushToShellSurface()</a> e <a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html#l00063">ValidateAndCorrectApproachPoints()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d3/d02/_path_volume_validator_8cs_source.html">PathVolumeValidator.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

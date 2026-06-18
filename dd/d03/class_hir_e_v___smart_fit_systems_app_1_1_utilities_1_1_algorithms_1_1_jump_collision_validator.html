@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html','../../','dc/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidation in App.config. Per REQUIREMENTS.md §3.5 &amp; §7 Phase 5.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_collision_validator_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_collision_validator_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_jump_collision_validator_coll__map">
+<area shape="rect" title="Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidati..." alt="" coords="5,5,212,277"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a1532cdf545d6f37af941cb963020baff" id="r_a1532cdf545d6f37af941cb963020baff"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1532cdf545d6f37af941cb963020baff">JumpCollisionValidator</a> (bool enableValidation=false, int sampleCount=10, double offsetIncrement=1.0, int maxOffsetAttempts=5)</td></tr>
+<tr class="memdesc:a1532cdf545d6f37af941cb963020baff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new <a class="el" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html" title="Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidati...">JumpCollisionValidator</a>.  <br /></td></tr>
+<tr class="memitem:ae8237c9d2987b12e0fc279672b8b016f" id="r_ae8237c9d2987b12e0fc279672b8b016f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae8237c9d2987b12e0fc279672b8b016f">ValidateJump</a> (Point3D from, Point3D to, Brep originalPart)</td></tr>
+<tr class="memdesc:ae8237c9d2987b12e0fc279672b8b016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validation is disabled). Per REQUIREMENTS.md §3.5.  <br /></td></tr>
+<tr class="memitem:a48e80b47dc64519db777f6bff7ba5aae" id="r_a48e80b47dc64519db777f6bff7ba5aae"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a48e80b47dc64519db777f6bff7ba5aae">TryOffsetJumpOutward</a> (Point3D from, Point3D to, Brep originalPart, Vector3D offsetDirection)</td></tr>
+<tr class="memdesc:a48e80b47dc64519db777f6bff7ba5aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to find a collision-free jump by offsetting outward. Per REQUIREMENTS.md §3.5.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:ae0c2657ec4c4a290c80a0c6990ad6667" id="r_ae0c2657ec4c4a290c80a0c6990ad6667"><td class="memItemLeft">static <a class="el" href="#a1532cdf545d6f37af941cb963020baff">JumpCollisionValidator</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae0c2657ec4c4a290c80a0c6990ad6667">CreateFromConfig</a> ()</td></tr>
+<tr class="memdesc:ae0c2657ec4c4a290c80a0c6990ad6667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html" title="Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidati...">JumpCollisionValidator</a> with configuration from App.config.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a5ef6512a7d480009887e2c02c8cb139b" id="r_a5ef6512a7d480009887e2c02c8cb139b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5ef6512a7d480009887e2c02c8cb139b">IsPointInsidePart</a> (Point3D point, Brep part)</td></tr>
+<tr class="memdesc:a5ef6512a7d480009887e2c02c8cb139b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed if needed.  <br /></td></tr>
+<tr class="memitem:ae52e103df435f19865c2d51c9ab16438" id="r_ae52e103df435f19865c2d51c9ab16438"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae52e103df435f19865c2d51c9ab16438">RayIntersectsTriangle</a> (Point3D origin, Vector3D direction, Point3D v0, Point3D v1, Point3D v2)</td></tr>
+<tr class="memdesc:ae52e103df435f19865c2d51c9ab16438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Möller–Trumbore ray-triangle intersection test.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a89a5c4c4e713c8ebcc9c79eeec9013a7" id="r_a89a5c4c4e713c8ebcc9c79eeec9013a7"><td class="memItemLeft">readonly bool&#160;</td><td class="memItemRight"><a class="el" href="#a89a5c4c4e713c8ebcc9c79eeec9013a7">_enableValidation</a></td></tr>
+<tr class="memitem:a46f658ff5de51edb118a0633ba48d7cc" id="r_a46f658ff5de51edb118a0633ba48d7cc"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#a46f658ff5de51edb118a0633ba48d7cc">_sampleCount</a></td></tr>
+<tr class="memitem:af4210f6e868d608b93ea662696570b3d" id="r_af4210f6e868d608b93ea662696570b3d"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#af4210f6e868d608b93ea662696570b3d">_offsetIncrement</a></td></tr>
+<tr class="memitem:a6082436238d2de66d2514a37c0b15680" id="r_a6082436238d2de66d2514a37c0b15680"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#a6082436238d2de66d2514a37c0b15680">_maxOffsetAttempts</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidation in App.config. Per REQUIREMENTS.md §3.5 &amp; §7 Phase 5. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00013">13</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a1532cdf545d6f37af941cb963020baff" name="a1532cdf545d6f37af941cb963020baff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1532cdf545d6f37af941cb963020baff">&#9670;&#160;</a></span>JumpCollisionValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.JumpCollisionValidator </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableValidation</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sampleCount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>offsetIncrement</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxOffsetAttempts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new <a class="el" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html" title="Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidati...">JumpCollisionValidator</a>. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00015">_enableValidation</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00018">_maxOffsetAttempts</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00017">_offsetIncrement</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00016">_sampleCount</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00230">CreateFromConfig()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a1532cdf545d6f37af941cb963020baff_icgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a1532cdf545d6f37af941cb963020baff_icgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a1532cdf545d6f37af941cb963020baff_icgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a1532cdf545d6f37af941cb963020baff_icgraph">
+<area shape="rect" title="Initializes a new JumpCollisionValidator." alt="" coords="271,5,488,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae0c2657ec4c4a290c80a0c6990ad6667" title="Creates a JumpCollisionValidator with configuration from App.config." alt="" coords="5,5,223,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,223,37,223,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="ae0c2657ec4c4a290c80a0c6990ad6667" name="ae0c2657ec4c4a290c80a0c6990ad6667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c2657ec4c4a290c80a0c6990ad6667">&#9670;&#160;</a></span>CreateFromConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1532cdf545d6f37af941cb963020baff">JumpCollisionValidator</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.CreateFromConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html" title="Validates jumps for collision with part geometry. Optional: controlled by EnableJumpCollisionValidati...">JumpCollisionValidator</a> with configuration from App.config. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00230">230</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">JumpCollisionValidator()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae0c2657ec4c4a290c80a0c6990ad6667_cgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae0c2657ec4c4a290c80a0c6990ad6667_cgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae0c2657ec4c4a290c80a0c6990ad6667_cgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae0c2657ec4c4a290c80a0c6990ad6667_cgraph">
+<area shape="rect" title="Creates a JumpCollisionValidator with configuration from App.config." alt="" coords="5,5,223,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a1532cdf545d6f37af941cb963020baff" title="Initializes a new JumpCollisionValidator." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="223,32,257,34,252,35,223,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ef6512a7d480009887e2c02c8cb139b" name="a5ef6512a7d480009887e2c02c8cb139b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef6512a7d480009887e2c02c8cb139b">&#9670;&#160;</a></span>IsPointInsidePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.IsPointInsidePart </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Brep</td>          <td class="paramname"><span class="paramname"><em>part</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed if needed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00134">134</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00196">RayIntersectsTriangle()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00044">ValidateJump()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_cgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_cgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_cgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_cgraph">
+<area shape="rect" title="Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed i..." alt="" coords="5,5,223,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae52e103df435f19865c2d51c9ab16438" title="Möller–Trumbore ray&#45;triangle intersection test." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="223,32,257,34,252,35,223,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_icgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_icgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_icgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a5ef6512a7d480009887e2c02c8cb139b_icgraph">
+<area shape="rect" title="Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed i..." alt="" coords="536,5,753,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae8237c9d2987b12e0fc279672b8b016f" title="Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validatio..." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="517,35,489,37,489,32,523,35"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a48e80b47dc64519db777f6bff7ba5aae" title="Attempts to find a collision&#45;free jump by offsetting outward. Per REQUIREMENTS.md §3...." alt="" coords="5,5,223,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,223,37,223,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae52e103df435f19865c2d51c9ab16438" name="ae52e103df435f19865c2d51c9ab16438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52e103df435f19865c2d51c9ab16438">&#9670;&#160;</a></span>RayIntersectsTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.RayIntersectsTriangle </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>direction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Möller–Trumbore ray-triangle intersection test. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00196">196</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00134">IsPointInsidePart()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae52e103df435f19865c2d51c9ab16438_icgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae52e103df435f19865c2d51c9ab16438_icgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae52e103df435f19865c2d51c9ab16438_icgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae52e103df435f19865c2d51c9ab16438_icgraph">
+<area shape="rect" title="Möller–Trumbore ray&#45;triangle intersection test." alt="" coords="801,5,1019,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a5ef6512a7d480009887e2c02c8cb139b" title="Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed i..." alt="" coords="536,5,753,64"/>
+<area shape="poly" title=" " alt="" coords="783,35,754,37,754,32,788,35"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae8237c9d2987b12e0fc279672b8b016f" title="Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validatio..." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="517,35,489,37,489,32,523,35"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a48e80b47dc64519db777f6bff7ba5aae" title="Attempts to find a collision&#45;free jump by offsetting outward. Per REQUIREMENTS.md §3...." alt="" coords="5,5,223,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,223,37,223,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48e80b47dc64519db777f6bff7ba5aae" name="a48e80b47dc64519db777f6bff7ba5aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e80b47dc64519db777f6bff7ba5aae">&#9670;&#160;</a></span>TryOffsetJumpOutward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D? HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.TryOffsetJumpOutward </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Brep</td>          <td class="paramname"><span class="paramname"><em>originalPart</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>offsetDirection</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to find a collision-free jump by offsetting outward. Per REQUIREMENTS.md §3.5. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Start point of jump</td></tr>
+    <tr><td class="paramname">to</td><td>End point of jump</td></tr>
+    <tr><td class="paramname">originalPart</td><td>Original part BREP</td></tr>
+    <tr><td class="paramname">offsetDirection</td><td>Direction to offset (typically average of face normals)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Collision-free midpoint, or null if not found</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00081">81</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00015">_enableValidation</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00018">_maxOffsetAttempts</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00017">_offsetIncrement</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00044">ValidateJump()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a48e80b47dc64519db777f6bff7ba5aae_cgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a48e80b47dc64519db777f6bff7ba5aae_cgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a48e80b47dc64519db777f6bff7ba5aae_cgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_a48e80b47dc64519db777f6bff7ba5aae_cgraph">
+<area shape="rect" title="Attempts to find a collision&#45;free jump by offsetting outward. Per REQUIREMENTS.md §3...." alt="" coords="5,5,223,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae8237c9d2987b12e0fc279672b8b016f" title="Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validatio..." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="223,32,257,34,252,35,223,37"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a5ef6512a7d480009887e2c02c8cb139b" title="Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed i..." alt="" coords="536,5,753,64"/>
+<area shape="poly" title=" " alt="" coords="489,32,523,35,517,35,489,37"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae52e103df435f19865c2d51c9ab16438" title="Möller–Trumbore ray&#45;triangle intersection test." alt="" coords="801,5,1019,64"/>
+<area shape="poly" title=" " alt="" coords="754,32,788,35,783,35,754,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae8237c9d2987b12e0fc279672b8b016f" name="ae8237c9d2987b12e0fc279672b8b016f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8237c9d2987b12e0fc279672b8b016f">&#9670;&#160;</a></span>ValidateJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator.ValidateJump </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Brep</td>          <td class="paramname"><span class="paramname"><em>originalPart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validation is disabled). Per REQUIREMENTS.md §3.5. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Start point of jump</td></tr>
+    <tr><td class="paramname">to</td><td>End point of jump</td></tr>
+    <tr><td class="paramname">originalPart</td><td>Original part BREP for collision checking</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True if jump is collision-free</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00044">44</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00015">_enableValidation</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00016">_sampleCount</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00134">IsPointInsidePart()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00081">TryOffsetJumpOutward()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_cgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_cgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_cgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_cgraph">
+<area shape="rect" title="Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validatio..." alt="" coords="5,5,223,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a5ef6512a7d480009887e2c02c8cb139b" title="Checks if a point is inside the part geometry. Uses bounding box as quick check, then more detailed i..." alt="" coords="271,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="223,32,257,34,252,35,223,37"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#ae52e103df435f19865c2d51c9ab16438" title="Möller–Trumbore ray&#45;triangle intersection test." alt="" coords="536,5,753,64"/>
+<area shape="poly" title=" " alt="" coords="489,32,523,35,517,35,489,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_icgraph.png" border="0" usemap="#add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_icgraph" loading="lazy" alt=""/></div>
+<map name="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_icgraph" id="add/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator_ae8237c9d2987b12e0fc279672b8b016f_icgraph">
+<area shape="rect" title="Validates that a jump does not collide with part geometry. Returns true if jump is safe (or validatio..." alt="" coords="271,5,488,64"/>
+<area shape="rect" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html#a48e80b47dc64519db777f6bff7ba5aae" title="Attempts to find a collision&#45;free jump by offsetting outward. Per REQUIREMENTS.md §3...." alt="" coords="5,5,223,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,223,37,223,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a89a5c4c4e713c8ebcc9c79eeec9013a7" name="a89a5c4c4e713c8ebcc9c79eeec9013a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a5c4c4e713c8ebcc9c79eeec9013a7">&#9670;&#160;</a></span>_enableValidation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator._enableValidation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">JumpCollisionValidator()</a>, <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00081">TryOffsetJumpOutward()</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00044">ValidateJump()</a>.</p>
+
+</div>
+</div>
+<a id="a6082436238d2de66d2514a37c0b15680" name="a6082436238d2de66d2514a37c0b15680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6082436238d2de66d2514a37c0b15680">&#9670;&#160;</a></span>_maxOffsetAttempts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator._maxOffsetAttempts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00018">18</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">JumpCollisionValidator()</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00081">TryOffsetJumpOutward()</a>.</p>
+
+</div>
+</div>
+<a id="af4210f6e868d608b93ea662696570b3d" name="af4210f6e868d608b93ea662696570b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4210f6e868d608b93ea662696570b3d">&#9670;&#160;</a></span>_offsetIncrement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator._offsetIncrement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00017">17</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">JumpCollisionValidator()</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00081">TryOffsetJumpOutward()</a>.</p>
+
+</div>
+</div>
+<a id="a46f658ff5de51edb118a0633ba48d7cc" name="a46f658ff5de51edb118a0633ba48d7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f658ff5de51edb118a0633ba48d7cc">&#9670;&#160;</a></span>_sampleCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpCollisionValidator._sampleCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00023">JumpCollisionValidator()</a> e <a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html#l00044">ValidateJump()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d0/d00/_jump_collision_validator_8cs_source.html">JumpCollisionValidator.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

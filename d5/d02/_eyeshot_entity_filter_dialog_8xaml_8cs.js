@@ -1,0 +1,5 @@
+var _eyeshot_entity_filter_dialog_8xaml_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog" ],
+    [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog.EntityViewModel", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity78997ddff1edc05c62bbbbffe547920d.html", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity78997ddff1edc05c62bbbbffe547920d" ]
+];

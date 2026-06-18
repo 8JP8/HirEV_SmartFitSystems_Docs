@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/ScannerProperties.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d0/d02/_scanner_properties_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ScannerProperties.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d02/_scanner_properties_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Xml;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html">   13</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666">ScannerProperties</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7">Name</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa841adb9d394d7e15c8053308b918d6c">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa841adb9d394d7e15c8053308b918d6c">FovX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a9e1471ee2dfd42ad670c8caaf02016b6">   28</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a9e1471ee2dfd42ad670c8caaf02016b6">FovY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">OptimalStandoff</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a08cfdb51de2279eb9420ef674fdbc6f9">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a08cfdb51de2279eb9420ef674fdbc6f9">MinStandoff</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#affc0588f0b38a60006467eb82059e0e0">   43</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#affc0588f0b38a60006467eb82059e0e0">MaxStandoff</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa15be6d8d81ae6dbb9c60cb77ca1590c">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa15be6d8d81ae6dbb9c60cb77ca1590c">AspectRatio</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ad574cd4b64cb88b684dfcfc378b0edf0">   53</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ad574cd4b64cb88b684dfcfc378b0edf0">RaycastingTolerance</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aebaf87d0cad055274f45eeb320cf3e23">   58</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aebaf87d0cad055274f45eeb320cf3e23">ModelFile</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac25634b6e819f4bfd6a879bd387fcdf1">   63</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac25634b6e819f4bfd6a879bd387fcdf1">SensorOffsetX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a6268060c3ba00a8e1eb7e3d928707dbf">   68</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a6268060c3ba00a8e1eb7e3d928707dbf">SensorOffsetY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a904d00a2b6514722ece3ed5b769ca3f0">   73</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a904d00a2b6514722ece3ed5b769ca3f0">SensorOffsetZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#af6f593d0098a37cef08015b8642d2ee9">   78</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#af6f593d0098a37cef08015b8642d2ee9">SensorRotationX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac79df4a6aa810b740f3044b4d314c373">   83</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac79df4a6aa810b740f3044b4d314c373">SensorRotationY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6">   88</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6">SensorRotationZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa">   93</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa">FovAngleHorizontal</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136">   98</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136">FovAngleVertical</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aacc959fc30d7e687441c029371b492f2">  103</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aacc959fc30d7e687441c029371b492f2">SensorWidth</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa1eee19f5d617c3c0effe09a6ab6bc35">  108</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa1eee19f5d617c3c0effe09a6ab6bc35">SensorHeight</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666">  113</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666">ScannerProperties</a>()</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7">Name</a> = <span class="stringliteral">&quot;Default&quot;</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aebaf87d0cad055274f45eeb320cf3e23">ModelFile</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ad574cd4b64cb88b684dfcfc378b0edf0">RaycastingTolerance</a> = 0.5;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac25634b6e819f4bfd6a879bd387fcdf1">SensorOffsetX</a> = 0;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a6268060c3ba00a8e1eb7e3d928707dbf">SensorOffsetY</a> = 0;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a904d00a2b6514722ece3ed5b769ca3f0">SensorOffsetZ</a> = 0;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#af6f593d0098a37cef08015b8642d2ee9">SensorRotationX</a> = 0;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac79df4a6aa810b740f3044b4d314c373">SensorRotationY</a> = 0;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6">SensorRotationZ</a> = 0;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa">FovAngleHorizontal</a> = 36.87; <span class="comment">// Default ~37° for 100mm FOV at 150mm standoff</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136">FovAngleVertical</a> = 29.86;   <span class="comment">// Default ~30° for 80mm FOV at 150mm standoff</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aacc959fc30d7e687441c029371b492f2">SensorWidth</a> = 20.0;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa1eee19f5d617c3c0effe09a6ab6bc35">SensorHeight</a> = 15.0;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a958e7a9e9691793483fe82f15724b0d4">  133</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a958e7a9e9691793483fe82f15724b0d4">CalculateFovAngles</a>()</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">OptimalStandoff</a> &gt; 0)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa">FovAngleHorizontal</a> = 2.0 * System.Math.Atan(<a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa841adb9d394d7e15c8053308b918d6c">FovX</a> / (2.0 * <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">OptimalStandoff</a>)) * (180.0 / System.Math.PI);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136">FovAngleVertical</a> = 2.0 * System.Math.Atan(<a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a9e1471ee2dfd42ad670c8caaf02016b6">FovY</a> / (2.0 * <a class="code hl_property" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">OptimalStandoff</a>)) * (180.0 / System.Math.PI);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span></div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html">  146</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html">ScannerPropertiesLoader</a></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#ac3b95354f8e2bf7f3e389488f31c7127">  153</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, ScannerProperties&gt; <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#ac3b95354f8e2bf7f3e389488f31c7127">Load</a>(<span class="keywordtype">string</span> filePath)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            var presets = <span class="keyword">new</span> Dictionary&lt;string, ScannerProperties&gt;();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">if</span> (!File.Exists(filePath))</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                <span class="keywordflow">return</span> presets;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                var doc = <span class="keyword">new</span> XmlDocument();</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                doc.Load(filePath);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                var nodes = doc.SelectNodes(<span class="stringliteral">&quot;//Scanner&quot;</span>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <span class="keywordflow">if</span> (nodes == <span class="keyword">null</span>) <span class="keywordflow">return</span> presets;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="keywordflow">foreach</span> (XmlNode node <span class="keywordflow">in</span> nodes)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    var nameAttribute = node.Attributes?[<span class="stringliteral">&quot;name&quot;</span>];</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    <span class="keywordflow">if</span> (nameAttribute == <span class="keyword">null</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    var props = <span class="keyword">new</span> <a class="code hl_class" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html">ScannerProperties</a></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                        Name = nameAttribute.Value,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        FovX = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;FovX&quot;</span>),</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                        FovY = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;FovY&quot;</span>),</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                        OptimalStandoff = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;OptimalStandoff&quot;</span>),</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                        MinStandoff = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;MinStandoff&quot;</span>),</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                        MaxStandoff = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;MaxStandoff&quot;</span>),</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                        AspectRatio = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;AspectRatio&quot;</span>),</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                        RaycastingTolerance = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;RaycastingTolerance&quot;</span>, 0.5),</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                        ModelFile = node.SelectSingleNode(<span class="stringliteral">&quot;ModelFile&quot;</span>)?.InnerText ?? <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                        <span class="comment">// Sensor transformation settings</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                        SensorOffsetX = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorOffsetX&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                        SensorOffsetY = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorOffsetY&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                        SensorOffsetZ = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorOffsetZ&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                        SensorRotationX = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorRotationX&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                        SensorRotationY = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorRotationY&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                        SensorRotationZ = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorRotationZ&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                        <span class="comment">// FOV angle and sensor dimensions</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                        FovAngleHorizontal = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;FovAngleHorizontal&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                        FovAngleVertical = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;FovAngleVertical&quot;</span>, 0.0),</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                        SensorWidth = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorWidth&quot;</span>, 20.0),</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                        SensorHeight = <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(node, <span class="stringliteral">&quot;SensorHeight&quot;</span>, 15.0)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                    };</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                    <span class="comment">// Calculate FOV angles if not explicitly set</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    <span class="keywordflow">if</span> (props.FovAngleHorizontal == 0.0 || props.FovAngleVertical == 0.0)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                    {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                        props.CalculateFovAngles();</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                    }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                    presets[props.Name] = props;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;❌ Error loading scanner configurations: {ex.Message}&quot;</span>);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                <span class="comment">// Rename corrupt file so it doesn&#39;t cause persistent crashes</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                    <span class="keywordtype">string</span> corruptPath = filePath + <span class="stringliteral">&quot;.corrupt&quot;</span>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                    <span class="keywordflow">if</span> (File.Exists(corruptPath)) File.Delete(corruptPath);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                    File.Move(filePath, corruptPath);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;⚠️ Corrupt file renamed to: {corruptPath}&quot;</span>);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                <span class="keywordflow">catch</span> (Exception moveEx)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                    System.Diagnostics.Debug.WriteLine($<span class="stringliteral">&quot;❌ Could not rename corrupt file: {moveEx.Message}&quot;</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> Dictionary&lt;string, ScannerProperties&gt;(); <span class="comment">// Return empty to trigger regeneration</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="keywordflow">return</span> presets;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        }</div>
+</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span></div>
+<div class="foldopen" id="foldopen00240" data-start="{" data-end="}">
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">  240</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">GetDouble</a>(XmlNode node, <span class="keywordtype">string</span> elementName, <span class="keywordtype">double</span> defaultValue = 0.0)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            var element = node.SelectSingleNode(elementName);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <span class="keywordflow">if</span> (element != <span class="keyword">null</span> &amp;&amp; <span class="keywordtype">double</span>.TryParse(element.InnerText, NumberStyles.Any, CultureInfo.InvariantCulture, out <span class="keywordtype">double</span> value))</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">return</span> defaultValue;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
+</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    }</div>
+</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html">HirEV_SmartFitSystemsApp.Models.ScannerProperties</a></div><div class="ttdoc">Holds the configuration properties for a specific scanner model. Includes sensor transformation setti...</div><div class="ttdef"><b>Definição</b> <a href="#l00013">ScannerProperties.cs:14</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a08cfdb51de2279eb9420ef674fdbc6f9"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a08cfdb51de2279eb9420ef674fdbc6f9">HirEV_SmartFitSystemsApp.Models.ScannerProperties.MinStandoff</a></div><div class="ttdeci">double MinStandoff</div><div class="ttdoc">Gets or sets the minimum standoff distance.</div><div class="ttdef"><b>Definição</b> <a href="#l00038">ScannerProperties.cs:38</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a0e4be2f414f6c9299a5e03d294e91cfa"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa">HirEV_SmartFitSystemsApp.Models.ScannerProperties.FovAngleHorizontal</a></div><div class="ttdeci">double FovAngleHorizontal</div><div class="ttdoc">Gets or sets the horizontal FOV angle in degrees.</div><div class="ttdef"><b>Definição</b> <a href="#l00093">ScannerProperties.cs:93</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a1f061f1a85b1b69b8c7ef15bb9488891"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891">HirEV_SmartFitSystemsApp.Models.ScannerProperties.OptimalStandoff</a></div><div class="ttdeci">double OptimalStandoff</div><div class="ttdoc">Gets or sets the optimal standoff distance.</div><div class="ttdef"><b>Definição</b> <a href="#l00033">ScannerProperties.cs:33</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a26cd3539858641782d003ece52b60ee6"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorRotationZ</a></div><div class="ttdeci">double SensorRotationZ</div><div class="ttdoc">Gets or sets the Z-axis rotation of the sensor relative to the scanner model (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="#l00088">ScannerProperties.cs:88</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a29b3b1554d5ee3aea606e5f96ad4a136"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136">HirEV_SmartFitSystemsApp.Models.ScannerProperties.FovAngleVertical</a></div><div class="ttdeci">double FovAngleVertical</div><div class="ttdoc">Gets or sets the vertical FOV angle in degrees.</div><div class="ttdef"><b>Definição</b> <a href="#l00098">ScannerProperties.cs:98</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a452ebccb5fd4dfa25659ef63ac1f60e7"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7">HirEV_SmartFitSystemsApp.Models.ScannerProperties.Name</a></div><div class="ttdeci">string Name</div><div class="ttdoc">Gets or sets the name of the scanner.</div><div class="ttdef"><b>Definição</b> <a href="#l00018">ScannerProperties.cs:18</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a562a68a42cc9ee4526d4c3f2388a3666"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666">HirEV_SmartFitSystemsApp.Models.ScannerProperties.ScannerProperties</a></div><div class="ttdeci">ScannerProperties()</div><div class="ttdoc">Initializes a new instance of the ScannerProperties class with default settings.</div><div class="ttdef"><b>Definição</b> <a href="#l00113">ScannerProperties.cs:113</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a6268060c3ba00a8e1eb7e3d928707dbf"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a6268060c3ba00a8e1eb7e3d928707dbf">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorOffsetY</a></div><div class="ttdeci">double SensorOffsetY</div><div class="ttdoc">Gets or sets the Y-axis offset of the sensor relative to the scanner model origin.</div><div class="ttdef"><b>Definição</b> <a href="#l00068">ScannerProperties.cs:68</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a904d00a2b6514722ece3ed5b769ca3f0"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a904d00a2b6514722ece3ed5b769ca3f0">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorOffsetZ</a></div><div class="ttdeci">double SensorOffsetZ</div><div class="ttdoc">Gets or sets the Z-axis offset of the sensor relative to the scanner model origin.</div><div class="ttdef"><b>Definição</b> <a href="#l00073">ScannerProperties.cs:73</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a958e7a9e9691793483fe82f15724b0d4"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a958e7a9e9691793483fe82f15724b0d4">HirEV_SmartFitSystemsApp.Models.ScannerProperties.CalculateFovAngles</a></div><div class="ttdeci">void CalculateFovAngles()</div><div class="ttdoc">Calculates FOV angles from FOV dimensions and standoff distance.</div><div class="ttdef"><b>Definição</b> <a href="#l00133">ScannerProperties.cs:133</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_a9e1471ee2dfd42ad670c8caaf02016b6"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a9e1471ee2dfd42ad670c8caaf02016b6">HirEV_SmartFitSystemsApp.Models.ScannerProperties.FovY</a></div><div class="ttdeci">double FovY</div><div class="ttdoc">Gets or sets the vertical field of view dimension.</div><div class="ttdef"><b>Definição</b> <a href="#l00028">ScannerProperties.cs:28</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_aa15be6d8d81ae6dbb9c60cb77ca1590c"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa15be6d8d81ae6dbb9c60cb77ca1590c">HirEV_SmartFitSystemsApp.Models.ScannerProperties.AspectRatio</a></div><div class="ttdeci">double AspectRatio</div><div class="ttdoc">Gets or sets the aspect ratio of the field of view.</div><div class="ttdef"><b>Definição</b> <a href="#l00048">ScannerProperties.cs:48</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_aa1eee19f5d617c3c0effe09a6ab6bc35"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa1eee19f5d617c3c0effe09a6ab6bc35">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorHeight</a></div><div class="ttdeci">double SensorHeight</div><div class="ttdoc">Gets or sets the physical height of the sensor in millimeters.</div><div class="ttdef"><b>Definição</b> <a href="#l00108">ScannerProperties.cs:108</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_aa841adb9d394d7e15c8053308b918d6c"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aa841adb9d394d7e15c8053308b918d6c">HirEV_SmartFitSystemsApp.Models.ScannerProperties.FovX</a></div><div class="ttdeci">double FovX</div><div class="ttdoc">Gets or sets the horizontal field of view dimension.</div><div class="ttdef"><b>Definição</b> <a href="#l00023">ScannerProperties.cs:23</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_aacc959fc30d7e687441c029371b492f2"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aacc959fc30d7e687441c029371b492f2">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorWidth</a></div><div class="ttdeci">double SensorWidth</div><div class="ttdoc">Gets or sets the physical width of the sensor in millimeters.</div><div class="ttdef"><b>Definição</b> <a href="#l00103">ScannerProperties.cs:103</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_ac25634b6e819f4bfd6a879bd387fcdf1"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac25634b6e819f4bfd6a879bd387fcdf1">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorOffsetX</a></div><div class="ttdeci">double SensorOffsetX</div><div class="ttdoc">Gets or sets the X-axis offset of the sensor relative to the scanner model origin.</div><div class="ttdef"><b>Definição</b> <a href="#l00063">ScannerProperties.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_ac79df4a6aa810b740f3044b4d314c373"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ac79df4a6aa810b740f3044b4d314c373">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorRotationY</a></div><div class="ttdeci">double SensorRotationY</div><div class="ttdoc">Gets or sets the Y-axis rotation of the sensor relative to the scanner model (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="#l00083">ScannerProperties.cs:83</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_ad574cd4b64cb88b684dfcfc378b0edf0"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#ad574cd4b64cb88b684dfcfc378b0edf0">HirEV_SmartFitSystemsApp.Models.ScannerProperties.RaycastingTolerance</a></div><div class="ttdeci">double RaycastingTolerance</div><div class="ttdoc">Gets or sets the tolerance value for raycasting operations.</div><div class="ttdef"><b>Definição</b> <a href="#l00053">ScannerProperties.cs:53</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_aebaf87d0cad055274f45eeb320cf3e23"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#aebaf87d0cad055274f45eeb320cf3e23">HirEV_SmartFitSystemsApp.Models.ScannerProperties.ModelFile</a></div><div class="ttdeci">string ModelFile</div><div class="ttdoc">Gets or sets the path to the 3D model file of the scanner.</div><div class="ttdef"><b>Definição</b> <a href="#l00058">ScannerProperties.cs:58</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_af6f593d0098a37cef08015b8642d2ee9"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#af6f593d0098a37cef08015b8642d2ee9">HirEV_SmartFitSystemsApp.Models.ScannerProperties.SensorRotationX</a></div><div class="ttdeci">double SensorRotationX</div><div class="ttdoc">Gets or sets the X-axis rotation of the sensor relative to the scanner model (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="#l00078">ScannerProperties.cs:78</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_html_affc0588f0b38a60006467eb82059e0e0"><div class="ttname"><a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#affc0588f0b38a60006467eb82059e0e0">HirEV_SmartFitSystemsApp.Models.ScannerProperties.MaxStandoff</a></div><div class="ttdeci">double MaxStandoff</div><div class="ttdoc">Gets or sets the maximum standoff distance.</div><div class="ttdef"><b>Definição</b> <a href="#l00043">ScannerProperties.cs:43</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader_html"><div class="ttname"><a href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html">HirEV_SmartFitSystemsApp.Models.ScannerPropertiesLoader</a></div><div class="ttdoc">Loads scanner properties from the ScannerConfigurations.xml file.</div><div class="ttdef"><b>Definição</b> <a href="#l00146">ScannerProperties.cs:147</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader_html_abefeb4f165280d1618505165f2fdba6e"><div class="ttname"><a href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e">HirEV_SmartFitSystemsApp.Models.ScannerPropertiesLoader.GetDouble</a></div><div class="ttdeci">static double GetDouble(XmlNode node, string elementName, double defaultValue=0.0)</div><div class="ttdoc">Reads a double value from a child XML element, returning a default value if missing or invalid.</div><div class="ttdef"><b>Definição</b> <a href="#l00240">ScannerProperties.cs:240</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader_html_ac3b95354f8e2bf7f3e389488f31c7127"><div class="ttname"><a href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#ac3b95354f8e2bf7f3e389488f31c7127">HirEV_SmartFitSystemsApp.Models.ScannerPropertiesLoader.Load</a></div><div class="ttdeci">static Dictionary&lt; string, ScannerProperties &gt; Load(string filePath)</div><div class="ttdoc">Loads all scanner presets from the specified XML file.</div><div class="ttdef"><b>Definição</b> <a href="#l00153">ScannerProperties.cs:153</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

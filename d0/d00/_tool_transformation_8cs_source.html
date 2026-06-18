@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/ToolTransformation.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d0/d00/_tool_transformation_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ToolTransformation.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d00/_tool_transformation_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html">ToolTransformation</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#adb2559c62cb4d06ce1e88babdde913e9">   11</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#adb2559c62cb4d06ce1e88babdde913e9">ToolName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aa7e7efbde54b12fc766812425a9df1ed">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aa7e7efbde54b12fc766812425a9df1ed">TranslateX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aeec0db21a3be727b3c3cde826abd0c61">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aeec0db21a3be727b3c3cde826abd0c61">TranslateY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a05ee2811651db6e68c17910a30e3d5bc">   24</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a05ee2811651db6e68c17910a30e3d5bc">TranslateZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a8151f84cd6da351938737c88b6620a51">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a8151f84cd6da351938737c88b6620a51">RotateX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ad2af670a44fc7fd635586aa0fa98d751">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ad2af670a44fc7fd635586aa0fa98d751">RotateY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a4b9d8a27486c4737d4bf1b409a204ee6">   37</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a4b9d8a27486c4737d4bf1b409a204ee6">RotateZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#afaa37b8253e9055d0c9b0b51f6ccb30b">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#afaa37b8253e9055d0c9b0b51f6ccb30b">ScaleFactor</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 1.0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html">HirEV_SmartFitSystemsApp.Models.ToolTransformation</a></div><div class="ttdoc">Represents transformation data for positioning tool 3D models correctly.</div><div class="ttdef"><b>Definição</b> <a href="#l00006">ToolTransformation.cs:7</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_a05ee2811651db6e68c17910a30e3d5bc"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a05ee2811651db6e68c17910a30e3d5bc">HirEV_SmartFitSystemsApp.Models.ToolTransformation.TranslateZ</a></div><div class="ttdeci">double TranslateZ</div><div class="ttdoc">Gets or sets the translation along the Z axis.</div><div class="ttdef"><b>Definição</b> <a href="#l00024">ToolTransformation.cs:24</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_a4b9d8a27486c4737d4bf1b409a204ee6"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a4b9d8a27486c4737d4bf1b409a204ee6">HirEV_SmartFitSystemsApp.Models.ToolTransformation.RotateZ</a></div><div class="ttdeci">double RotateZ</div><div class="ttdoc">Gets or sets the rotation around the Z axis in degrees.</div><div class="ttdef"><b>Definição</b> <a href="#l00037">ToolTransformation.cs:37</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_a8151f84cd6da351938737c88b6620a51"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a8151f84cd6da351938737c88b6620a51">HirEV_SmartFitSystemsApp.Models.ToolTransformation.RotateX</a></div><div class="ttdeci">double RotateX</div><div class="ttdoc">Gets or sets the rotation around the X axis in degrees.</div><div class="ttdef"><b>Definição</b> <a href="#l00029">ToolTransformation.cs:29</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_aa7e7efbde54b12fc766812425a9df1ed"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aa7e7efbde54b12fc766812425a9df1ed">HirEV_SmartFitSystemsApp.Models.ToolTransformation.TranslateX</a></div><div class="ttdeci">double TranslateX</div><div class="ttdoc">Gets or sets the translation along the X axis.</div><div class="ttdef"><b>Definição</b> <a href="#l00016">ToolTransformation.cs:16</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_ad2af670a44fc7fd635586aa0fa98d751"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ad2af670a44fc7fd635586aa0fa98d751">HirEV_SmartFitSystemsApp.Models.ToolTransformation.RotateY</a></div><div class="ttdeci">double RotateY</div><div class="ttdoc">Gets or sets the rotation around the Y axis in degrees.</div><div class="ttdef"><b>Definição</b> <a href="#l00033">ToolTransformation.cs:33</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_adb2559c62cb4d06ce1e88babdde913e9"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#adb2559c62cb4d06ce1e88babdde913e9">HirEV_SmartFitSystemsApp.Models.ToolTransformation.ToolName</a></div><div class="ttdeci">string ToolName</div><div class="ttdoc">Gets or sets the name of the tool.</div><div class="ttdef"><b>Definição</b> <a href="#l00011">ToolTransformation.cs:11</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_aeec0db21a3be727b3c3cde826abd0c61"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aeec0db21a3be727b3c3cde826abd0c61">HirEV_SmartFitSystemsApp.Models.ToolTransformation.TranslateY</a></div><div class="ttdeci">double TranslateY</div><div class="ttdoc">Gets or sets the translation along the Y axis.</div><div class="ttdef"><b>Definição</b> <a href="#l00020">ToolTransformation.cs:20</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation_html_afaa37b8253e9055d0c9b0b51f6ccb30b"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#afaa37b8253e9055d0c9b0b51f6ccb30b">HirEV_SmartFitSystemsApp.Models.ToolTransformation.ScaleFactor</a></div><div class="ttdeci">double ScaleFactor</div><div class="ttdoc">Gets or sets the scale factor of the tool.</div><div class="ttdef"><b>Definição</b> <a href="#l00042">ToolTransformation.cs:42</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

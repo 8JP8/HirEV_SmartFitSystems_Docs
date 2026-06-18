@@ -1,0 +1,4 @@
+var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration =
+[
+    [ "SessionConfigurationManager", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager" ]
+];

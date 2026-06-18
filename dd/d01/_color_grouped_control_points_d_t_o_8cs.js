@@ -1,0 +1,5 @@
+var _color_grouped_control_points_d_t_o_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Models.DTOs.ColorGroupedControlPointsDTO", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_control_points_d_t_o.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_color_grouped_control_points_d_t_o" ],
+    [ "HirEV_SmartFitSystemsApp.Models.DTOs.ControlPointWithFaceIndex", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index.html", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index" ]
+];

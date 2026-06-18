@@ -1,0 +1,26 @@
+var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator =
+[
+    [ "SegmentCollisionValidator", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a66639bcd4802f8647976633c43b485ac", null ],
+    [ "BuildCollisionMesh", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aae461bb1169abc8272a353e8fac3a889", null ],
+    [ "BuildCollisionMesh", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a631234af0100e3723c51699bfa43d914", null ],
+    [ "CheckSegmentCollision", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aea589ec6746f25b2fc356930e55f89d9", null ],
+    [ "ClearMesh", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ac1ea692720aeb24b86d8358e4f07d8de", null ],
+    [ "FindAlternativeWaypoints", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aa5a9551e3ad8382931b0e9bc0e6cf67b", null ],
+    [ "GetXMLElement", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a29e69fee32bcbc832ae0f76bdc2ec7d2", null ],
+    [ "RayTriangleIntersection", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ad750013dcdab2a0910826ec3a1082875", null ],
+    [ "SegmentIntersectsBoundingBox", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ad5f12e070be56cc0d6f7becbbdab5cd7", null ],
+    [ "ValidateAlternativePath", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ae7e1fbe983d7b61bbee464a7cf74bf7b", null ],
+    [ "ValidatePath", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#adc4bbcaa94196977e21e59c887b5db49", null ],
+    [ "ValidateSegment", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aa91d545c566028e2370506e47fe69232", null ],
+    [ "_enabled", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aec02fcb18b8a01d90268445e2d1b40d9", null ],
+    [ "_maxAlternativeAttempts", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a49a1ba52ef295d6aceae76bdbcdc0f85", null ],
+    [ "_meshBBoxMax", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ac3c6f7a1872d45053fc35720a940cdda", null ],
+    [ "_meshBBoxMin", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ad9e8600b9f63ceab15dac07c0c3aef93", null ],
+    [ "_partCollisionMesh", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a9b504d46028421804080eaccf884959a", null ],
+    [ "_samplePoints", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a2df0dc41c6aea45c7e6035ad93618e88", null ],
+    [ "_triangles", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a4a5a6c475ba4333e419ea4409e16c0fc", null ],
+    [ "_vertices", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ac167c8a3f1c8b1ae788dee664d5aa039", null ],
+    [ "IsEnabled", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#a7eaeca9a5fd81091276a82a6d7d1bc2f", null ],
+    [ "IsMeshReady", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#ad8c86d2f3d23fd6be4a7ca593a31d272", null ],
+    [ "TriangleCount", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html#aae18c1bbef791d7e574da79e734b8d2a", null ]
+];

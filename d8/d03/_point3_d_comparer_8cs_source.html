@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Point3DComparer.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d8/d03/_point3_d_comparer_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Point3DComparer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d03/_point3_d_comparer_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html">   17</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html">Point3DComparer</a> : IEqualityComparer&lt;Point3D&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">   19</a></span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a> = 1e-6;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a18f2b6f2e7bf7ac93ccd3b7e1cd4d9e3">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a18f2b6f2e7bf7ac93ccd3b7e1cd4d9e3">Equals</a>(Point3D? p1, Point3D? p2)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (ReferenceEquals(p1, p2)) <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// Handles both null and same instance</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (p1 is <span class="keyword">null</span> || p2 is <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// One is null, the other is not</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> Math.Abs(p1.X - p2.X) &lt; <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a> &amp;&amp;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                   Math.Abs(p1.Y - p2.Y) &lt; <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a> &amp;&amp;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                   Math.Abs(p1.Z - p2.Z) &lt; <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a09d0c99dd6daad4748ef5a562cebffb9">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a09d0c99dd6daad4748ef5a562cebffb9">GetHashCode</a>(Point3D? p)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">if</span> (p is <span class="keyword">null</span>) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="comment">// Rounding to the nearest multiple of tolerance helps to group similar points.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="comment">// For production, consider more robust geometric hashing strategies.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordtype">int</span> hashX = Math.Round(p.X / <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a>).GetHashCode();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">int</span> hashY = Math.Round(p.Y / <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a>).GetHashCode();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">int</span> hashZ = Math.Round(p.Z / <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">Tolerance</a>).GetHashCode();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">return</span> hashX ^ (hashY &lt;&lt; 1) ^ (hashZ &lt;&lt; 2);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer_html"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html">HirEV_SmartFitSystemsApp.Utilities.Point3DComparer</a></div><div class="ttdoc">Comparer for Point3D for use in HashSets, allowing for a tolerance. Addresses: The nullability of ref...</div><div class="ttdef"><b>Definição</b> <a href="#l00017">Point3DComparer.cs:18</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer_html_a09d0c99dd6daad4748ef5a562cebffb9"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a09d0c99dd6daad4748ef5a562cebffb9">HirEV_SmartFitSystemsApp.Utilities.Point3DComparer.GetHashCode</a></div><div class="ttdeci">int GetHashCode(Point3D? p)</div><div class="ttdoc">Returns a hash code for the specified object.</div><div class="ttdef"><b>Definição</b> <a href="#l00047">Point3DComparer.cs:47</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer_html_a18f2b6f2e7bf7ac93ccd3b7e1cd4d9e3"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a18f2b6f2e7bf7ac93ccd3b7e1cd4d9e3">HirEV_SmartFitSystemsApp.Utilities.Point3DComparer.Equals</a></div><div class="ttdeci">bool Equals(Point3D? p1, Point3D? p2)</div><div class="ttdoc">Determines whether the specified objects are equal.</div><div class="ttdef"><b>Definição</b> <a href="#l00029">Point3DComparer.cs:29</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer_html_a88375a26ccc4aacc45d464e6f2714dd7"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html#a88375a26ccc4aacc45d464e6f2714dd7">HirEV_SmartFitSystemsApp.Utilities.Point3DComparer.Tolerance</a></div><div class="ttdeci">const double Tolerance</div><div class="ttdef"><b>Definição</b> <a href="#l00019">Point3DComparer.cs:19</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_html"><div class="ttname"><a href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00022">PathManager.cs:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

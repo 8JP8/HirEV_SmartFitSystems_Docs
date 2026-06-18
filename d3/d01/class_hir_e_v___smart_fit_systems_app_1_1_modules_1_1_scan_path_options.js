@@ -1,0 +1,26 @@
+var class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options =
+[
+    [ "AddAngledCandidates", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a89c3b2fa85941aa9665ec9478bf8212e", null ],
+    [ "AddRolledCandidates", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a4c1b9985562b3bc15a60d453129d8eb7", null ],
+    [ "AngledCandidateAnglesDeg", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a7c13713a69f8228aaab95f2d13f8dcbd", null ],
+    [ "AngledCandidateMaxUnitZ", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#adfc43a09ddcdf20c5643db63f190d51a", null ],
+    [ "ArcWaypoints", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a98c56d24055f7e6bb57eb9ca75e5dc4f", null ],
+    [ "AvoidBottomFace", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a11c671e242ba7be355169e96837f5cf6", null ],
+    [ "BottomAvoidanceAngleDeg", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a64204ebd2da741f4a98f7e53345b49f2", null ],
+    [ "FibonacciBaseRadius", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a4c5a5b5db334984f491b8371335fa824", null ],
+    [ "FibonacciMaxAmplification", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#acd262a756c8208dfa49003e16543af32", null ],
+    [ "FibonacciMinAmplification", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a24cfc212ae864a2887a2b8c485870e3e", null ],
+    [ "FibonacciSampleCount", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#aa54d36085026e9749801936bf2883529", null ],
+    [ "HoleScanApproximationThreshold", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a28f21fbf47b90f2e804d354297dad26b", null ],
+    [ "HoleScanBottomAvoidanceZTolerance", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a8f0ab8bc919c56834afcde9e972b5f77", null ],
+    [ "HoleScanDepthFraction", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#ac70fab52058b70830afcabc9825d9b7c", null ],
+    [ "HoleScanRadialCount", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#af8606baf2a81681588d27f1505278e18", null ],
+    [ "HoleScanRadialOffsetFactor", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#ae4ee9d66594c1076f00585966ca5a717", null ],
+    [ "HoleScanRings", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#ac0c38ed7e47c0f2e48dca1e174f44c2f", null ],
+    [ "MinCoveragePercent", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#af30fa6f1ec6817a7adea85b780402ede", null ],
+    [ "MinHoleRadius", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a32d0f61f0ef5918341fff1a49318b559", null ],
+    [ "OrbitalPartClearanceOffset", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a95bd049c8d0abf8fd5c53f104b6a3506", null ],
+    [ "ScanBottomFace", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a5e2a7cf22c78c74da7879baa6aece30e", null ],
+    [ "ScanHoles", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#affe268d9a62fc27fa73a5374b2819716", null ],
+    [ "UseSimpleOrbitalRadius", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#af4fe72fc976bc891c343da6b0187fabb", null ]
+];

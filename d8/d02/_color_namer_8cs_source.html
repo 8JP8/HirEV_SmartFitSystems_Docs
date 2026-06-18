@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/ColorNamer.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d8/d02/_color_namer_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ColorNamer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d02/_color_namer_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>ColorNamesSharp;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Drawing;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html">    9</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a331dddd4fe02c104a54b9877d00dd684">ColorNamer</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a81c421482c571200dad8fb2892e0249f">   11</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> readonly List&lt;NamedColor&gt; <a class="code hl_variable" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a81c421482c571200dad8fb2892e0249f">ColorPalette</a> = <span class="keyword">new</span> List&lt;NamedColor&gt;();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">        static ColorNamer()</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">            // Populate a palette of named colors (this is a partial list, extend as needed)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Black&quot;, 0, 0, 0));</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;White&quot;, 255, 255, 255));</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Red&quot;, 255, 0, 0));</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Green&quot;, 0, 128, 0));</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Blue&quot;, 0, 0, 255));</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Yellow&quot;, 255, 255, 0));</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Magenta&quot;, 255, 0, 255));</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Cyan&quot;, 0, 255, 255));</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Gray&quot;, 128, 128, 128));</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Maroon&quot;, 80, 0, 0));</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Olive&quot;, 128, 128, 0));</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Purple&quot;, 128, 0, 128));</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Teal&quot;, 0, 128, 128));</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Navy&quot;, 0, 0, 128));</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Light Blue&quot;, 173, 216, 230));</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Gold&quot;, 255, 215, 0));</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">            ColorPalette.Add(new NamedColor(&quot;Tan&quot;, 210, 180, 140));</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">            // Add more colors to improve matching</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">        }*/</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">   36</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> readonly ColorNames <a class="code hl_variable" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">_colorNamesInstance</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a331dddd4fe02c104a54b9877d00dd684">   41</a></span>        <span class="keyword">static</span> <a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a331dddd4fe02c104a54b9877d00dd684">ColorNamer</a>()</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="comment">// Crie uma única instância de ColorNames para ser usada em toda a aplicação.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="comment">// O método correto para finalizar a construção é .Build(), não .BuildColorNames.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_variable" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">_colorNamesInstance</a> = <span class="keyword">new</span> ColorNamesBuilder()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                .LoadDefault()</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                .Build(); <span class="comment">// O nome do método foi corrigido para .Build()</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f">   55</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f">GetColorName</a>(Color color)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="comment">// A biblioteca ColorNamesSharp aceita valores de byte para R, G e B.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">_colorNamesInstance</a>.FindClosestColorName(color.R, color.G, color.B);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a0279563b4eab034eb3c97f76d3d4ef5f"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.GetColorName</a></div><div class="ttdeci">static string GetColorName(Color color)</div><div class="ttdoc">Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp.</div><div class="ttdef"><b>Definição</b> <a href="#l00055">ColorNamer.cs:55</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a03c6e6a3c6bfc6f8e0eb160ff18e00c6"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">HirEV_SmartFitSystemsApp.Utilities.ColorNamer._colorNamesInstance</a></div><div class="ttdeci">static readonly ColorNames _colorNamesInstance</div><div class="ttdef"><b>Definição</b> <a href="#l00036">ColorNamer.cs:36</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a331dddd4fe02c104a54b9877d00dd684"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a331dddd4fe02c104a54b9877d00dd684">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.ColorNamer</a></div><div class="ttdeci">static ColorNamer()</div><div class="ttdoc">Initializes the ColorNamer class.</div><div class="ttdef"><b>Definição</b> <a href="#l00041">ColorNamer.cs:41</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a81c421482c571200dad8fb2892e0249f"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a81c421482c571200dad8fb2892e0249f">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.ColorPalette</a></div><div class="ttdeci">static readonly List&lt; NamedColor &gt; ColorPalette</div><div class="ttdef"><b>Definição</b> <a href="#l00011">ColorNamer.cs:11</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_html"><div class="ttname"><a href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00022">PathManager.cs:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

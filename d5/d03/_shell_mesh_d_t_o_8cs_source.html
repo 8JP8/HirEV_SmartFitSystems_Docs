@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/DTOs/ShellMeshDTO.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d5/d03/_shell_mesh_d_t_o_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ShellMeshDTO.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d03/_shell_mesh_d_t_o_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Eyeshot.Entities;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Linq;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">   12</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">   17</a></span>        <span class="keyword">public</span> List&lt;PointExportDTO&gt; <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">Vertices</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;PointExportDTO&gt;();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">   22</a></span>        <span class="keyword">public</span> List&lt;int&gt; <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">Triangles</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;int&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">LayerName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">Color</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a0d419964331e5665cba45d1fe01b04cf">   39</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a> <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a0d419964331e5665cba45d1fe01b04cf">FromMesh</a>(Mesh mesh)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            var dto = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">LayerName</a> = mesh.LayerName,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">Color</a> = mesh.Color.ToArgb()</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">if</span> (mesh.Vertices != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                dto.Vertices = mesh.Vertices.Select(v =&gt; <span class="keyword">new</span> <a class="code hl_class" href="../../d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html">PointExportDTO</a>(v)).ToList();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (mesh.Triangles != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">foreach</span> (var tri <span class="keywordflow">in</span> mesh.Triangles)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    dto.Triangles.Add(tri.V1);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    dto.Triangles.Add(tri.V2);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    dto.Triangles.Add(tri.V3);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">return</span> dto;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a5cfe56f9d45b8d7165e9422820a4e2b1">   69</a></span>        <span class="keyword">public</span> Mesh? <a class="code hl_function" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a5cfe56f9d45b8d7165e9422820a4e2b1">ToMesh</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">Vertices</a> == <span class="keyword">null</span> || <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">Vertices</a>.Count == 0) <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            var vertices = <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">Vertices</a>.Select(v =&gt; <span class="keyword">new</span> Point3D(v.X, v.Y, v.Z)).ToArray();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            var triangles = <span class="keyword">new</span> List&lt;devDept.Geometry.IndexTriangle&gt;();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i + 2 &lt; <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">Triangles</a>.Count; i += 3)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                triangles.Add(<span class="keyword">new</span> devDept.Geometry.IndexTriangle(<a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">Triangles</a>[i], <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">Triangles</a>[i + 1], <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">Triangles</a>[i + 2]));</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (triangles.Count == 0) <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            var mesh = <span class="keyword">new</span> Mesh(vertices, triangles);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            mesh.LayerName = <span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">LayerName</a>) ? <span class="stringliteral">&quot;0&quot;</span> : <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">LayerName</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            mesh.Color = System.Drawing.Color.FromArgb(<a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">Color</a> != 0 ? <a class="code hl_property" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">Color</a> : System.Drawing.Color.Gray.ToArgb());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            mesh.ColorMethod = devDept.Eyeshot.Entities.colorMethodType.byEntity;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">return</span> mesh;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o_html"><div class="ttname"><a href="../../d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO</a></div><div class="ttdoc">Simple point representation for export.</div><div class="ttdef"><b>Definição</b> <a href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00130">CADHoleExportDTO.cs:131</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO</a></div><div class="ttdoc">Data Transfer Object representing a mesh shell. Used to serialize and deserialize geometry data effic...</div><div class="ttdef"><b>Definição</b> <a href="#l00012">ShellMeshDTO.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_a0d419964331e5665cba45d1fe01b04cf"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a0d419964331e5665cba45d1fe01b04cf">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.FromMesh</a></div><div class="ttdeci">static ShellMeshDTO FromMesh(Mesh mesh)</div><div class="ttdoc">Creates a ShellMeshDTO from an existing Eyeshot Mesh object.</div><div class="ttdef"><b>Definição</b> <a href="#l00039">ShellMeshDTO.cs:39</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_a200f8c0c9b3fb37f45c34bcc5880615c"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a200f8c0c9b3fb37f45c34bcc5880615c">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.Triangles</a></div><div class="ttdeci">List&lt; int &gt; Triangles</div><div class="ttdoc">Gets or sets the list of vertex indices representing the triangles of the mesh.</div><div class="ttdef"><b>Definição</b> <a href="#l00022">ShellMeshDTO.cs:22</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_a5cfe56f9d45b8d7165e9422820a4e2b1"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a5cfe56f9d45b8d7165e9422820a4e2b1">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.ToMesh</a></div><div class="ttdeci">Mesh? ToMesh()</div><div class="ttdoc">Converts the current DTO back into an Eyeshot Mesh object.</div><div class="ttdef"><b>Definição</b> <a href="#l00069">ShellMeshDTO.cs:69</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_ab4f7bea3a1eb7e0142adf5fe18b14681"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#ab4f7bea3a1eb7e0142adf5fe18b14681">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.LayerName</a></div><div class="ttdeci">string LayerName</div><div class="ttdoc">Gets or sets the name of the layer containing this mesh.</div><div class="ttdef"><b>Definição</b> <a href="#l00027">ShellMeshDTO.cs:27</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_aec32d10e0026a967c0a2a320aadcb39d"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#aec32d10e0026a967c0a2a320aadcb39d">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.Color</a></div><div class="ttdeci">int Color</div><div class="ttdoc">Gets or sets the ARGB color value of the mesh.</div><div class="ttdef"><b>Definição</b> <a href="#l00032">ShellMeshDTO.cs:32</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o_html_afed13825d8434c005809a8fe37ad15b6"><div class="ttname"><a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#afed13825d8434c005809a8fe37ad15b6">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.Vertices</a></div><div class="ttdeci">List&lt; PointExportDTO &gt; Vertices</div><div class="ttdoc">Gets or sets the list of mesh vertices.</div><div class="ttdef"><b>Definição</b> <a href="#l00017">ShellMeshDTO.cs:17</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_html"><div class="ttname"><a href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div><div class="ttdef"><b>Definição</b> <a href="../../d4/d00/_c_a_d_grouped_export_d_t_o_8cs_source.html#l00001">CADGroupedExportDTO.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

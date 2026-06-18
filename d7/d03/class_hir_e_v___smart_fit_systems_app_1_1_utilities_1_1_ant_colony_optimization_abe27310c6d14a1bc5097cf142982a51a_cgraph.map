@@ -1,0 +1,19 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.OptimizePathACO" name="HirEV_SmartFitSystemsApp.Utilities.AntColonyOptimization.OptimizePathACO">
+<area shape="rect" id="Node000001" title="Optimizes the sequence of points to minimize the total path distance. Solves the TSP using Ant Colony..." alt="" coords="5,212,213,271"/>
+<area shape="rect" id="Node000002" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a05972e9de1fafd8e525aa5b4949cadf3" title="Builds a matrix of Euclidean distances between all point pairs." alt="" coords="261,5,468,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,210,183,143,219,106,259,74,269,70,265,74,262,78,223,110,187,146,133,213"/>
+<area shape="rect" id="Node000003" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a4cae768cf4421e12e452813ee8d3f8f7" title="Calculates sequential path distance (baseline for comparison)." alt="" coords="261,88,468,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,209,259,156,274,152,270,155,262,161,163,214"/>
+<area shape="rect" id="Node000004" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html#a7e7ece535cd72f2b8692a555626d1002" title="Creates a deep copy of this path." alt="" coords="261,171,468,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,222,247,218,243,221,214,227"/>
+<area shape="rect" id="Node000006" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#aa7a7aa8412b0cae00d85f6eed3021bd5" title="Constructs a solution (path) for an ant using probabilistic transition rules." alt="" coords="261,253,468,312"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="212,256,248,262,243,264,214,261"/>
+<area shape="rect" id="Node000008" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a1eee746bad0148e9c04a70d490b1295c" title="Initializes pheromone matrix with uniform value τ₀ = 1.0." alt="" coords="261,336,468,395"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="161,269,262,322,275,329,269,329,259,326,161,274"/>
+<area shape="rect" id="Node000009" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a6c483f4b3ec2ac49fd24787d2ae6608b" title="Updates pheromone matrix after iteration. Formula: τ&#39;[i,j] = (1&#45;ρ)·τ[i,j] + Δτ[i,j] where Δτ[i,..." alt="" coords="261,419,468,477"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="131,268,187,336,223,372,262,405,270,411,264,410,259,409,219,376,183,340,130,273"/>
+<area shape="rect" id="Node000005" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization_1_1_ant_path.html#a30989de62d341eb95df92272c052c30d" title="Initializes a new instance of the AntPath class." alt="" coords="516,171,723,229"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="468,197,503,199,498,201,469,203"/>
+<area shape="rect" id="Node000007" href="$d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html#a37ee899624338cb8a25e01ca97482ecf" title="Selects the next city based on pheromone and distance probabilities. Probability: P[i→j] = (τ[i,..." alt="" coords="516,253,723,312"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="468,280,503,282,498,283,469,285"/>
+</map>

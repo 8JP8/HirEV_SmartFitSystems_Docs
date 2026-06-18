@@ -1,0 +1,20 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.VisibilityGraphPathfinder.FindPath" name="HirEV_SmartFitSystemsApp.Utilities.VisibilityGraphPathfinder.FindPath">
+<area shape="rect" id="Node000001" title="Finds a collision&#45;free path from start to goal using A* search on the visibility graph." alt="" coords="5,155,222,213"/>
+<area shape="rect" id="Node000002" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#ad72716abf201e52d69283c880af51aa2" title="Gets an existing node for the position or creates a temporary one connected to visible nodes." alt="" coords="270,55,486,113"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,152,286,118,282,121,194,157"/>
+<area shape="rect" id="Node000003" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#ae8145db0916d7aeac1df8a77c37ab145" title="Checks if a line segment is visible (collision&#45;free) between two points." alt="" coords="534,88,750,147"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="221,168,520,130,518,135,222,173"/>
+<area shape="rect" id="Node000008" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a9dae9ca579ee3bcd6cbdc3605945840e" title="A* heuristic (Euclidean distance)." alt="" coords="270,188,486,247"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="222,195,257,201,251,202,222,200"/>
+<area shape="rect" id="Node000009" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a105f9d39dd86bf325e10f466ba8c5999" title="Reconstructs path from A* search result." alt="" coords="270,271,486,329"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="174,211,271,256,285,264,280,264,269,261,173,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,95,521,101,516,102,487,100"/>
+<area shape="rect" id="Node000004" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a70e29f34722a71936722884e6cdd19a5" title="Checks if a point is inside any obstacle (with safety margin)." alt="" coords="798,5,1015,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="738,85,798,68,793,70,739,90"/>
+<area shape="rect" id="Node000006" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a1019b8cf2118d0489b6a81d55ce60fee" title="Quick bounding box intersection check for segment." alt="" coords="798,88,1015,147"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="750,115,785,117,780,118,751,120"/>
+<area shape="rect" id="Node000007" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a7efd8bf03d27900f1900f9464021dddc" title="Segment&#45;triangle intersection test." alt="" coords="798,171,1015,229"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="739,145,798,165,793,165,738,150"/>
+<area shape="rect" id="Node000005" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#ae44f349836acce7a51237e18a17bef91" title="Möller–Trumbore ray&#45;triangle intersection algorithm." alt="" coords="1063,5,1279,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1015,32,1050,34,1044,35,1015,37"/>
+</map>

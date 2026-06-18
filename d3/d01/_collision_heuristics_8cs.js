@@ -1,0 +1,5 @@
+var _collision_heuristics_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html", "d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics" ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.CollisionCheckResult", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result" ]
+];

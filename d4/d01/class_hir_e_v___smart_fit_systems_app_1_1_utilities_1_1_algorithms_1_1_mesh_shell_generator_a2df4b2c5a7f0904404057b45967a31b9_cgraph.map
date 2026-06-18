@@ -1,0 +1,33 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildSplineKnittedShellFromApproachPoints" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildSplineKnittedShellFromApproachPoints">
+<area shape="rect" id="Node000001" title="Builds a spline&#45;knitted shell directly from approach points. This makes each approach point a vertex ..." alt="" coords="5,419,253,493"/>
+<area shape="rect" id="Node000002" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a02bbb73b32e946207189ff61ca932f62" title="Applies spline knitting to smooth the mesh vertices while preserving their distance to the centroid." alt="" coords="315,212,512,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,416,361,278,361,283,182,420"/>
+<area shape="rect" id="Node000010" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#aea89c158805dec235f32cafc52022ae4" title="Builds a shell mesh that uses ALL approach points as vertices. Uses Eyeshot ConvexHull as base,..." alt="" coords="301,427,526,485"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="253,453,288,455,283,457,253,459"/>
+<area shape="rect" id="Node000015" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ad8dfdf3772ca0277fade16d25e02b990" title="Ensures all mesh normals point outward from the part centroid." alt="" coords="592,501,814,560"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="253,486,301,495,444,512,580,525,574,525,443,518,300,500,253,491"/>
+<area shape="rect" id="Node000003" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a90364c1cadc5a5c65ba6937c315ce9c0" title="Builds the vertex adjacency map for a given mesh." alt="" coords="598,5,808,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,209,492,142,530,105,573,74,587,68,582,71,575,78,534,109,496,145,438,213"/>
+<area shape="rect" id="Node000005" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a268f48901687bda1a2ce71e33a4bd603" title="Evaluates the spline blend point for a vertex and its ordered neighbors." alt="" coords="602,88,804,147"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="465,209,573,156,592,151,587,154,575,161,468,214"/>
+<area shape="rect" id="Node000007" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a8a9ec6f1ede9034650792a0dc73838e3" title="Linearly interpolates between two 3D points." alt="" coords="605,171,801,229"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="511,225,592,215,587,217,513,230"/>
+<area shape="rect" id="Node000008" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a391f5608f78f4b241549efaf8f859876" title="Orders neighboring points in counter&#45;clockwise order around a center point." alt="" coords="605,253,801,312"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="512,253,592,266,587,267,512,258"/>
+<area shape="rect" id="Node000009" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a623e659e7c1d21b6c19dafba2d821969" title="Projects a point back onto a sphere of target radius centered at the part centroid." alt="" coords="605,336,801,395"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="467,268,575,322,593,331,588,331,573,326,466,274"/>
+<area shape="rect" id="Node000004" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a16cca6f14d267fa215b0c2cd15f2263d" title="Adds an edge to the edge count dictionary with canonical ordering." alt="" coords="894,5,1090,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="808,32,881,34,876,35,809,37"/>
+<area shape="rect" id="Node000006" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#abcf5ab899418797d8110226cff78b7c7" title="Evaluates a point along a Catmull&#45;Rom spline segment at t." alt="" coords="889,88,1095,147"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="804,115,876,117,871,118,806,120"/>
+<area shape="rect" id="Node000011" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a0943ff774ed1fd73e2d4ab14d17dd04d" title="Builds triangles from a point cloud using proximity&#45;based triangulation. Creates a surface mesh by co..." alt="" coords="574,419,832,477"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="526,450,561,452,556,452,527,456"/>
+<area shape="poly" id="edge14_Node000010_Node000015" title=" " alt="" coords="527,482,580,498,575,498,526,488"/>
+<area shape="rect" id="Node000012" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a1150b203eceb1bb26b295903687060ab" title=" " alt="" coords="894,336,1090,395"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="808,415,877,398,882,397,809,421"/>
+<area shape="rect" id="Node000013" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a0353e44e664561063904ca1c1fcf6b42" title="Computes the normal of a triangle." alt="" coords="880,501,1104,560"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="809,475,875,497,870,496,808,481"/>
+<area shape="rect" id="Node000014" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a9abbde4c5951a3211f575671f7ca7738" title="Checks if a triangle is valid (not degenerate, not too thin)." alt="" coords="894,419,1090,477"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="833,445,881,448,876,448,833,451"/>
+<area shape="poly" id="edge15_Node000015_Node000013" title=" " alt="" coords="814,528,867,531,862,531,814,533"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.PlanPath" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.JumpPathPlanner.PlanPath">
+<area shape="rect" id="Node000001" title="Plans a path between two approach points using A* search. Per REQUIREMENTS.md §3.4." alt="" coords="5,212,248,271"/>
+<area shape="rect" id="Node000002" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a232b820b00fbc8e153e05e7cbb33b6b7" title="A* search implementation on jump graph." alt="" coords="296,88,538,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,209,295,156,313,151,308,154,297,161,185,214"/>
+<area shape="rect" id="Node000005" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#aa9b23171e63318367ec729fa1798b2c1" title="Converts A* path to discrete waypoints." alt="" coords="296,171,538,229"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,222,283,218,278,220,249,227"/>
+<area shape="rect" id="Node000007" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#afb2f853a7ca5ccae20e1bfe7dd58811a" title="Finds the nearest node in the graph to the given point. Used as a robust fallback when exact Point3D ..." alt="" coords="296,253,538,312"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="248,256,283,263,278,264,248,261"/>
+<area shape="rect" id="Node000008" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a8fd609c419082bd8e471697e11939d47" title="Simplifies path using Douglas&#45;Peucker algorithm and spacing enforcement. Per REQUIREMENTS...." alt="" coords="296,336,538,395"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="185,269,297,322,313,330,308,330,295,326,184,274"/>
+<area shape="rect" id="Node000003" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1584ccf4753983af9909e0721de21806" title="Heuristic function for A* (Euclidean distance)." alt="" coords="586,5,828,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="521,85,589,68,584,70,523,90"/>
+<area shape="rect" id="Node000004" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#acd5e8ae67170c9c277496021a1b03fcf" title="Reconstructs path from A* search result." alt="" coords="586,88,828,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="538,115,573,117,568,118,539,120"/>
+<area shape="rect" id="Node000006" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_path_planner.html#a1eeb6051ad44a49bfb656e6772cba88d" title="Finds approach points on the mesh between two waypoints that could safely bridge the gap,..." alt="" coords="586,171,828,229"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="538,197,573,200,568,200,539,203"/>
+</map>

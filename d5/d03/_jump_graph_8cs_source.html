@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/JumpGraph.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d5/d03/_jump_graph_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">JumpGraph.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d03/_jump_graph_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">JumpGraph</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a9cf9583b01d3d35bf4d1ab6573019b4b">   16</a></span>        <span class="keyword">public</span> Dictionary&lt;Point3D, JumpNode&gt; <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a9cf9583b01d3d35bf4d1ab6573019b4b">Nodes</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> Dictionary&lt;Point3D, JumpNode&gt;();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">   22</a></span>        <span class="keyword">public</span> Dictionary&lt;JumpNode, List&lt;JumpEdge&gt;&gt; <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> Dictionary&lt;JumpNode, List&lt;JumpEdge&gt;&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a0cac84de77ad30cedcd20d5499797b48">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a0cac84de77ad30cedcd20d5499797b48">AddNode</a>(<a class="code hl_class" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> node)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (node == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a9cf9583b01d3d35bf4d1ab6573019b4b">Nodes</a>[node.<a class="code hl_property" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#ad621368516935c5a49860b44b9b5cf7e">ApproachPoint</a>] = node;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a>.ContainsKey(node))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a>[node] = <span class="keyword">new</span> List&lt;JumpEdge&gt;();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a91412c39c5dc1cf1c35bbbb4c7fc6dcd">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a91412c39c5dc1cf1c35bbbb4c7fc6dcd">AddEdge</a>(<a class="code hl_class" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a> edge)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (edge?.From == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a>.ContainsKey(edge.<a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">From</a>))</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a>[edge.<a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">From</a>] = <span class="keyword">new</span> List&lt;JumpEdge&gt;();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_property" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">Adjacency</a>[edge.<a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">From</a>].Add(edge);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">   51</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#ad621368516935c5a49860b44b9b5cf7e">   56</a></span>        <span class="keyword">public</span> Point3D <a class="code hl_property" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#ad621368516935c5a49860b44b9b5cf7e">ApproachPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a7e5be02cd30db57cbe6d309ab13046e9">   61</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a7e5be02cd30db57cbe6d309ab13046e9">ParentFaceIndex</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a61710cf909837ad07495059b7ec35f4e">   66</a></span>        <span class="keyword">public</span> Vector3D? <a class="code hl_property" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a61710cf909837ad07495059b7ec35f4e">Normal</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a8d7ef9d2bc9b5c54b23a27777b19ff29">   71</a></span>        <span class="keyword">public</span> Point3D? <a class="code hl_property" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a8d7ef9d2bc9b5c54b23a27777b19ff29">MeasurementPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">   78</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">JumpEdge</a></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">   83</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">From</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#ac0bc189eb9a198e27099f7c3a8905e6e">   88</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">JumpNode</a> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#ac0bc189eb9a198e27099f7c3a8905e6e">To</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">null</span>!;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#af60dae6af7e108ce8eb70bf474db5e19">   93</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#af60dae6af7e108ce8eb70bf474db5e19">Cost</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#adb64649bd69c076068d2801d3c3753ac">   98</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0">JumpType</a> <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#adb64649bd69c076068d2801d3c3753ac">Type</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a03e19e1048e82c6b3cfc69faeaac528d">  104</a></span>        <span class="keyword">public</span> Point3D? <a class="code hl_property" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a03e19e1048e82c6b3cfc69faeaac528d">JumpPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="};">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0">  111</a></span>    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0">JumpType</a></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0a3c0ab18cff11e6caeaf7f91b608aedc9">  114</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0a3c0ab18cff11e6caeaf7f91b608aedc9">SameFace</a>,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0aa5a5d28e0bc0aaf4c571534cabab4273">  117</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0aa5a5d28e0bc0aaf4c571534cabab4273">AdjacentFace</a>,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0ac059425579ba5c42768b8aa1c0bf9803">  120</a></span>        <a class="code hl_enumvalue" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0ac059425579ba5c42768b8aa1c0bf9803">MultiJump</a></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html">HirEV_SmartFitSystemsApp.Models.JumpEdge</a></div><div class="ttdoc">An edge in the jump graph representing a valid path between two approach points. Per REQUIREMENTS....</div><div class="ttdef"><b>Definição</b> <a href="#l00078">JumpGraph.cs:79</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html_a03e19e1048e82c6b3cfc69faeaac528d"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a03e19e1048e82c6b3cfc69faeaac528d">HirEV_SmartFitSystemsApp.Models.JumpEdge.JumpPoint</a></div><div class="ttdeci">Point3D? JumpPoint</div><div class="ttdoc">Gets or sets the jump point on the shared edge (for adjacent face jumps). Null for same-face traversa...</div><div class="ttdef"><b>Definição</b> <a href="#l00104">JumpGraph.cs:104</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html_a76b42ccedcea6ded4b70655d6ff0d1c9"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#a76b42ccedcea6ded4b70655d6ff0d1c9">HirEV_SmartFitSystemsApp.Models.JumpEdge.From</a></div><div class="ttdeci">JumpNode From</div><div class="ttdoc">Gets or sets the source node.</div><div class="ttdef"><b>Definição</b> <a href="#l00083">JumpGraph.cs:83</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html_ac0bc189eb9a198e27099f7c3a8905e6e"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#ac0bc189eb9a198e27099f7c3a8905e6e">HirEV_SmartFitSystemsApp.Models.JumpEdge.To</a></div><div class="ttdeci">JumpNode To</div><div class="ttdoc">Gets or sets the destination node.</div><div class="ttdef"><b>Definição</b> <a href="#l00088">JumpGraph.cs:88</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html_adb64649bd69c076068d2801d3c3753ac"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#adb64649bd69c076068d2801d3c3753ac">HirEV_SmartFitSystemsApp.Models.JumpEdge.Type</a></div><div class="ttdeci">JumpType Type</div><div class="ttdoc">Gets or sets the type of jump (same face, adjacent face, or multi-jump).</div><div class="ttdef"><b>Definição</b> <a href="#l00098">JumpGraph.cs:98</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge_html_af60dae6af7e108ce8eb70bf474db5e19"><div class="ttname"><a href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_edge.html#af60dae6af7e108ce8eb70bf474db5e19">HirEV_SmartFitSystemsApp.Models.JumpEdge.Cost</a></div><div class="ttdeci">double Cost</div><div class="ttdoc">Gets or sets the cost (distance) of traversing this edge.</div><div class="ttdef"><b>Definição</b> <a href="#l00093">JumpGraph.cs:93</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph_html"><div class="ttname"><a href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html">HirEV_SmartFitSystemsApp.Models.JumpGraph</a></div><div class="ttdoc">Navigation graph for face-jumping path planning. Nodes are approach points, edges are valid jumps bet...</div><div class="ttdef"><b>Definição</b> <a href="#l00010">JumpGraph.cs:11</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph_html_a0cac84de77ad30cedcd20d5499797b48"><div class="ttname"><a href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a0cac84de77ad30cedcd20d5499797b48">HirEV_SmartFitSystemsApp.Models.JumpGraph.AddNode</a></div><div class="ttdeci">void AddNode(JumpNode node)</div><div class="ttdoc">Adds a node to the graph.</div><div class="ttdef"><b>Definição</b> <a href="#l00027">JumpGraph.cs:27</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph_html_a259aa9929c7def7aeb6868c5101f6f0f"><div class="ttname"><a href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a259aa9929c7def7aeb6868c5101f6f0f">HirEV_SmartFitSystemsApp.Models.JumpGraph.Adjacency</a></div><div class="ttdeci">Dictionary&lt; JumpNode, List&lt; JumpEdge &gt; &gt; Adjacency</div><div class="ttdoc">Gets or sets the adjacency list for jump edges. Maps each node to its outgoing edges.</div><div class="ttdef"><b>Definição</b> <a href="#l00022">JumpGraph.cs:22</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph_html_a91412c39c5dc1cf1c35bbbb4c7fc6dcd"><div class="ttname"><a href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a91412c39c5dc1cf1c35bbbb4c7fc6dcd">HirEV_SmartFitSystemsApp.Models.JumpGraph.AddEdge</a></div><div class="ttdeci">void AddEdge(JumpEdge edge)</div><div class="ttdoc">Adds an edge between two nodes.</div><div class="ttdef"><b>Definição</b> <a href="#l00038">JumpGraph.cs:38</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph_html_a9cf9583b01d3d35bf4d1ab6573019b4b"><div class="ttname"><a href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_graph.html#a9cf9583b01d3d35bf4d1ab6573019b4b">HirEV_SmartFitSystemsApp.Models.JumpGraph.Nodes</a></div><div class="ttdeci">Dictionary&lt; Point3D, JumpNode &gt; Nodes</div><div class="ttdoc">Gets or sets the map of approach points to their jump nodes. Uses Point3D as key for O(1) lookup.</div><div class="ttdef"><b>Definição</b> <a href="#l00016">JumpGraph.cs:16</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node_html"><div class="ttname"><a href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html">HirEV_SmartFitSystemsApp.Models.JumpNode</a></div><div class="ttdoc">A node in the jump graph representing an approach point with parent face association....</div><div class="ttdef"><b>Definição</b> <a href="#l00051">JumpGraph.cs:52</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node_html_a61710cf909837ad07495059b7ec35f4e"><div class="ttname"><a href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a61710cf909837ad07495059b7ec35f4e">HirEV_SmartFitSystemsApp.Models.JumpNode.Normal</a></div><div class="ttdeci">Vector3D? Normal</div><div class="ttdoc">Gets or sets the surface normal at this approach point.</div><div class="ttdef"><b>Definição</b> <a href="#l00066">JumpGraph.cs:66</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node_html_a7e5be02cd30db57cbe6d309ab13046e9"><div class="ttname"><a href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a7e5be02cd30db57cbe6d309ab13046e9">HirEV_SmartFitSystemsApp.Models.JumpNode.ParentFaceIndex</a></div><div class="ttdeci">int ParentFaceIndex</div><div class="ttdoc">Gets or sets the parent face index of the original BREP face.</div><div class="ttdef"><b>Definição</b> <a href="#l00061">JumpGraph.cs:61</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node_html_a8d7ef9d2bc9b5c54b23a27777b19ff29"><div class="ttname"><a href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#a8d7ef9d2bc9b5c54b23a27777b19ff29">HirEV_SmartFitSystemsApp.Models.JumpNode.MeasurementPoint</a></div><div class="ttdeci">Point3D? MeasurementPoint</div><div class="ttdoc">Gets or sets the associated measurement point (below the approach point).</div><div class="ttdef"><b>Definição</b> <a href="#l00071">JumpGraph.cs:71</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node_html_ad621368516935c5a49860b44b9b5cf7e"><div class="ttname"><a href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_jump_node.html#ad621368516935c5a49860b44b9b5cf7e">HirEV_SmartFitSystemsApp.Models.JumpNode.ApproachPoint</a></div><div class="ttdeci">Point3D ApproachPoint</div><div class="ttdoc">Gets or sets the approach point position.</div><div class="ttdef"><b>Definição</b> <a href="#l00056">JumpGraph.cs:56</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_aa8fb045db17acd5d0bc1dd778c6c97e0"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0">HirEV_SmartFitSystemsApp.Models.JumpType</a></div><div class="ttdeci">JumpType</div><div class="ttdoc">Types of jumps in the navigation graph. Per REQUIREMENTS.md §3.1.</div><div class="ttdef"><b>Definição</b> <a href="#l00111">JumpGraph.cs:112</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_aa8fb045db17acd5d0bc1dd778c6c97e0a3c0ab18cff11e6caeaf7f91b608aedc9"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0a3c0ab18cff11e6caeaf7f91b608aedc9">HirEV_SmartFitSystemsApp.Models.JumpType.SameFace</a></div><div class="ttdeci">@ SameFace</div><div class="ttdoc">Both points on same offset face - direct navigation.</div><div class="ttdef"><b>Definição</b> <a href="#l00114">JumpGraph.cs:114</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_aa8fb045db17acd5d0bc1dd778c6c97e0aa5a5d28e0bc0aaf4c571534cabab4273"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0aa5a5d28e0bc0aaf4c571534cabab4273">HirEV_SmartFitSystemsApp.Models.JumpType.AdjacentFace</a></div><div class="ttdeci">@ AdjacentFace</div><div class="ttdoc">Single jump between adjacent parent faces.</div><div class="ttdef"><b>Definição</b> <a href="#l00117">JumpGraph.cs:117</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html_aa8fb045db17acd5d0bc1dd778c6c97e0ac059425579ba5c42768b8aa1c0bf9803"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#aa8fb045db17acd5d0bc1dd778c6c97e0ac059425579ba5c42768b8aa1c0bf9803">HirEV_SmartFitSystemsApp.Models.JumpType.MultiJump</a></div><div class="ttdeci">@ MultiJump</div><div class="ttdoc">Requires intermediate jumps through multiple faces.</div><div class="ttdef"><b>Definição</b> <a href="#l00120">JumpGraph.cs:120</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

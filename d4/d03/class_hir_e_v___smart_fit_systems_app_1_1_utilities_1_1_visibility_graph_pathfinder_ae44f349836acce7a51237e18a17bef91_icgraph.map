@@ -1,0 +1,14 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.VisibilityGraphPathfinder.RayIntersectsTriangle" name="HirEV_SmartFitSystemsApp.Utilities.VisibilityGraphPathfinder.RayIntersectsTriangle">
+<area shape="rect" id="Node000001" title="Möller–Trumbore ray&#45;triangle intersection algorithm." alt="" coords="1063,72,1279,131"/>
+<area shape="rect" id="Node000002" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a70e29f34722a71936722884e6cdd19a5" title="Checks if a point is inside any obstacle (with safety margin)." alt="" coords="798,72,1015,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1045,101,1015,104,1015,99,1050,101"/>
+<area shape="rect" id="Node000003" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#ae8145db0916d7aeac1df8a77c37ab145" title="Checks if a line segment is visible (collision&#45;free) between two points." alt="" coords="534,72,750,131"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="780,102,751,104,751,99,786,101"/>
+<area shape="rect" id="Node000004" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#aafdd3276f443a71c314ee46cd6431ddb" title="Builds the visibility graph from a set of waypoints. Call this once before performing multiple pathfi..." alt="" coords="270,5,486,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="516,70,487,65,487,59,522,70"/>
+<area shape="rect" id="Node000005" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#a8ad8cd55aee96369fd9d896259bc1121" title="Finds a collision&#45;free path from start to goal using A* search on the visibility graph." alt="" coords="5,105,222,164"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="518,112,222,131,222,125,519,107"/>
+<area shape="rect" id="Node000006" href="$d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#ad72716abf201e52d69283c880af51aa2" title="Gets an existing node for the position or creates a temporary one connected to visible nodes." alt="" coords="270,139,486,197"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="522,132,487,143,486,138,516,133"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="252,153,222,151,222,146,257,152"/>
+</map>

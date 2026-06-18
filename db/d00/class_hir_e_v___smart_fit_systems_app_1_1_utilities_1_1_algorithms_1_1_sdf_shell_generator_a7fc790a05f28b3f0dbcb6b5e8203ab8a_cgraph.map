@@ -1,0 +1,24 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.BuildAsync" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.BuildAsync">
+<area shape="rect" id="Node000001" title="Main entry point. Replaces BuildScaledSolidShellAsync from the old generator." alt="" coords="5,319,251,377"/>
+<area shape="rect" id="Node000002" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ae5fface654bf860029f0e22c28134420" title="Builds map of adjacent faces sharing edge indices for topological navigation." alt="" coords="299,5,544,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,317,160,265,194,200,239,133,267,101,297,74,305,70,302,75,300,78,271,105,244,136,198,203,164,268,142,319"/>
+<area shape="rect" id="Node000003" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a996ea4c5cf07e2ac85ae2bf90e7272a3" title="Sets up the grid dimension coordinates and allocates distance buffers." alt="" coords="299,112,544,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,317,212,249,253,212,297,180,309,176,305,180,300,185,256,216,216,252,155,320"/>
+<area shape="rect" id="Node000004" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a83955d1fca93ee737fcfe83630d0f5ad" title="Combines multiple meshes into a single mesh container." alt="" coords="299,195,544,253"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="185,316,298,263,316,258,312,261,300,268,188,320"/>
+<area shape="rect" id="Node000005" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#abe1a117527ad6c7aeee542dea4788ca2" title="Evaluates the signed distance field values in parallel for all grid voxels." alt="" coords="299,277,544,336"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="250,328,285,325,281,328,252,333"/>
+<area shape="rect" id="Node000006" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#adf0aba756ed67354733de2b576570aa0" title="Reorients all triangle normals in the mesh to point outward from the solid part body." alt="" coords="299,360,544,419"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="250,363,286,369,281,371,252,368"/>
+<area shape="rect" id="Node000008" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a74ec3de7913af8fb26d472665c413019" title="Performs Laplacian vertex smoothing to eliminate voxelization staircasing in the mesh." alt="" coords="299,443,544,501"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="186,375,300,428,317,436,311,437,298,433,186,381"/>
+<area shape="rect" id="Node000009" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ae47ace361353d7eface7c8aa0a385cd9" title="Generates a triangulated iso&#45;surface mesh from the voxel signed distance field." alt="" coords="299,525,544,584"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="153,375,216,444,256,480,300,511,310,518,304,518,297,516,253,484,212,447,152,380"/>
+<area shape="rect" id="Node000011" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a47d0bfd616fb667992ce158d931c898e" title="Tessellates all CAD faces into flat triangle meshes for distance fields." alt="" coords="299,608,544,667"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="142,375,168,424,202,482,246,542,272,570,300,594,306,600,301,599,297,598,269,574,242,546,197,485,163,427,142,380"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="364,111,366,101,376,93,395,87,421,85,452,88,472,97,467,98,451,93,421,91,396,93,378,97,370,104,370,113"/>
+<area shape="rect" id="Node000007" href="$d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html#a18c1be9d32a6208d151b8e7bbacdb678" title=" " alt="" coords="592,360,837,419"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="544,387,579,389,574,390,545,392"/>
+<area shape="rect" id="Node000010" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a0d2eab9012449a1939630816a00bd711" title="Adds a vertex point to the index list using a spatial quantization cache." alt="" coords="592,525,837,584"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="544,552,579,554,574,555,544,557"/>
+</map>

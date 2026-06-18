@@ -1,0 +1,25 @@
+var class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item =
+[
+    [ "OnPropertyChanged", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aba98f5c2ebd050a216be4cfad1bfa274", null ],
+    [ "SetToolTipFormat", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ae087500fe5f33a23d1604c9d4f488aa7", null ],
+    [ "availableTools", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#adcafb338e5b3fc91c513b5b5a16ae483", null ],
+    [ "colorName", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a0980e268fde38dbb0da4b67fb16e65d0", null ],
+    [ "colorRGB", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aa549498834980c9eb9cec4f3b4594d1f", null ],
+    [ "colorValue", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a5d35bf9ccbc3de23120211c6a9af8fa9", null ],
+    [ "originalColor", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a2358c1416a437dacebfd362555e92532", null ],
+    [ "pointCount", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aff9cab9b768f9b08b4de81f8592b9191", null ],
+    [ "selectedTool", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#af222b187183b7254e618bf2b4ca354d8", null ],
+    [ "toolNameFromPath", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a7a530bed12cca0cb82d44f92394e9fe1", null ],
+    [ "toolTipFormat", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aa8e09cd497df0a2949048405ee394265", null ],
+    [ "AvailableTools", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aab1f6dfd587a8ddd3efe780cfaf0829a", null ],
+    [ "ColorName", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a6fde0af997ba7d26702572ed95bb7cc9", null ],
+    [ "ColorRGB", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a2fbd7faf726ec2be52a9d903b28c19f9", null ],
+    [ "ColorValue", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ad48fa6fc64be93fd41cf055323b5bf65", null ],
+    [ "OriginalColor", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ab106b11988fcb8ed7f39d9b41a67ddfa", null ],
+    [ "PointCount", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a810f3e4341e1940800ff3a1a212d2e34", null ],
+    [ "SelectedTool", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ac522a38a8881b14fffb8fb2725c077fe", null ],
+    [ "ToolNameFromPath", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ad3e1fc8b0fba287d4f207753d1e36484", null ],
+    [ "ToolSelectionToolTip", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#accaee7ee38f9a89a1f21a1e68981cdba", null ],
+    [ "PropertyChanged", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#ab52524d3a3723d8b204ac81a5eaaf709", null ],
+    [ "ToolChanged", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#a4a6f3e72e483515e1cc332c0b6d990fc", null ]
+];

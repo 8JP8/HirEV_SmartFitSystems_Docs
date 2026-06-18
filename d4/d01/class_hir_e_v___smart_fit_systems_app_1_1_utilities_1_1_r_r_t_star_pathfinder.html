@@ -1,0 +1,1358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html','../../','dc/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>RRT* (Rapidly-exploring Random Tree Star) Pathfinder for collision-free path planning.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_r_r_t_star_pathfinder_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_r_r_t_star_pathfinder_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_r_r_t_star_pathfinder_coll__map">
+<area shape="rect" title="RRT* (Rapidly&#45;exploring Random Tree Star) Pathfinder for collision&#45;free path planning." alt="" coords="5,5,211,645"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:TreeNode" id="r_TreeNode"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a node in the RRT* tree.  <a href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:PathResult" id="r_PathResult"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_path_result.html">PathResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of pathfinding operation.  <a href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_path_result.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a66457a55eb26707c60ba9cd4b4c7045e" id="r_a66457a55eb26707c60ba9cd4b4c7045e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a66457a55eb26707c60ba9cd4b4c7045e">RRTStarPathfinder</a> (double safetyMargin=1.0)</td></tr>
+<tr class="memdesc:a66457a55eb26707c60ba9cd4b4c7045e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html" title="RRT* (Rapidly-exploring Random Tree Star) Pathfinder for collision-free path planning.">RRTStarPathfinder</a> class.  <br /></td></tr>
+<tr class="memitem:a865efcadc87a49a6ebb9bf7a4c95032a" id="r_a865efcadc87a49a6ebb9bf7a4c95032a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a865efcadc87a49a6ebb9bf7a4c95032a">Configure</a> (double stepSize=20.0, double goalBias=0.1, double rewireRadius=50.0, int maxIterations=2000, double goalTolerance=5.0)</td></tr>
+<tr class="memdesc:a865efcadc87a49a6ebb9bf7a4c95032a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the RRT* parameters.  <br /></td></tr>
+<tr class="memitem:a2fb68757d7537b662cfe7089f77a42e7" id="r_a2fb68757d7537b662cfe7089f77a42e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2fb68757d7537b662cfe7089f77a42e7">SetObstacles</a> (List&lt; Brep?&gt; obstacles)</td></tr>
+<tr class="memdesc:a2fb68757d7537b662cfe7089f77a42e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the obstacles to avoid.  <br /></td></tr>
+<tr class="memitem:a77d924b09a28a7dc3519b89d342975ab" id="r_a77d924b09a28a7dc3519b89d342975ab"><td class="memItemLeft"><a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_path_result.html">PathResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#a77d924b09a28a7dc3519b89d342975ab">FindPath</a> (Point3D start, Point3D goal)</td></tr>
+<tr class="memdesc:a77d924b09a28a7dc3519b89d342975ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a collision-free path from start to goal using RRT*.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a799f7b7ec38dbc7d96801cc5659eb99f" id="r_a799f7b7ec38dbc7d96801cc5659eb99f"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a799f7b7ec38dbc7d96801cc5659eb99f">SampleRandomPoint</a> ()</td></tr>
+<tr class="memdesc:a799f7b7ec38dbc7d96801cc5659eb99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a random point within bounds.  <br /></td></tr>
+<tr class="memitem:a7b0ca9e3d24182f55915033b04345907" id="r_a7b0ca9e3d24182f55915033b04345907"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b0ca9e3d24182f55915033b04345907">ExpandBoundsToInclude</a> (Point3D point)</td></tr>
+<tr class="memdesc:a7b0ca9e3d24182f55915033b04345907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands bounds to include a point.  <br /></td></tr>
+<tr class="memitem:a9be85b9103ecc8e0f7c0d635ccde60d4" id="r_a9be85b9103ecc8e0f7c0d635ccde60d4"><td class="memItemLeft"><a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a9be85b9103ecc8e0f7c0d635ccde60d4">FindNearestNode</a> (List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt; tree, Point3D point)</td></tr>
+<tr class="memdesc:a9be85b9103ecc8e0f7c0d635ccde60d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest node to a point.  <br /></td></tr>
+<tr class="memitem:a7373956c12db1bcced9d79958b6d1105" id="r_a7373956c12db1bcced9d79958b6d1105"><td class="memItemLeft">List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7373956c12db1bcced9d79958b6d1105">FindNodesWithinRadius</a> (List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt; tree, Point3D point, double radius)</td></tr>
+<tr class="memdesc:a7373956c12db1bcced9d79958b6d1105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all nodes within a given radius of a point.  <br /></td></tr>
+<tr class="memitem:a81cf2a2c641f9bfec62a9eefe785305d" id="r_a81cf2a2c641f9bfec62a9eefe785305d"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a81cf2a2c641f9bfec62a9eefe785305d">Steer</a> (Point3D from, Point3D towards, double maxDistance)</td></tr>
+<tr class="memdesc:a81cf2a2c641f9bfec62a9eefe785305d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steers from one point towards another, limited by step size.  <br /></td></tr>
+<tr class="memitem:a9bd3a5376b22bcd2b1f469be2bc99207" id="r_a9bd3a5376b22bcd2b1f469be2bc99207"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9bd3a5376b22bcd2b1f469be2bc99207">CalculateRewireRadius</a> (int numNodes)</td></tr>
+<tr class="memdesc:a9bd3a5376b22bcd2b1f469be2bc99207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the rewire radius based on number of nodes (RRT* formula).  <br /></td></tr>
+<tr class="memitem:afadb104bfef7bb347f7d961dd2c76e37" id="r_afadb104bfef7bb347f7d961dd2c76e37"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afadb104bfef7bb347f7d961dd2c76e37">PropagateCoastUpdate</a> (<a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> node)</td></tr>
+<tr class="memdesc:afadb104bfef7bb347f7d961dd2c76e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagates cost update to descendants after rewiring.  <br /></td></tr>
+<tr class="memitem:aaf71e6dab806dd18a3ac9e81adfa6b95" id="r_aaf71e6dab806dd18a3ac9e81adfa6b95"><td class="memItemLeft">List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aaf71e6dab806dd18a3ac9e81adfa6b95">ReconstructPath</a> (<a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> goalNode)</td></tr>
+<tr class="memdesc:aaf71e6dab806dd18a3ac9e81adfa6b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstructs path from goal node to start.  <br /></td></tr>
+<tr class="memitem:a95e6346276fc33b44c8e32fda9229698" id="r_a95e6346276fc33b44c8e32fda9229698"><td class="memItemLeft">List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a95e6346276fc33b44c8e32fda9229698">SmoothPath</a> (List&lt; Point3D &gt; path)</td></tr>
+<tr class="memdesc:a95e6346276fc33b44c8e32fda9229698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooths path by removing unnecessary waypoints.  <br /></td></tr>
+<tr class="memitem:aae6893fa247f03e201688e2e9015800b" id="r_aae6893fa247f03e201688e2e9015800b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aae6893fa247f03e201688e2e9015800b">IsPointInCollision</a> (Point3D point)</td></tr>
+<tr class="memdesc:aae6893fa247f03e201688e2e9015800b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a point is in collision with obstacles.  <br /></td></tr>
+<tr class="memitem:ae9796d31d510dd042370c871f341dcd9" id="r_ae9796d31d510dd042370c871f341dcd9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae9796d31d510dd042370c871f341dcd9">IsSegmentCollisionFree</a> (Point3D start, Point3D end)</td></tr>
+<tr class="memdesc:ae9796d31d510dd042370c871f341dcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a segment is collision-free.  <br /></td></tr>
+<tr class="memitem:ae6d53d216c5ee4165d87b8d4001f862b" id="r_ae6d53d216c5ee4165d87b8d4001f862b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae6d53d216c5ee4165d87b8d4001f862b">RayIntersectsTriangle</a> (Point3D origin, Vector3D direction, Point3D v0, Point3D v1, Point3D v2)</td></tr>
+<tr class="memdesc:ae6d53d216c5ee4165d87b8d4001f862b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ray-triangle intersection (Möller–Trumbore).  <br /></td></tr>
+<tr class="memitem:adf865be22821ba867e9ee29b1a169183" id="r_adf865be22821ba867e9ee29b1a169183"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adf865be22821ba867e9ee29b1a169183">SegmentIntersectsTriangle</a> (Point3D start, Point3D end, Point3D v0, Point3D v1, Point3D v2)</td></tr>
+<tr class="memdesc:adf865be22821ba867e9ee29b1a169183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segment-triangle intersection.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a591c0c5831aecdecfcf845e7458eda3d" id="r_a591c0c5831aecdecfcf845e7458eda3d"><td class="memItemLeft">List&lt; Brep?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a591c0c5831aecdecfcf845e7458eda3d">_obstacles</a> = new List&lt;Brep?&gt;()</td></tr>
+<tr class="memitem:a9e5fe0adf8d4b5f86d6b6bfe126f4628" id="r_a9e5fe0adf8d4b5f86d6b6bfe126f4628"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a9e5fe0adf8d4b5f86d6b6bfe126f4628">_boundsMin</a> = new Point3D(-1000, -1000, -1000)</td></tr>
+<tr class="memitem:a83967472e011d469e18413a691911744" id="r_a83967472e011d469e18413a691911744"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a83967472e011d469e18413a691911744">_boundsMax</a> = new Point3D(1000, 1000, 1000)</td></tr>
+<tr class="memitem:aaf622483773a120c5fd5dc2c9b73ea31" id="r_aaf622483773a120c5fd5dc2c9b73ea31"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aaf622483773a120c5fd5dc2c9b73ea31">_safetyMargin</a> = 1.0</td></tr>
+<tr class="memitem:ad9b6fc4249a5b4836cc61626af80c359" id="r_ad9b6fc4249a5b4836cc61626af80c359"><td class="memItemLeft">Random&#160;</td><td class="memItemRight"><a class="el" href="#ad9b6fc4249a5b4836cc61626af80c359">_random</a> = new Random()</td></tr>
+<tr class="memitem:a693288ed3c44bb35196c2ccd4111ead4" id="r_a693288ed3c44bb35196c2ccd4111ead4"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a693288ed3c44bb35196c2ccd4111ead4">_stepSize</a> = 20.0</td></tr>
+<tr class="memitem:a2ed333ac70ec8d5b45db345208c69878" id="r_a2ed333ac70ec8d5b45db345208c69878"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a2ed333ac70ec8d5b45db345208c69878">_goalBias</a> = 0.1</td></tr>
+<tr class="memitem:a082e43cc4b3ec54248ad638e115d2d6f" id="r_a082e43cc4b3ec54248ad638e115d2d6f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a082e43cc4b3ec54248ad638e115d2d6f">_rewireRadius</a> = 50.0</td></tr>
+<tr class="memitem:a697655690873086d3b5f57ff7ff1edf2" id="r_a697655690873086d3b5f57ff7ff1edf2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a697655690873086d3b5f57ff7ff1edf2">_maxIterations</a> = 2000</td></tr>
+<tr class="memitem:a778393da7cac5216e2102bfbfbf487ba" id="r_a778393da7cac5216e2102bfbfbf487ba"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a778393da7cac5216e2102bfbfbf487ba">_goalTolerance</a> = 5.0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:ab2876738c178423d743c7e56af6232bd" id="r_ab2876738c178423d743c7e56af6232bd"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#ab2876738c178423d743c7e56af6232bd">SEGMENT_SAMPLE_COUNT</a> = 10</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>RRT* (Rapidly-exploring Random Tree Star) Pathfinder for collision-free path planning. </p>
+<p>Based on: Karaman &amp; Frazzoli (2011) "Sampling-based algorithms for optimal motion planning"</p>
+<p>RRT* is asymptotically optimal - it converges to the optimal path as samples increase. Used as fallback when Visibility Graph fails for complex geometries. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a66457a55eb26707c60ba9cd4b4c7045e" name="a66457a55eb26707c60ba9cd4b4c7045e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66457a55eb26707c60ba9cd4b4c7045e">&#9670;&#160;</a></span>RRTStarPathfinder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.RRTStarPathfinder </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>safetyMargin</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html" title="RRT* (Rapidly-exploring Random Tree Star) Pathfinder for collision-free path planning.">RRTStarPathfinder</a> class. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">safetyMargin</td><td>The safety margin distance in millimeters to keep away from obstacles.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00123">123</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00102">_safetyMargin</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a9bd3a5376b22bcd2b1f469be2bc99207" name="a9bd3a5376b22bcd2b1f469be2bc99207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd3a5376b22bcd2b1f469be2bc99207">&#9670;&#160;</a></span>CalculateRewireRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.CalculateRewireRadius </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numNodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the rewire radius based on number of nodes (RRT* formula). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00449">449</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00108">_rewireRadius</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00106">_stepSize</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9bd3a5376b22bcd2b1f469be2bc99207_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9bd3a5376b22bcd2b1f469be2bc99207_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9bd3a5376b22bcd2b1f469be2bc99207_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9bd3a5376b22bcd2b1f469be2bc99207_icgraph">
+<area shape="rect" title="Calculates the rewire radius based on number of nodes (RRT* formula)." alt="" coords="289,5,527,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="270,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a865efcadc87a49a6ebb9bf7a4c95032a" name="a865efcadc87a49a6ebb9bf7a4c95032a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865efcadc87a49a6ebb9bf7a4c95032a">&#9670;&#160;</a></span>Configure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.Configure </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stepSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>goalBias</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>rewireRadius</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2000</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>goalTolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5::0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures the RRT* parameters. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">135</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00107">_goalBias</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00110">_goalTolerance</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00109">_maxIterations</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00108">_rewireRadius</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00106">_stepSize</a>.</p>
+
+</div>
+</div>
+<a id="a7b0ca9e3d24182f55915033b04345907" name="a7b0ca9e3d24182f55915033b04345907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0ca9e3d24182f55915033b04345907">&#9670;&#160;</a></span>ExpandBoundsToInclude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.ExpandBoundsToInclude </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Expands bounds to include a point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00383">383</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00101">_boundsMax</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00100">_boundsMin</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7b0ca9e3d24182f55915033b04345907_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7b0ca9e3d24182f55915033b04345907_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7b0ca9e3d24182f55915033b04345907_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7b0ca9e3d24182f55915033b04345907_icgraph">
+<area shape="rect" title="Expands bounds to include a point." alt="" coords="289,5,516,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="270,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9be85b9103ecc8e0f7c0d635ccde60d4" name="a9be85b9103ecc8e0f7c0d635ccde60d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be85b9103ecc8e0f7c0d635ccde60d4">&#9670;&#160;</a></span>FindNearestNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a>? HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.FindNearestNode </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tree</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the nearest node to a point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00399">399</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9be85b9103ecc8e0f7c0d635ccde60d4_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9be85b9103ecc8e0f7c0d635ccde60d4_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9be85b9103ecc8e0f7c0d635ccde60d4_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a9be85b9103ecc8e0f7c0d635ccde60d4_icgraph">
+<area shape="rect" title="Finds the nearest node to a point." alt="" coords="289,5,497,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="270,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7373956c12db1bcced9d79958b6d1105" name="a7373956c12db1bcced9d79958b6d1105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7373956c12db1bcced9d79958b6d1105">&#9670;&#160;</a></span>FindNodesWithinRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt; HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.FindNodesWithinRadius </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tree</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds all nodes within a given radius of a point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00420">420</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7373956c12db1bcced9d79958b6d1105_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7373956c12db1bcced9d79958b6d1105_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7373956c12db1bcced9d79958b6d1105_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a7373956c12db1bcced9d79958b6d1105_icgraph">
+<area shape="rect" title="Finds all nodes within a given radius of a point." alt="" coords="289,5,497,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="270,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77d924b09a28a7dc3519b89d342975ab" name="a77d924b09a28a7dc3519b89d342975ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d924b09a28a7dc3519b89d342975ab">&#9670;&#160;</a></span>FindPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_path_result.html">PathResult</a> HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.FindPath </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>goal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds a collision-free path from start to goal using RRT*. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">187</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00107">_goalBias</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00110">_goalTolerance</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00109">_maxIterations</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00103">_random</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00106">_stepSize</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00449">CalculateRewireRadius()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00037">HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.TreeNode.CostFromStart</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00383">ExpandBoundsToInclude()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00399">FindNearestNode()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00420">FindNodesWithinRadius()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">IsPointInCollision()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00027">HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.TreeNode.Position</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00461">PropagateCoastUpdate()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00483">ReconstructPath()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00372">SampleRandomPoint()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00501">SmoothPath()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00428">Steer()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a77d924b09a28a7dc3519b89d342975ab_cgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a77d924b09a28a7dc3519b89d342975ab_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a77d924b09a28a7dc3519b89d342975ab_cgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a77d924b09a28a7dc3519b89d342975ab_cgraph">
+<area shape="rect" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,379,241,421"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a9bd3a5376b22bcd2b1f469be2bc99207" title="Calculates the rewire radius based on number of nodes (RRT* formula)." alt="" coords="310,5,548,64"/>
+<area shape="poly" title=" " alt="" coords="127,377,143,317,174,235,195,192,221,149,252,109,287,74,298,68,295,72,290,78,256,112,226,152,200,194,179,238,148,319,132,379"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a7b0ca9e3d24182f55915033b04345907" title="Expands bounds to include a point." alt="" coords="316,88,543,147"/>
+<area shape="poly" title=" " alt="" coords="131,377,152,331,186,272,231,210,258,181,287,157,304,148,300,152,290,161,261,185,235,213,190,274,157,334,136,379"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a9be85b9103ecc8e0f7c0d635ccde60d4" title="Finds the nearest node to a point." alt="" coords="325,171,534,229"/>
+<area shape="poly" title=" " alt="" coords="139,377,200,309,241,271,287,239,313,228,309,232,290,244,245,276,203,313,143,380"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a7373956c12db1bcced9d79958b6d1105" title="Finds all nodes within a given radius of a point." alt="" coords="325,253,534,312"/>
+<area shape="poly" title=" " alt="" coords="172,376,288,328,326,316,322,319,290,333,176,380"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aae6893fa247f03e201688e2e9015800b" title="Checks if a point is in collision with obstacles." alt="" coords="881,320,1075,379"/>
+<area shape="poly" title=" " alt="" coords="241,390,866,353,864,358,242,396"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="618,395,812,453"/>
+<area shape="poly" title=" " alt="" coords="241,402,604,417,601,422,242,407"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#afadb104bfef7bb347f7d961dd2c76e37" title="Propagates cost update to descendants after rewiring." alt="" coords="308,437,550,496"/>
+<area shape="poly" title=" " alt="" coords="223,419,296,436,291,438,225,424"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aaf71e6dab806dd18a3ac9e81adfa6b95" title="Reconstructs path from goal node to start." alt="" coords="289,520,570,563"/>
+<area shape="poly" title=" " alt="" coords="151,419,213,463,251,486,290,506,308,514,303,515,288,510,248,491,211,468,151,425"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a799f7b7ec38dbc7d96801cc5659eb99f" title="Samples a random point within bounds." alt="" coords="316,587,543,645"/>
+<area shape="poly" title=" " alt="" coords="139,419,200,495,243,537,290,572,304,582,299,582,287,577,239,541,196,498,139,424"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="302,669,557,712"/>
+<area shape="poly" title=" " alt="" coords="132,419,154,470,187,534,232,600,260,630,290,655,298,662,292,661,287,659,256,633,228,603,182,537,149,472,132,425"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a81cf2a2c641f9bfec62a9eefe785305d" title="Steers from one point towards another, limited by step size." alt="" coords="322,736,536,779"/>
+<area shape="poly" title=" " alt="" coords="129,419,147,482,178,563,199,607,224,649,255,688,290,722,311,737,306,736,287,726,251,692,220,652,194,609,173,566,142,483,128,424"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae6d53d216c5ee4165d87b8d4001f862b" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="1144,320,1351,379"/>
+<area shape="poly" title=" " alt="" coords="1075,347,1130,349,1125,350,1076,352"/>
+<area shape="poly" title=" " alt="" coords="812,394,868,380,863,382,814,399"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#adf865be22821ba867e9ee29b1a169183" title="Segment&#45;triangle intersection." alt="" coords="860,403,1096,461"/>
+<area shape="poly" title=" " alt="" coords="812,424,847,427,842,428,813,430"/>
+<area shape="poly" title=" " alt="" coords="550,666,568,655,613,613,649,563,677,512,697,470,701,466,681,515,654,566,617,617,572,659,552,671"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aae6893fa247f03e201688e2e9015800b" name="aae6893fa247f03e201688e2e9015800b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6893fa247f03e201688e2e9015800b">&#9670;&#160;</a></span>IsPointInCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.IsPointInCollision </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a point is in collision with obstacles. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">533</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00099">_obstacles</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00102">_safetyMargin</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00671">RayIntersectsTriangle()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_cgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_cgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_cgraph">
+<area shape="rect" title="Checks if a point is in collision with obstacles." alt="" coords="5,5,200,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae6d53d216c5ee4165d87b8d4001f862b" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="248,5,455,64"/>
+<area shape="poly" title=" " alt="" coords="200,32,235,34,230,35,200,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aae6893fa247f03e201688e2e9015800b_icgraph">
+<area shape="rect" title="Checks if a point is in collision with obstacles." alt="" coords="834,5,1029,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,31,241,73"/>
+<area shape="poly" title=" " alt="" coords="816,28,786,29,646,27,538,30,289,44,241,47,241,42,289,39,537,24,646,22,786,24,822,28"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="592,39,786,97"/>
+<area shape="poly" title=" " alt="" coords="821,50,787,57,786,52,816,50"/>
+<area shape="poly" title=" " alt="" coords="575,67,241,58,241,53,577,62"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="289,89,544,132"/>
+<area shape="poly" title=" " alt="" coords="579,85,545,93,544,88,574,86"/>
+<area shape="poly" title=" " alt="" coords="289,86,233,77,233,71,294,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9796d31d510dd042370c871f341dcd9" name="ae9796d31d510dd042370c871f341dcd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9796d31d510dd042370c871f341dcd9">&#9670;&#160;</a></span>IsSegmentCollisionFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.IsSegmentCollisionFree </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a segment is collision-free. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">592</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00099">_obstacles</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00102">_safetyMargin</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">IsPointInCollision()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00113">SEGMENT_SAMPLE_COUNT</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00704">SegmentIntersectsTriangle()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00501">SmoothPath()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_cgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_cgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_cgraph">
+<area shape="rect" title="Checks if a segment is collision&#45;free." alt="" coords="5,47,200,105"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aae6893fa247f03e201688e2e9015800b" title="Checks if a point is in collision with obstacles." alt="" coords="268,5,462,64"/>
+<area shape="poly" title=" " alt="" coords="199,58,256,51,251,53,201,63"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#adf865be22821ba867e9ee29b1a169183" title="Segment&#45;triangle intersection." alt="" coords="248,88,483,147"/>
+<area shape="poly" title=" " alt="" coords="200,89,235,96,230,97,200,94"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae6d53d216c5ee4165d87b8d4001f862b" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="531,5,738,64"/>
+<area shape="poly" title=" " alt="" coords="463,32,518,34,513,35,463,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae9796d31d510dd042370c871f341dcd9_icgraph">
+<area shape="rect" title="Checks if a segment is collision&#45;free." alt="" coords="592,5,786,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="574,31,544,33,289,33,241,34,241,29,289,28,544,28,579,31"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="289,43,544,85"/>
+<area shape="poly" title=" " alt="" coords="579,47,544,53,544,48,574,47"/>
+<area shape="poly" title=" " alt="" coords="270,50,241,49,241,44,276,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afadb104bfef7bb347f7d961dd2c76e37" name="afadb104bfef7bb347f7d961dd2c76e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadb104bfef7bb347f7d961dd2c76e37">&#9670;&#160;</a></span>PropagateCoastUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.PropagateCoastUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propagates cost update to descendants after rewiring. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00461">461</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_afadb104bfef7bb347f7d961dd2c76e37_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_afadb104bfef7bb347f7d961dd2c76e37_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_afadb104bfef7bb347f7d961dd2c76e37_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_afadb104bfef7bb347f7d961dd2c76e37_icgraph">
+<area shape="rect" title="Propagates cost update to descendants after rewiring." alt="" coords="289,5,531,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="271,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6d53d216c5ee4165d87b8d4001f862b" name="ae6d53d216c5ee4165d87b8d4001f862b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d53d216c5ee4165d87b8d4001f862b">&#9670;&#160;</a></span>RayIntersectsTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.RayIntersectsTriangle </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>direction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ray-triangle intersection (Möller–Trumbore). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00671">671</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">IsPointInCollision()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae6d53d216c5ee4165d87b8d4001f862b_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae6d53d216c5ee4165d87b8d4001f862b_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae6d53d216c5ee4165d87b8d4001f862b_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_ae6d53d216c5ee4165d87b8d4001f862b_icgraph">
+<area shape="rect" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="1077,5,1284,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aae6893fa247f03e201688e2e9015800b" title="Checks if a point is in collision with obstacles." alt="" coords="834,5,1029,64"/>
+<area shape="poly" title=" " alt="" coords="1058,35,1029,37,1029,32,1064,35"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,31,241,73"/>
+<area shape="poly" title=" " alt="" coords="816,28,786,29,646,27,538,30,289,44,241,47,241,42,289,39,537,24,646,22,786,24,822,28"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="592,39,786,97"/>
+<area shape="poly" title=" " alt="" coords="821,50,787,57,786,52,816,50"/>
+<area shape="poly" title=" " alt="" coords="575,67,241,58,241,53,577,62"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="289,89,544,132"/>
+<area shape="poly" title=" " alt="" coords="579,85,545,93,544,88,574,86"/>
+<area shape="poly" title=" " alt="" coords="289,86,233,77,233,71,294,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf71e6dab806dd18a3ac9e81adfa6b95" name="aaf71e6dab806dd18a3ac9e81adfa6b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf71e6dab806dd18a3ac9e81adfa6b95">&#9670;&#160;</a></span>ReconstructPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.ReconstructPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html">TreeNode</a></td>          <td class="paramname"><span class="paramname"><em>goalNode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reconstructs path from goal node to start. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00483">483</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aaf71e6dab806dd18a3ac9e81adfa6b95_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aaf71e6dab806dd18a3ac9e81adfa6b95_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aaf71e6dab806dd18a3ac9e81adfa6b95_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_aaf71e6dab806dd18a3ac9e81adfa6b95_icgraph">
+<area shape="rect" title="Reconstructs path from goal node to start." alt="" coords="289,5,570,48"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,5,241,48"/>
+<area shape="poly" title=" " alt="" coords="270,27,241,29,241,24,276,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a799f7b7ec38dbc7d96801cc5659eb99f" name="a799f7b7ec38dbc7d96801cc5659eb99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799f7b7ec38dbc7d96801cc5659eb99f">&#9670;&#160;</a></span>SampleRandomPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.SampleRandomPoint </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Samples a random point within bounds. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00372">372</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00101">_boundsMax</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00100">_boundsMin</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00103">_random</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a799f7b7ec38dbc7d96801cc5659eb99f_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a799f7b7ec38dbc7d96801cc5659eb99f_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a799f7b7ec38dbc7d96801cc5659eb99f_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a799f7b7ec38dbc7d96801cc5659eb99f_icgraph">
+<area shape="rect" title="Samples a random point within bounds." alt="" coords="289,5,516,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="270,35,241,37,241,32,276,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf865be22821ba867e9ee29b1a169183" name="adf865be22821ba867e9ee29b1a169183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf865be22821ba867e9ee29b1a169183">&#9670;&#160;</a></span>SegmentIntersectsTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.SegmentIntersectsTriangle </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Segment-triangle intersection. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00704">704</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_adf865be22821ba867e9ee29b1a169183_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_adf865be22821ba867e9ee29b1a169183_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_adf865be22821ba867e9ee29b1a169183_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_adf865be22821ba867e9ee29b1a169183_icgraph">
+<area shape="rect" title="Segment&#45;triangle intersection." alt="" coords="834,5,1070,64"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="592,5,786,64"/>
+<area shape="poly" title=" " alt="" coords="816,35,787,37,787,32,821,35"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,13,241,56"/>
+<area shape="poly" title=" " alt="" coords="574,31,544,33,289,33,241,34,241,29,289,28,544,28,579,31"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a95e6346276fc33b44c8e32fda9229698" title="Smooths path by removing unnecessary waypoints." alt="" coords="289,43,544,85"/>
+<area shape="poly" title=" " alt="" coords="579,47,544,53,544,48,574,47"/>
+<area shape="poly" title=" " alt="" coords="270,50,241,49,241,44,276,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2fb68757d7537b662cfe7089f77a42e7" name="a2fb68757d7537b662cfe7089f77a42e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb68757d7537b662cfe7089f77a42e7">&#9670;&#160;</a></span>SetObstacles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.SetObstacles </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Brep?&gt;</td>          <td class="paramname"><span class="paramname"><em>obstacles</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the obstacles to avoid. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00152">152</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00101">_boundsMax</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00100">_boundsMin</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00099">_obstacles</a>.</p>
+
+</div>
+</div>
+<a id="a95e6346276fc33b44c8e32fda9229698" name="a95e6346276fc33b44c8e32fda9229698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e6346276fc33b44c8e32fda9229698">&#9670;&#160;</a></span>SmoothPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.SmoothPath </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Smooths path by removing unnecessary waypoints. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00501">501</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_cgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_cgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_cgraph">
+<area shape="rect" title="Smooths path by removing unnecessary waypoints." alt="" coords="5,55,261,97"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae9796d31d510dd042370c871f341dcd9" title="Checks if a segment is collision&#45;free." alt="" coords="309,47,503,105"/>
+<area shape="poly" title=" " alt="" coords="261,73,296,76,290,76,261,79"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aae6893fa247f03e201688e2e9015800b" title="Checks if a point is in collision with obstacles." alt="" coords="572,5,766,64"/>
+<area shape="poly" title=" " alt="" coords="503,58,559,52,554,53,504,63"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#adf865be22821ba867e9ee29b1a169183" title="Segment&#45;triangle intersection." alt="" coords="551,88,786,147"/>
+<area shape="poly" title=" " alt="" coords="503,89,538,96,533,96,503,94"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#ae6d53d216c5ee4165d87b8d4001f862b" title="Ray&#45;triangle intersection (Möller–Trumbore)." alt="" coords="834,5,1042,64"/>
+<area shape="poly" title=" " alt="" coords="766,32,821,34,816,35,766,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a95e6346276fc33b44c8e32fda9229698_icgraph">
+<area shape="rect" title="Smooths path by removing unnecessary waypoints." alt="" coords="289,5,544,48"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,5,241,48"/>
+<area shape="poly" title=" " alt="" coords="270,27,241,29,241,24,276,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a81cf2a2c641f9bfec62a9eefe785305d" name="a81cf2a2c641f9bfec62a9eefe785305d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cf2a2c641f9bfec62a9eefe785305d">&#9670;&#160;</a></span>Steer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.Steer </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>towards</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxDistance</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Steers from one point towards another, limited by step size. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00428">428</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a81cf2a2c641f9bfec62a9eefe785305d_icgraph.png" border="0" usemap="#ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a81cf2a2c641f9bfec62a9eefe785305d_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a81cf2a2c641f9bfec62a9eefe785305d_icgraph" id="ad4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_a81cf2a2c641f9bfec62a9eefe785305d_icgraph">
+<area shape="rect" title="Steers from one point towards another, limited by step size." alt="" coords="289,5,503,48"/>
+<area shape="rect" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#a77d924b09a28a7dc3519b89d342975ab" title="Finds a collision&#45;free path from start to goal using RRT*." alt="" coords="5,5,241,48"/>
+<area shape="poly" title=" " alt="" coords="270,27,241,29,241,24,276,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a83967472e011d469e18413a691911744" name="a83967472e011d469e18413a691911744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83967472e011d469e18413a691911744">&#9670;&#160;</a></span>_boundsMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._boundsMax = new Point3D(1000, 1000, 1000)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00101">101</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00383">ExpandBoundsToInclude()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00372">SampleRandomPoint()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00152">SetObstacles()</a>.</p>
+
+</div>
+</div>
+<a id="a9e5fe0adf8d4b5f86d6b6bfe126f4628" name="a9e5fe0adf8d4b5f86d6b6bfe126f4628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5fe0adf8d4b5f86d6b6bfe126f4628">&#9670;&#160;</a></span>_boundsMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._boundsMin = new Point3D(-1000, -1000, -1000)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00100">100</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00383">ExpandBoundsToInclude()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00372">SampleRandomPoint()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00152">SetObstacles()</a>.</p>
+
+</div>
+</div>
+<a id="a2ed333ac70ec8d5b45db345208c69878" name="a2ed333ac70ec8d5b45db345208c69878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed333ac70ec8d5b45db345208c69878">&#9670;&#160;</a></span>_goalBias</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._goalBias = 0.1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00107">107</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">Configure()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+
+</div>
+</div>
+<a id="a778393da7cac5216e2102bfbfbf487ba" name="a778393da7cac5216e2102bfbfbf487ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778393da7cac5216e2102bfbfbf487ba">&#9670;&#160;</a></span>_goalTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._goalTolerance = 5.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00110">110</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">Configure()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+
+</div>
+</div>
+<a id="a697655690873086d3b5f57ff7ff1edf2" name="a697655690873086d3b5f57ff7ff1edf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697655690873086d3b5f57ff7ff1edf2">&#9670;&#160;</a></span>_maxIterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._maxIterations = 2000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00109">109</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">Configure()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+
+</div>
+</div>
+<a id="a591c0c5831aecdecfcf845e7458eda3d" name="a591c0c5831aecdecfcf845e7458eda3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591c0c5831aecdecfcf845e7458eda3d">&#9670;&#160;</a></span>_obstacles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Brep?&gt; HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._obstacles = new List&lt;Brep?&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00099">99</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">IsPointInCollision()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00152">SetObstacles()</a>.</p>
+
+</div>
+</div>
+<a id="ad9b6fc4249a5b4836cc61626af80c359" name="ad9b6fc4249a5b4836cc61626af80c359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b6fc4249a5b4836cc61626af80c359">&#9670;&#160;</a></span>_random</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Random HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._random = new Random()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00103">103</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00372">SampleRandomPoint()</a>.</p>
+
+</div>
+</div>
+<a id="a082e43cc4b3ec54248ad638e115d2d6f" name="a082e43cc4b3ec54248ad638e115d2d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082e43cc4b3ec54248ad638e115d2d6f">&#9670;&#160;</a></span>_rewireRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._rewireRadius = 50.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00108">108</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00449">CalculateRewireRadius()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">Configure()</a>.</p>
+
+</div>
+</div>
+<a id="aaf622483773a120c5fd5dc2c9b73ea31" name="aaf622483773a120c5fd5dc2c9b73ea31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf622483773a120c5fd5dc2c9b73ea31">&#9670;&#160;</a></span>_safetyMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._safetyMargin = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00102">102</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00533">IsPointInCollision()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00123">RRTStarPathfinder()</a>.</p>
+
+</div>
+</div>
+<a id="a693288ed3c44bb35196c2ccd4111ead4" name="a693288ed3c44bb35196c2ccd4111ead4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693288ed3c44bb35196c2ccd4111ead4">&#9670;&#160;</a></span>_stepSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder._stepSize = 20.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00106">106</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00449">CalculateRewireRadius()</a>, <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00135">Configure()</a> e <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00187">FindPath()</a>.</p>
+
+</div>
+</div>
+<a id="ab2876738c178423d743c7e56af6232bd" name="ab2876738c178423d743c7e56af6232bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2876738c178423d743c7e56af6232bd">&#9670;&#160;</a></span>SEGMENT_SAMPLE_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.SEGMENT_SAMPLE_COUNT = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00113">113</a> do ficheiro <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html#l00592">IsSegmentCollisionFree()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d8/d00/_r_r_t_star_pathfinder_8cs_source.html">RRTStarPathfinder.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

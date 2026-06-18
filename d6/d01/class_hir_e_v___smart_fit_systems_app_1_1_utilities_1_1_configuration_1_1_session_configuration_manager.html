@@ -1,0 +1,1049 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html','../../','db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manages session file creation, saving, and loading for the application. Each application launch generates a new timestamped session file in the SaveFiles folder. A maximum of MaxSessionFiles files are retained; the oldest are pruned automatically. Loading a saved session points the active session at that file — all subsequent saves update it in-place.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_configuration_8_session_configuration_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_configuration_8_session_configuration_manager_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_configuration_8_session_configuration_manager_coll__map">
+<area shape="rect" title="Manages session file creation, saving, and loading for the application. Each application launch gener..." alt="" coords="5,5,192,320"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:ad1ce204c72c084bf3f40753d97fbb0da" id="r_ad1ce204c72c084bf3f40753d97fbb0da"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad1ce204c72c084bf3f40753d97fbb0da">CreateNewSessionFile</a> ()</td></tr>
+<tr class="memdesc:ad1ce204c72c084bf3f40753d97fbb0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new, uniquely-named session file based on the current date and time. Call this once at application startup so every launch has its own file. Also prunes old files to respect MaxSessionFiles.  <br /></td></tr>
+<tr class="memitem:ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" id="r_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">SaveSession</a> (<a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a> config)</td></tr>
+<tr class="memdesc:ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialises <em>config</em>  and writes it atomically to CurrentSessionFilePath (creates a new file if none is active).  <br /></td></tr>
+<tr class="memitem:a2d8305d79c50f7686788ca9a7556f912" id="r_a2d8305d79c50f7686788ca9a7556f912"><td class="memItemLeft">static ? <a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2d8305d79c50f7686788ca9a7556f912">LoadSpecificConfiguration</a> (string filePath)</td></tr>
+<tr class="memdesc:a2d8305d79c50f7686788ca9a7556f912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the session stored at <em>filePath</em> , setting its content as the active session. It copies the contents to the current session rather than modifying the loaded session file.  <br /></td></tr>
+<tr class="memitem:adebdc31107a36ddfc5854b4254ed2275" id="r_adebdc31107a36ddfc5854b4254ed2275"><td class="memItemLeft">static ? <a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#adebdc31107a36ddfc5854b4254ed2275">LoadLatestConfiguration</a> ()</td></tr>
+<tr class="memdesc:adebdc31107a36ddfc5854b4254ed2275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the most recently written session file from the SaveFiles folder.  <br /></td></tr>
+<tr class="memitem:add503ec8fd90f7d0d271ca5e4cf3b967" id="r_add503ec8fd90f7d0d271ca5e4cf3b967"><td class="memItemLeft">static IReadOnlyList&lt; FileInfo &gt;&#160;</td><td class="memItemRight"><a class="el" href="#add503ec8fd90f7d0d271ca5e4cf3b967">GetAllSavedSessions</a> ()</td></tr>
+<tr class="memdesc:add503ec8fd90f7d0d271ca5e4cf3b967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all saved session files ordered from newest to oldest.  <br /></td></tr>
+<tr class="memitem:aef87ae270963833163943a81457ca734" id="r_aef87ae270963833163943a81457ca734"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#aef87ae270963833163943a81457ca734">CalculateFileHash</a> (string filePath)</td></tr>
+<tr class="memdesc:aef87ae270963833163943a81457ca734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the SHA-256 hash of a file (used to detect model changes between sessions).  <br /></td></tr>
+<tr class="memitem:a772e7dc47dce2327a7edc1e574e8d0a0" id="r_a772e7dc47dce2327a7edc1e574e8d0a0"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a772e7dc47dce2327a7edc1e574e8d0a0">ComputeFileHash</a> (string filePath)</td></tr>
+<tr class="memdesc:a772e7dc47dce2327a7edc1e574e8d0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for CalculateFileHash to maintain compatibility with other parts of the application.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:af49c2352fadef14ba8ff87288dde0a98" id="r_af49c2352fadef14ba8ff87288dde0a98"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#af49c2352fadef14ba8ff87288dde0a98">CurrentSessionFilePath</a> = string.Empty<code> [get, private set]</code></td></tr>
+<tr class="memdesc:af49c2352fadef14ba8ff87288dde0a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path of the currently active session file. All calls to SaveSession write to this path.  <br /></td></tr>
+<tr class="memitem:ae16bde37b75671d1fce20ee0cd1ae05e" id="r_ae16bde37b75671d1fce20ee0cd1ae05e"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ae16bde37b75671d1fce20ee0cd1ae05e">MaxSessionFiles</a> = 20<code> [get, set]</code></td></tr>
+<tr class="memdesc:ae16bde37b75671d1fce20ee0cd1ae05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of Session_*.json files to keep in the SaveFiles folder. Oldest files beyond this limit are automatically removed.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a8463d1405b87255158939e74d50ef3cf" id="r_a8463d1405b87255158939e74d50ef3cf"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a8463d1405b87255158939e74d50ef3cf">GetSaveDirectory</a> ()</td></tr>
+<tr class="memdesc:a8463d1405b87255158939e74d50ef3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn't exist.  <br /></td></tr>
+<tr class="memitem:a7814065a4417dba469024c6a54eda028" id="r_a7814065a4417dba469024c6a54eda028"><td class="memItemLeft">static JsonSerializerOptions&#160;</td><td class="memItemRight"><a class="el" href="#a7814065a4417dba469024c6a54eda028">GetOptions</a> ()</td></tr>
+<tr class="memdesc:a7814065a4417dba469024c6a54eda028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the configured JSON serializer options used for session serialization.  <br /></td></tr>
+<tr class="memitem:af75c137406529f2e927fa29f68deeaad" id="r_af75c137406529f2e927fa29f68deeaad"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af75c137406529f2e927fa29f68deeaad">PruneOldSessionFiles</a> (string dir)</td></tr>
+<tr class="memdesc:af75c137406529f2e927fa29f68deeaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in <em>dir</em> .  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Manages session file creation, saving, and loading for the application. Each application launch generates a new timestamped session file in the SaveFiles folder. A maximum of MaxSessionFiles files are retained; the oldest are pruned automatically. Loading a saved session points the active session at that file — all subsequent saves update it in-place. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="aef87ae270963833163943a81457ca734" name="aef87ae270963833163943a81457ca734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef87ae270963833163943a81457ca734">&#9670;&#160;</a></span>CalculateFileHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CalculateFileHash </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the SHA-256 hash of a file (used to detect model changes between sessions). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00249">249</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01504">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.BuildCurrentSessionModelInfos()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01599">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.BuildSdfShellCacheValidationInput()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l02170">HirEV_SmartFitSystemsApp.Utilities.PathManager.CachedModelFilesStillMatch()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01966">HirEV_SmartFitSystemsApp.Utilities.PathManager.CollectModelFileFingerprintsFromDesign()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00261">ComputeFileHash()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_aef87ae270963833163943a81457ca734_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_aef87ae270963833163943a81457ca734_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_aef87ae270963833163943a81457ca734_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_aef87ae270963833163943a81457ca734_icgraph">
+<area shape="rect" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="1573,1051,1832,1110"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adbe2ce35aa14260e319e9e0059cc3856" title="Executes the BuildCurrentSessionModelInfos method." alt="" coords="1268,710,1525,768"/>
+<area shape="poly" title=" " alt="" coords="1662,1039,1423,771,1425,766,1667,1040"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a42dba1333300a9f8213df1d83d1b1a12" title="Executes the BuildSdfShellCacheValidationInput method." alt="" coords="1279,968,1514,1027"/>
+<area shape="poly" title=" " alt="" coords="1574,1046,1508,1030,1508,1025,1579,1046"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae220ecc4f141fc794d6c3449eb6a4494" title="Executes the CachedModelFilesStillMatch method." alt="" coords="1281,1051,1512,1110"/>
+<area shape="poly" title=" " alt="" coords="1555,1081,1512,1083,1512,1078,1560,1080"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad1eed30acdd9974fe9bbee20d408e4e1" title="Executes the CollectModelFileFingerprintsFromDesign method." alt="" coords="1283,1134,1510,1192"/>
+<area shape="poly" title=" " alt="" coords="1579,1114,1508,1136,1507,1130,1574,1115"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a772e7dc47dce2327a7edc1e574e8d0a0" title="Alias for CalculateFileHash to maintain compatibility with other parts of the application." alt="" coords="1268,1216,1525,1275"/>
+<area shape="poly" title=" " alt="" coords="1657,1118,1596,1165,1526,1207,1500,1218,1499,1213,1524,1202,1593,1161,1652,1120"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="961,534,1220,592"/>
+<area shape="poly" title=" " alt="" coords="1328,702,1143,595,1143,590,1333,701"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="646,123,892,182"/>
+<area shape="poly" title=" " alt="" coords="1078,517,1059,448,1026,360,1004,315,978,272,947,231,912,196,893,182,892,177,915,192,951,228,982,269,1009,313,1031,358,1064,446,1083,519"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,334,546,392"/>
+<area shape="poly" title=" " alt="" coords="943,556,763,540,682,527,624,511,576,486,531,456,464,395,464,390,535,451,579,482,626,506,683,521,764,534,948,553"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,24,577,67"/>
+<area shape="poly" title=" " alt="" coords="1086,517,1078,422,1068,361,1052,297,1030,233,1000,172,961,117,912,70,867,44,817,25,766,14,712,9,660,9,609,12,522,26,519,22,609,7,660,3,713,3,766,9,819,20,869,39,915,66,965,113,1004,169,1035,231,1057,296,1073,360,1083,421,1091,519"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,102,553,160"/>
+<area shape="poly" title=" " alt="" coords="1085,518,1074,429,1063,374,1047,316,1025,258,995,203,958,154,912,113,865,88,814,73,761,66,708,66,654,71,604,80,516,103,513,99,602,75,654,66,707,60,762,61,816,68,867,83,915,109,962,150,1000,200,1030,255,1052,314,1068,372,1079,428,1090,519"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="636,206,902,248"/>
+<area shape="poly" title=" " alt="" coords="1073,518,1051,460,1017,390,971,321,943,290,912,263,895,252,894,246,915,258,947,286,975,317,1022,388,1056,458,1079,519"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="648,272,890,331"/>
+<area shape="poly" title=" " alt="" coords="1063,520,1037,479,1002,432,960,385,912,345,891,333,890,328,915,341,964,381,1007,428,1042,476,1069,520"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="650,355,888,414"/>
+<area shape="poly" title=" " alt="" coords="1045,523,985,475,949,450,912,428,888,417,887,412,915,423,952,445,988,470,1050,523"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="648,438,891,496"/>
+<area shape="poly" title=" " alt="" coords="973,529,870,500,869,494,978,528"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="654,803,885,862"/>
+<area shape="poly" title=" " alt="" coords="1069,604,1043,651,1008,701,965,751,915,793,887,809,884,804,912,789,961,747,1004,698,1039,648,1065,608"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="625,571,913,614"/>
+<area shape="poly" title=" " alt="" coords="943,577,915,582,913,577,948,575"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="647,638,891,696"/>
+<area shape="poly" title=" " alt="" coords="992,599,914,628,878,639,876,635,913,623,997,597"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="652,720,887,779"/>
+<area shape="poly" title=" " alt="" coords="1052,602,990,660,954,687,915,711,889,723,886,718,912,706,951,683,987,656,1048,605"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="654,968,885,1027"/>
+<area shape="poly" title=" " alt="" coords="1083,606,1067,684,1035,778,1012,828,985,875,953,919,915,958,886,977,884,972,912,954,949,916,981,872,1008,825,1030,776,1061,683,1080,610"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="654,886,885,944"/>
+<area shape="poly" title=" " alt="" coords="1078,605,1056,668,1022,741,975,813,947,847,915,876,886,893,884,888,912,872,943,843,971,810,1018,738,1051,666,1074,609"/>
+<area shape="poly" title=" " alt="" coords="633,190,626,196,577,228,532,265,463,335,459,332,529,261,574,224,624,191,637,187"/>
+<area shape="poly" title=" " alt="" coords="661,119,576,92,508,70,506,65,578,87,666,117"/>
+<area shape="poly" title=" " alt="" coords="628,145,554,141,552,136,633,142"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,102,244,160"/>
+<area shape="poly" title=" " alt="" coords="298,133,245,133,242,129,302,129"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,803,548,862"/>
+<area shape="poly" title=" " alt="" coords="635,833,549,835,547,830,640,831"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,890,558,932"/>
+<area shape="poly" title=" " alt="" coords="635,914,559,915,558,910,640,913"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,956,566,999"/>
+<area shape="poly" title=" " alt="" coords="636,940,553,958,551,953,641,938"/>
+<area shape="poly" title=" " alt="" coords="1363,956,1111,595,1114,590,1368,956"/>
+<area shape="poly" title=" " alt="" coords="1261,998,885,1000,885,995,1266,997"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a010371de2625e6465068689b631d1e03" title="Executes the CanReuseCachedShellMesh method." alt="" coords="984,1051,1197,1110"/>
+<area shape="poly" title=" " alt="" coords="1263,1081,1197,1083,1197,1078,1268,1080"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="661,1134,877,1192"/>
+<area shape="poly" title=" " alt="" coords="972,1111,878,1138,877,1133,967,1112"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a86bf4b001e6ca8d5329449db1795f368" title="Executes the ExportSdfShellCache method." alt="" coords="665,1051,873,1110"/>
+<area shape="poly" title=" " alt="" coords="966,1081,874,1083,874,1078,971,1080"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a2793e4a4d8ba6e747ee3b2c87a03566d" title="Executes the RecordShellCacheValidation method." alt="" coords="980,1134,1201,1192"/>
+<area shape="poly" title=" " alt="" coords="1265,1163,1202,1166,1201,1160,1270,1163"/>
+<area shape="poly" title=" " alt="" coords="962,1163,878,1166,878,1160,967,1163"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ade5086095d7684156c6e9d1b4f12618e" title="Generates and visualizes an oversized duplicate shell directly from the current part geometry...." alt="" coords="660,1216,878,1275"/>
+<area shape="poly" title=" " alt="" coords="967,1195,879,1220,878,1215,962,1196"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a772e7dc47dce2327a7edc1e574e8d0a0" name="a772e7dc47dce2327a7edc1e574e8d0a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772e7dc47dce2327a7edc1e574e8d0a0">&#9670;&#160;</a></span>ComputeFileHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.ComputeFileHash </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alias for CalculateFileHash to maintain compatibility with other parts of the application. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00261">261</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00249">CalculateFileHash()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a772e7dc47dce2327a7edc1e574e8d0a0_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a772e7dc47dce2327a7edc1e574e8d0a0_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a772e7dc47dce2327a7edc1e574e8d0a0_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a772e7dc47dce2327a7edc1e574e8d0a0_cgraph">
+<area shape="rect" title="Alias for CalculateFileHash to maintain compatibility with other parts of the application." alt="" coords="5,5,263,64"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="311,5,570,64"/>
+<area shape="poly" title=" " alt="" coords="263,32,298,34,293,35,263,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad1ce204c72c084bf3f40753d97fbb0da" name="ad1ce204c72c084bf3f40753d97fbb0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ce204c72c084bf3f40753d97fbb0da">&#9670;&#160;</a></span>CreateNewSessionFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CreateNewSessionFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new, uniquely-named session file based on the current date and time. Call this once at application startup so every launch has its own file. Also prunes old files to respect MaxSessionFiles. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">100</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00021">CurrentSessionFilePath</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00037">GetSaveDirectory()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00063">PruneOldSessionFiles()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">LoadSpecificConfiguration()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00135">SaveSession()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_cgraph">
+<area shape="rect" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="5,47,292,105"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="352,5,608,64"/>
+<area shape="poly" title=" " alt="" coords="292,55,339,52,334,53,293,61"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="340,88,621,147"/>
+<area shape="poly" title=" " alt="" coords="292,91,327,98,322,98,292,97"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ad1ce204c72c084bf3f40753d97fbb0da_icgraph">
+<area shape="rect" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="1644,280,1930,339"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="966,213,1271,272"/>
+<area shape="poly" title=" " alt="" coords="1645,277,1596,271,1428,254,1272,247,1270,242,1428,249,1596,265,1650,276"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="1319,363,1596,405"/>
+<area shape="poly" title=" " alt="" coords="1638,343,1555,365,1554,360,1643,342"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="1343,280,1572,339"/>
+<area shape="poly" title=" " alt="" coords="1626,310,1573,312,1572,307,1631,309"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="625,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1077,202,1007,140,963,107,917,78,894,67,893,62,920,74,966,102,1010,135,1082,202"/>
+<area shape="poly" title=" " alt="" coords="1325,284,1272,275,1271,270,1330,283"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="989,504,1248,563"/>
+<area shape="poly" title=" " alt="" coords="1326,347,1320,353,1268,388,1219,429,1146,506,1143,502,1216,425,1264,384,1317,348,1331,344"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="648,437,895,496"/>
+<area shape="poly" title=" " alt="" coords="971,506,895,493,895,488,977,505"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,344,546,403"/>
+<area shape="poly" title=" " alt="" coords="1072,493,1003,443,961,419,917,400,822,376,724,365,629,362,547,365,545,360,629,356,724,359,823,371,919,395,964,414,1006,439,1077,493"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,433,577,476"/>
+<area shape="poly" title=" " alt="" coords="1062,495,996,458,957,441,918,428,867,418,815,412,710,412,611,421,528,435,526,430,611,416,710,406,815,407,868,412,919,423,959,436,998,453,1067,495"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,503,553,561"/>
+<area shape="poly" title=" " alt="" coords="972,535,554,535,553,530,976,531"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="638,571,905,613"/>
+<area shape="poly" title=" " alt="" coords="972,559,903,573,901,568,977,557"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="651,637,892,696"/>
+<area shape="poly" title=" " alt="" coords="1043,571,919,628,886,639,884,634,917,623,1048,569"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="652,720,891,779"/>
+<area shape="poly" title=" " alt="" coords="1083,573,1012,645,967,680,920,710,892,723,890,718,917,706,964,676,1008,641,1079,576"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="650,803,893,861"/>
+<area shape="poly" title=" " alt="" coords="1097,575,1068,628,1028,686,978,744,920,793,895,807,893,802,917,788,975,740,1024,682,1064,625,1093,578"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="656,885,887,944"/>
+<area shape="poly" title=" " alt="" coords="1105,576,1081,644,1042,725,1017,766,988,806,956,843,920,875,889,894,887,889,917,871,952,839,984,803,1013,763,1037,722,1076,642,1102,579"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="628,968,916,1011"/>
+<area shape="poly" title=" " alt="" coords="1111,576,1092,660,1056,763,1031,817,1000,869,963,917,920,958,902,970,900,965,917,954,959,913,995,866,1026,815,1051,761,1087,659,1108,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="650,1035,894,1093"/>
+<area shape="poly" title=" " alt="" coords="1114,576,1098,671,1083,730,1064,792,1038,855,1006,917,967,974,920,1025,895,1042,893,1037,917,1021,963,971,1002,914,1033,853,1059,790,1078,728,1093,670,1110,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="654,88,889,147"/>
+<area shape="poly" title=" " alt="" coords="1086,491,1027,399,964,285,951,248,946,217,938,189,917,161,890,142,890,137,920,157,943,186,952,216,957,247,969,283,1032,397,1091,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="656,171,887,229"/>
+<area shape="poly" title=" " alt="" coords="1090,490,1005,353,957,286,917,243,888,227,887,222,920,239,962,283,1010,350,1096,491"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="656,253,887,312"/>
+<area shape="poly" title=" " alt="" coords="1083,491,1013,412,967,370,917,333,883,315,882,310,920,328,970,365,1017,408,1089,492"/>
+<area shape="poly" title=" " alt="" coords="646,434,543,406,542,401,651,432"/>
+<area shape="poly" title=" " alt="" coords="630,463,578,462,577,457,635,461"/>
+<area shape="poly" title=" " alt="" coords="631,495,554,511,552,507,635,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,503,244,561"/>
+<area shape="poly" title=" " alt="" coords="298,534,245,534,243,530,302,530"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,885,548,944"/>
+<area shape="poly" title=" " alt="" coords="638,915,549,917,548,912,643,914"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,197,558,240"/>
+<area shape="poly" title=" " alt="" coords="638,259,551,243,549,238,643,257"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,264,566,307"/>
+<area shape="poly" title=" " alt="" coords="638,285,567,287,565,282,643,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add503ec8fd90f7d0d271ca5e4cf3b967" name="add503ec8fd90f7d0d271ca5e4cf3b967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add503ec8fd90f7d0d271ca5e4cf3b967">&#9670;&#160;</a></span>GetAllSavedSessions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt; FileInfo &gt; HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetAllSavedSessions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all saved session files ordered from newest to oldest. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00229">229</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00037">GetSaveDirectory()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_add503ec8fd90f7d0d271ca5e4cf3b967_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_add503ec8fd90f7d0d271ca5e4cf3b967_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_add503ec8fd90f7d0d271ca5e4cf3b967_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_add503ec8fd90f7d0d271ca5e4cf3b967_cgraph">
+<area shape="rect" title="Returns all saved session files ordered from newest to oldest." alt="" coords="5,5,285,64"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="333,5,589,64"/>
+<area shape="poly" title=" " alt="" coords="285,32,320,35,315,35,285,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7814065a4417dba469024c6a54eda028" name="a7814065a4417dba469024c6a54eda028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7814065a4417dba469024c6a54eda028">&#9670;&#160;</a></span>GetOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">JsonSerializerOptions HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetOptions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the configured JSON serializer options used for session serialization. </p>
+<dl class="section return"><dt>Retorna</dt><dd>A configured JsonSerializerOptions instance.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00050">50</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">LoadSpecificConfiguration()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00135">SaveSession()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a7814065a4417dba469024c6a54eda028_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a7814065a4417dba469024c6a54eda028_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a7814065a4417dba469024c6a54eda028_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a7814065a4417dba469024c6a54eda028_icgraph">
+<area shape="rect" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1596,247,1814,305"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="966,213,1271,272"/>
+<area shape="poly" title=" " alt="" coords="1578,270,1272,254,1271,249,1583,268"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="1319,280,1548,339"/>
+<area shape="poly" title=" " alt="" coords="1578,292,1549,298,1548,293,1583,290"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="625,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1077,202,1007,140,963,107,917,78,894,67,893,62,920,74,966,102,1010,135,1082,202"/>
+<area shape="poly" title=" " alt="" coords="1301,282,1260,275,1259,270,1306,281"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="989,504,1248,563"/>
+<area shape="poly" title=" " alt="" coords="1381,346,1163,506,1160,501,1376,349"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="648,437,895,496"/>
+<area shape="poly" title=" " alt="" coords="971,506,895,493,895,488,977,505"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,344,546,403"/>
+<area shape="poly" title=" " alt="" coords="1072,493,1003,443,961,419,917,400,822,376,724,365,629,362,547,365,545,360,629,356,724,359,823,371,919,395,964,414,1006,439,1077,493"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,433,577,476"/>
+<area shape="poly" title=" " alt="" coords="1062,495,996,458,957,441,918,428,867,418,815,412,710,412,611,421,528,435,526,430,611,416,710,406,815,407,868,412,919,423,959,436,998,453,1067,495"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,503,553,561"/>
+<area shape="poly" title=" " alt="" coords="972,535,554,535,553,530,976,531"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="638,571,905,613"/>
+<area shape="poly" title=" " alt="" coords="972,559,903,573,901,568,977,557"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="651,637,892,696"/>
+<area shape="poly" title=" " alt="" coords="1043,571,919,628,886,639,884,634,917,623,1048,569"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="652,720,891,779"/>
+<area shape="poly" title=" " alt="" coords="1083,573,1012,645,967,680,920,710,892,723,890,718,917,706,964,676,1008,641,1079,576"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="650,803,893,861"/>
+<area shape="poly" title=" " alt="" coords="1097,575,1068,628,1028,686,978,744,920,793,895,807,893,802,917,788,975,740,1024,682,1064,625,1093,578"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="656,885,887,944"/>
+<area shape="poly" title=" " alt="" coords="1105,576,1081,644,1042,725,1017,766,988,806,956,843,920,875,889,894,887,889,917,871,952,839,984,803,1013,763,1037,722,1076,642,1102,579"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="628,968,916,1011"/>
+<area shape="poly" title=" " alt="" coords="1111,576,1092,660,1056,763,1031,817,1000,869,963,917,920,958,902,970,900,965,917,954,959,913,995,866,1026,815,1051,761,1087,659,1108,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="650,1035,894,1093"/>
+<area shape="poly" title=" " alt="" coords="1114,576,1098,671,1083,730,1064,792,1038,855,1006,917,967,974,920,1025,895,1042,893,1037,917,1021,963,971,1002,914,1033,853,1059,790,1078,728,1093,670,1110,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="654,88,889,147"/>
+<area shape="poly" title=" " alt="" coords="1086,491,1027,399,964,285,951,248,946,217,938,189,917,161,890,142,890,137,920,157,943,186,952,216,957,247,969,283,1032,397,1091,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="656,171,887,229"/>
+<area shape="poly" title=" " alt="" coords="1090,490,1005,353,957,286,917,243,888,227,887,222,920,239,962,283,1010,350,1096,491"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="656,253,887,312"/>
+<area shape="poly" title=" " alt="" coords="1083,491,1013,412,967,370,917,333,883,315,882,310,920,328,970,365,1017,408,1089,492"/>
+<area shape="poly" title=" " alt="" coords="646,434,543,406,542,401,651,432"/>
+<area shape="poly" title=" " alt="" coords="630,463,578,462,577,457,635,461"/>
+<area shape="poly" title=" " alt="" coords="631,495,554,511,552,507,635,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,503,244,561"/>
+<area shape="poly" title=" " alt="" coords="298,534,245,534,243,530,302,530"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,885,548,944"/>
+<area shape="poly" title=" " alt="" coords="638,915,549,917,548,912,643,914"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,197,558,240"/>
+<area shape="poly" title=" " alt="" coords="638,259,551,243,549,238,643,257"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,264,566,307"/>
+<area shape="poly" title=" " alt="" coords="638,285,567,287,565,282,643,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8463d1405b87255158939e74d50ef3cf" name="a8463d1405b87255158939e74d50ef3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8463d1405b87255158939e74d50ef3cf">&#9670;&#160;</a></span>GetSaveDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.GetSaveDirectory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn't exist. </p>
+<dl class="section return"><dt>Retorna</dt><dd>The path to the save directory.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00037">37</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">CreateNewSessionFile()</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00229">GetAllSavedSessions()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00205">LoadLatestConfiguration()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a8463d1405b87255158939e74d50ef3cf_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a8463d1405b87255158939e74d50ef3cf_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a8463d1405b87255158939e74d50ef3cf_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a8463d1405b87255158939e74d50ef3cf_icgraph">
+<area shape="rect" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1978,97,2235,156"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="1644,97,1930,156"/>
+<area shape="poly" title=" " alt="" coords="1960,127,1931,129,1930,124,1965,126"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="625,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1972,94,1930,88,1792,69,1651,55,1372,38,1119,33,920,33,918,28,1119,27,1372,33,1651,50,1793,64,1931,83,1978,93"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#add503ec8fd90f7d0d271ca5e4cf3b967" title="Returns all saved session files ordered from newest to oldest." alt="" coords="1648,180,1927,239"/>
+<area shape="poly" title=" " alt="" coords="1973,161,1904,182,1903,177,1978,160"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="966,123,1271,181"/>
+<area shape="poly" title=" " alt="" coords="1626,134,1272,149,1271,144,1631,132"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="1319,72,1596,115"/>
+<area shape="poly" title=" " alt="" coords="1626,111,1597,110,1596,105,1631,110"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="1343,189,1572,248"/>
+<area shape="poly" title=" " alt="" coords="1662,162,1566,191,1564,186,1667,160"/>
+<area shape="poly" title=" " alt="" coords="1027,117,917,79,883,67,881,62,919,73,1032,116"/>
+<area shape="poly" title=" " alt="" coords="1325,194,1272,185,1271,179,1330,193"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="989,472,1248,531"/>
+<area shape="poly" title=" " alt="" coords="1411,257,1157,474,1154,469,1407,260"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="648,272,895,331"/>
+<area shape="poly" title=" " alt="" coords="1071,462,1002,406,960,377,917,352,878,334,878,329,920,347,963,373,1005,402,1077,462"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,179,546,237"/>
+<area shape="poly" title=" " alt="" coords="1097,457,1070,404,1031,342,980,282,950,257,917,236,872,216,825,201,776,191,727,185,631,184,547,191,545,186,631,179,727,180,777,186,826,196,874,211,920,231,953,252,983,279,1035,339,1074,402,1102,458"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,268,577,311"/>
+<area shape="poly" title=" " alt="" coords="1094,458,1066,410,1027,355,977,302,948,280,917,262,890,254,855,249,766,249,665,257,568,270,566,265,664,252,765,244,855,244,892,249,919,258,951,276,980,298,1031,351,1071,407,1099,459"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,337,553,396"/>
+<area shape="poly" title=" " alt="" coords="1060,463,995,427,957,410,918,396,824,376,728,365,635,361,555,361,553,356,635,355,728,359,825,370,919,391,959,405,997,422,1066,463"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="638,405,905,448"/>
+<area shape="poly" title=" " alt="" coords="972,471,875,451,874,446,977,470"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="651,472,892,531"/>
+<area shape="poly" title=" " alt="" coords="971,502,893,504,892,499,976,501"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="652,555,891,613"/>
+<area shape="poly" title=" " alt="" coords="975,536,892,558,890,553,980,534"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="650,637,893,696"/>
+<area shape="poly" title=" " alt="" coords="1067,539,998,586,919,628,891,639,888,634,917,623,995,582,1062,541"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="656,720,887,779"/>
+<area shape="poly" title=" " alt="" coords="1090,541,1059,584,1019,629,972,673,920,710,889,725,887,721,917,706,968,669,1015,625,1055,581,1086,545"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="628,803,916,845"/>
+<area shape="poly" title=" " alt="" coords="1102,543,1075,603,1035,670,983,737,953,767,920,793,899,805,897,800,917,788,949,763,979,733,1030,667,1070,600,1098,547"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="650,869,894,928"/>
+<area shape="poly" title=" " alt="" coords="1107,543,1083,615,1044,700,1019,743,990,786,957,825,920,859,896,875,893,870,917,855,954,821,986,783,1015,741,1040,697,1078,613,1103,547"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="654,952,889,1011"/>
+<area shape="poly" title=" " alt="" coords="1112,544,1093,630,1057,737,1031,793,1000,847,963,898,920,942,891,961,889,956,917,938,959,894,996,844,1026,791,1052,735,1088,629,1108,548"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="656,1035,887,1093"/>
+<area shape="poly" title=" " alt="" coords="1115,544,1101,645,1087,707,1068,774,1042,842,1010,908,969,970,920,1025,889,1045,887,1040,917,1021,965,967,1005,906,1038,840,1063,772,1082,706,1096,644,1112,548"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="656,88,887,147"/>
+<area shape="poly" title=" " alt="" coords="1100,456,1074,394,1035,315,983,236,951,199,917,167,888,149,888,144,920,163,955,196,987,233,1040,313,1079,391,1105,458"/>
+<area shape="poly" title=" " alt="" coords="646,268,544,240,542,235,651,266"/>
+<area shape="poly" title=" " alt="" coords="630,298,578,297,576,292,635,295"/>
+<area shape="poly" title=" " alt="" coords="631,330,554,346,552,341,635,327"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,337,244,396"/>
+<area shape="poly" title=" " alt="" coords="298,368,245,369,242,364,302,365"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,720,548,779"/>
+<area shape="poly" title=" " alt="" coords="638,750,549,752,548,747,643,748"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,32,558,75"/>
+<area shape="poly" title=" " alt="" coords="638,94,551,78,549,73,643,91"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,99,566,141"/>
+<area shape="poly" title=" " alt="" coords="638,120,568,121,565,117,643,117"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adebdc31107a36ddfc5854b4254ed2275" name="adebdc31107a36ddfc5854b4254ed2275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebdc31107a36ddfc5854b4254ed2275">&#9670;&#160;</a></span>LoadLatestConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a> HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadLatestConfiguration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the most recently written session file from the SaveFiles folder. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00205">205</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00037">GetSaveDirectory()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">LoadSpecificConfiguration()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_adebdc31107a36ddfc5854b4254ed2275_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_adebdc31107a36ddfc5854b4254ed2275_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_adebdc31107a36ddfc5854b4254ed2275_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_adebdc31107a36ddfc5854b4254ed2275_cgraph">
+<area shape="rect" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="5,64,299,123"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1323,5,1580,64"/>
+<area shape="poly" title=" " alt="" coords="299,84,1307,38,1307,44,299,89"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="347,97,651,156"/>
+<area shape="poly" title=" " alt="" coords="299,105,334,110,329,111,300,110"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="976,80,1263,139"/>
+<area shape="poly" title=" " alt="" coords="651,111,699,108,964,107,958,107,699,113,652,116"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1010,180,1229,239"/>
+<area shape="poly" title=" " alt="" coords="573,154,635,175,700,191,775,202,852,208,997,214,992,214,852,213,775,207,698,196,633,180,573,159"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="699,123,928,181"/>
+<area shape="poly" title=" " alt="" coords="651,136,686,141,680,142,651,142"/>
+<area shape="poly" title=" " alt="" coords="1252,77,1306,67,1311,66,1253,82"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1311,88,1592,147"/>
+<area shape="poly" title=" " alt="" coords="1263,110,1298,113,1293,114,1263,115"/>
+<area shape="poly" title=" " alt="" coords="928,133,959,132,964,131,929,139"/>
+<area shape="poly" title=" " alt="" coords="929,171,997,186,992,186,929,176"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d8305d79c50f7686788ca9a7556f912" name="a2d8305d79c50f7686788ca9a7556f912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8305d79c50f7686788ca9a7556f912">&#9670;&#160;</a></span>LoadSpecificConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a> HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadSpecificConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the session stored at <em>filePath</em> , setting its content as the active session. It copies the contents to the current session rather than modifying the loaded session file. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">169</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">CreateNewSessionFile()</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00021">CurrentSessionFilePath</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00050">GetOptions()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00135">SaveSession()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00205">LoadLatestConfiguration()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_cgraph">
+<area shape="rect" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="5,100,310,159"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="635,47,921,105"/>
+<area shape="poly" title=" " alt="" coords="286,97,357,85,491,75,622,73,617,74,492,80,358,91,287,102"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="669,141,887,200"/>
+<area shape="poly" title=" " alt="" coords="284,157,358,168,511,176,656,177,650,177,511,182,357,173,283,162"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="358,100,587,159"/>
+<area shape="poly" title=" " alt="" coords="310,127,344,129,339,130,310,132"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="982,5,1238,64"/>
+<area shape="poly" title=" " alt="" coords="922,55,969,52,964,53,922,61"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="969,88,1251,147"/>
+<area shape="poly" title=" " alt="" coords="922,91,957,98,951,98,922,97"/>
+<area shape="poly" title=" " alt="" coords="587,107,617,104,622,103,588,112"/>
+<area shape="poly" title=" " alt="" coords="588,142,656,154,651,154,587,148"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_a2d8305d79c50f7686788ca9a7556f912_icgraph">
+<area shape="rect" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="347,5,651,64"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="5,5,299,64"/>
+<area shape="poly" title=" " alt="" coords="328,35,299,37,299,32,334,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af75c137406529f2e927fa29f68deeaad" name="af75c137406529f2e927fa29f68deeaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75c137406529f2e927fa29f68deeaad">&#9670;&#160;</a></span>PruneOldSessionFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.PruneOldSessionFiles </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dir</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in <em>dir</em> . </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00063">63</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00027">MaxSessionFiles</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">CreateNewSessionFile()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_af75c137406529f2e927fa29f68deeaad_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_af75c137406529f2e927fa29f68deeaad_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_af75c137406529f2e927fa29f68deeaad_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_af75c137406529f2e927fa29f68deeaad_icgraph">
+<area shape="rect" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1978,280,2260,339"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="1644,280,1930,339"/>
+<area shape="poly" title=" " alt="" coords="1960,310,1931,312,1930,307,1966,309"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="966,213,1271,272"/>
+<area shape="poly" title=" " alt="" coords="1645,277,1596,271,1428,254,1272,247,1270,242,1428,249,1596,265,1650,276"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="1319,363,1596,405"/>
+<area shape="poly" title=" " alt="" coords="1638,343,1555,365,1554,360,1643,342"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="1343,280,1572,339"/>
+<area shape="poly" title=" " alt="" coords="1626,310,1573,312,1572,307,1631,309"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="625,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1077,202,1007,140,963,107,917,78,894,67,893,62,920,74,966,102,1010,135,1082,202"/>
+<area shape="poly" title=" " alt="" coords="1325,284,1272,275,1271,270,1330,283"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="989,504,1248,563"/>
+<area shape="poly" title=" " alt="" coords="1326,347,1320,353,1268,388,1219,429,1146,506,1143,502,1216,425,1264,384,1317,348,1331,344"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="648,437,895,496"/>
+<area shape="poly" title=" " alt="" coords="971,506,895,493,895,488,977,505"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,344,546,403"/>
+<area shape="poly" title=" " alt="" coords="1072,493,1003,443,961,419,917,400,822,376,724,365,629,362,547,365,545,360,629,356,724,359,823,371,919,395,964,414,1006,439,1077,493"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,433,577,476"/>
+<area shape="poly" title=" " alt="" coords="1062,495,996,458,957,441,918,428,867,418,815,412,710,412,611,421,528,435,526,430,611,416,710,406,815,407,868,412,919,423,959,436,998,453,1067,495"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,503,553,561"/>
+<area shape="poly" title=" " alt="" coords="972,535,554,535,553,530,976,531"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="638,571,905,613"/>
+<area shape="poly" title=" " alt="" coords="972,559,903,573,901,568,977,557"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="651,637,892,696"/>
+<area shape="poly" title=" " alt="" coords="1043,571,919,628,886,639,884,634,917,623,1048,569"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="652,720,891,779"/>
+<area shape="poly" title=" " alt="" coords="1083,573,1012,645,967,680,920,710,892,723,890,718,917,706,964,676,1008,641,1079,576"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="650,803,893,861"/>
+<area shape="poly" title=" " alt="" coords="1097,575,1068,628,1028,686,978,744,920,793,895,807,893,802,917,788,975,740,1024,682,1064,625,1093,578"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="656,885,887,944"/>
+<area shape="poly" title=" " alt="" coords="1105,576,1081,644,1042,725,1017,766,988,806,956,843,920,875,889,894,887,889,917,871,952,839,984,803,1013,763,1037,722,1076,642,1102,579"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="628,968,916,1011"/>
+<area shape="poly" title=" " alt="" coords="1111,576,1092,660,1056,763,1031,817,1000,869,963,917,920,958,902,970,900,965,917,954,959,913,995,866,1026,815,1051,761,1087,659,1108,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="650,1035,894,1093"/>
+<area shape="poly" title=" " alt="" coords="1114,576,1098,671,1083,730,1064,792,1038,855,1006,917,967,974,920,1025,895,1042,893,1037,917,1021,963,971,1002,914,1033,853,1059,790,1078,728,1093,670,1110,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="654,88,889,147"/>
+<area shape="poly" title=" " alt="" coords="1086,491,1027,399,964,285,951,248,946,217,938,189,917,161,890,142,890,137,920,157,943,186,952,216,957,247,969,283,1032,397,1091,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="656,171,887,229"/>
+<area shape="poly" title=" " alt="" coords="1090,490,1005,353,957,286,917,243,888,227,887,222,920,239,962,283,1010,350,1096,491"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="656,253,887,312"/>
+<area shape="poly" title=" " alt="" coords="1083,491,1013,412,967,370,917,333,883,315,882,310,920,328,970,365,1017,408,1089,492"/>
+<area shape="poly" title=" " alt="" coords="646,434,543,406,542,401,651,432"/>
+<area shape="poly" title=" " alt="" coords="630,463,578,462,577,457,635,461"/>
+<area shape="poly" title=" " alt="" coords="631,495,554,511,552,507,635,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,503,244,561"/>
+<area shape="poly" title=" " alt="" coords="298,534,245,534,243,530,302,530"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,885,548,944"/>
+<area shape="poly" title=" " alt="" coords="638,915,549,917,548,912,643,914"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,197,558,240"/>
+<area shape="poly" title=" " alt="" coords="638,259,551,243,549,238,643,257"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,264,566,307"/>
+<area shape="poly" title=" " alt="" coords="638,285,567,287,565,282,643,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" name="ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4">&#9670;&#160;</a></span>SaveSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.SaveSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_session_config.html">SessionConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serialises <em>config</em>  and writes it atomically to CurrentSessionFilePath (creates a new file if none is active). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00135">135</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">CreateNewSessionFile()</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00021">CurrentSessionFilePath</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00050">GetOptions()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">LoadSpecificConfiguration()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01412">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.SaveCurrentSession()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_cgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_cgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_cgraph">
+<area shape="rect" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="5,88,235,147"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="283,47,569,105"/>
+<area shape="poly" title=" " alt="" coords="234,99,270,97,265,98,236,104"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="317,129,535,188"/>
+<area shape="poly" title=" " alt="" coords="235,130,304,142,299,142,235,136"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="630,5,886,64"/>
+<area shape="poly" title=" " alt="" coords="569,55,617,52,611,53,570,61"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="617,88,898,147"/>
+<area shape="poly" title=" " alt="" coords="570,91,604,98,599,98,570,97"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_icgraph.png" border="0" usemap="#ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_icgraph" id="ad6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager_ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4_icgraph">
+<area shape="rect" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="1319,463,1548,521"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="966,213,1271,272"/>
+<area shape="poly" title=" " alt="" coords="1380,453,1157,275,1158,270,1386,453"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="989,504,1248,563"/>
+<area shape="poly" title=" " alt="" coords="1301,510,1249,519,1247,514,1306,508"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#adebdc31107a36ddfc5854b4254ed2275" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="625,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1077,202,1007,140,963,107,917,78,894,67,893,62,920,74,966,102,1010,135,1082,202"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60c6fc5f79cfe13d8849739598ce6ebf" title="Checks if paths exist and asks the user if they want to discard them." alt="" coords="648,437,895,496"/>
+<area shape="poly" title=" " alt="" coords="971,506,895,493,895,488,977,505"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="323,344,546,403"/>
+<area shape="poly" title=" " alt="" coords="1072,493,1003,443,961,419,917,400,822,376,724,365,629,362,547,365,545,360,629,356,724,359,823,371,919,395,964,414,1006,439,1077,493"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title="Asynchronously loads a 3D model from a file." alt="" coords="292,433,577,476"/>
+<area shape="poly" title=" " alt="" coords="1062,495,996,458,957,441,918,428,867,418,815,412,710,412,611,421,528,435,526,430,611,416,710,406,815,407,868,412,919,423,959,436,998,453,1067,495"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="316,503,553,561"/>
+<area shape="poly" title=" " alt="" coords="972,535,554,535,553,530,976,531"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0b56074d260c76bbc1f4e80669d95f77" title="Closes the window." alt="" coords="638,571,905,613"/>
+<area shape="poly" title=" " alt="" coords="972,559,903,573,901,568,977,557"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff914c5148b7c713df0d586ff8e83162" title="Completes manual measurement point marking and saves the points." alt="" coords="651,637,892,696"/>
+<area shape="poly" title=" " alt="" coords="1043,571,919,628,886,639,884,634,917,623,1048,569"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="652,720,891,779"/>
+<area shape="poly" title=" " alt="" coords="1083,573,1012,645,967,680,920,710,892,723,890,718,917,706,964,676,1008,641,1079,576"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9bcde282075763cc41a91def83a9d750" title="Executes the OpenPathEditDialog method." alt="" coords="650,803,893,861"/>
+<area shape="poly" title=" " alt="" coords="1097,575,1068,628,1028,686,978,744,920,793,895,807,893,802,917,788,975,740,1024,682,1064,625,1093,578"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="656,885,887,944"/>
+<area shape="poly" title=" " alt="" coords="1105,576,1081,644,1042,725,1017,766,988,806,956,843,920,875,889,894,887,889,917,871,952,839,984,803,1013,763,1037,722,1076,642,1102,579"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aefff2e20ab9b74e97bccfa8810e28268" title="Executes the RecalculatePaths method." alt="" coords="628,968,916,1011"/>
+<area shape="poly" title=" " alt="" coords="1111,576,1092,660,1056,763,1031,817,1000,869,963,917,920,958,902,970,900,965,917,954,959,913,995,866,1026,815,1051,761,1087,659,1108,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="650,1035,894,1093"/>
+<area shape="poly" title=" " alt="" coords="1114,576,1098,671,1083,730,1064,792,1038,855,1006,917,967,974,920,1025,895,1042,893,1037,917,1021,963,971,1002,914,1033,853,1059,790,1078,728,1093,670,1110,580"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a768ad3d9a21a3523d1c900a797c20edf" title="Executes the ResetAllPathPoints method." alt="" coords="654,88,889,147"/>
+<area shape="poly" title=" " alt="" coords="1086,491,1027,399,964,285,951,248,946,217,938,189,917,161,890,142,890,137,920,157,943,186,952,216,957,247,969,283,1032,397,1091,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adfe22d424276b687eb23af7c37c82c0a" title="Executes the RestoreSessionFromConfig method." alt="" coords="656,171,887,229"/>
+<area shape="poly" title=" " alt="" coords="1090,490,1005,353,957,286,917,243,888,227,887,222,920,239,962,283,1010,350,1096,491"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="656,253,887,312"/>
+<area shape="poly" title=" " alt="" coords="1083,491,1013,412,967,370,917,333,883,315,882,310,920,328,970,365,1017,408,1089,492"/>
+<area shape="poly" title=" " alt="" coords="646,434,543,406,542,401,651,432"/>
+<area shape="poly" title=" " alt="" coords="630,463,578,462,577,457,635,461"/>
+<area shape="poly" title=" " alt="" coords="631,495,554,511,552,507,635,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="5,503,244,561"/>
+<area shape="poly" title=" " alt="" coords="298,534,245,534,243,530,302,530"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="321,885,548,944"/>
+<area shape="poly" title=" " alt="" coords="638,915,549,917,548,912,643,914"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6aee4237978f7a4929c15e2efeadc02f" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="311,197,558,240"/>
+<area shape="poly" title=" " alt="" coords="638,259,551,243,549,238,643,257"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0db0800b999bb4e158f185942d52e5c4" title="Unignores the specified item (CADFace or CADHole)." alt="" coords="303,264,566,307"/>
+<area shape="poly" title=" " alt="" coords="638,285,567,287,565,282,643,282"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="af49c2352fadef14ba8ff87288dde0a98" name="af49c2352fadef14ba8ff87288dde0a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49c2352fadef14ba8ff87288dde0a98">&#9670;&#160;</a></span>CurrentSessionFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.CurrentSessionFilePath = string.Empty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the path of the currently active session file. All calls to SaveSession write to this path. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00100">CreateNewSessionFile()</a>, <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00169">LoadSpecificConfiguration()</a> e <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00135">SaveSession()</a>.</p>
+
+</div>
+</div>
+<a id="ae16bde37b75671d1fce20ee0cd1ae05e" name="ae16bde37b75671d1fce20ee0cd1ae05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16bde37b75671d1fce20ee0cd1ae05e">&#9670;&#160;</a></span>MaxSessionFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.MaxSessionFiles = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of Session_*.json files to keep in the SaveFiles folder. Oldest files beyond this limit are automatically removed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00027">27</a> do ficheiro <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html#l00063">PruneOldSessionFiles()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/<a class="el" href="../../d7/d00/_session_configuration_manager_8cs_source.html">SessionConfigurationManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

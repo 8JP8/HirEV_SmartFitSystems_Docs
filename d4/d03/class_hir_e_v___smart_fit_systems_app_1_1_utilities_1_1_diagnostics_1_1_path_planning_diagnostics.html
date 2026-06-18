@@ -1,0 +1,893 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html','../../','d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Diagnostic testing framework for path planning verification. Generates detailed reports to help debug collision detection, path generation, and sequence validation. Reports are saved to APPDATA%\HirEV\PathPlanningDiagnostics_{timestamp}.txt.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_diagnostics_8_path_planning_diagnostics_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_diagnostics_8_path_planning_diagnostics_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_diagnostics_8_path_planning_diagnostics_coll__map">
+<area shape="rect" title="Diagnostic testing framework for path planning verification. Generates detailed reports to help debug..." alt="" coords="5,5,244,512"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:CollisionTestResult" id="r_CollisionTestResult"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_collision_test_result.html">CollisionTestResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of a collision test.  <a href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_collision_test_result.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:SequenceTestResult" id="r_SequenceTestResult"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html">SequenceTestResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of a sequence validation test.  <a href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:FaceAdjacencyTestResult" id="r_FaceAdjacencyTestResult"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostic95269d81aeb6f242150fdfb71b32019e.html">FaceAdjacencyTestResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of a face adjacency test.  <a href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostic95269d81aeb6f242150fdfb71b32019e.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:aab81592eec1e618fdd979cc3734713bc" id="r_aab81592eec1e618fdd979cc3734713bc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aab81592eec1e618fdd979cc3734713bc">PathPlanningDiagnostics</a> ()</td></tr>
+<tr class="memdesc:aab81592eec1e618fdd979cc3734713bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new diagnostic session.  <br /></td></tr>
+<tr class="memitem:a5dd05cae6749ad2941979131c6bbeda0" id="r_a5dd05cae6749ad2941979131c6bbeda0"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a5dd05cae6749ad2941979131c6bbeda0">SaveReport</a> ()</td></tr>
+<tr class="memdesc:a5dd05cae6749ad2941979131c6bbeda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the diagnostic report to the AppData folder.  <br /></td></tr>
+<tr class="memitem:accebef78cee405f549aea54bfa18b411" id="r_accebef78cee405f549aea54bfa18b411"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#accebef78cee405f549aea54bfa18b411">TestPathCollisions</a> (List&lt; Point3D &gt; pathPoints, List&lt; Brep &gt; obstacles, Func&lt; Point3D, Point3D, List&lt; Brep &gt;, bool &gt; checkCollisionFunc)</td></tr>
+<tr class="memdesc:accebef78cee405f549aea54bfa18b411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests collision detection for all path segments.  <br /></td></tr>
+<tr class="memitem:ad7e2e1b1fc8582715a3e266143f202db" id="r_ad7e2e1b1fc8582715a3e266143f202db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7e2e1b1fc8582715a3e266143f202db">TestDetailedCollisionSampling</a> (Point3D start, Point3D end, List&lt; Brep &gt; obstacles, Func&lt; Point3D, List&lt; Brep &gt;, bool &gt; isInsideSolidFunc, double sampleInterval=0.5)</td></tr>
+<tr class="memdesc:ad7e2e1b1fc8582715a3e266143f202db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests collision detection with detailed point sampling.  <br /></td></tr>
+<tr class="memitem:a7510ef600650e8c41064d32f094d6c46" id="r_a7510ef600650e8c41064d32f094d6c46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7510ef600650e8c41064d32f094d6c46">TestSurfaceMeasurementSequence</a> (List&lt; Point3D &gt; pathPoints, List&lt; Point3D &gt; approachPoints, List&lt; Point3D &gt; measurementPoints, double tolerance=1.0)</td></tr>
+<tr class="memdesc:a7510ef600650e8c41064d32f094d6c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that the path follows correct Approach-Measure-Approach sequences for surfaces.  <br /></td></tr>
+<tr class="memitem:ab87e33c457b29490a724aeec6a5a4d42" id="r_ab87e33c457b29490a724aeec6a5a4d42"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab87e33c457b29490a724aeec6a5a4d42">TestHoleMeasurementSequence</a> (List&lt; Point3D &gt; holePathPoints, Point3D holeAxisTop, Point3D holeAxisBottom, List&lt; Point3D &gt; holeMeasurementPoints, double tolerance=2.0)</td></tr>
+<tr class="memdesc:ab87e33c457b29490a724aeec6a5a4d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests hole measurement sequence (Axis-based radial measurements). Expected: AxisTop → Descend → (Axis → Measure → Axis)* → Ascend → AxisTop.  <br /></td></tr>
+<tr class="memitem:a322eaffed9e94c539034cb7d8a0d991d" id="r_a322eaffed9e94c539034cb7d8a0d991d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a322eaffed9e94c539034cb7d8a0d991d">TestFaceAdjacencyTransitions</a> (List&lt;(Point3D point, int faceIndex)&gt; pathWithFaces, Dictionary&lt; int, HashSet&lt; int &gt; &gt; faceAdjacencyMap)</td></tr>
+<tr class="memdesc:a322eaffed9e94c539034cb7d8a0d991d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that face-to-face transitions follow adjacency rules.  <br /></td></tr>
+<tr class="memitem:aec0fbadbf401531927ebf83e28d55fae" id="r_aec0fbadbf401531927ebf83e28d55fae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec0fbadbf401531927ebf83e28d55fae">TestNormalParallelMovements</a> (List&lt;(Point3D point, Vector3D normal)&gt; pathWithNormals, double maxDeviationDegrees=30.0)</td></tr>
+<tr class="memdesc:aec0fbadbf401531927ebf83e28d55fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that movements are approximately parallel to face normals during approach.  <br /></td></tr>
+<tr class="memitem:a483b1ba0d86cb25643f26bb0d1aacdb8" id="r_a483b1ba0d86cb25643f26bb0d1aacdb8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a483b1ba0d86cb25643f26bb0d1aacdb8">AddNote</a> (string title, string content)</td></tr>
+<tr class="memdesc:a483b1ba0d86cb25643f26bb0d1aacdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a custom note or section to the diagnostic report.  <br /></td></tr>
+<tr class="memitem:a51bcceda18f191d606cd0bf50e55241c" id="r_a51bcceda18f191d606cd0bf50e55241c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a51bcceda18f191d606cd0bf50e55241c">LogConfiguration</a> (Dictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:a51bcceda18f191d606cd0bf50e55241c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs configuration parameters used during path planning.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a1c720503d1edbc984084f3942f5e3d36" id="r_a1c720503d1edbc984084f3942f5e3d36"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a1c720503d1edbc984084f3942f5e3d36">ReportPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1c720503d1edbc984084f3942f5e3d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path where the diagnostic report will be saved.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:ac2f1e0ddb70df1a4466909a0454bfa73" id="r_ac2f1e0ddb70df1a4466909a0454bfa73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2f1e0ddb70df1a4466909a0454bfa73">WriteHeader</a> ()</td></tr>
+<tr class="memdesc:ac2f1e0ddb70df1a4466909a0454bfa73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the header block at the start of the diagnostics report file.  <br /></td></tr>
+<tr class="memitem:af5d18aae0fbdb36740595cd42cbf315c" id="r_af5d18aae0fbdb36740595cd42cbf315c"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#af5d18aae0fbdb36740595cd42cbf315c">PointToLineDistance</a> (Point3D point, Point3D linePoint, Vector3D lineDir)</td></tr>
+<tr class="memdesc:af5d18aae0fbdb36740595cd42cbf315c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate point-to-line distance.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a31dcc1f315982241a182993d4761c268" id="r_a31dcc1f315982241a182993d4761c268"><td class="memItemLeft">readonly StringBuilder&#160;</td><td class="memItemRight"><a class="el" href="#a31dcc1f315982241a182993d4761c268">_report</a></td></tr>
+<tr class="memitem:a5970f91e291b699f8517b120b7d5e364" id="r_a5970f91e291b699f8517b120b7d5e364"><td class="memItemLeft">readonly string&#160;</td><td class="memItemRight"><a class="el" href="#a5970f91e291b699f8517b120b7d5e364">_reportPath</a></td></tr>
+<tr class="memitem:a6683d79352ba4cb18f370fac69b7a381" id="r_a6683d79352ba4cb18f370fac69b7a381"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6683d79352ba4cb18f370fac69b7a381">_testsPassed</a></td></tr>
+<tr class="memitem:af72981e90414ad7df29c7d7abedbac95" id="r_af72981e90414ad7df29c7d7abedbac95"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af72981e90414ad7df29c7d7abedbac95">_testsFailed</a></td></tr>
+<tr class="memitem:a294314a6be31bbd433d272d92c8582cd" id="r_a294314a6be31bbd433d272d92c8582cd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a294314a6be31bbd433d272d92c8582cd">_testsWarnings</a></td></tr>
+<tr class="memitem:adf12d1b199635274e53d741a26a2aebd" id="r_adf12d1b199635274e53d741a26a2aebd"><td class="memItemLeft">readonly List&lt; <a class="el" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_collision_test_result.html">CollisionTestResult</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adf12d1b199635274e53d741a26a2aebd">_collisionResults</a></td></tr>
+<tr class="memitem:aa0fc16cb9bdcf204e36a0ee58a952a86" id="r_aa0fc16cb9bdcf204e36a0ee58a952a86"><td class="memItemLeft">readonly List&lt; <a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html">SequenceTestResult</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa0fc16cb9bdcf204e36a0ee58a952a86">_sequenceResults</a></td></tr>
+<tr class="memitem:a547632849be30f7704d260c606dac99e" id="r_a547632849be30f7704d260c606dac99e"><td class="memItemLeft">readonly List&lt; <a class="el" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostic95269d81aeb6f242150fdfb71b32019e.html">FaceAdjacencyTestResult</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a547632849be30f7704d260c606dac99e">_adjacencyResults</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Diagnostic testing framework for path planning verification. Generates detailed reports to help debug collision detection, path generation, and sequence validation. Reports are saved to APPDATA%\HirEV\PathPlanningDiagnostics_{timestamp}.txt. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00014">14</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="aab81592eec1e618fdd979cc3734713bc" name="aab81592eec1e618fdd979cc3734713bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab81592eec1e618fdd979cc3734713bc">&#9670;&#160;</a></span>PathPlanningDiagnostics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.PathPlanningDiagnostics </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new diagnostic session. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00023">_adjacencyResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00021">_collisionResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00017">_reportPath</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00022">_sequenceResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00059">WriteHeader()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_aab81592eec1e618fdd979cc3734713bc_cgraph.png" border="0" usemap="#ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_aab81592eec1e618fdd979cc3734713bc_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_aab81592eec1e618fdd979cc3734713bc_cgraph" id="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_aab81592eec1e618fdd979cc3734713bc_cgraph">
+<area shape="rect" title="Initializes a new diagnostic session." alt="" coords="5,5,246,64"/>
+<area shape="rect" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html#ac2f1e0ddb70df1a4466909a0454bfa73" title="Writes the header block at the start of the diagnostics report file." alt="" coords="294,5,513,64"/>
+<area shape="poly" title=" " alt="" coords="246,32,280,34,275,35,246,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a483b1ba0d86cb25643f26bb0d1aacdb8" name="a483b1ba0d86cb25643f26bb0d1aacdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483b1ba0d86cb25643f26bb0d1aacdb8">&#9670;&#160;</a></span>AddNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.AddNote </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>content</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a custom note or section to the diagnostic report. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00791">791</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>.</p>
+
+</div>
+</div>
+<a id="a51bcceda18f191d606cd0bf50e55241c" name="a51bcceda18f191d606cd0bf50e55241c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bcceda18f191d606cd0bf50e55241c">&#9670;&#160;</a></span>LogConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.LogConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, object &gt;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs configuration parameters used during path planning. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00804">804</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>.</p>
+
+</div>
+</div>
+<a id="af5d18aae0fbdb36740595cd42cbf315c" name="af5d18aae0fbdb36740595cd42cbf315c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d18aae0fbdb36740595cd42cbf315c">&#9670;&#160;</a></span>PointToLineDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.PointToLineDistance </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>linePoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>lineDir</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate point-to-line distance. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00499">499</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">TestHoleMeasurementSequence()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_af5d18aae0fbdb36740595cd42cbf315c_icgraph.png" border="0" usemap="#ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_af5d18aae0fbdb36740595cd42cbf315c_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_af5d18aae0fbdb36740595cd42cbf315c_icgraph" id="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_af5d18aae0fbdb36740595cd42cbf315c_icgraph">
+<area shape="rect" title="Calculate point&#45;to&#45;line distance." alt="" coords="337,5,556,64"/>
+<area shape="rect" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html#ab87e33c457b29490a724aeec6a5a4d42" title="Tests hole measurement sequence (Axis&#45;based radial measurements). Expected: AxisTop → Descend → (Axis..." alt="" coords="5,5,289,64"/>
+<area shape="poly" title=" " alt="" coords="318,35,289,37,289,32,324,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5dd05cae6749ad2941979131c6bbeda0" name="a5dd05cae6749ad2941979131c6bbeda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd05cae6749ad2941979131c6bbeda0">&#9670;&#160;</a></span>SaveReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.SaveReport </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the diagnostic report to the AppData folder. </p>
+<dl class="section return"><dt>Retorna</dt><dd>The path where the report was saved.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00077">77</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00017">_reportPath</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="ad7e2e1b1fc8582715a3e266143f202db" name="ad7e2e1b1fc8582715a3e266143f202db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e2e1b1fc8582715a3e266143f202db">&#9670;&#160;</a></span>TestDetailedCollisionSampling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestDetailedCollisionSampling </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Brep &gt;</td>          <td class="paramname"><span class="paramname"><em>obstacles</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; Point3D, List&lt; Brep &gt;, bool &gt;</td>          <td class="paramname"><span class="paramname"><em>isInsideSolidFunc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>sampleInterval</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests collision detection with detailed point sampling. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00203">203</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="a322eaffed9e94c539034cb7d8a0d991d" name="a322eaffed9e94c539034cb7d8a0d991d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322eaffed9e94c539034cb7d8a0d991d">&#9670;&#160;</a></span>TestFaceAdjacencyTransitions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestFaceAdjacencyTransitions </td>
+          <td>(</td>
+          <td class="paramtype">List&lt;(Point3D point, int faceIndex)&gt;</td>          <td class="paramname"><span class="paramname"><em>pathWithFaces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dictionary&lt; int, HashSet&lt; int &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>faceAdjacencyMap</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests that face-to-face transitions follow adjacency rules. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00513">513</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00023">_adjacencyResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="ab87e33c457b29490a724aeec6a5a4d42" name="ab87e33c457b29490a724aeec6a5a4d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87e33c457b29490a724aeec6a5a4d42">&#9670;&#160;</a></span>TestHoleMeasurementSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestHoleMeasurementSequence </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>holePathPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>holeAxisTop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>holeAxisBottom</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>holeMeasurementPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2::0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests hole measurement sequence (Axis-based radial measurements). Expected: AxisTop → Descend → (Axis → Measure → Axis)* → Ascend → AxisTop. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">400</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00499">PointToLineDistance()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ab87e33c457b29490a724aeec6a5a4d42_cgraph.png" border="0" usemap="#ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ab87e33c457b29490a724aeec6a5a4d42_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ab87e33c457b29490a724aeec6a5a4d42_cgraph" id="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ab87e33c457b29490a724aeec6a5a4d42_cgraph">
+<area shape="rect" title="Tests hole measurement sequence (Axis&#45;based radial measurements). Expected: AxisTop → Descend → (Axis..." alt="" coords="5,5,289,64"/>
+<area shape="rect" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html#af5d18aae0fbdb36740595cd42cbf315c" title="Calculate point&#45;to&#45;line distance." alt="" coords="337,5,556,64"/>
+<area shape="poly" title=" " alt="" coords="289,32,324,35,318,35,289,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec0fbadbf401531927ebf83e28d55fae" name="aec0fbadbf401531927ebf83e28d55fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0fbadbf401531927ebf83e28d55fae">&#9670;&#160;</a></span>TestNormalParallelMovements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestNormalParallelMovements </td>
+          <td>(</td>
+          <td class="paramtype">List&lt;(Point3D point, Vector3D normal)&gt;</td>          <td class="paramname"><span class="paramname"><em>pathWithNormals</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxDeviationDegrees</em></span><span class="paramdefsep"> = </span><span class="paramdefval">30::0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests that movements are approximately parallel to face normals during approach. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00615">615</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="accebef78cee405f549aea54bfa18b411" name="accebef78cee405f549aea54bfa18b411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accebef78cee405f549aea54bfa18b411">&#9670;&#160;</a></span>TestPathCollisions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestPathCollisions </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>pathPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Brep &gt;</td>          <td class="paramname"><span class="paramname"><em>obstacles</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; Point3D, Point3D, List&lt; Brep &gt;, bool &gt;</td>          <td class="paramname"><span class="paramname"><em>checkCollisionFunc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests collision detection for all path segments. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathPoints</td><td>The path points to test</td></tr>
+    <tr><td class="paramname">obstacles</td><td>The Brep obstacles to check against</td></tr>
+    <tr><td class="paramname">checkCollisionFunc</td><td>Function to check if segment is clear</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">126</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00021">_collisionResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="a7510ef600650e8c41064d32f094d6c46" name="a7510ef600650e8c41064d32f094d6c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7510ef600650e8c41064d32f094d6c46">&#9670;&#160;</a></span>TestSurfaceMeasurementSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.TestSurfaceMeasurementSequence </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>pathPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>approachPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>measurementPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1::0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests that the path follows correct Approach-Measure-Approach sequences for surfaces. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">285</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00022">_sequenceResults</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">_testsFailed</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">_testsPassed</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">_testsWarnings</a>.</p>
+
+</div>
+</div>
+<a id="ac2f1e0ddb70df1a4466909a0454bfa73" name="ac2f1e0ddb70df1a4466909a0454bfa73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f1e0ddb70df1a4466909a0454bfa73">&#9670;&#160;</a></span>WriteHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.WriteHeader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes the header block at the start of the diagnostics report file. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00059">59</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">_report</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ac2f1e0ddb70df1a4466909a0454bfa73_icgraph.png" border="0" usemap="#ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ac2f1e0ddb70df1a4466909a0454bfa73_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ac2f1e0ddb70df1a4466909a0454bfa73_icgraph" id="ad4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_ac2f1e0ddb70df1a4466909a0454bfa73_icgraph">
+<area shape="rect" title="Writes the header block at the start of the diagnostics report file." alt="" coords="294,5,513,64"/>
+<area shape="rect" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html#aab81592eec1e618fdd979cc3734713bc" title="Initializes a new diagnostic session." alt="" coords="5,5,246,64"/>
+<area shape="poly" title=" " alt="" coords="276,35,246,37,246,32,281,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a547632849be30f7704d260c606dac99e" name="a547632849be30f7704d260c606dac99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547632849be30f7704d260c606dac99e">&#9670;&#160;</a></span>_adjacencyResults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;<a class="el" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostic95269d81aeb6f242150fdfb71b32019e.html">FaceAdjacencyTestResult</a>&gt; HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._adjacencyResults</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00513">TestFaceAdjacencyTransitions()</a>.</p>
+
+</div>
+</div>
+<a id="adf12d1b199635274e53d741a26a2aebd" name="adf12d1b199635274e53d741a26a2aebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf12d1b199635274e53d741a26a2aebd">&#9670;&#160;</a></span>_collisionResults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;<a class="el" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_collision_test_result.html">CollisionTestResult</a>&gt; HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._collisionResults</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">TestPathCollisions()</a>.</p>
+
+</div>
+</div>
+<a id="a31dcc1f315982241a182993d4761c268" name="a31dcc1f315982241a182993d4761c268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dcc1f315982241a182993d4761c268">&#9670;&#160;</a></span>_report</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly StringBuilder HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._report</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00791">AddNote()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00804">LogConfiguration()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00077">SaveReport()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00203">TestDetailedCollisionSampling()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00513">TestFaceAdjacencyTransitions()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">TestHoleMeasurementSequence()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00615">TestNormalParallelMovements()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">TestPathCollisions()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">TestSurfaceMeasurementSequence()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00059">WriteHeader()</a>.</p>
+
+</div>
+</div>
+<a id="a5970f91e291b699f8517b120b7d5e364" name="a5970f91e291b699f8517b120b7d5e364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5970f91e291b699f8517b120b7d5e364">&#9670;&#160;</a></span>_reportPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._reportPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00017">17</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00077">SaveReport()</a>.</p>
+
+</div>
+</div>
+<a id="aa0fc16cb9bdcf204e36a0ee58a952a86" name="aa0fc16cb9bdcf204e36a0ee58a952a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fc16cb9bdcf204e36a0ee58a952a86">&#9670;&#160;</a></span>_sequenceResults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;<a class="el" href="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_sequence_test_result.html">SequenceTestResult</a>&gt; HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._sequenceResults</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">TestSurfaceMeasurementSequence()</a>.</p>
+
+</div>
+</div>
+<a id="af72981e90414ad7df29c7d7abedbac95" name="af72981e90414ad7df29c7d7abedbac95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72981e90414ad7df29c7d7abedbac95">&#9670;&#160;</a></span>_testsFailed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._testsFailed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00019">19</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00077">SaveReport()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00203">TestDetailedCollisionSampling()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">TestHoleMeasurementSequence()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">TestPathCollisions()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">TestSurfaceMeasurementSequence()</a>.</p>
+
+</div>
+</div>
+<a id="a6683d79352ba4cb18f370fac69b7a381" name="a6683d79352ba4cb18f370fac69b7a381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6683d79352ba4cb18f370fac69b7a381">&#9670;&#160;</a></span>_testsPassed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._testsPassed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00018">18</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00203">TestDetailedCollisionSampling()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00513">TestFaceAdjacencyTransitions()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">TestHoleMeasurementSequence()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00615">TestNormalParallelMovements()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">TestPathCollisions()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">TestSurfaceMeasurementSequence()</a>.</p>
+
+</div>
+</div>
+<a id="a294314a6be31bbd433d272d92c8582cd" name="a294314a6be31bbd433d272d92c8582cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294314a6be31bbd433d272d92c8582cd">&#9670;&#160;</a></span>_testsWarnings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics._testsWarnings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00020">20</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00033">PathPlanningDiagnostics()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00077">SaveReport()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00203">TestDetailedCollisionSampling()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00513">TestFaceAdjacencyTransitions()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00400">TestHoleMeasurementSequence()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00615">TestNormalParallelMovements()</a>, <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00126">TestPathCollisions()</a> e <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00285">TestSurfaceMeasurementSequence()</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="a1c720503d1edbc984084f3942f5e3d36" name="a1c720503d1edbc984084f3942f5e3d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c720503d1edbc984084f3942f5e3d36">&#9670;&#160;</a></span>ReportPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.ReportPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the path where the diagnostic report will be saved. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html#l00028">28</a> do ficheiro <a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/<a class="el" href="../../dc/d00/_path_planning_diagnostics_8cs_source.html">PathPlanningDiagnostics.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

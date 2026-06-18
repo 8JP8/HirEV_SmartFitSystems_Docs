@@ -1,0 +1,6 @@
+var _collision_avoidance_algorithm_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Utilities.CollisionAvoidanceAlgorithm", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm" ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.CollisionAvoidanceAlgorithm.Triangle", "dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html", "dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle" ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.CollisionAvoidanceAlgorithm.CollisionResult", "dc/d02/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_collision_result.html", "dc/d02/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_collision_result" ]
+];

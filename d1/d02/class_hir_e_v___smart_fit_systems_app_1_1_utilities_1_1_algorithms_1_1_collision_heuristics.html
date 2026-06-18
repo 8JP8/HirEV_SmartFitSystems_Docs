@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html','../../','d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Provides collision detection and resolution heuristics for shell-based path planning. Validates that path segments do not intersect the part interior and provides shell-based rerouting when collisions are detected.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_collision_heuristics_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_collision_heuristics_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_collision_heuristics_coll__map">
+<area shape="rect" title="Provides collision detection and resolution heuristics for shell&#45;based path planning...." alt="" coords="5,5,227,320"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:CollisionCheckResult" id="r_CollisionCheckResult"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html">CollisionCheckResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of a collision validation check.  <a href="../../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a5cad09b12b2c8500f6639f36ba1caa38" id="r_a5cad09b12b2c8500f6639f36ba1caa38"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5cad09b12b2c8500f6639f36ba1caa38">CollisionHeuristics</a> (Mesh? partMesh, Mesh? shellMesh, double collisionTolerance=0.5)</td></tr>
+<tr class="memdesc:a5cad09b12b2c8500f6639f36ba1caa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new <a class="el" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html" title="Provides collision detection and resolution heuristics for shell-based path planning....">CollisionHeuristics</a> instance.  <br /></td></tr>
+<tr class="memitem:af7e90d835f3eec45328e54d4db811466" id="r_af7e90d835f3eec45328e54d4db811466"><td class="memItemLeft"><a class="el" href="../../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html">CollisionCheckResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#af7e90d835f3eec45328e54d4db811466">ValidatePathClearsPartVolume</a> (List&lt; Point3D &gt; pathPoints)</td></tr>
+<tr class="memdesc:af7e90d835f3eec45328e54d4db811466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a complete path does not intersect the part interior. Uses ray-segment intersection tests against the part mesh.  <br /></td></tr>
+<tr class="memitem:a26b49e785fb370b728f823eeaaa13a55" id="r_a26b49e785fb370b728f823eeaaa13a55"><td class="memItemLeft">List&lt; Point3D &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a26b49e785fb370b728f823eeaaa13a55">AttemptShellReroute</a> (Point3D from, Point3D to, int maxIterations=5)</td></tr>
+<tr class="memdesc:a26b49e785fb370b728f823eeaaa13a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to find an alternate shell-based path when a direct path has collisions. Uses the shell mesh to route around the part.  <br /></td></tr>
+<tr class="memitem:aa540e7c54ee25aa1fff8c9c193d40ec8" id="r_aa540e7c54ee25aa1fff8c9c193d40ec8"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#aa540e7c54ee25aa1fff8c9c193d40ec8">PushPointToShellSurface</a> (Point3D interiorPoint, Point3D partCentroid)</td></tr>
+<tr class="memdesc:aa540e7c54ee25aa1fff8c9c193d40ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes an interior point outward to the shell surface.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a08f0dcfa0cd43d67605e9a8686139522" id="r_a08f0dcfa0cd43d67605e9a8686139522"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a08f0dcfa0cd43d67605e9a8686139522">CheckSegmentMeshIntersection</a> (Point3D start, Point3D end, Mesh mesh)</td></tr>
+<tr class="memdesc:a08f0dcfa0cd43d67605e9a8686139522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a line segment intersects with a mesh.  <br /></td></tr>
+<tr class="memitem:a0315b7be78fd67bddc00c003e0900b14" id="r_a0315b7be78fd67bddc00c003e0900b14"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a0315b7be78fd67bddc00c003e0900b14">FindNearestShellPoint</a> (Point3D point)</td></tr>
+<tr class="memdesc:a0315b7be78fd67bddc00c003e0900b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest point on the shell mesh to a query point.  <br /></td></tr>
+<tr class="memitem:a29466f3cf5859961eea3a6573b64f7fd" id="r_a29466f3cf5859961eea3a6573b64f7fd"><td class="memItemLeft">List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a29466f3cf5859961eea3a6573b64f7fd">ExpandPathFromCenter</a> (List&lt; Point3D &gt; path, double expansionFactor)</td></tr>
+<tr class="memdesc:a29466f3cf5859961eea3a6573b64f7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands path points away from the part center.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a84913735ff5731cb42ba1ee2ae938705" id="r_a84913735ff5731cb42ba1ee2ae938705"><td class="memItemLeft">static ? Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a84913735ff5731cb42ba1ee2ae938705">RayTriangleIntersection</a> (Point3D rayOrigin, Vector3D rayDir, Point3D v0, Point3D v1, Point3D v2)</td></tr>
+<tr class="memdesc:a84913735ff5731cb42ba1ee2ae938705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Möller-Trumbore ray-triangle intersection algorithm.  <br /></td></tr>
+<tr class="memitem:a3f813758b460be9f4cbdb6082821c107" id="r_a3f813758b460be9f4cbdb6082821c107"><td class="memItemLeft">static Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a3f813758b460be9f4cbdb6082821c107">InterpolatePoint</a> (Point3D a, Point3D b, double t)</td></tr>
+<tr class="memdesc:a3f813758b460be9f4cbdb6082821c107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear interpolation between two points.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:ac1328fcd9499110b88b5be15bb0ff40f" id="r_ac1328fcd9499110b88b5be15bb0ff40f"><td class="memItemLeft">readonly? Mesh&#160;</td><td class="memItemRight"><a class="el" href="#ac1328fcd9499110b88b5be15bb0ff40f">_partMesh</a></td></tr>
+<tr class="memitem:a5254dc2e0d3e4007781df700efda09d5" id="r_a5254dc2e0d3e4007781df700efda09d5"><td class="memItemLeft">readonly? Mesh&#160;</td><td class="memItemRight"><a class="el" href="#a5254dc2e0d3e4007781df700efda09d5">_shellMesh</a></td></tr>
+<tr class="memitem:acf20dee4f154d13868e0a4b43055ce61" id="r_acf20dee4f154d13868e0a4b43055ce61"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#acf20dee4f154d13868e0a4b43055ce61">_collisionTolerance</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Provides collision detection and resolution heuristics for shell-based path planning. Validates that path segments do not intersect the part interior and provides shell-based rerouting when collisions are detected. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00012">12</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a5cad09b12b2c8500f6639f36ba1caa38" name="a5cad09b12b2c8500f6639f36ba1caa38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cad09b12b2c8500f6639f36ba1caa38">&#9670;&#160;</a></span>CollisionHeuristics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.CollisionHeuristics </td>
+          <td>(</td>
+          <td class="paramtype">Mesh?</td>          <td class="paramname"><span class="paramname"><em>partMesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mesh?</td>          <td class="paramname"><span class="paramname"><em>shellMesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>collisionTolerance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new <a class="el" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html" title="Provides collision detection and resolution heuristics for shell-based path planning....">CollisionHeuristics</a> instance. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">partMesh</td><td>The original part mesh for collision testing.</td></tr>
+    <tr><td class="paramname">shellMesh</td><td>The exterior shell mesh for rerouting.</td></tr>
+    <tr><td class="paramname">collisionTolerance</td><td>Tolerance for collision detection in mm.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00024">24</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00016">_collisionTolerance</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00014">_partMesh</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00015">_shellMesh</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a26b49e785fb370b728f823eeaaa13a55" name="a26b49e785fb370b728f823eeaaa13a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b49e785fb370b728f823eeaaa13a55">&#9670;&#160;</a></span>AttemptShellReroute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt;? HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.AttemptShellReroute </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to find an alternate shell-based path when a direct path has collisions. Uses the shell mesh to route around the part. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Starting point.</td></tr>
+    <tr><td class="paramname">to</td><td>Ending point.</td></tr>
+    <tr><td class="paramname">maxIterations</td><td>Maximum rerouting attempts.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Alternate path avoiding collisions, or null if rerouting failed.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">207</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00015">_shellMesh</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00302">ExpandPathFromCenter()</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00267">FindNearestShellPoint()</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00291">InterpolatePoint()</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00057">ValidatePathClearsPartVolume()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a26b49e785fb370b728f823eeaaa13a55_cgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a26b49e785fb370b728f823eeaaa13a55_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a26b49e785fb370b728f823eeaaa13a55_cgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a26b49e785fb370b728f823eeaaa13a55_cgraph">
+<area shape="rect" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,105,211,164"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a29466f3cf5859961eea3a6573b64f7fd" title="Expands path points away from the part center." alt="" coords="278,5,502,64"/>
+<area shape="poly" title=" " alt="" coords="192,102,293,68,289,71,194,107"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a0315b7be78fd67bddc00c003e0900b14" title="Finds the nearest point on the shell mesh to a query point." alt="" coords="599,39,813,97"/>
+<area shape="poly" title=" " alt="" coords="211,121,584,79,583,84,212,126"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a3f813758b460be9f4cbdb6082821c107" title="Linear interpolation between two points." alt="" coords="294,139,486,197"/>
+<area shape="poly" title=" " alt="" coords="211,144,281,154,276,156,212,149"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#af7e90d835f3eec45328e54d4db811466" title="Validates that a complete path does not intersect the part interior. Uses ray&#45;segment intersection te..." alt="" coords="259,221,521,280"/>
+<area shape="poly" title=" " alt="" coords="165,162,260,207,278,216,272,216,258,212,164,167"/>
+<area shape="poly" title=" " alt="" coords="502,44,586,55,581,56,503,49"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a08f0dcfa0cd43d67605e9a8686139522" title="Checks if a line segment intersects with a mesh." alt="" coords="569,221,843,280"/>
+<area shape="poly" title=" " alt="" coords="521,248,556,251,551,251,522,253"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a84913735ff5731cb42ba1ee2ae938705" title="Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="891,221,1114,280"/>
+<area shape="poly" title=" " alt="" coords="844,248,879,251,873,251,844,253"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08f0dcfa0cd43d67605e9a8686139522" name="a08f0dcfa0cd43d67605e9a8686139522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f0dcfa0cd43d67605e9a8686139522">&#9670;&#160;</a></span>CheckSegmentMeshIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D? HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.CheckSegmentMeshIntersection </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mesh</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a line segment intersects with a mesh. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>Segment start point.</td></tr>
+    <tr><td class="paramname">end</td><td>Segment end point.</td></tr>
+    <tr><td class="paramname">mesh</td><td>Mesh to test against.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>First intersection point, or null if no intersection.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00111">111</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00016">_collisionTolerance</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00157">RayTriangleIntersection()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00057">ValidatePathClearsPartVolume()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_cgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_cgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_cgraph">
+<area shape="rect" title="Checks if a line segment intersects with a mesh." alt="" coords="5,5,280,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a84913735ff5731cb42ba1ee2ae938705" title="Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="328,5,550,64"/>
+<area shape="poly" title=" " alt="" coords="280,32,315,35,310,35,280,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a08f0dcfa0cd43d67605e9a8686139522_icgraph">
+<area shape="rect" title="Checks if a line segment intersects with a mesh." alt="" coords="569,5,843,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#af7e90d835f3eec45328e54d4db811466" title="Validates that a complete path does not intersect the part interior. Uses ray&#45;segment intersection te..." alt="" coords="259,5,521,64"/>
+<area shape="poly" title=" " alt="" coords="551,35,521,37,521,32,556,35"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="240,35,211,37,211,32,246,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29466f3cf5859961eea3a6573b64f7fd" name="a29466f3cf5859961eea3a6573b64f7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29466f3cf5859961eea3a6573b64f7fd">&#9670;&#160;</a></span>ExpandPathFromCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.ExpandPathFromCenter </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>expansionFactor</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Expands path points away from the part center. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00302">302</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00267">FindNearestShellPoint()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">AttemptShellReroute()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_cgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_cgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_cgraph">
+<area shape="rect" title="Expands path points away from the part center." alt="" coords="5,5,230,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a0315b7be78fd67bddc00c003e0900b14" title="Finds the nearest point on the shell mesh to a query point." alt="" coords="278,5,492,64"/>
+<area shape="poly" title=" " alt="" coords="230,32,265,34,259,35,230,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a29466f3cf5859961eea3a6573b64f7fd_icgraph">
+<area shape="rect" title="Expands path points away from the part center." alt="" coords="259,5,483,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="240,35,211,37,211,32,246,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0315b7be78fd67bddc00c003e0900b14" name="a0315b7be78fd67bddc00c003e0900b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0315b7be78fd67bddc00c003e0900b14">&#9670;&#160;</a></span>FindNearestShellPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.FindNearestShellPoint </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the nearest point on the shell mesh to a query point. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00267">267</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00015">_shellMesh</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">AttemptShellReroute()</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00302">ExpandPathFromCenter()</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00347">PushPointToShellSurface()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a0315b7be78fd67bddc00c003e0900b14_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a0315b7be78fd67bddc00c003e0900b14_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a0315b7be78fd67bddc00c003e0900b14_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a0315b7be78fd67bddc00c003e0900b14_icgraph">
+<area shape="rect" title="Finds the nearest point on the shell mesh to a query point." alt="" coords="539,39,753,97"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="531,35,491,29,418,23,345,21,212,27,211,22,345,16,418,18,491,24,537,34"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a29466f3cf5859961eea3a6573b64f7fd" title="Expands path points away from the part center." alt="" coords="263,39,487,97"/>
+<area shape="poly" title=" " alt="" coords="521,68,488,71,487,65,526,68"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#aa540e7c54ee25aa1fff8c9c193d40ec8" title="Pushes an interior point outward to the shell surface." alt="" coords="259,121,491,180"/>
+<area shape="poly" title=" " alt="" coords="536,102,474,123,473,118,531,103"/>
+<area shape="poly" title=" " alt="" coords="245,53,212,50,211,45,250,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f813758b460be9f4cbdb6082821c107" name="a3f813758b460be9f4cbdb6082821c107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f813758b460be9f4cbdb6082821c107">&#9670;&#160;</a></span>InterpolatePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.InterpolatePoint </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Linear interpolation between two points. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00291">291</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">AttemptShellReroute()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a3f813758b460be9f4cbdb6082821c107_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a3f813758b460be9f4cbdb6082821c107_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a3f813758b460be9f4cbdb6082821c107_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a3f813758b460be9f4cbdb6082821c107_icgraph">
+<area shape="rect" title="Linear interpolation between two points." alt="" coords="259,5,451,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="240,35,211,37,211,32,245,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa540e7c54ee25aa1fff8c9c193d40ec8" name="aa540e7c54ee25aa1fff8c9c193d40ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa540e7c54ee25aa1fff8c9c193d40ec8">&#9670;&#160;</a></span>PushPointToShellSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.PushPointToShellSurface </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>interiorPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>partCentroid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes an interior point outward to the shell surface. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interiorPoint</td><td><a class="el" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> that may be inside the part.</td></tr>
+    <tr><td class="paramname">partCentroid</td><td>Part centroid for direction calculation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> on or near the shell surface.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00347">347</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00015">_shellMesh</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00267">FindNearestShellPoint()</a> e <a class="el" href="../../d7/d00/_shell_projection_utils_8cs_source.html#l00385">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellProjectionUtils.RaycastToShellSurface()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_aa540e7c54ee25aa1fff8c9c193d40ec8_cgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_aa540e7c54ee25aa1fff8c9c193d40ec8_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_aa540e7c54ee25aa1fff8c9c193d40ec8_cgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_aa540e7c54ee25aa1fff8c9c193d40ec8_cgraph">
+<area shape="rect" title="Pushes an interior point outward to the shell surface." alt="" coords="5,47,238,105"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a0315b7be78fd67bddc00c003e0900b14" title="Finds the nearest point on the shell mesh to a query point." alt="" coords="290,5,504,64"/>
+<area shape="poly" title=" " alt="" coords="237,56,277,52,272,54,239,61"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ab93984584589e961a0ad13da2b798b5a" title="Raycasts from a point in a direction to find intersection with the shell mesh. Uses Möller&#45;Trumbore a..." alt="" coords="286,88,508,147"/>
+<area shape="poly" title=" " alt="" coords="238,91,273,98,267,98,238,96"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ab05ea6aa5e0e8b2fcd0c5738e03fc1e0" title="Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="556,88,778,147"/>
+<area shape="poly" title=" " alt="" coords="509,115,543,117,538,117,509,120"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a84913735ff5731cb42ba1ee2ae938705" name="a84913735ff5731cb42ba1ee2ae938705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84913735ff5731cb42ba1ee2ae938705">&#9670;&#160;</a></span>RayTriangleIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? Point3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.RayTriangleIntersection </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>rayOrigin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>rayDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Möller-Trumbore ray-triangle intersection algorithm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00157">157</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00111">CheckSegmentMeshIntersection()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a84913735ff5731cb42ba1ee2ae938705_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a84913735ff5731cb42ba1ee2ae938705_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a84913735ff5731cb42ba1ee2ae938705_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_a84913735ff5731cb42ba1ee2ae938705_icgraph">
+<area shape="rect" title="Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="891,5,1114,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a08f0dcfa0cd43d67605e9a8686139522" title="Checks if a line segment intersects with a mesh." alt="" coords="569,5,843,64"/>
+<area shape="poly" title=" " alt="" coords="873,35,844,37,844,32,879,35"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#af7e90d835f3eec45328e54d4db811466" title="Validates that a complete path does not intersect the part interior. Uses ray&#45;segment intersection te..." alt="" coords="259,5,521,64"/>
+<area shape="poly" title=" " alt="" coords="551,35,521,37,521,32,556,35"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="240,35,211,37,211,32,246,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af7e90d835f3eec45328e54d4db811466" name="af7e90d835f3eec45328e54d4db811466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e90d835f3eec45328e54d4db811466">&#9670;&#160;</a></span>ValidatePathClearsPartVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html">CollisionCheckResult</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics.ValidatePathClearsPartVolume </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>pathPoints</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates that a complete path does not intersect the part interior. Uses ray-segment intersection tests against the part mesh. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathPoints</td><td>The path points to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Collision check result with details.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00057">57</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00014">_partMesh</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00111">CheckSegmentMeshIntersection()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">AttemptShellReroute()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_cgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_cgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_cgraph">
+<area shape="rect" title="Validates that a complete path does not intersect the part interior. Uses ray&#45;segment intersection te..." alt="" coords="5,5,268,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a08f0dcfa0cd43d67605e9a8686139522" title="Checks if a line segment intersects with a mesh." alt="" coords="316,5,590,64"/>
+<area shape="poly" title=" " alt="" coords="268,32,303,34,297,35,268,37"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a84913735ff5731cb42ba1ee2ae938705" title="Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="638,5,860,64"/>
+<area shape="poly" title=" " alt="" coords="590,32,625,35,620,35,590,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_icgraph.png" border="0" usemap="#ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_icgraph" id="ad1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_af7e90d835f3eec45328e54d4db811466_icgraph">
+<area shape="rect" title="Validates that a complete path does not intersect the part interior. Uses ray&#45;segment intersection te..." alt="" coords="259,5,521,64"/>
+<area shape="rect" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics.html#a26b49e785fb370b728f823eeaaa13a55" title="Attempts to find an alternate shell&#45;based path when a direct path has collisions. Uses the shell mesh..." alt="" coords="5,5,211,64"/>
+<area shape="poly" title=" " alt="" coords="240,35,211,37,211,32,246,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="acf20dee4f154d13868e0a4b43055ce61" name="acf20dee4f154d13868e0a4b43055ce61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf20dee4f154d13868e0a4b43055ce61">&#9670;&#160;</a></span>_collisionTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics._collisionTolerance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00111">CheckSegmentMeshIntersection()</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00024">CollisionHeuristics()</a>.</p>
+
+</div>
+</div>
+<a id="ac1328fcd9499110b88b5be15bb0ff40f" name="ac1328fcd9499110b88b5be15bb0ff40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1328fcd9499110b88b5be15bb0ff40f">&#9670;&#160;</a></span>_partMesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly? Mesh HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics._partMesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00014">14</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00024">CollisionHeuristics()</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00057">ValidatePathClearsPartVolume()</a>.</p>
+
+</div>
+</div>
+<a id="a5254dc2e0d3e4007781df700efda09d5" name="a5254dc2e0d3e4007781df700efda09d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5254dc2e0d3e4007781df700efda09d5">&#9670;&#160;</a></span>_shellMesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly? Mesh HirEV_SmartFitSystemsApp.Utilities.Algorithms.CollisionHeuristics._shellMesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00207">AttemptShellReroute()</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00024">CollisionHeuristics()</a>, <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00267">FindNearestShellPoint()</a> e <a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html#l00347">PushPointToShellSurface()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d3/d01/_collision_heuristics_8cs_source.html">CollisionHeuristics.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

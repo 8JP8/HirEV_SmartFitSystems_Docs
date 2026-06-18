@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/PathVolumeValidator.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d3/d02/_path_volume_validator_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PathVolumeValidator.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d02/_path_volume_validator_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Eyeshot.Entities;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Diagnostics;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html">   13</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a119dfccd4a592d0fe64ab1ae681a10fb">PathVolumeValidator</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">   15</a></span>        <span class="keyword">private</span> readonly <a class="code hl_class" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a> <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a7c949bbd07cbeffeb8d905af461366cf">   16</a></span>        <span class="keyword">private</span> readonly List&lt;Brep?&gt; <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a7c949bbd07cbeffeb8d905af461366cf">_partObstacles</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a119dfccd4a592d0fe64ab1ae681a10fb">   23</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a119dfccd4a592d0fe64ab1ae681a10fb">PathVolumeValidator</a>(<a class="code hl_class" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a> shellGenerator, List&lt;Brep?&gt; partObstacles)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a> = shellGenerator ?? <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(nameof(shellGenerator));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a7c949bbd07cbeffeb8d905af461366cf">_partObstacles</a> = partObstacles ?? <span class="keyword">new</span> List&lt;Brep?&gt;();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189">IsInsidePartVolume</a>(Point3D point)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="comment">// Primary: use Brep.IsPointInside (authoritative)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">foreach</span> (var brep <span class="keywordflow">in</span> <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a7c949bbd07cbeffeb8d905af461366cf">_partObstacles</a>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">if</span> (brep == <span class="keyword">null</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    var status = brep.IsPointInside(point);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordflow">if</span> (status != pointStatusType.Outside)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">catch</span> { <span class="comment">/* ignore single-brep failures */</span> }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="comment">// Secondary: use SDF sign (negative == inside part, before offset)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">double</span> sdf = <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a>.GetDistance(point);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span> sdf &lt; 0 &amp;&amp; sdf != <span class="keywordtype">double</span>.MaxValue;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#aa3e367a442c69ffcf81a76b42a87e4c6">   63</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#aa3e367a442c69ffcf81a76b42a87e4c6">ValidateAndCorrectApproachPoints</a>(List&lt;ApproachMeasurementPair&gt; pairs, <span class="keywordtype">double</span> tolerance = 1.5)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordtype">int</span> corrected = 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordtype">double</span> halfOffset = _shellGenerator.OffsetDistance / 2.0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">foreach</span> (var pair <span class="keywordflow">in</span> pairs)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">if</span> (pair == <span class="keyword">null</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordtype">double</span> sdf = <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a>.GetDistance(pair.ApproachPoint);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="comment">// Point is acceptable when SDF &gt;= halfOffset (clearly outside the inner half of the shell wall)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordtype">bool</span> isViolating = sdf == double.MaxValue   <span class="comment">// outside SDF grid – treat as unknown, be conservative</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                   ? <span class="keyword">false</span>                   <span class="comment">// unknown → leave as-is (avoid false corrections)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                   : sdf &lt; halfOffset;       <span class="comment">// too close to / inside the shell</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">if</span> (!isViolating) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="comment">// Attempt 1: project to nearest shell surface point</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                var nearest = <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a>.FindNearestShellPoint(pair.ApproachPoint);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">if</span> (nearest != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    Debug.WriteLine($<span class="stringliteral">&quot;   🔧 PVV: corrected approach {pair.ApproachPoint:F1} → {nearest:F1} (sdf={sdf:F2} &lt; halfOffset={halfOffset:F2}) (Face ID: {pair.ParentFace.FaceGlobalIndex})&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    pair.ApproachPoint = nearest;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    corrected++;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="comment">// Attempt 2: push outward along the measurement→approach normal by the deficit</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordtype">double</span> deficit = halfOffset - sdf; <span class="comment">// how much further we need to go</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                var outDir = <span class="keyword">new</span> Vector3D(pair.ApproachPoint.X - pair.MeasurementPoint.X,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                          pair.ApproachPoint.Y - pair.MeasurementPoint.Y,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                                          pair.ApproachPoint.Z - pair.MeasurementPoint.Z);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">if</span> (outDir.Length &gt; 1e-6)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    outDir.Normalize();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    pair.ApproachPoint = pair.ApproachPoint + outDir * (deficit + 0.5);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    Debug.WriteLine($<span class="stringliteral">&quot;   🔧 PVV: pushed approach along normal by {deficit + 0.5:F2}mm (sdf={sdf:F2}) (Face ID: {pair.ParentFace.FaceGlobalIndex})&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    corrected++;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">return</span> corrected;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a58f8394919e8258bea7ed9127239ce52">  109</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a58f8394919e8258bea7ed9127239ce52">ValidateAndCorrectPath</a>(List&lt;Point3D&gt; pathPoints, List&lt;bool&gt; measurementMask, <span class="keywordtype">double</span> tolerance = 1.5)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordtype">int</span> corrected = 0;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; pathPoints.Count; i++)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="comment">// Only correct non-measurement (transition / approach) points</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keywordflow">if</span> (measurementMask != <span class="keyword">null</span> &amp;&amp; i &lt; measurementMask.Count &amp;&amp; measurementMask[i])</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189">IsInsidePartVolume</a>(pathPoints[i]))</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    var pushed = <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ab81112ab49282a6d13f83655789e0ad2">PushToShellSurface</a>(pathPoints[i], tolerance);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    <span class="keywordflow">if</span> (pushed != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                        pathPoints[i] = pushed;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                        corrected++;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordflow">return</span> corrected;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ab81112ab49282a6d13f83655789e0ad2">  137</a></span>        <span class="keyword">private</span> Point3D? <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ab81112ab49282a6d13f83655789e0ad2">PushToShellSurface</a>(Point3D interiorPoint, <span class="keywordtype">double</span> tolerance)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">_shellGenerator</a>.FindNearestShellPoint(interiorPoint);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span></div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac9415078871635e092f2fe20bb1d225b">  148</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac9415078871635e092f2fe20bb1d225b">ValidateSegmentsClearOfVolume</a>(List&lt;Point3D&gt; pathPoints, <span class="keywordtype">int</span> samplesPerSegment = 5)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; pathPoints.Count - 1; i++)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                var a = pathPoints[i];</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                var b = pathPoints[i + 1];</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> s = 1; s &lt; samplesPerSegment; s++)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                    <span class="keywordtype">double</span> t = (double)s / samplesPerSegment;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    var sample = <span class="keyword">new</span> Point3D(</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                        a.X + (b.X - a.X) * t,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                        a.Y + (b.Y - a.Y) * t,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                        a.Z + (b.Z - a.Z) * t);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189">IsInsidePartVolume</a>(sample))</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_a119dfccd4a592d0fe64ab1ae681a10fb"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a119dfccd4a592d0fe64ab1ae681a10fb">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.PathVolumeValidator</a></div><div class="ttdeci">PathVolumeValidator(SdfShellGenerator shellGenerator, List&lt; Brep?&gt; partObstacles)</div><div class="ttdoc">Initializes a new instance of the PathVolumeValidator class.</div><div class="ttdef"><b>Definição</b> <a href="#l00023">PathVolumeValidator.cs:23</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_a27344d26d8af148e352ca6b739f4b189"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a27344d26d8af148e352ca6b739f4b189">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.IsInsidePartVolume</a></div><div class="ttdeci">bool IsInsidePartVolume(Point3D point)</div><div class="ttdoc">Returns true when the point is clearly inside the part solid (SDF &lt; 0, raw part surface)....</div><div class="ttdef"><b>Definição</b> <a href="#l00033">PathVolumeValidator.cs:33</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_a58f8394919e8258bea7ed9127239ce52"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a58f8394919e8258bea7ed9127239ce52">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateAndCorrectPath</a></div><div class="ttdeci">int ValidateAndCorrectPath(List&lt; Point3D &gt; pathPoints, List&lt; bool &gt; measurementMask, double tolerance=1.5)</div><div class="ttdoc">Validates that all path points stay outside the part volume (shell interior check).</div><div class="ttdef"><b>Definição</b> <a href="#l00109">PathVolumeValidator.cs:109</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_a7c949bbd07cbeffeb8d905af461366cf"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#a7c949bbd07cbeffeb8d905af461366cf">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator._partObstacles</a></div><div class="ttdeci">readonly List&lt; Brep?&gt; _partObstacles</div><div class="ttdef"><b>Definição</b> <a href="#l00016">PathVolumeValidator.cs:16</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_aa3e367a442c69ffcf81a76b42a87e4c6"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#aa3e367a442c69ffcf81a76b42a87e4c6">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateAndCorrectApproachPoints</a></div><div class="ttdeci">int ValidateAndCorrectApproachPoints(List&lt; ApproachMeasurementPair &gt; pairs, double tolerance=1.5)</div><div class="ttdoc">Validates and corrects approach points so that none sits more than half the shell offset distance ins...</div><div class="ttdef"><b>Definição</b> <a href="#l00063">PathVolumeValidator.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_ab81112ab49282a6d13f83655789e0ad2"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ab81112ab49282a6d13f83655789e0ad2">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.PushToShellSurface</a></div><div class="ttdeci">Point3D? PushToShellSurface(Point3D interiorPoint, double tolerance)</div><div class="ttdoc">Projects an interior point back onto the outer shell boundary surface.</div><div class="ttdef"><b>Definição</b> <a href="#l00137">PathVolumeValidator.cs:137</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_ac3652deed39f9a408c08dc12981dbdab"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac3652deed39f9a408c08dc12981dbdab">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator._shellGenerator</a></div><div class="ttdeci">readonly SdfShellGenerator _shellGenerator</div><div class="ttdef"><b>Definição</b> <a href="#l00015">PathVolumeValidator.cs:15</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator_html_ac9415078871635e092f2fe20bb1d225b"><div class="ttname"><a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html#ac9415078871635e092f2fe20bb1d225b">HirEV_SmartFitSystemsApp.Utilities.Algorithms.PathVolumeValidator.ValidateSegmentsClearOfVolume</a></div><div class="ttdeci">bool ValidateSegmentsClearOfVolume(List&lt; Point3D &gt; pathPoints, int samplesPerSegment=5)</div><div class="ttdoc">Validates that all path segments are fully outside of the part volume.</div><div class="ttdef"><b>Definição</b> <a href="#l00148">PathVolumeValidator.cs:148</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_html"><div class="ttname"><a href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator</a></div><div class="ttdoc">Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field ...</div><div class="ttdef"><b>Definição</b> <a href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00018">SdfShellGenerator.cs:19</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_html"><div class="ttname"><a href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div><div class="ttdef"><b>Definição</b> <a href="../../dc/d03/_approach_point_generator_8cs_source.html#l00005">ApproachPointGenerator.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

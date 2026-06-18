@@ -1,0 +1,1713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html','../../','d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manages creation, display, and removal of temporary visual markers in the Eyeshot 3D viewport.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_eyeshot_visuals_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_eyeshot_visuals_manager_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_eyeshot_visuals_manager_coll__map">
+<area shape="rect" title="Manages creation, display, and removal of temporary visual markers in the Eyeshot 3D viewport." alt="" coords="5,5,205,869"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a969b03a57d569a36e60c4e2180e4899e" id="r_a969b03a57d569a36e60c4e2180e4899e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a969b03a57d569a36e60c4e2180e4899e">EyeshotVisualsManager</a> (Design designControl, double blueSphereSize, double pinkSphereSize, double yellowCubeSize, double holeSphereSize, double holeDepthLineWidth)</td></tr>
+<tr class="memdesc:a969b03a57d569a36e60c4e2180e4899e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html" title="Manages creation, display, and removal of temporary visual markers in the Eyeshot 3D viewport.">EyeshotVisualsManager</a> class.  <br /></td></tr>
+<tr class="memitem:a671e6b35bb6bc84175b55ec5cb82a2da" id="r_a671e6b35bb6bc84175b55ec5cb82a2da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a671e6b35bb6bc84175b55ec5cb82a2da">ShowCornerMarkersForFace</a> (<a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, int highlightVertexIndex=-1)</td></tr>
+<tr class="memdesc:a671e6b35bb6bc84175b55ec5cb82a2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays yellow cube markers at all corner points of a <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a>.  <br /></td></tr>
+<tr class="memitem:a5ba488badd394f3dd56d32804340a904" id="r_a5ba488badd394f3dd56d32804340a904"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5ba488badd394f3dd56d32804340a904">ShowHoleCenterAndDepth</a> (<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> hole)</td></tr>
+<tr class="memdesc:a5ba488badd394f3dd56d32804340a904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra um marcador no centro do furo e um indicador da profundidade (linha + texto). Implementação tolerante: tenta extrair propriedades comuns do model do furo via reflexão.  <br /></td></tr>
+<tr class="memitem:a041f4c9240c340b9197bfe83f91a98f5" id="r_a041f4c9240c340b9197bfe83f91a98f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a041f4c9240c340b9197bfe83f91a98f5">ShowControlPointsForFace</a> (<a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face)</td></tr>
+<tr class="memdesc:a041f4c9240c340b9197bfe83f91a98f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows control points for the selected face as magenta spheres.  <br /></td></tr>
+<tr class="memitem:a08882c9afa32d117a392a408df147e97" id="r_a08882c9afa32d117a392a408df147e97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a08882c9afa32d117a392a408df147e97">ShowTemporaryControlPointSphere</a> (Point4D controlPoint)</td></tr>
+<tr class="memdesc:a08882c9afa32d117a392a408df147e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a temporary red sphere for a single measurement point (when clicked in TreeView).  <br /></td></tr>
+<tr class="memitem:a2fc54a0477273708cbd1ad6ab1fb6c45" id="r_a2fc54a0477273708cbd1ad6ab1fb6c45"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2fc54a0477273708cbd1ad6ab1fb6c45">HighlightFaceVisualFallback</a> (Brep? brep, int faceIndex)</td></tr>
+<tr class="memdesc:a2fc54a0477273708cbd1ad6ab1fb6c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a visual highlight (sampled spheres) for a face when Eyeshot's API selection fails.  <br /></td></tr>
+<tr class="memitem:a980a22683b212a4c943ab5df8627f2ab" id="r_a980a22683b212a4c943ab5df8627f2ab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a980a22683b212a4c943ab5df8627f2ab">ClearControlPointSpheres</a> ()</td></tr>
+<tr class="memdesc:a980a22683b212a4c943ab5df8627f2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all active control point spheres.  <br /></td></tr>
+<tr class="memitem:ae2705eee5f6319214e97c40ba0ef4f1c" id="r_ae2705eee5f6319214e97c40ba0ef4f1c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae2705eee5f6319214e97c40ba0ef4f1c">ClearCornerMarkers</a> ()</td></tr>
+<tr class="memdesc:ae2705eee5f6319214e97c40ba0ef4f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all active corner markers.  <br /></td></tr>
+<tr class="memitem:aa4e4a6a40c8403f85073e1e32a6a9ff3" id="r_aa4e4a6a40c8403f85073e1e32a6a9ff3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4e4a6a40c8403f85073e1e32a6a9ff3">ClearTemporaryControlPointSphere</a> ()</td></tr>
+<tr class="memdesc:aa4e4a6a40c8403f85073e1e32a6a9ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the temporary control point sphere.  <br /></td></tr>
+<tr class="memitem:ab085caa35dfe46fae538128488efaa75" id="r_ab085caa35dfe46fae538128488efaa75"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab085caa35dfe46fae538128488efaa75">ClearAllMarkers</a> ()</td></tr>
+<tr class="memdesc:ab085caa35dfe46fae538128488efaa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all types of temporary visual markers.  <br /></td></tr>
+<tr class="memitem:adf7bfb14d26b797da616dc8fe7bed61c" id="r_adf7bfb14d26b797da616dc8fe7bed61c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adf7bfb14d26b797da616dc8fe7bed61c">DrawAllMarkers</a> (System.Collections.Generic.Dictionary&lt; string, System.Collections.Generic.List&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; &gt; allFacesByColor, System.Collections.Generic.Dictionary&lt; string, System.Collections.Generic.List&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt; &gt; holesByColor, System.Collections.Generic.IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; ignoredFaces, System.Collections.Generic.IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt; ignoredHoles, System.Collections.Generic.HashSet&lt; int &gt; flippedFaceNormals)</td></tr>
+<tr class="memdesc:adf7bfb14d26b797da616dc8fe7bed61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batch draws markers for all active items in the session.  <br /></td></tr>
+<tr class="memitem:a232072dce4a16f92af37c577b78fa896" id="r_a232072dce4a16f92af37c577b78fa896"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a232072dce4a16f92af37c577b78fa896">ClearHoleVisuals</a> ()</td></tr>
+<tr class="memdesc:a232072dce4a16f92af37c577b78fa896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto).  <br /></td></tr>
+<tr class="memitem:afabddd16f0dd18e13a0193a3655bad54" id="r_afabddd16f0dd18e13a0193a3655bad54"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afabddd16f0dd18e13a0193a3655bad54">RemoveHoverHighlight</a> ()</td></tr>
+<tr class="memdesc:afabddd16f0dd18e13a0193a3655bad54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the hover highlight (snap marker or fallback highlight spheres).  <br /></td></tr>
+<tr class="memitem:a39ca4bb396673465663f82881c92e6c2" id="r_a39ca4bb396673465663f82881c92e6c2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a39ca4bb396673465663f82881c92e6c2">SetHoverSnapMarker</a> (Point3D point, System.Drawing.Color color, double size)</td></tr>
+<tr class="memdesc:a39ca4bb396673465663f82881c92e6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the hover snap marker (e.g., a sphere at a hovered point).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a2332003b0c2fbf60a74dc2dfe673d1a7" id="r_a2332003b0c2fbf60a74dc2dfe673d1a7"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2332003b0c2fbf60a74dc2dfe673d1a7">SetEyeshotQualitySetting</a> (<a class="el" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#a26e764b011b0308fb9e038e2d5cec456">QualitySettingEnum</a> setting, Design eyeshot_designer)</td></tr>
+<tr class="memdesc:a2332003b0c2fbf60a74dc2dfe673d1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rendering quality setting for the given Eyeshot design control.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:ade3bc64883f305326cea4b4b46fde985" id="r_ade3bc64883f305326cea4b4b46fde985"><td class="memItemLeft">List&lt; Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ade3bc64883f305326cea4b4b46fde985">ControlPointSpheres</a> = new List&lt;Entity&gt;()<code> [get]</code></td></tr>
+<tr class="memdesc:ade3bc64883f305326cea4b4b46fde985"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all control point sphere entities currently displayed.  <br /></td></tr>
+<tr class="memitem:aeaae7f34bad32f0fe36690a8b24b8d95" id="r_aeaae7f34bad32f0fe36690a8b24b8d95"><td class="memItemLeft">Entity?&#160;</td><td class="memItemRight"><a class="el" href="#aeaae7f34bad32f0fe36690a8b24b8d95">TemporaryControlPointSphere</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:aeaae7f34bad32f0fe36690a8b24b8d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary control point sphere shown during creation/adjustment.  <br /></td></tr>
+<tr class="memitem:a31055674531042c10091836ed0530b93" id="r_a31055674531042c10091836ed0530b93"><td class="memItemLeft">List&lt; Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a31055674531042c10091836ed0530b93">CornerMarkers</a> = new List&lt;Entity&gt;()<code> [get]</code></td></tr>
+<tr class="memdesc:a31055674531042c10091836ed0530b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of corner marker cube entities currently displayed.  <br /></td></tr>
+<tr class="memitem:aa609d22f6ea14d5dc1f4404d25131712" id="r_aa609d22f6ea14d5dc1f4404d25131712"><td class="memItemLeft">Entity?&#160;</td><td class="memItemRight"><a class="el" href="#aa609d22f6ea14d5dc1f4404d25131712">HoverSnapMarker</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:aa609d22f6ea14d5dc1f4404d25131712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hover snap marker shown at point under mouse cursor.  <br /></td></tr>
+<tr class="memitem:a6722a0ece19b2b8506be82d57312e65d" id="r_a6722a0ece19b2b8506be82d57312e65d"><td class="memItemLeft">Entity?&#160;</td><td class="memItemRight"><a class="el" href="#a6722a0ece19b2b8506be82d57312e65d">HoleCenterMarker</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a6722a0ece19b2b8506be82d57312e65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sphere entity at the center of the currently selected hole.  <br /></td></tr>
+<tr class="memitem:a35fa773f85d1ca69770b9750d41ed84d" id="r_a35fa773f85d1ca69770b9750d41ed84d"><td class="memItemLeft">Entity?&#160;</td><td class="memItemRight"><a class="el" href="#a35fa773f85d1ca69770b9750d41ed84d">HoleDepthLine</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a35fa773f85d1ca69770b9750d41ed84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line entity visualizing hole depth.  <br /></td></tr>
+<tr class="memitem:a48429922adf4e8a81b1f082fa5f641e0" id="r_a48429922adf4e8a81b1f082fa5f641e0"><td class="memItemLeft">Entity?&#160;</td><td class="memItemRight"><a class="el" href="#a48429922adf4e8a81b1f082fa5f641e0">HoleDepthText</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a48429922adf4e8a81b1f082fa5f641e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text entity displaying hole depth value.  <br /></td></tr>
+<tr class="memitem:a58602f69a21ec22f74de0b115abb2693" id="r_a58602f69a21ec22f74de0b115abb2693"><td class="memItemLeft"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a58602f69a21ec22f74de0b115abb2693">CurrentSelectedFace</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a58602f69a21ec22f74de0b115abb2693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a> for context.  <br /></td></tr>
+<tr class="memitem:ae0338da94e57352ae1db2163d07a0108" id="r_ae0338da94e57352ae1db2163d07a0108"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae0338da94e57352ae1db2163d07a0108">ControlPointSelectionEnabled</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:ae0338da94e57352ae1db2163d07a0108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating whether control point selection mode is active.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
+Eventos</h2></td></tr>
+<tr class="memitem:a0c5edd0d54e11dd5f89c47e9303bd0fa" id="r_a0c5edd0d54e11dd5f89c47e9303bd0fa"><td class="memItemLeft">Action?&#160;</td><td class="memItemRight"><a class="el" href="#a0c5edd0d54e11dd5f89c47e9303bd0fa">ControlPointsVisualsCleared</a></td></tr>
+<tr class="memdesc:a0c5edd0d54e11dd5f89c47e9303bd0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when control point visuals are cleared.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a7fc741c94a113c04758abbeafd9b9995" id="r_a7fc741c94a113c04758abbeafd9b9995"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7fc741c94a113c04758abbeafd9b9995">EnsureMarkersLayerExists</a> ()</td></tr>
+<tr class="memdesc:a7fc741c94a113c04758abbeafd9b9995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the MARKERS layer exists in the design control.  <br /></td></tr>
+<tr class="memitem:adfacb0a8090ba7595fd433ed51822ae2" id="r_adfacb0a8090ba7595fd433ed51822ae2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adfacb0a8090ba7595fd433ed51822ae2">ShowHoleCenterMarkerOnly</a> (<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> hole)</td></tr>
+<tr class="memdesc:adfacb0a8090ba7595fd433ed51822ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays only the center marker sphere of the specified CAD hole.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:aeba5de4b412d64d094ea08793cd923e8" id="r_aeba5de4b412d64d094ea08793cd923e8"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aeba5de4b412d64d094ea08793cd923e8">SetPerformanceMode</a> (Design design)</td></tr>
+<tr class="memdesc:aeba5de4b412d64d094ea08793cd923e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Design control for the best real-time performance.  <br /></td></tr>
+<tr class="memitem:a36352dc12737319ec191e6516e23fa86" id="r_a36352dc12737319ec191e6516e23fa86"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a36352dc12737319ec191e6516e23fa86">SetQualityMode</a> (Design design)</td></tr>
+<tr class="memdesc:a36352dc12737319ec191e6516e23fa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Design control for the best visual quality.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:ae5c1132dc6d561012cd1598889f6d497" id="r_ae5c1132dc6d561012cd1598889f6d497"><td class="memItemLeft">readonly Design&#160;</td><td class="memItemRight"><a class="el" href="#ae5c1132dc6d561012cd1598889f6d497">_designControl</a></td></tr>
+<tr class="memdesc:ae5c1132dc6d561012cd1598889f6d497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the Eyeshot Design control for entity management.  <br /></td></tr>
+<tr class="memitem:a9e5ff7daf0f78dedd4da7bb898b8976b" id="r_a9e5ff7daf0f78dedd4da7bb898b8976b"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a9e5ff7daf0f78dedd4da7bb898b8976b">_blueSphereSize</a></td></tr>
+<tr class="memdesc:a9e5ff7daf0f78dedd4da7bb898b8976b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of blue control point spheres in mm.  <br /></td></tr>
+<tr class="memitem:a52026797ec90251cc22ed2cd9adf6d93" id="r_a52026797ec90251cc22ed2cd9adf6d93"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a52026797ec90251cc22ed2cd9adf6d93">_pinkSphereSize</a></td></tr>
+<tr class="memdesc:a52026797ec90251cc22ed2cd9adf6d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of pink hole center spheres in mm.  <br /></td></tr>
+<tr class="memitem:af7859eac2c15ca418a5f7ce9b4c5b626" id="r_af7859eac2c15ca418a5f7ce9b4c5b626"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#af7859eac2c15ca418a5f7ce9b4c5b626">_yellowCubeSize</a></td></tr>
+<tr class="memdesc:af7859eac2c15ca418a5f7ce9b4c5b626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of yellow corner marker cubes in mm.  <br /></td></tr>
+<tr class="memitem:a465c76ee76dff3087033fd1831058c77" id="r_a465c76ee76dff3087033fd1831058c77"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a465c76ee76dff3087033fd1831058c77">_holeSphereSize</a></td></tr>
+<tr class="memdesc:a465c76ee76dff3087033fd1831058c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of hole indicator spheres in mm.  <br /></td></tr>
+<tr class="memitem:aa90f84df512edb320ae939866d987afc" id="r_aa90f84df512edb320ae939866d987afc"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#aa90f84df512edb320ae939866d987afc">_holeDepthLineWidth</a></td></tr>
+<tr class="memdesc:aa90f84df512edb320ae939866d987afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of hole depth indicator lines in pixels.  <br /></td></tr>
+<tr class="memitem:adff03aca8b1d2ed85185da4dc9707820" id="r_adff03aca8b1d2ed85185da4dc9707820"><td class="memItemLeft">readonly List&lt; Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adff03aca8b1d2ed85185da4dc9707820">_currentHoleVisuals</a> = new List&lt;Entity&gt;()</td></tr>
+<tr class="memdesc:adff03aca8b1d2ed85185da4dc9707820"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of current hole visualization entities (center marker, depth line, text).  <br /></td></tr>
+<tr class="memitem:a2da2d78b46fcec41a4ce3a7df89ea494" id="r_a2da2d78b46fcec41a4ce3a7df89ea494"><td class="memItemLeft">readonly List&lt; Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2da2d78b46fcec41a4ce3a7df89ea494">_hoverHighlightEntities</a> = new List&lt;Entity&gt;()</td></tr>
+<tr class="memdesc:a2da2d78b46fcec41a4ce3a7df89ea494"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of entities used for hover highlighting.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:a1c87b6173a8fcd3a124339281abe3f5c" id="r_a1c87b6173a8fcd3a124339281abe3f5c"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a1c87b6173a8fcd3a124339281abe3f5c">MARKERS_LAYER</a> = &quot;MARKERS&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Manages creation, display, and removal of temporary visual markers in the Eyeshot 3D viewport. </p>
+<p>Provides visual feedback for user interactions and geometry analysis including:</p>
+<ul>
+<li>
+<b>Control <a class="el" href="../../d6/d03/_main_window_8xaml_8cs.html#af7183cff3a6e75db2170da28384d7419">Point</a> Spheres:</b> Blue spheres showing measurement points on faces </li>
+<li>
+<b>Corner Markers:</b> Yellow cubes highlighting face vertices and corners </li>
+<li>
+<b>Hole Indicators:</b> Pink spheres at hole centers with depth visualization </li>
+<li>
+<b>Hover Highlights:</b> Temporary markers showing geometry under the mouse cursor </li>
+<li>
+<b>Face Highlights:</b> Temporary color overlays for selected faces </li>
+</ul>
+<p><b>Performance:</b> Uses async Task.Run for marker generation to keep UI responsive. Markers are cached in lists for batch clearing operations.</p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00026">26</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a969b03a57d569a36e60c4e2180e4899e" name="a969b03a57d569a36e60c4e2180e4899e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969b03a57d569a36e60c4e2180e4899e">&#9670;&#160;</a></span>EyeshotVisualsManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.EyeshotVisualsManager </td>
+          <td>(</td>
+          <td class="paramtype">Design</td>          <td class="paramname"><span class="paramname"><em>designControl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>blueSphereSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pinkSphereSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>yellowCubeSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>holeSphereSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>holeDepthLineWidth</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html" title="Manages creation, display, and removal of temporary visual markers in the Eyeshot 3D viewport.">EyeshotVisualsManager</a> class. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designControl</td><td>The Eyeshot Design control to add visual entities to</td></tr>
+    <tr><td class="paramname">blueSphereSize</td><td>Size of blue control point spheres in mm</td></tr>
+    <tr><td class="paramname">pinkSphereSize</td><td>Size of pink hole center spheres in mm</td></tr>
+    <tr><td class="paramname">yellowCubeSize</td><td>Size of yellow corner marker cubes in mm</td></tr>
+    <tr><td class="paramname">holeSphereSize</td><td>Size of hole indicator spheres in mm</td></tr>
+    <tr><td class="paramname">holeDepthLineWidth</td><td>Width of hole depth indicator lines in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if designControl is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">82</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00036">_blueSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00044">_holeDepthLineWidth</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00042">_holeSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00038">_pinkSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00040">_yellowCubeSize</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a969b03a57d569a36e60c4e2180e4899e_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a969b03a57d569a36e60c4e2180e4899e_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a969b03a57d569a36e60c4e2180e4899e_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a969b03a57d569a36e60c4e2180e4899e_cgraph">
+<area shape="rect" title="Initializes a new instance of the EyeshotVisualsManager class." alt="" coords="5,5,220,64"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,32,255,34,250,35,220,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="ab085caa35dfe46fae538128488efaa75" name="ab085caa35dfe46fae538128488efaa75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab085caa35dfe46fae538128488efaa75">&#9670;&#160;</a></span>ClearAllMarkers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ClearAllMarkers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all types of temporary visual markers. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">412</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00388">ClearCornerMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00400">ClearTemporaryControlPointSphere()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00070">ControlPointSelectionEnabled</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00068">CurrentSelectedFace</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00427">DrawAllMarkers()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_cgraph">
+<area shape="rect" title="Clears all types of temporary visual markers." alt="" coords="5,171,220,229"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a980a22683b212a4c943ab5df8627f2ab" title="Clears all active control point spheres." alt="" coords="274,5,488,64"/>
+<area shape="poly" title=" " alt="" coords="143,168,198,121,266,74,279,69,275,73,269,78,201,125,147,172"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ae2705eee5f6319214e97c40ba0ef4f1c" title="Clears all active corner markers." alt="" coords="274,88,488,147"/>
+<area shape="poly" title=" " alt="" coords="209,168,271,150,267,153,211,172"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a232072dce4a16f92af37c577b78fa896" title="Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto)." alt="" coords="274,171,488,229"/>
+<area shape="poly" title=" " alt="" coords="219,197,260,199,255,201,221,203"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#aa4e4a6a40c8403f85073e1e32a6a9ff3" title="Clears the temporary control point sphere." alt="" coords="268,253,494,312"/>
+<area shape="poly" title=" " alt="" coords="210,227,272,248,266,249,210,233"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#afabddd16f0dd18e13a0193a3655bad54" title="Removes the hover highlight (snap marker or fallback highlight spheres)." alt="" coords="274,336,488,395"/>
+<area shape="poly" title=" " alt="" coords="145,227,201,275,269,322,279,329,274,329,266,326,198,279,144,232"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ab085caa35dfe46fae538128488efaa75_icgraph">
+<area shape="rect" title="Clears all types of temporary visual markers." alt="" coords="268,5,482,64"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="249,35,220,37,220,32,255,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a980a22683b212a4c943ab5df8627f2ab" name="a980a22683b212a4c943ab5df8627f2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980a22683b212a4c943ab5df8627f2ab">&#9670;&#160;</a></span>ClearControlPointSpheres()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ClearControlPointSpheres </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all active control point spheres. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">374</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00052">ControlPointSpheres</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00031">ControlPointsVisualsCleared</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00068">CurrentSelectedFace</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a980a22683b212a4c943ab5df8627f2ab_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a980a22683b212a4c943ab5df8627f2ab_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a980a22683b212a4c943ab5df8627f2ab_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a980a22683b212a4c943ab5df8627f2ab_icgraph">
+<area shape="rect" title="Clears all active control point spheres." alt="" coords="530,47,744,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="512,57,482,54,482,49,517,57"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a041f4c9240c340b9197bfe83f91a98f5" title="Shows control points for the selected face as magenta spheres." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="517,95,483,103,482,98,512,96"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="250,35,221,37,220,32,255,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2705eee5f6319214e97c40ba0ef4f1c" name="ae2705eee5f6319214e97c40ba0ef4f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2705eee5f6319214e97c40ba0ef4f1c">&#9670;&#160;</a></span>ClearCornerMarkers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ClearCornerMarkers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all active corner markers. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00388">388</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00056">CornerMarkers</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ae2705eee5f6319214e97c40ba0ef4f1c_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ae2705eee5f6319214e97c40ba0ef4f1c_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ae2705eee5f6319214e97c40ba0ef4f1c_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_ae2705eee5f6319214e97c40ba0ef4f1c_icgraph">
+<area shape="rect" title="Clears all active corner markers." alt="" coords="530,47,744,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="512,57,482,54,482,49,517,57"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a671e6b35bb6bc84175b55ec5cb82a2da" title="Displays yellow cube markers at all corner points of a CADFace." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="517,95,483,103,482,98,512,96"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="250,35,221,37,220,32,255,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a232072dce4a16f92af37c577b78fa896" name="a232072dce4a16f92af37c577b78fa896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232072dce4a16f92af37c577b78fa896">&#9670;&#160;</a></span>ClearHoleVisuals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ClearHoleVisuals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">465</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00047">_currentHoleVisuals</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00061">HoleCenterMarker</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00063">HoleDepthLine</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00065">HoleDepthText</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a232072dce4a16f92af37c577b78fa896_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a232072dce4a16f92af37c577b78fa896_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a232072dce4a16f92af37c577b78fa896_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a232072dce4a16f92af37c577b78fa896_icgraph">
+<area shape="rect" title="Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto)." alt="" coords="530,47,744,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="512,57,482,54,482,49,517,57"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a5ba488badd394f3dd56d32804340a904" title="Mostra um marcador no centro do furo e um indicador da profundidade (linha + texto)...." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="517,95,483,103,482,98,512,96"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="250,35,221,37,220,32,255,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4e4a6a40c8403f85073e1e32a6a9ff3" name="aa4e4a6a40c8403f85073e1e32a6a9ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e4a6a40c8403f85073e1e32a6a9ff3">&#9670;&#160;</a></span>ClearTemporaryControlPointSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ClearTemporaryControlPointSphere </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the temporary control point sphere. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00400">400</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00054">TemporaryControlPointSphere</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aa4e4a6a40c8403f85073e1e32a6a9ff3_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aa4e4a6a40c8403f85073e1e32a6a9ff3_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aa4e4a6a40c8403f85073e1e32a6a9ff3_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aa4e4a6a40c8403f85073e1e32a6a9ff3_icgraph">
+<area shape="rect" title="Clears the temporary control point sphere." alt="" coords="544,47,770,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="275,5,489,64"/>
+<area shape="poly" title=" " alt="" coords="526,57,489,53,489,48,531,57"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a08882c9afa32d117a392a408df147e97" title="Shows a temporary red sphere for a single measurement point (when clicked in TreeView)." alt="" coords="268,88,496,147"/>
+<area shape="poly" title=" " alt="" coords="531,95,497,103,496,98,526,96"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="257,35,221,37,220,32,262,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf7bfb14d26b797da616dc8fe7bed61c" name="adf7bfb14d26b797da616dc8fe7bed61c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7bfb14d26b797da616dc8fe7bed61c">&#9670;&#160;</a></span>DrawAllMarkers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.DrawAllMarkers </td>
+          <td>(</td>
+          <td class="paramtype">System.Collections.Generic.Dictionary&lt; string, System.Collections.Generic.List&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>allFacesByColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Collections.Generic.Dictionary&lt; string, System.Collections.Generic.List&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>holesByColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Collections.Generic.IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>ignoredFaces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Collections.Generic.IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>ignoredHoles</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Collections.Generic.HashSet&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>flippedFaceNormals</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Batch draws markers for all active items in the session. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00427">427</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adf7bfb14d26b797da616dc8fe7bed61c_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adf7bfb14d26b797da616dc8fe7bed61c_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adf7bfb14d26b797da616dc8fe7bed61c_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adf7bfb14d26b797da616dc8fe7bed61c_cgraph">
+<area shape="rect" title="Batch draws markers for all active items in the session." alt="" coords="5,171,220,229"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="268,171,482,229"/>
+<area shape="poly" title=" " alt="" coords="219,197,255,199,250,201,221,203"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a980a22683b212a4c943ab5df8627f2ab" title="Clears all active control point spheres." alt="" coords="536,5,750,64"/>
+<area shape="poly" title=" " alt="" coords="405,168,460,121,529,74,541,70,537,72,531,78,464,125,409,172"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ae2705eee5f6319214e97c40ba0ef4f1c" title="Clears all active corner markers." alt="" coords="536,88,750,147"/>
+<area shape="poly" title=" " alt="" coords="472,168,534,151,529,153,473,173"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a232072dce4a16f92af37c577b78fa896" title="Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto)." alt="" coords="536,171,750,229"/>
+<area shape="poly" title=" " alt="" coords="482,197,523,199,518,201,483,203"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#aa4e4a6a40c8403f85073e1e32a6a9ff3" title="Clears the temporary control point sphere." alt="" coords="530,253,756,312"/>
+<area shape="poly" title=" " alt="" coords="473,227,534,248,529,248,472,233"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#afabddd16f0dd18e13a0193a3655bad54" title="Removes the hover highlight (snap marker or fallback highlight spheres)." alt="" coords="536,336,750,395"/>
+<area shape="poly" title=" " alt="" coords="408,227,464,275,531,322,542,329,536,328,529,326,460,279,406,232"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7fc741c94a113c04758abbeafd9b9995" name="a7fc741c94a113c04758abbeafd9b9995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc741c94a113c04758abbeafd9b9995">&#9670;&#160;</a></span>EnsureMarkersLayerExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.EnsureMarkersLayerExists </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensures that the MARKERS layer exists in the design control. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">97</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">SetHoverSnapMarker()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">ShowHoleCenterMarkerOnly()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a7fc741c94a113c04758abbeafd9b9995_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a7fc741c94a113c04758abbeafd9b9995_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a7fc741c94a113c04758abbeafd9b9995_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a7fc741c94a113c04758abbeafd9b9995_icgraph">
+<area shape="rect" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="282,295,496,353"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a969b03a57d569a36e60c4e2180e4899e" title="Initializes a new instance of the EyeshotVisualsManager class." alt="" coords="12,5,227,64"/>
+<area shape="poly" title=" " alt="" coords="368,280,347,234,317,180,279,125,232,78,218,67,216,62,235,74,283,122,321,177,352,232,374,281"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a2fc54a0477273708cbd1ad6ab1fb6c45" title="Creates a visual highlight (sampled spheres) for a face when Eyeshot&#39;s API selection fails." alt="" coords="12,88,227,147"/>
+<area shape="poly" title=" " alt="" coords="355,283,302,221,269,189,232,161,214,150,213,145,235,156,272,185,306,217,361,282"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a39ca4bb396673465663f82881c92e6c2" title="Sets the hover snap marker (e.g., a sphere at a hovered point)." alt="" coords="12,171,227,229"/>
+<area shape="poly" title=" " alt="" coords="320,288,233,244,207,232,206,227,235,239,325,286"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a041f4c9240c340b9197bfe83f91a98f5" title="Shows control points for the selected face as magenta spheres." alt="" coords="12,253,227,312"/>
+<area shape="poly" title=" " alt="" coords="264,306,228,302,226,297,269,304"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a671e6b35bb6bc84175b55ec5cb82a2da" title="Displays yellow cube markers at all corner points of a CADFace." alt="" coords="12,336,227,395"/>
+<area shape="poly" title=" " alt="" coords="264,344,228,351,226,346,269,341"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a5ba488badd394f3dd56d32804340a904" title="Mostra um marcador no centro do furo e um indicador da profundidade (linha + texto)...." alt="" coords="12,419,227,477"/>
+<area shape="poly" title=" " alt="" coords="321,363,235,409,208,420,205,416,233,404,325,360"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adfacb0a8090ba7595fd433ed51822ae2" title="Displays only the center marker sphere of the specified CAD hole." alt="" coords="12,501,227,560"/>
+<area shape="poly" title=" " alt="" coords="360,364,306,431,272,463,235,492,215,503,212,498,232,487,269,459,302,427,356,367"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a08882c9afa32d117a392a408df147e97" title="Shows a temporary red sphere for a single measurement point (when clicked in TreeView)." alt="" coords="5,584,234,643"/>
+<area shape="poly" title=" " alt="" coords="373,366,352,416,321,471,283,526,235,574,218,586,216,581,232,570,279,523,317,468,347,414,369,370"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2fc54a0477273708cbd1ad6ab1fb6c45" name="a2fc54a0477273708cbd1ad6ab1fb6c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc54a0477273708cbd1ad6ab1fb6c45">&#9670;&#160;</a></span>HighlightFaceVisualFallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.HighlightFaceVisualFallback </td>
+          <td>(</td>
+          <td class="paramtype">Brep?</td>          <td class="paramname"><span class="paramname"><em>brep</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>faceIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a visual highlight (sampled spheres) for a face when Eyeshot's API selection fails. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">327</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00049">_hoverHighlightEntities</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00040">_yellowCubeSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2fc54a0477273708cbd1ad6ab1fb6c45_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2fc54a0477273708cbd1ad6ab1fb6c45_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2fc54a0477273708cbd1ad6ab1fb6c45_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2fc54a0477273708cbd1ad6ab1fb6c45_cgraph">
+<area shape="rect" title="Creates a visual highlight (sampled spheres) for a face when Eyeshot&#39;s API selection fails." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#afabddd16f0dd18e13a0193a3655bad54" title="Removes the hover highlight (snap marker or fallback highlight spheres)." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afabddd16f0dd18e13a0193a3655bad54" name="afabddd16f0dd18e13a0193a3655bad54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afabddd16f0dd18e13a0193a3655bad54">&#9670;&#160;</a></span>RemoveHoverHighlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.RemoveHoverHighlight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the hover highlight (snap marker or fallback highlight spheres). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">481</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00049">_hoverHighlightEntities</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00058">HoverSnapMarker</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">SetHoverSnapMarker()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_afabddd16f0dd18e13a0193a3655bad54_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_afabddd16f0dd18e13a0193a3655bad54_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_afabddd16f0dd18e13a0193a3655bad54_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_afabddd16f0dd18e13a0193a3655bad54_icgraph">
+<area shape="rect" title="Removes the hover highlight (snap marker or fallback highlight spheres)." alt="" coords="530,88,744,147"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ab085caa35dfe46fae538128488efaa75" title="Clears all types of temporary visual markers." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="525,83,470,67,471,62,530,83"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a2fc54a0477273708cbd1ad6ab1fb6c45" title="Creates a visual highlight (sampled spheres) for a face when Eyeshot&#39;s API selection fails." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="512,118,483,120,482,115,517,117"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a39ca4bb396673465663f82881c92e6c2" title="Sets the hover snap marker (e.g., a sphere at a hovered point)." alt="" coords="268,171,482,229"/>
+<area shape="poly" title=" " alt="" coords="530,151,471,173,470,167,525,152"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#adf7bfb14d26b797da616dc8fe7bed61c" title="Batch draws markers for all active items in the session." alt="" coords="5,5,220,64"/>
+<area shape="poly" title=" " alt="" coords="250,36,221,37,219,32,255,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2332003b0c2fbf60a74dc2dfe673d1a7" name="a2332003b0c2fbf60a74dc2dfe673d1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2332003b0c2fbf60a74dc2dfe673d1a7">&#9670;&#160;</a></span>SetEyeshotQualitySetting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.SetEyeshotQualitySetting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#a26e764b011b0308fb9e038e2d5cec456">QualitySettingEnum</a></td>          <td class="paramname"><span class="paramname"><em>setting</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Design</td>          <td class="paramname"><span class="paramname"><em>eyeshot_designer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the rendering quality setting for the given Eyeshot design control. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">setting</td><td>The rendering quality setting enum (Performance/Quality).</td></tr>
+    <tr><td class="paramname">eyeshot_designer</td><td>The Eyeshot Design control to apply the quality settings to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00646">646</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00535">SetPerformanceMode()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00603">SetQualityMode()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_cgraph">
+<area shape="rect" title="Sets the rendering quality setting for the given Eyeshot design control." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#aeba5de4b412d64d094ea08793cd923e8" title="Configures the Design control for the best real&#45;time performance." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a36352dc12737319ec191e6516e23fa86" title="Configures the Design control for the best visual quality." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a2332003b0c2fbf60a74dc2dfe673d1a7_icgraph">
+<area shape="rect" title="Sets the rendering quality setting for the given Eyeshot design control." alt="" coords="331,5,545,64"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,13,283,56"/>
+<area shape="poly" title=" " alt="" coords="312,35,283,37,283,32,318,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39ca4bb396673465663f82881c92e6c2" name="a39ca4bb396673465663f82881c92e6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ca4bb396673465663f82881c92e6c2">&#9670;&#160;</a></span>SetHoverSnapMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.SetHoverSnapMarker </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Drawing.Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the hover snap marker (e.g., a sphere at a hovered point). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">506</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00058">HoverSnapMarker</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a39ca4bb396673465663f82881c92e6c2_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a39ca4bb396673465663f82881c92e6c2_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a39ca4bb396673465663f82881c92e6c2_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a39ca4bb396673465663f82881c92e6c2_cgraph">
+<area shape="rect" title="Sets the hover snap marker (e.g., a sphere at a hovered point)." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#afabddd16f0dd18e13a0193a3655bad54" title="Removes the hover highlight (snap marker or fallback highlight spheres)." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeba5de4b412d64d094ea08793cd923e8" name="aeba5de4b412d64d094ea08793cd923e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba5de4b412d64d094ea08793cd923e8">&#9670;&#160;</a></span>SetPerformanceMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.SetPerformanceMode </td>
+          <td>(</td>
+          <td class="paramtype">Design</td>          <td class="paramname"><span class="paramname"><em>design</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures the Design control for the best real-time performance. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">design</td><td>The Design control instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00535">535</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00646">SetEyeshotQualitySetting()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aeba5de4b412d64d094ea08793cd923e8_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aeba5de4b412d64d094ea08793cd923e8_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aeba5de4b412d64d094ea08793cd923e8_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_aeba5de4b412d64d094ea08793cd923e8_icgraph">
+<area shape="rect" title="Configures the Design control for the best real&#45;time performance." alt="" coords="593,5,807,64"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a2332003b0c2fbf60a74dc2dfe673d1a7" title="Sets the rendering quality setting for the given Eyeshot design control." alt="" coords="331,5,545,64"/>
+<area shape="poly" title=" " alt="" coords="575,35,545,37,545,32,580,35"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,13,283,56"/>
+<area shape="poly" title=" " alt="" coords="312,35,283,37,283,32,318,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36352dc12737319ec191e6516e23fa86" name="a36352dc12737319ec191e6516e23fa86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36352dc12737319ec191e6516e23fa86">&#9670;&#160;</a></span>SetQualityMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.SetQualityMode </td>
+          <td>(</td>
+          <td class="paramtype">Design</td>          <td class="paramname"><span class="paramname"><em>design</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures the Design control for the best visual quality. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">design</td><td>The Design control instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00603">603</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00646">SetEyeshotQualitySetting()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a36352dc12737319ec191e6516e23fa86_icgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a36352dc12737319ec191e6516e23fa86_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a36352dc12737319ec191e6516e23fa86_icgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a36352dc12737319ec191e6516e23fa86_icgraph">
+<area shape="rect" title="Configures the Design control for the best visual quality." alt="" coords="593,5,807,64"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a2332003b0c2fbf60a74dc2dfe673d1a7" title="Sets the rendering quality setting for the given Eyeshot design control." alt="" coords="331,5,545,64"/>
+<area shape="poly" title=" " alt="" coords="575,35,545,37,545,32,580,35"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,13,283,56"/>
+<area shape="poly" title=" " alt="" coords="312,35,283,37,283,32,318,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a041f4c9240c340b9197bfe83f91a98f5" name="a041f4c9240c340b9197bfe83f91a98f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041f4c9240c340b9197bfe83f91a98f5">&#9670;&#160;</a></span>ShowControlPointsForFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ShowControlPointsForFace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows control points for the selected face as magenta spheres. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">254</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00038">_pinkSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00129">HirEV_SmartFitSystemsApp.Models.CADFace.ControlPoints</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00070">ControlPointSelectionEnabled</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00052">ControlPointSpheres</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00068">CurrentSelectedFace</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00054">HirEV_SmartFitSystemsApp.Models.CADFace.FaceIndex</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00165">HirEV_SmartFitSystemsApp.Models.CADFace.MeasurementPoints</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a041f4c9240c340b9197bfe83f91a98f5_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a041f4c9240c340b9197bfe83f91a98f5_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a041f4c9240c340b9197bfe83f91a98f5_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a041f4c9240c340b9197bfe83f91a98f5_cgraph">
+<area shape="rect" title="Shows control points for the selected face as magenta spheres." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a980a22683b212a4c943ab5df8627f2ab" title="Clears all active control point spheres." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a671e6b35bb6bc84175b55ec5cb82a2da" name="a671e6b35bb6bc84175b55ec5cb82a2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671e6b35bb6bc84175b55ec5cb82a2da">&#9670;&#160;</a></span>ShowCornerMarkersForFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ShowCornerMarkersForFace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>highlightVertexIndex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays yellow cube markers at all corner points of a <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>The <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a> to show corner markers for</td></tr>
+    <tr><td class="paramname">highlightVertexIndex</td><td>Optional vertex index to highlight with a larger, brighter cube (default: -1 = no highlight)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Creates cube markers at each keypoint with PointType.Corner.</p>
+<p>If highlightVertexIndex is specified, that corner gets a larger cube (1.8x size) with a brighter orange color.</p>
+<p>Uses Task.Run for async generation to maintain UI responsiveness.</p>
+<p>Automatically clears any existing corner markers before displaying new ones.</p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">130</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00040">_yellowCubeSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00388">ClearCornerMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00056">CornerMarkers</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00116">HirEV_SmartFitSystemsApp.Models.CADFace.KeyPoints</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a671e6b35bb6bc84175b55ec5cb82a2da_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a671e6b35bb6bc84175b55ec5cb82a2da_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a671e6b35bb6bc84175b55ec5cb82a2da_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a671e6b35bb6bc84175b55ec5cb82a2da_cgraph">
+<area shape="rect" title="Displays yellow cube markers at all corner points of a CADFace." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#ae2705eee5f6319214e97c40ba0ef4f1c" title="Clears all active corner markers." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ba488badd394f3dd56d32804340a904" name="a5ba488badd394f3dd56d32804340a904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba488badd394f3dd56d32804340a904">&#9670;&#160;</a></span>ShowHoleCenterAndDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ShowHoleCenterAndDepth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></td>          <td class="paramname"><span class="paramname"><em>hole</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mostra um marcador no centro do furo e um indicador da profundidade (linha + texto). Implementação tolerante: tenta extrair propriedades comuns do model do furo via reflexão. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hole</td><td>Objeto representando o furo (HoleModel). Pode ter propriedades: Center/CenterPoint/Position (Point3D/Point4D), Depth/Height (double), Top/Bottom (Point3D/Point4D) ou Axis/Direction (Vector3D/Point3D).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">184</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00047">_currentHoleVisuals</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00044">_holeDepthLineWidth</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00042">_holeSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00040">_yellowCubeSize</a>, <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00101">HirEV_SmartFitSystemsApp.Models.CADHole.BottomCenterPoint</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00061">HoleCenterMarker</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00063">HoleDepthLine</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00065">HoleDepthText</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00091">HirEV_SmartFitSystemsApp.Models.CADHole.TopCenterPoint</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a5ba488badd394f3dd56d32804340a904_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a5ba488badd394f3dd56d32804340a904_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a5ba488badd394f3dd56d32804340a904_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a5ba488badd394f3dd56d32804340a904_cgraph">
+<area shape="rect" title="Mostra um marcador no centro do furo e um indicador da profundidade (linha + texto)...." alt="" coords="5,47,220,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a232072dce4a16f92af37c577b78fa896" title="Limpa as marcações relacionadas a um hole (centro, linha de profundidade, texto)." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,56,255,53,250,55,221,62"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,88,482,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,255,98,250,98,220,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adfacb0a8090ba7595fd433ed51822ae2" name="adfacb0a8090ba7595fd433ed51822ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfacb0a8090ba7595fd433ed51822ae2">&#9670;&#160;</a></span>ShowHoleCenterMarkerOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ShowHoleCenterMarkerOnly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a></td>          <td class="paramname"><span class="paramname"><em>hole</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Displays only the center marker sphere of the specified CAD hole. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hole</td><td>The CAD hole to display the marker for.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">445</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00047">_currentHoleVisuals</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00042">_holeSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../d7/d00/_c_a_d_hole_8cs_source.html#l00091">HirEV_SmartFitSystemsApp.Models.CADHole.TopCenterPoint</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adfacb0a8090ba7595fd433ed51822ae2_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adfacb0a8090ba7595fd433ed51822ae2_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adfacb0a8090ba7595fd433ed51822ae2_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_adfacb0a8090ba7595fd433ed51822ae2_cgraph">
+<area shape="rect" title="Displays only the center marker sphere of the specified CAD hole." alt="" coords="5,5,220,64"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="268,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="220,32,255,34,250,35,220,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08882c9afa32d117a392a408df147e97" name="a08882c9afa32d117a392a408df147e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08882c9afa32d117a392a408df147e97">&#9670;&#160;</a></span>ShowTemporaryControlPointSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ShowTemporaryControlPointSphere </td>
+          <td>(</td>
+          <td class="paramtype">Point4D</td>          <td class="paramname"><span class="paramname"><em>controlPoint</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows a temporary red sphere for a single measurement point (when clicked in TreeView). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">303</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00036">_blueSphereSize</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">_designControl</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00400">ClearTemporaryControlPointSphere()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">MARKERS_LAYER</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00054">TemporaryControlPointSphere</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a08882c9afa32d117a392a408df147e97_cgraph.png" border="0" usemap="#ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a08882c9afa32d117a392a408df147e97_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a08882c9afa32d117a392a408df147e97_cgraph" id="ad3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager_a08882c9afa32d117a392a408df147e97_cgraph">
+<area shape="rect" title="Shows a temporary red sphere for a single measurement point (when clicked in TreeView)." alt="" coords="5,47,234,105"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#aa4e4a6a40c8403f85073e1e32a6a9ff3" title="Clears the temporary control point sphere." alt="" coords="282,5,508,64"/>
+<area shape="poly" title=" " alt="" coords="233,56,269,53,263,55,235,61"/>
+<area shape="rect" href="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_visuals_manager.html#a7fc741c94a113c04758abbeafd9b9995" title="Ensures that the MARKERS layer exists in the design control." alt="" coords="288,88,502,147"/>
+<area shape="poly" title=" " alt="" coords="234,91,275,99,270,99,234,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a9e5ff7daf0f78dedd4da7bb898b8976b" name="a9e5ff7daf0f78dedd4da7bb898b8976b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5ff7daf0f78dedd4da7bb898b8976b">&#9670;&#160;</a></span>_blueSphereSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._blueSphereSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of blue control point spheres in mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00036">36</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+
+</div>
+</div>
+<a id="adff03aca8b1d2ed85185da4dc9707820" name="adff03aca8b1d2ed85185da4dc9707820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff03aca8b1d2ed85185da4dc9707820">&#9670;&#160;</a></span>_currentHoleVisuals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;Entity&gt; HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._currentHoleVisuals = new List&lt;Entity&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of current hole visualization entities (center marker, depth line, text). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00047">47</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">ShowHoleCenterMarkerOnly()</a>.</p>
+
+</div>
+</div>
+<a id="ae5c1132dc6d561012cd1598889f6d497" name="ae5c1132dc6d561012cd1598889f6d497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c1132dc6d561012cd1598889f6d497">&#9670;&#160;</a></span>_designControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Design HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._designControl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference to the Eyeshot Design control for entity management. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00034">34</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00388">ClearCornerMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00400">ClearTemporaryControlPointSphere()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00427">DrawAllMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">SetHoverSnapMarker()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">ShowHoleCenterMarkerOnly()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+
+</div>
+</div>
+<a id="aa90f84df512edb320ae939866d987afc" name="aa90f84df512edb320ae939866d987afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90f84df512edb320ae939866d987afc">&#9670;&#160;</a></span>_holeDepthLineWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._holeDepthLineWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Width of hole depth indicator lines in pixels. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00044">44</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+
+</div>
+</div>
+<a id="a465c76ee76dff3087033fd1831058c77" name="a465c76ee76dff3087033fd1831058c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465c76ee76dff3087033fd1831058c77">&#9670;&#160;</a></span>_holeSphereSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._holeSphereSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of hole indicator spheres in mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00042">42</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">ShowHoleCenterMarkerOnly()</a>.</p>
+
+</div>
+</div>
+<a id="a2da2d78b46fcec41a4ce3a7df89ea494" name="a2da2d78b46fcec41a4ce3a7df89ea494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da2d78b46fcec41a4ce3a7df89ea494">&#9670;&#160;</a></span>_hoverHighlightEntities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;Entity&gt; HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._hoverHighlightEntities = new List&lt;Entity&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of entities used for hover highlighting. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00049">49</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a>.</p>
+
+</div>
+</div>
+<a id="a52026797ec90251cc22ed2cd9adf6d93" name="a52026797ec90251cc22ed2cd9adf6d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52026797ec90251cc22ed2cd9adf6d93">&#9670;&#160;</a></span>_pinkSphereSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._pinkSphereSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of pink hole center spheres in mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00038">38</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>.</p>
+
+</div>
+</div>
+<a id="af7859eac2c15ca418a5f7ce9b4c5b626" name="af7859eac2c15ca418a5f7ce9b4c5b626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7859eac2c15ca418a5f7ce9b4c5b626">&#9670;&#160;</a></span>_yellowCubeSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager._yellowCubeSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of yellow corner marker cubes in mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00040">40</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00082">EyeshotVisualsManager()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+
+</div>
+</div>
+<a id="a1c87b6173a8fcd3a124339281abe3f5c" name="a1c87b6173a8fcd3a124339281abe3f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c87b6173a8fcd3a124339281abe3f5c">&#9670;&#160;</a></span>MARKERS_LAYER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.MARKERS_LAYER = &quot;MARKERS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00028">28</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00097">EnsureMarkersLayerExists()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00327">HighlightFaceVisualFallback()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">SetHoverSnapMarker()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00445">ShowHoleCenterMarkerOnly()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="ae0338da94e57352ae1db2163d07a0108" name="ae0338da94e57352ae1db2163d07a0108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0338da94e57352ae1db2163d07a0108">&#9670;&#160;</a></span>ControlPointSelectionEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ControlPointSelectionEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag indicating whether control point selection mode is active. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00070">70</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>.</p>
+
+</div>
+</div>
+<a id="ade3bc64883f305326cea4b4b46fde985" name="ade3bc64883f305326cea4b4b46fde985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3bc64883f305326cea4b4b46fde985">&#9670;&#160;</a></span>ControlPointSpheres</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Entity&gt; HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ControlPointSpheres = new List&lt;Entity&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of all control point sphere entities currently displayed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00052">52</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>.</p>
+
+</div>
+</div>
+<a id="a31055674531042c10091836ed0530b93" name="a31055674531042c10091836ed0530b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31055674531042c10091836ed0530b93">&#9670;&#160;</a></span>CornerMarkers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Entity&gt; HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.CornerMarkers = new List&lt;Entity&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of corner marker cube entities currently displayed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00388">ClearCornerMarkers()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00130">ShowCornerMarkersForFace()</a>.</p>
+
+</div>
+</div>
+<a id="a58602f69a21ec22f74de0b115abb2693" name="a58602f69a21ec22f74de0b115abb2693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58602f69a21ec22f74de0b115abb2693">&#9670;&#160;</a></span>CurrentSelectedFace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.CurrentSelectedFace</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Currently selected <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a> for context. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00068">68</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00412">ClearAllMarkers()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00254">ShowControlPointsForFace()</a>.</p>
+
+</div>
+</div>
+<a id="a6722a0ece19b2b8506be82d57312e65d" name="a6722a0ece19b2b8506be82d57312e65d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6722a0ece19b2b8506be82d57312e65d">&#9670;&#160;</a></span>HoleCenterMarker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.HoleCenterMarker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sphere entity at the center of the currently selected hole. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+
+</div>
+</div>
+<a id="a35fa773f85d1ca69770b9750d41ed84d" name="a35fa773f85d1ca69770b9750d41ed84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fa773f85d1ca69770b9750d41ed84d">&#9670;&#160;</a></span>HoleDepthLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.HoleDepthLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Line entity visualizing hole depth. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00063">63</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+
+</div>
+</div>
+<a id="a48429922adf4e8a81b1f082fa5f641e0" name="a48429922adf4e8a81b1f082fa5f641e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48429922adf4e8a81b1f082fa5f641e0">&#9670;&#160;</a></span>HoleDepthText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.HoleDepthText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Text entity displaying hole depth value. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00065">65</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00465">ClearHoleVisuals()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00184">ShowHoleCenterAndDepth()</a>.</p>
+
+</div>
+</div>
+<a id="aa609d22f6ea14d5dc1f4404d25131712" name="aa609d22f6ea14d5dc1f4404d25131712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa609d22f6ea14d5dc1f4404d25131712">&#9670;&#160;</a></span>HoverSnapMarker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.HoverSnapMarker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hover snap marker shown at point under mouse cursor. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00058">58</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00481">RemoveHoverHighlight()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00506">SetHoverSnapMarker()</a>.</p>
+
+</div>
+</div>
+<a id="aeaae7f34bad32f0fe36690a8b24b8d95" name="aeaae7f34bad32f0fe36690a8b24b8d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaae7f34bad32f0fe36690a8b24b8d95">&#9670;&#160;</a></span>TemporaryControlPointSphere</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.TemporaryControlPointSphere</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Temporary control point sphere shown during creation/adjustment. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00054">54</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00400">ClearTemporaryControlPointSphere()</a> e <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00303">ShowTemporaryControlPointSphere()</a>.</p>
+
+</div>
+</div>
+<a name="doc-event-members" id="doc-event-members"></a><h2 id="header-doc-event-members" class="groupheader">Documentação dos eventos</h2>
+<a id="a0c5edd0d54e11dd5f89c47e9303bd0fa" name="a0c5edd0d54e11dd5f89c47e9303bd0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5edd0d54e11dd5f89c47e9303bd0fa">&#9670;&#160;</a></span>ControlPointsVisualsCleared</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action? HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.ControlPointsVisualsCleared</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when control point visuals are cleared. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00374">ClearControlPointSpheres()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/<a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html">EyeshotVisualsManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

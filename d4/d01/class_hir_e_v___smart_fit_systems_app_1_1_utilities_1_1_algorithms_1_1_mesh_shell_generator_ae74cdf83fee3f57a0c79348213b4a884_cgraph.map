@@ -1,0 +1,13 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildFaceOffsetShell" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.BuildFaceOffsetShell">
+<area shape="rect" id="Node000001" title="LEGACY: Builds a shell mesh by offsetting existing part face meshes outward using VERTEX normals...." alt="" coords="5,129,210,188"/>
+<area shape="rect" id="Node000002" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a2470bed8b9834e326d157f4baafd8d76" title="Calculates the centroid of a single face mesh (average of all vertices)." alt="" coords="261,5,476,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,126,256,74,272,69,268,72,259,78,160,131"/>
+<area shape="rect" id="Node000003" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#ad8dfdf3772ca0277fade16d25e02b990" title="Ensures all mesh normals point outward from the part centroid." alt="" coords="258,88,479,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,140,244,136,240,139,211,145"/>
+<area shape="rect" id="Node000005" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a56dfc80937c5a7baeec2a4008b68d933" title="Validates that the shell mesh is correctly offset outward from the original part. Checks that shell v..." alt="" coords="270,171,466,229"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="210,172,258,181,252,183,210,178"/>
+<area shape="rect" id="Node000006" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a409d0b66a560fe61bc658e239edfeba1" title="Welds (merges) duplicate vertices that are within a tolerance distance. This creates a continuous she..." alt="" coords="270,253,466,312"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="159,186,259,239,273,247,268,247,256,244,158,191"/>
+<area shape="rect" id="Node000004" href="$d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a0353e44e664561063904ca1c1fcf6b42" title="Computes the normal of a triangle." alt="" coords="527,88,750,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="479,115,514,117,509,118,480,120"/>
+</map>
