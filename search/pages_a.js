@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quick_20start_20guide_0',['Quick Start Guide',['../index.html#quick_start_sec',1,'']]]
+  ['sistema_0',['Requisitos do Sistema',['../index.html#reqs_sec',1,'']]]
 ];

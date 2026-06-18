@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['generating_20documentation_0',['Generating Documentation',['../index.html#docs_sec',1,'']]],
-  ['guide_1',['Quick Start Guide',['../index.html#quick_start_sec',1,'']]]
+  ['gerar_20a_20documentação_0',['Gerar a Documentação',['../index.html#docs_sec',1,'']]],
+  ['guia_20de_20início_20rápido_1',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]]
 ];

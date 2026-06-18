@@ -44,6 +44,7 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.ColorToolMappingUtils", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.ControlPointWithFaceIndex", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Modules.HoleDetector.CylinderFitInfo", "db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector_1_1_cylinder_fit_info.html", null ],
     [ "Design", null, [
       [ "HirEV_SmartFitSystemsApp.Utilities.HirEVDesign", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_hir_e_v_design.html", null ],
       [ "HirEV_SmartFitSystemsApp.Windows.SectionViewDesign", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_design.html", null ]

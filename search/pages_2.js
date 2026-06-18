@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['capabilities_0',['Current Application Capabilities',['../index.html#current_capabilities_sec',1,'']]],
-  ['configuration_20files_1',['Key Configuration Files',['../index.html#quick_config_sec',1,'']]],
-  ['copyright_2',['Copyright',['../index.html#footer_sec',1,'']]],
-  ['core_20dependencies_3',['Core Dependencies',['../index.html#dependencies_sec',1,'']]],
-  ['current_20application_20capabilities_4',['Current Application Capabilities',['../index.html#current_capabilities_sec',1,'']]],
-  ['current_20version_5',['Current Version',['../index.html#version_sec',1,'']]]
+  ['da_20aplicação_0',['Capacidades Atuais da Aplicação',['../index.html#current_capabilities_sec',1,'']]],
+  ['de_20autor_1',['Direitos de Autor',['../index.html#footer_sec',1,'']]],
+  ['de_20configuração_20principais_2',['Ficheiros de Configuração Principais',['../index.html#quick_config_sec',1,'']]],
+  ['de_20início_20rápido_3',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]],
+  ['de_20trabalho_20típico_4',['Fluxo de Trabalho Típico',['../index.html#workflow_sec',1,'']]],
+  ['dependências_20principais_5',['Dependências Principais',['../index.html#dependencies_sec',1,'']]],
+  ['destaques_20técnicos_6',['Destaques Técnicos',['../index.html#tech_sec',1,'']]],
+  ['detalhes_20técnicos_7',['Detalhes Técnicos',['../index.html#tech_details_sec',1,'']]],
+  ['direitos_20de_20autor_8',['Direitos de Autor',['../index.html#footer_sec',1,'']]],
+  ['do_20sistema_9',['Requisitos do Sistema',['../index.html#reqs_sec',1,'']]],
+  ['documentação_10',['Documentação',['../index.html',1,'Documentação'],['../index.html#docs_sec',1,'Gerar a Documentação']]]
 ];

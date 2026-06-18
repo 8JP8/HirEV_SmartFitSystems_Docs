@@ -25,5 +25,6 @@ var searchData=
   ['colortoolmappingutils_22',['ColorToolMappingUtils',['../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
   ['compositecommand_23',['CompositeCommand',['../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
   ['controlpointfilterconfig_24',['ControlPointFilterConfig',['../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['controlpointwithfaceindex_25',['ControlPointWithFaceIndex',['../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]]
+  ['controlpointwithfaceindex_25',['ControlPointWithFaceIndex',['../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_control_point_with_face_index.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
+  ['cylinderfitinfo_26',['CylinderFitInfo',['../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector_1_1_cylinder_fit_info.html',1,'HirEV_SmartFitSystemsApp::Modules::HoleDetector']]]
 ];

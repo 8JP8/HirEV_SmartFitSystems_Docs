@@ -481,6 +481,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager =
     [ "ColorGroupProcessing", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ab3d9efb2fa9d09a6522634b244e18032", null ],
     [ "PathGenerationProgress", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#abcd16a0ac5295f3924d297619bc22c11", null ],
     [ "PauseStateChanged", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa14b66be076cc3f5b82583c23ec32a64", null ],
+    [ "ProbeCameraPoseUpdated", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a935c89767c3a778c543e318c9c5109a2", null ],
     [ "ScannerVerificationProgress", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aeeef25df33705a428ec62c80e829de9f", null ],
     [ "ScannerVerificationStarted", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9d86a066e7e67536348df1ac01585e1b", null ],
     [ "ScannerVerificationStopped", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#abe5ffcf8c9da708301989822c966792e", null ],

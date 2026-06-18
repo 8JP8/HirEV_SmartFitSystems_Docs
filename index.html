@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HirEV SmartFitSystems: HirEV SmartFitSystems</title>
+<title>HirEV SmartFitSystems: Documentação</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -90,136 +90,133 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">HirEV SmartFitSystems </div></div>
+  <div class="headertitle"><div class="title">Documentação </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p>Welcome to the documentation for the <b>HirEV SmartFitSystems</b> application, a project developed by <b>SARKKIS Robotics</b> as an integral part of the <b>Hi-rEV</b> initiative. The Hi-rEV project aims to drive the technological modernization of the electric vehicle production industry.</p>
-<p>This application provides a sophisticated solution for the automatic quality control of machined parts. It leverages 3D CAD models to streamline and automate metrological inspection, ensuring that manufactured components adhere strictly to their design specifications.</p>
-<p>The broader Hi-rEV project encompasses two primary goals:</p><ol type="1">
-<li><b>Reverse Engineering:</b> Generating precise 3D models of real-world components using intelligent sensors (dense scanning, contact probes) when a CAD model is not available.</li>
-<li><b>Automated Inspection Planning:</b> Converting existing CAD models into safe and efficient measurement paths for metrology equipment to verify the geometry of machined parts.</li>
+Introdução</h1>
+<p>Bem-vindo(a) à documentação da aplicação <b>HirEV SmartFitSystems</b>, um projeto desenvolvido pela <b>SARKKIS Robotics</b> como parte integrante da iniciativa <b>Hi-rEV</b>. O projeto Hi-rEV visa impulsionar a modernização tecnológica da indústria de produção de veículos elétricos.</p>
+<p>Esta aplicação fornece uma solução sofisticada para o controlo de qualidade automático de peças maquinadas. Tira partido de modelos CAD 3D para simplificar e automatizar a inspeção metrológica, garantindo que os componentes fabricados cumprem rigorosamente as suas especificações de design.</p>
+<p>O projeto mais abrangente Hi-rEV engloba dois objetivos principais:</p><ol type="1">
+<li><b>Engenharia Inversa:</b> Geração de modelos 3D precisos de componentes do mundo real utilizando sensores inteligentes (digitalização densa, sondas de contacto) quando não está disponível um modelo CAD.</li>
+<li><b>Planeamento Automatizado de Inspeção:</b> Conversão de modelos CAD existentes em caminhos de medição seguros e eficientes para equipamentos de metrologia, para verificar a geometria das peças maquinadas.</li>
 </ol>
-<p>This application, <span class="tt"><a class="el" href="d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></span>, is dedicated to the second objective, providing a powerful platform for CAD-based inspection planning and execution.</p>
-<h1 class="doxsection"><a class="anchor" id="version_sec"></a>
-Current Version</h1>
-<p>v0.0.30</p>
+<p>Esta aplicação, <span class="tt"><a class="el" href="d1/d00/namespace_hir_e_v___smart_fit_systems_app.html">HirEV_SmartFitSystemsApp</a></span>, dedica-se ao segundo objetivo, fornecendo uma plataforma poderosa para o planeamento e execução de inspeções baseadas em CAD.</p>
 <h1 class="doxsection"><a class="anchor" id="features_sec"></a>
-Key Features</h1>
-<p>The HirEV SmartFitSystems application is equipped with a range of advanced features to facilitate a seamless workflow from CAD model to quality inspection:</p>
+Funcionalidades Principais</h1>
+<p>A aplicação HirEV SmartFitSystems está equipada com uma gama de funcionalidades avançadas para facilitar um fluxo de trabalho contínuo, desde o modelo CAD até à inspeção de qualidade:</p>
 <ul>
-<li><b>CAD-Based Measurement Planning:</b> The core of the application is its ability to interpret 3D CAD models (STEP files) and automatically generate efficient and collision-free inspection paths for CMM probes and other metrology tools.</li>
-<li><b>Color-Coded Tolerancing:</b> A key innovation is the use of surface colors within the CAD model to define manufacturing tolerances. This allows for the rapid assignment of inspection requirements to large groups of similar faces, optimizing both measurement planning and the logic for tool changes.</li>
-<li><b>Advanced 3D Visualization:</b> Powered by the <span class="tt">devDept.Eyeshot</span> professional CAD control, the application provides high-performance 3D rendering and interaction. Users can load, pan, zoom, rotate, and select faces and features on complex 3D models with ease.</li>
-<li><b>Automatic Face and Feature Extraction:</b> The application intelligently processes the geometry of a loaded model to automatically extract all constituent faces. It further analyzes this data to detect and classify geometric features, such as holes, and groups them by color for simplified processing.</li>
-<li><b>Path Generation and Simulation:</b> Using sophisticated heuristic algorithms, the system generates optimized measurement paths. These paths can be visualized directly on the 3D model and simulated in real-time, providing a complete preview of the inspection routine, including tool movements.</li>
-<li><b>Dynamic Tool and Camera System:</b> The simulation environment is not limited to default probes. It fully supports the loading and visualization of custom 3D models for measurement tools. A robust camera-following system ensures the tool is always in focus during simulation, even for complex custom models.</li>
+<li><b>Planeamento de Medição Baseado em CAD:</b> O núcleo da aplicação é a sua capacidade de interpretar modelos CAD 3D (ficheiros STEP) e gerar automaticamente caminhos de inspeção eficientes e livres de colisões para sondas CMM (Máquina de Medição por Coordenadas) e outras ferramentas de metrologia.</li>
+<li><b>Tolerância Codificada por Cores:</b> Uma inovação fundamental é a utilização de cores nas superfícies do modelo CAD para definir as tolerâncias de fabrico. Isto permite a rápida atribuição de requisitos de inspeção a grandes grupos de faces semelhantes, otimizando tanto o planeamento de medição como a lógica para a mudança de ferramentas.</li>
+<li><b>Visualização 3D Avançada:</b> Com o poder do controlo CAD profissional <span class="tt">devDept.Eyeshot</span>, a aplicação fornece uma renderização e interação 3D de alto desempenho. Os utilizadores podem carregar, deslocar (pan), aplicar zoom, rodar e selecionar faces e características (features) em modelos 3D complexos com facilidade.</li>
+<li><b>Extração Automática de Faces e Características:</b> A aplicação processa inteligentemente a geometria de um modelo carregado para extrair automaticamente todas as faces que o constituem. Analisa ainda mais estes dados para detetar e classificar características geométricas, tais como furos, e agrupa-as por cor para um processamento simplificado.</li>
+<li><b>Geração e Simulação de Caminhos:</b> Utilizando algoritmos heurísticos sofisticados, o sistema gera caminhos de medição otimizados. Estes caminhos podem ser visualizados diretamente no modelo 3D e simulados em tempo real, fornecendo uma pré-visualização completa da rotina de inspeção, incluindo os movimentos da ferramenta.</li>
+<li><b>Sistema Dinâmico de Ferramentas e Câmara:</b> O ambiente de simulação não se limita a sondas predefinidas. Suporta totalmente o carregamento e visualização de modelos 3D personalizados de ferramentas de medição. Um sistema robusto de seguimento de câmara garante que a ferramenta está sempre focada durante a simulação, mesmo para modelos personalizados complexos.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="current_capabilities_sec"></a>
-Current Application Capabilities</h2>
-<p>The current application workflow expands those core features with:</p>
+Capacidades Atuais da Aplicação</h2>
+<p>O fluxo de trabalho atual da aplicação expande essas funcionalidades principais com:</p>
 <ul>
-<li><b>CAD and Feature Processing:</b> Load CAD parts into the Eyeshot workspace, extract faces, vertices, colors, normals, holes, and feature dimensions, and work with multiple parts and independent part origins.</li>
-<li><b>Hole Detection:</b> Detect cylindrical and conical hole features, including split, bridged, and single cylindrical faces.</li>
-<li><b>Probe Path Planning:</b> Generate point-by-point probing paths with approach, measurement, ascent, descent, and bridge waypoints, ordered by color or by part with proximity-based optimization.</li>
-<li><b>Scanner Path Planning:</b> Configure scanner profiles from <span class="tt">ScannerConfigurations.xml</span> and generate scanner poses using FOV, standoff, overlap, hole-scan, and coverage settings.</li>
-<li><b>Shell and Collision Support:</b> Generate offset shell meshes, use SDF and Marching Cubes planning envelopes, cache shell data in sessions, and validate or reroute path segments.</li>
-<li><b>Simulation and Visualization:</b> Simulate probe and scanner motion, control simulation speed, rotate tool models toward surface normals, follow the active tool with the camera, and inspect section views.</li>
-<li><b>Sessions and Export:</b> Save and load sessions with loaded parts, extracted faces, ignored items, paths, shell cache data, and UI state; export JSON/XML inspection data by color, tool, control point, or measurement point.</li>
+<li><b>Processamento de CAD e Características:</b> Carregamento de peças CAD na área de trabalho do Eyeshot, extração de faces, vértices, cores, normais, furos e dimensões de características, e trabalho com múltiplas peças e origens independentes das peças.</li>
+<li><b>Deteção de Furos:</b> Deteção de características de furos cilíndricos e cónicos, incluindo faces cilíndricas divididas, em ponte ou únicas.</li>
+<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de passagem (waypoints) de aproximação, medição, subida, descida e ligação, ordenados por cor ou por peça com otimização baseada na proximidade.</li>
+<li><b>Planeamento do Caminho do Scanner:</b> Configuração de perfis de scanner a partir de <span class="tt">ScannerConfigurations.xml</span> e geração de poses de scanner utilizando definições de FOV (Campo de Visão), distância (standoff), sobreposição (overlap), digitalização de furos (hole-scan) e cobertura.</li>
+<li><b>Suporte para Envolvente (Shell) e Colisões:</b> Geração de malhas de envolventes compensadas (offset), utilização de envelopes de planeamento SDF (Signed Distance Field) e Marching Cubes, armazenamento em cache dos dados da envolvente nas sessões, e validação ou reencaminhamento de segmentos de caminhos.</li>
+<li><b>Simulação e Visualização:</b> Simulação do movimento da sonda e do scanner, controlo da velocidade da simulação, rotação dos modelos de ferramentas na direção das normais da superfície, seguimento da ferramenta ativa com a câmara, e inspeção de vistas de secção.</li>
+<li><b>Sessões e Exportação:</b> Guardar e carregar sessões com peças carregadas, faces extraídas, ignorados, caminhos, dados da cache da envolvente e estado da interface (UI); exportação de dados de inspeção em JSON/XML por cor, ferramenta, ponto de controlo ou ponto de medição.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="quick_start_sec"></a>
-Quick Start Guide</h1>
+Guia de Início Rápido</h1>
 <h2 class="doxsection"><a class="anchor" id="quick_reqs_sec"></a>
-Requirements</h2>
+Requisitos</h2>
 <ul>
 <li>Windows 10/11 x64.</li>
-<li>.NET 8 SDK or Runtime.</li>
-<li>devDept Eyeshot Ultimate license.</li>
-<li>Access to the SARKKIS proprietary NuGet packages used by the project.</li>
+<li>SDK ou Runtime do .NET 8.</li>
+<li>Licença do devDept Eyeshot Ultimate.</li>
+<li>Acesso aos pacotes NuGet proprietários da SARKKIS utilizados pelo projeto.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="quick_build_sec"></a>
-Build</h2>
+Compilação</h2>
 <div class="fragment"><div class="line">dotnet build HirEV_SmartFitSystemsApp.sln -c Release</div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="quick_run_sec"></a>
-Run</h2>
+Execução</h2>
 <div class="fragment"><div class="line">dotnet run --project HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp.csproj</div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="quick_config_sec"></a>
-Key Configuration Files</h2>
+Ficheiros de Configuração Principais</h2>
 <ul>
-<li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: language, CMM mode, scanner parameters, path planning, shell generation, simulation, export, and UI defaults.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: scanner presets, FOV data, standoff ranges, 3D model paths, and sensor transforms.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: measuring tool assignment by extracted face color.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/ColorTolerances.xml</span>: color matching tolerances.</li>
-<li><span class="tt">ProtectedConfig.dat</span>: encrypted machine and sensitive settings generated at runtime.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: idioma, modo CMM, parâmetros do scanner, planeamento de caminhos, geração da envolvente, simulação, exportação e predefinições da UI.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: predefinições do scanner, dados de FOV, gamas de distância, caminhos de modelos 3D e transformações do sensor.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: atribuição da ferramenta de medição por cor da face extraída.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/ColorTolerances.xml</span>: tolerâncias de correspondência de cores.</li>
+<li><span class="tt">ProtectedConfig.dat</span>: definições da máquina encriptadas e dados sensíveis gerados em tempo de execução.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="workflow_sec"></a>
-Typical Workflow</h1>
+Fluxo de Trabalho Típico</h1>
 <ol type="1">
-<li>Load one or more CAD parts.</li>
-<li>Extract faces and holes.</li>
-<li>Assign or confirm tool or scanner configuration.</li>
-<li>Generate probe or scanner paths.</li>
-<li>Review paths, shell, points, and section views.</li>
-<li>Simulate the sequence and verify scanner coverage or probe movement.</li>
-<li>Edit paths or move parts if required.</li>
-<li>Load saved sessions to avoid repeated path generation and manual edits.</li>
+<li>Carregar uma ou mais peças CAD.</li>
+<li>Extrair faces e furos.</li>
+<li>Atribuir ou confirmar a configuração da ferramenta ou do scanner.</li>
+<li>Gerar caminhos para a sonda ou para o scanner.</li>
+<li>Rever caminhos, envolvente, pontos e vistas de secção.</li>
+<li>Simular a sequência e verificar a cobertura do scanner ou o movimento da sonda.</li>
+<li>Editar caminhos ou mover peças se for necessário.</li>
+<li>Carregar sessões guardadas para evitar a geração repetida de caminhos e edições manuais.</li>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="tech_sec"></a>
-Technical Highlights</h1>
+Destaques Técnicos</h1>
 <ul>
-<li><b>Platform:</b> Built on the modern .NET 8 framework using C# and Windows Presentation Foundation (WPF) for a responsive user interface.</li>
-<li><b>Architecture:</b> Employs the Model-View-ViewModel (MVVM) design pattern for a clean separation of concerns, with <span class="tt">MainViewModel</span> serving as the core of the application logic.</li>
-<li><b>3D Engine:</b> Leverages the powerful <span class="tt">devDept.Eyeshot</span> library for all CAD data processing, visualization, and interaction.</li>
-<li><b>Inspection Modes:</b> Supports probe and scanner planning, simulation, verification, and export workflows.</li>
-<li><b>Planning Support:</b> Uses shell generation, collision-aware routing, scan verification, path editing, and multi-part session persistence.</li>
-<li><b>Configuration:</b> Uses XML-backed scanner presets, color tolerances, tool assignments, and protected runtime settings.</li>
+<li><b>Plataforma:</b> Construída com a moderna framework .NET 8 utilizando C# e Windows Presentation Foundation (WPF) para uma interface de utilizador responsiva.</li>
+<li><b>Arquitetura:</b> Emprega o padrão de design Model-View-ViewModel (MVVM) para uma separação clara de preocupações, sendo o <span class="tt">MainViewModel</span> o núcleo da lógica da aplicação.</li>
+<li><b>Motor 3D:</b> Potencia a poderosa biblioteca <span class="tt">devDept.Eyeshot</span> para todo o processamento de dados CAD, visualização e interação.</li>
+<li><b>Modos de Inspeção:</b> Suporta fluxos de trabalho de planeamento de sondas e scanners, simulação, verificação e exportação.</li>
+<li><b>Suporte ao Planeamento:</b> Utiliza geração de envolventes, encaminhamento sensível a colisões, verificação de digitalização, edição de caminhos e persistência de sessões de múltiplas peças.</li>
+<li><b>Configuração:</b> Usa predefinições de scanner através de XML, tolerâncias de cor, atribuições de ferramentas e definições protegidas em tempo de execução.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="tech_details_sec"></a>
-Technical Details</h1>
-<p>This section provides key technical information for developers looking to build, run, and contribute to the project.</p>
+Detalhes Técnicos</h1>
+<p>Esta secção fornece informações técnicas importantes para programadores que procuram compilar, executar e contribuir para o projeto.</p>
 <h2 class="doxsection"><a class="anchor" id="reqs_sec"></a>
-System Requirements</h2>
+Requisitos do Sistema</h2>
 <ul>
-<li><b>Operating System:</b> Windows 10/11 x64.</li>
-<li><b>IDE:</b> Microsoft Visual Studio 2022 (recommended).</li>
-<li><b>SDK:</b> .NET 8 SDK or Runtime.</li>
-<li><b>CAD Control:</b> devDept Eyeshot Ultimate license.</li>
-<li><b>Package Sources:</b> Access to the SARKKIS proprietary NuGet packages used by the project.</li>
+<li><b>Sistema Operativo:</b> Windows 10/11 x64.</li>
+<li><b>IDE:</b> Microsoft Visual Studio 2022 (recomendado).</li>
+<li><b>SDK:</b> SDK ou Runtime do .NET 8.</li>
+<li><b>Controlo CAD:</b> Licença do devDept Eyeshot Ultimate.</li>
+<li><b>Fontes de Pacotes:</b> Acesso aos pacotes NuGet proprietários da SARKKIS utilizados pelo projeto.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="dependencies_sec"></a>
-Core Dependencies</h2>
-<p>The project relies on several key external and internal libraries:</p><ul>
-<li><b>ColorNamesSharp (1.0.0):</b> A utility library for working with color names.</li>
-<li><b>devDept.Eyeshot.Control.Wpf (2025.3.457):</b> A high-performance 3D CAD control for .NET WPF applications. This is a <b>commercial library</b>, and a valid license is required for development and compilation. The project must be able to resolve the references to its assemblies.</li>
-<li><b>Microsoft.Xaml.Behaviors.Wpf (1.1.135):</b> Provides a set of useful behaviors for WPF applications.</li>
-<li><b>SARKKIS.Utilities (3.6.2):</b> A custom utility library from SARKKIS Robotics.</li>
-<li><b>SARKKIS.WPFTools (2.12.4):</b> A custom WPF tools library from SARKKIS Robotics.</li>
-<li><b>.NET 8 &amp; WPF:</b> The application is built using the .NET 8 framework and Windows Presentation Foundation (WPF) for the user interface.</li>
-<li><b>Doxygen:</b> The tool used to generate this documentation. A local installation is required to run the documentation generation script.</li>
-<li><b>Graphviz (Optional):</b> To generate class diagrams and other graphs within the documentation, Graphviz must be installed and accessible from the system's PATH.</li>
+Dependências Principais</h2>
+<p>O projeto depende de várias bibliotecas chave internas e externas:</p><ul>
+<li><b>ColorNamesSharp (1.0.0):</b> Uma biblioteca de utilitários para trabalhar com nomes de cores.</li>
+<li><b>devDept.Eyeshot.Control.Wpf (2025.3.457):</b> Um controlo CAD 3D de alto desempenho para aplicações .NET WPF. Esta é uma <b>biblioteca comercial</b> e é necessária uma licença válida para desenvolvimento e compilação. O projeto tem de ser capaz de resolver as referências para os seus assemblies.</li>
+<li><b>Microsoft.Xaml.Behaviors.Wpf (1.1.135):</b> Fornece um conjunto de comportamentos úteis para aplicações WPF.</li>
+<li><b>SARKKIS.Utilities (3.6.2):</b> Uma biblioteca de utilitários personalizados da SARKKIS Robotics.</li>
+<li><b>SARKKIS.WPFTools (2.12.4):</b> Uma biblioteca de ferramentas WPF personalizadas da SARKKIS Robotics.</li>
+<li><b>.NET 8 &amp; WPF:</b> A aplicação é construída utilizando a framework .NET 8 e o Windows Presentation Foundation (WPF) para a interface do utilizador.</li>
+<li><b>Doxygen:</b> A ferramenta utilizada para gerar esta documentação. É necessária uma instalação local para executar o script de geração da documentação.</li>
+<li><b>Graphviz (Opcional):</b> Para gerar diagramas de classes e outros gráficos dentro da documentação, o Graphviz tem de estar instalado e acessível através da variável de ambiente PATH do sistema.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="build_sec"></a>
-Building the Project</h2>
+Compilar o Projeto</h2>
 <ol type="1">
-<li><b>Clone the Repository:</b> Get a local copy of the source code.</li>
-<li><b>Install Dependencies:</b> Ensure the .NET 8 SDK and Visual Studio 2022 are installed.</li>
-<li><b>Install Eyeshot:</b> Make sure you have a licensed version of devDept Eyeshot Ultimate installed on your machine.</li>
-<li><b>Open the Solution:</b> Launch the <span class="tt">HirEV_SmartFitSystemsApp.sln</span> file in Visual Studio.</li>
-<li><b>Restore NuGet Packages:</b> Visual Studio should automatically restore the standard NuGet packages upon opening the solution.</li>
-<li><b>Build:</b> Build the solution (Ctrl+Shift+B). The primary output executable will be located in the <span class="tt">HirEV_SmartFitSystemsApp/bin/Debug</span> (or <span class="tt">Release</span>) directory.</li>
+<li><b>Clonar o Repositório:</b> Obtenha uma cópia local do código-fonte.</li>
+<li><b>Instalar Dependências:</b> Assegure-se de que o SDK do .NET 8 e o Visual Studio 2022 estão instalados.</li>
+<li><b>Instalar o Eyeshot:</b> Certifique-se de que tem uma versão licenciada do devDept Eyeshot Ultimate instalada na sua máquina.</li>
+<li><b>Abrir a Solução:</b> Abra o ficheiro <span class="tt">HirEV_SmartFitSystemsApp.sln</span> no Visual Studio.</li>
+<li><b>Restaurar Pacotes NuGet:</b> O Visual Studio deverá restaurar automaticamente os pacotes NuGet padrão assim que abrir a solução.</li>
+<li><b>Compilar:</b> Compile a solução (Ctrl+Shift+B). O executável de saída principal estará localizado no diretório <span class="tt">HirEV_SmartFitSystemsApp/bin/Debug</span> (ou <span class="tt">Release</span>).</li>
 </ol>
 <h2 class="doxsection"><a class="anchor" id="docs_sec"></a>
-Generating Documentation</h2>
-<p>This documentation is generated using Doxygen. To regenerate it:</p><ol type="1">
-<li>Ensure <b>Doxygen</b> is installed and its location is in your system's PATH environment variable.</li>
-<li>For full diagram support, ensure <b>Graphviz</b> is also installed and in the PATH.</li>
-<li>Execute the <b><span class="tt">generate_docs.bat</span></b> script located in the project's root directory.</li>
-<li>The script will process the source code and open the main page of the generated documentation in your default web browser.</li>
+Gerar a Documentação</h2>
+<p>Esta documentação é gerada utilizando o Doxygen. Para a voltar a gerar:</p><ol type="1">
+<li>Assegure-se de que o <b>Doxygen</b> está instalado e de que a sua localização se encontra na variável de ambiente PATH do seu sistema.</li>
+<li>Para suporte total a diagramas, certifique-se de que o <b>Graphviz</b> também está instalado e no PATH.</li>
+<li>Execute o script <b><span class="tt">generate_docs.bat</span></b> localizado no diretório raiz do projeto.</li>
+<li>O script irá processar o código-fonte e abrir a página principal da documentação gerada no seu navegador predefinido.</li>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="footer_sec"></a>
-Copyright</h1>
-<p>© 2025-2026 SARKKIS Robotics, Lda. All Rights Reserved. </p>
+Direitos de Autor</h1>
+<p>© 2025-2026 SARKKIS Robotics, Lda. Todos os Direitos Reservados. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
@@ -267,7 +264,7 @@ Copyright</h1>
   <div style="display: flex; align-items: center; gap: 20px;">
     <img src="logo.png" style="height: 48px;" alt="SARKKIS Logo">
     <span id="label" style="font-size: larger; color: #ffffff;">
-      &copy; SKK 2025
+      &copy; SKK 2025-2026
     </span>
   </div>
   <div class="footer-logo" style="margin-right: 1%;">

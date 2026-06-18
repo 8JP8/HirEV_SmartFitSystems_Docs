@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['highlights_0',['Technical Highlights',['../index.html#tech_sec',1,'']]],
-  ['hirev_20smartfitsystems_1',['HirEV SmartFitSystems',['../index.html',1,'']]]
+  ['início_20rápido_0',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]],
+  ['introdução_1',['Introdução',['../index.html#intro_sec',1,'']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['requirements_0',['Requirements',['../index.html#quick_reqs_sec',1,'Requirements'],['../index.html#reqs_sec',1,'System Requirements']]],
-  ['run_1',['Run',['../index.html#quick_run_sec',1,'']]]
+  ['técnicos_0',['Técnicos',['../index.html#tech_sec',1,'Destaques Técnicos'],['../index.html#tech_details_sec',1,'Detalhes Técnicos']]],
+  ['típico_1',['Fluxo de Trabalho Típico',['../index.html#workflow_sec',1,'']]],
+  ['trabalho_20típico_2',['Fluxo de Trabalho Típico',['../index.html#workflow_sec',1,'']]]
 ];

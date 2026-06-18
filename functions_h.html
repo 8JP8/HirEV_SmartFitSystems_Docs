@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.30</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,6 +101,7 @@ $(function(){initNavTree('functions_h.html','',''); });
 <li>HandlePathLineRightClick()&#160;:&#160;<a class="el" href="d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa75429525fb8527f0adc58058997d0f7">HirEV_SmartFitSystemsApp.Utilities.PathManager</a></li>
 <li>HandleTreeViewSelectedItemChanged()&#160;:&#160;<a class="el" href="d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a197e703ed4858abc10dfd9112ecdc933">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel</a></li>
 <li>HasAffectedRuns&#160;:&#160;<a class="el" href="df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_part_bridge_move_snapshot.html#aab8f758447392ed5c807f31bf3cd59e1">HirEV_SmartFitSystemsApp.Utilities.PathManager.PartBridgeMoveSnapshot</a></li>
+<li>HasAxialOverlapWithCylinder()&#160;:&#160;<a class="el" href="d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a901b7cde173975cd71cc09c9f226c3ea">HirEV_SmartFitSystemsApp.Modules.HoleDetector</a></li>
 <li>HasCoaxialCylinderTouchingSide()&#160;:&#160;<a class="el" href="d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#abdd6c5cd753fad061f44f48e993b5e34">HirEV_SmartFitSystemsApp.Modules.HoleDetector</a></li>
 <li>HasCollision&#160;:&#160;<a class="el" href="dc/d02/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_collision_result.html#a7202e2c945fc00fdbaea03b1404254da">HirEV_SmartFitSystemsApp.Utilities.CollisionAvoidanceAlgorithm.CollisionResult</a>, <a class="el" href="d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics_1_1_collision_test_result.html#a3b42b7eb890eaa4962a1c4e95d7403aa">HirEV_SmartFitSystemsApp.Utilities.Diagnostics.PathPlanningDiagnostics.CollisionTestResult</a></li>
 <li>hasCollision&#160;:&#160;<a class="el" href="d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af36b9e8397b0ff9fb33d0adcc016d253">HirEV_SmartFitSystemsApp.Utilities.PathManager</a></li>
@@ -114,6 +115,7 @@ $(function(){initNavTree('functions_h.html','',''); });
 <li>hasPathChangesVisibility&#160;:&#160;<a class="el" href="d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac8bb77e6568df90ef0a1dcd48be9ca27">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel</a></li>
 <li>HasScannerLineOfSight()&#160;:&#160;<a class="el" href="d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a12107c5bd58fe84123200e5a84456204">HirEV_SmartFitSystemsApp.Utilities.PathManager</a></li>
 <li>HasSdfContexts&#160;:&#160;<a class="el" href="db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a532b115c946a57816b1fd3e8224fa5e8">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator</a></li>
+<li>HasSharedPoints()&#160;:&#160;<a class="el" href="d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8eca7f8aeeabbb8dbd028e06fc6fb830">HirEV_SmartFitSystemsApp.Modules.HoleDetector</a></li>
 <li>HasShell&#160;:&#160;<a class="el" href="d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#a252fb989607b354ca1db92e32d0a237a">HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator</a></li>
 <li>HasTrajectoryTypeMismatch()&#160;:&#160;<a class="el" href="d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a1da3bae87db02c34c74f811deec00a99">HirEV_SmartFitSystemsApp.Utilities.PathManager</a></li>
 <li>HasUnsavedChanges()&#160;:&#160;<a class="el" href="d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html#aacca7f80268cef026aeedd1fcc25a04a">HirEV_SmartFitSystemsApp.Utilities.UndoManager</a></li>
@@ -213,7 +215,7 @@ $(function(){initNavTree('functions_h.html','',''); });
   <div style="display: flex; align-items: center; gap: 20px;">
     <img src="logo.png" style="height: 48px;" alt="SARKKIS Logo">
     <span id="label" style="font-size: larger; color: #ffffff;">
-      &copy; SKK 2025
+      &copy; SKK 2025-2026
     </span>
   </div>
   <div class="footer-logo" style="margin-right: 1%;">

@@ -1,43 +1,77 @@
 <map id="HirEV_SmartFitSystemsApp.Modules.HoleDetector.GetAxialRange" name="HirEV_SmartFitSystemsApp.Modules.HoleDetector.GetAxialRange">
-<area shape="rect" id="Node000001" title="Computes the axial range span of a list of points projected onto an axis." alt="" coords="2343,148,2586,190"/>
-<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#afcf89b3ff701a04f4eb4f6c6c25fe175" title="Enhanced pairing check that works for both planar and curved surfaces. Uses radial position matching ..." alt="" coords="1754,32,2002,90"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2434,135,2408,109,2375,79,2336,51,2294,30,2254,18,2213,12,2128,9,2047,18,1976,34,1975,28,2046,13,2128,4,2213,6,2255,13,2296,25,2339,46,2378,75,2412,105,2439,137"/>
-<area shape="rect" id="Node000008" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a97a459476729def56271c174e90af1bc" title="Checks if two cylindrical faces are stacked on top of each other along the same axis." alt="" coords="1748,114,2008,157"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2325,161,2008,146,2008,140,2330,161"/>
-<area shape="rect" id="Node000009" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#acff12acf54ad08f9b1dd38ea0bca07e5" title=" " alt="" coords="849,256,1071,314"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="2442,201,2415,236,2381,270,2341,303,2296,329,2237,351,2185,364,2138,369,2093,369,1998,361,1879,354,1568,354,1441,353,1342,348,1244,338,1118,321,1071,313,1071,307,1119,316,1245,333,1343,343,1441,348,1568,349,1879,349,1999,355,2093,364,2137,364,2184,358,2235,346,2294,324,2338,299,2377,267,2411,232,2437,204"/>
-<area shape="rect" id="Node000012" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a3fb99525f233f0adbeaf504243251c58" title=" " alt="" coords="2066,256,2285,314"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="2406,196,2296,246,2265,258,2264,252,2294,241,2400,198"/>
-<area shape="rect" id="Node000015" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a0f75b7afe04995d30915aa1f98b8c80a" title=" " alt="" coords="2060,40,2291,98"/>
-<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="2384,142,2262,101,2263,96,2389,142"/>
-<area shape="rect" id="Node000016" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8927cded32d2924449af990de09fd749" title=" " alt="" coords="2056,173,2295,232"/>
-<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="2330,184,2296,191,2295,186,2325,185"/>
-<area shape="rect" id="Node000003" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#af36b04a0d4f85f72b6280eb363c1768b" title="Groups cylindrical faces into potential holes using enhanced matching for curved surfaces." alt="" coords="1456,106,1682,165"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1742,94,1683,111,1682,106,1737,95"/>
-<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,181,801,224"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1438,143,1169,161,850,186,802,191,801,186,849,181,1168,156,1443,142"/>
-<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,173,518,232"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="555,203,519,205,519,200,560,202"/>
-<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,90,525,149"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="594,176,506,152,506,147,599,176"/>
-<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,173,233,232"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="269,203,234,205,232,200,274,201"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="1730,136,1683,138,1683,133,1735,135"/>
-<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="844,250,760,227,761,222,849,251"/>
-<area shape="rect" id="Node000010" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adef418d1e8289ba43e9f2f0d6728e19e" title="Creates a CADHole object from two cylindrical/conical faces representing a hole feature...." alt="" coords="576,256,798,314"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="831,285,798,288,798,282,836,285"/>
-<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab9e384e5a950a621a2a3c8052d1b454e" title="Completes the face to hole conversion by creating a hole from two faces." alt="" coords="282,256,524,314"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="558,285,524,288,524,282,564,285"/>
-<area shape="rect" id="Node000013" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a4643578f6957b32f1c369cfedde96d75" title=" " alt="" coords="1438,264,1700,306"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="2047,285,1701,288,1701,282,2052,285"/>
-<area shape="rect" id="Node000014" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a828fe5964baaafa2ff3d3d18f0e5b934" title=" " alt="" coords="1142,264,1366,306"/>
-<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1420,285,1367,288,1367,282,1425,285"/>
-<area shape="poly" id="edge16_Node000014_Node000009" title=" " alt="" coords="1124,285,1071,288,1071,282,1130,285"/>
-<area shape="poly" id="edge18_Node000015_Node000002" title=" " alt="" coords="2042,66,2003,67,2002,62,2047,65"/>
-<area shape="rect" id="Node000017" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#abdd6c5cd753fad061f44f48e993b5e34" title="Checks if there is a coaxial cylinder face touching a specific side (above or below) of an axis point..." alt="" coords="1766,181,1990,240"/>
-<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="2037,206,1990,210,1990,205,2043,206"/>
-<area shape="poly" id="edge23_Node000017_Node000013" title=" " alt="" coords="1754,240,1661,266,1660,260,1748,241"/>
-<area shape="rect" id="Node000018" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#acfb3b94c223820ff0e4e4f79a88f82f9" title="Identifies all planar faces that act as internal bridges between hole segments. Marks faces with IsBr..." alt="" coords="1119,181,1390,224"/>
-<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="1748,209,1390,207,1390,201,1754,208"/>
-<area shape="poly" id="edge22_Node000018_Node000004" title=" " alt="" coords="1101,203,802,205,802,200,1106,202"/>
+<area shape="rect" id="Node000001" title="Computes the axial range span of a list of points projected onto an axis." alt="" coords="2400,560,2643,603"/>
+<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#afcf89b3ff701a04f4eb4f6c6c25fe175" title="Enhanced pairing check that works for both planar and curved surfaces. Uses radial position matching ..." alt="" coords="1488,448,1736,507"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2466,552,2413,529,2351,509,2300,500,2233,494,2069,484,1737,479,1736,474,2069,479,2233,488,2301,495,2353,504,2415,524,2472,553"/>
+<area shape="rect" id="Node000008" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a97a459476729def56271c174e90af1bc" title="Checks if two cylindrical faces are stacked on top of each other along the same axis." alt="" coords="1482,531,1742,573"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2382,589,2352,592,2225,595,2099,592,1911,581,1742,567,1742,562,1912,576,2099,587,2225,589,2352,587,2387,588"/>
+<area shape="rect" id="Node000009" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#acff12acf54ad08f9b1dd38ea0bca07e5" title=" " alt="" coords="874,684,1096,743"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="2503,614,2478,656,2444,699,2402,741,2353,774,2294,802,2241,820,2192,830,2145,833,2047,830,1922,825,1611,825,1469,817,1328,798,1198,772,1091,746,1092,741,1199,767,1328,792,1469,812,1611,820,1922,820,2047,825,2145,828,2192,825,2239,815,2292,797,2351,770,2399,737,2440,695,2474,652,2499,617"/>
+<area shape="rect" id="Node000012" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a3fb99525f233f0adbeaf504243251c58" title=" " alt="" coords="1811,727,2031,785"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="2495,613,2434,674,2396,703,2353,725,2272,750,2187,764,2105,769,2031,768,2031,763,2104,764,2186,759,2270,745,2351,720,2393,698,2431,670,2491,615"/>
+<area shape="rect" id="Node000015" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a0f75b7afe04995d30915aa1f98b8c80a" title=" " alt="" coords="2110,519,2341,577"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="2382,566,2341,564,2341,558,2387,566"/>
+<area shape="rect" id="Node000016" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a901b7cde173975cd71cc09c9f226c3ea" title=" " alt="" coords="2099,361,2352,420"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="2476,550,2351,465,2280,423,2282,418,2353,460,2482,551"/>
+<area shape="rect" id="Node000020" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8927cded32d2924449af990de09fd749" title=" " alt="" coords="2106,652,2345,711"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="2444,608,2315,654,2314,649,2439,609"/>
+<area shape="rect" id="Node000023" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a0606ec4b40a0b1b31fc484e5825658ae" title=" " alt="" coords="2104,256,2347,315"/>
+<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="2499,545,2440,452,2398,399,2350,351,2325,333,2299,318,2300,312,2328,329,2354,347,2402,396,2444,449,2504,547"/>
+<area shape="rect" id="Node000003" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#af5b291d3b92da1f9ceac1541cdb8430d" title="Groups cylindrical faces into potential holes using enhanced matching for curved surfaces." alt="" coords="1188,448,1414,507"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1470,478,1415,480,1414,475,1475,477"/>
+<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,456,801,499"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1169,478,802,480,801,475,1174,476"/>
+<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,489,518,548"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="555,497,520,504,518,499,560,495"/>
+<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,407,525,465"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="555,459,526,456,525,451,560,458"/>
+<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,489,233,548"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="269,520,234,521,232,516,274,517"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="1503,526,1414,507,1414,502,1508,526"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="932,674,715,502,717,497,937,674"/>
+<area shape="rect" id="Node000010" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adef418d1e8289ba43e9f2f0d6728e19e" title="Creates a CADHole object from two cylindrical/conical faces representing a hole feature...." alt="" coords="576,684,798,743"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="856,714,798,716,798,711,861,713"/>
+<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab9e384e5a950a621a2a3c8052d1b454e" title="Completes the face to hole conversion by creating a hole from two faces." alt="" coords="282,684,524,743"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="558,714,524,716,524,711,564,713"/>
+<area shape="rect" id="Node000013" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a4643578f6957b32f1c369cfedde96d75" title=" " alt="" coords="1481,692,1743,735"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1793,739,1744,734,1744,729,1799,739"/>
+<area shape="rect" id="Node000014" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a828fe5964baaafa2ff3d3d18f0e5b934" title=" " alt="" coords="1189,692,1413,735"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1463,713,1414,716,1414,711,1468,713"/>
+<area shape="poly" id="edge16_Node000014_Node000009" title=" " alt="" coords="1170,713,1096,716,1096,711,1176,713"/>
+<area shape="poly" id="edge18_Node000015_Node000002" title=" " alt="" coords="2091,546,1948,540,1791,523,1725,510,1725,505,1792,517,1948,535,2097,545"/>
+<area shape="rect" id="Node000017" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a02a5da69a2a68c502e59bb1359922db4" title=" " alt="" coords="1791,323,2051,381"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="2081,373,2051,371,2051,366,2086,372"/>
+<area shape="rect" id="Node000018" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a405e425eb682ca6a833517b0abce751c" title=" " alt="" coords="1497,335,1727,393"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="1773,358,1728,362,1727,357,1778,357"/>
+<area shape="poly" id="edge22_Node000018_Node000003" title=" " alt="" coords="1518,398,1384,450,1383,445,1513,400"/>
+<area shape="rect" id="Node000019" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a46e1046fcc973af3e98e3da261ed4fe4" title=" " alt="" coords="1185,335,1416,393"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="1478,364,1417,367,1417,361,1484,364"/>
+<area shape="poly" id="edge24_Node000019_Node000004" title=" " alt="" coords="1167,389,803,459,801,454,1172,387"/>
+<area shape="rect" id="Node000021" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#abdd6c5cd753fad061f44f48e993b5e34" title="Checks if there is a coaxial cylinder face touching a specific side (above or below) of an axis point..." alt="" coords="1809,644,2033,703"/>
+<area shape="poly" id="edge26_Node000020_Node000021" title=" " alt="" coords="2087,678,2033,679,2033,674,2093,678"/>
+<area shape="poly" id="edge29_Node000021_Node000013" title=" " alt="" coords="1796,690,1744,699,1744,694,1791,690"/>
+<area shape="rect" id="Node000022" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#acfb3b94c223820ff0e4e4f79a88f82f9" title="Identifies all planar faces that act as internal bridges between hole segments. Marks faces with IsBr..." alt="" coords="849,544,1121,587"/>
+<area shape="poly" id="edge27_Node000021_Node000022" title=" " alt="" coords="1791,659,1121,584,1121,578,1797,658"/>
+<area shape="poly" id="edge28_Node000022_Node000004" title=" " alt="" coords="893,539,762,502,762,497,898,539"/>
+<area shape="poly" id="edge35_Node000023_Node000018" title=" " alt="" coords="2086,286,1945,295,1867,302,1792,313,1699,337,1698,332,1791,308,1867,297,1944,289,2091,285"/>
+<area shape="poly" id="edge44_Node000023_Node000019" title=" " alt="" coords="2085,281,2051,283,1921,279,1792,283,1636,298,1482,325,1418,338,1416,333,1480,320,1635,293,1791,277,1921,274,2051,277,2091,280"/>
+<area shape="rect" id="Node000024" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aa8f848ccfa0f2f7c06b64d670ce38de1" title=" " alt="" coords="1809,405,2033,464"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="2147,321,2100,351,2077,374,2067,385,2052,396,2029,407,2027,402,2049,391,2064,381,2073,370,2097,347,2142,323"/>
+<area shape="rect" id="Node000025" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#af84945b635cd0027597a8d1e92d46405" title="Creates a CADHole object from a single cylindrical/conical face representing a hole feature." alt="" coords="1810,105,2032,164"/>
+<area shape="poly" id="edge36_Node000023_Node000025" title=" " alt="" coords="2148,249,1982,167,1983,162,2153,249"/>
+<area shape="poly" id="edge33_Node000024_Node000002" title=" " alt="" coords="1791,453,1737,463,1736,458,1796,452"/>
+<area shape="poly" id="edge34_Node000024_Node000008" title=" " alt="" coords="1853,471,1744,521,1708,533,1707,528,1742,516,1848,472"/>
+<area shape="poly" id="edge32_Node000024_Node000018" title=" " alt="" coords="1792,406,1728,393,1728,388,1797,406"/>
+<area shape="poly" id="edge40_Node000025_Node000004" title=" " alt="" coords="1792,127,1546,115,1252,104,1113,103,993,106,902,114,871,121,851,129,811,162,778,203,751,249,731,297,705,389,693,457,688,454,699,387,726,295,746,246,773,200,807,158,848,124,869,116,901,109,992,101,1113,97,1252,99,1546,109,1797,126"/>
+<area shape="rect" id="Node000026" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ad43336f8f852b9ec1ad2bd843c812f07" title="Executes the ConvertSingleFaceToHole method." alt="" coords="1496,139,1728,197"/>
+<area shape="poly" id="edge37_Node000025_Node000026" title=" " alt="" coords="1792,149,1729,158,1727,153,1797,148"/>
+<area shape="rect" id="Node000029" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window.html#a3212293eef7cd3e865bc7b6bcb6a4330" title=" " alt="" coords="1494,5,1730,64"/>
+<area shape="poly" id="edge41_Node000025_Node000029" title=" " alt="" coords="1811,100,1705,67,1705,62,1816,100"/>
+<area shape="rect" id="Node000027" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d889675bd058a5c82df32649ef56c1b" title="Executes the ShowContextMenuFor method." alt="" coords="1169,139,1433,197"/>
+<area shape="poly" id="edge38_Node000026_Node000027" title=" " alt="" coords="1478,169,1434,171,1433,165,1484,167"/>
+<area shape="rect" id="Node000028" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="872,139,1098,197"/>
+<area shape="poly" id="edge39_Node000027_Node000028" title=" " alt="" coords="1150,169,1099,171,1098,165,1155,167"/>
+<area shape="rect" id="Node000030" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window.html#adf305e4ab0b2f98ec2b23d54d65467c3" title=" " alt="" coords="1178,5,1424,64"/>
+<area shape="poly" id="edge42_Node000029_Node000030" title=" " alt="" coords="1476,35,1425,37,1424,32,1482,34"/>
+<area shape="rect" id="Node000031" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window.html#a51905710db941dbdbba04ee80a58d426" title=" " alt="" coords="862,5,1108,64"/>
+<area shape="poly" id="edge43_Node000030_Node000031" title=" " alt="" coords="1160,36,1109,37,1108,32,1165,34"/>
 </map>

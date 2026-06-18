@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['key_20configuration_20files_0',['Key Configuration Files',['../index.html#quick_config_sec',1,'']]],
-  ['key_20features_1',['Key Features',['../index.html#features_sec',1,'']]]
+  ['principais_0',['Principais',['../index.html#dependencies_sec',1,'Dependências Principais'],['../index.html#quick_config_sec',1,'Ficheiros de Configuração Principais'],['../index.html#features_sec',1,'Funcionalidades Principais']]],
+  ['projeto_1',['Compilar o Projeto',['../index.html#build_sec',1,'']]]
 ];

@@ -25,26 +25,7 @@
 var NAVTREE =
 [
   [ "HirEV SmartFitSystems", "index.html", [
-    [ "Introduction", "index.html#intro_sec", null ],
-    [ "Current Version", "index.html#version_sec", null ],
-    [ "Key Features", "index.html#features_sec", [
-      [ "Current Application Capabilities", "index.html#current_capabilities_sec", null ]
-    ] ],
-    [ "Quick Start Guide", "index.html#quick_start_sec", [
-      [ "Requirements", "index.html#quick_reqs_sec", null ],
-      [ "Build", "index.html#quick_build_sec", null ],
-      [ "Run", "index.html#quick_run_sec", null ],
-      [ "Key Configuration Files", "index.html#quick_config_sec", null ]
-    ] ],
-    [ "Typical Workflow", "index.html#workflow_sec", null ],
-    [ "Technical Highlights", "index.html#tech_sec", null ],
-    [ "Technical Details", "index.html#tech_details_sec", [
-      [ "System Requirements", "index.html#reqs_sec", null ],
-      [ "Core Dependencies", "index.html#dependencies_sec", null ],
-      [ "Building the Project", "index.html#build_sec", null ],
-      [ "Generating Documentation", "index.html#docs_sec", null ]
-    ] ],
-    [ "Copyright", "index.html#footer_sec", null ],
+    [ "Documentação", "index.html", "index" ],
     [ "Pacotes", "namespaces.html", [
       [ "Lista de pacotes", "namespaces.html", "namespaces_dup" ],
       [ "Membros do Pacote", "namespacemembers.html", [
@@ -87,28 +68,28 @@ var NAVTREEINDEX =
 "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html#adb43154ece44cc83c8f92dcff04f1b22",
 "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a202cfa34a79c8b216ff363b0325d9b8c",
 "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6585490be2e83a5ae3c5129af2542290",
-"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aaba040d7d673d08f87c62a7918ba21b8",
-"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af0d154b69b4bfac50ab9089bfc5d43cb",
-"d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a7d4e7f10a0c14282ffa90f738a99f3d7",
-"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#aff9cab9b768f9b08b4de81f8592b9191",
-"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html#a7b88f4fb87ee1c54d2aebe04e71d6852",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0c20ed7d942b1fb88f4d20308b4fdee2",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a3cee7bc3b4fd9f6084c4d30b4bbe2273",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a73a32a5d2e375d77934a67b7bb56d477",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa9e79371afea15676bb2d98ca022c3c8",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ad963836e78b6ad2a873fb526adade713",
-"d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder_1_1_graph_node.html#acf3d53829d7a09412772db2c06184999",
-"d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scanner_config.html#a0694493d61ee4da70c4cbedc816e892c",
-"d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args.html#a34dffc1a43aa497a863f0539f5fda807",
-"d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8384cdd58d8e3215daf83f4254dd52c5",
-"da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a6750005868adb3f867f60d119568c1b2",
-"db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html#a3535ebd827bcec0865f1f9adc824fb57",
-"db/d02/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_marker_data.html#acaae231aade094dfcacde1373d45ad70",
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a25730275a5eb2e1b09ec65ae1056fdf1",
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_pre_drill.html#a6b933abcd71a698a4b7bba20591516e7",
-"dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html#af44fca489bd0c8c3c18f609b74dff009",
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a35e7f1fbadee4a7efcffa3bbe83f3079",
-"functions_func_o.html"
+"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aaa47f5e843fa139f771d9b095dff85e0",
+"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af049d1ee1e525a6d6622aa7798bde33a",
+"d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a1ca579b9e54b2e6c2f512efa0ec9cf93a76d16796b5fada9968ee2530ea43ddc3",
+"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#af222b187183b7254e618bf2b4ca354d8",
+"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html#a64aac953e53361d596fad625e254ea44",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0bc555e166f6082341820141a6f48ced",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a3cc4c1c21416bfecbbc06893492c5d17",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a7352c4a77c2f939370ba748a87cea49c",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa952c8f888dfd94bacbb8fa75ad908ef",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ad9390559163c064b6e4aa54a69df7a2b",
+"d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder_1_1_graph_node.html#abaa6fbc7fe237b43d71a8183771dddff",
+"d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scanner_config.html",
+"d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args.html#a0c321532451bdaab142784b82ef6cf8d",
+"d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a46e1046fcc973af3e98e3da261ed4fe4",
+"da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#aef6b1c7128253352c2f4ab4a215e7ae2",
+"db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html",
+"db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_nearest_neighbor_two_opt.html#a37602286a21a5916bc99a209d494af3e",
+"dc/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_scanner_depth_buffer.html#ae14671ac960ee1f9deb87f652bfc4908",
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#acbda7f03069244a916da6ec4fc6c48c7",
+"dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_scan_group.html#a88574a2f71a8aa848f1931aa5f3d7d1a",
+"de/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_body.html#ab6eacdff124aa4afdd6c87940776e5ee",
+"df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_high_z_transition.html#ad313ce4758db55c38602a313df22b38a"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';
