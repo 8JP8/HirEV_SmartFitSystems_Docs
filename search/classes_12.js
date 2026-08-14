@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['vector3djsonconverter_0',['Vector3DJsonConverter',['../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_vector3_d_json_converter.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['vectorexportdto_1',['VectorExportDTO',['../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_vector_export_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
-  ['verificationpointdata_2',['VerificationPointData',['../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_verification_point_data.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['verificationtriangle_3',['VerificationTriangle',['../d3/d01/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_verification_triangle.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['visibilitygraphpathfinder_4',['VisibilityGraphPathfinder',['../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
+  ['undohistoryentrydto_0',['UndoHistoryEntryDTO',['../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['undomanager_1',['UndoManager',['../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['undoredoeventargs_2',['UndoRedoEventArgs',['../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['updatecolorpathcommand_3',['UpdateColorPathCommand',['../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
 ];

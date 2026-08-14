@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Resource Tools/CustomDialogs/BaseAvoidanceConfigurationDialog.xaml.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BaseAvoidanceConfigurationDialog.xaml.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Configuration;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Windows;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.Windows.Data;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>System.Windows.Input;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>System.Xml;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d7/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d7/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs.html">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html">   15</a></span>    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ab43dfe809c279d27a648c0dc111f4eb9">BaseAvoidanceConfigurationDialog</a> : Window</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">   17</a></span>        <span class="keyword">private</span> readonly XmlDocument? <a class="code hl_variable" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">_docLanguage</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ab43dfe809c279d27a648c0dc111f4eb9">   19</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ab43dfe809c279d27a648c0dc111f4eb9">BaseAvoidanceConfigurationDialog</a>(XmlDocument? docLanguage)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            InitializeComponent();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">_docLanguage</a> = docLanguage;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">if</span> (docLanguage != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">if</span> (Resources[<span class="stringliteral">&quot;Language&quot;</span>] is XmlDataProvider provider)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    provider.Document = docLanguage;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    provider.Refresh();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            var config = <a class="code hl_class" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">BaseAvoidanceClearance</a>.<a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011">LoadConfig</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            HeightTextBox.Text = config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a>.ToString(<span class="stringliteral">&quot;0.###&quot;</span>, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            AngleTextBox.Text = config.SafeAngleDeg.ToString(<span class="stringliteral">&quot;0.###&quot;</span>, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a03099c74f3441ba804544ab36a853b3a">   38</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a03099c74f3441ba804544ab36a853b3a">Save_Click</a>(<span class="keywordtype">object</span> sender, RoutedEventArgs e)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#aa99477a4ecacfdbac2bc49161785efcf">TryReadValues</a>(out <span class="keywordtype">double</span> height, out <span class="keywordtype">double</span> angle))</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a05e37000f8e32c774f0fe7d4d3fd2752">SetAppSetting</a>(config, <a class="code hl_class" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">BaseAvoidanceClearance</a>.<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">SafeHeightSettingKey</a>, height.ToString(<span class="stringliteral">&quot;0.###&quot;</span>, CultureInfo.InvariantCulture));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a05e37000f8e32c774f0fe7d4d3fd2752">SetAppSetting</a>(config, <a class="code hl_class" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">BaseAvoidanceClearance</a>.<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">SafeAngleSettingKey</a>, angle.ToString(<span class="stringliteral">&quot;0.###&quot;</span>, CultureInfo.InvariantCulture));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                config.Save(ConfigurationSaveMode.Modified);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                ConfigurationManager.RefreshSection(<span class="stringliteral">&quot;appSettings&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                DialogResult = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                Close();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">catch</span> (ConfigurationErrorsException ex)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <span class="keywordtype">string</span>.Format(</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_SaveFailed&quot;</span>, <span class="stringliteral">&quot;Failed to save base avoidance configuration: {0}&quot;</span>),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        ex.Message));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#aa99477a4ecacfdbac2bc49161785efcf">   63</a></span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#aa99477a4ecacfdbac2bc49161785efcf">TryReadValues</a>(out <span class="keywordtype">double</span> height, out <span class="keywordtype">double</span> angle)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            height = 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            angle = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">double</span>.TryParse(HeightTextBox.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out height) &amp;&amp;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                !<span class="keywordtype">double</span>.TryParse(HeightTextBox.Text, NumberStyles.Float, CultureInfo.CurrentCulture, out height))</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(<a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_InvalidHeight&quot;</span>, <span class="stringliteral">&quot;Enter a valid avoidance height.&quot;</span>));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span> (height &lt; 0)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(<a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_InvalidHeightRange&quot;</span>, <span class="stringliteral">&quot;Avoidance height must be greater than or equal to 0.&quot;</span>));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">double</span>.TryParse(AngleTextBox.Text, NumberStyles.Float, CultureInfo.InvariantCulture, out angle) &amp;&amp;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                !<span class="keywordtype">double</span>.TryParse(AngleTextBox.Text, NumberStyles.Float, CultureInfo.CurrentCulture, out angle))</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(<a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_InvalidAngle&quot;</span>, <span class="stringliteral">&quot;Enter a valid avoidance angle.&quot;</span>));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (angle &lt; 0 || angle &gt; 90)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(<a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_InvalidAngleRange&quot;</span>, <span class="stringliteral">&quot;Avoidance angle must be between 0 and 90 degrees.&quot;</span>));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a05e37000f8e32c774f0fe7d4d3fd2752">   97</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a05e37000f8e32c774f0fe7d4d3fd2752">SetAppSetting</a>(Configuration config, <span class="keywordtype">string</span> key, <span class="keywordtype">string</span> value)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">if</span> (config.AppSettings.Settings[key] == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                config.AppSettings.Settings.Add(key, value);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                config.AppSettings.Settings[key].Value = value;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">  105</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">ShowValidationMessage</a>(<span class="keywordtype">string</span> message)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            MessageBox.Show(</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                message,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="stringliteral">&quot;BaseAvoidanceConfig_Title&quot;</span>, <span class="stringliteral">&quot;Base Avoidance Configuration&quot;</span>),</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                MessageBoxButton.OK,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                MessageBoxImage.Warning);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">  115</a></span>        <span class="keyword">private</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">GetText</a>(<span class="keywordtype">string</span> key, <span class="keywordtype">string</span> fallback)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">_docLanguage</a> == <span class="keyword">null</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                ? fallback</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                : <a class="code hl_class" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">MainViewModel</a>.<a class="code hl_function" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a4a2484baebec82df71f901ae4939facf">GetXMLElementValue</a>(<a class="code hl_variable" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">_docLanguage</a>, key) ?? fallback;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a3f7997e33be3e9bd1a3076a0f9886f45">  122</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a3f7997e33be3e9bd1a3076a0f9886f45">Cancel_Click</a>(<span class="keywordtype">object</span> sender, RoutedEventArgs e)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            DialogResult = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            Close();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#abc68928f8171ea7a276f032977431042">  128</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#abc68928f8171ea7a276f032977431042">Window_KeyDown</a>(<span class="keywordtype">object</span> sender, KeyEventArgs e)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">if</span> (e.Key == Key.Enter)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a03099c74f3441ba804544ab36a853b3a">Save_Click</a>(sender, e);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                e.Handled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e.Key == Key.Escape)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <a class="code hl_function" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a3f7997e33be3e9bd1a3076a0f9886f45">Cancel_Click</a>(sender, e);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                e.Handled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_a03099c74f3441ba804544ab36a853b3a"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a03099c74f3441ba804544ab36a853b3a">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.Save_Click</a></div><div class="ttdeci">void Save_Click(object sender, RoutedEventArgs e)</div><div class="ttdef"><b>Definição</b> <a href="#l00038">BaseAvoidanceConfigurationDialog.xaml.cs:38</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_a05e37000f8e32c774f0fe7d4d3fd2752"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a05e37000f8e32c774f0fe7d4d3fd2752">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.SetAppSetting</a></div><div class="ttdeci">static void SetAppSetting(Configuration config, string key, string value)</div><div class="ttdef"><b>Definição</b> <a href="#l00097">BaseAvoidanceConfigurationDialog.xaml.cs:97</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_a3f7997e33be3e9bd1a3076a0f9886f45"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a3f7997e33be3e9bd1a3076a0f9886f45">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.Cancel_Click</a></div><div class="ttdeci">void Cancel_Click(object sender, RoutedEventArgs e)</div><div class="ttdef"><b>Definição</b> <a href="#l00122">BaseAvoidanceConfigurationDialog.xaml.cs:122</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_a62a46195fa8b6aca1a3ffb443016cf61"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#a62a46195fa8b6aca1a3ffb443016cf61">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog._docLanguage</a></div><div class="ttdeci">readonly? XmlDocument _docLanguage</div><div class="ttdef"><b>Definição</b> <a href="#l00017">BaseAvoidanceConfigurationDialog.xaml.cs:17</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_aa99477a4ecacfdbac2bc49161785efcf"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#aa99477a4ecacfdbac2bc49161785efcf">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.TryReadValues</a></div><div class="ttdeci">bool TryReadValues(out double height, out double angle)</div><div class="ttdef"><b>Definição</b> <a href="#l00063">BaseAvoidanceConfigurationDialog.xaml.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_ab43dfe809c279d27a648c0dc111f4eb9"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ab43dfe809c279d27a648c0dc111f4eb9">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.BaseAvoidanceConfigurationDialog</a></div><div class="ttdeci">BaseAvoidanceConfigurationDialog(XmlDocument? docLanguage)</div><div class="ttdef"><b>Definição</b> <a href="#l00019">BaseAvoidanceConfigurationDialog.xaml.cs:19</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_abc68928f8171ea7a276f032977431042"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#abc68928f8171ea7a276f032977431042">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.Window_KeyDown</a></div><div class="ttdeci">void Window_KeyDown(object sender, KeyEventArgs e)</div><div class="ttdef"><b>Definição</b> <a href="#l00128">BaseAvoidanceConfigurationDialog.xaml.cs:128</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_ac129cb1e159e13c516a97d7119e7d492"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac129cb1e159e13c516a97d7119e7d492">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.GetText</a></div><div class="ttdeci">string GetText(string key, string fallback)</div><div class="ttdef"><b>Definição</b> <a href="#l00115">BaseAvoidanceConfigurationDialog.xaml.cs:115</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog_html_ac6a66d7f89f0267e4cb4dd071cac7c77"><div class="ttname"><a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ac6a66d7f89f0267e4cb4dd071cac7c77">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.ShowValidationMessage</a></div><div class="ttdeci">void ShowValidationMessage(string message)</div><div class="ttdef"><b>Definição</b> <a href="#l00105">BaseAvoidanceConfigurationDialog.xaml.cs:105</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance</a></div><div class="ttdoc">Utility class providing shared base plane clearance checks, angle calculations, and configuration man...</div><div class="ttdef"><b>Definição</b> <a href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00048">BaseAvoidanceClearance.cs:49</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a6fcfc9c85bcb96fc00e4490fea232011"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.LoadConfig</a></div><div class="ttdeci">static BaseAvoidanceConfig LoadConfig()</div><div class="ttdoc">Loads the base avoidance configuration from application setting files (App.config).</div><div class="ttdef"><b>Definição</b> <a href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">BaseAvoidanceClearance.cs:74</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae071985ac25c34e67ff09b900d206efd"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeHeightSettingKey</a></div><div class="ttdeci">const string SafeHeightSettingKey</div><div class="ttdoc">App.config key specifying the base avoidance safety height (in mm).</div><div class="ttdef"><b>Definição</b> <a href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00058">BaseAvoidanceClearance.cs:58</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae312298388aeb8479418c3f5704873ef"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeAngleSettingKey</a></div><div class="ttdeci">const string SafeAngleSettingKey</div><div class="ttdoc">App.config key specifying the base avoidance safe inclination angle threshold (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00063">BaseAvoidanceClearance.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_html"><div class="ttname"><a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel</a></div><div class="ttdoc">Main ViewModel for the application, handling the main logic and data binding.</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00061">MainViewModel.cs:62</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_html_a4a2484baebec82df71f901ae4939facf"><div class="ttname"><a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a4a2484baebec82df71f901ae4939facf">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetXMLElementValue</a></div><div class="ttdeci">static ? string GetXMLElementValue(XmlDocument doc, string key)</div><div class="ttdoc">Gets a localized XML element value by key.</div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l11051">MainViewModel.cs:11051</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_html"><div class="ttname"><a href="../../d7/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs.html">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs</a></div><div class="ttdef"><b>Definição</b> <a href="#l00010">BaseAvoidanceConfigurationDialog.xaml.cs:11</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_html"><div class="ttname"><a href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div><div class="ttdef"><b>Definição</b> <a href="../../dc/d03/_approach_point_generator_8cs_source.html#l00005">ApproachPointGenerator.cs:6</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_view_model_html"><div class="ttname"><a href="../../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html">HirEV_SmartFitSystemsApp.ViewModel</a></div><div class="ttdef"><b>Definição</b> <a href="../../d8/d00/_main_view_model_8cs_source.html#l00040">MainViewModel.cs:41</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html_abe43a45005add3c8ebe4eb3cc4525eaf"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeHeight</a></div><div class="ttdeci">double SafeHeight</div><div class="ttdoc">Gets the safe vertical height clearance envelope above the base plane (in mm).</div><div class="ttdef"><b>Definição</b> <a href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00036">BaseAvoidanceClearance.cs:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

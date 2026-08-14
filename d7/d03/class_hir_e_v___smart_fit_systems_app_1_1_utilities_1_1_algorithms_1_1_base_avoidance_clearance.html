@@ -1,0 +1,1653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html','../../','db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utility class providing shared base plane clearance checks, angle calculations, and configuration management for probe path planning.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_clearance_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_clearance_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_clearance_coll__map">
+<area shape="rect" title="Utility class providing shared base plane clearance checks, angle calculations, and configuration man..." alt="" coords="5,5,221,507"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a6fcfc9c85bcb96fc00e4490fea232011" id="r_a6fcfc9c85bcb96fc00e4490fea232011"><td class="memItemLeft">static <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6fcfc9c85bcb96fc00e4490fea232011">LoadConfig</a> ()</td></tr>
+<tr class="memdesc:a6fcfc9c85bcb96fc00e4490fea232011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the base avoidance configuration from application setting files (<code>App.config</code>).  <br /></td></tr>
+<tr class="memitem:a73299d30bbaf0aaad11265a1e25935d1" id="r_a73299d30bbaf0aaad11265a1e25935d1"><td class="memItemLeft">static <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#a73299d30bbaf0aaad11265a1e25935d1">EnableForIgnoredBottomFace</a> (<a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, bool hasIgnoredBottomFace)</td></tr>
+<tr class="memdesc:a73299d30bbaf0aaad11265a1e25935d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the shared clearance rule when the operator has explicitly ignored a physical bottom face, while preserving the configured height and angle values.  <br /></td></tr>
+<tr class="memitem:ae56f7c42306a3baec00a198a2b903d34" id="r_ae56f7c42306a3baec00a198a2b903d34"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae56f7c42306a3baec00a198a2b903d34">IsUnsafe</a> (Point3D point, Vector3D vector, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, bool isFaceNormal=false)</td></tr>
+<tr class="memdesc:ae56f7c42306a3baec00a198a2b903d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a single 3D point and direction vector violate base plane clearance assuming a base level of Z = 0.  <br /></td></tr>
+<tr class="memitem:a8303e941ec02b545a38bdbffb0526aa3" id="r_a8303e941ec02b545a38bdbffb0526aa3"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8303e941ec02b545a38bdbffb0526aa3">IsUnsafe</a> (Point3D point, Vector3D vector, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, double baseZ, bool isFaceNormal=false)</td></tr>
+<tr class="memdesc:a8303e941ec02b545a38bdbffb0526aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a single 3D point and direction vector violate base plane clearance relative to a specified Z base offset.  <br /></td></tr>
+<tr class="memitem:ae92b7005d111bf7230bba1e0430a70a3" id="r_ae92b7005d111bf7230bba1e0430a70a3"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae92b7005d111bf7230bba1e0430a70a3">IsPairUnsafe</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</td></tr>
+<tr class="memdesc:ae92b7005d111bf7230bba1e0430a70a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a measurement target point and approach point pair violates base clearance assuming a base level of Z = 0.  <br /></td></tr>
+<tr class="memitem:ac3ae59a940db8d1e87d83ab12cb7a72a" id="r_ac3ae59a940db8d1e87d83ab12cb7a72a"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ac3ae59a940db8d1e87d83ab12cb7a72a">IsPairUnsafe</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, double baseZ)</td></tr>
+<tr class="memdesc:ac3ae59a940db8d1e87d83ab12cb7a72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a measurement target point and approach point pair violates base clearance for a shared base Z elevation.  <br /></td></tr>
+<tr class="memitem:a2cc67807188f4aa21887de9af1458e17" id="r_a2cc67807188f4aa21887de9af1458e17"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2cc67807188f4aa21887de9af1458e17">IsPairUnsafe</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, double measurementBaseZ, double approachBaseZ)</td></tr>
+<tr class="memdesc:a2cc67807188f4aa21887de9af1458e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a measurement target point and approach point pair violates base clearance with independent base elevations.  <br /></td></tr>
+<tr class="memitem:a446e21d1e0971a7bcf8c0fb2c916cd94" id="r_a446e21d1e0971a7bcf8c0fb2c916cd94"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a446e21d1e0971a7bcf8c0fb2c916cd94">GetPairMinimumZ</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</td></tr>
+<tr class="memdesc:a446e21d1e0971a7bcf8c0fb2c916cd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum safe Z elevation for a target point and approach point pair assuming base Z = 0.  <br /></td></tr>
+<tr class="memitem:aa45933fede2742671c45f0dd60220089" id="r_aa45933fede2742671c45f0dd60220089"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#aa45933fede2742671c45f0dd60220089">GetPairMinimumZ</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, double baseZ)</td></tr>
+<tr class="memdesc:aa45933fede2742671c45f0dd60220089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z elevation.  <br /></td></tr>
+<tr class="memitem:a672f21d06044111b6dc519f857267296" id="r_a672f21d06044111b6dc519f857267296"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a672f21d06044111b6dc519f857267296">GetMinimumZ</a> (Vector3D approachVector, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</td></tr>
+<tr class="memdesc:a672f21d06044111b6dc519f857267296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum safe Z height for a given approach vector assuming base Z = 0.  <br /></td></tr>
+<tr class="memitem:afd9a6f5d000316adc892b2ca51aad10d" id="r_afd9a6f5d000316adc892b2ca51aad10d"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#afd9a6f5d000316adc892b2ca51aad10d">GetMinimumZ</a> (Vector3D approachVector, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, double baseZ)</td></tr>
+<tr class="memdesc:afd9a6f5d000316adc892b2ca51aad10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum safe Z height for a given approach vector and base Z elevation.  <br /></td></tr>
+<tr class="memitem:aed15bfba0f9a82a0cd99b0427f260f1c" id="r_aed15bfba0f9a82a0cd99b0427f260f1c"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#aed15bfba0f9a82a0cd99b0427f260f1c">GetInclinationFromVerticalDeg</a> (Vector3D approachVector, double fallbackAngleDeg)</td></tr>
+<tr class="memdesc:aed15bfba0f9a82a0cd99b0427f260f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the angle of inclination of an approach vector relative to the vertical Z-axis (0 degrees = straight up/down).  <br /></td></tr>
+<tr class="memitem:aaf361313aa4a7695322d5c1969589d80" id="r_aaf361313aa4a7695322d5c1969589d80"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#aaf361313aa4a7695322d5c1969589d80">GetAngleToBasePlaneDeg</a> (Vector3D approachVector)</td></tr>
+<tr class="memdesc:aaf361313aa4a7695322d5c1969589d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizontal, 90 degrees = vertical).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Atributos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a2411eae39cb04b60f9403f5c7e5420ff" id="r_a2411eae39cb04b60f9403f5c7e5420ff"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a2411eae39cb04b60f9403f5c7e5420ff">EnabledSettingKey</a> = &quot;PathPlanning_AvoidBottomFace&quot;</td></tr>
+<tr class="memdesc:a2411eae39cb04b60f9403f5c7e5420ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">App.config key controlling whether bottom face base avoidance is globally enabled.  <br /></td></tr>
+<tr class="memitem:ae071985ac25c34e67ff09b900d206efd" id="r_ae071985ac25c34e67ff09b900d206efd"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#ae071985ac25c34e67ff09b900d206efd">SafeHeightSettingKey</a> = &quot;PathPlanning_BaseAvoidanceHeight&quot;</td></tr>
+<tr class="memdesc:ae071985ac25c34e67ff09b900d206efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">App.config key specifying the base avoidance safety height (in mm).  <br /></td></tr>
+<tr class="memitem:ae312298388aeb8479418c3f5704873ef" id="r_ae312298388aeb8479418c3f5704873ef"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#ae312298388aeb8479418c3f5704873ef">SafeAngleSettingKey</a> = &quot;PathPlanning_BaseAvoidanceAngle&quot;</td></tr>
+<tr class="memdesc:ae312298388aeb8479418c3f5704873ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">App.config key specifying the base avoidance safe inclination angle threshold (in degrees).  <br /></td></tr>
+<tr class="memitem:aa05732e353263854b51a61183b4143fe" id="r_aa05732e353263854b51a61183b4143fe"><td class="memItemLeft">const double&#160;</td><td class="memItemRight"><a class="el" href="#aa05732e353263854b51a61183b4143fe">ZTolerance</a> = 1e-6</td></tr>
+<tr class="memdesc:aa05732e353263854b51a61183b4143fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numerical tolerance for Z-coordinate comparison operations (in mm).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:acc587f31b74e293b9bbcdb41fa5832a9" id="r_acc587f31b74e293b9bbcdb41fa5832a9"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#acc587f31b74e293b9bbcdb41fa5832a9">IsLocalClearanceUnsafe</a> (double localHeight, Vector3D approachVector, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</td></tr>
+<tr class="memdesc:acc587f31b74e293b9bbcdb41fa5832a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a specific local height and approach vector violate local base clearance rules.  <br /></td></tr>
+<tr class="memitem:aaf9ead845a011a7e4ae4c7fae0b552c0" id="r_aaf9ead845a011a7e4ae4c7fae0b552c0"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aaf9ead845a011a7e4ae4c7fae0b552c0">IsDownwardOrLevel</a> (Vector3D approachVector)</td></tr>
+<tr class="memdesc:aaf9ead845a011a7e4ae4c7fae0b552c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if an approach vector is pointing horizontally level or downward.  <br /></td></tr>
+<tr class="memitem:a706cf744c1098fa351089ee670570c2b" id="r_a706cf744c1098fa351089ee670570c2b"><td class="memItemLeft">static Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#a706cf744c1098fa351089ee670570c2b">GetApproachVector</a> (Point3D measurementPoint, Point3D approachPoint, Vector3D fallbackNormal)</td></tr>
+<tr class="memdesc:a706cf744c1098fa351089ee670570c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the vector from a measurement target point to an approach point, returning a fallback normal vector if distance is negligible.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Utility class providing shared base plane clearance checks, angle calculations, and configuration management for probe path planning. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00048">48</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a73299d30bbaf0aaad11265a1e25935d1" name="a73299d30bbaf0aaad11265a1e25935d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73299d30bbaf0aaad11265a1e25935d1">&#9670;&#160;</a></span>EnableForIgnoredBottomFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.EnableForIgnoredBottomFace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hasIgnoredBottomFace</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables the shared clearance rule when the operator has explicitly ignored a physical bottom face, while preserving the configured height and angle values. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>The base avoidance configuration to update.</td></tr>
+    <tr><td class="paramname">hasIgnoredBottomFace</td><td><code>true</code> if a bottom CAD face has been marked as ignored; otherwise <code>false</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>An updated <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html" title="Configuration data structure holding parameters for shared local-base clearance rules during path gen...">BaseAvoidanceConfig</a> instance with <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334" title="Gets a value indicating whether local-base clearance rules are enabled.">BaseAvoidanceConfig.Enabled</a> set to <code>true</code> if an ignored bottom face exists.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00112">112</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00042">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeAngleDeg</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00036">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeHeight</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../df/d00/_hole_detector_8cs_source.html#l00167">HirEV_SmartFitSystemsApp.Modules.HoleDetector.DetectHoles()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l04961">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetEffectiveBaseAvoidanceConfig()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08308">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformFaceExtractionAsync()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a73299d30bbaf0aaad11265a1e25935d1_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a73299d30bbaf0aaad11265a1e25935d1_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a73299d30bbaf0aaad11265a1e25935d1_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a73299d30bbaf0aaad11265a1e25935d1_icgraph">
+<area shape="rect" title="Enables the shared clearance rule when the operator has explicitly ignored a physical bottom face,..." alt="" coords="849,125,1107,184"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,96,801,139"/>
+<area shape="poly" title=" " alt="" coords="831,136,802,135,801,129,837,136"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,29,518,88"/>
+<area shape="poly" title=" " alt="" coords="900,119,852,102,801,87,729,73,655,65,519,59,519,54,655,60,729,68,802,81,854,97,905,119"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,163,800,221"/>
+<area shape="poly" title=" " alt="" coords="831,174,801,180,800,175,836,173"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,245,798,304"/>
+<area shape="poly" title=" " alt="" coords="902,190,802,236,773,247,771,242,800,231,897,191"/>
+<area shape="poly" title=" " alt="" coords="563,93,519,85,519,80,568,92"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,112,525,171"/>
+<area shape="poly" title=" " alt="" coords="555,129,526,134,525,128,560,128"/>
+<area shape="poly" title=" " alt="" coords="447,15,431,11,403,8,378,10,361,15,353,21,353,30,348,28,349,19,359,10,377,5,403,3,433,5,452,15"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,29,233,88"/>
+<area shape="poly" title=" " alt="" coords="269,60,234,61,232,56,274,57"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,245,511,304"/>
+<area shape="poly" title=" " alt="" coords="558,275,511,277,511,272,563,275"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf361313aa4a7695322d5c1969589d80" name="aaf361313aa4a7695322d5c1969589d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf361313aa4a7695322d5c1969589d80">&#9670;&#160;</a></span>GetAngleToBasePlaneDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetAngleToBasePlaneDeg </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizontal, 90 degrees = vertical). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approachVector</td><td>The 3D direction vector to analyze.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The angle in degrees relative to the horizontal plane.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00323">323</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00284">GetMinimumZ()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00342">IsLocalClearanceUnsafe()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf361313aa4a7695322d5c1969589d80_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf361313aa4a7695322d5c1969589d80_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf361313aa4a7695322d5c1969589d80_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf361313aa4a7695322d5c1969589d80_icgraph">
+<area shape="rect" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="555,47,794,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d" title="Calculates the minimum safe Z height for a given approach vector and base Z elevation." alt="" coords="280,5,506,64"/>
+<area shape="poly" title=" " alt="" coords="537,56,507,54,507,49,542,56"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="280,88,507,147"/>
+<area shape="poly" title=" " alt="" coords="537,96,508,103,507,98,542,95"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17" title="Determines whether a measurement target point and approach point pair violates base clearance with in..." alt="" coords="5,47,232,105"/>
+<area shape="poly" title=" " alt="" coords="262,98,232,96,232,90,267,97"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a8303e941ec02b545a38bdbffb0526aa3" title="Determines whether a single 3D point and direction vector violate base plane clearance relative to a ..." alt="" coords="5,129,232,188"/>
+<area shape="poly" title=" " alt="" coords="262,137,232,144,232,139,267,136"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a706cf744c1098fa351089ee670570c2b" name="a706cf744c1098fa351089ee670570c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706cf744c1098fa351089ee670570c2b">&#9670;&#160;</a></span>GetApproachVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetApproachVector </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>fallbackNormal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the vector from a measurement target point to an approach point, returning a fallback normal vector if distance is negligible. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The measurement target point.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The stand-off approach point.</td></tr>
+    <tr><td class="paramname">fallbackNormal</td><td>The fallback normal vector to return if points coincide.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The directional vector from measurement point to approach point, or <em>fallbackNormal</em>  if zero length.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00380">380</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00255">GetPairMinimumZ()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00206">IsPairUnsafe()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a706cf744c1098fa351089ee670570c2b_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a706cf744c1098fa351089ee670570c2b_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a706cf744c1098fa351089ee670570c2b_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a706cf744c1098fa351089ee670570c2b_icgraph">
+<area shape="rect" title="Computes the vector from a measurement target point to an approach point, returning a fallback normal..." alt="" coords="280,47,506,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089" title="Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z ele..." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="261,57,232,54,232,49,267,56"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17" title="Determines whether a measurement target point and approach point pair violates base clearance with in..." alt="" coords="5,88,232,147"/>
+<area shape="poly" title=" " alt="" coords="261,96,233,103,232,98,267,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed15bfba0f9a82a0cd99b0427f260f1c" name="aed15bfba0f9a82a0cd99b0427f260f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed15bfba0f9a82a0cd99b0427f260f1c">&#9670;&#160;</a></span>GetInclinationFromVerticalDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetInclinationFromVerticalDeg </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>fallbackAngleDeg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the angle of inclination of an approach vector relative to the vertical Z-axis (0 degrees = straight up/down). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approachVector</td><td>The 3D direction vector to analyze.</td></tr>
+    <tr><td class="paramname">fallbackAngleDeg</td><td>Default angle in degrees to return if vector length is zero.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The inclination angle in degrees relative to the vertical Z axis.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00306">306</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+</div>
+</div>
+<a id="a672f21d06044111b6dc519f857267296" name="a672f21d06044111b6dc519f857267296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672f21d06044111b6dc519f857267296">&#9670;&#160;</a></span>GetMinimumZ() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetMinimumZ </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the minimum safe Z height for a given approach vector assuming base Z = 0. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approachVector</td><td>The direction vector pointing from measurement target to approach point.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The computed minimum Z coordinate required to avoid base collisions.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00272">272</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00272">GetMinimumZ()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00272">GetMinimumZ()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00255">GetPairMinimumZ()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_cgraph">
+<area shape="rect" title="Calculates the minimum safe Z height for a given approach vector assuming base Z = 0." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="74,28,75,19,83,10,98,5,119,3,142,5,158,14,153,15,141,10,118,8,99,10,86,15,80,21,79,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a672f21d06044111b6dc519f857267296_icgraph">
+<area shape="rect" title="Calculates the minimum safe Z height for a given approach vector assuming base Z = 0." alt="" coords="280,29,506,88"/>
+<area shape="poly" title=" " alt="" coords="436,15,420,11,393,8,369,10,353,15,345,21,344,31,340,27,340,19,350,10,368,5,393,3,422,5,441,15"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089" title="Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z ele..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="261,59,232,61,232,56,266,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd9a6f5d000316adc892b2ca51aad10d" name="afd9a6f5d000316adc892b2ca51aad10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9a6f5d000316adc892b2ca51aad10d">&#9670;&#160;</a></span>GetMinimumZ() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetMinimumZ </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>baseZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the minimum safe Z height for a given approach vector and base Z elevation. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approachVector</td><td>The direction vector pointing from measurement target to approach point.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">baseZ</td><td>The baseline Z elevation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The computed minimum Z coordinate required to avoid base plane collisions.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00284">284</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00323">GetAngleToBasePlaneDeg()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00368">IsDownwardOrLevel()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00042">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeAngleDeg</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00036">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeHeight</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_afd9a6f5d000316adc892b2ca51aad10d_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_afd9a6f5d000316adc892b2ca51aad10d_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_afd9a6f5d000316adc892b2ca51aad10d_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_afd9a6f5d000316adc892b2ca51aad10d_cgraph">
+<area shape="rect" title="Calculates the minimum safe Z height for a given approach vector and base Z elevation." alt="" coords="5,47,232,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="280,5,519,64"/>
+<area shape="poly" title=" " alt="" coords="232,57,267,54,262,55,233,62"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0" title="Determines if an approach vector is pointing horizontally level or downward." alt="" coords="286,88,512,147"/>
+<area shape="poly" title=" " alt="" coords="232,90,273,98,268,99,232,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a446e21d1e0971a7bcf8c0fb2c916cd94" name="a446e21d1e0971a7bcf8c0fb2c916cd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446e21d1e0971a7bcf8c0fb2c916cd94">&#9670;&#160;</a></span>GetPairMinimumZ() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetPairMinimumZ </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>faceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the minimum safe Z elevation for a target point and approach point pair assuming base Z = 0. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The target surface point to measure.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The corresponding approach point.</td></tr>
+    <tr><td class="paramname">faceNormal</td><td>Fallback normal vector used if the approach direction vector length is near zero.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The minimum allowable Z height required to satisfy base clearance constraints.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00237">237</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00237">GetPairMinimumZ()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00237">GetPairMinimumZ()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_cgraph">
+<area shape="rect" title="Calculates the minimum safe Z elevation for a target point and approach point pair assuming base Z = ..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="74,28,75,19,83,10,98,5,119,3,142,5,158,14,153,15,141,10,118,8,99,10,86,15,80,21,79,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a446e21d1e0971a7bcf8c0fb2c916cd94_icgraph">
+<area shape="rect" title="Calculates the minimum safe Z elevation for a target point and approach point pair assuming base Z = ..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="153,15,141,10,118,8,99,10,86,15,80,21,79,30,74,28,75,19,83,10,98,5,119,3,142,5,158,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa45933fede2742671c45f0dd60220089" name="aa45933fede2742671c45f0dd60220089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45933fede2742671c45f0dd60220089">&#9670;&#160;</a></span>GetPairMinimumZ() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetPairMinimumZ </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>faceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>baseZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z elevation. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The target surface point to measure.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The corresponding approach point.</td></tr>
+    <tr><td class="paramname">faceNormal</td><td>Fallback normal vector used if the approach direction vector length is near zero.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">baseZ</td><td>The Z-coordinate baseline of the part bottom plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The minimum allowable Z height required to satisfy base clearance constraints.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00255">255</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00380">GetApproachVector()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00272">GetMinimumZ()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aa45933fede2742671c45f0dd60220089_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aa45933fede2742671c45f0dd60220089_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aa45933fede2742671c45f0dd60220089_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aa45933fede2742671c45f0dd60220089_cgraph">
+<area shape="rect" title="Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z ele..." alt="" coords="5,59,232,117"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b" title="Computes the vector from a measurement target point to an approach point, returning a fallback normal..." alt="" coords="280,5,506,64"/>
+<area shape="poly" title=" " alt="" coords="232,63,267,59,262,61,233,68"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296" title="Calculates the minimum safe Z height for a given approach vector assuming base Z = 0." alt="" coords="280,112,506,171"/>
+<area shape="poly" title=" " alt="" coords="232,107,267,116,261,117,232,113"/>
+<area shape="poly" title=" " alt="" coords="340,110,340,101,350,93,368,87,393,85,422,88,441,98,436,97,420,93,393,91,369,93,353,97,345,104,344,113"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf9ead845a011a7e4ae4c7fae0b552c0" name="aaf9ead845a011a7e4ae4c7fae0b552c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9ead845a011a7e4ae4c7fae0b552c0">&#9670;&#160;</a></span>IsDownwardOrLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsDownwardOrLevel </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if an approach vector is pointing horizontally level or downward. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approachVector</td><td>The 3D direction vector to evaluate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the vector length is non-zero and its Z component is less than or equal to zero tolerance; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00368">368</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">ZTolerance</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00284">GetMinimumZ()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf9ead845a011a7e4ae4c7fae0b552c0_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf9ead845a011a7e4ae4c7fae0b552c0_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf9ead845a011a7e4ae4c7fae0b552c0_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_aaf9ead845a011a7e4ae4c7fae0b552c0_icgraph">
+<area shape="rect" title="Determines if an approach vector is pointing horizontally level or downward." alt="" coords="280,5,506,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d" title="Calculates the minimum safe Z height for a given approach vector and base Z elevation." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="261,35,232,37,232,32,266,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc587f31b74e293b9bbcdb41fa5832a9" name="acc587f31b74e293b9bbcdb41fa5832a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc587f31b74e293b9bbcdb41fa5832a9">&#9670;&#160;</a></span>IsLocalClearanceUnsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsLocalClearanceUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>localHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>approachVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a specific local height and approach vector violate local base clearance rules. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localHeight</td><td>The relative height above the part bottom base plane (in mm).</td></tr>
+    <tr><td class="paramname">approachVector</td><td>The vector from measurement target to approach point.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if local clearance criteria are violated; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00342">342</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00323">GetAngleToBasePlaneDeg()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00042">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeAngleDeg</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00036">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeHeight</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">ZTolerance</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00206">IsPairUnsafe()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00144">IsUnsafe()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_cgraph">
+<area shape="rect" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="5,5,233,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="281,5,520,64"/>
+<area shape="poly" title=" " alt="" coords="233,32,268,34,263,35,233,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_acc587f31b74e293b9bbcdb41fa5832a9_icgraph">
+<area shape="rect" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="280,47,507,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17" title="Determines whether a measurement target point and approach point pair violates base clearance with in..." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="262,57,232,54,232,49,267,56"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a8303e941ec02b545a38bdbffb0526aa3" title="Determines whether a single 3D point and direction vector violate base plane clearance relative to a ..." alt="" coords="5,88,232,147"/>
+<area shape="poly" title=" " alt="" coords="262,96,232,103,232,98,267,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae92b7005d111bf7230bba1e0430a70a3" name="ae92b7005d111bf7230bba1e0430a70a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92b7005d111bf7230bba1e0430a70a3">&#9670;&#160;</a></span>IsPairUnsafe() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>faceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a measurement target point and approach point pair violates base clearance assuming a base level of Z = 0. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The target surface point to measure.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The corresponding approach or stand-off point.</td></tr>
+    <tr><td class="paramname">faceNormal</td><td>Fallback normal vector used if the approach direction vector length is near zero.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the target pair violates clearance rules; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00168">168</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00168">IsPairUnsafe()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05544">HirEV_SmartFitSystemsApp.Utilities.PathManager.ApplyBaseAvoidanceFilter()</a>, <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01604">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.IsPairBelowBaseAvoidanceClearance()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l04968">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPairBelowBaseAvoidanceClearance()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00168">IsPairUnsafe()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00186">IsPairUnsafe()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_cgraph">
+<area shape="rect" title="Determines whether a measurement target point and approach point pair violates base clearance assumin..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="74,28,75,19,83,10,98,5,119,3,142,5,158,14,153,15,141,10,118,8,99,10,86,15,80,21,79,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae92b7005d111bf7230bba1e0430a70a3_icgraph">
+<area shape="rect" title="Determines whether a measurement target point and approach point pair violates base clearance assumin..." alt="" coords="2990,1101,3216,1160"/>
+<area shape="poly" title=" " alt="" coords="3148,1087,3132,1083,3103,1080,3077,1082,3061,1087,3052,1093,3051,1103,3047,1099,3048,1091,3058,1082,3076,1077,3103,1075,3133,1077,3153,1087"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a41b05949c70f23d0ed4735b4a55f121e" title=" " alt="" coords="2706,723,2920,781"/>
+<area shape="poly" title=" " alt="" coords="3067,1088,2836,784,2838,779,3072,1090"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a4b4b74782dd19383d307d13505687d6c" title=" " alt="" coords="2684,1139,2942,1213"/>
+<area shape="poly" title=" " alt="" coords="2977,1150,2943,1158,2942,1153,2972,1151"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4402959b87f6787ccc9c5e0ff2b96834" title=" " alt="" coords="2703,1056,2923,1115"/>
+<area shape="poly" title=" " alt="" coords="2972,1110,2924,1105,2924,1100,2977,1111"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ac3ae59a940db8d1e87d83ab12cb7a72a" title="Determines whether a measurement target point and approach point pair violates base clearance for a s..." alt="" coords="2700,1237,2926,1296"/>
+<area shape="poly" title=" " alt="" coords="3047,1168,2996,1200,2943,1228,2914,1239,2913,1234,2941,1223,2994,1196,3042,1169"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4cd1b40864fbbf1c47fb080056b7bb9e" title=" " alt="" coords="2402,723,2629,781"/>
+<area shape="poly" title=" " alt="" coords="2688,752,2630,755,2629,749,2693,752"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae50cc51a449f32a85bd9ed9b094b5032" title=" " alt="" coords="2402,640,2629,699"/>
+<area shape="poly" title=" " alt="" coords="2688,718,2623,702,2624,697,2694,718"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a873a3e3d69d885f71104add3465806b4" title="Executes the DrawAllPaths method." alt="" coords="2106,768,2336,811"/>
+<area shape="poly" title=" " alt="" coords="2384,769,2337,777,2336,772,2389,768"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adab406171dd932d4255fe8ff822d24f5" title=" " alt="" coords="2110,835,2332,877"/>
+<area shape="poly" title=" " alt="" coords="2438,787,2348,825,2311,837,2310,831,2346,820,2433,789"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9075b1f5b91830f1f4618d2893f8291d" title="Executes the LoadPaths method." alt="" coords="1821,864,2034,907"/>
+<area shape="poly" title=" " alt="" coords="2482,792,2423,849,2387,873,2348,892,2309,904,2268,912,2185,919,2105,916,2034,909,2034,903,2105,911,2185,913,2267,906,2307,898,2346,887,2384,869,2420,844,2477,794"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad471ab95635b70be352b52f0019126e2" title="Loads paths from a PathExportDTO." alt="" coords="947,489,1152,548"/>
+<area shape="poly" title=" " alt="" coords="2395,712,2393,712,2381,697,2374,681,2370,649,2366,619,2359,605,2346,593,2301,586,2192,577,1854,558,1153,526,1152,520,1854,552,2193,572,2301,581,2348,588,2363,602,2371,617,2376,648,2379,679,2385,694,2397,709,2400,714"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad456448b3f88f3c3b98c6cea34932511" title="Regenerates all path visuals based on current paths and visibility settings. Used for real&#45;time updat..." alt="" coords="2113,263,2330,321"/>
+<area shape="poly" title=" " alt="" coords="2394,712,2393,712,2377,692,2367,673,2359,635,2356,595,2344,548,2288,421,2238,324,2240,319,2293,419,2350,546,2361,594,2364,634,2372,671,2381,689,2397,709,2400,713"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8d4d4096e25ec3bbe1d2ff5e8092d599" title=" " alt="" coords="2100,603,2343,661"/>
+<area shape="poly" title=" " alt="" coords="2402,715,2394,713,2369,694,2346,676,2322,664,2323,659,2348,671,2373,690,2396,708,2407,716"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae4bd8322e0b28e0623501b00c25c9152" title=" " alt="" coords="2100,685,2343,744"/>
+<area shape="poly" title=" " alt="" coords="2384,736,2343,733,2343,727,2390,736"/>
+<area shape="poly" title=" " alt="" coords="2092,869,2034,877,2034,872,2097,868"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd1bd072f94804c6030db3f35c8c9ea1" title="Imports paths from a JSON or XML file and loads them into the PathManager for display." alt="" coords="628,497,842,540"/>
+<area shape="poly" title=" " alt="" coords="929,520,843,521,842,516,934,518"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adf2876e5add9a4c9aebcf5ea7f71d666" title=" " alt="" coords="1820,304,2035,363"/>
+<area shape="poly" title=" " alt="" coords="2095,310,2036,321,2035,316,2100,309"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="1536,237,1744,296"/>
+<area shape="poly" title=" " alt="" coords="2189,250,2163,219,2130,185,2090,153,2047,129,1980,105,1924,94,1898,94,1870,100,1841,112,1809,129,1797,138,1790,148,1784,171,1778,195,1772,208,1761,221,1735,239,1732,235,1758,217,1767,205,1773,194,1779,169,1786,146,1793,134,1806,124,1839,107,1869,95,1897,89,1925,88,1982,100,2049,124,2093,149,2133,181,2167,216,2194,251"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa75429525fb8527f0adc58058997d0f7" title=" " alt="" coords="1818,139,2037,197"/>
+<area shape="poly" title=" " alt="" coords="2145,255,2047,212,2018,201,2018,195,2049,207,2151,255"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afc2b8edf1f87569e88543b8e3ee5b0ce" title="Executes the SetAllApproachPointsVisibility method." alt="" coords="1807,469,2048,528"/>
+<area shape="poly" title=" " alt="" coords="2189,332,2127,398,2090,431,2049,460,2027,471,2025,467,2046,455,2086,427,2124,395,2184,335"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a103fa2dc15f28b0dc1fc96d2f5775c05" title="Executes the SetAllMeasurePointsVisibility method." alt="" coords="1810,5,2045,64"/>
+<area shape="poly" title=" " alt="" coords="2192,249,2131,168,2091,124,2046,85,2017,67,2017,62,2049,81,2095,120,2135,164,2197,250"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5c7021817d31d21e6180a9d275074d01" title="Sets whether to show path lines for all paths." alt="" coords="1821,387,2034,445"/>
+<area shape="poly" title=" " alt="" coords="2151,328,2049,377,2019,389,2017,384,2047,372,2146,330"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6b40734484ca59f86666b23f23e3a2b5" title="Sets whether to show path lines (trajectory) for a specific color." alt="" coords="1813,221,2042,280"/>
+<area shape="poly" title=" " alt="" coords="2095,275,2043,269,2042,264,2100,274"/>
+<area shape="poly" title=" " alt="" coords="1802,305,1745,293,1744,288,1808,305"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="326,337,565,380"/>
+<area shape="poly" title=" " alt="" coords="1802,334,1359,336,1048,336,789,342,566,353,564,348,789,337,1048,331,1359,331,1807,332"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa3d40e668328a91636be7136008e064d" title="Executes the CompleteSimulation method." alt="" coords="1255,237,1461,296"/>
+<area shape="poly" title=" " alt="" coords="1518,267,1462,269,1461,264,1523,266"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="944,104,1155,163"/>
+<area shape="poly" title=" " alt="" coords="1271,231,1119,166,1119,161,1277,230"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="904,245,1195,288"/>
+<area shape="poly" title=" " alt="" coords="1237,268,1196,269,1194,264,1242,266"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="636,45,834,104"/>
+<area shape="poly" title=" " alt="" coords="926,112,835,96,833,91,931,110"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="332,87,559,129"/>
+<area shape="poly" title=" " alt="" coords="618,89,561,97,558,93,622,86"/>
+<area shape="poly" title=" " alt="" coords="573,112,613,113,946,128,941,131,613,119,576,117"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="24,37,259,96"/>
+<area shape="poly" title=" " alt="" coords="314,92,261,85,258,80,319,89"/>
+<area shape="rect" href="../../da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="5,120,278,179"/>
+<area shape="poly" title=" " alt="" coords="315,127,280,133,276,129,319,124"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae781a97da2683c27280f024b44ba6176" title=" " alt="" coords="613,237,856,296"/>
+<area shape="poly" title=" " alt="" coords="886,268,858,269,856,264,891,266"/>
+<area shape="poly" title=" " alt="" coords="623,303,517,339,513,335,627,300"/>
+<area shape="poly" title=" " alt="" coords="1811,461,1806,459,1744,393,1666,299,1667,294,1748,390,1809,455,1816,462"/>
+<area shape="poly" title=" " alt="" coords="1822,534,1724,565,1597,597,1450,625,1288,646,1117,654,1030,652,944,645,858,632,773,613,691,587,612,554,583,538,557,517,512,470,478,421,457,383,457,377,482,418,516,466,561,513,586,533,614,550,693,582,775,608,859,627,944,639,1031,646,1117,648,1287,640,1449,620,1596,591,1723,560,1827,532"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8c8b9925d9ec64e31365db2ade29e1a9" title="Executes the StopSimulation method." alt="" coords="1521,421,1759,464"/>
+<area shape="poly" title=" " alt="" coords="1789,473,1753,467,1753,462,1795,472"/>
+<area shape="poly" title=" " alt="" coords="1503,448,1328,451,1104,447,858,433,734,421,613,405,517,383,515,378,613,400,735,416,859,428,1105,441,1328,446,1508,446"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a725e1abd3e683aef4022461e8c77c3d5" title="Executes the ClearAllPaths method." alt="" coords="1243,472,1473,515"/>
+<area shape="poly" title=" " alt="" coords="1503,468,1474,475,1472,470,1508,466"/>
+<area shape="poly" title=" " alt="" coords="1225,505,1153,513,1152,508,1230,503"/>
+<area shape="poly" title=" " alt="" coords="1820,71,1809,84,1797,101,1790,118,1786,151,1782,185,1775,203,1761,221,1738,239,1735,235,1757,217,1770,200,1777,184,1781,150,1785,116,1792,99,1805,81,1816,74"/>
+<area shape="poly" title=" " alt="" coords="1850,72,1757,114,1635,156,1568,175,1499,189,1429,199,1359,203,1048,203,924,197,826,189,779,189,730,195,676,207,614,228,569,251,528,280,468,338,463,335,525,276,566,246,612,223,675,202,730,189,779,184,826,184,924,192,1048,197,1359,197,1428,194,1498,184,1567,169,1634,151,1755,109,1854,70"/>
+<area shape="poly" title=" " alt="" coords="1863,71,1834,99,1810,128,1796,152,1789,175,1783,216,1779,259,1773,283,1762,309,1741,343,1716,374,1668,423,1665,419,1712,370,1736,340,1757,307,1768,281,1774,258,1778,216,1783,173,1791,150,1805,125,1830,96,1859,75"/>
+<area shape="poly" title=" " alt="" coords="1817,380,1806,377,1738,338,1681,299,1682,294,1741,334,1809,372,1822,380"/>
+<area shape="poly" title=" " alt="" coords="1803,406,1597,394,1359,387,1048,387,789,381,566,369,564,364,789,375,1048,381,1359,381,1597,388,1808,405"/>
+<area shape="poly" title=" " alt="" coords="1803,428,1760,434,1759,429,1808,427"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#acf5b459010ec1b9009c3014022f7ad4d" title="Generates collision&#45;checked approach points corresponding to the raw measurement target points." alt="" coords="2395,1168,2636,1227"/>
+<area shape="poly" title=" " alt="" coords="2671,1186,2637,1191,2637,1186,2666,1186"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="1819,1101,2036,1160"/>
+<area shape="poly" title=" " alt="" coords="2377,1182,2036,1146,2036,1140,2382,1182"/>
+<area shape="poly" title=" " alt="" coords="2690,1101,2637,1108,2309,1125,2036,1132,2036,1127,2309,1120,2636,1103,2685,1101"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6226ee4fcacb65656b123e71b32d9a41" title=" " alt="" coords="2408,1035,2624,1093"/>
+<area shape="poly" title=" " alt="" coords="2685,1076,2624,1074,2624,1069,2690,1076"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5db437dc074f17f6586ba659a50be910" title=" " alt="" coords="2096,952,2347,1011"/>
+<area shape="poly" title=" " alt="" coords="2392,1030,2328,1014,2329,1009,2397,1030"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a93db353e64cf8a398fd55f70172574e2" title=" " alt="" coords="2117,1035,2326,1093"/>
+<area shape="poly" title=" " alt="" coords="2389,1064,2326,1067,2326,1061,2395,1064"/>
+<area shape="poly" title=" " alt="" coords="2111,1016,2097,1025,2029,1063,1970,1103,1968,1098,2026,1059,2094,1020,2106,1018"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac3ae59a940db8d1e87d83ab12cb7a72a" name="ac3ae59a940db8d1e87d83ab12cb7a72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ae59a940db8d1e87d83ab12cb7a72a">&#9670;&#160;</a></span>IsPairUnsafe() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>faceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>baseZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a measurement target point and approach point pair violates base clearance for a shared base Z elevation. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The target surface point to measure.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The corresponding approach or stand-off point.</td></tr>
+    <tr><td class="paramname">faceNormal</td><td>Fallback normal vector used if the approach direction vector length is near zero.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">baseZ</td><td>The Z-coordinate baseline of the part bottom plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if either point is below the base plane or fails local angle clearance; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00186">186</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00168">IsPairUnsafe()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ac3ae59a940db8d1e87d83ab12cb7a72a_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ac3ae59a940db8d1e87d83ab12cb7a72a_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ac3ae59a940db8d1e87d83ab12cb7a72a_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ac3ae59a940db8d1e87d83ab12cb7a72a_cgraph">
+<area shape="rect" title="Determines whether a measurement target point and approach point pair violates base clearance for a s..." alt="" coords="5,29,232,88"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3" title="Determines whether a measurement target point and approach point pair violates base clearance assumin..." alt="" coords="280,29,506,88"/>
+<area shape="poly" title=" " alt="" coords="232,56,266,58,261,59,232,61"/>
+<area shape="poly" title=" " alt="" coords="340,27,340,19,350,10,368,5,393,3,422,5,441,15,436,15,420,11,393,8,369,10,353,15,345,21,344,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2cc67807188f4aa21887de9af1458e17" name="a2cc67807188f4aa21887de9af1458e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc67807188f4aa21887de9af1458e17">&#9670;&#160;</a></span>IsPairUnsafe() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>measurementPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>approachPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>faceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>measurementBaseZ</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>approachBaseZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a measurement target point and approach point pair violates base clearance with independent base elevations. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurementPoint</td><td>The target surface point to measure.</td></tr>
+    <tr><td class="paramname">approachPoint</td><td>The corresponding approach or stand-off point.</td></tr>
+    <tr><td class="paramname">faceNormal</td><td>Fallback normal vector used if the approach direction vector length is near zero.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">measurementBaseZ</td><td>The baseline Z elevation for the measurement point.</td></tr>
+    <tr><td class="paramname">approachBaseZ</td><td>The baseline Z elevation for the approach point.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if either point falls below its respective base level or fails clearance rules; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00206">206</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00380">GetApproachVector()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00342">IsLocalClearanceUnsafe()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">ZTolerance</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a2cc67807188f4aa21887de9af1458e17_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a2cc67807188f4aa21887de9af1458e17_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a2cc67807188f4aa21887de9af1458e17_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a2cc67807188f4aa21887de9af1458e17_cgraph">
+<area shape="rect" title="Determines whether a measurement target point and approach point pair violates base clearance with in..." alt="" coords="5,47,232,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b" title="Computes the vector from a measurement target point to an approach point, returning a fallback normal..." alt="" coords="280,5,506,64"/>
+<area shape="poly" title=" " alt="" coords="231,56,267,53,262,55,233,62"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="280,88,507,147"/>
+<area shape="poly" title=" " alt="" coords="232,90,267,98,261,98,232,96"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="555,88,794,147"/>
+<area shape="poly" title=" " alt="" coords="508,115,542,117,537,117,508,120"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae56f7c42306a3baec00a198a2b903d34" name="ae56f7c42306a3baec00a198a2b903d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56f7c42306a3baec00a198a2b903d34">&#9670;&#160;</a></span>IsUnsafe() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>vector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isFaceNormal</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a single 3D point and direction vector violate base plane clearance assuming a base level of Z = 0. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The 3D point to evaluate.</td></tr>
+    <tr><td class="paramname">vector</td><td>The approach or normal vector associated with the point.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">isFaceNormal</td><td>Specifies whether the provided vector is a surface face normal rather than an approach direction vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the point or vector violates clearance constraints; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00130">130</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00130">IsUnsafe()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05544">HirEV_SmartFitSystemsApp.Utilities.PathManager.ApplyBaseAvoidanceFilter()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00130">IsUnsafe()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_cgraph">
+<area shape="rect" title="Determines whether a single 3D point and direction vector violate base plane clearance assuming a bas..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="74,28,75,19,83,10,98,5,119,3,142,5,158,14,153,15,141,10,118,8,99,10,86,15,80,21,79,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_ae56f7c42306a3baec00a198a2b903d34_icgraph">
+<area shape="rect" title="Determines whether a single 3D point and direction vector violate base plane clearance assuming a bas..." alt="" coords="2923,215,3149,273"/>
+<area shape="poly" title=" " alt="" coords="3078,200,3063,196,3036,193,3012,195,2997,200,2989,206,2988,216,2984,213,2985,204,2994,195,3011,190,3036,188,3064,191,3083,201"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a41b05949c70f23d0ed4735b4a55f121e" title=" " alt="" coords="2661,215,2875,273"/>
+<area shape="poly" title=" " alt="" coords="2904,244,2875,247,2875,241,2910,244"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4cd1b40864fbbf1c47fb080056b7bb9e" title=" " alt="" coords="2387,173,2613,232"/>
+<area shape="poly" title=" " alt="" coords="2643,225,2614,223,2614,218,2648,225"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae50cc51a449f32a85bd9ed9b094b5032" title=" " alt="" coords="2387,256,2613,315"/>
+<area shape="poly" title=" " alt="" coords="2643,263,2614,270,2613,265,2648,262"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a873a3e3d69d885f71104add3465806b4" title="Executes the DrawAllPaths method." alt="" coords="2102,5,2332,48"/>
+<area shape="poly" title=" " alt="" coords="2461,161,2406,111,2373,85,2338,62,2313,51,2314,46,2340,58,2376,80,2410,107,2466,162"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adab406171dd932d4255fe8ff822d24f5" title=" " alt="" coords="2106,72,2328,115"/>
+<area shape="poly" title=" " alt="" coords="2417,167,2338,136,2288,118,2288,112,2340,131,2422,167"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9075b1f5b91830f1f4618d2893f8291d" title="Executes the LoadPaths method." alt="" coords="1821,97,2034,140"/>
+<area shape="poly" title=" " alt="" coords="2369,184,2034,137,2034,132,2375,184"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad471ab95635b70be352b52f0019126e2" title="Loads paths from a PathExportDTO." alt="" coords="947,327,1152,385"/>
+<area shape="poly" title=" " alt="" coords="2369,203,2111,211,1959,218,1808,231,1626,253,1446,282,1153,337,1152,332,1445,277,1625,248,1807,225,1958,213,2111,205,2374,202"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad456448b3f88f3c3b98c6cea34932511" title="Regenerates all path visuals based on current paths and visibility settings. Used for real&#45;time updat..." alt="" coords="2109,364,2326,423"/>
+<area shape="poly" title=" " alt="" coords="2398,238,2388,246,2347,274,2309,306,2247,366,2244,362,2305,302,2344,270,2386,242,2393,240"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8d4d4096e25ec3bbe1d2ff5e8092d599" title=" " alt="" coords="2096,447,2339,505"/>
+<area shape="poly" title=" " alt="" coords="2391,241,2389,246,2373,269,2366,293,2366,340,2367,363,2366,387,2358,412,2341,436,2327,448,2325,444,2337,433,2353,409,2361,386,2362,363,2361,340,2361,292,2368,267,2385,242,2386,244"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae4bd8322e0b28e0623501b00c25c9152" title=" " alt="" coords="2096,529,2339,588"/>
+<area shape="poly" title=" " alt="" coords="2390,241,2389,246,2368,280,2360,314,2361,347,2366,381,2371,414,2372,449,2363,484,2341,519,2328,531,2326,526,2337,516,2358,482,2367,448,2366,415,2361,381,2356,348,2355,313,2363,278,2385,242,2386,244"/>
+<area shape="poly" title=" " alt="" coords="2088,105,2035,112,2033,107,2093,104"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd1bd072f94804c6030db3f35c8c9ea1" title="Imports paths from a JSON or XML file and loads them into the PathManager for display." alt="" coords="628,335,842,377"/>
+<area shape="poly" title=" " alt="" coords="929,357,843,359,842,353,934,355"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adf2876e5add9a4c9aebcf5ea7f71d666" title=" " alt="" coords="1820,704,2035,763"/>
+<area shape="poly" title=" " alt="" coords="2099,432,2098,436,2078,468,2070,498,2069,528,2073,559,2078,590,2078,622,2070,654,2050,687,2028,706,2026,701,2046,684,2065,652,2072,621,2072,590,2068,560,2064,529,2064,497,2073,465,2094,433,2095,434"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="1536,605,1744,664"/>
+<area shape="poly" title=" " alt="" coords="2099,432,2098,436,2081,462,2075,489,2075,515,2078,542,2081,569,2080,595,2071,620,2049,643,2013,666,1973,681,1930,690,1887,692,1801,685,1726,667,1727,662,1802,679,1887,687,1930,684,1971,676,2010,662,2046,639,2066,617,2075,594,2076,569,2073,543,2070,516,2069,488,2076,460,2094,433,2095,434"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa75429525fb8527f0adc58058997d0f7" title=" " alt="" coords="1818,240,2037,299"/>
+<area shape="poly" title=" " alt="" coords="2144,357,2047,313,2019,302,2019,297,2049,308,2149,357"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afc2b8edf1f87569e88543b8e3ee5b0ce" title="Executes the SetAllApproachPointsVisibility method." alt="" coords="1807,571,2048,629"/>
+<area shape="poly" title=" " alt="" coords="2101,431,2098,436,2085,451,2079,466,2074,497,2070,528,2062,545,2050,561,2034,573,2032,568,2046,557,2058,542,2065,527,2069,496,2074,465,2081,449,2094,433,2096,434"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a103fa2dc15f28b0dc1fc96d2f5775c05" title="Executes the SetAllMeasurePointsVisibility method." alt="" coords="1810,488,2045,547"/>
+<area shape="poly" title=" " alt="" coords="2108,429,2097,437,2073,457,2049,478,2026,490,2024,485,2046,474,2070,453,2094,432,2103,430"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5c7021817d31d21e6180a9d275074d01" title="Sets whether to show path lines for all paths." alt="" coords="1821,405,2034,464"/>
+<area shape="poly" title=" " alt="" coords="2091,411,2035,422,2034,417,2096,411"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6b40734484ca59f86666b23f23e3a2b5" title="Sets whether to show path lines (trajectory) for a specific color." alt="" coords="1813,323,2042,381"/>
+<area shape="poly" title=" " alt="" coords="2091,376,2042,371,2042,366,2096,376"/>
+<area shape="poly" title=" " alt="" coords="1823,698,1728,667,1728,662,1828,699"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="326,521,565,564"/>
+<area shape="poly" title=" " alt="" coords="1802,723,1596,711,1359,704,1048,704,924,710,826,717,779,717,730,712,675,700,612,678,566,655,525,625,465,567,466,562,528,621,569,651,614,674,676,694,730,707,779,712,826,712,924,704,1048,699,1359,699,1597,706,1807,722"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa3d40e668328a91636be7136008e064d" title="Executes the CompleteSimulation method." alt="" coords="1255,605,1461,664"/>
+<area shape="poly" title=" " alt="" coords="1518,635,1462,637,1461,632,1523,634"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="944,739,1155,797"/>
+<area shape="poly" title=" " alt="" coords="1277,670,1120,741,1118,736,1271,671"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="904,613,1195,656"/>
+<area shape="poly" title=" " alt="" coords="1237,635,1195,637,1195,632,1242,634"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="636,739,834,797"/>
+<area shape="poly" title=" " alt="" coords="926,768,834,771,834,765,931,768"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="332,780,559,823"/>
+<area shape="poly" title=" " alt="" coords="617,782,560,791,559,786,623,781"/>
+<area shape="poly" title=" " alt="" coords="574,805,613,807,735,812,788,812,856,807,941,795,946,794,857,812,788,817,735,817,613,812,575,811"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="24,731,259,789"/>
+<area shape="poly" title=" " alt="" coords="314,784,259,779,259,773,319,783"/>
+<area shape="rect" href="../../da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="5,813,278,872"/>
+<area shape="poly" title=" " alt="" coords="314,819,279,827,278,821,319,818"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae781a97da2683c27280f024b44ba6176" title=" " alt="" coords="613,605,856,664"/>
+<area shape="poly" title=" " alt="" coords="886,635,857,637,856,632,891,634"/>
+<area shape="poly" title=" " alt="" coords="623,601,515,567,515,562,628,599"/>
+<area shape="poly" title=" " alt="" coords="1789,617,1745,625,1745,619,1794,616"/>
+<area shape="poly" title=" " alt="" coords="1789,588,1588,577,1359,571,1048,571,789,565,566,553,565,548,789,559,1048,565,1359,565,1588,572,1794,588"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8c8b9925d9ec64e31365db2ade29e1a9" title="Executes the StopSimulation method." alt="" coords="1521,437,1759,480"/>
+<area shape="poly" title=" " alt="" coords="1817,564,1806,561,1733,521,1672,483,1673,478,1735,517,1809,556,1823,565"/>
+<area shape="poly" title=" " alt="" coords="1503,455,1328,456,1105,460,859,474,735,486,613,501,517,523,515,518,613,496,734,480,858,468,1104,455,1328,450,1508,454"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a725e1abd3e683aef4022461e8c77c3d5" title="Executes the ClearAllPaths method." alt="" coords="1243,360,1473,403"/>
+<area shape="poly" title=" " alt="" coords="1542,433,1438,406,1438,401,1548,433"/>
+<area shape="poly" title=" " alt="" coords="1225,371,1153,367,1152,362,1230,370"/>
+<area shape="poly" title=" " alt="" coords="1826,552,1808,561,1704,607,1702,602,1806,556,1821,553"/>
+<area shape="poly" title=" " alt="" coords="1792,518,1359,520,1048,520,789,526,566,537,565,532,789,521,1048,515,1359,515,1797,517"/>
+<area shape="poly" title=" " alt="" coords="1792,490,1748,483,1748,478,1797,490"/>
+<area shape="poly" title=" " alt="" coords="1818,470,1809,478,1767,508,1728,542,1667,607,1664,603,1724,539,1763,504,1806,474,1813,472"/>
+<area shape="poly" title=" " alt="" coords="1820,400,1540,309,1419,271,1359,256,1048,256,921,253,820,253,773,259,725,272,673,293,614,325,586,345,559,370,514,424,481,479,458,522,454,519,476,476,510,421,555,366,582,341,612,320,671,288,723,267,772,254,820,248,921,247,1048,251,1360,251,1420,266,1542,304,1826,400"/>
+<area shape="poly" title=" " alt="" coords="1803,445,1760,451,1759,446,1808,444"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8303e941ec02b545a38bdbffb0526aa3" name="a8303e941ec02b545a38bdbffb0526aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8303e941ec02b545a38bdbffb0526aa3">&#9670;&#160;</a></span>IsUnsafe() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsUnsafe </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>vector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>baseZ</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isFaceNormal</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a single 3D point and direction vector violate base plane clearance relative to a specified Z base offset. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The 3D point to evaluate.</td></tr>
+    <tr><td class="paramname">vector</td><td>The approach or normal vector associated with the point.</td></tr>
+    <tr><td class="paramname">config</td><td>The base avoidance configuration parameters.</td></tr>
+    <tr><td class="paramname">baseZ</td><td>The Z-coordinate baseline of the part bottom plane.</td></tr>
+    <tr><td class="paramname">isFaceNormal</td><td>Specifies whether the provided vector is a surface face normal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the point lies below the base plane or violates clearance angle limits; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00144">144</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00342">IsLocalClearanceUnsafe()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">ZTolerance</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a8303e941ec02b545a38bdbffb0526aa3_cgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a8303e941ec02b545a38bdbffb0526aa3_cgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a8303e941ec02b545a38bdbffb0526aa3_cgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a8303e941ec02b545a38bdbffb0526aa3_cgraph">
+<area shape="rect" title="Determines whether a single 3D point and direction vector violate base plane clearance relative to a ..." alt="" coords="5,5,232,64"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="280,5,507,64"/>
+<area shape="poly" title=" " alt="" coords="232,32,267,34,261,35,232,37"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="555,5,794,64"/>
+<area shape="poly" title=" " alt="" coords="508,32,542,35,537,35,508,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fcfc9c85bcb96fc00e4490fea232011" name="a6fcfc9c85bcb96fc00e4490fea232011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcfc9c85bcb96fc00e4490fea232011">&#9670;&#160;</a></span>LoadConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.LoadConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the base avoidance configuration from application setting files (<code>App.config</code>). </p>
+<dl class="section return"><dt>Retorna</dt><dd>A populated <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html" title="Configuration data structure holding parameters for shared local-base clearance rules during path gen...">BaseAvoidanceConfig</a> instance containing validated configuration settings.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">74</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00053">EnabledSettingKey</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00063">SafeAngleSettingKey</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00058">SafeHeightSettingKey</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l13193">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.AddBaseAvoidancePlaneVisuals()</a>, <a class="el" href="../../d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs_source.html#l00019">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.BaseAvoidanceConfigurationDialog()</a>, <a class="el" href="../../df/d00/_hole_detector_8cs_source.html#l00167">HirEV_SmartFitSystemsApp.Modules.HoleDetector.DetectHoles()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00050">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l04956">HirEV_SmartFitSystemsApp.Utilities.PathManager.LoadBaseAvoidanceConfig()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08308">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformFaceExtractionAsync()</a>, <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00094">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.ShellBasedPathPlanner()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l06198">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShouldOfferBaseAvoidancePlaneMenu()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l06208">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShouldOfferBaseAvoidancePlaneMenu()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a6fcfc9c85bcb96fc00e4490fea232011_icgraph.png" border="0" usemap="#ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a6fcfc9c85bcb96fc00e4490fea232011_icgraph" loading="lazy" alt=""/></div>
+<map name="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a6fcfc9c85bcb96fc00e4490fea232011_icgraph" id="ad7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_a6fcfc9c85bcb96fc00e4490fea232011_icgraph">
+<area shape="rect" title="Loads the base avoidance configuration from application setting files (App.config)." alt="" coords="1870,920,2097,979"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac026eaab6aa4b455f5e8ebb370c65095" title=" " alt="" coords="1558,503,1796,561"/>
+<area shape="poly" title=" " alt="" coords="1952,906,1820,716,1702,564,1704,559,1824,713,1957,908"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="928,785,1160,844"/>
+<area shape="poly" title=" " alt="" coords="1931,910,1881,879,1821,853,1735,831,1644,814,1553,804,1464,798,1296,797,1160,805,1159,800,1296,792,1464,793,1554,799,1645,809,1736,825,1823,848,1883,875,1936,911"/>
+<area shape="rect" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html#ab43dfe809c279d27a648c0dc111f4eb9" title=" " alt="" coords="1531,1103,1822,1177"/>
+<area shape="poly" title=" " alt="" coords="1947,989,1892,1044,1859,1070,1824,1093,1801,1105,1800,1100,1821,1088,1855,1066,1888,1040,1943,991"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="1562,727,1791,769"/>
+<area shape="poly" title=" " alt="" coords="1946,908,1891,853,1857,824,1821,798,1765,773,1765,767,1824,794,1861,819,1895,849,1951,909"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac694a894e80fc8190509df97e7b805e7" title="Finds CAD faces that should be ignored during path planning based on automated bottom&#45;face classifica..." alt="" coords="1564,887,1790,945"/>
+<area shape="poly" title=" " alt="" coords="1852,936,1791,931,1790,926,1858,935"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#adb18695c6d60ef0ff1b243174fef8ab0" title="Finds CAD faces that should be ignored during path planning based on explicit hole face indices." alt="" coords="1246,953,1472,1012"/>
+<area shape="poly" title=" " alt="" coords="1852,957,1473,979,1472,974,1857,956"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa4527c7d68d0ccc3029db17d37772057" title=" " alt="" coords="1572,1020,1781,1079"/>
+<area shape="poly" title=" " alt="" coords="1880,983,1770,1022,1768,1017,1874,985"/>
+<area shape="rect" href="../../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a66bf567899e744d712a96efe7670b33b" title="Initializes a new instance of the ShellBasedPathPlanner class." alt="" coords="1560,1201,1793,1260"/>
+<area shape="poly" title=" " alt="" coords="1967,991,1944,1040,1913,1094,1873,1147,1824,1192,1795,1208,1793,1203,1821,1187,1869,1143,1908,1091,1940,1038,1962,994"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af612092e891fd5b84212b05c9ee67ada" title=" " alt="" coords="1564,209,1789,268"/>
+<area shape="poly" title=" " alt="" coords="1967,904,1910,723,1868,607,1820,492,1754,367,1697,271,1698,266,1759,364,1825,490,1873,605,1915,721,1972,906"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac8f936083c0b06836dcd4d7f5ba2a928" title=" " alt="" coords="1564,1284,1789,1343"/>
+<area shape="poly" title=" " alt="" coords="1974,992,1956,1057,1926,1133,1906,1171,1883,1209,1855,1244,1824,1274,1791,1294,1789,1289,1821,1270,1851,1240,1878,1206,1902,1169,1921,1130,1951,1056,1970,996"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8042e54ff880692ad2689578f1411aa2" title="Executes the AddPartOrigins method." alt="" coords="1243,503,1475,561"/>
+<area shape="poly" title=" " alt="" coords="1539,533,1476,535,1475,529,1544,531"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6b687780254af3d92fd48d257ed5aa4c" title=" " alt="" coords="920,364,1168,423"/>
+<area shape="poly" title=" " alt="" coords="1539,504,1169,423,1168,418,1544,502"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a38db38199894e65bbfb8f9703d73c072" title=" " alt="" coords="1235,240,1483,299"/>
+<area shape="poly" title=" " alt="" coords="1625,493,1396,302,1396,297,1631,492"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6b9a5d2efe16af6968118825f553b6f9" title=" " alt="" coords="1235,585,1483,644"/>
+<area shape="poly" title=" " alt="" coords="1544,567,1476,587,1474,582,1549,565"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="933,447,1155,505"/>
+<area shape="poly" title=" " alt="" coords="1224,509,1156,498,1155,493,1230,508"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title=" " alt="" coords="901,529,1187,572"/>
+<area shape="poly" title=" " alt="" coords="1224,541,1188,545,1186,540,1229,539"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="925,596,1163,655"/>
+<area shape="poly" title=" " alt="" coords="1243,567,1187,587,1149,598,1147,593,1186,581,1248,565"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="604,596,843,655"/>
+<area shape="poly" title=" " alt="" coords="907,626,844,628,842,623,912,624"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d889675bd058a5c82df32649ef56c1b" title="Executes the ShowContextMenuFor method." alt="" coords="281,231,545,289"/>
+<area shape="poly" title=" " alt="" coords="902,377,754,354,593,320,545,304,511,292,509,287,547,299,595,315,755,349,906,374"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="5,272,232,331"/>
+<area shape="poly" title=" " alt="" coords="263,283,234,287,230,283,267,279"/>
+<area shape="poly" title=" " alt="" coords="1286,308,1188,354,1156,366,1153,361,1186,350,1290,305"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9d3269bd42d1f7cdcde6c34590136027" title=" " alt="" coords="925,281,1163,340"/>
+<area shape="poly" title=" " alt="" coords="1217,289,1165,297,1163,293,1222,286"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#afa767b7405d709b702a166560709e7cc" title=" " alt="" coords="603,89,844,148"/>
+<area shape="poly" title=" " alt="" coords="1290,233,1241,210,1186,189,1123,175,1035,160,846,135,844,130,1036,155,1124,169,1187,184,1243,205,1295,232"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1fd0c6aba056dba50db19fc205a9f8c5" title=" " alt="" coords="925,65,1163,124"/>
+<area shape="poly" title=" " alt="" coords="1310,230,1253,187,1185,145,1147,127,1146,122,1188,140,1256,183,1315,230"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a7d2a0a65dbf4313009878d063a15742b" title=" " alt="" coords="920,199,1168,257"/>
+<area shape="poly" title=" " alt="" coords="1217,252,1169,247,1168,242,1222,250"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae7c9ca4a4a2063d3392f9c595d8c5b90" title=" " alt="" coords="604,247,843,305"/>
+<area shape="poly" title=" " alt="" coords="907,297,844,291,842,286,912,295"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac9bacd912ef9be36c28837acfc4c001f" title=" " alt="" coords="289,313,537,372"/>
+<area shape="poly" title=" " alt="" coords="907,319,538,339,536,334,911,316"/>
+<area shape="poly" title=" " alt="" coords="587,271,547,269,544,265,591,268"/>
+<area shape="poly" title=" " alt="" coords="271,325,233,319,231,315,275,322"/>
+<area shape="poly" title=" " alt="" coords="907,106,846,112,844,107,912,103"/>
+<area shape="poly" title=" " alt="" coords="902,227,755,230,594,237,547,242,544,237,594,232,755,224,906,224"/>
+<area shape="poly" title=" " alt="" coords="1250,651,1237,665,1220,686,1213,707,1205,728,1189,751,1162,771,1134,787,1131,783,1160,767,1185,747,1201,726,1208,705,1215,683,1233,661,1246,654"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a49af3805ee6787990854162432088aca" title=" " alt="" coords="926,679,1162,737"/>
+<area shape="poly" title=" " alt="" coords="1243,650,1187,669,1149,681,1147,676,1186,664,1248,648"/>
+<area shape="poly" title=" " alt="" coords="1094,771,1076,767,1044,764,1016,766,998,771,989,777,988,786,983,784,984,775,996,766,1015,761,1044,759,1077,761,1099,771"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="610,785,837,844"/>
+<area shape="poly" title=" " alt="" coords="910,816,839,817,837,812,915,814"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a7cb801a89ea2147a9297bf01d38a104e" title=" " alt="" coords="594,679,853,737"/>
+<area shape="poly" title=" " alt="" coords="908,709,855,711,853,705,913,707"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8ddb6e2027dcd384c1ce56eec8c3063d" title=" " alt="" coords="280,720,546,779"/>
+<area shape="poly" title=" " alt="" coords="576,729,548,734,545,729,581,726"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a199ef012131210dbc7bf8d1a8c3ec55d" title=" " alt="" coords="288,803,538,861"/>
+<area shape="poly" title=" " alt="" coords="648,746,547,793,516,804,513,800,545,788,652,743"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="294,885,532,944"/>
+<area shape="poly" title=" " alt="" coords="628,747,596,775,580,800,574,825,567,850,548,875,532,887,528,883,544,871,562,848,568,824,575,798,592,772,632,744"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a06112b393de550964f74e99d624d1586" title="Executes the OnProbeCollisionValidationStarted method." alt="" coords="295,472,531,531"/>
+<area shape="poly" title=" " alt="" coords="594,670,592,669,579,653,572,637,567,605,563,574,556,559,544,545,532,534,531,529,548,541,561,557,568,573,573,604,577,635,584,650,596,665,600,669"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a03e4b2565f4868e6a9630e717559b726" title=" " alt="" coords="290,555,536,613"/>
+<area shape="poly" title=" " alt="" coords="601,672,593,669,578,658,568,648,559,638,545,628,523,617,522,611,547,623,562,634,572,644,581,654,595,664,606,671"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#abff381ce4fc8b7dbb0a55c38d5890732" title=" " alt="" coords="291,637,534,696"/>
+<area shape="poly" title=" " alt="" coords="576,690,536,685,534,680,581,688"/>
+<area shape="poly" title=" " alt="" coords="1598,722,1522,704,1430,689,1381,686,1331,688,1282,695,1236,709,1221,718,1212,728,1202,739,1188,752,1122,787,1120,782,1185,747,1199,736,1208,724,1218,713,1234,704,1281,690,1331,683,1381,681,1430,684,1524,698,1604,721"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="1237,719,1481,777"/>
+<area shape="poly" title=" " alt="" coords="1545,749,1482,751,1481,745,1550,747"/>
+<area shape="poly" title=" " alt="" coords="1546,896,1160,836,1160,831,1551,895"/>
+<area shape="poly" title=" " alt="" coords="1725,872,1708,868,1677,865,1650,867,1632,872,1623,879,1622,888,1618,885,1618,876,1629,867,1649,862,1677,860,1709,863,1730,872"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="936,940,1152,999"/>
+<area shape="poly" title=" " alt="" coords="1546,921,1398,931,1235,944,1153,954,1152,949,1234,939,1398,926,1551,920"/>
+<area shape="poly" title=" " alt="" coords="1545,944,1473,961,1472,956,1551,942"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a41b05949c70f23d0ed4735b4a55f121e" title=" " alt="" coords="1252,1119,1466,1177"/>
+<area shape="poly" title=" " alt="" coords="1560,1082,1532,1093,1450,1121,1448,1116,1530,1088,1555,1083"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a49d12411a71d3903f305ab0d5b667456" title=" " alt="" coords="1248,1201,1470,1260"/>
+<area shape="poly" title=" " alt="" coords="1561,1072,1533,1093,1522,1104,1515,1116,1509,1140,1503,1166,1496,1179,1485,1191,1468,1203,1466,1199,1481,1187,1492,1176,1498,1164,1504,1139,1510,1114,1518,1101,1529,1089,1556,1074"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="1248,1036,1470,1095"/>
+<area shape="poly" title=" " alt="" coords="1554,1056,1471,1062,1470,1057,1560,1055"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4cd1b40864fbbf1c47fb080056b7bb9e" title=" " alt="" coords="931,1160,1157,1219"/>
+<area shape="poly" title=" " alt="" coords="1234,1164,1158,1177,1157,1172,1239,1164"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae50cc51a449f32a85bd9ed9b094b5032" title=" " alt="" coords="931,1077,1157,1136"/>
+<area shape="poly" title=" " alt="" coords="1234,1132,1157,1124,1157,1119,1239,1132"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a873a3e3d69d885f71104add3465806b4" title="Executes the DrawAllPaths method." alt="" coords="608,1325,839,1368"/>
+<area shape="poly" title=" " alt="" coords="996,1227,930,1275,854,1316,824,1327,823,1322,852,1311,927,1270,991,1229"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adab406171dd932d4255fe8ff822d24f5" title=" " alt="" coords="612,928,835,971"/>
+<area shape="poly" title=" " alt="" coords="915,1160,899,1150,884,1129,876,1107,875,1065,874,1024,867,1004,851,985,835,972,835,966,855,981,871,1002,879,1023,880,1065,881,1106,888,1126,903,1146,920,1161"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9075b1f5b91830f1f4618d2893f8291d" title="Executes the LoadPaths method." alt="" coords="307,1197,519,1240"/>
+<area shape="poly" title=" " alt="" coords="1018,1230,989,1272,952,1314,906,1353,854,1382,784,1407,724,1415,664,1406,593,1382,539,1354,493,1315,454,1275,429,1243,430,1238,458,1272,496,1311,542,1349,595,1378,666,1401,724,1409,782,1402,852,1378,903,1349,948,1310,985,1268,1014,1233"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad471ab95635b70be352b52f0019126e2" title="Loads paths from a PathExportDTO." alt="" coords="621,995,826,1053"/>
+<area shape="poly" title=" " alt="" coords="914,1158,900,1150,882,1129,875,1108,868,1087,852,1067,827,1051,827,1046,855,1063,872,1085,880,1106,887,1126,903,1146,920,1159"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad456448b3f88f3c3b98c6cea34932511" title="Regenerates all path visuals based on current paths and visibility settings. Used for real&#45;time updat..." alt="" coords="615,1077,832,1136"/>
+<area shape="poly" title=" " alt="" coords="913,1156,832,1137,833,1132,918,1156"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8d4d4096e25ec3bbe1d2ff5e8092d599" title=" " alt="" coords="602,1160,845,1219"/>
+<area shape="poly" title=" " alt="" coords="913,1190,846,1192,846,1187,918,1189"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae4bd8322e0b28e0623501b00c25c9152" title=" " alt="" coords="602,1243,845,1301"/>
+<area shape="poly" title=" " alt="" coords="918,1222,841,1245,839,1240,913,1223"/>
+<area shape="poly" title=" " alt="" coords="599,980,596,985,565,1008,537,1035,488,1095,451,1153,426,1199,422,1195,446,1150,484,1092,533,1032,561,1004,592,980,604,977"/>
+<area shape="poly" title=" " alt="" coords="1243,1031,1143,1002,1143,997,1248,1031"/>
+<area shape="poly" title=" " alt="" coords="1601,202,1520,166,1417,124,1303,85,1186,56,1018,24,948,13,883,8,818,11,752,23,678,45,595,80,544,112,499,152,462,195,435,231,431,229,458,192,495,149,541,107,593,75,677,40,750,17,818,6,883,3,949,8,1019,19,1187,51,1305,80,1419,119,1522,161,1606,202"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a2411eae39cb04b60f9403f5c7e5420ff" name="a2411eae39cb04b60f9403f5c7e5420ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2411eae39cb04b60f9403f5c7e5420ff">&#9670;&#160;</a></span>EnabledSettingKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.EnabledSettingKey = &quot;PathPlanning_AvoidBottomFace&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>App.config key controlling whether bottom face base avoidance is globally enabled. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00053">53</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">LoadConfig()</a>.</p>
+
+</div>
+</div>
+<a id="ae312298388aeb8479418c3f5704873ef" name="ae312298388aeb8479418c3f5704873ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae312298388aeb8479418c3f5704873ef">&#9670;&#160;</a></span>SafeAngleSettingKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeAngleSettingKey = &quot;PathPlanning_BaseAvoidanceAngle&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>App.config key specifying the base avoidance safe inclination angle threshold (in degrees). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00063">63</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">LoadConfig()</a> e <a class="el" href="../../d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs_source.html#l00038">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.Save_Click()</a>.</p>
+
+</div>
+</div>
+<a id="ae071985ac25c34e67ff09b900d206efd" name="ae071985ac25c34e67ff09b900d206efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae071985ac25c34e67ff09b900d206efd">&#9670;&#160;</a></span>SafeHeightSettingKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeHeightSettingKey = &quot;PathPlanning_BaseAvoidanceHeight&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>App.config key specifying the base avoidance safety height (in mm). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00058">58</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">LoadConfig()</a> e <a class="el" href="../../d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs_source.html#l00038">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog.Save_Click()</a>.</p>
+
+</div>
+</div>
+<a id="aa05732e353263854b51a61183b4143fe" name="aa05732e353263854b51a61183b4143fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05732e353263854b51a61183b4143fe">&#9670;&#160;</a></span>ZTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.ZTolerance = 1e-6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Numerical tolerance for Z-coordinate comparison operations (in mm). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">68</a> do ficheiro <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l10421">HirEV_SmartFitSystemsApp.Utilities.PathManager.BuildIgnoredBottomNavigationBlocker()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00073">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.HasIgnoredBottomFace()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00368">IsDownwardOrLevel()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00342">IsLocalClearanceUnsafe()</a>, <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01604">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.IsPairBelowBaseAvoidanceClearance()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l04968">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPairBelowBaseAvoidanceClearance()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00206">IsPairUnsafe()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00144">IsUnsafe()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html">BaseAvoidanceClearance.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

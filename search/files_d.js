@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['recentpartsmanager_2ecs_0',['RecentPartsManager.cs',['../d2/d03/_recent_parts_manager_8cs.html',1,'']]],
-  ['rrtstarpathfinder_2ecs_1',['RRTStarPathfinder.cs',['../d8/d00/_r_r_t_star_pathfinder_8cs.html',1,'']]]
+  ['partinspectl_2ecs_0',['PartInspectL.cs',['../d4/d01/_part_inspect_l_8cs.html',1,'']]],
+  ['passwordinputdialog_2examl_1',['PasswordInputDialog.xaml',['../d7/d03/_password_input_dialog_8xaml.html',1,'']]],
+  ['passwordinputdialog_2examl_2ecs_2',['PasswordInputDialog.xaml.cs',['../d0/d00/_password_input_dialog_8xaml_8cs.html',1,'']]],
+  ['passwordmanager_2ecs_3',['PasswordManager.cs',['../de/d01/_password_manager_8cs.html',1,'']]],
+  ['patheditdialog_2examl_4',['PathEditDialog.xaml',['../dd/d01/_path_edit_dialog_8xaml.html',1,'']]],
+  ['patheditdialog_2examl_2ecs_5',['PathEditDialog.xaml.cs',['../d7/d00/_path_edit_dialog_8xaml_8cs.html',1,'']]],
+  ['pathexportdto_2ecs_6',['PathExportDTO.cs',['../d3/d00/_path_export_d_t_o_8cs.html',1,'']]],
+  ['pathexportmodels_2ecs_7',['PathExportModels.cs',['../d0/d01/_path_export_models_8cs.html',1,'']]],
+  ['pathmanager_2ecs_8',['PathManager.cs',['../da/d00/_path_manager_8cs.html',1,'']]],
+  ['pathplanningdiagnostics_2ecs_9',['PathPlanningDiagnostics.cs',['../dc/d00/_path_planning_diagnostics_8cs.html',1,'']]],
+  ['pathvolumevalidator_2ecs_10',['PathVolumeValidator.cs',['../d3/d02/_path_volume_validator_8cs.html',1,'']]],
+  ['planning_5fsidepanel_2examl_11',['Planning_SidePanel.xaml',['../d2/d00/_planning___side_panel_8xaml.html',1,'']]],
+  ['planning_5fsidepanel_2examl_2ecs_12',['Planning_SidePanel.xaml.cs',['../d9/d02/_planning___side_panel_8xaml_8cs.html',1,'']]],
+  ['point3dcomparer_2ecs_13',['Point3DComparer.cs',['../d8/d03/_point3_d_comparer_8cs.html',1,'']]],
+  ['point4dconverter_2ecs_14',['Point4DConverter.cs',['../d7/d01/_point4_d_converter_8cs.html',1,'']]],
+  ['pointvectorjsonconverter_2ecs_15',['PointVectorJsonConverter.cs',['../d2/d02/_point_vector_json_converter_8cs.html',1,'']]],
+  ['protectedconfigmanager_2ecs_16',['ProtectedConfigManager.cs',['../dc/d03/_protected_config_manager_8cs.html',1,'']]]
 ];

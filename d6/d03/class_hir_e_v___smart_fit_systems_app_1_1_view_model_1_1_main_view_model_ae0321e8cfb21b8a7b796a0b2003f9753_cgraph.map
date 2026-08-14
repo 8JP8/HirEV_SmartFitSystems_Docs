@@ -1,14 +1,20 @@
 <map id="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetAssociatedEntities" name="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetAssociatedEntities">
-<area shape="rect" id="Node000001" title="Executes the GetAssociatedEntities method." alt="" coords="5,72,277,131"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a43375d3394fcc2f343d8e49ed4d6b1cb" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="325,72,545,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,99,312,101,306,102,278,104"/>
-<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac179d631185f5ff05109c8460b326872" title="Executes the GetPartSourceKey method." alt="" coords="864,5,1095,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="538,69,593,57,724,42,851,37,846,37,725,47,593,63,539,74"/>
-<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5c75b49ee730bf23db3ccb9cb7552a5b" title="Executes the IsPartOriginEntityForPart method." alt="" coords="594,72,815,131"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="545,99,582,101,576,102,546,104"/>
-<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a24bffd4460a4eca8bf29508ae260dda6" title="Executes the IsPathVisualEntity method." alt="" coords="593,155,816,213"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="533,129,595,150,590,149,533,134"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="815,72,846,67,851,66,816,77"/>
-<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acbc2414bac12886d5b3b74d6f333a6a3" title="Executes the IsOriginNearPart method." alt="" coords="864,88,1095,147"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="815,105,851,110,846,110,815,110"/>
+<area shape="rect" id="Node000001" title="Executes the GetAssociatedEntities method." alt="" coords="5,196,277,255"/>
+<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a43375d3394fcc2f343d8e49ed4d6b1cb" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="325,196,545,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,223,312,225,306,226,278,228"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac179d631185f5ff05109c8460b326872" title="Executes the GetPartSourceKey method." alt="" coords="870,171,1101,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="545,217,593,215,858,205,852,206,593,220,546,222"/>
+<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9c3af38ef0f79ecbc4fa82b41b5177a5" title="Checks whether a visual entity belongs to a specific base avoidance source path." alt="" coords="593,88,819,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="510,193,614,154,619,152,512,198"/>
+<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5c75b49ee730bf23db3ccb9cb7552a5b" title="Executes the IsPartOriginEntityForPart method." alt="" coords="596,229,816,288"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="545,236,583,243,578,243,546,242"/>
+<area shape="rect" id="Node000009" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a24bffd4460a4eca8bf29508ae260dda6" title="Executes the IsPathVisualEntity method." alt="" coords="594,312,818,371"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="496,253,594,298,610,306,605,306,592,302,495,258"/>
+<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a81aa9a5f2b44b2507f39a14f6c8b7cf8" title="Normalizes a file path or source identifier into a canonical lookup key for base avoidance data." alt="" coords="867,88,1104,147"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="819,115,854,117,849,118,820,120"/>
+<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a3cb26be4cdc442748937fcc4252da59d" title="Attempts to extract the source CAD file path embedded within a base avoidance visual entity&#39;s tag." alt="" coords="873,5,1098,64"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="807,85,872,68,867,70,809,90"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="816,233,852,228,857,227,817,238"/>
+<area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acbc2414bac12886d5b3b74d6f333a6a3" title="Executes the IsOriginNearPart method." alt="" coords="870,253,1101,312"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="817,265,857,271,852,271,817,271"/>
 </map>

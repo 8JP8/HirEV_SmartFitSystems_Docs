@@ -1,0 +1,4 @@
+var _base_avoidance_configuration_dialog_8xaml_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.BaseAvoidanceConfigurationDialog", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog.html", "d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_base_avoidance_configuration_dialog" ]
+];

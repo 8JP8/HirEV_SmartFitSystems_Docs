@@ -7,8 +7,10 @@ var class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor =
     [ "GetFaceArea", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb", null ],
     [ "GetFaceCentroid", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c", null ],
     [ "GetFaceNormalApprox", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5", null ],
-    [ "InferFaceType", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a26a7915fd6ebefb69b5b3a32d455ca93", null ],
+    [ "InferFaceType", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a536a10f84e319901a5ecef2513f0a055", null ],
     [ "PointsAreEqual", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a1e067c7fbc340e17cebfaa5a4855ea25", null ],
     [ "TryConvertToBrep", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a29f5afbe4722a3058950f66dd1b1f505", null ],
+    [ "TryGetCylinderInwardNormalDot", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0", null ],
+    [ "TryGetFaceSense", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a67a6fc3193c20aeca7a88b63b5b25d68", null ],
     [ "_entities", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae8876b018da1a6b998a6e896212809fb", null ]
 ];

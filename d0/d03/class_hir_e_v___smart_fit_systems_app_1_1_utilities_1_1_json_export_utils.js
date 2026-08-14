@@ -4,5 +4,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils =
     [ "ExportPathsToJson", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a0b939ac6efcc608061845724a4103910", null ],
     [ "ExportToJson", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#adc358e5ac5a3b97eca33f473f0437717", null ],
     [ "GetColorGroupedExportDTOs", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a273a87165d18f7c3b577413e53b829c4", null ],
-    [ "ImportPathsFromJson", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a709f1889e30e4d788d59f0c9c0a2232f", null ]
+    [ "GetLoc", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#afccb7d18962aea3e36a410dbdd6bd9a7", null ],
+    [ "ImportPathsFromJson", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a709f1889e30e4d788d59f0c9c0a2232f", null ],
+    [ "DocLanguage", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a49a58034c9a82120320b7fa4e5a11178", null ]
 ];

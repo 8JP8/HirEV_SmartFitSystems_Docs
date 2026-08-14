@@ -1,11 +1,20 @@
 <map id="HirEV_SmartFitSystemsApp.Modules.FaceExtractor.ExtractFaceData" name="HirEV_SmartFitSystemsApp.Modules.FaceExtractor.ExtractFaceData">
-<area shape="rect" id="Node000001" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="5,121,265,164"/>
-<area shape="rect" id="Node000002" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="322,5,563,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,118,312,73,334,68,329,71,314,79,193,123"/>
-<area shape="rect" id="Node000003" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="324,88,561,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,126,311,123,306,125,266,131"/>
-<area shape="rect" id="Node000004" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="313,155,572,197"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="265,154,300,160,295,161,265,159"/>
-<area shape="rect" id="Node000005" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a26a7915fd6ebefb69b5b3a32d455ca93" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="321,221,564,264"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,162,314,207,340,217,335,217,312,212,189,167"/>
+<area shape="rect" id="Node000001" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="5,147,265,189"/>
+<area shape="rect" id="Node000002" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="316,5,558,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,144,237,109,312,74,330,68,325,71,314,78,239,114,176,148"/>
+<area shape="rect" id="Node000003" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="318,88,556,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,144,311,133,306,136,249,149"/>
+<area shape="rect" id="Node000004" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="612,176,872,219"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="265,172,598,188,595,192,265,177"/>
+<area shape="rect" id="Node000005" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a536a10f84e319901a5ecef2513f0a055" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="315,205,558,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="248,187,311,201,306,203,248,193"/>
+<area shape="rect" id="Node000006" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="313,272,561,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="174,187,239,222,314,258,330,266,325,266,312,262,237,227,174,193"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="527,269,560,257,662,225,667,224,562,263,528,274"/>
+<area shape="rect" id="Node000007" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="616,257,868,316"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="561,293,603,293,598,294,562,298"/>
+<area shape="rect" id="Node000009" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a67a6fc3193c20aeca7a88b63b5b25d68" title="Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either ..." alt="" coords="609,340,875,383"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="561,323,618,337,613,336,561,328"/>
+<area shape="rect" id="Node000008" href="$d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a1e067c7fbc340e17cebfaa5a4855ea25" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="923,265,1174,308"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="869,284,910,287,905,287,869,289"/>
 </map>

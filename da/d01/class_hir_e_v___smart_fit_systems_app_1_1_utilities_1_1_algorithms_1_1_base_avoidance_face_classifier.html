@@ -1,0 +1,1748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html','../../','de/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classifies CAD part faces that should be automatically ignored during path planning to prevent base collision issues. Analyzes face geometry, bottom Z-plane seeds, chamfers, fillets, and transition faces.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_face_classifier_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_face_classifier_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_base_avoidance_face_classifier_coll__map">
+<area shape="rect" title="Classifies CAD part faces that should be automatically ignored during path planning to prevent base c..." alt="" coords="5,5,223,507"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:FaceSample" id="r_FaceSample"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private helper class representing a sampled CAD face along with its 3D sample points and Z-bounding range.  <a href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:ac694a894e80fc8190509df97e7b805e7" id="r_ac694a894e80fc8190509df97e7b805e7"><td class="memItemLeft">static IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac694a894e80fc8190509df97e7b805e7">FindFacesToIgnore</a> (IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;? faces, IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;? holes, Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;? brepResolver=null)</td></tr>
+<tr class="memdesc:ac694a894e80fc8190509df97e7b805e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds CAD faces that should be ignored during path planning based on automated bottom-face classification and hole definitions.  <br /></td></tr>
+<tr class="memitem:adb18695c6d60ef0ff1b243174fef8ab0" id="r_adb18695c6d60ef0ff1b243174fef8ab0"><td class="memItemLeft">static IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adb18695c6d60ef0ff1b243174fef8ab0">FindFacesToIgnore</a> (IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;? faces, IEnumerable&lt; int &gt;? holeFaceIndices, Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;? brepResolver=null)</td></tr>
+<tr class="memdesc:adb18695c6d60ef0ff1b243174fef8ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds CAD faces that should be ignored during path planning based on explicit hole face indices.  <br /></td></tr>
+<tr class="memitem:a9279fd512b9efb82b36b41b9e0f9bd37" id="r_a9279fd512b9efb82b36b41b9e0f9bd37"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a9279fd512b9efb82b36b41b9e0f9bd37">HasIgnoredBottomFace</a> (IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;? faces)</td></tr>
+<tr class="memdesc:a9279fd512b9efb82b36b41b9e0f9bd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a user-ignored planar face is the lowest planar face of one of the loaded parts. This is used to enforce top-only hole and navigation behavior even when the automatic setting is disabled.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:af2f3c85c3515f787234ec278e44207a6" id="r_af2f3c85c3515f787234ec278e44207a6"><td class="memItemLeft">static IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af2f3c85c3515f787234ec278e44207a6">FindFacesToIgnore</a> (IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;? faces, HashSet&lt; int &gt; holeFaceIndices, Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;? brepResolver, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</td></tr>
+<tr class="memdesc:af2f3c85c3515f787234ec278e44207a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal implementation that classifies faces to ignore given a pre-built hole index set and base clearance configuration.  <br /></td></tr>
+<tr class="memitem:aac435f8fd0d746897c16fb10d6f7043b" id="r_aac435f8fd0d746897c16fb10d6f7043b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aac435f8fd0d746897c16fb10d6f7043b">IsBaseTransitionFaceCandidate</a> (<a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> sample, IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt; entitySamples, IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt; baseSeedSamples, double containedMaxZ)</td></tr>
+<tr class="memdesc:aac435f8fd0d746897c16fb10d6f7043b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fillet, chamfer, or collar).  <br /></td></tr>
+<tr class="memitem:ae9ba4b2ac4e53b19cfc13366344ab539" id="r_ae9ba4b2ac4e53b19cfc13366344ab539"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae9ba4b2ac4e53b19cfc13366344ab539">IsVerticalCylindricalBaseTransition</a> (<a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> candidate, IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt; entitySamples, IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt; baseSeedSamples)</td></tr>
+<tr class="memdesc:ae9ba4b2ac4e53b19cfc13366344ab539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the base and meets an upper lateral cylinder.  <br /></td></tr>
+<tr class="memitem:aba7d4813dcbbd72db8d8f8ce7d143917" id="r_aba7d4813dcbbd72db8d8f8ce7d143917"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aba7d4813dcbbd72db8d8f8ce7d143917">SamplesTouch</a> (<a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> sample, IEnumerable&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt; candidates, double tolerance)</td></tr>
+<tr class="memdesc:aba7d4813dcbbd72db8d8f8ce7d143917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if any sample points from one face sample lie within a specified distance of sample points from a target set.  <br /></td></tr>
+<tr class="memitem:a0859cdc4a5b8c459dae280fb6aa556ca" id="r_a0859cdc4a5b8c459dae280fb6aa556ca"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0859cdc4a5b8c459dae280fb6aa556ca">SamplesTouchNearTop</a> (<a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> lowerSample, <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> upperSample, double tolerance)</td></tr>
+<tr class="memdesc:a0859cdc4a5b8c459dae280fb6aa556ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if points near the top boundary of a lower face sample touch points on an upper face sample.  <br /></td></tr>
+<tr class="memitem:ae0bc7cb3f5480f78ef8d89f4bfc8fae6" id="r_ae0bc7cb3f5480f78ef8d89f4bfc8fae6"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae0bc7cb3f5480f78ef8d89f4bfc8fae6">TryParseFaceNormal</a> (<a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, out Vector3D normal)</td></tr>
+<tr class="memdesc:ae0bc7cb3f5480f78ef8d89f4bfc8fae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the surface normal vector from a face's geometric info text string.  <br /></td></tr>
+<tr class="memitem:a213078edb0d818686010ebcd959383b6" id="r_a213078edb0d818686010ebcd959383b6"><td class="memItemLeft">static HashSet&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a213078edb0d818686010ebcd959383b6">BuildHoleFaceIndexSet</a> (IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;? holes)</td></tr>
+<tr class="memdesc:a213078edb0d818686010ebcd959383b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a set of all global face indices contained within the specified collection of holes.  <br /></td></tr>
+<tr class="memitem:ae605e9a1fec928d83f140b5767b62fbc" id="r_ae605e9a1fec928d83f140b5767b62fbc"><td class="memItemLeft">static ? <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae605e9a1fec928d83f140b5767b62fbc">BuildFaceSample</a> (<a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;? brepResolver)</td></tr>
+<tr class="memdesc:ae605e9a1fec928d83f140b5767b62fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html" title="Private helper class representing a sampled CAD face along with its 3D sample points and Z-bounding r...">FaceSample</a> instance by sampling 3D geometry points across a CAD face.  <br /></td></tr>
+<tr class="memitem:a7f6ebbcb0d1e63a28795b13da7c2c4c9" id="r_a7f6ebbcb0d1e63a28795b13da7c2c4c9"><td class="memItemLeft">static List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7f6ebbcb0d1e63a28795b13da7c2c4c9">CollectFaceSamplePoints</a> (<a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;? brepResolver)</td></tr>
+<tr class="memdesc:a7f6ebbcb0d1e63a28795b13da7c2c4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points, and key points of a CAD face.  <br /></td></tr>
+<tr class="memitem:a84577c05bd10876e8c67ca3884b5b070" id="r_a84577c05bd10876e8c67ca3884b5b070"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a84577c05bd10876e8c67ca3884b5b070">AddBrepFaceSamplePoints</a> (List&lt; Point3D &gt; points, <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, Brep? brep)</td></tr>
+<tr class="memdesc:a84577c05bd10876e8c67ca3884b5b070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample collection.  <br /></td></tr>
+<tr class="memitem:acf69b48710c52c41f6b2dd91d085f127" id="r_acf69b48710c52c41f6b2dd91d085f127"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#acf69b48710c52c41f6b2dd91d085f127">AddPoint3DSamples</a> (List&lt; Point3D &gt; points, IEnumerable&lt; Point3D &gt;? samples)</td></tr>
+<tr class="memdesc:acf69b48710c52c41f6b2dd91d085f127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to filter finite 3D points and append them to a sample list.  <br /></td></tr>
+<tr class="memitem:ac3e07ca607eb5310746234b099029d68" id="r_ac3e07ca607eb5310746234b099029d68"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ac3e07ca607eb5310746234b099029d68">AddPoint4DSamples</a> (List&lt; Point3D &gt; points, IEnumerable&lt; Point4D &gt;? samples)</td></tr>
+<tr class="memdesc:ac3e07ca607eb5310746234b099029d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to extract finite 3D coordinates from 4D points and append them to a sample list.  <br /></td></tr>
+<tr class="memitem:aea677f07d53b5f63d2ae828fd278421e" id="r_aea677f07d53b5f63d2ae828fd278421e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aea677f07d53b5f63d2ae828fd278421e">AddFacePointSamples</a> (List&lt; Point3D &gt; points, IEnumerable&lt; <a class="el" href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point.html">FacePoint</a> &gt;? samples)</td></tr>
+<tr class="memdesc:aea677f07d53b5f63d2ae828fd278421e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to extract finite 3D coordinates from <a class="el" href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point.html" title="Data model for a notable point on a face.">FacePoint</a> instances and append them to a sample list.  <br /></td></tr>
+<tr class="memitem:ad7ea2dea0996c102b0237a494eb8d74b" id="r_ad7ea2dea0996c102b0237a494eb8d74b"><td class="memItemLeft">static List&lt; Point3D &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad7ea2dea0996c102b0237a494eb8d74b">Deduplicate</a> (List&lt; Point3D &gt; points)</td></tr>
+<tr class="memdesc:ad7ea2dea0996c102b0237a494eb8d74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing.  <br /></td></tr>
+<tr class="memitem:ad2e30437b99108dd8a2c00d2049bf58d" id="r_ad2e30437b99108dd8a2c00d2049bf58d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad2e30437b99108dd8a2c00d2049bf58d">IsFinite</a> (double value)</td></tr>
+<tr class="memdesc:ad2e30437b99108dd8a2c00d2049bf58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a floating point coordinate value is finite (neither NaN nor Infinity).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:a410a85dee3f8fb90bd9a8eaef70cc0a3" id="r_a410a85dee3f8fb90bd9a8eaef70cc0a3"><td class="memItemLeft">const double&#160;</td><td class="memItemRight"><a class="el" href="#a410a85dee3f8fb90bd9a8eaef70cc0a3">BasePlaneTolerance</a> = 1.0</td></tr>
+<tr class="memdesc:a410a85dee3f8fb90bd9a8eaef70cc0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tolerance in millimeters used to identify bottom planar faces on the base plane.  <br /></td></tr>
+<tr class="memitem:a3f83888d7ad19d99f3583d1944d76055" id="r_a3f83888d7ad19d99f3583d1944d76055"><td class="memItemLeft">const double&#160;</td><td class="memItemRight"><a class="el" href="#a3f83888d7ad19d99f3583d1944d76055">SampleDedupTolerance</a> = 1e-6</td></tr>
+<tr class="memdesc:a3f83888d7ad19d99f3583d1944d76055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial deduplication tolerance for sampled 3D points on CAD face surfaces (in mm).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classifies CAD part faces that should be automatically ignored during path planning to prevent base collision issues. Analyzes face geometry, bottom Z-plane seeds, chamfers, fillets, and transition faces. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00012">12</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a84577c05bd10876e8c67ca3884b5b070" name="a84577c05bd10876e8c67ca3884b5b070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84577c05bd10876e8c67ca3884b5b070">&#9670;&#160;</a></span>AddBrepFaceSamplePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.AddBrepFaceSamplePoints </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Brep?</td>          <td class="paramname"><span class="paramname"><em>brep</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample collection. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Target list to receive sampled points.</td></tr>
+    <tr><td class="paramname">face</td><td>The CAD face being sampled.</td></tr>
+    <tr><td class="paramname">brep</td><td>The underlying BREP model representation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00453">453</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00517">AddPoint3DSamples()</a> e <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00054">HirEV_SmartFitSystemsApp.Models.CADFace.FaceIndex</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">CollectFaceSamplePoints()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_cgraph">
+<area shape="rect" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="5,5,275,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="323,5,553,64"/>
+<area shape="poly" title=" " alt="" coords="275,32,309,35,304,35,275,37"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="601,5,827,64"/>
+<area shape="poly" title=" " alt="" coords="554,32,588,35,583,35,554,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a84577c05bd10876e8c67ca3884b5b070_icgraph">
+<area shape="rect" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="1727,72,1997,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="poly" title=" " alt="" coords="1709,102,1680,104,1680,99,1715,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea677f07d53b5f63d2ae828fd278421e" name="aea677f07d53b5f63d2ae828fd278421e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea677f07d53b5f63d2ae828fd278421e">&#9670;&#160;</a></span>AddFacePointSamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.AddFacePointSamples </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point.html">FacePoint</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper method to extract finite 3D coordinates from <a class="el" href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_face_point.html" title="Data model for a notable point on a face.">FacePoint</a> instances and append them to a sample list. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Target list of points.</td></tr>
+    <tr><td class="paramname">samples</td><td>Collection of candidate face points.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00551">551</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00595">IsFinite()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">CollectFaceSamplePoints()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_cgraph">
+<area shape="rect" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="5,5,248,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="296,5,522,64"/>
+<area shape="poly" title=" " alt="" coords="248,32,283,34,278,35,248,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aea677f07d53b5f63d2ae828fd278421e_icgraph">
+<area shape="rect" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="1727,72,1970,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="poly" title=" " alt="" coords="1709,102,1680,104,1679,99,1715,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf69b48710c52c41f6b2dd91d085f127" name="acf69b48710c52c41f6b2dd91d085f127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf69b48710c52c41f6b2dd91d085f127">&#9670;&#160;</a></span>AddPoint3DSamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.AddPoint3DSamples </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; Point3D &gt;?</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper method to filter finite 3D points and append them to a sample list. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Target list of points.</td></tr>
+    <tr><td class="paramname">samples</td><td>Collection of candidate 3D points.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00517">517</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00595">IsFinite()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00453">AddBrepFaceSamplePoints()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_cgraph">
+<area shape="rect" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="5,5,236,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="284,5,510,64"/>
+<area shape="poly" title=" " alt="" coords="236,32,271,34,266,35,236,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_acf69b48710c52c41f6b2dd91d085f127_icgraph">
+<area shape="rect" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="2045,72,2275,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="1727,72,1997,131"/>
+<area shape="poly" title=" " alt="" coords="2026,101,1997,104,1997,99,2032,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="poly" title=" " alt="" coords="1709,102,1680,104,1680,99,1715,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac3e07ca607eb5310746234b099029d68" name="ac3e07ca607eb5310746234b099029d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e07ca607eb5310746234b099029d68">&#9670;&#160;</a></span>AddPoint4DSamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.AddPoint4DSamples </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; Point4D &gt;?</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper method to extract finite 3D coordinates from 4D points and append them to a sample list. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Target list of points.</td></tr>
+    <tr><td class="paramname">samples</td><td>Collection of candidate 4D points.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00534">534</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00595">IsFinite()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">CollectFaceSamplePoints()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_cgraph">
+<area shape="rect" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="5,5,236,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="284,5,510,64"/>
+<area shape="poly" title=" " alt="" coords="236,32,271,34,266,35,236,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac3e07ca607eb5310746234b099029d68_icgraph">
+<area shape="rect" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="1727,72,1958,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="poly" title=" " alt="" coords="1709,102,1680,104,1680,99,1714,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae605e9a1fec928d83f140b5767b62fbc" name="ae605e9a1fec928d83f140b5767b62fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae605e9a1fec928d83f140b5767b62fbc">&#9670;&#160;</a></span>BuildFaceSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.BuildFaceSample </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;?</td>          <td class="paramname"><span class="paramname"><em>brepResolver</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds a <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html" title="Private helper class representing a sampled CAD face along with its 3D sample points and Z-bounding r...">FaceSample</a> instance by sampling 3D geometry points across a CAD face. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>The CAD face to sample.</td></tr>
+    <tr><td class="paramname">brepResolver</td><td>Callback function to resolve BREP objects.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A populated <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html" title="Private helper class representing a sampled CAD face along with its 3D sample points and Z-bounding r...">FaceSample</a> instance, or <code>null</code> if no points could be sampled.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00406">406</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">CollectFaceSamplePoints()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">FindFacesToIgnore()</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00073">HasIgnoredBottomFace()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_cgraph">
+<area shape="rect" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="5,113,232,172"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="280,113,540,172"/>
+<area shape="poly" title=" " alt="" coords="232,140,267,142,261,143,233,145"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="588,13,857,72"/>
+<area shape="poly" title=" " alt="" coords="503,110,611,78,617,76,505,115"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aea677f07d53b5f63d2ae828fd278421e" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="905,88,1148,147"/>
+<area shape="poly" title=" " alt="" coords="540,135,892,122,887,124,541,140"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac3e07ca607eb5310746234b099029d68" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="911,171,1142,229"/>
+<area shape="poly" title=" " alt="" coords="541,152,898,187,893,189,541,157"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad7ea2dea0996c102b0237a494eb8d74b" title="Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing." alt="" coords="610,205,836,264"/>
+<area shape="poly" title=" " alt="" coords="513,170,609,200,603,200,512,175"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="911,5,1142,64"/>
+<area shape="poly" title=" " alt="" coords="857,36,898,38,893,38,858,42"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="1196,88,1422,147"/>
+<area shape="poly" title=" " alt="" coords="1129,62,1194,83,1189,83,1129,67"/>
+<area shape="poly" title=" " alt="" coords="1148,115,1183,117,1178,118,1148,120"/>
+<area shape="poly" title=" " alt="" coords="1129,167,1189,152,1194,151,1130,173"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae605e9a1fec928d83f140b5767b62fbc_icgraph">
+<area shape="rect" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a213078edb0d818686010ebcd959383b6" name="a213078edb0d818686010ebcd959383b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213078edb0d818686010ebcd959383b6">&#9670;&#160;</a></span>BuildHoleFaceIndexSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashSet&lt; int &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.BuildHoleFaceIndexSet </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>holes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds a set of all global face indices contained within the specified collection of holes. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">holes</td><td>Collection of CAD holes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A hash set containing global face indices associated with holes.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00382">382</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">FindFacesToIgnore()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a213078edb0d818686010ebcd959383b6_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a213078edb0d818686010ebcd959383b6_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a213078edb0d818686010ebcd959383b6_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a213078edb0d818686010ebcd959383b6_icgraph">
+<area shape="rect" title="Builds a set of all global face indices contained within the specified collection of holes." alt="" coords="834,88,1081,147"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac694a894e80fc8190509df97e7b805e7" title="Finds CAD faces that should be ignored during path planning based on automated bottom&#45;face classifica..." alt="" coords="560,88,786,147"/>
+<area shape="poly" title=" " alt="" coords="816,118,787,120,787,115,821,117"/>
+<area shape="poly" title=" " alt="" coords="716,74,701,69,673,67,649,69,633,73,625,80,624,89,620,86,620,77,630,69,648,63,673,61,702,64,722,74"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="288,5,504,64"/>
+<area shape="poly" title=" " alt="" coords="555,83,497,67,497,62,561,83"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#adb18695c6d60ef0ff1b243174fef8ab0" title="Finds CAD faces that should be ignored during path planning based on explicit hole face indices." alt="" coords="283,88,510,147"/>
+<area shape="poly" title=" " alt="" coords="542,118,510,120,509,115,547,117"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="281,195,512,253"/>
+<area shape="poly" title=" " alt="" coords="583,152,475,197,474,191,578,153"/>
+<area shape="poly" title=" " alt="" coords="440,180,424,176,396,173,372,175,356,180,348,187,347,196,343,193,344,184,353,175,371,170,396,168,426,171,445,181"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,195,233,253"/>
+<area shape="poly" title=" " alt="" coords="262,224,233,227,233,221,268,224"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f6ebbcb0d1e63a28795b13da7c2c4c9" name="a7f6ebbcb0d1e63a28795b13da7c2c4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6ebbcb0d1e63a28795b13da7c2c4c9">&#9670;&#160;</a></span>CollectFaceSamplePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.CollectFaceSamplePoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;?</td>          <td class="paramname"><span class="paramname"><em>brepResolver</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points, and key points of a CAD face. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>The CAD face to sample.</td></tr>
+    <tr><td class="paramname">brepResolver</td><td>Callback function to resolve BREP objects.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A list of deduplicated Point3D sample points.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">425</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00453">AddBrepFaceSamplePoints()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00551">AddFacePointSamples()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00534">AddPoint4DSamples()</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00135">HirEV_SmartFitSystemsApp.Models.CADFace.ControlPoints</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00568">Deduplicate()</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00122">HirEV_SmartFitSystemsApp.Models.CADFace.KeyPoints</a> e <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00171">HirEV_SmartFitSystemsApp.Models.CADFace.MeasurementPoints</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00406">BuildFaceSample()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_cgraph">
+<area shape="rect" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="5,113,266,172"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="314,13,583,72"/>
+<area shape="poly" title=" " alt="" coords="228,110,342,76,337,79,230,115"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aea677f07d53b5f63d2ae828fd278421e" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="631,88,873,147"/>
+<area shape="poly" title=" " alt="" coords="266,135,616,121,614,125,267,140"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac3e07ca607eb5310746234b099029d68" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="637,171,867,229"/>
+<area shape="poly" title=" " alt="" coords="266,152,623,186,620,190,266,157"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad7ea2dea0996c102b0237a494eb8d74b" title="Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing." alt="" coords="335,205,562,264"/>
+<area shape="poly" title=" " alt="" coords="238,170,334,200,329,201,238,175"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="637,5,867,64"/>
+<area shape="poly" title=" " alt="" coords="583,36,624,38,619,39,584,42"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="921,88,1148,147"/>
+<area shape="poly" title=" " alt="" coords="855,62,920,83,915,83,855,67"/>
+<area shape="poly" title=" " alt="" coords="874,115,909,117,903,118,874,120"/>
+<area shape="poly" title=" " alt="" coords="854,167,915,152,920,151,855,173"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a7f6ebbcb0d1e63a28795b13da7c2c4c9_icgraph">
+<area shape="rect" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad7ea2dea0996c102b0237a494eb8d74b" name="ad7ea2dea0996c102b0237a494eb8d74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ea2dea0996c102b0237a494eb8d74b">&#9670;&#160;</a></span>Deduplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; Point3D &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.Deduplicate </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Point3D &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>The input list of points.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A new list containing spatially unique 3D points.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00568">568</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00022">SampleDedupTolerance</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00425">CollectFaceSamplePoints()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad7ea2dea0996c102b0237a494eb8d74b_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad7ea2dea0996c102b0237a494eb8d74b_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad7ea2dea0996c102b0237a494eb8d74b_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad7ea2dea0996c102b0237a494eb8d74b_icgraph">
+<area shape="rect" title="Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing." alt="" coords="1727,72,1954,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,72,1679,131"/>
+<area shape="poly" title=" " alt="" coords="1709,102,1680,104,1680,99,1714,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,72,1371,131"/>
+<area shape="poly" title=" " alt="" coords="1401,102,1372,104,1371,99,1406,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,5,800,64"/>
+<area shape="poly" title=" " alt="" coords="1127,87,801,51,801,45,1132,86"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,105,1097,164"/>
+<area shape="poly" title=" " alt="" coords="1126,117,1097,123,1097,118,1132,116"/>
+<area shape="poly" title=" " alt="" coords="870,100,773,67,773,62,876,100"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,77,511,136"/>
+<area shape="poly" title=" " alt="" coords="831,129,512,115,511,109,836,127"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,221,801,264"/>
+<area shape="poly" title=" " alt="" coords="897,170,802,212,768,223,767,218,800,207,892,172"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,272,518,331"/>
+<area shape="poly" title=" " alt="" coords="939,174,879,232,842,258,802,278,731,300,657,312,585,316,519,315,519,310,585,311,657,306,730,295,800,274,840,254,876,228,934,176"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,139,798,197"/>
+<area shape="poly" title=" " alt="" coords="831,151,799,158,798,152,836,150"/>
+<area shape="poly" title=" " alt="" coords="568,267,519,280,518,275,563,268"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,165,525,224"/>
+<area shape="poly" title=" " alt="" coords="555,221,526,218,526,213,560,221"/>
+<area shape="poly" title=" " alt="" coords="447,257,431,253,403,251,378,253,361,257,353,264,352,273,348,270,349,261,359,253,377,247,403,245,433,248,453,258"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,272,233,331"/>
+<area shape="poly" title=" " alt="" coords="269,302,233,304,233,299,274,301"/>
+<area shape="poly" title=" " alt="" coords="558,141,512,133,511,127,563,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2f3c85c3515f787234ec278e44207a6" name="af2f3c85c3515f787234ec278e44207a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f3c85c3515f787234ec278e44207a6">&#9670;&#160;</a></span>FindFacesToIgnore() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HashSet&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>holeFaceIndices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;?</td>          <td class="paramname"><span class="paramname"><em>brepResolver</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal implementation that classifies faces to ignore given a pre-built hole index set and base clearance configuration. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faces</td><td>Collection of CAD faces.</td></tr>
+    <tr><td class="paramname">holeFaceIndices</td><td>Set of global face indices associated with holes.</td></tr>
+    <tr><td class="paramname">brepResolver</td><td>Callback function to resolve BREP objects for faces.</td></tr>
+    <tr><td class="paramname">config</td><td>Base avoidance configuration parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A read-only list of CAD faces classified to be ignored.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">110</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00017">BasePlaneTolerance</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00406">BuildFaceSample()</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00112">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.EnableForIgnoredBottomFace()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00073">HasIgnoredBottomFace()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00195">IsBaseTransitionFaceCandidate()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.ZTolerance</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_af2f3c85c3515f787234ec278e44207a6_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_af2f3c85c3515f787234ec278e44207a6_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_af2f3c85c3515f787234ec278e44207a6_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_af2f3c85c3515f787234ec278e44207a6_cgraph">
+<area shape="rect" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,247,232,305"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="637,139,863,197"/>
+<area shape="poly" title=" " alt="" coords="163,244,217,214,279,191,367,172,457,162,544,158,624,160,619,162,544,163,457,167,368,178,280,196,220,219,167,248"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a73299d30bbaf0aaad11265a1e25935d1" title="Enables the shared clearance rule when the operator has explicitly ignored a physical bottom face,..." alt="" coords="299,205,556,264"/>
+<area shape="poly" title=" " alt="" coords="231,258,285,252,281,255,233,263"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="304,288,551,347"/>
+<area shape="poly" title=" " alt="" coords="231,289,291,298,286,300,233,294"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aac435f8fd0d746897c16fb10d6f7043b" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,371,575,429"/>
+<area shape="poly" title=" " alt="" coords="171,303,224,331,281,356,300,365,295,366,279,361,222,336,171,309"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="925,139,1186,197"/>
+<area shape="poly" title=" " alt="" coords="863,165,912,167,907,169,864,171"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="1234,13,1503,72"/>
+<area shape="poly" title=" " alt="" coords="1130,136,1281,77,1276,79,1132,141"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aea677f07d53b5f63d2ae828fd278421e" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="1551,88,1793,147"/>
+<area shape="poly" title=" " alt="" coords="1186,155,1538,128,1533,129,1187,160"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac3e07ca607eb5310746234b099029d68" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="1557,171,1787,229"/>
+<area shape="poly" title=" " alt="" coords="1186,172,1544,193,1539,194,1186,177"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad7ea2dea0996c102b0237a494eb8d74b" title="Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing." alt="" coords="1255,205,1482,264"/>
+<area shape="poly" title=" " alt="" coords="1186,193,1243,207,1237,208,1186,198"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="1557,5,1787,64"/>
+<area shape="poly" title=" " alt="" coords="1503,36,1544,38,1539,39,1504,42"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="1841,88,2068,147"/>
+<area shape="poly" title=" " alt="" coords="1775,62,1840,83,1835,83,1775,67"/>
+<area shape="poly" title=" " alt="" coords="1793,115,1829,117,1823,118,1794,120"/>
+<area shape="poly" title=" " alt="" coords="1774,167,1835,152,1840,151,1776,173"/>
+<area shape="poly" title=" " alt="" coords="545,285,574,274,638,240,694,208,698,205,640,245,576,278,547,290"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0d16b75e08519587608747fbbe09b85e" title="Extracts the central axis vector of a CADFace from its GeometricInfo string." alt="" coords="953,288,1158,347"/>
+<area shape="poly" title=" " alt="" coords="532,367,623,348,787,328,940,320,935,322,787,333,623,353,534,373"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae9ba4b2ac4e53b19cfc13366344ab539" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="623,363,877,437"/>
+<area shape="poly" title=" " alt="" coords="575,397,610,400,605,400,576,403"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae0bc7cb3f5480f78ef8d89f4bfc8fae6" title="Parses the surface normal vector from a face&#39;s geometric info text string." alt="" coords="634,461,867,520"/>
+<area shape="poly" title=" " alt="" coords="535,427,631,456,626,457,534,433"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="1266,288,1471,347"/>
+<area shape="poly" title=" " alt="" coords="1159,315,1253,317,1248,318,1159,320"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="1266,371,1471,429"/>
+<area shape="poly" title=" " alt="" coords="1159,342,1253,369,1248,369,1159,347"/>
+<area shape="poly" title=" " alt="" coords="877,363,936,350,941,348,878,368"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a987f4e4af1f4f79aa3e155b0e4ff567d" title="Extracts the radius value from a cylindrical face&#39;s GeometricInfo string using regex." alt="" coords="943,371,1168,429"/>
+<area shape="poly" title=" " alt="" coords="877,397,930,400,925,400,878,403"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aba7d4813dcbbd72db8d8f8ce7d143917" title="Determines if any sample points from one face sample lie within a specified distance of sample points..." alt="" coords="942,453,1169,512"/>
+<area shape="poly" title=" " alt="" coords="878,432,933,449,927,449,877,437"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a0859cdc4a5b8c459dae280fb6aa556ca" title="Determines if points near the top boundary of a lower face sample touch points on an upper face sampl..." alt="" coords="933,536,1178,595"/>
+<area shape="poly" title=" " alt="" coords="862,435,879,447,896,467,904,486,911,504,927,522,933,529,928,527,924,526,907,507,899,488,891,470,876,451,860,440"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac694a894e80fc8190509df97e7b805e7" name="ac694a894e80fc8190509df97e7b805e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac694a894e80fc8190509df97e7b805e7">&#9670;&#160;</a></span>FindFacesToIgnore() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>holes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;?</td>          <td class="paramname"><span class="paramname"><em>brepResolver</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds CAD faces that should be ignored during path planning based on automated bottom-face classification and hole definitions. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faces</td><td>Collection of CAD faces belonging to the part.</td></tr>
+    <tr><td class="paramname">holes</td><td>Collection of CAD holes identified on the part.</td></tr>
+    <tr><td class="paramname">brepResolver</td><td>Optional callback resolver function to retrieve the underlying Eyeshot Brep object for a face.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A read-only list of CAD faces that should be ignored for base avoidance.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00382">BuildHoleFaceIndexSet()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">FindFacesToIgnore()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.LoadConfig()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06589">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">FindFacesToIgnore()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00050">FindFacesToIgnore()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08308">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformFaceExtractionAsync()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_cgraph">
+<area shape="rect" title="Finds CAD faces that should be ignored during path planning based on automated bottom&#45;face classifica..." alt="" coords="5,47,232,105"/>
+<area shape="poly" title=" " alt="" coords="63,46,64,36,74,27,93,22,119,20,148,23,168,32,163,33,147,28,118,25,94,27,77,32,69,39,68,47"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a213078edb0d818686010ebcd959383b6" title="Builds a set of all global face indices contained within the specified collection of holes." alt="" coords="280,5,526,64"/>
+<area shape="poly" title=" " alt="" coords="231,57,267,54,261,56,233,62"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011" title="Loads the base avoidance configuration from application setting files (App.config)." alt="" coords="290,88,516,147"/>
+<area shape="poly" title=" " alt="" coords="232,90,277,98,271,99,232,95"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ac694a894e80fc8190509df97e7b805e7_icgraph">
+<area shape="rect" title="Finds CAD faces that should be ignored during path planning based on automated bottom&#45;face classifica..." alt="" coords="560,88,786,147"/>
+<area shape="poly" title=" " alt="" coords="716,74,701,69,673,67,649,69,633,73,625,80,624,89,620,86,620,77,630,69,648,63,673,61,702,64,722,74"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="288,5,504,64"/>
+<area shape="poly" title=" " alt="" coords="555,83,497,67,497,62,561,83"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#adb18695c6d60ef0ff1b243174fef8ab0" title="Finds CAD faces that should be ignored during path planning based on explicit hole face indices." alt="" coords="283,88,510,147"/>
+<area shape="poly" title=" " alt="" coords="542,118,510,120,509,115,547,117"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="281,195,512,253"/>
+<area shape="poly" title=" " alt="" coords="583,152,475,197,474,191,578,153"/>
+<area shape="poly" title=" " alt="" coords="440,180,424,176,396,173,372,175,356,180,348,187,347,196,343,193,344,184,353,175,371,170,396,168,426,171,445,181"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,195,233,253"/>
+<area shape="poly" title=" " alt="" coords="262,224,233,227,233,221,268,224"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb18695c6d60ef0ff1b243174fef8ab0" name="adb18695c6d60ef0ff1b243174fef8ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb18695c6d60ef0ff1b243174fef8ab0">&#9670;&#160;</a></span>FindFacesToIgnore() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyList&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FindFacesToIgnore </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; int &gt;?</td>          <td class="paramname"><span class="paramname"><em>holeFaceIndices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a>, Brep?&gt;?</td>          <td class="paramname"><span class="paramname"><em>brepResolver</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds CAD faces that should be ignored during path planning based on explicit hole face indices. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faces</td><td>Collection of CAD faces belonging to the part.</td></tr>
+    <tr><td class="paramname">holeFaceIndices</td><td>Collection of global face indices belonging to holes.</td></tr>
+    <tr><td class="paramname">brepResolver</td><td>Optional callback resolver function to retrieve the underlying Eyeshot Brep object for a face.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A read-only list of CAD faces that should be ignored for base avoidance.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00050">50</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00031">FindFacesToIgnore()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00074">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.LoadConfig()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_adb18695c6d60ef0ff1b243174fef8ab0_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_adb18695c6d60ef0ff1b243174fef8ab0_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_adb18695c6d60ef0ff1b243174fef8ab0_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_adb18695c6d60ef0ff1b243174fef8ab0_cgraph">
+<area shape="rect" title="Finds CAD faces that should be ignored during path planning based on explicit hole face indices." alt="" coords="5,63,232,121"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac694a894e80fc8190509df97e7b805e7" title="Finds CAD faces that should be ignored during path planning based on automated bottom&#45;face classifica..." alt="" coords="280,29,506,88"/>
+<area shape="poly" title=" " alt="" coords="232,76,267,74,262,75,233,81"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011" title="Loads the base avoidance configuration from application setting files (App.config)." alt="" coords="564,96,790,155"/>
+<area shape="poly" title=" " alt="" coords="232,96,549,115,547,120,232,101"/>
+<area shape="poly" title=" " alt="" coords="340,27,340,19,350,10,368,5,393,3,422,5,441,15,436,15,420,11,393,8,369,10,353,15,345,21,344,31"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a213078edb0d818686010ebcd959383b6" title="Builds a set of all global face indices contained within the specified collection of holes." alt="" coords="554,13,800,72"/>
+<area shape="poly" title=" " alt="" coords="506,50,541,50,536,51,507,55"/>
+<area shape="poly" title=" " alt="" coords="506,83,552,95,546,95,506,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9279fd512b9efb82b36b41b9e0f9bd37" name="a9279fd512b9efb82b36b41b9e0f9bd37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9279fd512b9efb82b36b41b9e0f9bd37">&#9670;&#160;</a></span>HasIgnoredBottomFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.HasIgnoredBottomFace </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> &gt;?</td>          <td class="paramname"><span class="paramname"><em>faces</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether a user-ignored planar face is the lowest planar face of one of the loaded parts. This is used to enforce top-only hole and navigation behavior even when the automatic setting is disabled. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faces</td><td>Collection of CAD faces to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if any face is marked as ignored and lies on the bottom-most base plane; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00073">73</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00017">BasePlaneTolerance</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00406">BuildFaceSample()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00068">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.ZTolerance</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06589">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>, <a class="el" href="../../df/d00/_hole_detector_8cs_source.html#l00167">HirEV_SmartFitSystemsApp.Modules.HoleDetector.DetectHoles()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">FindFacesToIgnore()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l04961">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetEffectiveBaseAvoidanceConfig()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08308">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformFaceExtractionAsync()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_cgraph">
+<area shape="rect" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="5,113,253,172"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="301,113,527,172"/>
+<area shape="poly" title=" " alt="" coords="253,140,287,142,282,143,254,145"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="575,113,835,172"/>
+<area shape="poly" title=" " alt="" coords="527,140,562,142,557,143,528,145"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="883,13,1153,72"/>
+<area shape="poly" title=" " alt="" coords="798,110,907,78,912,77,800,115"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aea677f07d53b5f63d2ae828fd278421e" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="1201,88,1443,147"/>
+<area shape="poly" title=" " alt="" coords="836,135,1188,123,1182,123,836,140"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac3e07ca607eb5310746234b099029d68" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="1207,171,1437,229"/>
+<area shape="poly" title=" " alt="" coords="836,152,1194,188,1188,188,836,157"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad7ea2dea0996c102b0237a494eb8d74b" title="Deduplicates a list of 3D points based on spatial rounding tolerance grid hashing." alt="" coords="905,205,1131,264"/>
+<area shape="poly" title=" " alt="" coords="808,170,904,201,899,200,807,175"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="1207,5,1437,64"/>
+<area shape="poly" title=" " alt="" coords="1153,36,1194,38,1189,38,1153,42"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ad2e30437b99108dd8a2c00d2049bf58d" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="1491,88,1717,147"/>
+<area shape="poly" title=" " alt="" coords="1425,62,1490,83,1484,83,1424,67"/>
+<area shape="poly" title=" " alt="" coords="1443,115,1478,117,1473,117,1444,120"/>
+<area shape="poly" title=" " alt="" coords="1424,167,1484,152,1490,151,1425,173"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a9279fd512b9efb82b36b41b9e0f9bd37_icgraph">
+<area shape="rect" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,163,1097,221"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,253,511,312"/>
+<area shape="poly" title=" " alt="" coords="934,231,875,281,840,303,802,319,765,328,726,334,648,336,572,328,505,315,506,310,573,323,648,331,725,329,764,323,800,313,837,298,872,277,929,233"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,96,801,139"/>
+<area shape="poly" title=" " alt="" coords="841,158,771,142,772,137,846,158"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,29,518,88"/>
+<area shape="poly" title=" " alt="" coords="922,153,867,117,834,100,801,87,729,69,656,58,584,54,520,54,519,49,585,49,656,53,730,63,802,81,836,95,869,113,927,153"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,245,800,304"/>
+<area shape="poly" title=" " alt="" coords="857,226,792,247,791,242,852,227"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,163,798,221"/>
+<area shape="poly" title=" " alt="" coords="831,192,799,195,799,189,836,192"/>
+<area shape="poly" title=" " alt="" coords="563,93,519,85,519,80,568,92"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,112,525,171"/>
+<area shape="poly" title=" " alt="" coords="555,129,526,134,525,128,560,128"/>
+<area shape="poly" title=" " alt="" coords="447,15,431,11,403,8,378,10,361,15,353,21,353,30,348,28,349,19,359,10,377,5,403,3,433,5,452,15"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,29,233,88"/>
+<area shape="poly" title=" " alt="" coords="269,60,234,61,232,56,274,57"/>
+<area shape="poly" title=" " alt="" coords="581,226,498,255,496,250,576,227"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aac435f8fd0d746897c16fb10d6f7043b" name="aac435f8fd0d746897c16fb10d6f7043b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac435f8fd0d746897c16fb10d6f7043b">&#9670;&#160;</a></span>IsBaseTransitionFaceCandidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.IsBaseTransitionFaceCandidate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>entitySamples</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>baseSeedSamples</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>containedMaxZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fillet, chamfer, or collar). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sample</td><td>The face sample being evaluated.</td></tr>
+    <tr><td class="paramname">entitySamples</td><td>All face samples belonging to the same CAD entity.</td></tr>
+    <tr><td class="paramname">baseSeedSamples</td><td>The bottom-most planar base seed samples for the entity.</td></tr>
+    <tr><td class="paramname">containedMaxZ</td><td>Maximum Z threshold for transition faces.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the face is a candidate base transition face; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00195">195</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00108">HirEV_SmartFitSystemsApp.Models.CADFace.AxisOrNormal</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00624">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.Face</a>, <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00086">HirEV_SmartFitSystemsApp.Models.CADFace.FaceType</a>, <a class="el" href="../../df/d03/_eyeshot_geometry_utils_8cs_source.html#l01299">HirEV_SmartFitSystemsApp.Utilities.EyeshotGeometryUtils.GetFaceAxis()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00258">IsVerticalCylindricalBaseTransition()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00642">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.MaxZ</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00350">TryParseFaceNormal()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">FindFacesToIgnore()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_cgraph">
+<area shape="rect" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="5,129,301,188"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0d16b75e08519587608747fbbe09b85e" title="Extracts the central axis vector of a CADFace from its GeometricInfo string." alt="" coords="670,47,876,105"/>
+<area shape="poly" title=" " alt="" coords="258,126,348,107,508,87,657,79,652,81,509,92,349,112,260,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae9ba4b2ac4e53b19cfc13366344ab539" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="349,121,603,196"/>
+<area shape="poly" title=" " alt="" coords="301,156,335,158,330,159,302,161"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae0bc7cb3f5480f78ef8d89f4bfc8fae6" title="Parses the surface normal vector from a face&#39;s geometric info text string." alt="" coords="359,220,592,279"/>
+<area shape="poly" title=" " alt="" coords="260,186,357,215,352,216,260,191"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="943,5,1149,64"/>
+<area shape="poly" title=" " alt="" coords="876,58,931,52,925,53,877,63"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="943,88,1149,147"/>
+<area shape="poly" title=" " alt="" coords="876,89,931,99,925,100,876,94"/>
+<area shape="poly" title=" " alt="" coords="603,121,658,108,653,110,604,126"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a987f4e4af1f4f79aa3e155b0e4ff567d" title="Extracts the radius value from a cylindrical face&#39;s GeometricInfo string using regex." alt="" coords="661,129,885,188"/>
+<area shape="poly" title=" " alt="" coords="603,156,648,158,643,159,604,161"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aba7d4813dcbbd72db8d8f8ce7d143917" title="Determines if any sample points from one face sample lie within a specified distance of sample points..." alt="" coords="660,212,886,271"/>
+<area shape="poly" title=" " alt="" coords="604,191,653,207,648,207,603,197"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a0859cdc4a5b8c459dae280fb6aa556ca" title="Determines if points near the top boundary of a lower face sample touch points on an upper face sampl..." alt="" coords="651,295,895,353"/>
+<area shape="poly" title=" " alt="" coords="587,194,605,206,621,225,629,245,637,263,653,281,658,287,653,285,649,285,632,266,624,247,617,228,601,210,586,199"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aac435f8fd0d746897c16fb10d6f7043b_icgraph">
+<area shape="rect" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,5,575,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="261,35,232,37,232,32,267,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2e30437b99108dd8a2c00d2049bf58d" name="ad2e30437b99108dd8a2c00d2049bf58d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e30437b99108dd8a2c00d2049bf58d">&#9670;&#160;</a></span>IsFinite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.IsFinite </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a floating point coordinate value is finite (neither NaN nor Infinity). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The double precision value to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if value is finite; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00595">595</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00551">AddFacePointSamples()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00517">AddPoint3DSamples()</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00534">AddPoint4DSamples()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad2e30437b99108dd8a2c00d2049bf58d_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad2e30437b99108dd8a2c00d2049bf58d_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad2e30437b99108dd8a2c00d2049bf58d_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ad2e30437b99108dd8a2c00d2049bf58d_icgraph">
+<area shape="rect" title="Checks whether a floating point coordinate value is finite (neither NaN nor Infinity)." alt="" coords="2323,72,2549,131"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aea677f07d53b5f63d2ae828fd278421e" title="Helper method to extract finite 3D coordinates from FacePoint instances and append them to a sample l..." alt="" coords="1741,5,1983,64"/>
+<area shape="poly" title=" " alt="" coords="2313,68,2275,63,2124,46,1984,39,1984,33,2124,40,2275,57,2319,68"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#acf69b48710c52c41f6b2dd91d085f127" title="Helper method to filter finite 3D points and append them to a sample list." alt="" coords="2045,72,2275,131"/>
+<area shape="poly" title=" " alt="" coords="2304,101,2276,104,2275,99,2310,101"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ac3e07ca607eb5310746234b099029d68" title="Helper method to extract finite 3D coordinates from 4D points and append them to a sample list." alt="" coords="2045,155,2275,213"/>
+<area shape="poly" title=" " alt="" coords="2324,135,2261,157,2260,151,2319,136"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a7f6ebbcb0d1e63a28795b13da7c2c4c9" title="Collects deduplicated 3D sample points from BREP tessellations, control points, measurement points,..." alt="" coords="1419,88,1679,147"/>
+<area shape="poly" title=" " alt="" coords="1736,68,1664,90,1662,85,1731,69"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae605e9a1fec928d83f140b5767b62fbc" title="Builds a FaceSample instance by sampling 3D geometry points across a CAD face." alt="" coords="1145,88,1371,147"/>
+<area shape="poly" title=" " alt="" coords="1401,118,1372,120,1371,115,1406,117"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="574,21,800,80"/>
+<area shape="poly" title=" " alt="" coords="1127,103,801,67,801,61,1132,102"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a9279fd512b9efb82b36b41b9e0f9bd37" title="Determines whether a user&#45;ignored planar face is the lowest planar face of one of the loaded parts...." alt="" coords="849,121,1097,180"/>
+<area shape="poly" title=" " alt="" coords="1126,133,1097,139,1097,134,1132,132"/>
+<area shape="poly" title=" " alt="" coords="870,116,773,83,773,78,876,116"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="295,93,511,152"/>
+<area shape="poly" title=" " alt="" coords="831,145,512,131,511,125,836,143"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a95f737c1337f0262a39b74756df07c64" title=" " alt="" coords="573,237,801,280"/>
+<area shape="poly" title=" " alt="" coords="897,186,802,228,768,239,767,234,800,223,892,188"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="287,288,518,347"/>
+<area shape="poly" title=" " alt="" coords="939,190,879,248,842,274,802,294,731,316,657,328,585,332,519,331,519,326,585,327,657,322,730,311,800,290,840,270,876,244,934,192"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a204a829630e6c30fca654cbd7f4046c4" title=" " alt="" coords="576,155,798,213"/>
+<area shape="poly" title=" " alt="" coords="831,167,799,174,798,168,836,166"/>
+<area shape="poly" title=" " alt="" coords="568,283,519,296,518,291,563,284"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="281,181,525,240"/>
+<area shape="poly" title=" " alt="" coords="555,237,526,234,526,229,560,237"/>
+<area shape="poly" title=" " alt="" coords="447,273,431,269,403,267,378,269,361,273,353,280,352,289,348,286,349,277,359,269,377,263,403,261,433,264,453,274"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="5,288,233,347"/>
+<area shape="poly" title=" " alt="" coords="269,318,233,320,233,315,274,317"/>
+<area shape="poly" title=" " alt="" coords="558,157,512,149,511,143,563,156"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a84577c05bd10876e8c67ca3884b5b070" title="Extracts mesh vertex and parametric surface points from a BREP face and adds them to the sample colle..." alt="" coords="1727,88,1997,147"/>
+<area shape="poly" title=" " alt="" coords="2026,109,1998,113,1997,107,2032,108"/>
+<area shape="poly" title=" " alt="" coords="1709,118,1680,120,1680,115,1715,117"/>
+<area shape="poly" title=" " alt="" coords="2026,182,1883,178,1727,161,1666,150,1666,145,1728,156,1884,172,2032,182"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9ba4b2ac4e53b19cfc13366344ab539" name="ae9ba4b2ac4e53b19cfc13366344ab539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ba4b2ac4e53b19cfc13366344ab539">&#9670;&#160;</a></span>IsVerticalCylindricalBaseTransition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.IsVerticalCylindricalBaseTransition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td>          <td class="paramname"><span class="paramname"><em>candidate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>entitySamples</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>baseSeedSamples</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the base and meets an upper lateral cylinder. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>The candidate face sample.</td></tr>
+    <tr><td class="paramname">entitySamples</td><td>All face samples for the entity.</td></tr>
+    <tr><td class="paramname">baseSeedSamples</td><td>The base seed face samples.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the face is a vertical cylindrical base transition; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00258">258</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00624">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.Face</a>, <a class="el" href="../../df/d03/_eyeshot_geometry_utils_8cs_source.html#l01299">HirEV_SmartFitSystemsApp.Utilities.EyeshotGeometryUtils.GetFaceAxis()</a>, <a class="el" href="../../df/d03/_eyeshot_geometry_utils_8cs_source.html#l00522">HirEV_SmartFitSystemsApp.Utilities.EyeshotGeometryUtils.GetFaceRadiusFromGeometricInfo()</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00642">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.MaxZ</a>, <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00310">SamplesTouch()</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00334">SamplesTouchNearTop()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00195">IsBaseTransitionFaceCandidate()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_cgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_cgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_cgraph">
+<area shape="rect" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="5,163,260,237"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0d16b75e08519587608747fbbe09b85e" title="Extracts the central axis vector of a CADFace from its GeometricInfo string." alt="" coords="327,47,532,105"/>
+<area shape="poly" title=" " alt="" coords="207,160,307,115,326,110,321,112,309,120,210,164"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a987f4e4af1f4f79aa3e155b0e4ff567d" title="Extracts the radius value from a cylindrical face&#39;s GeometricInfo string using regex." alt="" coords="318,129,542,188"/>
+<area shape="poly" title=" " alt="" coords="259,180,305,175,300,177,261,185"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aba7d4813dcbbd72db8d8f8ce7d143917" title="Determines if any sample points from one face sample lie within a specified distance of sample points..." alt="" coords="317,212,543,271"/>
+<area shape="poly" title=" " alt="" coords="260,215,303,223,298,224,260,220"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#a0859cdc4a5b8c459dae280fb6aa556ca" title="Determines if points near the top boundary of a lower face sample touch points on an upper face sampl..." alt="" coords="308,295,552,353"/>
+<area shape="poly" title=" " alt="" coords="209,235,309,280,326,289,321,289,307,285,208,241"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="600,5,805,64"/>
+<area shape="poly" title=" " alt="" coords="532,58,587,52,582,53,534,63"/>
+<area shape="rect" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="600,88,805,147"/>
+<area shape="poly" title=" " alt="" coords="533,89,587,99,582,100,533,94"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae9ba4b2ac4e53b19cfc13366344ab539_icgraph">
+<area shape="rect" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="623,5,877,80"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aac435f8fd0d746897c16fb10d6f7043b" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,13,575,72"/>
+<area shape="poly" title=" " alt="" coords="605,43,575,45,575,40,610,43"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,13,232,72"/>
+<area shape="poly" title=" " alt="" coords="261,43,232,45,232,40,267,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aba7d4813dcbbd72db8d8f8ce7d143917" name="aba7d4813dcbbd72db8d8f8ce7d143917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7d4813dcbbd72db8d8f8ce7d143917">&#9670;&#160;</a></span>SamplesTouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.SamplesTouch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; <a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>candidates</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if any sample points from one face sample lie within a specified distance of sample points from a target set. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sample</td><td>The source face sample.</td></tr>
+    <tr><td class="paramname">candidates</td><td>The target set of face samples.</td></tr>
+    <tr><td class="paramname">tolerance</td><td>The proximity threshold distance (in mm).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if any points touch within <em>tolerance</em> ; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00310">310</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00258">IsVerticalCylindricalBaseTransition()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aba7d4813dcbbd72db8d8f8ce7d143917_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aba7d4813dcbbd72db8d8f8ce7d143917_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aba7d4813dcbbd72db8d8f8ce7d143917_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_aba7d4813dcbbd72db8d8f8ce7d143917_icgraph">
+<area shape="rect" title="Determines if any sample points from one face sample lie within a specified distance of sample points..." alt="" coords="925,13,1152,72"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae9ba4b2ac4e53b19cfc13366344ab539" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="623,5,877,80"/>
+<area shape="poly" title=" " alt="" coords="907,43,878,45,878,40,912,43"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aac435f8fd0d746897c16fb10d6f7043b" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,13,575,72"/>
+<area shape="poly" title=" " alt="" coords="605,43,575,45,575,40,610,43"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,13,232,72"/>
+<area shape="poly" title=" " alt="" coords="261,43,232,45,232,40,267,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0859cdc4a5b8c459dae280fb6aa556ca" name="a0859cdc4a5b8c459dae280fb6aa556ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0859cdc4a5b8c459dae280fb6aa556ca">&#9670;&#160;</a></span>SamplesTouchNearTop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.SamplesTouchNearTop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td>          <td class="paramname"><span class="paramname"><em>lowerSample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html">FaceSample</a></td>          <td class="paramname"><span class="paramname"><em>upperSample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if points near the top boundary of a lower face sample touch points on an upper face sample. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lowerSample</td><td>The lower face sample.</td></tr>
+    <tr><td class="paramname">upperSample</td><td>The upper face sample.</td></tr>
+    <tr><td class="paramname">tolerance</td><td>The proximity threshold distance (in mm).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if top boundary points touch; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00334">334</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00642">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.MaxZ</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00630">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample.Points</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00258">IsVerticalCylindricalBaseTransition()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a0859cdc4a5b8c459dae280fb6aa556ca_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a0859cdc4a5b8c459dae280fb6aa556ca_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a0859cdc4a5b8c459dae280fb6aa556ca_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_a0859cdc4a5b8c459dae280fb6aa556ca_icgraph">
+<area shape="rect" title="Determines if points near the top boundary of a lower face sample touch points on an upper face sampl..." alt="" coords="925,13,1170,72"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#ae9ba4b2ac4e53b19cfc13366344ab539" title="Checks whether a vertical cylindrical face is a base transition collar by ensuring it touches the bas..." alt="" coords="623,5,877,80"/>
+<area shape="poly" title=" " alt="" coords="907,43,878,45,878,40,913,43"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aac435f8fd0d746897c16fb10d6f7043b" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,13,575,72"/>
+<area shape="poly" title=" " alt="" coords="605,43,575,45,575,40,610,43"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,13,232,72"/>
+<area shape="poly" title=" " alt="" coords="261,43,232,45,232,40,267,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0bc7cb3f5480f78ef8d89f4bfc8fae6" name="ae0bc7cb3f5480f78ef8d89f4bfc8fae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0bc7cb3f5480f78ef8d89f4bfc8fae6">&#9670;&#160;</a></span>TryParseFaceNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.TryParseFaceNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out Vector3D</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses the surface normal vector from a face's geometric info text string. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>The CAD face instance.</td></tr>
+    <tr><td class="paramname">normal</td><td>Output parameter receiving the parsed normal vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> if parsing succeeded and normal was non-zero; otherwise, <code>false</code>.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00350">350</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d00/_c_a_d_face_8cs_source.html#l00102">HirEV_SmartFitSystemsApp.Models.CADFace.GeometricInfo</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00195">IsBaseTransitionFaceCandidate()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae0bc7cb3f5480f78ef8d89f4bfc8fae6_icgraph.png" border="0" usemap="#ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae0bc7cb3f5480f78ef8d89f4bfc8fae6_icgraph" loading="lazy" alt=""/></div>
+<map name="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae0bc7cb3f5480f78ef8d89f4bfc8fae6_icgraph" id="ada/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_ae0bc7cb3f5480f78ef8d89f4bfc8fae6_icgraph">
+<area shape="rect" title="Parses the surface normal vector from a face&#39;s geometric info text string." alt="" coords="623,5,856,64"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#aac435f8fd0d746897c16fb10d6f7043b" title="Evaluates whether a face candidate represents a valid base transition feature (such as a bottom fille..." alt="" coords="280,5,575,64"/>
+<area shape="poly" title=" " alt="" coords="605,35,575,37,575,32,610,35"/>
+<area shape="rect" href="../../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html#af2f3c85c3515f787234ec278e44207a6" title="Internal implementation that classifies faces to ignore given a pre&#45;built hole index set and base cle..." alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="261,35,232,37,232,32,267,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a410a85dee3f8fb90bd9a8eaef70cc0a3" name="a410a85dee3f8fb90bd9a8eaef70cc0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410a85dee3f8fb90bd9a8eaef70cc0a3">&#9670;&#160;</a></span>BasePlaneTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.BasePlaneTolerance = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tolerance in millimeters used to identify bottom planar faces on the base plane. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00017">17</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00110">FindFacesToIgnore()</a> e <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00073">HasIgnoredBottomFace()</a>.</p>
+
+</div>
+</div>
+<a id="a3f83888d7ad19d99f3583d1944d76055" name="a3f83888d7ad19d99f3583d1944d76055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f83888d7ad19d99f3583d1944d76055">&#9670;&#160;</a></span>SampleDedupTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.SampleDedupTolerance = 1e-6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spatial deduplication tolerance for sampled 3D points on CAD face surfaces (in mm). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html#l00568">Deduplicate()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d5/d02/_base_avoidance_face_classifier_8cs_source.html">BaseAvoidanceFaceClassifier.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

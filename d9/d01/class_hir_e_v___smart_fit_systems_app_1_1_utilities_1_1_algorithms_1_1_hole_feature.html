@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.Hol
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_feature__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_feature_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_feature_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_hole_feature_coll__map">
-<area shape="rect" title="Represents a detected hole feature containing geometric properties." alt="" coords="5,5,201,261"/>
+<area shape="rect" title="Represents a detected hole feature containing geometric properties." alt="" coords="5,5,201,347"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -109,6 +109,8 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.Hol
 Propriedades</h2></td></tr>
 <tr class="memitem:ac0accc853bd81b00cf0de88499d2ed6c" id="r_ac0accc853bd81b00cf0de88499d2ed6c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac0accc853bd81b00cf0de88499d2ed6c">HoleId</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ac0accc853bd81b00cf0de88499d2ed6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the ID of the hole feature.  <br /></td></tr>
+<tr class="memitem:ac322062461ab2fb46ccaecbee7cb6da6" id="r_ac322062461ab2fb46ccaecbee7cb6da6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac322062461ab2fb46ccaecbee7cb6da6">EntityIndex</a> = -1<code> [get, set]</code></td></tr>
+<tr class="memdesc:ac322062461ab2fb46ccaecbee7cb6da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the owning design entity index. Stored independently from measurement pairs so a clearance-filtered hole keeps its axis route.  <br /></td></tr>
 <tr class="memitem:a3aaafde0e362c3d30eb5fad511258a40" id="r_a3aaafde0e362c3d30eb5fad511258a40"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a3aaafde0e362c3d30eb5fad511258a40">Center</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a3aaafde0e362c3d30eb5fad511258a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the center point of the hole feature.  <br /></td></tr>
 <tr class="memitem:a573aa54c529af8ff54aa61c2261d2853" id="r_a573aa54c529af8ff54aa61c2261d2853"><td class="memItemLeft">Vector3D?&#160;</td><td class="memItemRight"><a class="el" href="#a573aa54c529af8ff54aa61c2261d2853">Axis</a><code> [get, set]</code></td></tr>
@@ -119,6 +121,9 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a83250aac9dfb1ad2b4ab51ceccbecc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the depth of the hole feature.  <br /></td></tr>
 <tr class="memitem:a7f5a21f6b32f50d8ae1327630e5b8322" id="r_a7f5a21f6b32f50d8ae1327630e5b8322"><td class="memItemLeft">List&lt; <a class="el" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html">ApproachMeasurementPair</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7f5a21f6b32f50d8ae1327630e5b8322">Pairs</a> = new List&lt;<a class="el" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html">ApproachMeasurementPair</a>&gt;()<code> [get, set]</code></td></tr>
 <tr class="memdesc:a7f5a21f6b32f50d8ae1327630e5b8322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of measurement pairs associated with this hole feature.  <br /></td></tr>
+<tr class="memitem:a099208b11d3f94e3de6bc53ac135b5dc" id="r_a099208b11d3f94e3de6bc53ac135b5dc"><td class="memItemLeft">List&lt; <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a099208b11d3f94e3de6bc53ac135b5dc">SourceHoles</a> = new List&lt;<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a>&gt;()<code> [get, set]</code></td></tr>
+<tr class="memitem:aeaf051ab8ad84c01a18d384b2f104b43" id="r_aeaf051ab8ad84c01a18d384b2f104b43"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#aeaf051ab8ad84c01a18d384b2f104b43">ActualTopCenterPoint</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ab5e1452a2009db54cf5933510aaa1014" id="r_ab5e1452a2009db54cf5933510aaa1014"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#ab5e1452a2009db54cf5933510aaa1014">ActualBottomCenterPoint</a><code> [get, set]</code></td></tr>
 <tr class="memitem:a71bfab6083c47a7ec8917d53b3e11cd4" id="r_a71bfab6083c47a7ec8917d53b3e11cd4"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a71bfab6083c47a7ec8917d53b3e11cd4">TopCenterPoint</a><code> [get]</code></td></tr>
 <tr class="memitem:a17ee6d36fabb4fb0cfda53447addf873" id="r_a17ee6d36fabb4fb0cfda53447addf873"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a17ee6d36fabb4fb0cfda53447addf873">BottomCenterPoint</a><code> [get]</code></td></tr>
 <tr class="memitem:ad775951c8cf87106f084f45ed6fb36d6" id="r_ad775951c8cf87106f084f45ed6fb36d6"><td class="memItemLeft">Vector3D?&#160;</td><td class="memItemRight"><a class="el" href="#ad775951c8cf87106f084f45ed6fb36d6">AxisDirection</a><code> [get]</code></td></tr>
@@ -126,8 +131,56 @@ Propriedades</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Represents a detected hole feature containing geometric properties. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00841">841</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02071">2071</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 </div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="ab5e1452a2009db54cf5933510aaa1014" name="ab5e1452a2009db54cf5933510aaa1014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e1452a2009db54cf5933510aaa1014">&#9670;&#160;</a></span>ActualBottomCenterPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D? HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleFeature.ActualBottomCenterPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02104">2104</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+</div>
+</div>
+<a id="aeaf051ab8ad84c01a18d384b2f104b43" name="aeaf051ab8ad84c01a18d384b2f104b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf051ab8ad84c01a18d384b2f104b43">&#9670;&#160;</a></span>ActualTopCenterPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D? HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleFeature.ActualTopCenterPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02103">2103</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+</div>
+</div>
 <a id="a573aa54c529af8ff54aa61c2261d2853" name="a573aa54c529af8ff54aa61c2261d2853"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a573aa54c529af8ff54aa61c2261d2853">&#9670;&#160;</a></span>Axis</h2>
 
@@ -150,7 +203,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the axis direction vector of the hole. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00854">854</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02089">2089</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01390">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.AreHoleFeaturesCoaxial()</a> e <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01456">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.FilterHolePairsByEndClearance()</a>.</p>
 
 </div>
 </div>
@@ -174,7 +229,7 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00869">869</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02109">2109</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
 </div>
 </div>
@@ -198,7 +253,7 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00868">868</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02107">2107</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
 </div>
 </div>
@@ -224,7 +279,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the center point of the hole feature. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00850">850</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02085">2085</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01390">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.AreHoleFeaturesCoaxial()</a>.</p>
 
 </div>
 </div>
@@ -250,9 +307,35 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the depth of the hole feature. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00862">862</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02097">2097</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00779">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.GetHoleAxisPoints()</a>.</p>
+</div>
+</div>
+<a id="ac322062461ab2fb46ccaecbee7cb6da6" name="ac322062461ab2fb46ccaecbee7cb6da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac322062461ab2fb46ccaecbee7cb6da6">&#9670;&#160;</a></span>EntityIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleFeature.EntityIndex = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the owning design entity index. Stored independently from measurement pairs so a clearance-filtered hole keeps its axis route. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02081">2081</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01390">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.AreHoleFeaturesCoaxial()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +361,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the ID of the hole feature. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00846">846</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02076">2076</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
 </div>
 </div>
@@ -304,7 +387,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the list of measurement pairs associated with this hole feature. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00866">866</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02101">2101</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01920">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.BuildHoleRouteCandidate()</a> e <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l01456">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.FilterHolePairsByEndClearance()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +415,31 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the radius of the hole feature. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00858">858</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02093">2093</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+
+</div>
+</div>
+<a id="a099208b11d3f94e3de6bc53ac135b5dc" name="a099208b11d3f94e3de6bc53ac135b5dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099208b11d3f94e3de6bc53ac135b5dc">&#9670;&#160;</a></span>SourceHoles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a>&gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleFeature.SourceHoles = new List&lt;<a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html">CADHole</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02102">2102</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
 </div>
 </div>
@@ -354,7 +463,7 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l00867">867</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html#l02105">2105</a> do ficheiro <a class="el" href="../../df/d00/_shell_based_path_planner_8cs_source.html">ShellBasedPathPlanner.cs</a>.</p>
 
 </div>
 </div>

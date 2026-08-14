@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/BaseAvoidanceClearance.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d0/d00/_base_avoidance_clearance_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BaseAvoidanceClearance.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d00/_base_avoidance_clearance_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Configuration;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">   11</a></span>    <span class="keyword">public</span> readonly <span class="keyword">struct </span><a class="code hl_function" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ab1357a1598c439a954f7e84dd1017482">BaseAvoidanceConfig</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ab1357a1598c439a954f7e84dd1017482">   19</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ab1357a1598c439a954f7e84dd1017482">BaseAvoidanceConfig</a>(<span class="keywordtype">bool</span> enabled, <span class="keywordtype">double</span> safeHeight, <span class="keywordtype">double</span> safeAngleDeg)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a> = enabled;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a> = safeHeight;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a> = safeAngleDeg;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">   36</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">   48</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">BaseAvoidanceClearance</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2411eae39cb04b60f9403f5c7e5420ff">   53</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2411eae39cb04b60f9403f5c7e5420ff">EnabledSettingKey</a> = <span class="stringliteral">&quot;PathPlanning_AvoidBottomFace&quot;</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">   58</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">SafeHeightSettingKey</a> = <span class="stringliteral">&quot;PathPlanning_BaseAvoidanceHeight&quot;</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">   63</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">SafeAngleSettingKey</a> = <span class="stringliteral">&quot;PathPlanning_BaseAvoidanceAngle&quot;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">   68</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a> = 1e-6;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011">   74</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011">LoadConfig</a>()</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordtype">bool</span> enabled = <span class="keywordtype">bool</span>.TryParse(</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                ConfigurationManager.AppSettings[<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2411eae39cb04b60f9403f5c7e5420ff">EnabledSettingKey</a>],</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                out <span class="keywordtype">bool</span> avoidBottomFace)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                ? avoidBottomFace</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                : <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">double</span> safeHeight = <span class="keywordtype">double</span>.TryParse(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                ConfigurationManager.AppSettings[<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">SafeHeightSettingKey</a>],</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                NumberStyles.Float,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                CultureInfo.InvariantCulture,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                out <span class="keywordtype">double</span> configuredSafeHeight)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                ? configuredSafeHeight</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                : 15.0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordtype">double</span> safeAngleDeg = <span class="keywordtype">double</span>.TryParse(</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                ConfigurationManager.AppSettings[<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">SafeAngleSettingKey</a>],</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                NumberStyles.Float,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                CultureInfo.InvariantCulture,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                out <span class="keywordtype">double</span> configuredSafeAngle)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                ? configuredSafeAngle</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                : 30.0;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a>(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                enabled,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                Math.Max(0.0, safeHeight),</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                Math.Max(0.0, Math.Min(90.0, safeAngleDeg)));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a73299d30bbaf0aaad11265a1e25935d1">  112</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a73299d30bbaf0aaad11265a1e25935d1">EnableForIgnoredBottomFace</a>(</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordtype">bool</span> hasIgnoredBottomFace)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span> (config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a> || !hasIgnoredBottomFace)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <span class="keywordflow">return</span> config;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a>(<span class="keyword">true</span>, config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a>, config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae56f7c42306a3baec00a198a2b903d34">  130</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae56f7c42306a3baec00a198a2b903d34">IsUnsafe</a>(Point3D point, Vector3D vector, <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, <span class="keywordtype">bool</span> isFaceNormal = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae56f7c42306a3baec00a198a2b903d34">IsUnsafe</a>(point, vector, config, 0.0, isFaceNormal);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a8303e941ec02b545a38bdbffb0526aa3">  144</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a8303e941ec02b545a38bdbffb0526aa3">IsUnsafe</a>(Point3D point, Vector3D vector, <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, <span class="keywordtype">double</span> baseZ, <span class="keywordtype">bool</span> isFaceNormal = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="comment">// Points genuinely below the physical base can never be reached safely.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="comment">// A point exactly at base height is intentionally evaluated by the</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="comment">// configured angular rule: SafeAngleDeg applies at height zero and then</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="comment">// tapers to zero at SafeHeight.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">if</span> (point.Z &lt; baseZ - <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a>)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">if</span> (!config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a>)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordtype">double</span> localHeight = point.Z - baseZ;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9">IsLocalClearanceUnsafe</a>(localHeight, vector, config);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3">  168</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3">IsPairUnsafe</a>(</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            Point3D measurementPoint,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            Point3D approachPoint,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            Vector3D faceNormal,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3">IsPairUnsafe</a>(measurementPoint, approachPoint, faceNormal, config, 0.0);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        }</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ac3ae59a940db8d1e87d83ab12cb7a72a">  186</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ac3ae59a940db8d1e87d83ab12cb7a72a">IsPairUnsafe</a>(</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            Point3D measurementPoint,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            Point3D approachPoint,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            Vector3D faceNormal,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config,</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keywordtype">double</span> baseZ)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3">IsPairUnsafe</a>(measurementPoint, approachPoint, faceNormal, config, baseZ, baseZ);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
+<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17">  206</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17">IsPairUnsafe</a>(</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            Point3D measurementPoint,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            Point3D approachPoint,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            Vector3D faceNormal,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordtype">double</span> measurementBaseZ,</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="keywordtype">double</span> approachBaseZ)</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordflow">if</span> (measurementPoint.Z &lt; measurementBaseZ - <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a> ||</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                approachPoint.Z &lt; approachBaseZ - <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a>)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">if</span> (!config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a>)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="comment">// Base clearance is defined at the measured surface point.  The approach</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="comment">// point may be higher because it is offset along the face normal, but that</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="comment">// must not make a low lateral measurement appear safe.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            Vector3D approachVector = <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b">GetApproachVector</a>(measurementPoint, approachPoint, faceNormal);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordtype">double</span> localHeight = measurementPoint.Z - measurementBaseZ;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9">IsLocalClearanceUnsafe</a>(localHeight, approachVector, config);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }</div>
+</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span></div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a446e21d1e0971a7bcf8c0fb2c916cd94">  237</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a446e21d1e0971a7bcf8c0fb2c916cd94">GetPairMinimumZ</a>(</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            Point3D measurementPoint,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            Point3D approachPoint,</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            Vector3D faceNormal,</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        {</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a446e21d1e0971a7bcf8c0fb2c916cd94">GetPairMinimumZ</a>(measurementPoint, approachPoint, faceNormal, config, 0.0);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        }</div>
+</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089">  255</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089">GetPairMinimumZ</a>(</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            Point3D measurementPoint,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            Point3D approachPoint,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            Vector3D faceNormal,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config,</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordtype">double</span> baseZ)</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            Vector3D approachVector = <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b">GetApproachVector</a>(measurementPoint, approachPoint, faceNormal);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296">GetMinimumZ</a>(approachVector, config, baseZ);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        }</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span></div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296">  272</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296">GetMinimumZ</a>(Vector3D approachVector, <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296">GetMinimumZ</a>(approachVector, config, 0.0);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
+</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span></div>
+<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d">  284</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d">GetMinimumZ</a>(Vector3D approachVector, <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config, <span class="keywordtype">double</span> baseZ)</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keywordflow">if</span> (!config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a> || config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a> &lt;= 0.0 || config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a> &lt;= 0.0)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                <span class="keywordflow">return</span> baseZ;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0">IsDownwardOrLevel</a>(approachVector))</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                <span class="keywordflow">return</span> baseZ + config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a>;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <span class="keywordtype">double</span> angleToBasePlane = <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80">GetAngleToBasePlaneDeg</a>(approachVector);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">if</span> (angleToBasePlane &gt;= config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a> - 1e-9)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordflow">return</span> baseZ;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordtype">double</span> clearanceRatio = 1.0 - (angleToBasePlane / Math.Max(1e-9, config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a>));</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <span class="keywordflow">return</span> baseZ + (config.SafeHeight * Math.Max(0.0, Math.Min(1.0, clearanceRatio)));</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span></div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aed15bfba0f9a82a0cd99b0427f260f1c">  306</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aed15bfba0f9a82a0cd99b0427f260f1c">GetInclinationFromVerticalDeg</a>(Vector3D approachVector, <span class="keywordtype">double</span> fallbackAngleDeg)</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="keywordflow">if</span> (approachVector.Length &lt; 1e-9)</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                <span class="keywordflow">return</span> fallbackAngleDeg;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            var normalized = <span class="keyword">new</span> Vector3D(approachVector.X, approachVector.Y, approachVector.Z);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            normalized.Normalize();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="keywordtype">double</span> absZ = Math.Abs(normalized.Z);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            absZ = Math.Max(0.0, Math.Min(1.0, absZ));</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="keywordflow">return</span> Math.Acos(absZ) * 180.0 / Math.PI;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
+</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span></div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80">  323</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80">GetAngleToBasePlaneDeg</a>(Vector3D approachVector)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="keywordflow">if</span> (approachVector.Length &lt; 1e-9)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            var normalized = <span class="keyword">new</span> Vector3D(approachVector.X, approachVector.Y, approachVector.Z);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            normalized.Normalize();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="keywordtype">double</span> absZ = Math.Abs(normalized.Z);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            absZ = Math.Max(0.0, Math.Min(1.0, absZ));</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            <span class="keywordflow">return</span> Math.Asin(absZ) * 180.0 / Math.PI;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        }</div>
+</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span></div>
+<div class="foldopen" id="foldopen00342" data-start="{" data-end="}">
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9">  342</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9">IsLocalClearanceUnsafe</a>(<span class="keywordtype">double</span> localHeight, Vector3D approachVector, <a class="code hl_struct" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> config)</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="keywordflow">if</span> (!config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">Enabled</a> || config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a> &lt;= 0.0 || config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a> &lt;= 0.0)</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            <span class="keywordflow">if</span> (localHeight &gt;= config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a> - <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a>)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="comment">// The vector points from the measurement target to its associated</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="comment">// approach point.  Below the clearance plane it may not point downward;</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="comment">// horizontal motion becomes progressively acceptable as the measurement</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            <span class="comment">// height approaches the configured plane.</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            <span class="keywordflow">if</span> (approachVector.Length &lt; 1e-9 || approachVector.Z &lt; -<a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a>)</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <span class="keywordtype">double</span> clampedHeight = Math.Max(0.0, Math.Min(config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a>, localHeight));</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            <span class="keywordtype">double</span> requiredMinAngle = config.SafeAngleDeg * (1.0 - (clampedHeight / config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">SafeHeight</a>));</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            requiredMinAngle = Math.Max(0.0, Math.Min(config.<a class="code hl_property" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">SafeAngleDeg</a>, requiredMinAngle));</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80">GetAngleToBasePlaneDeg</a>(approachVector) &lt; requiredMinAngle - 1e-9;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        }</div>
+</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span></div>
+<div class="foldopen" id="foldopen00368" data-start="{" data-end="}">
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0">  368</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0">IsDownwardOrLevel</a>(Vector3D approachVector)</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="keywordflow">return</span> approachVector.Length &gt; 1e-9 &amp;&amp; approachVector.Z &lt;= <a class="code hl_variable" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">ZTolerance</a>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        }</div>
+</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span></div>
+<div class="foldopen" id="foldopen00380" data-start="{" data-end="}">
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b">  380</a></span>        <span class="keyword">private</span> <span class="keyword">static</span> Vector3D <a class="code hl_function" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b">GetApproachVector</a>(Point3D measurementPoint, Point3D approachPoint, Vector3D fallbackNormal)</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        {</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>            var vector = <span class="keyword">new</span> Vector3D(measurementPoint, approachPoint);</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>            <span class="keywordflow">return</span> vector.Length &lt; 1e-9 ? fallbackNormal : vector;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        }</div>
+</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
+</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance</a></div><div class="ttdoc">Utility class providing shared base plane clearance checks, angle calculations, and configuration man...</div><div class="ttdef"><b>Definição</b> <a href="#l00048">BaseAvoidanceClearance.cs:49</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a2411eae39cb04b60f9403f5c7e5420ff"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2411eae39cb04b60f9403f5c7e5420ff">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.EnabledSettingKey</a></div><div class="ttdeci">const string EnabledSettingKey</div><div class="ttdoc">App.config key controlling whether bottom face base avoidance is globally enabled.</div><div class="ttdef"><b>Definição</b> <a href="#l00053">BaseAvoidanceClearance.cs:53</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a2cc67807188f4aa21887de9af1458e17"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a2cc67807188f4aa21887de9af1458e17">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe</a></div><div class="ttdeci">static bool IsPairUnsafe(Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, BaseAvoidanceConfig config, double measurementBaseZ, double approachBaseZ)</div><div class="ttdoc">Determines whether a measurement target point and approach point pair violates base clearance with in...</div><div class="ttdef"><b>Definição</b> <a href="#l00206">BaseAvoidanceClearance.cs:206</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a446e21d1e0971a7bcf8c0fb2c916cd94"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a446e21d1e0971a7bcf8c0fb2c916cd94">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetPairMinimumZ</a></div><div class="ttdeci">static double GetPairMinimumZ(Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, BaseAvoidanceConfig config)</div><div class="ttdoc">Calculates the minimum safe Z elevation for a target point and approach point pair assuming base Z = ...</div><div class="ttdef"><b>Definição</b> <a href="#l00237">BaseAvoidanceClearance.cs:237</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a672f21d06044111b6dc519f857267296"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a672f21d06044111b6dc519f857267296">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetMinimumZ</a></div><div class="ttdeci">static double GetMinimumZ(Vector3D approachVector, BaseAvoidanceConfig config)</div><div class="ttdoc">Calculates the minimum safe Z height for a given approach vector assuming base Z = 0.</div><div class="ttdef"><b>Definição</b> <a href="#l00272">BaseAvoidanceClearance.cs:272</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a6fcfc9c85bcb96fc00e4490fea232011"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a6fcfc9c85bcb96fc00e4490fea232011">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.LoadConfig</a></div><div class="ttdeci">static BaseAvoidanceConfig LoadConfig()</div><div class="ttdoc">Loads the base avoidance configuration from application setting files (App.config).</div><div class="ttdef"><b>Definição</b> <a href="#l00074">BaseAvoidanceClearance.cs:74</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a706cf744c1098fa351089ee670570c2b"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a706cf744c1098fa351089ee670570c2b">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetApproachVector</a></div><div class="ttdeci">static Vector3D GetApproachVector(Point3D measurementPoint, Point3D approachPoint, Vector3D fallbackNormal)</div><div class="ttdoc">Computes the vector from a measurement target point to an approach point, returning a fallback normal...</div><div class="ttdef"><b>Definição</b> <a href="#l00380">BaseAvoidanceClearance.cs:380</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a73299d30bbaf0aaad11265a1e25935d1"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a73299d30bbaf0aaad11265a1e25935d1">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.EnableForIgnoredBottomFace</a></div><div class="ttdeci">static BaseAvoidanceConfig EnableForIgnoredBottomFace(BaseAvoidanceConfig config, bool hasIgnoredBottomFace)</div><div class="ttdoc">Enables the shared clearance rule when the operator has explicitly ignored a physical bottom face,...</div><div class="ttdef"><b>Definição</b> <a href="#l00112">BaseAvoidanceClearance.cs:112</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_a8303e941ec02b545a38bdbffb0526aa3"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a8303e941ec02b545a38bdbffb0526aa3">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsUnsafe</a></div><div class="ttdeci">static bool IsUnsafe(Point3D point, Vector3D vector, BaseAvoidanceConfig config, double baseZ, bool isFaceNormal=false)</div><div class="ttdoc">Determines whether a single 3D point and direction vector violate base plane clearance relative to a ...</div><div class="ttdef"><b>Definição</b> <a href="#l00144">BaseAvoidanceClearance.cs:144</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_aa05732e353263854b51a61183b4143fe"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa05732e353263854b51a61183b4143fe">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.ZTolerance</a></div><div class="ttdeci">const double ZTolerance</div><div class="ttdoc">Numerical tolerance for Z-coordinate comparison operations (in mm).</div><div class="ttdef"><b>Definição</b> <a href="#l00068">BaseAvoidanceClearance.cs:68</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_aa45933fede2742671c45f0dd60220089"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetPairMinimumZ</a></div><div class="ttdeci">static double GetPairMinimumZ(Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, BaseAvoidanceConfig config, double baseZ)</div><div class="ttdoc">Calculates the minimum safe Z elevation for a target point and approach point pair given a base Z ele...</div><div class="ttdef"><b>Definição</b> <a href="#l00255">BaseAvoidanceClearance.cs:255</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_aaf361313aa4a7695322d5c1969589d80"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetAngleToBasePlaneDeg</a></div><div class="ttdeci">static double GetAngleToBasePlaneDeg(Vector3D approachVector)</div><div class="ttdoc">Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta...</div><div class="ttdef"><b>Definição</b> <a href="#l00323">BaseAvoidanceClearance.cs:323</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_aaf9ead845a011a7e4ae4c7fae0b552c0"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsDownwardOrLevel</a></div><div class="ttdeci">static bool IsDownwardOrLevel(Vector3D approachVector)</div><div class="ttdoc">Determines if an approach vector is pointing horizontally level or downward.</div><div class="ttdef"><b>Definição</b> <a href="#l00368">BaseAvoidanceClearance.cs:368</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ac3ae59a940db8d1e87d83ab12cb7a72a"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ac3ae59a940db8d1e87d83ab12cb7a72a">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe</a></div><div class="ttdeci">static bool IsPairUnsafe(Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, BaseAvoidanceConfig config, double baseZ)</div><div class="ttdoc">Determines whether a measurement target point and approach point pair violates base clearance for a s...</div><div class="ttdef"><b>Definição</b> <a href="#l00186">BaseAvoidanceClearance.cs:186</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_acc587f31b74e293b9bbcdb41fa5832a9"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsLocalClearanceUnsafe</a></div><div class="ttdeci">static bool IsLocalClearanceUnsafe(double localHeight, Vector3D approachVector, BaseAvoidanceConfig config)</div><div class="ttdoc">Checks whether a specific local height and approach vector violate local base clearance rules.</div><div class="ttdef"><b>Definição</b> <a href="#l00342">BaseAvoidanceClearance.cs:342</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae071985ac25c34e67ff09b900d206efd"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae071985ac25c34e67ff09b900d206efd">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeHeightSettingKey</a></div><div class="ttdeci">const string SafeHeightSettingKey</div><div class="ttdoc">App.config key specifying the base avoidance safety height (in mm).</div><div class="ttdef"><b>Definição</b> <a href="#l00058">BaseAvoidanceClearance.cs:58</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae312298388aeb8479418c3f5704873ef"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae312298388aeb8479418c3f5704873ef">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.SafeAngleSettingKey</a></div><div class="ttdeci">const string SafeAngleSettingKey</div><div class="ttdoc">App.config key specifying the base avoidance safe inclination angle threshold (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="#l00063">BaseAvoidanceClearance.cs:63</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae56f7c42306a3baec00a198a2b903d34"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae56f7c42306a3baec00a198a2b903d34">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsUnsafe</a></div><div class="ttdeci">static bool IsUnsafe(Point3D point, Vector3D vector, BaseAvoidanceConfig config, bool isFaceNormal=false)</div><div class="ttdoc">Determines whether a single 3D point and direction vector violate base plane clearance assuming a bas...</div><div class="ttdef"><b>Definição</b> <a href="#l00130">BaseAvoidanceClearance.cs:130</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_ae92b7005d111bf7230bba1e0430a70a3"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsPairUnsafe</a></div><div class="ttdeci">static bool IsPairUnsafe(Point3D measurementPoint, Point3D approachPoint, Vector3D faceNormal, BaseAvoidanceConfig config)</div><div class="ttdoc">Determines whether a measurement target point and approach point pair violates base clearance assumin...</div><div class="ttdef"><b>Definição</b> <a href="#l00168">BaseAvoidanceClearance.cs:168</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_aed15bfba0f9a82a0cd99b0427f260f1c"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aed15bfba0f9a82a0cd99b0427f260f1c">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetInclinationFromVerticalDeg</a></div><div class="ttdeci">static double GetInclinationFromVerticalDeg(Vector3D approachVector, double fallbackAngleDeg)</div><div class="ttdoc">Computes the angle of inclination of an approach vector relative to the vertical Z-axis (0 degrees = ...</div><div class="ttdef"><b>Definição</b> <a href="#l00306">BaseAvoidanceClearance.cs:306</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance_html_afd9a6f5d000316adc892b2ca51aad10d"><div class="ttname"><a href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.GetMinimumZ</a></div><div class="ttdeci">static double GetMinimumZ(Vector3D approachVector, BaseAvoidanceConfig config, double baseZ)</div><div class="ttdoc">Calculates the minimum safe Z height for a given approach vector and base Z elevation.</div><div class="ttdef"><b>Definição</b> <a href="#l00284">BaseAvoidanceClearance.cs:284</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_html"><div class="ttname"><a href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms</a></div><div class="ttdef"><b>Definição</b> <a href="../../dc/d03/_approach_point_generator_8cs_source.html#l00005">ApproachPointGenerator.cs:6</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig</a></div><div class="ttdoc">Configuration data structure holding parameters for shared local-base clearance rules during path gen...</div><div class="ttdef"><b>Definição</b> <a href="#l00011">BaseAvoidanceClearance.cs:12</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html_a659a521549cbdfaecf08dc2f8e6c7554"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#a659a521549cbdfaecf08dc2f8e6c7554">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeAngleDeg</a></div><div class="ttdeci">double SafeAngleDeg</div><div class="ttdoc">Gets the safe approach angle threshold relative to the base plane (in degrees).</div><div class="ttdef"><b>Definição</b> <a href="#l00042">BaseAvoidanceClearance.cs:42</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html_ab1357a1598c439a954f7e84dd1017482"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ab1357a1598c439a954f7e84dd1017482">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.BaseAvoidanceConfig</a></div><div class="ttdeci">BaseAvoidanceConfig(bool enabled, double safeHeight, double safeAngleDeg)</div><div class="ttdoc">Initializes a new instance of the BaseAvoidanceConfig struct.</div><div class="ttdef"><b>Definição</b> <a href="#l00019">BaseAvoidanceClearance.cs:19</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html_abe43a45005add3c8ebe4eb3cc4525eaf"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#abe43a45005add3c8ebe4eb3cc4525eaf">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.SafeHeight</a></div><div class="ttdeci">double SafeHeight</div><div class="ttdoc">Gets the safe vertical height clearance envelope above the base plane (in mm).</div><div class="ttdef"><b>Definição</b> <a href="#l00036">BaseAvoidanceClearance.cs:36</a></div></div>
+<div class="ttc" id="astruct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config_html_ae936619c22b9de8cf1b3c24680cc7334"><div class="ttname"><a href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html#ae936619c22b9de8cf1b3c24680cc7334">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a></div><div class="ttdeci">bool Enabled</div><div class="ttdoc">Gets a value indicating whether local-base clearance rules are enabled.</div><div class="ttdef"><b>Definição</b> <a href="#l00030">BaseAvoidanceClearance.cs:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

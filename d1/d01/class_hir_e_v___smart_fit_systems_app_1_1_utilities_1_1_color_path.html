@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -147,8 +147,13 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a67fd53dbd142b4c32c9bb39a49dbf6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the LinearPath entity for rendering.  <br /></td></tr>
 <tr class="memitem:a292b17d54fd103d4397ecd46bab4612f" id="r_a292b17d54fd103d4397ecd46bab4612f"><td class="memItemLeft">List&lt; LinearPath &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a292b17d54fd103d4397ecd46bab4612f">SegmentEntities</a> = new List&lt;LinearPath&gt;()<code> [get, set]</code></td></tr>
 <tr class="memdesc:a292b17d54fd103d4397ecd46bab4612f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of LinearPath segment entities for rendering.  <br /></td></tr>
+<tr class="memitem:a09c855cb45dbaab70a5018c029fb976a" id="r_a09c855cb45dbaab70a5018c029fb976a"><td class="memItemLeft">HashSet&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a09c855cb45dbaab70a5018c029fb976a">ProbeCollisionSegmentIndices</a> = new HashSet&lt;int&gt;()<code> [get, set]</code></td></tr>
+<tr class="memdesc:a09c855cb45dbaab70a5018c029fb976a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the zero-based segment indices reported by probe collision validation.  <br /></td></tr>
+<tr class="memitem:ad3855a98c5aa5e48d2a8a994a43d5c2d" id="r_ad3855a98c5aa5e48d2a8a994a43d5c2d"><td class="memItemLeft">HashSet&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad3855a98c5aa5e48d2a8a994a43d5c2d">ProbeCollisionPointIndices</a> = new HashSet&lt;int&gt;()<code> [get, set]</code></td></tr>
 <tr class="memitem:aa7e11b698b63b18757ef52cdde739d1e" id="r_aa7e11b698b63b18757ef52cdde739d1e"><td class="memItemLeft">List&lt; Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa7e11b698b63b18757ef52cdde739d1e">WaypointEntities</a> = new List&lt;Entity&gt;()<code> [get, set]</code></td></tr>
 <tr class="memdesc:aa7e11b698b63b18757ef52cdde739d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of waypoint visual entities for rendering.  <br /></td></tr>
+<tr class="memitem:a415a7e4047e8348a38b457c7ae63fcc2" id="r_a415a7e4047e8348a38b457c7ae63fcc2"><td class="memItemLeft">List&lt; Guid &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a415a7e4047e8348a38b457c7ae63fcc2">WaypointGroupIds</a> = new List&lt;Guid&gt;()<code> [get, set]</code></td></tr>
+<tr class="memdesc:a415a7e4047e8348a38b457c7ae63fcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent visual/manipulation group for each waypoint occurrence. Distinct group IDs may intentionally occupy the same coordinate after the operator splits incompatible movement constraints.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
@@ -210,11 +215,11 @@ Atributos Privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">168</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">179</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00094">Color</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">ToolName</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a>.</p>
+<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00094">Color</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">ToolName</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00170">WaypointGroupIds</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -225,18 +230,19 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="868,269,833,267,833,261,874,269"/>
 <area shape="rect" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html#a1e23194a2845a9c3f38268c54aa2b104" title="Executes the RestoreState method." alt="" coords="630,296,838,339"/>
 <area shape="poly" title=" " alt="" coords="874,299,839,306,839,301,868,299"/>
-<area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a7d42c012d7852d2ec78fa306b3d5cecc" title="Replaces the path state inside PathManager and refreshes visuals if requested." alt="" coords="333,109,566,168"/>
-<area shape="poly" title=" " alt="" coords="661,223,526,171,527,166,666,223"/>
+<area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a7d42c012d7852d2ec78fa306b3d5cecc" title="Replaces the path state inside PathManager and refreshes visuals if requested." alt="" coords="333,97,566,156"/>
+<area shape="poly" title=" " alt="" coords="667,223,518,159,519,154,672,222"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="318,221,582,280"/>
 <area shape="poly" title=" " alt="" coords="618,251,583,253,582,248,623,250"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#ad8f6b476885d54dacdf9fd77b6abe082" title="Initializes a new instance of the UpdateColorPathCommand class." alt="" coords="333,304,566,363"/>
 <area shape="poly" title=" " alt="" coords="646,276,554,306,553,301,641,277"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a8cb755d95ce830daef7d536e33537307" title="Applies path state data modifications without redrawing." alt="" coords="21,5,254,64"/>
-<area shape="poly" title=" " alt="" coords="348,105,269,79,235,67,234,62,271,73,353,103"/>
+<area shape="poly" title=" " alt="" coords="331,94,240,67,239,62,336,91"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a845c3df22402d063cc9a06845299f135" title="Reapplies the modified path state." alt="" coords="5,88,270,131"/>
-<area shape="poly" title=" " alt="" coords="315,127,271,124,269,119,320,125"/>
+<area shape="poly" title=" " alt="" coords="315,120,271,119,269,114,320,118"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a53dd1e42ea063882b4f672e87371f388" title="Reverts the path state back to the original layout." alt="" coords="5,155,270,197"/>
-<area shape="poly" title=" " alt="" coords="315,156,271,163,269,158,320,153"/>
+<area shape="poly" title=" " alt="" coords="315,149,271,158,269,153,320,146"/>
+<area shape="poly" title=" " alt="" coords="494,207,479,203,450,200,425,202,408,207,400,213,399,223,395,219,396,211,406,202,424,197,450,195,480,197,500,207"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="24,221,251,280"/>
 <area shape="poly" title=" " alt="" coords="300,251,252,253,251,248,305,250"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a11d4ee0a23ec89ee40629143866a29de" title="Checks whether another command operates within the same graphical context." alt="" coords="21,304,254,363"/>
@@ -265,11 +271,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Executes the CloneState method. </p>
 <dl class="section return"><dt>Retorna</dt><dd>The <a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html" title="Represents a complete path with metadata for visualization and simulation.">ColorPath</a> result.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">277</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">291</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00094">Color</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">IsVisible</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00153">PathEntity</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00112">ShowPathLines</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">ToolName</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00132">TrajectoryMode</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a>.</p>
+<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00094">Color</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">IsVisible</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00153">PathEntity</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00160">ProbeCollisionPointIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00159">ProbeCollisionSegmentIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00112">ShowPathLines</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">ToolName</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00132">TrajectoryMode</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00170">WaypointGroupIds</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00440">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.ApplyState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00364">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.UpdateColorPathCommand()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00440">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.ApplyState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00364">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.UpdateColorPathCommand()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -286,18 +292,19 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="center"><img src="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path_afefca4f398f91f60d89fc65fe0e10758_icgraph.png" border="0" usemap="#ad1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path_afefca4f398f91f60d89fc65fe0e10758_icgraph" loading="lazy" alt=""/></div>
 <map name="ad1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path_afefca4f398f91f60d89fc65fe0e10758_icgraph" id="ad1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path_afefca4f398f91f60d89fc65fe0e10758_icgraph">
 <area shape="rect" title="Executes the CloneState method." alt="" coords="630,229,826,272"/>
-<area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a7d42c012d7852d2ec78fa306b3d5cecc" title="Replaces the path state inside PathManager and refreshes visuals if requested." alt="" coords="333,109,566,168"/>
-<area shape="poly" title=" " alt="" coords="656,223,524,171,525,166,662,223"/>
+<area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a7d42c012d7852d2ec78fa306b3d5cecc" title="Replaces the path state inside PathManager and refreshes visuals if requested." alt="" coords="333,97,566,156"/>
+<area shape="poly" title=" " alt="" coords="662,223,581,188,518,159,518,154,583,183,667,223"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="318,221,582,280"/>
 <area shape="poly" title=" " alt="" coords="612,251,582,253,582,248,617,250"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#ad8f6b476885d54dacdf9fd77b6abe082" title="Initializes a new instance of the UpdateColorPathCommand class." alt="" coords="333,304,566,363"/>
 <area shape="poly" title=" " alt="" coords="642,276,552,306,551,301,637,277"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a8cb755d95ce830daef7d536e33537307" title="Applies path state data modifications without redrawing." alt="" coords="21,5,254,64"/>
-<area shape="poly" title=" " alt="" coords="348,105,269,79,235,67,234,62,271,73,353,103"/>
+<area shape="poly" title=" " alt="" coords="331,94,240,67,239,62,336,91"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a845c3df22402d063cc9a06845299f135" title="Reapplies the modified path state." alt="" coords="5,88,270,131"/>
-<area shape="poly" title=" " alt="" coords="315,127,271,124,269,119,320,125"/>
+<area shape="poly" title=" " alt="" coords="315,120,271,119,269,114,320,118"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a53dd1e42ea063882b4f672e87371f388" title="Reverts the path state back to the original layout." alt="" coords="5,155,270,197"/>
-<area shape="poly" title=" " alt="" coords="315,156,271,163,269,158,320,153"/>
+<area shape="poly" title=" " alt="" coords="315,149,271,158,269,153,320,146"/>
+<area shape="poly" title=" " alt="" coords="493,207,478,203,450,200,425,202,409,207,401,213,400,223,396,219,397,211,407,202,424,197,450,195,479,197,499,207"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="24,221,251,280"/>
 <area shape="poly" title=" " alt="" coords="300,251,252,253,251,248,305,250"/>
 <area shape="rect" href="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a11d4ee0a23ec89ee40629143866a29de" title="Checks whether another command operates within the same graphical context." alt="" coords="21,304,254,363"/>
@@ -324,9 +331,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Executes the DeduplicatePathPoints method. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">234</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">246</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a>.</p>
+<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00170">WaypointGroupIds</a>.</p>
 
 </div>
 </div>
@@ -353,9 +360,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">301</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">320</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">IsVisible</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00112">ShowPathLines</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00132">TrajectoryMode</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a>.</p>
+<p class="reference">Referências <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">IsMeasure</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">IsVisible</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">OriginalPoints</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">PointEntityIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">PointTypes</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00160">ProbeCollisionPointIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00159">ProbeCollisionSegmentIndices</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00112">ShowPathLines</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00132">TrajectoryMode</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">UpVectors</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00170">WaypointGroupIds</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -443,7 +450,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00094">94</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00948">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09911">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l03202">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindMarker()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12129">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPathPointPertinentToPart()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12095">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15184">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPathPointPertinentToPart()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
 
 </div>
 </div>
@@ -471,7 +478,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00150">150</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09911">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l03483">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindApproachEntityForMeasure()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17700">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.CheckToolCollisionOnPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04106">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindApproachEntityForMeasure()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14323">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsSurfaceMeasurementReference()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12346">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsWaypointReferenceVisible()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14266">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.TryGetApproachMeasurementIndex()</a>.</p>
 
 </div>
 </div>
@@ -499,7 +506,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">109</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12346">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsWaypointReferenceVisible()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 
 </div>
 </div>
@@ -527,7 +534,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00100">100</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17700">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.CheckToolCollisionOnPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18148">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +562,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00145">145</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09911">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12095">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12268">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetGeneratedWaypointPosition()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
 
 </div>
 </div>
@@ -583,7 +590,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00120">120</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18148">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 
 </div>
 </div>
@@ -611,7 +618,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00153">153</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09872">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l11892">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12043">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
 
 </div>
 </div>
@@ -639,7 +646,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00142">142</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01217">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.EnsurePathPointEntityIndexCount()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12211">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetPathPointOwnerIndex()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12225">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HasUsablePathPointOwnership()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01564">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.EnsurePathPointEntityIndexCount()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15266">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetPathPointOwnerIndex()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15280">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HasUsablePathPointOwnership()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 
 </div>
 </div>
@@ -667,7 +674,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00097">97</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09911">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01217">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.EnsurePathPointEntityIndexCount()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l03483">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindApproachEntityForMeasure()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l13834">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindNearbyWaypoint()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l13985">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindSurroundingWaypoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00727">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathLineProjectionPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12225">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HasUsablePathPointOwnership()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12105">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsNonBridgePathPointForPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12072">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsNonBridgePathSegmentForPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12129">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPathPointPertinentToPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12160">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsUnownedPointInsidePartRun()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l13776">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsWaypointOnPart()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12076">HirEV_SmartFitSystemsApp.Utilities.PathManager.QueueSubSnapshotsBetween()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09872">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ApplyPointChange()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l19219">HirEV_SmartFitSystemsApp.Utilities.PathManager.ApplyProbeCollisionVisualSample()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17700">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.CheckToolCollisionOnPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14589">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ConstrainSharedWaypointPosition()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12095">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l11892">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01564">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.EnsurePathPointEntityIndexCount()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04106">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindApproachEntityForMeasure()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17422">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindNearbyWaypoint()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17573">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.FindSurroundingWaypoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathLineProjectionPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15280">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HasUsablePathPointOwnership()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15160">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsNonBridgePathPointForPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15127">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsNonBridgePathSegmentForPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15184">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPathPointPertinentToPart()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15215">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsUnownedPointInsidePartRun()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17364">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsWaypointOnPart()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14544">HirEV_SmartFitSystemsApp.Utilities.PathManager.QueueSubSnapshotsBetween()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14652">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.SetPathPointPositionWithSharedOccurrences()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18148">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12168">HirEV_SmartFitSystemsApp.Utilities.PathManager.SplitSharedWaypointForManipulation()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14266">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.TryGetApproachMeasurementIndex()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12043">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +700,61 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00114">114</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12239">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetPathPointType()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09804">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HandleDesignControlMouseDown()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01240">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsBridgeIntermediaryPathPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l17700">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.CheckToolCollisionOnPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15294">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetPathPointType()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l11665">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.HandleDesignControlMouseDown()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l01587">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsBridgeIntermediaryPathPoint()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14323">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsSurfaceMeasurementReference()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14266">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.TryGetApproachMeasurementIndex()</a>.</p>
+
+</div>
+</div>
+<a id="ad3855a98c5aa5e48d2a8a994a43d5c2d" name="ad3855a98c5aa5e48d2a8a994a43d5c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3855a98c5aa5e48d2a8a994a43d5c2d">&#9670;&#160;</a></span>ProbeCollisionPointIndices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashSet&lt;int&gt; HirEV_SmartFitSystemsApp.Utilities.ColorPath.ProbeCollisionPointIndices = new HashSet&lt;int&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00160">160</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
+
+</div>
+</div>
+<a id="a09c855cb45dbaab70a5018c029fb976a" name="a09c855cb45dbaab70a5018c029fb976a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c855cb45dbaab70a5018c029fb976a">&#9670;&#160;</a></span>ProbeCollisionSegmentIndices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashSet&lt;int&gt; HirEV_SmartFitSystemsApp.Utilities.ColorPath.ProbeCollisionSegmentIndices = new HashSet&lt;int&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the zero-based segment indices reported by probe collision validation. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00159">159</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l11892">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../dd/d02/_eyeshot_visuals_manager_8cs_source.html#l00584">HirEV_SmartFitSystemsApp.Utilities.EyeshotVisualsManager.RestoreZoomPathSegmentHighlight()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12043">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
 
 </div>
 </div>
@@ -721,7 +782,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00156">156</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00727">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathLineProjectionPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00829">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09872">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l11892">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00843">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathLineProjectionPoint()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12043">HirEV_SmartFitSystemsApp.Utilities.PathManager.UpdatePathSegmentVertices()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l03685">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ZoomToPathSegment()</a>.</p>
 
 </div>
 </div>
@@ -749,7 +810,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00112">112</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l11892">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 
 </div>
 </div>
@@ -777,7 +838,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">106</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l15943">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20414">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18148">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 
 </div>
 </div>
@@ -805,7 +866,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00131">131</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 
 </div>
 </div>
@@ -833,7 +894,7 @@ Grafo de chamadas desta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00103">103</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00277">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00168">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l12287">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12343">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00234">DeduplicatePathPoints()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00301">RestoreState()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l15493">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ColorPathStatesEqual()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l14811">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePartSimulationSlice()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18148">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 
 </div>
 </div>
@@ -859,9 +920,37 @@ Grafo de chamadas desta função:</div>
 
 <p>Gets or sets the list of waypoint visual entities for rendering. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00159">159</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00163">163</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09911">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l09753">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawSinglePath()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12282">HirEV_SmartFitSystemsApp.Utilities.PathManager.DetachPathWaypointMarkers()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12095">HirEV_SmartFitSystemsApp.Utilities.PathManager.DrawPathPoints()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l14652">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.SetPathPointPositionWithSharedOccurrences()</a>.</p>
+
+</div>
+</div>
+<a id="a415a7e4047e8348a38b457c7ae63fcc2" name="a415a7e4047e8348a38b457c7ae63fcc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415a7e4047e8348a38b457c7ae63fcc2">&#9670;&#160;</a></span>WaypointGroupIds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Guid&gt; HirEV_SmartFitSystemsApp.Utilities.ColorPath.WaypointGroupIds = new List&lt;Guid&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Persistent visual/manipulation group for each waypoint occurrence. Distinct group IDs may intentionally occupy the same coordinate after the operator splits incompatible movement constraints. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00170">170</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00291">CloneState()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00179">ColorPath()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00246">DeduplicatePathPoints()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00945">HirEV_SmartFitSystemsApp.Utilities.PathManager.HandlePathLineRightClick()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00320">RestoreState()</a>.</p>
 
 </div>
 </div>

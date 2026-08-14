@@ -1,24 +1,24 @@
 <map id="HirEV_SmartFitSystemsApp.Modules.HoleDetector.TryFitCylinderAxisPoint" name="HirEV_SmartFitSystemsApp.Modules.HoleDetector.TryFitCylinderAxisPoint">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,217,243,276"/>
-<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a488d8e17f70cde288d2bce7e2ac1fff3" title=" " alt="" coords="291,63,587,105"/>
+<area shape="rect" id="Node000001" title="Fits a cylinder axis point and radius to a collection of 3D points." alt="" coords="5,217,243,276"/>
+<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a488d8e17f70cde288d2bce7e2ac1fff3" title="Builds an orthonormal coordinate system (basis vectors U and V) perpendicular to the given axis." alt="" coords="291,63,587,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,215,216,167,252,143,290,122,325,109,321,112,292,126,254,147,219,171,160,219"/>
-<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac3cd4e56681ce4946e2fe58ead45b0fa" title=" " alt="" coords="635,88,875,131"/>
+<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac3cd4e56681ce4946e2fe58ead45b0fa" title="Normalizes a 3D vector, handling zero&#45;length vectors by falling back to Vector3D.AxisZ." alt="" coords="635,88,875,131"/>
 <area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="176,215,230,188,290,165,374,145,460,130,622,114,617,116,461,135,375,150,291,171,232,193,179,219"/>
-<area shape="rect" id="Node000005" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a5beba9128bf4226d066a73166500319b" title=" " alt="" coords="320,180,558,239"/>
+<area shape="rect" id="Node000005" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a5beba9128bf4226d066a73166500319b" title="Calculates the perpendicular distance from a 3D point to an axis line." alt="" coords="320,180,558,239"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,230,307,224,302,226,244,235"/>
-<area shape="rect" id="Node000009" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a304c1b908b913eaeff408edcd36f8ca3" title=" " alt="" coords="320,263,558,305"/>
+<area shape="rect" id="Node000009" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a304c1b908b913eaeff408edcd36f8ca3" title="Filters a list of points to only unique points within a very small tolerance." alt="" coords="320,263,558,305"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="242,258,307,267,302,269,243,263"/>
-<area shape="rect" id="Node000010" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adeb92d24493bb32c4f5e65f18a7778c1" title=" " alt="" coords="326,329,552,372"/>
+<area shape="rect" id="Node000010" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adeb92d24493bb32c4f5e65f18a7778c1" title="Calculates the centroid of a collection of 3D points." alt="" coords="326,329,552,372"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="188,274,292,315,318,325,313,325,290,320,188,279"/>
-<area shape="rect" id="Node000011" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ae516270886bfa0587dc1e3e1733a8664" title=" " alt="" coords="325,396,553,439"/>
+<area shape="rect" id="Node000011" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ae516270886bfa0587dc1e3e1733a8664" title="Solves a 3x3 system of linear equations using Cramer&#39;s rule." alt="" coords="325,396,553,439"/>
 <area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="154,274,214,330,252,358,292,382,313,393,308,392,289,386,249,362,211,334,152,279"/>
 <area shape="rect" id="Node000003" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="652,5,858,64"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="579,59,640,52,635,54,581,65"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="587,93,622,98,617,99,588,99"/>
 <area shape="rect" id="Node000006" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a4aefd389c9a0efd583cd755b3adb1c10" title="Computes the Euclidean distance between two 3D points." alt="" coords="652,155,858,213"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="557,197,640,193,634,194,558,202"/>
-<area shape="rect" id="Node000007" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8fc61e89e3575684a018c3d30d1d706a" title=" " alt="" coords="641,237,869,280"/>
+<area shape="rect" id="Node000007" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8fc61e89e3575684a018c3d30d1d706a" title="Calculates the 3D position along an axis line at a given scalar distance." alt="" coords="641,237,869,280"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="558,225,629,238,623,239,558,231"/>
-<area shape="rect" id="Node000008" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aecbc71693d1f2d403d6f072797d3f0a1" title=" " alt="" coords="636,304,875,347"/>
+<area shape="rect" id="Node000008" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aecbc71693d1f2d403d6f072797d3f0a1" title="Projects a point onto a line defined by a point and a normalized axis direction." alt="" coords="636,304,875,347"/>
 <area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="558,235,588,248,603,259,613,270,622,280,636,290,649,298,644,297,634,294,619,284,609,273,600,263,586,253,558,240"/>
 </map>

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -146,13 +146,35 @@ $(function(){initNavTree('d8/d02/_color_namer_8cs_source.html','../../',''); });
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">_colorNamesInstance</a>.FindClosestColorName(color.R, color.G, color.B);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#abdf0c8fb2b971e66ef73b3228a8d22cd">   66</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#abdf0c8fb2b971e66ef73b3228a8d22cd">FormatColorWithRgb</a>(Color color)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordtype">string</span> name;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                name = <a class="code hl_function" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f">GetColorName</a>(color);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrWhiteSpace(name))</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    name = color.IsNamedColor ? color.Name : <span class="stringliteral">&quot;Color&quot;</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">catch</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                name = color.IsNamedColor ? color.Name : <span class="stringliteral">&quot;Color&quot;</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;{name} (RGB: {color.R}, {color.G}, {color.B})&quot;</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 <div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a0279563b4eab034eb3c97f76d3d4ef5f"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.GetColorName</a></div><div class="ttdeci">static string GetColorName(Color color)</div><div class="ttdoc">Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp.</div><div class="ttdef"><b>Definição</b> <a href="#l00055">ColorNamer.cs:55</a></div></div>
 <div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a03c6e6a3c6bfc6f8e0eb160ff18e00c6"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a03c6e6a3c6bfc6f8e0eb160ff18e00c6">HirEV_SmartFitSystemsApp.Utilities.ColorNamer._colorNamesInstance</a></div><div class="ttdeci">static readonly ColorNames _colorNamesInstance</div><div class="ttdef"><b>Definição</b> <a href="#l00036">ColorNamer.cs:36</a></div></div>
 <div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a331dddd4fe02c104a54b9877d00dd684"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a331dddd4fe02c104a54b9877d00dd684">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.ColorNamer</a></div><div class="ttdeci">static ColorNamer()</div><div class="ttdoc">Initializes the ColorNamer class.</div><div class="ttdef"><b>Definição</b> <a href="#l00041">ColorNamer.cs:41</a></div></div>
 <div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_a81c421482c571200dad8fb2892e0249f"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a81c421482c571200dad8fb2892e0249f">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.ColorPalette</a></div><div class="ttdeci">static readonly List&lt; NamedColor &gt; ColorPalette</div><div class="ttdef"><b>Definição</b> <a href="#l00011">ColorNamer.cs:11</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_html_abdf0c8fb2b971e66ef73b3228a8d22cd"><div class="ttname"><a href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#abdf0c8fb2b971e66ef73b3228a8d22cd">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.FormatColorWithRgb</a></div><div class="ttdeci">static string FormatColorWithRgb(Color color)</div><div class="ttdoc">Formats a color as its friendly face color name followed by RGB values, e.g. &quot;Red (RGB: 255,...</div><div class="ttdef"><b>Definição</b> <a href="#l00066">ColorNamer.cs:66</a></div></div>
 <div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_utilities_html"><div class="ttname"><a href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html">HirEV_SmartFitSystemsApp.Utilities</a></div><div class="ttdef"><b>Definição</b> <a href="../../da/d00/_path_manager_8cs_source.html#l00022">PathManager.cs:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

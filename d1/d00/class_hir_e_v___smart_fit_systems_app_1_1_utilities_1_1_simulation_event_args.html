@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de heranças da classe HirEV_SmartFitSystemsApp.Utilities.SimulationEve
 <div class="dyncontent">
 <div class="center"><img src="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args__inherit__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_inherit__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_inherit__map">
-<area shape="rect" title="Event arguments for simulation events." alt="" coords="5,123,187,336"/>
+<area shape="rect" title="Event arguments for simulation events." alt="" coords="5,123,187,357"/>
 <area shape="rect" title=" " alt="" coords="60,5,132,75"/>
 <area shape="poly" title=" " alt="" coords="97,87,99,123,94,122,96,92"/>
 </map>
@@ -111,7 +111,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.SimulationEven
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_simulation_event_args_coll__map">
-<area shape="rect" title="Event arguments for simulation events." alt="" coords="5,123,187,336"/>
+<area shape="rect" title="Event arguments for simulation events." alt="" coords="5,123,187,357"/>
 <area shape="rect" title=" " alt="" coords="60,5,132,75"/>
 <area shape="poly" title=" " alt="" coords="97,87,99,123,94,122,96,92"/>
 </map>
@@ -131,14 +131,44 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:ac3e2fcc92ca4244a55719b81a9cf9f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the total number of paths.  <br /></td></tr>
 <tr class="memitem:a38c556187ce1e0936abd403d5b95aa4f" id="r_a38c556187ce1e0936abd403d5b95aa4f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a38c556187ce1e0936abd403d5b95aa4f">TotalPointsInPath</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a38c556187ce1e0936abd403d5b95aa4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the total number of points in the current path.  <br /></td></tr>
+<tr class="memitem:a26785136becfeccf64fb06a00482d693" id="r_a26785136becfeccf64fb06a00482d693"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a26785136becfeccf64fb06a00482d693">CollisionsIdentified</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a26785136becfeccf64fb06a00482d693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of collisions identified so far.  <br /></td></tr>
 <tr class="memitem:a6000220c23abda5fa6ba4b1166b22327" id="r_a6000220c23abda5fa6ba4b1166b22327"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a6000220c23abda5fa6ba4b1166b22327">ProgressPercent</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a6000220c23abda5fa6ba4b1166b22327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the overall simulation/verification progress percentage.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Event arguments for simulation events. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17373">17373</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22432">22432</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 </div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="a26785136becfeccf64fb06a00482d693" name="a26785136becfeccf64fb06a00482d693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26785136becfeccf64fb06a00482d693">&#9670;&#160;</a></span>CollisionsIdentified</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.SimulationEventArgs.CollisionsIdentified</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the number of collisions identified so far. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22453">22453</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10783">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnProbeCollisionValidationProgress()</a>.</p>
+
+</div>
+</div>
 <a id="af8efcba54fcb395d44b855b21d55f38b" name="af8efcba54fcb395d44b855b21d55f38b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8efcba54fcb395d44b855b21d55f38b">&#9670;&#160;</a></span>CurrentColor</h2>
 
@@ -161,9 +191,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the color of the current path. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17382">17382</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22441">22441</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09110">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPathCompleted()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10682">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPathCompleted()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
 
 </div>
 </div>
@@ -189,7 +219,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current 3D point being simulated. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17385">17385</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22444">22444</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -215,9 +245,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current path index. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17376">17376</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22435">22435</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09110">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPathCompleted()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09005">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationStarted()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10682">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPathCompleted()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10560">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationStarted()</a>.</p>
 
 </div>
 </div>
@@ -243,9 +273,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current point index within the path. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17379">17379</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22438">22438</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09143">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10783">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnProbeCollisionValidationProgress()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10717">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
 
 </div>
 </div>
@@ -271,9 +301,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the overall simulation/verification progress percentage. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17394">17394</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22456">22456</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09143">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10783">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnProbeCollisionValidationProgress()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10717">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
 
 </div>
 </div>
@@ -299,9 +329,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the total number of paths. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17388">17388</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22447">22447</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09005">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationStarted()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10560">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationStarted()</a>.</p>
 
 </div>
 </div>
@@ -327,9 +357,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the total number of points in the current path. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17391">17391</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22450">22450</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09143">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10783">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnProbeCollisionValidationProgress()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10717">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnScannerVerificationProgress()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l10645">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.OnSimulationPointReached()</a>.</p>
 
 </div>
 </div>

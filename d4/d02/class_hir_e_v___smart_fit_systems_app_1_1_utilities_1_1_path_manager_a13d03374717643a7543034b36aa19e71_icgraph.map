@@ -1,27 +1,49 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.PathManager.CombineMeshes" name="HirEV_SmartFitSystemsApp.Utilities.PathManager.CombineMeshes">
-<area shape="rect" id="Node000001" title="Combines two meshes into one by appending vertices and triangles." alt="" coords="2571,92,2820,135"/>
-<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a00b9b49d781d00195087bb14e663ed84" title="Extracts mesh from an entity (handles Brep, Mesh, Solid types)." alt="" coords="2286,92,2523,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2553,113,2524,116,2524,111,2558,113"/>
-<area shape="poly" id="edge13_Node000002_Node000002" title=" " alt="" coords="2448,76,2433,73,2405,71,2378,73,2362,77,2356,83,2358,93,2353,90,2351,82,2360,73,2378,67,2405,65,2434,68,2454,77"/>
-<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aec6848984a05ff64916c0028b91e54a5" title="Performs precise collision detection using actual solid mesh geometry. Checks if any vertices or tria..." alt="" coords="2021,84,2238,143"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2268,113,2238,116,2238,111,2273,113"/>
-<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0d11265b29999188922ad03b9bf28d2a" title="Detects collision between two entities using solid mesh intersection. Performs a two&#45;phase check: fas..." alt="" coords="1733,84,1973,143"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2002,113,1973,116,1973,111,2008,113"/>
-<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a59f6803ccdf543681586c9e0a98f06b5" title="Detects and marks collisions during simulation between probe and part." alt="" coords="1473,84,1685,143"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1715,113,1686,116,1686,111,1720,113"/>
-<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="1174,47,1386,105"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1455,98,1386,92,1386,86,1460,98"/>
-<area shape="rect" id="Node000012" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="1135,129,1425,172"/>
-<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="1460,128,1425,135,1425,130,1455,129"/>
-<area shape="rect" id="Node000007" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title="Executes the InitializeSimulationTimer method." alt="" coords="888,13,1087,72"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1156,62,1087,57,1087,51,1161,62"/>
-<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="613,55,840,97"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="870,58,841,64,840,59,876,57"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="856,80,888,81,1087,81,1177,81,1171,81,1087,87,888,87,856,86"/>
-<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="312,5,546,64"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="595,58,546,54,546,48,600,58"/>
-<area shape="rect" id="Node000011" href="$da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="293,88,565,147"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="600,94,566,101,565,96,595,94"/>
-<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="5,13,245,56"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="294,35,245,37,244,32,299,34"/>
+<area shape="rect" id="Node000001" title="Combines two meshes into one by appending vertices and triangles." alt="" coords="2875,51,3123,93"/>
+<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac9e860f93018714bb8d3d5f1d949d4b2" title="Builds the probe/tool mesh tessellated and transformed into world space at the given sample&#39;s point/n..." alt="" coords="2315,43,2528,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2857,72,2529,75,2528,69,2862,72"/>
+<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a00b9b49d781d00195087bb14e663ed84" title="Extracts mesh from an entity (handles Brep, Mesh, Solid types)." alt="" coords="2589,233,2827,276"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2953,101,2745,235,2743,230,2948,103"/>
+<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="1497,200,1705,259"/>
+<area shape="poly" id="edge27_Node000001_Node000005" title=" " alt="" coords="2861,48,2656,22,2539,12,2423,8,2133,8,2059,14,1986,30,1914,53,1846,82,1784,114,1728,146,1643,202,1641,197,1725,141,1781,109,1844,77,1912,48,1984,25,2058,9,2133,3,2423,3,2540,7,2657,17,2866,47"/>
+<area shape="poly" id="edge15_Node000003_Node000002" title=" " alt="" coords="2674,222,2615,169,2578,141,2540,116,2518,105,2519,99,2543,111,2582,136,2618,165,2679,223"/>
+<area shape="poly" id="edge20_Node000003_Node000003" title=" " alt="" coords="2753,218,2738,214,2708,212,2681,214,2664,219,2657,225,2659,234,2655,231,2652,223,2661,214,2680,209,2708,207,2739,209,2759,218"/>
+<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a38dc53bacc510dcf694dc0c005134663" title=" " alt="" coords="1753,259,1967,317"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2657,283,2602,311,2542,332,2396,368,2336,379,2279,385,2222,386,2162,382,2014,357,1962,341,1915,321,1916,315,1964,336,2015,352,2162,377,2222,381,2279,379,2335,373,2395,362,2541,327,2600,306,2652,284"/>
+<area shape="poly" id="edge21_Node000003_Node000005" title=" " alt="" coords="2571,248,2541,249,2074,238,1706,233,1706,228,2075,233,2541,244,2576,248"/>
+<area shape="rect" id="Node000014" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="326,393,565,436"/>
+<area shape="poly" id="edge22_Node000003_Node000014" title=" " alt="" coords="2695,289,2673,339,2641,394,2597,448,2571,471,2543,490,2487,517,2437,532,2391,537,2347,536,2253,524,2198,519,2136,516,1048,516,903,508,760,488,630,463,527,439,528,434,632,458,761,483,904,503,1048,511,2136,511,2199,513,2253,519,2347,531,2391,532,2436,526,2485,512,2540,486,2568,467,2593,444,2636,391,2669,337,2691,292"/>
+<area shape="rect" id="Node000015" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad27e7d81257efbdcaaca15fabc04f6e3" title="Performs precise collision detection using actual solid mesh geometry. Checks if any vertices or tria..." alt="" coords="2313,417,2530,476"/>
+<area shape="poly" id="edge16_Node000003_Node000015" title=" " alt="" coords="2678,286,2618,345,2581,374,2543,401,2508,419,2506,414,2540,396,2578,370,2614,341,2673,288"/>
+<area shape="rect" id="Node000018" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a23367a819b328b6767ac3123c6014c24" title="Same two&#45;phase (AABB pre&#45;filter + solid mesh) collision test as DetectCollisionEyeshot,..." alt="" coords="2302,125,2541,184"/>
+<area shape="poly" id="edge19_Node000003_Node000018" title=" " alt="" coords="2628,228,2507,187,2508,182,2633,228"/>
+<area shape="rect" id="Node000019" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aca08a0fff3f344ee4ff4c816042f9e9b" title=" " alt="" coords="2308,259,2535,317"/>
+<area shape="poly" id="edge23_Node000003_Node000019" title=" " alt="" coords="2576,270,2536,277,2535,272,2571,271"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1736,260,1706,256,1706,250,1741,261"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa3d40e668328a91636be7136008e064d" title="Executes the CompleteSimulation method." alt="" coords="1243,207,1449,265"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1479,233,1450,236,1449,231,1484,232"/>
+<area shape="rect" id="Node000007" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="944,207,1155,265"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1224,236,1156,239,1155,233,1230,236"/>
+<area shape="rect" id="Node000012" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="904,305,1195,348"/>
+<area shape="poly" id="edge12_Node000006_Node000012" title=" " alt="" coords="1235,270,1122,307,1121,302,1230,271"/>
+<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="636,219,834,277"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="926,241,835,247,834,242,931,240"/>
+<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="332,193,559,236"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="617,235,560,230,559,225,623,234"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="574,205,613,204,735,200,857,204,946,217,941,217,856,209,735,205,613,209,575,210"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="24,144,259,203"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="314,198,260,192,259,187,319,196"/>
+<area shape="rect" id="Node000011" href="$da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="5,227,278,285"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="314,233,279,240,277,235,319,231"/>
+<area shape="rect" id="Node000013" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae781a97da2683c27280f024b44ba6176" title=" " alt="" coords="613,327,856,385"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="886,342,857,347,856,342,891,341"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="595,384,555,395,553,390,601,383"/>
+<area shape="rect" id="Node000016" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0d11265b29999188922ad03b9bf28d2a" title="Detects collision between two entities using solid mesh intersection. Performs a two&#45;phase check: fas..." alt="" coords="2015,417,2254,476"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="2295,447,2254,449,2254,444,2300,447"/>
+<area shape="rect" id="Node000017" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a59f6803ccdf543681586c9e0a98f06b5" title="Detects and marks collisions during simulation between probe and part." alt="" coords="1754,417,1966,476"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1996,447,1967,449,1967,444,2002,447"/>
+<area shape="poly" id="edge26_Node000019_Node000004" title=" " alt="" coords="2291,275,2254,275,2134,271,2015,275,1967,278,1967,273,2015,269,2134,265,2254,269,2296,274"/>
+<area shape="rect" id="Node000020" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a974f7bc46443831e5d9d2fb66de4dd02" title=" " alt="" coords="2031,284,2238,343"/>
+<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="2290,300,2239,307,2238,302,2296,299"/>
+<area shape="poly" id="edge25_Node000020_Node000004" title=" " alt="" coords="2012,302,1967,301,1967,295,2018,302"/>
 </map>

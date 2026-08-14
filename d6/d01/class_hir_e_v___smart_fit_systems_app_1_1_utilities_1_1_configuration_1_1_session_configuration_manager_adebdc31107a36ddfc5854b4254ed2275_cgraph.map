@@ -1,18 +1,31 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadLatestConfiguration" name="HirEV_SmartFitSystemsApp.Utilities.Configuration.SessionConfigurationManager.LoadLatestConfiguration">
-<area shape="rect" id="Node000001" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="5,64,299,123"/>
-<area shape="rect" id="Node000002" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1323,5,1580,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,84,1307,38,1307,44,299,89"/>
-<area shape="rect" id="Node000003" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="347,97,651,156"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="299,105,334,110,329,111,300,110"/>
-<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="976,80,1263,139"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="651,111,699,108,964,107,958,107,699,113,652,116"/>
-<area shape="rect" id="Node000006" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1010,180,1229,239"/>
-<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="573,154,635,175,700,191,775,202,852,208,997,214,992,214,852,213,775,207,698,196,633,180,573,159"/>
-<area shape="rect" id="Node000007" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="699,123,928,181"/>
-<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="651,136,686,141,680,142,651,142"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="1252,77,1306,67,1311,66,1253,82"/>
-<area shape="rect" id="Node000005" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1311,88,1592,147"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1263,110,1298,113,1293,114,1263,115"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="928,133,959,132,964,131,929,139"/>
-<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="929,171,997,186,992,186,929,176"/>
+<area shape="rect" id="Node000001" title="Loads the most recently written session file from the SaveFiles folder." alt="" coords="5,55,299,113"/>
+<area shape="rect" id="Node000002" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1333,5,1590,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,68,610,44,976,24,1124,21,1273,24,1320,28,1315,28,1273,29,1124,27,976,29,611,49,300,73"/>
+<area shape="rect" id="Node000003" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912" title="Loads the session stored at filePath , setting its content as the active session. It copies the conte..." alt="" coords="347,113,651,172"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="299,106,334,113,329,115,300,111"/>
+<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="981,121,1268,180"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="651,142,968,148,963,149,652,147"/>
+<area shape="rect" id="Node000006" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1015,39,1234,97"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="651,122,1002,82,997,84,652,127"/>
+<area shape="rect" id="Node000007" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a88147e6684e8456d3294b7ef2627d185" title="Normalizes nullable collection properties and legacy scanner path placement before serialization." alt="" coords="976,287,1273,345"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="545,170,616,211,700,248,765,267,832,282,964,304,958,304,831,287,763,272,698,253,614,216,544,175"/>
+<area shape="rect" id="Node000012" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="699,180,928,239"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="640,170,686,182,681,182,640,175"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="1236,118,1272,107,1373,71,1379,70,1274,112,1238,123"/>
+<area shape="rect" id="Node000005" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1321,121,1602,180"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1268,148,1308,150,1302,151,1268,153"/>
+<area shape="rect" id="Node000008" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad08bd4b4a84e651f6b89b7d1040ea7cd" title=" " alt="" coords="1323,328,1600,387"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1273,332,1310,339,1305,338,1273,337"/>
+<area shape="rect" id="Node000009" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a3160ad41c45ba16019884ae4b0322584" title="Ensures nested path DTO collections are initialized for save/load round&#45;trips." alt="" coords="1323,245,1600,304"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="1273,295,1305,294,1310,293,1273,300"/>
+<area shape="rect" id="Node000010" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8ca4f53a85dec69d430912677396279d" title=" " alt="" coords="1666,188,1902,263"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1600,251,1649,246,1654,245,1600,256"/>
+<area shape="rect" id="Node000011" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a134b36384fe376d1bcf698a623981a99" title=" " alt="" coords="1650,287,1918,361"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1600,293,1637,301,1632,301,1600,298"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="928,185,969,180,964,181,929,190"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="855,177,910,141,975,107,998,100,1003,99,977,112,913,146,857,182"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="885,237,977,272,1000,282,994,281,975,277,884,242"/>
+<area shape="rect" id="Node000013" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8f0687254b80ad82709293de12b9a25c" title=" " alt="" coords="1026,204,1223,263"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="929,216,1013,224,1008,225,929,221"/>
 </map>

@@ -1,0 +1,33 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.LoadTransformation" name="HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.LoadTransformation">
+<area shape="rect" id="Node000001" title="Loads the transformation for a specific tool from an XML file." alt="" coords="5,357,205,416"/>
+<area shape="rect" id="Node000002" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a6b353028a6798def11a5b3eac5823816" title="Ensures the transformation file for a given tool exists. If not, creates a default one." alt="" coords="253,159,465,217"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,355,309,225,307,230,146,359"/>
+<area shape="rect" id="Node000004" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3892093a328217cada7a564d37fe0cbe" title="Resolves the absolute path to a specific tool&#39;s transformation file." alt="" coords="804,43,1111,85"/>
+<area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="113,356,131,308,159,250,199,192,224,166,251,144,314,109,381,81,451,62,523,48,594,40,663,37,791,42,786,44,663,42,594,46,523,53,452,67,383,86,316,114,254,149,227,170,203,196,164,253,136,311,118,358"/>
+<area shape="rect" id="Node000008" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#af19cedb9498877d070000673be5fb5ca" title="Generates the cache dictionary key for a specific tool transformation." alt="" coords="818,357,1097,416"/>
+<area shape="poly" id="edge16_Node000001_Node000008" title=" " alt="" coords="205,384,803,384,802,389,205,389"/>
+<area shape="rect" id="Node000009" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#aa6b6768d710257176646e0aba73f28a0" title="Reads tool transformation parameters from a JSON file." alt="" coords="856,440,1059,499"/>
+<area shape="poly" id="edge18_Node000001_Node000009" title=" " alt="" coords="205,394,842,456,841,461,205,399"/>
+<area shape="rect" id="Node000010" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a262cc68ad2dab76f0a41690af15e9f18" title="Reads tool transformation parameters from an XML file." alt="" coords="856,523,1059,581"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="205,412,253,424,412,457,572,487,844,534,838,535,571,493,411,463,252,429,205,418"/>
+<area shape="rect" id="Node000003" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a88ffec26a5d09a5afd30f660a278adfe" title="Creates a default ToolTransformation instance with identity transforms." alt="" coords="852,192,1063,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,191,839,213,835,216,466,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="464,156,512,144,665,112,811,87,806,90,666,117,514,149,467,161"/>
+<area shape="rect" id="Node000005" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a8df89c77bac3b30db5041a1aacee173b" title="Resolves the absolute directory path of the tool transformations folder." alt="" coords="1159,5,1378,64"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="406,156,456,127,512,102,598,70,673,48,741,34,805,27,939,24,1111,28,1145,31,1140,32,1111,33,939,30,805,32,741,39,674,53,600,75,514,106,458,132,409,160"/>
+<area shape="rect" id="Node000007" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a8e9e5463ec304fc6a2fd8db9fbf408ab" title="Synchronizes and converts transformation settings between XML and JSON files." alt="" coords="513,267,756,325"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="436,215,546,260,541,261,436,221"/>
+<area shape="rect" id="Node000012" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a724f83009110573e117070c072ac6155" title="Writes tool transformation parameters to an XML file." alt="" coords="857,109,1058,168"/>
+<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="465,177,844,146,840,150,466,182"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1110,47,1146,46,1140,47,1112,52"/>
+<area shape="rect" id="Node000006" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a9f41b0f2cc155e06ba5ee049588c1092" title="Locates the actual folder on disk for the given relative path, searching up the directory tree if nec..." alt="" coords="1426,5,1645,64"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1378,32,1413,34,1408,35,1379,37"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="756,265,840,248,835,250,757,270"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="651,264,675,225,710,179,753,133,803,95,816,91,811,94,806,100,756,137,714,183,680,229,654,268"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="737,323,805,343,834,353,828,353,804,348,737,329"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="667,323,729,376,766,403,806,426,844,444,839,443,803,430,763,407,726,380,666,329"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="652,324,678,366,712,416,755,466,806,508,844,530,839,529,803,513,751,470,708,419,673,369,650,328"/>
+<area shape="rect" id="Node000011" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a250bfb571a3f00fc0121af777c9fa095" title="Writes tool transformation parameters to a JSON file." alt="" coords="857,275,1058,333"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="756,296,844,301,839,302,757,302"/>
+<area shape="poly" id="edge14_Node000007_Node000012" title=" " alt="" coords="670,264,730,220,803,178,844,164,839,166,805,182,733,224,673,269"/>
+</map>

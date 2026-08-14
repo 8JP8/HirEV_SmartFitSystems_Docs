@@ -2,6 +2,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segme
 [
     [ "ToString", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#a1d74065661f50daf2b172356a3c9d59b", null ],
     [ "CollisionDistance", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#ac49450818c0a47095a6938f03c102230", null ],
+    [ "CollisionPartName", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#a4560cf0c1b411edf7fd9344b783fdf1b", null ],
     [ "CollisionPoint", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#a7acd1c1242fc0dca87fa440c3d3d9fb6", null ],
     [ "End", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#a3cfba5bfee7d2129de3e9bbf2eb6794c", null ],
     [ "IsValid", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html#a7c26909ead566d910915332b1faa5ba5", null ],

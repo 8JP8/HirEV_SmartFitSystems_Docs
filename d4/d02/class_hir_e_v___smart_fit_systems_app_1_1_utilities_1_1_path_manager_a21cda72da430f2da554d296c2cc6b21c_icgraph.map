@@ -1,24 +1,13 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPointInsideMeshSolid" name="HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPointInsideMeshSolid">
-<area shape="rect" id="Node000001" title="Checks if a point is inside a mesh solid using ray casting (odd&#45;even rule)." alt="" coords="2286,84,2512,143"/>
-<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aec6848984a05ff64916c0028b91e54a5" title="Performs precise collision detection using actual solid mesh geometry. Checks if any vertices or tria..." alt="" coords="2021,84,2238,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2268,113,2238,116,2238,111,2273,113"/>
-<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0d11265b29999188922ad03b9bf28d2a" title="Detects collision between two entities using solid mesh intersection. Performs a two&#45;phase check: fas..." alt="" coords="1733,84,1973,143"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2002,113,1973,116,1973,111,2008,113"/>
-<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a59f6803ccdf543681586c9e0a98f06b5" title="Detects and marks collisions during simulation between probe and part." alt="" coords="1473,84,1685,143"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1715,113,1686,116,1686,111,1720,113"/>
-<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="1174,47,1386,105"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1455,98,1386,92,1386,86,1460,98"/>
-<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="1135,129,1425,172"/>
-<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="1460,128,1425,135,1425,130,1455,129"/>
-<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title="Executes the InitializeSimulationTimer method." alt="" coords="888,13,1087,72"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1156,62,1087,57,1087,51,1161,62"/>
-<area shape="rect" id="Node000007" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="613,55,840,97"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="870,58,841,64,840,59,876,57"/>
-<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="856,80,888,81,1087,81,1177,81,1171,81,1087,87,888,87,856,86"/>
-<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="312,5,546,64"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="595,58,546,54,546,48,600,58"/>
-<area shape="rect" id="Node000010" href="$da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="293,88,565,147"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="600,94,566,101,565,96,595,94"/>
-<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="5,13,245,56"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="294,35,245,37,244,32,299,34"/>
+<area shape="rect" id="Node000001" title="Checks if a point is inside a mesh solid using ray casting (odd&#45;even rule)." alt="" coords="1106,47,1332,105"/>
+<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7cf07248abb661474d65390bd4fbdba4" title="Mesh&#45;to&#45;mesh core of the solid collision test, shared by both DetectCollisionEyeshot (Entity&#45;based,..." alt="" coords="840,47,1058,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1088,76,1058,79,1058,73,1093,76"/>
+<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad27e7d81257efbdcaaca15fabc04f6e3" title="Performs precise collision detection using actual solid mesh geometry. Checks if any vertices or tria..." alt="" coords="564,5,781,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="822,57,782,54,782,48,828,57"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a23367a819b328b6767ac3123c6014c24" title="Same two&#45;phase (AABB pre&#45;filter + solid mesh) collision test as DetectCollisionEyeshot,..." alt="" coords="553,88,792,147"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="828,94,793,102,793,97,822,95"/>
+<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0d11265b29999188922ad03b9bf28d2a" title="Detects collision between two entities using solid mesh intersection. Performs a two&#45;phase check: fas..." alt="" coords="266,5,505,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="546,35,506,37,505,32,551,34"/>
+<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a59f6803ccdf543681586c9e0a98f06b5" title="Detects and marks collisions during simulation between probe and part." alt="" coords="5,5,218,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="247,35,219,37,218,32,253,34"/>
 </map>

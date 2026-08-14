@@ -1,5 +1,6 @@
 var _segment_collision_validator_8cs =
 [
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.SegmentValidationRequest", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_request.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_request" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.SegmentCollisionValidator", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_collision_validator" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.SegmentValidationResult", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result" ]
 ];

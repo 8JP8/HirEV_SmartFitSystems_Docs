@@ -1,22 +1,28 @@
 <map id="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformManualPicking" name="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PerformManualPicking">
-<area shape="rect" id="Node000001" title="Executes the PerformManualPicking method." alt="" coords="5,139,237,197"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a4a2484baebec82df71f901ae4939facf" title="Gets a localized XML element value by key." alt="" coords="285,5,598,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,136,214,95,284,58,305,52,300,55,286,62,217,100,160,140"/>
-<area shape="rect" id="Node000003" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a41774b3df73217a630ada8baf7600330" title="Intersects a ray with a Brep by first converting it to a mesh." alt="" coords="339,72,544,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,141,325,124,321,127,238,146"/>
-<area shape="rect" id="Node000004" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#ae2e6baa1499f867dc53d221807458f21" title="Intersects a ray with all triangles in a mesh and returns the closest intersection point." alt="" coords="646,105,851,164"/>
-<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="237,159,598,140,633,140,628,141,598,145,238,165"/>
-<area shape="rect" id="Node000009" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a8f30fb8835dbd89f29fb437f42cf627d" title="Checks whether a given Point3D represents a valid world position." alt="" coords="339,205,544,264"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="237,189,326,209,321,211,237,195"/>
-<area shape="rect" id="Node000010" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="339,288,544,347"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="160,195,218,236,286,274,326,291,321,291,284,278,215,241,159,201"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="544,110,633,121,628,122,545,115"/>
-<area shape="rect" id="Node000005" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a4aefd389c9a0efd583cd755b3adb1c10" title="Computes the Euclidean distance between two 3D points." alt="" coords="899,64,1105,123"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="851,115,886,112,881,113,853,120"/>
-<area shape="rect" id="Node000006" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a956914d5583c84740b29b73114590faf" title="Implements the Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="899,147,1105,205"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="852,149,886,157,881,157,852,154"/>
-<area shape="rect" id="Node000007" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="1153,105,1358,164"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1105,157,1140,153,1135,154,1106,162"/>
-<area shape="rect" id="Node000008" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0828c1055738cc4006683d6a947cb64c" title="Computes the dot product of two 3D vectors." alt="" coords="1153,188,1358,247"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1105,190,1140,198,1135,198,1105,195"/>
+<area shape="rect" id="Node000001" title="Executes the PerformManualPicking method." alt="" coords="5,221,237,280"/>
+<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a04ae74e8b74012af99e1cc17dc01a3a2" title="Gets the origin point associated with the given part entity." alt="" coords="326,5,556,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,219,198,146,238,107,283,74,314,61,310,64,286,78,242,111,202,150,144,222"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a4a2484baebec82df71f901ae4939facf" title="Gets a localized XML element value by key." alt="" coords="285,88,598,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,219,214,178,284,140,304,134,300,138,286,145,217,182,160,223"/>
+<area shape="rect" id="Node000004" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a41774b3df73217a630ada8baf7600330" title="Intersects a ray with a Brep by first converting it to a mesh." alt="" coords="339,155,544,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,224,325,207,321,210,238,229"/>
+<area shape="rect" id="Node000005" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#ae2e6baa1499f867dc53d221807458f21" title="Intersects a ray with all triangles in a mesh and returns the closest intersection point." alt="" coords="656,180,862,239"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="237,243,598,223,644,221,638,222,598,228,238,249"/>
+<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1d09ddcc4a72908a7068993ab78c0f17" title="Determines whether an entity is a valid CAD model part (not a system path, marker,..." alt="" coords="326,288,557,347"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="237,272,313,289,308,291,237,277"/>
+<area shape="rect" id="Node000012" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a8f30fb8835dbd89f29fb437f42cf627d" title="Checks whether a given Point3D represents a valid world position." alt="" coords="339,371,544,429"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="160,278,218,319,286,356,326,373,321,374,284,361,215,323,159,283"/>
+<area shape="rect" id="Node000013" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="339,453,544,512"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="140,278,166,316,199,359,240,403,286,439,326,460,321,460,283,444,236,407,195,363,162,319,139,283"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="544,190,644,199,639,201,545,195"/>
+<area shape="rect" id="Node000006" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a4aefd389c9a0efd583cd755b3adb1c10" title="Computes the Euclidean distance between two 3D points." alt="" coords="920,139,1126,197"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="862,191,908,186,902,187,863,196"/>
+<area shape="rect" id="Node000007" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a956914d5583c84740b29b73114590faf" title="Implements the Möller&#45;Trumbore ray&#45;triangle intersection algorithm." alt="" coords="920,221,1126,280"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="862,223,908,232,902,232,862,228"/>
+<area shape="rect" id="Node000008" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="1174,180,1379,239"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1126,231,1161,228,1156,229,1127,236"/>
+<area shape="rect" id="Node000009" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0828c1055738cc4006683d6a947cb64c" title="Computes the dot product of two 3D vectors." alt="" coords="1174,263,1379,321"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1126,265,1161,273,1156,273,1126,270"/>
+<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a242a2df0a3e69c7e120d9332e3a6dc20" title="Determines whether a given Eyeshot entity is a visual base avoidance plane or label." alt="" coords="646,288,872,347"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="557,315,633,317,627,318,558,320"/>
 </map>

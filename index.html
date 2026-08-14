@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -114,16 +114,19 @@ Funcionalidades Principais</h1>
 <li><b>Sistema Dinâmico de Ferramentas e Câmara:</b> O ambiente de simulação não se limita a sondas predefinidas. Suporta totalmente o carregamento e visualização de modelos 3D personalizados de ferramentas de medição. Um sistema robusto de seguimento de câmara garante que a ferramenta está sempre focada durante a simulação, mesmo para modelos personalizados complexos.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="current_capabilities_sec"></a>
-Capacidades Atuais da Aplicação</h2>
+Capacidades Atuais da Aplicação (v0.0.34)</h2>
 <p>O fluxo de trabalho atual da aplicação expande essas funcionalidades principais com:</p>
 <ul>
-<li><b>Processamento de CAD e Características:</b> Carregamento de peças CAD na área de trabalho do Eyeshot, extração de faces, vértices, cores, normais, furos e dimensões de características, e trabalho com múltiplas peças e origens independentes das peças.</li>
-<li><b>Deteção de Furos:</b> Deteção de características de furos cilíndricos e cónicos, incluindo faces cilíndricas divididas, em ponte ou únicas.</li>
-<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de passagem (waypoints) de aproximação, medição, subida, descida e ligação, ordenados por cor ou por peça com otimização baseada na proximidade.</li>
-<li><b>Planeamento do Caminho do Scanner:</b> Configuração de perfis de scanner a partir de <span class="tt">ScannerConfigurations.xml</span> e geração de poses de scanner utilizando definições de FOV (Campo de Visão), distância (standoff), sobreposição (overlap), digitalização de furos (hole-scan) e cobertura.</li>
-<li><b>Suporte para Envolvente (Shell) e Colisões:</b> Geração de malhas de envolventes compensadas (offset), utilização de envelopes de planeamento SDF (Signed Distance Field) e Marching Cubes, armazenamento em cache dos dados da envolvente nas sessões, e validação ou reencaminhamento de segmentos de caminhos.</li>
-<li><b>Simulação e Visualização:</b> Simulação do movimento da sonda e do scanner, controlo da velocidade da simulação, rotação dos modelos de ferramentas na direção das normais da superfície, seguimento da ferramenta ativa com a câmara, e inspeção de vistas de secção.</li>
-<li><b>Sessões e Exportação:</b> Guardar e carregar sessões com peças carregadas, faces extraídas, ignorados, caminhos, dados da cache da envolvente e estado da interface (UI); exportação de dados de inspeção em JSON/XML por cor, ferramenta, ponto de controlo ou ponto de medição.</li>
+<li><b>Processamento de CAD e Características:</b> Carregamento de peças CAD na área de trabalho do Eyeshot (STEP, IGES, OBJ, STL), decomposição topológica B-Rep de faces, vértices, cores, normais, determinação de sentido normal (<span class="tt">CylinderInwardNormalDot</span>), vetor de orientação geométrica (<span class="tt">AxisOrNormal</span>) e suporte para múltiplas peças e montagens com origens independentes.</li>
+<li><b>Deteção Avançada de Furos:</b> Deteção de características de furos cilíndricos e cónicos (incluindo faces divididas em metades e furos escalonados), deteção de furos côncavos isolados de face única (rasgos em U, entalhes fresados), deteção de degraus anulares/ombros (shoulder bridges), e avaliação automática de acessibilidade pelo topo (<span class="tt">AutoIgnoreTopUnreachableHoles</span>) para ignorar furos bloqueados por gargalos ou tampas sólidas.</li>
+<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de aproximação, medição, subida, descida e ligação geodésica; <b>consolidação de pontos de aproximação</b> (reutilização de waypoints para pontos adjacentes a menos de 0.10mm); <b>seleção de rota de acesso a furos</b> (avaliação de entrada pelo topo vs. fundo); e ordenação otimizada por proximidade TSP (Nearest-Neighbor 2-Opt).</li>
+<li><b>Sistema de Prevenção de Base (Base Avoidance):</b> Classificação automática de faces de assentamento/base e transições inferiores, aplicando um envelope cónico de folga angular ($15\text{mm}$ de altura e ângulo seguro de $30^\circ$) e validação de colisão de segmentos com corte de extremidades (<span class="tt">0.1mm</span>) para evitar colisões com mesas de fixação.</li>
+<li><b>Validação Cinemática de Colisão da Sonda:</b> Verificação volumétrica pós-planeamento do modelo 3D sólido da sonda contra a geometria CAD com modos de amostragem configuráveis (<b>All</b>, <b>Percentage</b>, <b>Count</b>), passo de distância e marcadores visuais 3D vermelhos de colisão.</li>
+<li><b>Planeamento e Verificação do Scanner:</b> Configuração de perfis de scanner a partir de <span class="tt">ScannerConfigurations.xml</span> (Linha, Área/Raster, Luz Estruturada), rotinas dedicadas para furos (anéis de profundidade e amostras radiais), e verificação de linha de visão com oclusão via raycasting CPU ou renderização de buffer de profundidade GPU (1024x1024) com descarte rápido por frustum.</li>
+<li><b>Envolvente SDF com Extended Marching Cubes (EMC):</b> Geração de malhas de envolvente estanques com grelha de voxels de alta resolução ($0.75\text{mm}$), votação de paridade por 6 raios ($\pm X, \pm Y, \pm Z$) para determinação exata de sinal interior/exterior, extração EMC preservando arestas vivas (<span class="tt">protectedFeatures</span>), suavização de Laplace em 20 passagens e projeção geodésica contínua a cada $5.0\text{mm}$.</li>
+<li><b>Navegação Geodésica A*:</b> Encaminhamento geodésico de menor distância na malha da envolvente utilizando o algoritmo A* (com suporte para Dijkstra, Greedy, BFS e AStarLine) e mecanismo de recuperação com projeção de linha direta.</li>
+<li><b>Simulação com Seguimento Orientado por Eventos:</b> Simulação de movimento 3D com interpolação esférica linear de orientação (SLERP), fitas de rasto coloridas, e seguimento de câmara por eventos (<span class="tt">SphericalOrbital</span> e <span class="tt">ProbeFixation</span>) com <b>evasão dinâmica de oclusão</b> por raycasting e inclinação do ponto de vista orientada pelo eixo de furos.</li>
+<li><b>Sessões, Interface e Exportação:</b> Normalização de sessões (<span class="tt">NormalizeSessionConfig</span>) para evitar corrupção de dados; TreeView de inspeção ordenado por sequência de execução com badges de estado em tempo real; e exportação estruturada em JSON (<span class="tt">PathExportDTO</span>) e XML (<span class="tt">PathExportModels</span>).</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="quick_start_sec"></a>
 Guia de Início Rápido</h1>

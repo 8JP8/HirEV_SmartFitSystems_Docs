@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['partboundingsphere_0',['PartBoundingSphere',['../d2/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_bounding_sphere.html',1,'HirEV_SmartFitSystemsApp::Modules']]],
-  ['partbridgemovesnapshot_1',['PartBridgeMoveSnapshot',['../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_part_bridge_move_snapshot.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['partinspectl_2',['PartInspectL',['../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html',1,'HirEV_SmartFitSystemsApp::Modules::PostProcessors']]],
-  ['partscangroup_3',['PartScanGroup',['../dd/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_part_scan_group.html',1,'HirEV_SmartFitSystemsApp::Modules']]],
-  ['passwordinputdialog_4',['PasswordInputDialog',['../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog.html',1,'HirEV_SmartFitSystemsApp::Resource_Tools::CustomDialogs']]],
-  ['patheditdialog_5',['PathEditDialog',['../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html',1,'HirEV_SmartFitSystemsApp::Resource_Tools::CustomDialogs']]],
-  ['pathexportdto_6',['PathExportDTO',['../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
-  ['pathgenerationprogresseventargs_7',['PathGenerationProgressEventArgs',['../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['pathitemviewmodel_8',['PathItemViewModel',['../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html',1,'HirEV_SmartFitSystemsApp::Resource_Tools::CustomDialogs']]],
-  ['pathmanager_9',['PathManager',['../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['pathownershiprepairpartbounds_10',['PathOwnershipRepairPartBounds',['../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_1_1_path_ownership_repair_part_bounds.html',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]],
-  ['pathplanningdiagnostics_11',['PathPlanningDiagnostics',['../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html',1,'HirEV_SmartFitSystemsApp::Utilities::Diagnostics']]],
-  ['pathpoint_12',['PathPoint',['../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['pathpointexportdto_13',['PathPointExportDTO',['../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
-  ['pathresult_14',['PathResult',['../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_path_result.html',1,'HirEV_SmartFitSystemsApp.Utilities.RRTStarPathfinder.PathResult'],['../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder_1_1_path_result.html',1,'HirEV_SmartFitSystemsApp.Utilities.VisibilityGraphPathfinder.PathResult']]],
-  ['pathsegmentdata_15',['PathSegmentData',['../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['pathvolumevalidator_16',['PathVolumeValidator',['../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_path_volume_validator.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
-  ['pathwaypoint_17',['PathWaypoint',['../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html',1,'HirEV_SmartFitSystemsApp::Models']]],
-  ['planning_5fsidepanel_18',['Planning_SidePanel',['../d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel.html',1,'HirEV_SmartFitSystemsApp']]],
-  ['point3dcomparer_19',['Point3DComparer',['../de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_point3_d_comparer.html',1,'HirEV_SmartFitSystemsApp.Modules.Point3DComparer'],['../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator_1_1_point3_d_comparer.html',1,'HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.Point3DComparer'],['../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html',1,'HirEV_SmartFitSystemsApp.Utilities.Point3DComparer']]],
-  ['point3djsonconverter_20',['Point3DJsonConverter',['../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_json_converter.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['point4dconverter_21',['Point4DConverter',['../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['pointediteventdto_22',['PointEditEventDTO',['../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_edit_event_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
-  ['pointexportdto_23',['PointExportDTO',['../d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html',1,'HirEV_SmartFitSystemsApp::Models::DTOs']]],
-  ['protectedconfigmanager_24',['ProtectedConfigManager',['../dc/d03/class_protected_config_manager.html',1,'']]]
+  ['originalobjectpositionstate_0',['OriginalObjectPositionState',['../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model_1_1_original_object_position_state.html',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]]
 ];

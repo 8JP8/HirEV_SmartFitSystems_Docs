@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.Seg
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_segment_validation_result__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_segment_validation_result_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_segment_validation_result_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_segment_validation_result_coll__map">
-<area shape="rect" title="Result of validating a path segment for collisions." alt="" coords="5,5,238,256"/>
+<area shape="rect" title="Result of validating a path segment for collisions." alt="" coords="5,5,238,277"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,6 +122,8 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a7c26909ead566d910915332b1faa5ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the segment is collision-free.  <br /></td></tr>
 <tr class="memitem:a7acd1c1242fc0dca87fa440c3d3d9fb6" id="r_a7acd1c1242fc0dca87fa440c3d3d9fb6"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a7acd1c1242fc0dca87fa440c3d3d9fb6">CollisionPoint</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a7acd1c1242fc0dca87fa440c3d3d9fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The point where collision was detected (if any).  <br /></td></tr>
+<tr class="memitem:a4560cf0c1b411edf7fd9344b783fdf1b" id="r_a4560cf0c1b411edf7fd9344b783fdf1b"><td class="memItemLeft">string?&#160;</td><td class="memItemRight"><a class="el" href="#a4560cf0c1b411edf7fd9344b783fdf1b">CollisionPartName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4560cf0c1b411edf7fd9344b783fdf1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the part that was collided with.  <br /></td></tr>
 <tr class="memitem:ac49450818c0a47095a6938f03c102230" id="r_ac49450818c0a47095a6938f03c102230"><td class="memItemLeft">double?&#160;</td><td class="memItemRight"><a class="el" href="#ac49450818c0a47095a6938f03c102230">CollisionDistance</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ac49450818c0a47095a6938f03c102230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance from start to collision point.  <br /></td></tr>
 <tr class="memitem:a28ffa2c4030e0b3878fedb8280cbaa76" id="r_a28ffa2c4030e0b3878fedb8280cbaa76"><td class="memItemLeft">string?&#160;</td><td class="memItemRight"><a class="el" href="#a28ffa2c4030e0b3878fedb8280cbaa76">SkipReason</a><code> [get, set]</code></td></tr>
@@ -132,7 +134,7 @@ Propriedades</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Result of validating a path segment for collisions. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00598">598</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00780">780</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
 <a id="a1d74065661f50daf2b172356a3c9d59b" name="a1d74065661f50daf2b172356a3c9d59b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d74065661f50daf2b172356a3c9d59b">&#9670;&#160;</a></span>ToString()</h2>
@@ -152,9 +154,9 @@ Propriedades</h2></td></tr>
 <p>Returns a string representation of the segment validation result. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A string describing the validation status, length, and any collision info.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00628">628</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00813">813</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00610">IsValid</a> e <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00619">SkipReason</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00792">IsValid</a> e <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00804">SkipReason</a>.</p>
 
 </div>
 </div>
@@ -181,7 +183,33 @@ Propriedades</h2></td></tr>
 
 <p>Distance from start to collision point. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00616">616</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00801">801</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4560cf0c1b411edf7fd9344b783fdf1b" name="a4560cf0c1b411edf7fd9344b783fdf1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4560cf0c1b411edf7fd9344b783fdf1b">&#9670;&#160;</a></span>CollisionPartName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string? HirEV_SmartFitSystemsApp.Utilities.Algorithms.SegmentValidationResult.CollisionPartName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Name of the part that was collided with. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00798">798</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
 </div>
 </div>
@@ -207,7 +235,7 @@ Propriedades</h2></td></tr>
 
 <p>The point where collision was detected (if any). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00613">613</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00795">795</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
 </div>
 </div>
@@ -233,7 +261,7 @@ Propriedades</h2></td></tr>
 
 <p>End point of the segment. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00607">607</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00789">789</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
 </div>
 </div>
@@ -259,9 +287,9 @@ Propriedades</h2></td></tr>
 
 <p>Whether the segment is collision-free. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00610">610</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00792">792</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00628">ToString()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00813">ToString()</a>.</p>
 
 </div>
 </div>
@@ -287,7 +315,7 @@ Propriedades</h2></td></tr>
 
 <p>Index of this segment in the path (0-based). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00601">601</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00783">783</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
 </div>
 </div>
@@ -313,7 +341,7 @@ Propriedades</h2></td></tr>
 
 <p>Length of the segment. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00622">622</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00807">807</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
 </div>
 </div>
@@ -339,9 +367,9 @@ Propriedades</h2></td></tr>
 
 <p>Reason why validation was skipped (if applicable). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00619">619</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00804">804</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00628">ToString()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00813">ToString()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +395,9 @@ Propriedades</h2></td></tr>
 
 <p>Start point of the segment. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00604">604</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00786">786</a> do ficheiro <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html">SegmentCollisionValidator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_segment_collision_validator_8cs_source.html#l00434">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SegmentCollisionValidator.ValidateSegments()</a>.</p>
 
 </div>
 </div>

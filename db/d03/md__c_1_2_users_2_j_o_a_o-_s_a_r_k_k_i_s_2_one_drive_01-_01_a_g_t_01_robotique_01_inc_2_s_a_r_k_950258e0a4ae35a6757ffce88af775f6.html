@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: App.config Configuration Guide</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">App.config Configuration Guide </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<p>This guide documents the <span class="tt">App.config</span> <span class="tt">appSettings</span> used by the Hi-rEV SmartFitSystems WPF application. The project copies <span class="tt">App.config</span> to the output directory, and the application reads it through <span class="tt">System.Configuration.ConfigurationManager.AppSettings</span>.</p>
+<p>Most numeric geometry and motion values are in millimeters unless the setting name or description says otherwise. Boolean values should be <span class="tt">True</span> or <span class="tt">False</span>; the code is generally case-insensitive, but keeping the existing capitalization makes changes easier to review. Decimal values should use <span class="tt">.</span> as the separator because many readers parse with invariant culture.</p>
+<blockquote class="doxtable">
+<p><b>Note:</b> Settings with their unit tagged with Units depend on the Units configuration key. If the Units key is changed (e.g., to inch), these values are interpreted in the configured unit rather than absolute millimeters. </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+How Configuration Is Applied</h1>
+<ul>
+<li><span class="tt">App.config</span> is the source configuration in the project root. At build time it is copied to the executable output because the project marks it with <span class="tt">CopyToOutputDirectory=PreserveNewest</span>.</li>
+<li>The runtime executable config may diverge from the root <span class="tt">App.config</span> when the application saves settings through the UI. If behavior differs between a developer build and the checked-in file, inspect the <span class="tt">.exe.config</span> beside the built executable.</li>
+<li><span class="tt">Scanner_Type</span> links this file to <span class="tt">ScannerConfigurations.xml</span>. When the selected scanner name exists in <span class="tt">ScannerConfigurations.xml</span>, scanner preset geometry such as FOV and standoff is loaded from that XML file. The <span class="tt">Scanner_FOV_X</span>, <span class="tt">Scanner_FOV_Y</span>, <span class="tt">Scanner_Standoff</span>, <span class="tt">Scanner_MinStandoff</span>, <span class="tt">Scanner_MaxStandoff</span>, and <span class="tt">Scanner_AspectRatio</span> values in <span class="tt">App.config</span> act as fallbacks when the named scanner preset cannot be loaded.</li>
+<li><span class="tt">CMM_Type</span> has a fallback role. The main measuring mode normally comes from protected user configuration (<span class="tt">CMM_MeasuringType</span>), and <span class="tt">CMM_Type</span> is used when that protected value is missing or invalid.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Runtime-Written Settings</h1>
+<p>The application can update these settings in the executable config at runtime.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Written by  </th><th class="markdownTableHeadNone">Effect  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Language</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Changes the language resource selected at startup and refreshes app settings after saving.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ExportExteriorOnlyDefault</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Saves the default export checkbox state for exterior-only export.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ExportVisibleOnlyDefault</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Saves the default export checkbox state for visible-only export.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ExportOnlyControlPointsDefault</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Saves the default export checkbox state for control-point-only export.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ExportOnlyMeasurementPointsDefault</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Saves the default export checkbox state for measurement-point-only export.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">RenderQualitySetting</span>  </td><td class="markdownTableBodyNone">Settings side panel  </td><td class="markdownTableBodyNone">Saves the Eyeshot render quality selection.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_Type</span>  </td><td class="markdownTableBodyNone">Scanner configuration dialog  </td><td class="markdownTableBodyNone">Saves the selected scanner preset name.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Eyeshot_ShowNormals</span>  </td><td class="markdownTableBodyNone">Main view model command  </td><td class="markdownTableBodyNone">Toggles whether Eyeshot displays face normals.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+General App Settings</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MovePartToOriginByDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">false</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Controls whether imported part models are automatically moved to origin coordinates upon loading. When <span class="tt">true</span>, importing a part automatically moves it to the origin; when <span class="tt">false</span>, the part stays at its imported coordinates.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Language</span>  </td><td class="markdownTableBodyNone"><span class="tt">PT</span>  </td><td class="markdownTableBodyNone">Code, usually <span class="tt">EN</span> or <span class="tt">PT</span>  </td><td class="markdownTableBodyNone">Selects the language XML resource used for UI strings. If the selected language is unavailable, startup code falls back to English behavior where implemented.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">DocLanguage_FileType</span>  </td><td class="markdownTableBodyNone"><span class="tt">.xml</span>  </td><td class="markdownTableBodyNone">File extension  </td><td class="markdownTableBodyNone">Extension appended when loading language documentation resources. Keep this as <span class="tt">.xml</span> unless the language file loading code is changed.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PingBeforeConnecting</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Controls whether the app pings the configured machine address before attempting a connection. Enable this when connection attempts should fail fast on unreachable machines; leave disabled when ICMP is blocked by the network.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">&lt;a id="units-config-key"&gt;&lt;/a&gt;Units</span>  </td><td class="markdownTableBodyNone"><span class="tt">mm</span>  </td><td class="markdownTableBodyNone">Eyeshot linear unit name  </td><td class="markdownTableBodyNone">Sets the design control units. Settings tagged with Units will depend on the unit selected here. Supported aliases include <span class="tt">mm</span>, <span class="tt">cm</span>, <span class="tt">m</span>, <span class="tt">km</span>, <span class="tt">inch</span>, <span class="tt">feet</span>, <span class="tt">miles</span>, <span class="tt">microinch</span>, <span class="tt">mil</span>, <span class="tt">yard</span>, <span class="tt">angstrom</span>, <span class="tt">nm</span>, <span class="tt">micron</span>, <span class="tt">dm</span>, <span class="tt">dam</span>, <span class="tt">hm</span>, <span class="tt">gm</span>, <span class="tt">au</span>, <span class="tt">ly</span>, <span class="tt">parsec</span>, and <span class="tt">unitless</span>. Invalid values fall back to millimeters.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">CMM_Type</span>  </td><td class="markdownTableBodyNone"><span class="tt">Scanner</span>  </td><td class="markdownTableBodyNone"><span class="tt">Probe</span> or <span class="tt">Scanner</span>  </td><td class="markdownTableBodyNone">Fallback measuring mode when protected user configuration does not define <span class="tt">CMM_MeasuringType</span>. It affects whether path generation and simulation treat the measurement device as a contact probe or scanner.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_Enabled</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables or disables the CMM machine volume bounding box visualization and grid sizing constraint.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_ShowByDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Controls whether the CMM machine volume bounding box limit lines are displayed by default upon loading the viewport (<span class="tt">true</span> to show, <span class="tt">false</span> to hide).  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_Size_X</span>  </td><td class="markdownTableBodyNone"><span class="tt">1000.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">X dimension size in mm for the CMM machine volume bounding box and Eyeshot origin grid extent.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_Size_Y</span>  </td><td class="markdownTableBodyNone"><span class="tt">1000.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Y dimension size in mm for the CMM machine volume bounding box and Eyeshot origin grid extent.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_Size_Z</span>  </td><td class="markdownTableBodyNone"><span class="tt">1000.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Z dimension size in mm for the CMM machine volume bounding box height.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Scanner Selection And Geometry</h1>
+<p>These settings define the scanner model, basic field of view, standoff range, and base scan-line generation. For a valid <span class="tt">Scanner_Type</span>, values from <span class="tt">ScannerConfigurations.xml</span> are authoritative for scanner geometry.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_Type</span>  </td><td class="markdownTableBodyNone"><span class="tt">ScannerName1</span>  </td><td class="markdownTableBodyNone">Scanner preset name  </td><td class="markdownTableBodyNone">Selects a scanner entry from <span class="tt">ScannerConfigurations.xml</span>. If no matching scanner exists, the app builds a fallback scanner from the <span class="tt">Scanner_FOV_*</span>, standoff, aspect ratio, and raycasting tolerance values in this file.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FOV_X</span>  </td><td class="markdownTableBodyNone"><span class="tt">100.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fallback scanner field-of-view width at optimal standoff. Larger values let each pose see more surface, but can overstate coverage if the physical scanner is narrower.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FOV_Y</span>  </td><td class="markdownTableBodyNone"><span class="tt">75.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fallback scanner field-of-view height at optimal standoff. Keep this consistent with <span class="tt">Scanner_AspectRatio</span> and the physical scanner preset.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_Standoff</span>  </td><td class="markdownTableBodyNone"><span class="tt">150.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fallback optimal distance from scanner to part surface. This is the target working distance used when a scanner preset is not loaded.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MinStandoff</span>  </td><td class="markdownTableBodyNone"><span class="tt">100.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fallback closest valid scanner-to-surface distance. Coverage candidates closer than this can be rejected when <span class="tt">Scanner_CoverageUseMinStandoff</span> is enabled.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MaxStandoff</span>  </td><td class="markdownTableBodyNone"><span class="tt">200.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fallback farthest valid scanner-to-surface distance. Candidates beyond this range are treated as out of range for scanner coverage.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_ScanlineOverlap</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.3</span>  </td><td class="markdownTableBodyNone">Ratio, 0.0 to 1.0  </td><td class="markdownTableBodyNone">Overlap between adjacent scanner lines or passes. Higher values improve redundant coverage but increase the number of generated positions and path length.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_PointSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance between generated points along a scan line. Smaller spacing creates denser scanner paths and smoother coverage at higher computation and visualization cost.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AspectRatio</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.33</span>  </td><td class="markdownTableBodyNone">Ratio  </td><td class="markdownTableBodyNone">Fallback field-of-view aspect ratio (<span class="tt">FOV_X / FOV_Y</span>). Used with fallback scanner geometry; keep synchronized with the selected physical scanner.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_RaycastingEnabled</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables raycasting-based filtering and visibility checks for scanner field-of-view coverage. Disabling it can speed planning but removes important visibility validation.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_RaycastingTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance used in scanner raycasting visibility checks. Larger values are more forgiving around mesh precision errors; smaller values are stricter but can reject borderline visible surfaces.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MaxDistanceGap</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum tolerated distance gap between the part surface and scanner range limit during coverage checks. Increase only when valid scan poses are being rejected near range boundaries.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_OrbitalRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Multiplies standoff for legacy orbital interpolation sizing. Higher values keep scanner motion farther from the part, improving clearance but increasing travel.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_OrbitalWaypoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">6</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of intermediate waypoints between scanner measurement points. More waypoints make smoother movement and visualization, but increase path size.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_ProximityOrdering</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Orders scanner measurement positions with a nearest-neighbor heuristic to reduce travel distance. Disable only when preserving generation order is useful for debugging.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Coordinates_RelativeToPart</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Exports or generates coordinates relative to the part origin instead of the Eyeshot scene origin. Use <span class="tt">True</span> for part-local programming; use <span class="tt">False</span> when absolute scene coordinates are required.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Scanner Coverage And Candidate Generation</h1>
+<p>These settings drive spherical scanner path generation, candidate pose density, bottom-face handling, and dedicated hole scanning.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_ScanHoles</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables detection-driven axial/ring scan poses for known holes. This improves bore coverage but adds poses and planning cost.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AvoidBottomFace</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Prevents the scanner from dipping below the configured bottom avoidance angle. This is useful when fixtures, tables, or CMM reach limits make underside scanning unsafe.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_BottomAvoidanceAngle</span>  </td><td class="markdownTableBodyNone"><span class="tt">15</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum elevation above the bottom plane when <span class="tt">Scanner_AvoidBottomFace</span> is enabled. Higher values keep the scanner farther from underside regions but reduce bottom/low-side coverage.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MinCoveragePercent</span>  </td><td class="markdownTableBodyNone"><span class="tt">95</span>  </td><td class="markdownTableBodyNone">Percent  </td><td class="markdownTableBodyNone">Target surface coverage for scanner path generation. Higher values select more poses and take longer; lower values allow faster, less complete paths.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FibonacciSamples</span>  </td><td class="markdownTableBodyNone"><span class="tt">300</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Base number of candidate positions on the Fibonacci sphere. More samples improve pose choices and coverage, but candidate evaluation cost grows quickly.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FibonacciBaseRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">500.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Reference orbit radius used to scale <span class="tt">Scanner_FibonacciSamples</span> by part size. Lowering this increases candidates for medium and large parts.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FibonacciMinAmplification</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Minimum multiplier applied to the base Fibonacci sample count after radius scaling. Increase this if small or difficult parts need more candidate directions.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_FibonacciMaxAmplification</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Maximum multiplier applied after radius scaling. Raising it can improve large/complex part coverage but may significantly slow planning.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AddRolledCandidates</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Adds an alternate scanner roll/up-vector for each orbital candidate. This increases orientation coverage, especially around side faces, at the cost of more checks.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AddAngledCandidates</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Adds pitched/yawed candidate orientations for side and downward regions. More variants can close coverage gaps but slow generation.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AngledCandidateMaxUnitZ</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.85</span>  </td><td class="markdownTableBodyNone">Unit-vector Z threshold  </td><td class="markdownTableBodyNone">Adds angled variants only for candidates whose unit Z is below this value. Lower values reduce extra angled candidates; higher values apply them to more of the orbit.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_AngledCandidateAnglesDeg</span>  </td><td class="markdownTableBodyNone"><span class="tt">20,40</span>  </td><td class="markdownTableBodyNone">Comma-separated degrees  </td><td class="markdownTableBodyNone">Extra pitch/yaw angles used for angled scanner variants. Add values for aggressive coverage; remove values to reduce candidate count.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MinHoleRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">3.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum hole radius considered for scanner hole-specific planning. Smaller values include tiny holes but can generate extra poses for features that are not worth scanning.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_ArcWaypoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">6</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of waypoints inserted along great-circle arcs between selected spherical scan poses. More waypoints smooth motion; fewer waypoints produce smaller paths.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanRings</span>  </td><td class="markdownTableBodyNone"><span class="tt">4</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of depth rings generated inside each scanned hole. More rings improve bore-wall coverage but increase path length.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanRadialCount</span>  </td><td class="markdownTableBodyNone"><span class="tt">4</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of radial positions around each hole ring. Increase to 6 or 8 for difficult bores; reduce for speed.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanRadialOffsetFactor</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.55</span>  </td><td class="markdownTableBodyNone">Hole-radius multiplier  </td><td class="markdownTableBodyNone">Offsets scanner targets radially relative to hole radius so the scanner can view bore walls. Larger values lean farther toward the wall; too large can create unsafe or invalid poses.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanDepthFraction</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.9</span>  </td><td class="markdownTableBodyNone">Fraction, 0.0 to 1.0  </td><td class="markdownTableBodyNone">Fraction of hole depth targeted by ring scans. Keep below 1.0 to avoid overshooting the bottom of blind holes.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanBottomAvoidanceZTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Z tolerance used when bottom avoidance filters hole scan poses. Increase slightly if valid near-bottom hole poses are incorrectly removed.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_UseSimpleOrbitalRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Chooses the legacy orbit radius formula (<span class="tt">part radius + optimal standoff</span>) when <span class="tt">True</span>. When <span class="tt">False</span>, the planner uses part radius plus <span class="tt">Scanner_OrbitalPartClearanceOffset</span>.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_OrbitalPartClearanceOffset</span>  </td><td class="markdownTableBodyNone"><span class="tt">20.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Clearance added to the part bounding sphere when <span class="tt">Scanner_UseSimpleOrbitalRadius</span> is <span class="tt">False</span>. Larger values increase clearance and reduce collision risk but may reduce effective coverage.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleScanApproximationThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">50.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Allows hole scan poses to approach closer than optimal standoff, bounded by scanner minimum standoff. Lower values move closer to holes; too low can violate scanner reach or safety margins.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_BridgeDownwardBlend</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.65</span>  </td><td class="markdownTableBodyNone">Ratio  </td><td class="markdownTableBodyNone">Blends scanner orientation downward while bridging verification or scan positions. Higher values bias the bridge pose more downward; lower values preserve the original orientation more strongly.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_OptimizeOrientationFromUnscanned</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables post-processing that optimizes scanner orientation using unscanned regions. This can improve final coverage but adds computation.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_OrientationOptimizationSamples</span>  </td><td class="markdownTableBodyNone"><span class="tt">120</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of samples considered during scanner orientation optimization. Higher values can find better orientations but take longer.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Scanner Verification</h1>
+<p>Scanner verification estimates visible coverage and animates or queues verification snapshots. These values mainly trade accuracy, responsiveness, and render cost.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_EnableVerification</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Master switch for scanner coverage verification. Disable when planning speed matters more than coverage visualization/validation.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationGridSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">15</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Surface grid spacing for verification targets. Smaller spacing increases verification accuracy and cost; larger spacing makes verification faster and coarser.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationChecksPerTick</span>  </td><td class="markdownTableBodyNone"><span class="tt">40</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Legacy/general verification work budget per UI tick. Higher values complete verification faster but can reduce UI responsiveness.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationRaycastsPerTick</span>  </td><td class="markdownTableBodyNone"><span class="tt">30</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Raycast-specific verification budget per tick. Increase to speed verification on powerful hardware; decrease if UI stutters.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationTriangleStride</span>  </td><td class="markdownTableBodyNone"><span class="tt">1</span>  </td><td class="markdownTableBodyNone">Stride  </td><td class="markdownTableBodyNone">Mesh triangle sampling stride for verification. <span class="tt">1</span> checks every triangle; larger values skip triangles for speed with lower fidelity.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationLineOfSightTriangleStride</span>  </td><td class="markdownTableBodyNone"><span class="tt">1</span>  </td><td class="markdownTableBodyNone">Stride  </td><td class="markdownTableBodyNone">Triangle stride for line-of-sight occlusion checks. Higher values speed occlusion checks but may miss blockers.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationOcclusionTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance used when deciding whether geometry occludes scanner line of sight. Increase to reduce false occlusions from mesh noise; decrease for stricter visibility.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationUseGpuDepthMap</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables GPU depth-map verification where supported. It can speed visibility checks but depends on rendering behavior and depth resolution.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationGpuDepthResolution</span>  </td><td class="markdownTableBodyNone"><span class="tt">1024</span>  </td><td class="markdownTableBodyNone">Pixels  </td><td class="markdownTableBodyNone">Depth-map resolution for GPU verification. Higher values improve detail and memory cost; lower values are faster but less precise.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationCpuDepthResolution</span>  </td><td class="markdownTableBodyNone"><span class="tt">512</span>  </td><td class="markdownTableBodyNone">Pixels  </td><td class="markdownTableBodyNone">Depth-map resolution for CPU verification fallback. Higher values improve precision but increase CPU and memory use.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationMaxQueuedSnapshots</span>  </td><td class="markdownTableBodyNone"><span class="tt">8</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Maximum queued scanner verification snapshots. Higher values smooth background processing but consume more memory.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationSnapshotMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">ScanPointsOnly</span>  </td><td class="markdownTableBodyNone">Mode string  </td><td class="markdownTableBodyNone">Selects which path positions generate verification snapshots. <span class="tt">ScanPointsOnly</span> limits snapshots to measurement poses, reducing work compared with all interpolated waypoints.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationSnapshotSubdivisionDistanceMm</span>  </td><td class="markdownTableBodyNone"><span class="tt">10.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum spacing used when subdividing snapshot segments. Smaller values create more intermediate verification samples.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationSnapshotDensityRatio</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Multiplies snapshot density. Values above 1.0 increase verification detail and cost; values below 1.0 reduce it.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationVisualDelayMs</span>  </td><td class="markdownTableBodyNone"><span class="tt">25</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Delay between verification visual updates. Lower values animate more frequently; higher values reduce render overhead.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationPoseRenderDelayMs</span>  </td><td class="markdownTableBodyNone"><span class="tt">50</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Delay used when rendering regular verification poses. Lower values make playback faster but heavier.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationBridgeTravelDelayMs</span>  </td><td class="markdownTableBodyNone"><span class="tt">50</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Delay used for bridge travel visualization between verification poses. Increase for easier visual inspection; decrease for faster playback.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationSubSnapshotsEnabled</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables additional sub-snapshots along verification movement. This improves inspection of intermediate visibility but can create many queued checks.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationSubSnapshotSpacingMm</span>  </td><td class="markdownTableBodyNone"><span class="tt">10.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance between sub-snapshots when sub-snapshots are enabled. Smaller spacing adds more verification samples.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationMaxQueuedSubSnapshots</span>  </td><td class="markdownTableBodyNone"><span class="tt">256</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Queue limit for sub-snapshots. Raise only if long paths need deeper buffering and memory is acceptable.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationTickInterval</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Timer interval for verification processing ticks. Lower values process more frequently; higher values reduce UI pressure.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Scanner Raycasting Optimization</h1>
+<p>These values control scanner coverage sampling, visibility shortcuts, and collision margins. They have strong performance impact on complex meshes.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_RaycastGridDensity</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Points per square millimeter Units  </td><td class="markdownTableBodyNone">Surface sampling density for raycast coverage grids. Lower values are faster and coarser; higher values are denser and slower.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_EnableSurfaceHighlight</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables visualization of surface points within scanner FOV. Useful for debugging coverage, but can add draw overhead.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_BoundingBoxMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">50.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Extra margin around the part bounding box for early-exit raycasting checks. Larger margins are safer; smaller margins can skip more work but risk false skips.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MinCoverageOverlap</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.15</span>  </td><td class="markdownTableBodyNone">Ratio, 0.0 to 1.0  </td><td class="markdownTableBodyNone">Minimum required overlap between adjacent scanner positions for complete coverage. Higher values produce more redundant coverage and longer paths.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_EnableEarlyExitCheck</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Skips expensive raycasting when a candidate is obviously outside useful range. Keep enabled unless diagnosing coverage edge cases.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_CollisionSafetyMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">10.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Clearance maintained from the part during scanner interpolation. Higher values improve safety but can make paths longer or less direct.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MaxScanPositions</span>  </td><td class="markdownTableBodyNone"><span class="tt">50</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Maximum scan positions generated for a scanner path. Limits runaway planning on complex parts; too low can prevent reaching target coverage.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_MinFovCoverage</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.3</span>  </td><td class="markdownTableBodyNone">Ratio, 0.0 to 1.0  </td><td class="markdownTableBodyNone">Minimum useful FOV coverage for accepting a scanner position. Lower values accept weaker poses; higher values reject poses unless they see more surface.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_SkipRaycastingUntilInRange</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Avoids raycasting before the scanner is within the valid standoff range. This is a major performance optimization.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_CoverageMinFacingDot</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Dot-product threshold  </td><td class="markdownTableBodyNone">Minimum surface-normal facing score during coverage planning. Higher values require surfaces to face the scanner more directly; lower or negative values accept grazing/back-facing samples.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_CoverageUseMinStandoff</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Rejects coverage candidates closer than scanner minimum standoff. Disable only for close-range experiments where physical clearance is already controlled.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_SurfaceSampleMinSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum spacing for surface coverage samples. Smaller values improve target density and slow planning.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_GridPointMinSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum spacing for FOV visualization grid points. Smaller values create denser highlights and more render cost.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleSpatialMatchToleranceMm</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Base tolerance when mapping known holes to multipart body spheres. Increase if known holes fail to map to the correct body.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_HoleSpatialMatchPartRadiusFactor</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Part-radius multiplier  </td><td class="markdownTableBodyNone">Adds tolerance proportional to part radius during multipart hole mapping. Useful for large parts where fixed tolerances are too tight.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+Export Defaults</h1>
+<p>These settings initialize export option state in the settings side panel and can be saved back by the UI.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ExportExteriorOnlyDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Default export option to include only exterior geometry. Enable for workflows that routinely exclude internal or hidden structures.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ExportVisibleOnlyDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Default export option to include only currently visible entities. Useful when users hide ignored or irrelevant geometry before export.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ExportOnlyControlPointsDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Default export option to include only control points. Usually disabled so full measurement data can be exported.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ExportOnlyMeasurementPointsDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Default export option to include only measurement points. Enable only for measurement-point-only output workflows.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Visual And Section View Settings</h1>
+<p>These settings control Eyeshot display details, ignored-face rendering, and section view defaults.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ControlPointBlueSphereSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.7</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Radius/size used for blue control-point markers. Increase for visibility on large parts; decrease to reduce marker clutter.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ControlPointPinkSphereSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.7</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Radius/size used for pink control-point markers. Keep near the blue size unless the color category needs stronger visual distinction.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">VertexPointYellowCubeSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Size of yellow cube markers for vertex points. Larger values improve visibility but can obscure edges.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleSphereSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Size of hole marker spheres. Increase for easier hole identification in large assemblies.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDepthLineWidth</span>  </td><td class="markdownTableBodyNone"><span class="tt">3</span>  </td><td class="markdownTableBodyNone">Render line width  </td><td class="markdownTableBodyNone">Width of lines used to show hole depth. Larger values improve readability but can dominate dense views.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ManualMarkingSphereSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">3.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Size of red spheres created when manually marking measurement points. Larger markers are easier to see but can hide small features.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceStyle</span>  </td><td class="markdownTableBodyNone"><span class="tt">StripeTexture</span>  </td><td class="markdownTableBodyNone">Enum  </td><td class="markdownTableBodyNone">Visual style for ignored faces. Supported options are <span class="tt">Transparency</span>, <span class="tt">SquareTexture</span>, <span class="tt">StripeTexture</span>, <span class="tt">GrayMesh</span>, <span class="tt">CylinderMesh</span>, and <span class="tt">CubeMesh</span>.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">OffsetShell_StitchingMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">Rectangular</span>  </td><td class="markdownTableBodyNone">Enum  </td><td class="markdownTableBodyNone">Selects offset shell stitching mode. Options are <span class="tt">None</span>, <span class="tt">Rectangular</span>, and <span class="tt">Fillet</span>; <span class="tt">Fillet</span> can fail on complex geometry.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceTextureScale</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Scales ignored-face texture mapping. Increase to enlarge texture pattern; decrease for tighter patterning.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceLineThickness</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Millimeters Units or render units  </td><td class="markdownTableBodyNone">Thickness used by line-based ignored-face textures. Higher values make stripes more visible.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceTextureResolution</span>  </td><td class="markdownTableBodyNone"><span class="tt">256</span>  </td><td class="markdownTableBodyNone">Pixels  </td><td class="markdownTableBodyNone">Texture resolution for generated ignored-face patterns. Higher values improve crispness and use more memory.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceLineRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Radius used for line/cylinder elements in ignored-face styles. Increase when lines are too thin to inspect.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceLineSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.02</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Spacing for repeated ignored-face line patterns. Smaller values create denser patterns; larger values are cleaner and lighter.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceLineOffset</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.02</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Offset that lifts or separates ignored-face lines from the surface to reduce z-fighting. Increase if the texture flickers.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceCubeSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Cube size for <span class="tt">CubeMesh</span> ignored-face style. Larger cubes are clearer but heavier to draw.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceTargetSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Target spacing for mesh-based ignored-face markers. Lower values create denser marker fields and more geometry.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceClearenceOffset</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Clearance offset used when placing ignored-face marker geometry. The key name contains the existing <span class="tt">Clearence</span> spelling; do not rename it without code changes.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Eyeshot_ShowNormals</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Shows or hides face normals in the Eyeshot viewport. Useful for diagnosing inward normals and path approach directions.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">RenderQualitySetting</span>  </td><td class="markdownTableBodyNone"><span class="tt">Quality</span>  </td><td class="markdownTableBodyNone">Enum value  </td><td class="markdownTableBodyNone">Selects Eyeshot render quality. <span class="tt">Quality</span> favors visual fidelity; other enum values depend on the Eyeshot <span class="tt">QualitySettingEnum</span> available in the application.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">SectionView_ShowVertices</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Controls whether section view displays vertices by default. Disable to reduce clutter in dense section geometry.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">SectionView_ShowMiddlePoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Controls whether section view displays middle points by default. Disable when midpoint markers obscure dimensions.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">SectionView_DimTextHeightMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Scales section-view dimension text height. Increase for readability on high-resolution displays; decrease when text overlaps geometry.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Probe Path Planning And Point Filtering</h1>
+<p>These settings influence contact-probe measurement point density, boundary validation, generated grids, and path approach behavior.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ShortestPathAlgorithm</span>  </td><td class="markdownTableBodyNone"><span class="tt">AStar</span>  </td><td class="markdownTableBodyNone">Enum / String  </td><td class="markdownTableBodyNone">Algorithm used for finding shortest paths on the navigation mesh graph. Options: <span class="tt">AStar</span> (or <span class="tt">A*</span>), <span class="tt">Dijkstra</span>, <span class="tt">GreedyBFS</span> (or <span class="tt">Greedy</span>), <span class="tt">BFS</span> (or <span class="tt">BreadthFirst</span>). <span class="tt">AStar</span> and <span class="tt">Dijkstra</span> produce the identical optimal path, but <span class="tt">AStar</span> is recommended for faster directional geodesic routing.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_MinPointDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Global minimum spacing between measurement points after filtering. Smaller values preserve more points and improve detail; larger values reduce measurement time.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_PreserveCorners</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Keeps corner points during filtering even when spacing rules would remove them. This protects shape accuracy around sharp features.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_CornerAngleThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">25.0</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Angle threshold used to detect corners. Lower values are stricter and identify fewer corners; higher values preserve more bend-like regions.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EdgePointMinDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum spacing for edge and boundary points. Typically lower than interior spacing because edges need denser inspection.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_InteriorPointMinDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum spacing for interior face points. Increase to reduce point count on broad flat or smooth faces.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_MaxCurvatureForDensification</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Curvature threshold  </td><td class="markdownTableBodyNone">Keeps more points in high-curvature areas. Lower values preserve more subtle curvature; higher values filter more aggressively.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableSmartFiltering</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables intelligent removal of redundant points based on feature type and spacing. Disable only when every source point must be retained for debugging.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_RetractDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">3.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance the probe retracts from the surface when moving between measurement points. Larger values improve clearance and increase travel.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ValidateControlPointBoundaries</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Checks whether control points are inside face boundaries using mesh triangulation. Keep enabled to avoid probing outside selected surfaces.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ProjectOutsidePoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Projects outside control points to the nearest valid boundary when validation fails. If <span class="tt">False</span>, invalid outside points are removed instead.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_BoundaryTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance for deciding whether a point lies on or near a valid surface boundary. Increase if valid points are falsely rejected; decrease for stricter validation.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableGridGeneration</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables automatic UV-based grid point generation on surfaces with sparse control points. This improves coverage at the cost of more measurements.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_GridSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Target distance between generated grid points. Smaller values increase density and inspection time; larger values speed rough inspection.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_GridMarginFromEdge</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Keeps generated grid points away from face edges. Increase to reduce collision risk near adjacent faces.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_MaxGridPointsPerFace</span>  </td><td class="markdownTableBodyNone"><span class="tt">2000</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Upper limit for generated grid points per face. Prevents very large faces from producing unmanageable point counts.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ControlPointClearance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Multiplier of grid spacing  </td><td class="markdownTableBodyNone">Clearance around existing control points when generating grid points. Higher values avoid redundant nearby grid points.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_UseControlPoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Includes CAD control points in the measurement set. Disable only for grid-only experiments.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_DeduplicateControlPoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Removes duplicate or near-duplicate control points before planning. Keep enabled to avoid repeated measurements.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableConversionOfSingleFaceToHole</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables converting a single cylindrical face into a hole feature, useful for 360-degree cylindrical faces. Disable to avoid accidental hole classification.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_AvoidBottomFace</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, prevents probe approach points from targeting the bottom face of a part. Protects against fixture or table collisions during measurement.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">SegmentCollisionTrimTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance used when trimming path segments detected as colliding. Increase slightly for noisy mesh geometry; too high can over-shorten valid segments.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ShowBaseAvoidancePlaneOnImport</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, displays the base avoidance plane visualization immediately when a part is imported. Useful when the avoidance zone needs constant visibility.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_ShowBaseAvoidancePlaneAfterFaceExtraction</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, automatically shows the base avoidance plane visualization after face extraction completes. Recommended for workflows where the plane is checked each extraction.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Mesh Creation And Collision Avoidance</h1>
+<p>These settings control shell mesh creation and higher-cost collision validation during path planning.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MeshCreationOnFaceExtraction</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Allows mesh creation during face extraction, either automatically or through user prompt. Meshes are required by several collision-safe workflows.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">AutoGenerateShellMesh</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Master switch for automatically generating shell meshes on extracted faces. When disabled, shell-based collision-safe planning cannot use an automatically prepared shell.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableCollisionValidation</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables post-generation collision validation and correction for probe paths. This can greatly slow generation, so it is off by default.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_MaxCollisionFixAttempts</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of attempts to fix a detected collision by adjusting the path. Higher values are more thorough and slower.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_BoundaryPathResolution</span>  </td><td class="markdownTableBodyNone"><span class="tt">10.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Spacing between waypoints when generating boundary paths around obstacles. Smaller values create smoother routes and more computation.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableCircumnavigation</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables routing around the part when direct travel is blocked. Useful for difficult geometry but can be slow with many points.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_CreateIntermediateWaypoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Allows creation of new intermediate waypoints during circumnavigation. When disabled, the planner uses existing approach points only.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_EnableSegmentCollisionValidation</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables fast per-segment collision validation using part mesh checks. This can reject unsafe approach-to-approach segments and search alternatives.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_SegmentCollisionSamplePoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">10</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of sample points checked along each path segment. The implementation clamps this to a safe range; higher values are more accurate and slower.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathPlanning_MaxAlternativePathAttempts</span>  </td><td class="markdownTableBodyNone"><span class="tt">3</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of alternative collision-free segment attempts before giving up. Increase for complex parts where direct segments frequently collide.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Hole Detection And Hole Safety</h1>
+<p>Hole detection settings tune how cylindrical/conical faces are grouped, classified, and associated with bridge faces or joined-hole patterns.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinHeight</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum detected hole depth. Shallow features below this value are rejected as chamfers or artifacts.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SharedVertexTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.01</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance for considering vertices shared between faces. Increase if imported geometry has tiny gaps.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_DiameterTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance when matching hole diameters to standard sizes. Larger values classify imperfect geometry more readily but can mislabel close sizes.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_ZDeviationTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.3</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Allowed vertical deviation for complex surfaces during hole grouping. Increase for noisy CAD surfaces.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_RadialTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.2</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Radial position tolerance for axis alignment. Higher values allow more imperfect cylindrical segments to group together.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MaxJumpGap</span>  </td><td class="markdownTableBodyNone"><span class="tt">10.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum vertical gap allowed when grouping partitioned hole segments. Increase for segmented imports; lower to avoid merging unrelated features.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SeamMatchesRequired</span>  </td><td class="markdownTableBodyNone"><span class="tt">2</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Minimum number of shared vertices required to pair complementary cylindrical halves. Higher values are stricter.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeRadialToleranceMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Multiplies radial tolerance when checking bridge alignment between hole regions. Larger values allow looser bridge matching.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_ParallelAxisTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Angular/dot tolerance  </td><td class="markdownTableBodyNone">Tolerance for deciding whether hole axes are parallel. Smaller values are stricter.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeFaceAlignmentDot</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.85</span>  </td><td class="markdownTableBodyNone">Dot-product threshold  </td><td class="markdownTableBodyNone">Minimum alignment between bridge face normal and hole axis during face extraction. Higher values require stronger alignment.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeFacePlaneDistanceTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum distance from a bridge candidate plane to a same-color hole endpoint. Increase for noisy or segmented bridge faces.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeFaceAxisDistanceDiameterMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.5</span>  </td><td class="markdownTableBodyNone">Diameter multiplier  </td><td class="markdownTableBodyNone">Maximum allowed bridge-face axis distance relative to hole diameter. Larger values allow bridge candidates farther from the hole axis.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeFaceRadialMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Extra radial margin for bridge-face filtering. Increase if valid bridge faces are missed.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeFaceSideTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Signed side tolerance for classifying holes above or below a bridge candidate face. Larger values are more forgiving around the plane.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_AutoIgnoreSingleSidedShelfFaces</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Legacy behavior that auto-ignores same-color planar shelf faces with a hole on only one side. Keeping this <span class="tt">False</span> reduces top/bottom false positives.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_EnableSingleFaceJoinedHoles</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Detects joined-hole segments where cylindrical faces are separated by planar side faces. Useful for slots and joined bores.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinSingleFaceHoleCoverageDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">120.0</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum circular arc coverage for automatic single-face joined-hole segments. Higher values require more complete cylindrical arcs.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SeparatedCylinderMinAxisOffsetDiameterMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.15</span>  </td><td class="markdownTableBodyNone">Diameter multiplier  </td><td class="markdownTableBodyNone">Minimum center-axis separation before similar cylinders are treated as joined holes. Lower values can merge nearly concentric features.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SeparatedCylinderMaxAxisOffsetDiameterMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.5</span>  </td><td class="markdownTableBodyNone">Diameter multiplier  </td><td class="markdownTableBodyNone">Maximum center-axis separation for paired joined-hole segments. Higher values allow wider joined patterns.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SeparatedCylinderPlanarFaceCount</span>  </td><td class="markdownTableBodyNone"><span class="tt">2</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of planar separator faces required between two similar cylindrical hole segments. Increase for stricter joined-hole detection.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_SeparatorFaceTouchTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.75</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance tolerance for matching separator planar faces to neighboring cylindrical faces. Increase for imperfect CAD seams.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Hole_TopMargin_mm</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Safety margin below the top edge of a hole to prevent the probe/tool from slipping at entry. Larger margins avoid edges but reduce measured depth range.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Hole_BottomMargin_mm</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Safety margin above the bottom of a hole. Larger values prevent bottom collision but can skip near-bottom measurement.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_EnableConcaveIsolatedSingleFaceHoles</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables detection of isolated concave single-face cylindrical holes (e.g. partial bores inside concave pockets). Disable if concave features are triggering false-positive hole detection.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinConcaveIsolatedHoleCoverageDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">120</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum circular arc coverage for a concave isolated single-face hole to be detected. Higher values require more complete cylinder arcs.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MaxConcaveSideWallAngularSpanDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">45</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Maximum angular span of concave side walls surrounding an isolated hole. Higher values allow detection inside more open pocket geometry.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinConcaveSideWallSeparationDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">30</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum angular separation required between concave side wall faces. Prevents false positives from closely packed wall segments.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+SmartFit Shell Pathing</h1>
+<p>These settings drive shell-based interpolation and spline/geodesic path generation over offset shell surfaces.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">EnableShellInterpolation</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables interpolation over a generated shell surface instead of simple straight transitions. This improves collision avoidance around non-planar geometry.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ApproachOffsetDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Offset distance used for approach points in shell-based path logic. Larger values give more clearance but can make paths less direct.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">EnableShellBasedPathPlanner</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables the shell-based path planner. Disable only to force older/non-shell path behavior for comparison or troubleshooting.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">MaxInterpolationDistanceInNonPlanarSurfaces</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum interpolation distance used on non-planar surfaces. Smaller values produce denser, safer interpolation and more waypoints.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_SplineSmoothFactor</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.4</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Controls smoothing strength applied to shell path splines. Higher values smooth more aggressively but can drift from the raw route.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_SplineIterations</span>  </td><td class="markdownTableBodyNone"><span class="tt">2</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of smoothing passes for shell path splines. More iterations smooth more and take longer.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_DirectTravelThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">12.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance threshold under which direct travel can be accepted instead of inserting spline/geodesic route points.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_SplineInsertionThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">95.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance threshold above which spline insertion is considered. Lower values insert splines more often.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_SplineSegmentLength</span>  </td><td class="markdownTableBodyNone"><span class="tt">25.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Target segment length for inserted spline paths. Smaller values create more waypoints and smoother motion.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_MaxSplinePasses</span>  </td><td class="markdownTableBodyNone"><span class="tt">3</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Maximum number of spline insertion passes. Raise for difficult routes; lower to cap path growth.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellPath_HoleAxisProjectionMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Margin used when projecting path points around hole axes. Increase if shell routes pass too close to hole edges.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+SDF Shell Mesh And Shell Offset</h1>
+<p>These values affect generated shell mesh smoothing and stitching.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">SdfShell_LaplacianPasses</span>  </td><td class="markdownTableBodyNone"><span class="tt">120</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of Laplacian smoothing passes applied by the SDF shell generator. More passes smooth more and can remove detail.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">SdfShell_LaplacianSmoothFactor</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.6</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Strength of each Laplacian smoothing pass. Higher values smooth faster but can distort the shell.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellOffset_EdgeMatchTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance for matching shell offset edges during stitching. Increase for imperfect meshes; decrease for stricter joins.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ShellOffset_WeldVertices</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Welds matching shell vertices during stitching. Keep enabled unless vertex welding introduces unwanted topology changes.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ShellOffset_FilletRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fillet radius used when <span class="tt">OffsetShell_StitchingMode</span> is <span class="tt">Fillet</span>. Larger radii produce broader blends and are more likely to fail on complex geometry.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+Path Generation Logging And Ordering</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / options  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathGeneration_EnableVerbose</span>  </td><td class="markdownTableBodyNone"><span class="tt">false</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables additional debug logging during path generation. Useful for diagnosing planning behavior; disable for normal operation.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathGeneration_EnableAutomaticNormalCheck</span>  </td><td class="markdownTableBodyNone"><span class="tt">true</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables automatic checking/flipping of inward-pointing normals where implemented. This helps avoid approach vectors pointing into the part.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathGeneration_EnableManualNormalControl</span>  </td><td class="markdownTableBodyNone"><span class="tt">true</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables manual normal flip/control through UI context actions. Useful when automatic normal handling is insufficient.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathGeneration_FaceOrderingStrategy</span>  </td><td class="markdownTableBodyNone"><span class="tt">Proximity</span>  </td><td class="markdownTableBodyNone"><span class="tt">Proximity</span> or <span class="tt">Adjacency</span>  </td><td class="markdownTableBodyNone">Selects face ordering for path generation. <span class="tt">Proximity</span> visits closer faces first; <span class="tt">Adjacency</span> favors connected faces.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbePathPlanningMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">ByColor</span>  </td><td class="markdownTableBodyNone"><span class="tt">ByColor</span> or <span class="tt">ByPart</span>  </td><td class="markdownTableBodyNone">Controls runtime simulation/program sequencing for probe paths. <span class="tt">ByColor</span> groups by selected color/tool logic; <span class="tt">ByPart</span> sequences by part.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+Jump Path Planning</h1>
+<p>Jump settings govern movement between measurement regions and optional collision validation for jump moves.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">EnableJumpCollisionValidation</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables collision checks during jump moves. It can be significantly slower, so enable only when jump collision safety is required.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">JumpCollisionSampleCount</span>  </td><td class="markdownTableBodyNone"><span class="tt">10</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of sample points checked along each jump segment. Higher values improve collision detection and cost more.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">JumpOffsetIncrementOnCollision</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Outward offset added after a jump collision is detected. Larger increments escape faster but can overshoot compact safe paths.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">MaxJumpOffsetAttempts</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Maximum attempts to find a collision-free jump by increasing offset. Raise for complex parts; lower to cap processing time.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">EdgeProximityThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum distance from an edge to reuse an existing approach point as a jump point. Larger values reuse more points; smaller values are stricter.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">MaxWaypointsPerSegment</span>  </td><td class="markdownTableBodyNone"><span class="tt">50</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Maximum waypoints generated between two measurements. Prevents runaway waypoint growth on long or complex jumps.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MinWaypointSpacing</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum spacing between consecutive jump waypoints. Smaller values create smoother, denser jumps.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">DescentSteps</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of discrete ascent/descent points used when moving toward or away from a measurement. More steps are smoother and longer.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+Path Visualization Performance</h1>
+<p>These settings keep the viewer responsive when paths contain many points.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathVisualization_CompactModeTotalPointThreshold</span>  </td><td class="markdownTableBodyNone"><span class="tt">5000</span>  </td><td class="markdownTableBodyNone">Total point count  </td><td class="markdownTableBodyNone">Above this total path size, paths use compact rendering to protect performance and part visibility.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathVisualization_MaxTotalWaypointMarkers</span>  </td><td class="markdownTableBodyNone"><span class="tt">3000</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Total waypoint marker budget distributed across paths in compact mode. Lower values reduce clutter and draw cost.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">PathVisualization_MaxInteractiveSegmentsPerPath</span>  </td><td class="markdownTableBodyNone"><span class="tt">1500</span>  </td><td class="markdownTableBodyNone">Count per path  </td><td class="markdownTableBodyNone">Above this, the app renders a compact polyline instead of one selectable entity per segment. This preserves performance for large paths.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">PathVisualization_MaxInteractiveWaypointMarkersPerPath</span>  </td><td class="markdownTableBodyNone"><span class="tt">1500</span>  </td><td class="markdownTableBodyNone">Count per path  </td><td class="markdownTableBodyNone">Above this, waypoint marker meshes are sampled while full path data remains intact. Lower values improve rendering speed.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+Simulation And Camera</h1>
+<p>These values control probe/scanner simulation geometry, camera following behavior, collision visualization, and animation speed.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Current value  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_HideApproachPoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, hides approach point markers during simulation playback to reduce visual clutter. Enable only when inspecting individual approach positions.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_HideMeasurePoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, hides measurement point markers during simulation playback to reduce visual clutter.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_HidePathLines</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, hides path line geometry during simulation playback for a cleaner view of tool motion. Disable to see the full path while the simulation plays.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_ProbeRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Radius of the fallback simulated probe cylinder. This affects visualization and collision display, not physical tool configuration when a real tool model is active.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_ProbeHeight</span>  </td><td class="markdownTableBodyNone"><span class="tt">15.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Height of the fallback simulated probe cylinder. Increase for visibility; keep representative of the tool envelope when using fallback geometry.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_DefaultToolSizeMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.5</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Scales only the fallback <span class="tt">DefaultTool</span> probe cylinder size. It does not scale imported physical tool models.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_EnableProbeRotation</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Rotates the simulated probe to align with path normals. Disable to keep a fixed probe orientation for debugging.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraFollowEnabled</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables camera follow during simulation. When disabled, users control the camera manually.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraFollowMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">SphericalOrbital</span>  </td><td class="markdownTableBodyNone"><span class="tt">SphericalOrbital</span> or <span class="tt">ProbeFixation</span>  </td><td class="markdownTableBodyNone">Selects camera follow behavior. <span class="tt">SphericalOrbital</span> orbits around the part center; <span class="tt">ProbeFixation</span> keeps the probe centered.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraFollowDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">150.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Base camera distance from the part bounding box in spherical mode or from the probe in probe-fixation mode.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraOrbitalOffset</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Additional offset added to the computed follow distance. The UI slider can adjust this value within min/max limits.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraOrbitalOffsetMin</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Minimum allowed camera orbital offset in the UI. Use this to prevent users from moving the camera too close.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraOrbitalOffsetMax</span>  </td><td class="markdownTableBodyNone"><span class="tt">500.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Maximum allowed camera orbital offset in the UI. Increase for very large parts.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraViewMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">30.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Extra margin used when framing the view. Larger values keep more empty space around the part/tool.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraBoundingBoxDistance</span>  </td><td class="markdownTableBodyNone"><span class="tt">150.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Camera distance used for bounding-box framing calculations. Increase for larger parts or wide views.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CameraFollowOrbitSpeedMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Multiplies camera orbit/follow speed. Values above 1.0 rotate faster; values below 1.0 move more slowly.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CollisionDetectionEnabled</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Enables collision detection visualization during simulation. Disable for faster playback if collision markers are not needed.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_CollisionMarkerSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">2.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Size of collision markers shown during simulation. Increase if markers are hard to see.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_CollisionTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Probe collision tolerance as an outward normal offset. The nominal pose is checked for real contact/intersection first; when this value is greater than <span class="tt">0.0</span>, the tool is moved by <span class="tt">+Normal * tolerance</span> and the collision is ignored only if that offset pose clears.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_SamplingMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">All</span>  </td><td class="markdownTableBodyNone"><span class="tt">All</span>, <span class="tt">Percentage</span>, <span class="tt">DistanceMm</span>, or <span class="tt">Count</span>  </td><td class="markdownTableBodyNone">Collision sampling mode during probe collision visualization. <span class="tt">All</span> checks exactly every defined point without interpolating; <span class="tt">Percentage</span> samples at fixed % increments along the path; <span class="tt">DistanceMm</span> samples every configured distance in millimeters; <span class="tt">Count</span> uses a fixed sample count.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_PercentIncrement</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Percent  </td><td class="markdownTableBodyNone">Percentage increment between samples when <span class="tt">ProbeCollision_SamplingMode</span> is <span class="tt">Percentage</span>. Smaller values add more samples and improve accuracy at more cost.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_TotalSampleCount</span>  </td><td class="markdownTableBodyNone"><span class="tt">101</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Total number of sample points along the path when <span class="tt">ProbeCollision_SamplingMode</span> is <span class="tt">Count</span>. Higher = more accurate collision check.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_DistanceStepMm</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Distance between generated collision snapshots when <span class="tt">ProbeCollision_SamplingMode</span> is <span class="tt">DistanceMm</span>. Start and end of each trajectory are always included.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_ShowToolVisually</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, renders the tool geometry during probe collision visualization. Disable to simplify the display.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_ShowPathLines</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, renders path lines during probe collision visualization. Disable to focus only on collision markers.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_ShowApproachPoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, shows approach point markers during probe collision visualization. Enable for detailed path inspection.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_ShowMeasurePoints</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, shows measurement point markers during probe collision visualization. Enable for detailed path inspection.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_MarkCollisionSpots</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">When <span class="tt">True</span>, places collision markers at detected collision locations during probe collision visualization.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ProbeCollision_VisualPoseDelayMs</span>  </td><td class="markdownTableBodyNone"><span class="tt">120</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Delay to keep the visible probe at each checked collision sample pose before the worker checks that pose. Increase for easier inspection; decrease for faster validation.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_TimerIntervalMs</span>  </td><td class="markdownTableBodyNone"><span class="tt">15</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Simulation timer interval. Lower values update more often and look smoother, but increase UI work.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_BaseSpeedMmPerTick</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units per tick  </td><td class="markdownTableBodyNone">Base simulation movement speed at 1.0x. Lower values produce slower, smoother playback.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_ScannerSpeedMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Speed multiplier applied to scanner path simulation. Increase to play scanner paths faster.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_ProbeSpeedMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.1</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Speed multiplier applied to probe path simulation. Increase to play probe paths faster.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">Simulation_RotationSmoothing</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Factor  </td><td class="markdownTableBodyNone">Rotation smoothing factor. <span class="tt">1.0</span> snaps instantly to target orientation; lower values such as <span class="tt">0.3</span> rotate more gradually.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+Optional Code-Supported Settings Not Currently In App.config</h1>
+<p>The code reads the following keys with fallback defaults, but they are not present in the current <span class="tt">App.config</span>. Add them only when you need to override the fallback behavior.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Fallback  </th><th class="markdownTableHeadNone">Type / unit  </th><th class="markdownTableHeadNone">What it controls  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">Scanner_ScanBottomFace</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Allows the spherical scanner planner to include nadir/bottom-face scan positions when <span class="tt">Scanner_AvoidBottomFace</span> is not active. Do not enable when fixtures or reach constraints make underside scanning unsafe.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">IgnoredFaceStripesDensity</span>  </td><td class="markdownTableBodyNone"><span class="tt">8</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Density used by ignored-face stripe rendering. Higher values create more stripes; lower values make a simpler pattern.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_BridgeAxialTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.5</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Additional axial tolerance used by the hole detector when checking bridge alignment. Increase for segmented/noisy imported geometry.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_CylinderFitTolerance</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.75</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Tolerance for fitting cylindrical hole geometry. Larger values accept imperfect cylinders but increase false-positive risk.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinCircularCoverageDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">240.0</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum circular coverage for general cylindrical hole recognition. Higher values require more complete cylinder arcs before detection.  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+Tuning Profiles</h1>
+<p>Use these as starting points rather than fixed recipes.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Goal  </th><th class="markdownTableHeadNone">Main settings to adjust  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Higher inspection accuracy  </td><td class="markdownTableBodyNone">Lower <span class="tt">PathPlanning_MinPointDistance</span>, <span class="tt">PathPlanning_EdgePointMinDistance</span>, and <span class="tt">PathPlanning_GridSpacing</span>; keep <span class="tt">PathPlanning_PreserveCorners</span>, <span class="tt">PathPlanning_ValidateControlPointBoundaries</span>, and <span class="tt">PathPlanning_EnableGridGeneration</span> enabled.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Faster probe paths  </td><td class="markdownTableBodyNone">Raise point spacing values, reduce grid generation density, and keep costly validation settings such as <span class="tt">PathPlanning_EnableCollisionValidation</span> and <span class="tt">PathPlanning_EnableSegmentCollisionValidation</span> disabled unless required.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Better scanner coverage  </td><td class="markdownTableBodyNone">Raise <span class="tt">Scanner_MinCoveragePercent</span>, <span class="tt">Scanner_FibonacciSamples</span>, and candidate amplification values; keep raycasting and verification enabled. Expect slower generation.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Faster scanner planning  </td><td class="markdownTableBodyNone">Lower <span class="tt">Scanner_FibonacciSamples</span>, reduce amplification, increase verification grid spacing, and keep early-exit/range-skipping options enabled.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Safer motion around complex parts  </td><td class="markdownTableBodyNone">Increase approach/retract offsets and safety margins, enable shell-based planning, and consider enabling segment or jump collision validation after testing the performance impact.  </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

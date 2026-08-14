@@ -1,7 +1,42 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.EyeshotGeometryUtils.ProjectPointToMesh" name="HirEV_SmartFitSystemsApp.Utilities.EyeshotGeometryUtils.ProjectPointToMesh">
-<area shape="rect" id="Node000001" title="Projects a point onto a pre&#45;calculated mesh by finding the closest point on its triangulation." alt="" coords="280,47,485,105"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="5,5,232,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,58,232,55,232,50,267,57"/>
-<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a22e15082efcad2157c43477e7ffd2d7a" title="Handles mouse movement over the Eyeshot control." alt="" coords="5,88,232,147"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,95,233,102,232,97,267,94"/>
+<area shape="rect" id="Node000001" title="Projects a point onto a pre&#45;calculated mesh by finding the closest point on its triangulation." alt="" coords="1543,28,1748,86"/>
+<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="31,193,257,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1525,30,1495,28,1383,15,1296,10,1096,9,784,9,698,15,611,30,526,52,445,80,301,141,198,195,194,191,299,136,443,75,524,47,610,25,697,9,784,4,1096,4,1296,4,1384,10,1495,22,1530,30"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a22e15082efcad2157c43477e7ffd2d7a" title="Handles mouse movement over the Eyeshot control." alt="" coords="672,126,899,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1525,43,1410,38,1271,38,1197,43,1122,52,1048,66,977,85,963,91,954,99,930,117,900,129,898,124,927,112,950,95,960,87,975,80,1047,60,1121,46,1196,37,1270,33,1410,33,1530,42"/>
+<area shape="rect" id="Node000004" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0600263a42b08f8bdb575b4f3d41b8c4" title="Projects a point onto the exact parametric surface of a trimmed BRep face." alt="" coords="1262,218,1495,277"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1593,94,1422,220,1420,215,1588,97"/>
+<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a38e617b5c9e07760529c220760f3bfec" title="Generates grid&#45;based measurement points for faces using shared GridPointGenerator utility...." alt="" coords="993,260,1197,318"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1244,268,1198,277,1196,272,1249,266"/>
+<area shape="rect" id="Node000007" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aaf0c290369f850445ec0139329c5e601" title="Projects a point onto a face surface, preferring the exact parametric BRep surface." alt="" coords="992,342,1198,401"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="1311,284,1215,333,1186,344,1184,339,1213,328,1306,286"/>
+<area shape="rect" id="Node000017" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac28962c07885d6d1a6b1d7277fbc41a9" title=" " alt="" coords="976,425,1214,484"/>
+<area shape="poly" id="edge19_Node000004_Node000017" title=" " alt="" coords="1348,288,1290,354,1254,387,1215,415,1194,427,1192,422,1212,411,1250,383,1286,351,1343,291"/>
+<area shape="rect" id="Node000018" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a93db353e64cf8a398fd55f70172574e2" title=" " alt="" coords="991,94,1199,153"/>
+<area shape="poly" id="edge20_Node000004_Node000018" title=" " alt="" coords="1306,211,1213,167,1185,156,1185,151,1215,163,1312,211"/>
+<area shape="rect" id="Node000019" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0bbed86fe7d5d827057817f6f1cf2537" title=" " alt="" coords="991,177,1199,236"/>
+<area shape="poly" id="edge21_Node000004_Node000019" title=" " alt="" coords="1244,229,1200,224,1199,219,1249,228"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0657dafa322ed158bd5eba4f74bab736" title="Populates measurement points for all faces using grid generation. This method should be called after ..." alt="" coords="685,44,886,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="979,252,974,250,961,232,954,215,950,181,946,148,939,132,926,116,908,102,887,92,887,87,910,98,930,112,944,129,951,146,955,180,959,214,966,230,978,246,984,253"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="979,338,801,292,698,269,595,250,507,239,418,232,258,225,257,220,418,227,507,234,595,245,699,264,802,287,985,337"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="977,333,974,332,961,316,954,299,950,267,945,236,939,221,927,206,899,186,900,180,930,202,943,218,951,234,955,267,959,298,966,313,978,329,983,334"/>
+<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3ef3e62713fe50f815f88b2aeca03bd9" title="Projects a point to the closest valid point on the face surface using mesh triangulation." alt="" coords="675,504,896,562"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="991,407,978,415,897,460,829,506,827,501,895,456,975,411,986,408"/>
+<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a01f70add08f616cd274af5d6ee27f7da" title="Executes the StopManipulating method." alt="" coords="643,350,928,393"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="974,372,929,374,929,369,980,371"/>
+<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a966f279b5ccb819837edacb3d0c7bdea" title="Validates and fixes control points for a face, projecting outside points to boundaries...." alt="" coords="365,590,561,649"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="663,566,562,596,561,591,658,567"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="36,590,252,649"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="346,620,252,622,252,617,352,619"/>
+<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aae688714e6a78ecf619242bd12c2aabe" title="Executes the HandleDesignControlMouseUp method." alt="" coords="350,425,576,484"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="682,398,577,428,575,423,687,397"/>
+<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af523491bc508b8423c6716c41e22f456" title="Handles key down events on the parent window." alt="" coords="352,508,574,566"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="746,402,678,452,596,498,569,510,567,505,594,493,675,448,742,404"/>
+<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8c9b77b076a85bcd5db14d78eaa8bd9e" title="Executes the SaveNewPosition method." alt="" coords="342,342,584,401"/>
+<area shape="poly" id="edge16_Node000011_Node000015" title=" " alt="" coords="625,372,585,374,584,369,630,371"/>
+<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a21d28279851649daa933d90ae06e1ce0" title="Executes the ShowCustomDraggingContextMenu method." alt="" coords="331,260,595,318"/>
+<area shape="poly" id="edge17_Node000011_Node000016" title=" " alt="" coords="682,347,580,322,580,316,688,346"/>
+<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,516,283,558"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="334,538,284,540,283,534,339,536"/>
+<area shape="poly" id="edge18_Node000016_Node000002" title=" " alt="" coords="313,259,258,249,257,244,318,257"/>
 </map>

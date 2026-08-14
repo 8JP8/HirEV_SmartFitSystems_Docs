@@ -1,31 +1,46 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.PathManager.ExportSdfShellCache" name="HirEV_SmartFitSystemsApp.Utilities.PathManager.ExportSdfShellCache">
-<area shape="rect" id="Node000001" title="Executes the ExportSdfShellCache method." alt="" coords="5,161,214,220"/>
-<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a010371de2625e6465068689b631d1e03" title="Executes the CanReuseCachedShellMesh method." alt="" coords="282,120,494,179"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,173,269,166,265,169,215,178"/>
-<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a66ac2039cb477a667204bda5ffd300ce" title="Executes the TraceSdfShellCache method." alt="" coords="875,28,1079,87"/>
-<area shape="poly" id="edge15_Node000001_Node000006" title=" " alt="" coords="157,159,207,131,261,105,343,71,408,47,475,29,563,13,629,5,681,3,800,13,863,26,858,27,799,19,681,8,629,10,563,19,476,34,410,52,345,76,263,110,209,136,161,163"/>
-<area shape="rect" id="Node000009" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html#a3535ebd827bcec0865f1f9adc824fb57" title="Creates a deep copy clone of the validation input object." alt="" coords="264,203,513,261"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="213,203,251,210,246,212,215,209"/>
-<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7861240999f68ef6caa3958bd3efca24" title="Executes the ModelFingerprintsMatchLastBuild method." alt="" coords="262,311,515,369"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="165,218,263,271,320,303,315,303,260,276,165,223"/>
-<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae220ecc4f141fc794d6c3449eb6a4494" title="Executes the CachedModelFilesStillMatch method." alt="" coords="566,228,796,287"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,177,516,188,564,213,580,222,575,222,562,218,514,193,486,182"/>
-<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a523e84213f63fd82549a8917ecae99da" title="Executes the FailShellCacheReuse method." alt="" coords="581,28,781,87"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="483,117,573,90,569,93,485,122"/>
-<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="494,137,639,120,799,96,863,85,858,87,800,101,640,125,496,142"/>
-<area shape="rect" id="Node000007" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a29c3561325ad6b84913aa693b549e799" title="Executes the SameIndexSet method." alt="" coords="563,161,799,204"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="494,159,550,167,545,168,495,164"/>
-<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="847,228,1107,287"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="796,255,834,257,829,258,797,260"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="781,55,863,57,857,58,782,60"/>
-<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a10de8b8f794625aba0c903c0bba7010c" title="Executes the NormalizeIndices method." alt="" coords="872,145,1082,204"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="799,177,860,177,854,178,800,182"/>
-<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad8ba7b6e3416737224d25fe8c6449d14" title="Executes the PathsEqual method." alt="" coords="572,393,790,436"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="506,367,583,389,577,389,506,372"/>
-<area shape="rect" id="Node000013" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a51dc43894e85dedb12057b6f10887985" title="Executes the SameShellTransform method." alt="" coords="574,311,788,369"/>
-<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="515,337,562,340,556,340,515,343"/>
-<area shape="rect" id="Node000012" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a38b9d7fa57a6494bd6a1b8aca9254127" title="Executes the NormalizePath method." alt="" coords="859,393,1095,436"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="790,412,846,415,841,415,790,417"/>
-<area shape="rect" id="Node000014" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa5787016681dcfae8c15fa4bc6b7a69d" title="Executes the NormalizeShellTransformArray method." alt="" coords="872,311,1082,369"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="788,337,860,340,854,340,788,343"/>
+<area shape="rect" id="Node000001" title="Executes the ExportSdfShellCache method." alt="" coords="5,479,214,537"/>
+<area shape="rect" id="Node000002" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a010371de2625e6465068689b631d1e03" title="Executes the CanReuseCachedShellMesh method." alt="" coords="280,287,492,345"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,476,331,352,330,357,155,480"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a66ac2039cb477a667204bda5ffd300ce" title="Executes the TraceSdfShellCache method." alt="" coords="888,387,1092,445"/>
+<area shape="poly" id="edge25_Node000001_Node000010" title=" " alt="" coords="214,503,485,489,649,475,812,455,876,445,871,446,813,460,649,480,486,495,215,508"/>
+<area shape="rect" id="Node000014" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7861240999f68ef6caa3958bd3efca24" title=" " alt="" coords="559,520,812,579"/>
+<area shape="poly" id="edge24_Node000001_Node000014" title=" " alt="" coords="214,513,545,537,542,542,214,518"/>
+<area shape="rect" id="Node000019" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html#a3535ebd827bcec0865f1f9adc824fb57" title="Creates a deep copy clone of the validation input object." alt="" coords="262,571,511,629"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="201,535,284,565,279,566,200,541"/>
+<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae220ecc4f141fc794d6c3449eb6a4494" title="Executes the CachedModelFilesStillMatch method." alt="" coords="570,88,801,147"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,284,473,220,514,186,558,156,570,152,566,155,560,161,517,190,477,224,414,288"/>
+<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a2996e262d2d42999cde41ae6d29a63b6" title="Executes the CollectLivePartBrepsFromDesign method." alt="" coords="578,253,793,312"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="492,302,565,295,560,297,494,307"/>
+<area shape="poly" id="edge22_Node000002_Node000010" title=" " alt="" coords="493,325,645,345,813,372,876,387,871,388,812,377,644,350,493,330"/>
+<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad1eed30acdd9974fe9bbee20d408e4e1" title="Executes the CollectModelFileFingerprintsFromDesign method." alt="" coords="572,171,799,229"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="451,284,558,239,578,234,574,236,560,244,454,288"/>
+<area shape="rect" id="Node000013" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a523e84213f63fd82549a8917ecae99da" title="Executes the FailShellCacheReuse method." alt="" coords="586,387,786,445"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="476,343,584,381,579,382,476,349"/>
+<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="423,343,561,455,633,511,628,511,557,459,422,348"/>
+<area shape="rect" id="Node000017" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a29c3561325ad6b84913aa693b549e799" title="Executes the SameIndexSet method." alt="" coords="568,17,804,60"/>
+<area shape="poly" id="edge20_Node000002_Node000017" title=" " alt="" coords="399,284,422,238,457,181,503,123,529,97,557,74,575,65,571,69,561,78,532,101,507,127,462,184,427,241,403,288"/>
+<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="860,88,1120,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="801,115,848,117,842,118,802,120"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae0a7504fece63ad570aee0891596ffc6" title="Executes the IsPartEntityForShellCache method." alt="" coords="880,253,1100,312"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="793,280,867,282,862,283,794,285"/>
+<area shape="rect" id="Node000009" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b" title="Attempts to convert an entity to a Brep if it supports the operation." alt="" coords="1183,328,1388,387"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="794,308,861,321,1021,340,1170,353,1165,353,1020,346,860,327,794,314"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="775,310,814,328,838,347,862,366,887,380,881,380,859,370,835,351,811,333,775,315"/>
+<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a242a2df0a3e69c7e120d9332e3a6dc20" title="Determines whether a given Eyeshot entity is a visual base avoidance plane or label." alt="" coords="1173,163,1399,221"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1087,250,1176,226,1171,227,1089,255"/>
+<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#add85c8b930be9316c13a0a5495f75095" title="Executes the IsShellCacheSystemLayer method." alt="" coords="1172,245,1400,304"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1100,277,1159,278,1154,279,1100,282"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="1100,308,1171,328,1165,328,1100,313"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="795,168,867,150,862,152,797,173"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="796,227,868,248,862,249,796,233"/>
+<area shape="rect" id="Node000012" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa5787016681dcfae8c15fa4bc6b7a69d" title="Executes the NormalizeShellTransformArray method." alt="" coords="885,171,1095,229"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="799,197,872,199,867,201,800,203"/>
+<area shape="poly" id="edge16_Node000013_Node000010" title=" " alt="" coords="786,413,875,416,870,416,786,419"/>
+<area shape="rect" id="Node000015" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad8ba7b6e3416737224d25fe8c6449d14" title="Executes the PathsEqual method." alt="" coords="881,528,1099,571"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="813,547,868,549,863,549,813,552"/>
+<area shape="rect" id="Node000016" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a38b9d7fa57a6494bd6a1b8aca9254127" title="Executes the NormalizePath method." alt="" coords="1168,528,1404,571"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="1099,547,1155,549,1150,549,1099,552"/>
+<area shape="rect" id="Node000018" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a10de8b8f794625aba0c903c0bba7010c" title="Executes the NormalizeIndices method." alt="" coords="885,5,1095,64"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="804,35,873,35,867,37,805,40"/>
 </map>

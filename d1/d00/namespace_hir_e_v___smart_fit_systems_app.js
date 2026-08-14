@@ -13,6 +13,7 @@ var namespace_hir_e_v___smart_fit_systems_app =
     [ "ScannerConfigurationDialog", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog" ],
     [ "About_SidePanel", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_about___side_panel.html", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_about___side_panel" ],
     [ "LogNode", "da/d02/class_hir_e_v___smart_fit_systems_app_1_1_log_node.html", "da/d02/class_hir_e_v___smart_fit_systems_app_1_1_log_node" ],
+    [ "PathTreeViewNode", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_path_tree_view_node.html", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_path_tree_view_node" ],
     [ "Measuring_SidePanel", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel" ],
     [ "ColorToolItem", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item" ],
     [ "Planning_SidePanel", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel" ],

@@ -6,6 +6,7 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities =
     [ "PathPoint", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point" ],
     [ "ColorPath", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path" ],
     [ "ControlPointFilterConfig", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config" ],
+    [ "WaypointReference", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_reference.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_reference" ],
     [ "WaypointData", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_data.html", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_data" ],
     [ "PathSegmentData", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data.html", "df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data" ],
     [ "BridgePathConsumer", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path_consumer.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path_consumer" ],
@@ -13,7 +14,9 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities =
     [ "PathManager", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager" ],
     [ "SimulationEventArgs", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args.html", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args" ],
     [ "ColorGroupEventArgs", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group_event_args.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group_event_args" ],
+    [ "PathGenerationLogEventArgs", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_log_event_args.html", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_log_event_args" ],
     [ "PathGenerationProgressEventArgs", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args.html", "d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args" ],
+    [ "ProbeCameraPoseEventArgs", "de/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_probe_camera_pose_event_args.html", "de/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_probe_camera_pose_event_args" ],
     [ "AntColonyOptimization", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization.html", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ant_colony_optimization" ],
     [ "CollisionAvoidanceAlgorithm", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm" ],
     [ "RRTStarPathfinder", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder" ],
@@ -56,6 +59,28 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities =
     [ "ActionUndoCommand", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command" ],
     [ "ColorGroup", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_group" ],
     [ "XmlExportUtils", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils.html", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils" ],
+    [ "PathGenerationLogSeverity", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86", [
+      [ "Info", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86a4059b0251f66a18cb56f544728796875", null ],
+      [ "Warning", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86a0eaadb4fcb48a0a0ed7bc9868be9fbaa", null ],
+      [ "Error", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86a902b0d55fddef6f8d651fe1035b7d4bd", null ],
+      [ "Completed", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86a07ca5050e697392c9ed47e6453f1453f", null ],
+      [ "Cancelled", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a2086ec85a99510e5682b88df11218a86aa149e85a44aeec9140e92733d9ed694e", null ]
+    ] ],
+    [ "PathGenerationStage", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3", [
+      [ "Initializing", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a32b169f72b293ef80d35435e9894f8e2", null ],
+      [ "FaceAnalysis", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a659a5154ba9b6ee66cf95e5db5cfb9cf", null ],
+      [ "FaceFiltering", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3afaf81557efda799613bc92eb199d8f87", null ],
+      [ "Grouping", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a0940b48511da784b3c7213afa0c0eade", null ],
+      [ "ShellGeneration", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3ab4821f574e79af9176a65a2db4be6c3b", null ],
+      [ "ApproachGeneration", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a124e9a75feda2ea0dbba3814a776982a", null ],
+      [ "NavigationGraph", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a103d04f98b18810facfecad8bbd2ea1c", null ],
+      [ "Projection", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a2121e8333850befac5412d69d52306f7", null ],
+      [ "ColorRouting", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3abaeeebb60e39ab5fc06a788c7450c6b3", null ],
+      [ "Finalizing", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3ab0cd65e5a3b82924ff47c1d319b8b37d", null ],
+      [ "Completed", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a07ca5050e697392c9ed47e6453f1453f", null ],
+      [ "Cancelled", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3aa149e85a44aeec9140e92733d9ed694e", null ],
+      [ "Failed", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3ad7c8c85bf79bbe1b7188497c32c3b0ca", null ]
+    ] ],
     [ "ProbePathPlanningMode", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a7d4e7f10a0c14282ffa90f738a99f3d7", [
       [ "ByColor", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a7d4e7f10a0c14282ffa90f738a99f3d7adf231c8643a1875fd70d9496e3597e4d", null ],
       [ "ByPart", "d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#a7d4e7f10a0c14282ffa90f738a99f3d7a4d180f3539670c678ae3b6e8da2b0b45", null ]

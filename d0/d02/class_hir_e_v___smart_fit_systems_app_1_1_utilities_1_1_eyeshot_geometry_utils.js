@@ -22,6 +22,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_uti
     [ "InferFaceType", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6c266be89cf022b71e5ae65aa9f7e3e0", null ],
     [ "IntersectWithBrep", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a41774b3df73217a630ada8baf7600330", null ],
     [ "IntersectWithMesh", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#ae2e6baa1499f867dc53d221807458f21", null ],
+    [ "IsFiniteCoordinate", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a38244e63d538b927fd17fd8fc238133b", null ],
     [ "IsPointNearExisting", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a96247a747ccfe0cf75bbd35e16e60c83", null ],
     [ "IsPointOnFaceSurface", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#ab5632b2062af6f012c492b5ea65a5832", null ],
     [ "IsPointTooCloseToEdge", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a07db6c1ba718cfdc66546515172f3fe3", null ],
@@ -32,5 +33,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_uti
     [ "ProjectPointToMesh", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a9c6fe08716a9958431b0d921316003c9", null ],
     [ "RayTriangleIntersect", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a956914d5583c84740b29b73114590faf", null ],
     [ "TryConvertToBrep", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b", null ],
-    [ "TryProjectPointToMesh", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a33d988ad9dd03923ed75ef612c77af76", null ]
+    [ "TryProjectPointToExactFaceSurface", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0600263a42b08f8bdb575b4f3d41b8c4", null ],
+    [ "TryProjectPointToMesh", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a33d988ad9dd03923ed75ef612c77af76", null ],
+    [ "_convertToBrepMethodCache", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a74c622c4773368e6952e982eb0614bc5", null ]
 ];

@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/DTOs/PathExportModels.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d0/d01/_path_export_models_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PathExportModels.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d01/_path_export_models_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Text.Json.Serialization;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Xml.Serialization;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    [XmlRoot(<span class="stringliteral">&quot;PathExport&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html">PathExportDto</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        [JsonPropertyName(<span class="stringliteral">&quot;points&quot;</span>)]</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        [XmlArray(<span class="stringliteral">&quot;Points&quot;</span>)]</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        [XmlArrayItem(<span class="stringliteral">&quot;Point&quot;</span>)]</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#ae0eed9830a899dfb93594ef55ebc16b4">   13</a></span>        <span class="keyword">public</span> List&lt;PathPointDto&gt; <a class="code hl_property" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#ae0eed9830a899dfb93594ef55ebc16b4">Points</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;PathPointDto&gt;();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        [JsonPropertyName(<span class="stringliteral">&quot;sequences&quot;</span>)]</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        [XmlArray(<span class="stringliteral">&quot;Sequences&quot;</span>)]</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        [XmlArrayItem(<span class="stringliteral">&quot;Sequence&quot;</span>)]</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#aedc5f344ea96d9fca10e49b3a0afc28a">   18</a></span>        <span class="keyword">public</span> List&lt;PathSequenceDto&gt; <a class="code hl_property" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#aedc5f344ea96d9fca10e49b3a0afc28a">Sequences</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;PathSequenceDto&gt;();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        [JsonPropertyName(<span class="stringliteral">&quot;collisions&quot;</span>)]</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        [XmlArray(<span class="stringliteral">&quot;Collisions&quot;</span>)]</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        [XmlArrayItem(<span class="stringliteral">&quot;Collision&quot;</span>)]</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#a430ba8f744506e241b86393a8d019dc5">   23</a></span>        <span class="keyword">public</span> List&lt;PathCollisionDto&gt; <a class="code hl_property" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#a430ba8f744506e241b86393a8d019dc5">Collisions</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;PathCollisionDto&gt;();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html">   26</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html">PathPointDto</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        [JsonPropertyName(<span class="stringliteral">&quot;id&quot;</span>)]</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        [XmlAttribute(<span class="stringliteral">&quot;Id&quot;</span>)]</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#af50e733de36d945ec9f74ead049d3ddf">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#af50e733de36d945ec9f74ead049d3ddf">Id</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        [JsonPropertyName(<span class="stringliteral">&quot;x&quot;</span>)]</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        [XmlAttribute(<span class="stringliteral">&quot;X&quot;</span>)]</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6a19ecd105472897ef49e9e7d7059012">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6a19ecd105472897ef49e9e7d7059012">X</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        [JsonPropertyName(<span class="stringliteral">&quot;y&quot;</span>)]</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        [XmlAttribute(<span class="stringliteral">&quot;Y&quot;</span>)]</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a19444e2b4cc9ede53883f7961a9c0b7b">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a19444e2b4cc9ede53883f7961a9c0b7b">Y</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        [JsonPropertyName(<span class="stringliteral">&quot;z&quot;</span>)]</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        [XmlAttribute(<span class="stringliteral">&quot;Z&quot;</span>)]</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a425e19cfd2249cfac689a632dffd2ac9">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a425e19cfd2249cfac689a632dffd2ac9">Z</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        [JsonPropertyName(<span class="stringliteral">&quot;i&quot;</span>)]</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        [XmlAttribute(<span class="stringliteral">&quot;I&quot;</span>)]</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a16950da33e889c6f589d4fea3437b451">   46</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a16950da33e889c6f589d4fea3437b451">I</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        [JsonPropertyName(<span class="stringliteral">&quot;j&quot;</span>)]</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        [XmlAttribute(<span class="stringliteral">&quot;J&quot;</span>)]</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6529caf8c5050ac514a46e8cdcfec5fe">   50</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6529caf8c5050ac514a46e8cdcfec5fe">J</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        [JsonPropertyName(<span class="stringliteral">&quot;k&quot;</span>)]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        [XmlAttribute(<span class="stringliteral">&quot;K&quot;</span>)]</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ad6b5ac48498edb89c489343d37f2cf53">   54</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ad6b5ac48498edb89c489343d37f2cf53">K</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        [JsonPropertyName(<span class="stringliteral">&quot;colorRgb&quot;</span>)]</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        [XmlAttribute(<span class="stringliteral">&quot;ColorRgb&quot;</span>)]</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ab1e215bd3cc66da5962b04575f808188">   58</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ab1e215bd3cc66da5962b04575f808188">ColorRgb</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        [JsonPropertyName(<span class="stringliteral">&quot;colorName&quot;</span>)]</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        [XmlAttribute(<span class="stringliteral">&quot;ColorName&quot;</span>)]</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ade4a55142bc3c508107eaf27f4fdf990">   62</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ade4a55142bc3c508107eaf27f4fdf990">ColorName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        [JsonIgnore]</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        [XmlIgnore]</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a9851da460fcb35348a054a9c0b55cecd">   66</a></span>        <span class="keyword">public</span> devDept.Geometry.Point3D? <a class="code hl_property" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a9851da460fcb35348a054a9c0b55cecd">PointEntity</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html">   69</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html">PathSequenceDto</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        [JsonPropertyName(<span class="stringliteral">&quot;name&quot;</span>)]</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        [XmlAttribute(<span class="stringliteral">&quot;Name&quot;</span>)]</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a0069aabe307ae317d7cee46ec1b7f455">   73</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a0069aabe307ae317d7cee46ec1b7f455">Name</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        [JsonPropertyName(<span class="stringliteral">&quot;hasCollisions&quot;</span>)]</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        [XmlAttribute(<span class="stringliteral">&quot;HasCollisions&quot;</span>)]</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a144d5f258840b465def419d70c47bc92">   77</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a144d5f258840b465def419d70c47bc92">HasCollisions</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        [JsonPropertyName(<span class="stringliteral">&quot;segments&quot;</span>)]</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        [XmlArray(<span class="stringliteral">&quot;Segments&quot;</span>)]</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        [XmlArrayItem(<span class="stringliteral">&quot;Segment&quot;</span>)]</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a49d73ffca2f23fd8ade3f091b97984e2">   82</a></span>        <span class="keyword">public</span> List&lt;PathSegmentDto&gt; <a class="code hl_property" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a49d73ffca2f23fd8ade3f091b97984e2">Segments</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">new</span> List&lt;PathSegmentDto&gt;();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="};">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html">   85</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html">PathSegmentDto</a></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        [JsonPropertyName(<span class="stringliteral">&quot;globalId&quot;</span>)]</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        [XmlAttribute(<span class="stringliteral">&quot;GlobalId&quot;</span>)]</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a99e98a960e04f1b87501f3d815992465">   89</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a99e98a960e04f1b87501f3d815992465">GlobalId</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        [JsonPropertyName(<span class="stringliteral">&quot;localId&quot;</span>)]</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        [XmlAttribute(<span class="stringliteral">&quot;LocalId&quot;</span>)]</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a487b3bd43bd01ae900f431d9b7e0932a">   93</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a487b3bd43bd01ae900f431d9b7e0932a">LocalId</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        [JsonPropertyName(<span class="stringliteral">&quot;startPoint&quot;</span>)]</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        [XmlElement(<span class="stringliteral">&quot;StartPoint&quot;</span>)]</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ad45cd081c6baae5ab9678b16ed195a5f">   97</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html">PathPointDto</a>? <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ad45cd081c6baae5ab9678b16ed195a5f">StartPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        [JsonPropertyName(<span class="stringliteral">&quot;endPoint&quot;</span>)]</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        [XmlElement(<span class="stringliteral">&quot;EndPoint&quot;</span>)]</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a8b878b16f519bd94d0728ad1f712e064">  101</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html">PathPointDto</a>? <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a8b878b16f519bd94d0728ad1f712e064">EndPoint</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        [JsonPropertyName(<span class="stringliteral">&quot;colorRgb&quot;</span>)]</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        [XmlAttribute(<span class="stringliteral">&quot;ColorRgb&quot;</span>)]</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a9ef05c51e20bf78848353cc28383d20a">  105</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a9ef05c51e20bf78848353cc28383d20a">ColorRgb</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        [JsonPropertyName(<span class="stringliteral">&quot;colorName&quot;</span>)]</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        [XmlAttribute(<span class="stringliteral">&quot;ColorName&quot;</span>)]</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a220db2eee76d0ad3a4e28caced912725">  109</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a220db2eee76d0ad3a4e28caced912725">ColorName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        [JsonIgnore]</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        [XmlIgnore]</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ac644aba0a65aaf5056dedc16ffcd426c">  113</a></span>        <span class="keyword">public</span> devDept.Eyeshot.Entities.Entity? <a class="code hl_property" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ac644aba0a65aaf5056dedc16ffcd426c">SegmentEntity</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="};">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html">  116</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html">PathCollisionDto</a></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        [JsonPropertyName(<span class="stringliteral">&quot;globalSegmentId&quot;</span>)]</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        [XmlAttribute(<span class="stringliteral">&quot;GlobalSegmentId&quot;</span>)]</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a3ac0b42aa9c001f22f42ae03629314bb">  120</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a3ac0b42aa9c001f22f42ae03629314bb">GlobalSegmentId</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        [JsonPropertyName(<span class="stringliteral">&quot;segment&quot;</span>)]</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        [XmlElement(<span class="stringliteral">&quot;Segment&quot;</span>)]</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a40e958f281fc48aab52fcda87c750734">  124</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html">PathSegmentDto</a>? <a class="code hl_property" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a40e958f281fc48aab52fcda87c750734">Segment</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto_html"><div class="ttname"><a href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathCollisionDto</a></div><div class="ttdef"><b>Definição</b> <a href="#l00116">PathExportModels.cs:117</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto_html_a3ac0b42aa9c001f22f42ae03629314bb"><div class="ttname"><a href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a3ac0b42aa9c001f22f42ae03629314bb">HirEV_SmartFitSystemsApp.Models.DTOs.PathCollisionDto.GlobalSegmentId</a></div><div class="ttdeci">int GlobalSegmentId</div><div class="ttdef"><b>Definição</b> <a href="#l00120">PathExportModels.cs:120</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto_html_a40e958f281fc48aab52fcda87c750734"><div class="ttname"><a href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_collision_dto.html#a40e958f281fc48aab52fcda87c750734">HirEV_SmartFitSystemsApp.Models.DTOs.PathCollisionDto.Segment</a></div><div class="ttdeci">PathSegmentDto? Segment</div><div class="ttdef"><b>Definição</b> <a href="#l00124">PathExportModels.cs:124</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto_html"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathExportDto</a></div><div class="ttdef"><b>Definição</b> <a href="#l00008">PathExportModels.cs:9</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto_html_a430ba8f744506e241b86393a8d019dc5"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#a430ba8f744506e241b86393a8d019dc5">HirEV_SmartFitSystemsApp.Models.DTOs.PathExportDto.Collisions</a></div><div class="ttdeci">List&lt; PathCollisionDto &gt; Collisions</div><div class="ttdef"><b>Definição</b> <a href="#l00023">PathExportModels.cs:23</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto_html_ae0eed9830a899dfb93594ef55ebc16b4"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#ae0eed9830a899dfb93594ef55ebc16b4">HirEV_SmartFitSystemsApp.Models.DTOs.PathExportDto.Points</a></div><div class="ttdeci">List&lt; PathPointDto &gt; Points</div><div class="ttdef"><b>Definição</b> <a href="#l00013">PathExportModels.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto_html_aedc5f344ea96d9fca10e49b3a0afc28a"><div class="ttname"><a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_dto.html#aedc5f344ea96d9fca10e49b3a0afc28a">HirEV_SmartFitSystemsApp.Models.DTOs.PathExportDto.Sequences</a></div><div class="ttdeci">List&lt; PathSequenceDto &gt; Sequences</div><div class="ttdef"><b>Definição</b> <a href="#l00018">PathExportModels.cs:18</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto</a></div><div class="ttdef"><b>Definição</b> <a href="#l00026">PathExportModels.cs:27</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a16950da33e889c6f589d4fea3437b451"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a16950da33e889c6f589d4fea3437b451">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.I</a></div><div class="ttdeci">double I</div><div class="ttdef"><b>Definição</b> <a href="#l00046">PathExportModels.cs:46</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a19444e2b4cc9ede53883f7961a9c0b7b"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a19444e2b4cc9ede53883f7961a9c0b7b">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.Y</a></div><div class="ttdeci">double Y</div><div class="ttdef"><b>Definição</b> <a href="#l00038">PathExportModels.cs:38</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a425e19cfd2249cfac689a632dffd2ac9"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a425e19cfd2249cfac689a632dffd2ac9">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.Z</a></div><div class="ttdeci">double Z</div><div class="ttdef"><b>Definição</b> <a href="#l00042">PathExportModels.cs:42</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a6529caf8c5050ac514a46e8cdcfec5fe"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6529caf8c5050ac514a46e8cdcfec5fe">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.J</a></div><div class="ttdeci">double J</div><div class="ttdef"><b>Definição</b> <a href="#l00050">PathExportModels.cs:50</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a6a19ecd105472897ef49e9e7d7059012"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a6a19ecd105472897ef49e9e7d7059012">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.X</a></div><div class="ttdeci">double X</div><div class="ttdef"><b>Definição</b> <a href="#l00034">PathExportModels.cs:34</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_a9851da460fcb35348a054a9c0b55cecd"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#a9851da460fcb35348a054a9c0b55cecd">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.PointEntity</a></div><div class="ttdeci">devDept.Geometry.? Point3D PointEntity</div><div class="ttdef"><b>Definição</b> <a href="#l00066">PathExportModels.cs:66</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_ab1e215bd3cc66da5962b04575f808188"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ab1e215bd3cc66da5962b04575f808188">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.ColorRgb</a></div><div class="ttdeci">string ColorRgb</div><div class="ttdef"><b>Definição</b> <a href="#l00058">PathExportModels.cs:58</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_ad6b5ac48498edb89c489343d37f2cf53"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ad6b5ac48498edb89c489343d37f2cf53">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.K</a></div><div class="ttdeci">double K</div><div class="ttdef"><b>Definição</b> <a href="#l00054">PathExportModels.cs:54</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_ade4a55142bc3c508107eaf27f4fdf990"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#ade4a55142bc3c508107eaf27f4fdf990">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.ColorName</a></div><div class="ttdeci">string ColorName</div><div class="ttdef"><b>Definição</b> <a href="#l00062">PathExportModels.cs:62</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto_html_af50e733de36d945ec9f74ead049d3ddf"><div class="ttname"><a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_dto.html#af50e733de36d945ec9f74ead049d3ddf">HirEV_SmartFitSystemsApp.Models.DTOs.PathPointDto.Id</a></div><div class="ttdeci">int Id</div><div class="ttdef"><b>Definição</b> <a href="#l00030">PathExportModels.cs:30</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto</a></div><div class="ttdef"><b>Definição</b> <a href="#l00085">PathExportModels.cs:86</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_a220db2eee76d0ad3a4e28caced912725"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a220db2eee76d0ad3a4e28caced912725">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.ColorName</a></div><div class="ttdeci">string ColorName</div><div class="ttdef"><b>Definição</b> <a href="#l00109">PathExportModels.cs:109</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_a487b3bd43bd01ae900f431d9b7e0932a"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a487b3bd43bd01ae900f431d9b7e0932a">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.LocalId</a></div><div class="ttdeci">int LocalId</div><div class="ttdef"><b>Definição</b> <a href="#l00093">PathExportModels.cs:93</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_a8b878b16f519bd94d0728ad1f712e064"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a8b878b16f519bd94d0728ad1f712e064">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.EndPoint</a></div><div class="ttdeci">PathPointDto? EndPoint</div><div class="ttdef"><b>Definição</b> <a href="#l00101">PathExportModels.cs:101</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_a99e98a960e04f1b87501f3d815992465"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a99e98a960e04f1b87501f3d815992465">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.GlobalId</a></div><div class="ttdeci">int GlobalId</div><div class="ttdef"><b>Definição</b> <a href="#l00089">PathExportModels.cs:89</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_a9ef05c51e20bf78848353cc28383d20a"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#a9ef05c51e20bf78848353cc28383d20a">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.ColorRgb</a></div><div class="ttdeci">string ColorRgb</div><div class="ttdef"><b>Definição</b> <a href="#l00105">PathExportModels.cs:105</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_ac644aba0a65aaf5056dedc16ffcd426c"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ac644aba0a65aaf5056dedc16ffcd426c">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.SegmentEntity</a></div><div class="ttdeci">devDept.Eyeshot.Entities.? Entity SegmentEntity</div><div class="ttdef"><b>Definição</b> <a href="#l00113">PathExportModels.cs:113</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto_html_ad45cd081c6baae5ab9678b16ed195a5f"><div class="ttname"><a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_segment_dto.html#ad45cd081c6baae5ab9678b16ed195a5f">HirEV_SmartFitSystemsApp.Models.DTOs.PathSegmentDto.StartPoint</a></div><div class="ttdeci">PathPointDto? StartPoint</div><div class="ttdef"><b>Definição</b> <a href="#l00097">PathExportModels.cs:97</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto_html"><div class="ttname"><a href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html">HirEV_SmartFitSystemsApp.Models.DTOs.PathSequenceDto</a></div><div class="ttdef"><b>Definição</b> <a href="#l00069">PathExportModels.cs:70</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto_html_a0069aabe307ae317d7cee46ec1b7f455"><div class="ttname"><a href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a0069aabe307ae317d7cee46ec1b7f455">HirEV_SmartFitSystemsApp.Models.DTOs.PathSequenceDto.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definição</b> <a href="#l00073">PathExportModels.cs:73</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto_html_a144d5f258840b465def419d70c47bc92"><div class="ttname"><a href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a144d5f258840b465def419d70c47bc92">HirEV_SmartFitSystemsApp.Models.DTOs.PathSequenceDto.HasCollisions</a></div><div class="ttdeci">bool HasCollisions</div><div class="ttdef"><b>Definição</b> <a href="#l00077">PathExportModels.cs:77</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto_html_a49d73ffca2f23fd8ade3f091b97984e2"><div class="ttname"><a href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_sequence_dto.html#a49d73ffca2f23fd8ade3f091b97984e2">HirEV_SmartFitSystemsApp.Models.DTOs.PathSequenceDto.Segments</a></div><div class="ttdeci">List&lt; PathSegmentDto &gt; Segments</div><div class="ttdef"><b>Definição</b> <a href="#l00082">PathExportModels.cs:82</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_html"><div class="ttname"><a href="../../d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html">HirEV_SmartFitSystemsApp.Models.DTOs</a></div><div class="ttdef"><b>Definição</b> <a href="../../d4/d00/_c_a_d_grouped_export_d_t_o_8cs_source.html#l00001">CADGroupedExportDTO.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

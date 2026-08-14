@@ -2,6 +2,8 @@ var dir_9e02225484435e697725a5e6202a9d69 =
 [
     [ "AntColonyOptimization.cs", "d5/d00/_ant_colony_optimization_8cs.html", "d5/d00/_ant_colony_optimization_8cs" ],
     [ "ApproachPointGenerator.cs", "dc/d03/_approach_point_generator_8cs.html", "dc/d03/_approach_point_generator_8cs" ],
+    [ "BaseAvoidanceClearance.cs", "d0/d00/_base_avoidance_clearance_8cs.html", "d0/d00/_base_avoidance_clearance_8cs" ],
+    [ "BaseAvoidanceFaceClassifier.cs", "d5/d02/_base_avoidance_face_classifier_8cs.html", "d5/d02/_base_avoidance_face_classifier_8cs" ],
     [ "CollisionAvoidanceAlgorithm.cs", "d2/d01/_collision_avoidance_algorithm_8cs.html", "d2/d01/_collision_avoidance_algorithm_8cs" ],
     [ "CollisionHeuristics.cs", "d3/d01/_collision_heuristics_8cs.html", "d3/d01/_collision_heuristics_8cs" ],
     [ "HoleAxisExtractor.cs", "d7/d01/_hole_axis_extractor_8cs.html", "d7/d01/_hole_axis_extractor_8cs" ],

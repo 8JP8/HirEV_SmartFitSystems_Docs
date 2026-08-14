@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,9 +101,9 @@ Diagrama de heranças da classe HirEV_SmartFitSystemsApp.Utilities.PathGeneratio
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args__inherit__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_inherit__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_inherit__map">
-<area shape="rect" title="Event arguments for path generation progress events." alt="" coords="5,123,206,352"/>
+<area shape="rect" title="Event arguments for path generation progress events." alt="" coords="5,123,206,395"/>
 <area shape="rect" title=" " alt="" coords="70,5,142,75"/>
-<area shape="poly" title=" " alt="" coords="106,87,108,123,103,123,105,92"/>
+<area shape="poly" title=" " alt="" coords="106,87,108,123,103,122,105,92"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,9 +111,9 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.PathGeneration
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_generation_progress_event_args__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_path_generation_progress_event_args_coll__map">
-<area shape="rect" title="Event arguments for path generation progress events." alt="" coords="5,123,206,352"/>
+<area shape="rect" title="Event arguments for path generation progress events." alt="" coords="5,123,206,395"/>
 <area shape="rect" title=" " alt="" coords="70,5,142,75"/>
-<area shape="poly" title=" " alt="" coords="106,87,108,123,103,123,105,92"/>
+<area shape="poly" title=" " alt="" coords="106,87,108,123,103,122,105,92"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -133,11 +133,15 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a5dd4d888a977495e6bb143854d07b3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the current color being processed.  <br /></td></tr>
 <tr class="memitem:a4cbec5bf1acabb473970a35e6354fc77" id="r_a4cbec5bf1acabb473970a35e6354fc77"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a4cbec5bf1acabb473970a35e6354fc77">ProgressMessage</a> = string.Empty<code> [get, set]</code></td></tr>
 <tr class="memdesc:a4cbec5bf1acabb473970a35e6354fc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the progress message text.  <br /></td></tr>
+<tr class="memitem:aae51654fbc5782274347ac4945b0529d" id="r_aae51654fbc5782274347ac4945b0529d"><td class="memItemLeft"><a class="el" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3">PathGenerationStage</a>&#160;</td><td class="memItemRight"><a class="el" href="#aae51654fbc5782274347ac4945b0529d">Stage</a> = <a class="el" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a32b169f72b293ef80d35435e9894f8e2">PathGenerationStage.Initializing</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aae51654fbc5782274347ac4945b0529d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the high-level stage that produced this update.  <br /></td></tr>
+<tr class="memitem:a585c67df3b2d56b1943554f8a6f66e54" id="r_a585c67df3b2d56b1943554f8a6f66e54"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a585c67df3b2d56b1943554f8a6f66e54">IsTerminal</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a585c67df3b2d56b1943554f8a6f66e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether this is a terminal generation update.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Event arguments for path generation progress events. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17415">17415</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22513">22513</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 </div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
 <a id="a5dd4d888a977495e6bb143854d07b3fd" name="a5dd4d888a977495e6bb143854d07b3fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dd4d888a977495e6bb143854d07b3fd">&#9670;&#160;</a></span>CurrentColor</h2>
@@ -161,7 +165,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current color being processed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17433">17433</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22531">22531</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -187,7 +191,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current color index being processed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17418">17418</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22516">22516</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -213,7 +217,33 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the current point index being processed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17424">17424</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22522">22522</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a585c67df3b2d56b1943554f8a6f66e54" name="a585c67df3b2d56b1943554f8a6f66e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585c67df3b2d56b1943554f8a6f66e54">&#9670;&#160;</a></span>IsTerminal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.PathGenerationProgressEventArgs.IsTerminal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether this is a terminal generation update. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22540">22540</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -239,7 +269,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the overall progress value (0.0 to 1.0). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17430">17430</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22528">22528</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -265,7 +295,33 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the progress message text. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17436">17436</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22534">22534</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="aae51654fbc5782274347ac4945b0529d" name="aae51654fbc5782274347ac4945b0529d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae51654fbc5782274347ac4945b0529d">&#9670;&#160;</a></span>Stage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3">PathGenerationStage</a> HirEV_SmartFitSystemsApp.Utilities.PathGenerationProgressEventArgs.Stage = <a class="el" href="../../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html#aa83bd889182e492dfaaaa6fb4c9739c3a32b169f72b293ef80d35435e9894f8e2">PathGenerationStage.Initializing</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the high-level stage that produced this update. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22537">22537</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -291,7 +347,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the total number of colors to process. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17421">17421</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22519">22519</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -317,7 +373,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the total points in the current color. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l17427">17427</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22525">22525</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>

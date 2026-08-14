@@ -1,5 +1,7 @@
 var dir_b72536205cfb273ecedd60fb9b7aede9 =
 [
+    [ "BaseAvoidanceConfigurationDialog.xaml", "d6/d00/_base_avoidance_configuration_dialog_8xaml.html", null ],
+    [ "BaseAvoidanceConfigurationDialog.xaml.cs", "d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs.html", "d4/d01/_base_avoidance_configuration_dialog_8xaml_8cs" ],
     [ "EyeshotEntityFilterDialog.xaml", "da/d00/_eyeshot_entity_filter_dialog_8xaml.html", null ],
     [ "EyeshotEntityFilterDialog.xaml.cs", "d5/d02/_eyeshot_entity_filter_dialog_8xaml_8cs.html", "d5/d02/_eyeshot_entity_filter_dialog_8xaml_8cs" ],
     [ "PasswordInputDialog.xaml", "d7/d03/_password_input_dialog_8xaml.html", null ],

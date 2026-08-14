@@ -1,0 +1,5 @@
+var _base_avoidance_face_classifier_8cs =
+[
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier.html", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier" ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceFaceClassifier.FaceSample", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample.html", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_face_classifier_1_1_face_sample" ]
+];

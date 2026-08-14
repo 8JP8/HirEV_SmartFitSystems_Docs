@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Modules.FaceExtractor:</
 <div class="dyncontent">
 <div class="center"><img src="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_modules_8_face_extractor_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_modules_8_face_extractor_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_modules_8_face_extractor_coll__map">
-<area shape="rect" title="Class responsible for extracting faces and their geometric data from an Eyeshot EntityList...." alt="" coords="5,5,224,283"/>
+<area shape="rect" title="Class responsible for extracting faces and their geometric data from an Eyeshot EntityList...." alt="" coords="5,5,224,341"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,14 +122,21 @@ Membros privados</h2></td></tr>
 <tr class="memdesc:ac489e470f8c1fbbd72793cc20c2e4dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total surface area of a face by summing the areas of all its parametric surfaces. The area calculation uses the Eyeshot GetArea method on tessellated parametric representations.  <br /></td></tr>
 <tr class="memitem:ad357a3d6396547c8d2964649a18d4a7c" id="r_ad357a3d6396547c8d2964649a18d4a7c"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#ad357a3d6396547c8d2964649a18d4a7c">GetFaceCentroid</a> (Brep.Face face)</td></tr>
 <tr class="memdesc:ad357a3d6396547c8d2964649a18d4a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices. This provides a representative center point for the face, useful for visualization and analysis.  <br /></td></tr>
-<tr class="memitem:a26a7915fd6ebefb69b5b3a32d455ca93" id="r_a26a7915fd6ebefb69b5b3a32d455ca93"><td class="memItemLeft"><a class="el" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#ab6a66e1d0f822dff0faf9467b0b6a198">FaceTypeEnum</a>&#160;</td><td class="memItemRight"><a class="el" href="#a26a7915fd6ebefb69b5b3a32d455ca93">InferFaceType</a> (object surface, out string geometricInfo)</td></tr>
-<tr class="memdesc:a26a7915fd6ebefb69b5b3a32d455ca93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infers the face type by checking the surface runtime type and extracts relevant geometric information. This heuristic method uses pattern matching to classify surfaces into standard geometric types.  <br /></td></tr>
+<tr class="memitem:a536a10f84e319901a5ecef2513f0a055" id="r_a536a10f84e319901a5ecef2513f0a055"><td class="memItemLeft"><a class="el" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html#ab6a66e1d0f822dff0faf9467b0b6a198">FaceTypeEnum</a>&#160;</td><td class="memItemRight"><a class="el" href="#a536a10f84e319901a5ecef2513f0a055">InferFaceType</a> (object surface, out string geometricInfo, out devDept.Geometry.Vector3D? axisOrNormal)</td></tr>
+<tr class="memdesc:a536a10f84e319901a5ecef2513f0a055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infers the face type by checking the surface runtime type and extracts relevant geometric information. This heuristic method uses pattern matching to classify surfaces into standard geometric types.  <br /></td></tr>
+<tr class="memitem:af4bb7910dc0b52870fb9aa9c9b9611e0" id="r_af4bb7910dc0b52870fb9aa9c9b9611e0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af4bb7910dc0b52870fb9aa9c9b9611e0">TryGetCylinderInwardNormalDot</a> (Brep.Face face, CylindricalSurf cylinder, out double inwardNormalDot)</td></tr>
+<tr class="memdesc:af4bb7910dc0b52870fb9aa9c9b9611e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis. The BRep face sense is the primary source because the natural CylindricalSurf orientation points radially outwards.  <br /></td></tr>
 <tr class="memitem:a17cbb89e7542bf981bcbc61f6d2862d5" id="r_a17cbb89e7542bf981bcbc61f6d2862d5"><td class="memItemLeft">Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#a17cbb89e7542bf981bcbc61f6d2862d5">GetFaceNormalApprox</a> (Brep.Face face)</td></tr>
 <tr class="memdesc:a17cbb89e7542bf981bcbc61f6d2862d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an approximate surface normal vector for a face using cross product of vectors formed by tessellated vertices. This heuristic method finds the first valid triangle in the tessellation to calculate a representative normal.  <br /></td></tr>
 <tr class="memitem:a1e067c7fbc340e17cebfaa5a4855ea25" id="r_a1e067c7fbc340e17cebfaa5a4855ea25"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1e067c7fbc340e17cebfaa5a4855ea25">PointsAreEqual</a> (Point3D p1, Point3D p2, double tol=1e-9)</td></tr>
 <tr class="memdesc:a1e067c7fbc340e17cebfaa5a4855ea25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing floating-point coordinates with numerical precision tolerance.  <br /></td></tr>
 <tr class="memitem:a29f5afbe4722a3058950f66dd1b1f505" id="r_a29f5afbe4722a3058950f66dd1b1f505"><td class="memItemLeft">Brep?&#160;</td><td class="memItemRight"><a class="el" href="#a29f5afbe4722a3058950f66dd1b1f505">TryConvertToBrep</a> (Entity e)</td></tr>
 <tr class="memdesc:a29f5afbe4722a3058950f66dd1b1f505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert an arbitrary Eyeshot Entity to Brep representation using reflection. This method dynamically invokes the ConvertToBrep method if it exists on the entity type.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a67a6fc3193c20aeca7a88b63b5b25d68" id="r_a67a6fc3193c20aeca7a88b63b5b25d68"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a67a6fc3193c20aeca7a88b63b5b25d68">TryGetFaceSense</a> (Brep.Face face, out bool sense)</td></tr>
+<tr class="memdesc:a67a6fc3193c20aeca7a88b63b5b25d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either a property, a field, or an inverse "reversed" flag.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
@@ -146,7 +153,7 @@ Atributos Privados</h2></td></tr>
 <li>Computing face areas and geometric information Note: Measurement point generation is handled by PathManager after extraction for consistency. </li>
 </ul>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00024">24</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00025">25</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a6f5eba99861bb273a2c6402815b9562a" name="a6f5eba99861bb273a2c6402815b9562a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f5eba99861bb273a2c6402815b9562a">&#9670;&#160;</a></span>FaceExtractor()</h2>
@@ -177,9 +184,9 @@ Atributos Privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00036">36</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00037">37</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00029">_entities</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00030">_entities</a>.</p>
 
 </div>
 </div>
@@ -232,9 +239,9 @@ Atributos Privados</h2></td></tr>
 </ol>
 <p>This method handles closed loops correctly by automatically deduplicating shared vertices. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00260">260</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00275">275</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">ExtractFaceData()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -314,25 +321,34 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </ul>
 <p>If control point extraction fails, an empty list is assigned for robustness. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">146</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">147</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00260">ExtractCornerPointsWithIndices()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00301">GetFaceArea()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00340">GetFaceCentroid()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00390">InferFaceType()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00275">ExtractCornerPointsWithIndices()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00316">GetFaceArea()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00355">GetFaceCentroid()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00405">InferFaceType()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00471">TryGetCylinderInwardNormalDot()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00067">ExtractFaces()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00068">ExtractFaces()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af728d7df7755bee8811c27c06bc6fe93_cgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af728d7df7755bee8811c27c06bc6fe93_cgraph" loading="lazy" alt=""/></div>
 <map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af728d7df7755bee8811c27c06bc6fe93_cgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af728d7df7755bee8811c27c06bc6fe93_cgraph">
-<area shape="rect" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="5,121,265,164"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="322,5,563,64"/>
-<area shape="poly" title=" " alt="" coords="191,118,312,73,334,68,329,71,314,79,193,123"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="324,88,561,131"/>
-<area shape="poly" title=" " alt="" coords="264,126,311,123,306,125,266,131"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="313,155,572,197"/>
-<area shape="poly" title=" " alt="" coords="265,154,300,160,295,161,265,159"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a26a7915fd6ebefb69b5b3a32d455ca93" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="321,221,564,264"/>
-<area shape="poly" title=" " alt="" coords="190,162,314,207,340,217,335,217,312,212,189,167"/>
+<area shape="rect" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="5,147,265,189"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="316,5,558,64"/>
+<area shape="poly" title=" " alt="" coords="172,144,237,109,312,74,330,68,325,71,314,78,239,114,176,148"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="318,88,556,131"/>
+<area shape="poly" title=" " alt="" coords="247,144,311,133,306,136,249,149"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="612,176,872,219"/>
+<area shape="poly" title=" " alt="" coords="265,172,598,188,595,192,265,177"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a536a10f84e319901a5ecef2513f0a055" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="315,205,558,248"/>
+<area shape="poly" title=" " alt="" coords="248,187,311,201,306,203,248,193"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="313,272,561,331"/>
+<area shape="poly" title=" " alt="" coords="174,187,239,222,314,258,330,266,325,266,312,262,237,227,174,193"/>
+<area shape="poly" title=" " alt="" coords="527,269,560,257,662,225,667,224,562,263,528,274"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="616,257,868,316"/>
+<area shape="poly" title=" " alt="" coords="561,293,603,293,598,294,562,298"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a67a6fc3193c20aeca7a88b63b5b25d68" title="Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either ..." alt="" coords="609,340,875,383"/>
+<area shape="poly" title=" " alt="" coords="561,323,618,337,613,336,561,328"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a1e067c7fbc340e17cebfaa5a4855ea25" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="923,265,1174,308"/>
+<area shape="poly" title=" " alt="" coords="869,284,910,287,905,287,869,289"/>
 </map>
 </div>
 <div class="dynheader">
@@ -387,27 +403,36 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </ol>
 <p>Progress reporting is optimized with throttling to balance responsiveness and performance. The last entity always triggers a progress update to ensure 100% completion is reported. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00067">67</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00068">68</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00029">_entities</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">ExtractFaceData()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00564">TryConvertToBrep()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00030">_entities</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00689">TryConvertToBrep()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ae3d29aeb784e5babe1c7da9319450596_cgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ae3d29aeb784e5babe1c7da9319450596_cgraph" loading="lazy" alt=""/></div>
 <map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ae3d29aeb784e5babe1c7da9319450596_cgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ae3d29aeb784e5babe1c7da9319450596_cgraph">
-<area shape="rect" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,159,244,201"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,121,551,164"/>
-<area shape="poly" title=" " alt="" coords="244,162,279,160,274,162,245,168"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a29f5afbe4722a3058950f66dd1b1f505" title="Attempts to convert an arbitrary Eyeshot Entity to Brep representation using reflection...." alt="" coords="309,188,534,247"/>
-<area shape="poly" title=" " alt="" coords="244,192,296,201,291,202,244,198"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="608,5,849,64"/>
-<area shape="poly" title=" " alt="" coords="478,118,598,73,616,70,621,69,600,79,479,123"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="610,88,847,131"/>
-<area shape="poly" title=" " alt="" coords="551,126,597,123,592,124,552,131"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="599,155,858,197"/>
-<area shape="poly" title=" " alt="" coords="551,154,586,160,581,160,552,159"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a26a7915fd6ebefb69b5b3a32d455ca93" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="607,221,850,264"/>
-<area shape="poly" title=" " alt="" coords="522,162,552,174,577,190,600,207,617,216,612,215,598,212,573,195,550,178,521,167"/>
+<area shape="rect" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,184,244,227"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,147,551,189"/>
+<area shape="poly" title=" " alt="" coords="243,188,279,185,274,187,245,193"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a29f5afbe4722a3058950f66dd1b1f505" title="Attempts to convert an arbitrary Eyeshot Entity to Brep representation using reflection...." alt="" coords="309,213,534,272"/>
+<area shape="poly" title=" " alt="" coords="244,218,296,226,291,227,245,223"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a4851a2bb3dcff647b14605757eb97ee6" title="Extracts corner points from a face and maps them to their corresponding Brep vertex indices...." alt="" coords="602,5,844,64"/>
+<area shape="poly" title=" " alt="" coords="459,144,523,109,598,74,616,69,611,71,600,78,526,114,462,148"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ac489e470f8c1fbbd72793cc20c2e4dbb" title="Computes the total surface area of a face by summing the areas of all its parametric surfaces...." alt="" coords="604,88,842,131"/>
+<area shape="poly" title=" " alt="" coords="534,144,598,133,593,135,535,149"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="899,176,1158,219"/>
+<area shape="poly" title=" " alt="" coords="551,172,886,189,881,191,552,177"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a536a10f84e319901a5ecef2513f0a055" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="602,205,845,248"/>
+<area shape="poly" title=" " alt="" coords="534,187,598,202,592,202,535,193"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,272,847,331"/>
+<area shape="poly" title=" " alt="" coords="530,187,553,199,569,214,578,229,586,244,601,258,608,265,603,264,597,262,582,247,573,232,565,217,549,204,529,193"/>
+<area shape="poly" title=" " alt="" coords="813,269,846,257,948,225,953,224,848,263,814,274"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="902,257,1155,316"/>
+<area shape="poly" title=" " alt="" coords="847,293,889,293,884,294,848,298"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a67a6fc3193c20aeca7a88b63b5b25d68" title="Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either ..." alt="" coords="895,340,1162,383"/>
+<area shape="poly" title=" " alt="" coords="848,323,904,337,899,336,847,328"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a1e067c7fbc340e17cebfaa5a4855ea25" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="1210,265,1460,308"/>
+<area shape="poly" title=" " alt="" coords="1155,284,1197,287,1191,287,1155,289"/>
 </map>
 </div>
 
@@ -453,9 +478,9 @@ Grafo de chamadas desta função:</div>
 </ol>
 <p>This approach handles complex faces composed of multiple surface patches. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00301">301</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00316">316</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">ExtractFaceData()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -509,19 +534,22 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </ol>
 <p>This is an approximation based on tessellation density. For analytical surfaces (planes, cylinders), the true centroid might differ slightly from this vertex-based average, but the difference is typically negligible for well-tessellated meshes. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00340">340</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00355">355</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">ExtractFaceData()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00471">TryGetCylinderInwardNormalDot()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ad357a3d6396547c8d2964649a18d4a7c_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ad357a3d6396547c8d2964649a18d4a7c_icgraph" loading="lazy" alt=""/></div>
 <map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ad357a3d6396547c8d2964649a18d4a7c_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_ad357a3d6396547c8d2964649a18d4a7c_icgraph">
-<area shape="rect" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="599,5,858,48"/>
+<area shape="rect" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="895,5,1155,48"/>
 <area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,5,551,48"/>
-<area shape="poly" title=" " alt="" coords="581,27,552,29,551,24,586,27"/>
+<area shape="poly" title=" " alt="" coords="877,20,847,21,599,21,551,23,551,17,599,16,847,16,883,20"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,31,847,89"/>
+<area shape="poly" title=" " alt="" coords="883,42,848,49,848,44,877,43"/>
 <area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,5,244,48"/>
-<area shape="poly" title=" " alt="" coords="274,27,244,29,244,24,279,27"/>
+<area shape="poly" title=" " alt="" coords="274,27,244,29,244,24,279,26"/>
+<area shape="poly" title=" " alt="" coords="581,45,552,44,552,38,586,45"/>
 </map>
 </div>
 
@@ -573,9 +601,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </ol>
 <p>The method skips duplicate points to ensure a valid triangle. Only calculates one normal (doesn't average across the entire face). For non-planar faces, this represents the normal at one local region. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00469">469</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00594">594</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00534">PointsAreEqual()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00659">PointsAreEqual()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00471">TryGetCylinderInwardNormalDot()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -586,11 +616,25 @@ Grafo de chamadas desta função:</div>
 <area shape="poly" title=" " alt="" coords="258,32,292,34,287,35,258,37"/>
 </map>
 </div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a17cbb89e7542bf981bcbc61f6d2862d5_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a17cbb89e7542bf981bcbc61f6d2862d5_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a17cbb89e7542bf981bcbc61f6d2862d5_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a17cbb89e7542bf981bcbc61f6d2862d5_icgraph">
+<area shape="rect" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="895,5,1148,64"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,5,847,64"/>
+<area shape="poly" title=" " alt="" coords="877,35,848,37,848,32,882,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,13,551,56"/>
+<area shape="poly" title=" " alt="" coords="580,35,552,37,552,32,586,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,13,244,56"/>
+<area shape="poly" title=" " alt="" coords="274,35,244,37,244,32,279,34"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a26a7915fd6ebefb69b5b3a32d455ca93" name="a26a7915fd6ebefb69b5b3a32d455ca93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26a7915fd6ebefb69b5b3a32d455ca93">&#9670;&#160;</a></span>InferFaceType()</h2>
+<a id="a536a10f84e319901a5ecef2513f0a055" name="a536a10f84e319901a5ecef2513f0a055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536a10f84e319901a5ecef2513f0a055">&#9670;&#160;</a></span>InferFaceType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,7 +650,12 @@ Grafo de chamadas desta função:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>geometricInfo</em></span>&#160;)</td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>geometricInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out devDept.Geometry.Vector3D?</td>          <td class="paramname"><span class="paramname"><em>axisOrNormal</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -639,14 +688,14 @@ Grafo de chamadas desta função:</div>
 <p>The method uses runtime type checking (pattern matching) to identify the surface type. Supported surface types include: Spherical, Cylindrical, Conical, Toroidal, NURBS, Revolved, Tabulated, and Planar.</p>
 <p>Geometric information is formatted with 2 decimal places for readability. Errors during type inference are caught and logged to Debug output, returning Unknown type. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00390">390</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00405">405</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00146">ExtractFaceData()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a26a7915fd6ebefb69b5b3a32d455ca93_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a26a7915fd6ebefb69b5b3a32d455ca93_icgraph" loading="lazy" alt=""/></div>
-<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a26a7915fd6ebefb69b5b3a32d455ca93_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a26a7915fd6ebefb69b5b3a32d455ca93_icgraph">
+<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a536a10f84e319901a5ecef2513f0a055_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a536a10f84e319901a5ecef2513f0a055_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a536a10f84e319901a5ecef2513f0a055_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a536a10f84e319901a5ecef2513f0a055_icgraph">
 <area shape="rect" title="Infers the face type by checking the surface runtime type and extracts relevant geometric information..." alt="" coords="599,5,842,48"/>
 <area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,5,551,48"/>
 <area shape="poly" title=" " alt="" coords="581,27,551,29,551,24,586,27"/>
@@ -701,17 +750,23 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the Euclidean distance in each dimension (X, Y, Z) is less than the tolerance; <code>false</code> otherwise. </dd></dl>
 <p>This method performs component-wise comparison rather than computing actual Euclidean distance, which is more efficient and sufficient for most equality checks. The default tolerance of 1e-9 is appropriate for millimeter-precision CAD models. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00534">534</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00659">659</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00469">GetFaceNormalApprox()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00594">GetFaceNormalApprox()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a1e067c7fbc340e17cebfaa5a4855ea25_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a1e067c7fbc340e17cebfaa5a4855ea25_icgraph" loading="lazy" alt=""/></div>
 <map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a1e067c7fbc340e17cebfaa5a4855ea25_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a1e067c7fbc340e17cebfaa5a4855ea25_icgraph">
-<area shape="rect" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="306,13,556,56"/>
-<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="5,5,258,64"/>
-<area shape="poly" title=" " alt="" coords="288,35,258,37,258,32,293,34"/>
+<area shape="rect" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="1196,13,1446,56"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="895,5,1148,64"/>
+<area shape="poly" title=" " alt="" coords="1178,35,1148,37,1148,32,1183,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,5,847,64"/>
+<area shape="poly" title=" " alt="" coords="877,35,848,37,848,32,882,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,13,551,56"/>
+<area shape="poly" title=" " alt="" coords="580,35,552,37,552,32,586,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,13,244,56"/>
+<area shape="poly" title=" " alt="" coords="274,35,244,37,244,32,279,34"/>
 </map>
 </div>
 
@@ -762,9 +817,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Entities that are already Breps are handled before calling this method (direct cast).</p>
 <p>Conversion errors are logged to Debug output for troubleshooting but don't throw exceptions, allowing the extraction process to continue with other entities. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00564">564</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00689">689</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00067">ExtractFaces()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00068">ExtractFaces()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -773,6 +828,125 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="rect" title="Attempts to convert an arbitrary Eyeshot Entity to Brep representation using reflection...." alt="" coords="292,5,517,64"/>
 <area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,13,244,56"/>
 <area shape="poly" title=" " alt="" coords="273,35,244,37,244,32,279,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af4bb7910dc0b52870fb9aa9c9b9611e0" name="af4bb7910dc0b52870fb9aa9c9b9611e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bb7910dc0b52870fb9aa9c9b9611e0">&#9670;&#160;</a></span>TryGetCylinderInwardNormalDot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Modules.FaceExtractor.TryGetCylinderInwardNormalDot </td>
+          <td>(</td>
+          <td class="paramtype">Brep.Face</td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CylindricalSurf</td>          <td class="paramname"><span class="paramname"><em>cylinder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out double</td>          <td class="paramname"><span class="paramname"><em>inwardNormalDot</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis. The BRep face sense is the primary source because the natural CylindricalSurf orientation points radially outwards. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00471">471</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00355">GetFaceCentroid()</a>, <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00594">GetFaceNormalApprox()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00517">TryGetFaceSense()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00147">ExtractFaceData()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_cgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_cgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_cgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_cgraph">
+<area shape="rect" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="5,72,254,131"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ad357a3d6396547c8d2964649a18d4a7c" title="Computes an approximate centroid (geometric center) of a face by averaging all tessellated vertices...." alt="" coords="305,5,564,48"/>
+<area shape="poly" title=" " alt="" coords="251,69,332,51,327,53,253,74"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a17cbb89e7542bf981bcbc61f6d2862d5" title="Computes an approximate surface normal vector for a face using cross product of vectors formed by tes..." alt="" coords="309,72,561,131"/>
+<area shape="poly" title=" " alt="" coords="254,99,295,101,290,102,254,104"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a67a6fc3193c20aeca7a88b63b5b25d68" title="Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either ..." alt="" coords="302,155,568,197"/>
+<area shape="poly" title=" " alt="" coords="252,129,332,150,327,151,252,134"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#a1e067c7fbc340e17cebfaa5a4855ea25" title="Determines whether two 3D points are equal within a specified tolerance. This is useful for comparing..." alt="" coords="616,80,866,123"/>
+<area shape="poly" title=" " alt="" coords="561,99,603,101,598,102,562,104"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_af4bb7910dc0b52870fb9aa9c9b9611e0_icgraph">
+<area shape="rect" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,5,847,64"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,13,551,56"/>
+<area shape="poly" title=" " alt="" coords="580,35,552,37,552,32,586,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,13,244,56"/>
+<area shape="poly" title=" " alt="" coords="274,35,244,37,244,32,279,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67a6fc3193c20aeca7a88b63b5b25d68" name="a67a6fc3193c20aeca7a88b63b5b25d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a6fc3193c20aeca7a88b63b5b25d68">&#9670;&#160;</a></span>TryGetFaceSense()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Modules.FaceExtractor.TryGetFaceSense </td>
+          <td>(</td>
+          <td class="paramtype">Brep.Face</td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool</td>          <td class="paramname"><span class="paramname"><em>sense</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either a property, a field, or an inverse "reversed" flag. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00517">517</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00471">TryGetCylinderInwardNormalDot()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a67a6fc3193c20aeca7a88b63b5b25d68_icgraph.png" border="0" usemap="#ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a67a6fc3193c20aeca7a88b63b5b25d68_icgraph" loading="lazy" alt=""/></div>
+<map name="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a67a6fc3193c20aeca7a88b63b5b25d68_icgraph" id="ad1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor_a67a6fc3193c20aeca7a88b63b5b25d68_icgraph">
+<area shape="rect" title="Reads the face orientation while remaining compatible with Eyeshot versions that expose it as either ..." alt="" coords="895,13,1162,56"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af4bb7910dc0b52870fb9aa9c9b9611e0" title="Determines whether the oriented cylindrical face normal points towards or away from the cylinder axis..." alt="" coords="599,5,847,64"/>
+<area shape="poly" title=" " alt="" coords="877,35,848,37,848,32,882,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#af728d7df7755bee8811c27c06bc6fe93" title="Extracts comprehensive geometric data from a single Brep.Face. This method processes control points,..." alt="" coords="292,13,551,56"/>
+<area shape="poly" title=" " alt="" coords="580,35,552,37,552,32,586,35"/>
+<area shape="rect" href="../../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_face_extractor.html#ae3d29aeb784e5babe1c7da9319450596" title="Iterates through all entities, converts them to Brep if necessary, and extracts each face with its ge..." alt="" coords="5,13,244,56"/>
+<area shape="poly" title=" " alt="" coords="274,35,244,37,244,32,279,34"/>
 </map>
 </div>
 
@@ -801,9 +975,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>The collection of 3D entities to extract faces from. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00029">29</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00030">30</a> do ficheiro <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html">FaceExtractor.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00067">ExtractFaces()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00036">FaceExtractor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00068">ExtractFaces()</a> e <a class="el" href="../../d7/d03/_face_extractor_8cs_source.html#l00037">FaceExtractor()</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face =
 [
+    [ "AxisOrNormal", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#ab94478a6755457e5f22347fcc9a22513", null ],
     [ "ControlPoints", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a56354aa624178d03917b27ea1cf9a1ff", null ],
     [ "EntityIndex", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a555874a7a3e3299b99704521bbb8de8c", null ],
     [ "FaceArea", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a4cd308682f7c2231a52bcc3f5c6289ec", null ],

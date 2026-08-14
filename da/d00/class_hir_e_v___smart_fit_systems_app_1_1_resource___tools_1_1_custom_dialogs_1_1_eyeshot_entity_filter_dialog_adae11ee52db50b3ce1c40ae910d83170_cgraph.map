@@ -1,14 +1,19 @@
 <map id="HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog.Window_Loaded" name="HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog.Window_Loaded">
 <area shape="rect" id="Node000001" title="Handles the window loaded event. Backs up paths, loads entities, and starts update timer." alt="" coords="5,105,267,164"/>
-<area shape="rect" id="Node000002" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#af498dc1b964904d99390e897c3682fb4" title="Backs up and removes path entities from design to prevent showing thousands of path points." alt="" coords="315,5,605,64"/>
+<area shape="rect" id="Node000002" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#af498dc1b964904d99390e897c3682fb4" title="Backs up and removes transient visual entities from design while the filter is open." alt="" coords="315,5,605,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,102,350,68,346,71,234,107"/>
-<area shape="rect" id="Node000003" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#aa3e3e9f1d795397149c9ecec3b996b6c" title="Repopulates the Entities ObservableCollection from the Eyeshot control. It skips the internal mesh at..." alt="" coords="653,147,939,205"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,120,429,114,518,116,605,124,687,142,682,142,605,129,517,122,429,119,267,125"/>
-<area shape="rect" id="Node000005" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a5ece51b628538d2537152fe0ac18c73b" title="Stores the initial visibility state of all entities when the dialog opens." alt="" coords="323,139,597,197"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="267,145,310,152,304,153,267,151"/>
-<area shape="rect" id="Node000006" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a813463bb6f7e39eb1079bd7a1a4fa482" title="Periodically ticks to check if design control entities have changed." alt="" coords="329,221,590,280"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="204,162,316,207,338,216,332,216,314,212,203,167"/>
-<area shape="rect" id="Node000004" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a7fafbc2721c766dfd55b2930caf020e2" title="Helper to raise the PropertyChanged event." alt="" coords="987,147,1249,205"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="940,173,974,176,969,176,940,179"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="591,219,644,210,649,209,592,224"/>
+<area shape="rect" id="Node000004" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#aa3e3e9f1d795397149c9ecec3b996b6c" title="Repopulates the Entities ObservableCollection from the Eyeshot control. It skips the internal mesh at..." alt="" coords="653,205,939,264"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,162,252,187,315,207,397,222,481,231,641,240,635,240,480,236,396,227,314,212,251,192,194,167"/>
+<area shape="rect" id="Node000006" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a5ece51b628538d2537152fe0ac18c73b" title="Stores the initial visibility state of all entities when the dialog opens." alt="" coords="659,72,933,131"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="267,125,644,107,642,111,268,131"/>
+<area shape="rect" id="Node000007" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a813463bb6f7e39eb1079bd7a1a4fa482" title="Periodically ticks to check if design control entities have changed." alt="" coords="329,139,590,197"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="267,145,317,152,311,154,267,151"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a242a2df0a3e69c7e120d9332e3a6dc20" title="Determines whether a given Eyeshot entity is a visual base avoidance plane or label." alt="" coords="1005,97,1231,156"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,28,767,34,854,43,940,57,990,71,1040,91,1035,91,989,76,939,63,854,48,767,40,606,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="885,202,1011,162,1016,161,887,207"/>
+<area shape="rect" id="Node000005" href="$da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a7fafbc2721c766dfd55b2930caf020e2" title="Helper to raise the PropertyChanged event." alt="" coords="987,205,1249,264"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="940,232,974,235,969,235,940,237"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="934,109,992,116,987,117,934,115"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="591,160,939,140,992,138,987,139,940,145,591,165"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="591,191,640,203,635,203,591,197"/>
 </map>

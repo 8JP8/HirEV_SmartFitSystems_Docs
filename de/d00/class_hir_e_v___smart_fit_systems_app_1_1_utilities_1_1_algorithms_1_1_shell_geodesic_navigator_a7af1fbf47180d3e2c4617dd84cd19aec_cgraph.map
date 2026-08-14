@@ -1,10 +1,17 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.BuildNavigationGraphFromMesh" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.BuildNavigationGraphFromMesh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,275,131"/>
-<area shape="rect" id="Node000002" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#affb2c491b45bc225c47957594a2e8771" title=" " alt="" coords="323,5,564,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,69,310,64,305,65,276,74"/>
-<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a9e00577f97ad0f5686cf0ff7b7c59bc2" title=" " alt="" coords="612,39,831,97"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="275,91,598,73,596,77,276,96"/>
-<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a4daad2d52d53ce51566629940127ac77" title=" " alt="" coords="328,139,558,197"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="275,128,316,139,310,140,275,134"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="564,46,599,53,594,53,565,52"/>
+<area shape="rect" id="Node000001" title="Builds a navigation graph directly using the shell mesh vertices and triangles." alt="" coords="5,39,275,97"/>
+<area shape="rect" id="Node000002" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#affb2c491b45bc225c47957594a2e8771" title="Adds additional connection edges across adjacent CAD faces to avoid disconnected meshes." alt="" coords="323,39,564,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,65,310,67,304,69,275,71"/>
+<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a9e00577f97ad0f5686cf0ff7b7c59bc2" title="Adds an edge between two mesh vertex indices." alt="" coords="612,5,831,64"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="254,35,322,24,390,19,443,18,564,24,599,27,594,28,564,29,443,24,390,24,323,29,256,41"/>
+<area shape="rect" id="Node000007" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a4daad2d52d53ce51566629940127ac77" title="Ensures all disconnected components of the navigation graph are linked together." alt="" coords="328,121,558,180"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="251,95,321,116,316,117,250,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="564,51,599,49,594,50,565,56"/>
+<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a0e87fe034e86c698061a01e745090bf1" title="Checks if a linear path segment between two points maintains the required clearance offset." alt="" coords="612,104,831,163"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="565,94,600,104,594,104,564,99"/>
+<area shape="rect" id="Node000005" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#aff43515535dc9f7cbd25c0f7bba7c772" title="Checks if a point stays sufficiently close to the shell surface (preventing cuts through the air or p..." alt="" coords="879,104,1099,163"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="832,131,866,133,861,133,832,136"/>
+<area shape="rect" id="Node000006" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ad1fcb7ae0afa03d59132f446a227b527" title="Finds the nearest point on a shell mesh to a given query point." alt="" coords="1147,104,1369,163"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1099,131,1134,133,1128,133,1099,136"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="559,141,599,141,594,141,559,146"/>
 </map>

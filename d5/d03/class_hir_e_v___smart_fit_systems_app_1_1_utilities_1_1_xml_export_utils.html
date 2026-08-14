@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.XmlExportUtils
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_xml_export_utils_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_xml_export_utils_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_xml_export_utils_coll__map">
-<area shape="rect" title="Utility class for exporting CADFace and CADHole data to an XML file." alt="" coords="5,5,187,155"/>
+<area shape="rect" title="Utility class for exporting CADFace and CADHole data to an XML file." alt="" coords="5,5,187,176"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -115,6 +115,15 @@ Membros públicos estáticos</h2></td></tr>
 <tr class="memdesc:a9577d8d8ed438d3d3b3191c5506557df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports generated paths to an XML file in the appdata%/SKK_HirEV_SmartFitSystemsApp_Data/PathsGenerated/[timestamp] folder structure.  <br /></td></tr>
 <tr class="memitem:aef9444d0645fd8bdff23b3788c0150b1" id="r_aef9444d0645fd8bdff23b3788c0150b1"><td class="memItemLeft">static ? <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html">PathExportDTO</a>&#160;</td><td class="memItemRight"><a class="el" href="#aef9444d0645fd8bdff23b3788c0150b1">ImportPathsFromXml</a> (string filePath)</td></tr>
 <tr class="memdesc:aef9444d0645fd8bdff23b3788c0150b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports paths from an XML file.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a3e43fc16c5fac886bc177905b0c539b2" id="r_a3e43fc16c5fac886bc177905b0c539b2"><td class="memItemLeft">static ? XmlDocument&#160;</td><td class="memItemRight"><a class="el" href="#a3e43fc16c5fac886bc177905b0c539b2">DocLanguage</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e43fc16c5fac886bc177905b0c539b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Language document used for localizing log messages. Set from startup after loading the language XML.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:aedd531d929baa74198c47602ca8cc3d0" id="r_aedd531d929baa74198c47602ca8cc3d0"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#aedd531d929baa74198c47602ca8cc3d0">GetLoc</a> (string key, string fallback)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Utility class for exporting <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a> and <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html" title="Data model representing a detected hole feature in a 3D CAD model. Holes are identified from pairs of...">CADHole</a> data to an XML file. </p>
@@ -180,11 +189,11 @@ Membros públicos estáticos</h2></td></tr>
 
 <p>Legacy method for backward compatibility. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00305">305</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00317">317</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00054">ExportToXml()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00066">ExportToXml()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l06823">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ExportXml()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08219">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ExportXml()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -247,11 +256,21 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The full path of the exported file, or null if export failed.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00325">325</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00337">337</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l00073">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.AppDataFolder</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l00075">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.AppDataFolder</a> e <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00048">GetLoc()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l16098">HirEV_SmartFitSystemsApp.Utilities.PathManager.ExportPaths()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20611">HirEV_SmartFitSystemsApp.Utilities.PathManager.ExportPaths()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_a9577d8d8ed438d3d3b3191c5506557df_cgraph.png" border="0" usemap="#ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_a9577d8d8ed438d3d3b3191c5506557df_cgraph" loading="lazy" alt=""/></div>
+<map name="ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_a9577d8d8ed438d3d3b3191c5506557df_cgraph" id="ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_a9577d8d8ed438d3d3b3191c5506557df_cgraph">
+<area shape="rect" title="Exports generated paths to an XML file in the appdata%/SKK_HirEV_SmartFitSystemsApp_Data/PathsGenerat..." alt="" coords="5,5,205,64"/>
+<area shape="rect" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils.html#aedd531d929baa74198c47602ca8cc3d0" title=" " alt="" coords="253,13,456,56"/>
+<area shape="poly" title=" " alt="" coords="205,32,239,34,234,35,205,37"/>
+</map>
+</div>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -338,11 +357,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if the export was successful, false otherwise.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00054">54</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00066">66</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
 
 <p class="reference">Referências <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00094">HirEV_SmartFitSystemsApp.Models.DTOs.CADHoleExportDTO.FromCADHole()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00305">ExportFacesToXml()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00317">ExportFacesToXml()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -363,6 +382,55 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="529,35,499,37,499,32,534,35"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a06c48f69c0d14aa1f0f35f9b5d2d1b8f" title="Exports the CAD face and hole data to an XML file." alt="" coords="5,13,252,56"/>
 <area shape="poly" title=" " alt="" coords="281,35,252,37,252,32,287,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aedd531d929baa74198c47602ca8cc3d0" name="aedd531d929baa74198c47602ca8cc3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd531d929baa74198c47602ca8cc3d0">&#9670;&#160;</a></span>GetLoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.XmlExportUtils.GetLoc </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fallback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00048">48</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00046">DocLanguage</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00337">ExportPathsToXml()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_aedd531d929baa74198c47602ca8cc3d0_icgraph.png" border="0" usemap="#ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_aedd531d929baa74198c47602ca8cc3d0_icgraph" loading="lazy" alt=""/></div>
+<map name="ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_aedd531d929baa74198c47602ca8cc3d0_icgraph" id="ad5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils_aedd531d929baa74198c47602ca8cc3d0_icgraph">
+<area shape="rect" title=" " alt="" coords="783,13,987,56"/>
+<area shape="rect" href="../../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils.html#a9577d8d8ed438d3d3b3191c5506557df" title="Exports generated paths to an XML file in the appdata%/SKK_HirEV_SmartFitSystemsApp_Data/PathsGenerat..." alt="" coords="536,5,735,64"/>
+<area shape="poly" title=" " alt="" coords="765,35,736,37,736,32,771,35"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adab406171dd932d4255fe8ff822d24f5" title=" " alt="" coords="266,13,488,56"/>
+<area shape="poly" title=" " alt="" coords="518,35,488,37,488,32,523,35"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9075b1f5b91830f1f4618d2893f8291d" title="Executes the LoadPaths method." alt="" coords="5,13,218,56"/>
+<area shape="poly" title=" " alt="" coords="248,35,218,37,218,32,253,34"/>
 </map>
 </div>
 
@@ -400,9 +468,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The imported <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_export_d_t_o.html" title="DTO for exporting complete path data with execution order and metadata.">PathExportDTO</a>, or null if import failed.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00375">375</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00387">387</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l16149">HirEV_SmartFitSystemsApp.Utilities.PathManager.ImportPath()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20664">HirEV_SmartFitSystemsApp.Utilities.PathManager.ImportPath()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -413,6 +481,35 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="249,35,220,37,220,32,255,34"/>
 </map>
 </div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="a3e43fc16c5fac886bc177905b0c539b2" name="a3e43fc16c5fac886bc177905b0c539b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e43fc16c5fac886bc177905b0c539b2">&#9670;&#160;</a></span>DocLanguage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? XmlDocument HirEV_SmartFitSystemsApp.Utilities.XmlExportUtils.DocLanguage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Language document used for localizing log messages. Set from startup after loading the language XML. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00046">46</a> do ficheiro <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html">XMLExportUtils.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d7/d00/_x_m_l_export_utils_8cs_source.html#l00048">GetLoc()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02936">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a>.</p>
 
 </div>
 </div>

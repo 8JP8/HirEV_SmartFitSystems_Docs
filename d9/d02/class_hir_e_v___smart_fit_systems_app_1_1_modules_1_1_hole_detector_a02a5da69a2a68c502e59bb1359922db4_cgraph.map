@@ -1,10 +1,10 @@
 <map id="HirEV_SmartFitSystemsApp.Modules.HoleDetector.IsPlanarSeparatorBetweenCylinders" name="HirEV_SmartFitSystemsApp.Modules.HoleDetector.IsPlanarSeparatorBetweenCylinders">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,279,265,337"/>
-<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adeb92d24493bb32c4f5e65f18a7778c1" title=" " alt="" coords="328,5,553,48"/>
+<area shape="rect" id="Node000002" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#adeb92d24493bb32c4f5e65f18a7778c1" title="Calculates the centroid of a collection of 3D points." alt="" coords="328,5,553,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,277,171,229,207,169,254,109,281,82,311,58,322,53,318,57,314,62,285,86,258,112,211,172,176,231,152,279"/>
 <area shape="rect" id="Node000003" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a288112d9ba25efb1bc3b4862cfff1412" title=" " alt="" coords="328,72,552,131"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,277,223,209,266,172,311,140,324,136,320,140,314,145,269,176,227,212,163,280"/>
-<area shape="rect" id="Node000005" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a0ba7378ff896e1df9d78fb3a765bfe0f" title=" " alt="" coords="313,155,568,213"/>
+<area shape="rect" id="Node000005" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a0ba7378ff896e1df9d78fb3a765bfe0f" title="Gathers key, control, and measurement points from a face for geometric analysis." alt="" coords="313,155,568,213"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="194,276,312,223,331,217,327,221,314,228,197,280"/>
 <area shape="rect" id="Node000006" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a0d16b75e08519587608747fbbe09b85e" title="Extracts the central axis vector of a CADFace from its GeometricInfo string." alt="" coords="338,237,543,296"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="264,288,325,281,320,284,266,293"/>
@@ -14,22 +14,22 @@
 <area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="196,335,314,388,332,397,327,397,312,393,196,341"/>
 <area shape="rect" id="Node000015" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8eca7f8aeeabbb8dbd028e06fc6fb830" title=" " alt="" coords="330,485,550,544"/>
 <area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="161,335,227,404,269,440,314,471,324,478,319,478,311,476,266,444,223,407,160,340"/>
-<area shape="rect" id="Node000017" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac3cd4e56681ce4946e2fe58ead45b0fa" title=" " alt="" coords="320,568,560,611"/>
+<area shape="rect" id="Node000017" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac3cd4e56681ce4946e2fe58ead45b0fa" title="Normalizes a 3D vector, handling zero&#45;length vectors by falling back to Vector3D.AxisZ." alt="" coords="320,568,560,611"/>
 <area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="150,335,176,385,211,444,258,504,285,530,314,554,323,561,317,560,311,558,281,534,254,507,207,447,171,387,149,341"/>
-<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a304c1b908b913eaeff408edcd36f8ca3" title=" " alt="" coords="622,84,860,127"/>
+<area shape="rect" id="Node000004" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a304c1b908b913eaeff408edcd36f8ca3" title="Filters a list of points to only unique points within a very small tolerance." alt="" coords="622,84,860,127"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="552,100,609,103,605,105,554,105"/>
 <area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="554,152,644,130,640,132,556,156"/>
 <area shape="rect" id="Node000007" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a1d8fd69953cc1aa0772e44914be37fc9" title="Computes the cross product of two 3D vectors." alt="" coords="638,155,844,213"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="542,236,626,215,621,217,545,241"/>
 <area shape="rect" id="Node000008" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a6b4d49491f1bb20f212032b4cd718418" title="Normalizes a given vector to unit length." alt="" coords="638,237,844,296"/>
 <area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="543,264,625,266,620,268,544,269"/>
-<area shape="rect" id="Node000011" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aa141bc7f7a8a88403448e4cd2ed7c795" title=" " alt="" coords="616,320,866,363"/>
+<area shape="rect" id="Node000011" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aa141bc7f7a8a88403448e4cd2ed7c795" title="Calculates the overlap size between two 1D axial ranges." alt="" coords="616,320,866,363"/>
 <area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="533,400,567,388,615,372,644,366,639,368,617,377,569,393,534,405"/>
 <area shape="rect" id="Node000012" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a092fbe9ce01032be20a2d7b05f2a876a" title="Computes the axial range span of a list of points projected onto an axis." alt="" coords="620,387,863,429"/>
 <area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="567,419,607,418,602,420,568,425"/>
-<area shape="rect" id="Node000013" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aecbc71693d1f2d403d6f072797d3f0a1" title=" " alt="" coords="914,416,1154,459"/>
+<area shape="rect" id="Node000013" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aecbc71693d1f2d403d6f072797d3f0a1" title="Projects a point onto a line defined by a point and a normalized axis direction." alt="" coords="914,416,1154,459"/>
 <area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="567,437,616,439,741,440,866,439,902,441,896,441,866,444,741,446,616,444,568,442"/>
-<area shape="rect" id="Node000014" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8fc61e89e3575684a018c3d30d1d706a" title=" " alt="" coords="627,504,855,547"/>
+<area shape="rect" id="Node000014" href="$d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8fc61e89e3575684a018c3d30d1d706a" title="Calculates the 3D position along an axis line at a given scalar distance." alt="" coords="627,504,855,547"/>
 <area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="537,459,658,499,653,499,537,465"/>
 <area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="863,418,902,424,896,424,864,423"/>
 <area shape="rect" id="Node000016" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#a4aefd389c9a0efd583cd755b3adb1c10" title="Computes the Euclidean distance between two 3D points." alt="" coords="638,571,844,629"/>

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -110,18 +110,22 @@ Membros públicos estáticos</h2></td></tr>
 <tr class="memitem:ac1dee90c468a38ebc35843d6f4e396b4" id="r_ac1dee90c468a38ebc35843d6f4e396b4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ac1dee90c468a38ebc35843d6f4e396b4">Show</a> (Design design, Mesh? shellMesh, bool visible=true)</td></tr>
 <tr class="memdesc:ac1dee90c468a38ebc35843d6f4e396b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualizes the shell mesh in the design control under the SHELL_SDF layer.  <br /></td></tr>
 <tr class="memitem:af42ee920b3cc8d4f40500143a16d820c" id="r_af42ee920b3cc8d4f40500143a16d820c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af42ee920b3cc8d4f40500143a16d820c">Toggle</a> (Design design)</td></tr>
-<tr class="memdesc:af42ee920b3cc8d4f40500143a16d820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the visibility of the SDF shell layer.  <br /></td></tr>
+<tr class="memdesc:af42ee920b3cc8d4f40500143a16d820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the visibility of the SDF shell layer in the design view.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Atributos Públicos Estáticos</h2></td></tr>
 <tr class="memitem:a55c83966afccce915256fa842ed01cd5" id="r_a55c83966afccce915256fa842ed01cd5"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a55c83966afccce915256fa842ed01cd5">LAYER_SDF</a> = &quot;SHELL_SDF&quot;</td></tr>
+<tr class="memdesc:a55c83966afccce915256fa842ed01cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layer name used for SDF shell mesh visualization.  <br /></td></tr>
 <tr class="memitem:a16c29412f062f9d7b34f9f41d4699dc1" id="r_a16c29412f062f9d7b34f9f41d4699dc1"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a16c29412f062f9d7b34f9f41d4699dc1">LAYER_SDF_EDGES</a> = &quot;SHELL_SDF_EDGES&quot;</td></tr>
+<tr class="memdesc:a16c29412f062f9d7b34f9f41d4699dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layer name used for SDF shell feature edge visualization.  <br /></td></tr>
 <tr class="memitem:abbbe18b991a790db7ac3b29d65076519" id="r_abbbe18b991a790db7ac3b29d65076519"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#abbbe18b991a790db7ac3b29d65076519">MATERIAL_SDF</a> = &quot;SdfShellMaterial&quot;</td></tr>
+<tr class="memdesc:abbbe18b991a790db7ac3b29d65076519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material identifier for transparent SDF shell rendering.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Static class utility to draw the transparent blue SDF shell mesh in the Eyeshot viewport. </p>
+<p>Static class utility to draw the transparent blue SDF shell mesh in the Eyeshot viewport. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02056">2056</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02156">2156</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
 <a id="ac1dee90c468a38ebc35843d6f4e396b4" name="ac1dee90c468a38ebc35843d6f4e396b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1dee90c468a38ebc35843d6f4e396b4">&#9670;&#160;</a></span>Show()</h2>
@@ -165,21 +169,23 @@ Atributos Públicos Estáticos</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02065">2065</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02171">2171</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">LAYER_SDF</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">LAYER_SDF_EDGES</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">MATERIAL_SDF</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02159">LAYER_SDF</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02161">LAYER_SDF_EDGES</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02163">MATERIAL_SDF</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05426">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05218">HirEV_SmartFitSystemsApp.Utilities.PathManager.GenerateOversizedShellFromDesignAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06589">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06380">HirEV_SmartFitSystemsApp.Utilities.PathManager.GenerateOversizedShellFromDesignAsync()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l10215">HirEV_SmartFitSystemsApp.Utilities.PathManager.RestorePathPlanningCadScene()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_ac1dee90c468a38ebc35843d6f4e396b4_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_ac1dee90c468a38ebc35843d6f4e396b4_icgraph" loading="lazy" alt=""/></div>
 <map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_ac1dee90c468a38ebc35843d6f4e396b4_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_ac1dee90c468a38ebc35843d6f4e396b4_icgraph">
-<area shape="rect" title="Visualizes the shell mesh in the design control under the SHELL_SDF layer." alt="" coords="271,55,549,97"/>
-<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="6,5,222,64"/>
-<area shape="poly" title=" " alt="" coords="252,55,223,52,222,47,258,54"/>
-<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ade5086095d7684156c6e9d1b4f12618e" title="Generates and visualizes an oversized duplicate shell directly from the current part geometry...." alt="" coords="5,88,223,147"/>
-<area shape="poly" title=" " alt="" coords="252,98,224,105,223,99,258,97"/>
+<area shape="rect" title="Visualizes the shell mesh in the design control under the SHELL_SDF layer." alt="" coords="277,96,555,139"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="9,5,225,64"/>
+<area shape="poly" title=" " alt="" coords="319,92,226,67,226,62,324,90"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a62b3ad11991429684fa34e548d964bf4" title="Generates and visualizes an oversized duplicate shell directly from the current part geometry...." alt="" coords="8,88,226,147"/>
+<area shape="poly" title=" " alt="" coords="259,118,227,120,226,115,264,117"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a27b8129f1f9ed81916b1b0c72753c8f4" title=" " alt="" coords="5,171,229,229"/>
+<area shape="poly" title=" " alt="" coords="324,143,226,173,225,167,319,144"/>
 </map>
 </div>
 
@@ -208,25 +214,25 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Toggles the visibility of the SDF shell layer. </p>
+<p>Toggles the visibility of the SDF shell layer in the design view. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">design</td><td>The design control.</td></tr>
+    <tr><td class="paramname">design</td><td>The Eyeshot design control instance.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02115">2115</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">2223</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">LAYER_SDF</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02159">LAYER_SDF</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l05306">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ToggleShellVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l06611">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ToggleShellVisibility()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_af42ee920b3cc8d4f40500143a16d820c_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_af42ee920b3cc8d4f40500143a16d820c_icgraph" loading="lazy" alt=""/></div>
 <map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_af42ee920b3cc8d4f40500143a16d820c_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer_af42ee920b3cc8d4f40500143a16d820c_icgraph">
-<area shape="rect" title="Toggles the visibility of the SDF shell layer." alt="" coords="277,5,522,64"/>
+<area shape="rect" title="Toggles the visibility of the SDF shell layer in the design view." alt="" coords="277,5,522,64"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a173213eaee8d3f12e0ef5720b62128e2" title="Toggles the visibility of ConvexHull shell meshes for debugging path generation." alt="" coords="5,5,229,64"/>
 <area shape="poly" title=" " alt="" coords="258,35,229,37,229,32,264,34"/>
 </map>
@@ -255,9 +261,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">2058</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p>Layer name used for SDF shell mesh visualization. </p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02065">Show()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02115">Toggle()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l05306">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ToggleShellVisibility()</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02159">2159</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l02353">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPartEntityForShellCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02171">Show()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">Toggle()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l06611">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ToggleShellVisibility()</a>.</p>
 
 </div>
 </div>
@@ -281,9 +289,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">2058</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p>Layer name used for SDF shell feature edge visualization. </p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02065">Show()</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02161">2161</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l02353">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPartEntityForShellCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02171">Show()</a>.</p>
 
 </div>
 </div>
@@ -307,9 +317,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">2058</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p>Material identifier for transparent SDF shell rendering. </p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02065">Show()</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02163">2163</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l02353">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPartEntityForShellCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02171">Show()</a>.</p>
 
 </div>
 </div>

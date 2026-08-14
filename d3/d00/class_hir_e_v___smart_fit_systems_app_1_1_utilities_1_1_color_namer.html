@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.ColorNamer:</d
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_color_namer_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_color_namer_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_color_namer_coll__map">
-<area shape="rect" title="Provides functionality to get the name of a color." alt="" coords="5,5,187,133"/>
+<area shape="rect" title="Provides functionality to get the name of a color." alt="" coords="5,5,187,155"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -109,6 +109,8 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.ColorNamer:</d
 Membros públicos estáticos</h2></td></tr>
 <tr class="memitem:a0279563b4eab034eb3c97f76d3d4ef5f" id="r_a0279563b4eab034eb3c97f76d3d4ef5f"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a0279563b4eab034eb3c97f76d3d4ef5f">GetColorName</a> (Color color)</td></tr>
 <tr class="memdesc:a0279563b4eab034eb3c97f76d3d4ef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp.  <br /></td></tr>
+<tr class="memitem:abdf0c8fb2b971e66ef73b3228a8d22cd" id="r_abdf0c8fb2b971e66ef73b3228a8d22cd"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#abdf0c8fb2b971e66ef73b3228a8d22cd">FormatColorWithRgb</a> (Color color)</td></tr>
+<tr class="memdesc:abdf0c8fb2b971e66ef73b3228a8d22cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a color as its friendly face color name followed by RGB values, e.g. "Red (RGB: 255, 0, 0)".  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Membros privados estáticos</h2></td></tr>
@@ -157,6 +159,69 @@ Atributos Privados Estáticos</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="abdf0c8fb2b971e66ef73b3228a8d22cd" name="abdf0c8fb2b971e66ef73b3228a8d22cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf0c8fb2b971e66ef73b3228a8d22cd">&#9670;&#160;</a></span>FormatColorWithRgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.ColorNamer.FormatColorWithRgb </td>
+          <td>(</td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formats a color as its friendly face color name followed by RGB values, e.g. "Red (RGB: 255, 0, 0)". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The color to format.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Formatted color description string containing color name and RGB values.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d8/d02/_color_namer_8cs_source.html#l00066">66</a> do ficheiro <a class="el" href="../../d8/d02/_color_namer_8cs_source.html">ColorNamer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/d02/_color_namer_8cs_source.html#l00055">GetColorName()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l04913">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowContextMenuForWaypoint()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_cgraph.png" border="0" usemap="#ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_cgraph" id="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_cgraph">
+<area shape="rect" title="Formats a color as its friendly face color name followed by RGB values, e.g. &quot;Red (RGB: 255,..." alt="" coords="5,5,221,64"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="269,13,499,56"/>
+<area shape="poly" title=" " alt="" coords="221,32,256,34,250,35,221,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_icgraph.png" border="0" usemap="#ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_icgraph" id="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_abdf0c8fb2b971e66ef73b3228a8d22cd_icgraph">
+<area shape="rect" title="Formats a color as its friendly face color name followed by RGB values, e.g. &quot;Red (RGB: 255,..." alt="" coords="592,29,807,88"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="280,29,544,88"/>
+<area shape="poly" title=" " alt="" coords="573,59,544,61,544,56,579,59"/>
+<area shape="poly" title=" " alt="" coords="457,15,441,11,412,8,387,10,370,15,362,21,361,31,357,27,357,19,367,10,386,5,412,3,442,5,462,15"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="5,29,232,88"/>
+<area shape="poly" title=" " alt="" coords="261,59,232,61,232,56,267,58"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a0279563b4eab034eb3c97f76d3d4ef5f" name="a0279563b4eab034eb3c97f76d3d4ef5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0279563b4eab034eb3c97f76d3d4ef5f">&#9670;&#160;</a></span>GetColorName()</h2>
 
@@ -193,50 +258,75 @@ Atributos Privados Estáticos</h2></td></tr>
 
 <p class="reference">Referências <a class="el" href="../../d8/d02/_color_namer_8cs_source.html#l00036">_colorNamesInstance</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l08112">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GenerateAndVisualizePaths()</a>, <a class="el" href="../../d4/d03/_color_tool_mapping_utils_8cs_source.html#l00216">HirEV_SmartFitSystemsApp.Utilities.ColorToolMappingUtils.GetColorNameFromRgb()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l10101">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathsInfo()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09470">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GroupFacesByColor()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l09491">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GroupHolesByColor()</a>, <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l01851">HirEV_SmartFitSystemsApp.Measuring_SidePanel.LoadColorToolItems()</a> e <a class="el" href="../../d7/d00/_path_edit_dialog_8xaml_8cs_source.html#l00367">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathEditDialog.LoadPaths()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d3/d00/_eyeshot_tree_view_helper_8cs_source.html#l00793">HirEV_SmartFitSystemsApp.Utilities.EyeshotTreeViewHelper.BuildHierarchyCache()</a>, <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l00864">HirEV_SmartFitSystemsApp.Measuring_SidePanel.ExportPaths()</a>, <a class="el" href="../../d8/d02/_color_namer_8cs_source.html#l00066">FormatColorWithRgb()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01762">HirEV_SmartFitSystemsApp.Utilities.PathManager.FormatPlanningColor()</a>, <a class="el" href="../../d4/d03/_color_tool_mapping_utils_8cs_source.html#l00216">HirEV_SmartFitSystemsApp.Utilities.ColorToolMappingUtils.GetColorNameFromRgb()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l12517">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathsInfo()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l11261">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GroupFacesByColor()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l11282">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GroupHolesByColor()</a>, <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l02886">HirEV_SmartFitSystemsApp.Measuring_SidePanel.LoadColorToolItems()</a>, <a class="el" href="../../d7/d00/_path_edit_dialog_8xaml_8cs_source.html#l00368">HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathEditDialog.LoadPaths()</a> e <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l01093">HirEV_SmartFitSystemsApp.Measuring_SidePanel.PopulatePathViewerTree()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_a0279563b4eab034eb3c97f76d3d4ef5f_icgraph.png" border="0" usemap="#ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_a0279563b4eab034eb3c97f76d3d4ef5f_icgraph" loading="lazy" alt=""/></div>
 <map name="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_a0279563b4eab034eb3c97f76d3d4ef5f_icgraph" id="ad3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer_a0279563b4eab034eb3c97f76d3d4ef5f_icgraph">
-<area shape="rect" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="1150,245,1380,288"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a57441d7b0af3c963dc633cc061a43edd" title="Executes the GenerateAndVisualizePaths method." alt="" coords="849,5,1087,64"/>
-<area shape="poly" title=" " alt="" coords="1240,232,1183,155,1144,114,1100,78,1081,67,1081,62,1103,74,1148,110,1188,152,1246,233"/>
-<area shape="rect" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html#ae39df2808ca92af421544ee549e4110c" title="Gets the user&#45;friendly color name from ColorNamesSharp." alt="" coords="866,88,1070,147"/>
-<area shape="poly" title=" " alt="" coords="1221,235,1166,199,1100,161,1071,148,1071,143,1103,156,1169,194,1227,236"/>
-<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a09b61844ce8c78c65f6426263c455425" title="Executes the GetPathsInfo method." alt="" coords="854,171,1082,213"/>
-<area shape="poly" title=" " alt="" coords="1161,241,1101,228,1057,217,1056,211,1102,223,1166,241"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a11de2e4ffed708af5947679872b3bd39" title="Groups CADFaces by color string representation." alt="" coords="840,320,1096,379"/>
-<area shape="poly" title=" " alt="" coords="1168,293,1077,322,1075,317,1174,292"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2c1ed898f8c023bcf78637e6077232ed" title="Groups CADHoles by color string representation." alt="" coords="841,237,1095,296"/>
-<area shape="poly" title=" " alt="" coords="1132,267,1096,269,1095,264,1137,266"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a3b00a067fd3d5527b8cefee117489927" title="Loads color&#45;tool correspondences from generated paths and configuration." alt="" coords="834,417,1102,460"/>
-<area shape="poly" title=" " alt="" coords="1231,297,1173,347,1103,393,1043,419,1041,414,1100,388,1170,343,1226,300"/>
-<area shape="rect" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html#a91db495f3a1ca2d864b3a632ccc88ded" title="Loads the paths from the PathManager and populates the local ObservableCollection." alt="" coords="848,521,1088,580"/>
-<area shape="poly" title=" " alt="" coords="1244,300,1186,385,1147,431,1103,474,1068,501,1031,523,1029,518,1065,496,1100,470,1143,428,1181,382,1240,302"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="548,223,780,281"/>
-<area shape="poly" title=" " alt="" coords="853,315,834,311,755,285,755,279,835,305,859,315"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="542,305,786,364"/>
-<area shape="poly" title=" " alt="" coords="821,343,787,343,786,338,827,342"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="266,223,493,281"/>
-<area shape="poly" title=" " alt="" coords="530,253,494,255,493,249,535,251"/>
-<area shape="poly" title=" " alt="" coords="823,260,781,260,780,255,828,259"/>
-<area shape="poly" title=" " alt="" coords="823,299,788,310,786,305,828,298"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#aaa59417e232021e226bbbb400eaee3a4" title="Triggers the MainViewModel to generate and draw the measurement paths, or cancels if already running." alt="" coords="545,388,783,431"/>
-<area shape="poly" title=" " alt="" coords="816,425,784,423,783,418,821,424"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a87e64f82c094bde19a2373b3faf218ae" title="Initializes a new instance of the Measuring_SidePanel class." alt="" coords="5,439,217,497"/>
-<area shape="poly" title=" " alt="" coords="818,446,217,467,217,462,819,441"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a9844d5a4443ffb74625da16ddde72d88" title="Public method to refresh the color&#45;tool list (called from MainViewModel after path generation)." alt="" coords="550,505,778,564"/>
-<area shape="poly" title=" " alt="" coords="886,465,760,507,759,502,881,466"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#ada23e52de0beda165b114a124a9fcc4c" title="Handles simulation state changes from PathManager." alt="" coords="265,529,494,588"/>
-<area shape="poly" title=" " alt="" coords="532,546,495,552,494,546,537,545"/>
-<area shape="poly" title=" " alt="" coords="273,525,200,501,200,495,278,523"/>
-<area shape="poly" title=" " alt="" coords="421,515,406,511,379,508,356,510,340,515,333,521,332,531,327,527,328,519,338,510,355,505,379,503,408,505,426,515"/>
-<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a1981b1ce60b721b84a2b69bb6a7f9ba1" title="Clear event subscriptions to prevent memory leaks." alt="" coords="5,545,217,604"/>
-<area shape="poly" title=" " alt="" coords="246,567,218,571,217,566,252,566"/>
-<area shape="poly" title=" " alt="" coords="153,532,138,527,111,524,87,526,72,531,64,537,64,546,59,544,60,535,69,526,86,521,111,519,139,521,158,530"/>
-<area shape="rect" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html#aa4d031b05bc59f2d567f632ad9ef8cd5" title="Initializes a new instance of the PathEditDialog class." alt="" coords="544,588,784,647"/>
-<area shape="poly" title=" " alt="" coords="835,580,785,594,784,588,830,581"/>
+<area shape="rect" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="1231,411,1461,453"/>
+<area shape="rect" href="../../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a30ba483c87383d43f1c408e65c571de5" title="Builds the entire UI hierarchy for all colors and stores it in the cache. This is the intensive opera..." alt="" coords="939,29,1154,88"/>
+<area shape="poly" title=" " alt="" coords="1334,394,1316,332,1286,253,1266,212,1242,172,1213,135,1181,102,1154,85,1154,79,1184,98,1218,131,1246,169,1271,209,1291,251,1322,331,1339,396"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a9bbd7bacff6038c82e93b4d3c972f50e" title=" " alt="" coords="935,112,1158,155"/>
+<area shape="poly" title=" " alt="" coords="1330,395,1309,345,1278,283,1235,221,1210,193,1181,169,1159,156,1159,150,1184,164,1213,189,1239,218,1282,280,1314,343,1335,397"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#abdf0c8fb2b971e66ef73b3228a8d22cd" title="Formats a color as its friendly face color name followed by RGB values, e.g. &quot;Red (RGB: 255,..." alt="" coords="939,179,1154,237"/>
+<area shape="poly" title=" " alt="" coords="1320,397,1263,325,1225,285,1181,252,1154,237,1154,232,1184,247,1228,281,1267,321,1325,398"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a53c459b1192eaf46eee3b746db04ee83" title=" " alt="" coords="910,261,1183,304"/>
+<area shape="poly" title=" " alt="" coords="1306,400,1250,359,1182,318,1153,307,1153,302,1184,314,1253,354,1312,401"/>
+<area shape="rect" href="../../d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html#ae39df2808ca92af421544ee549e4110c" title="Gets the user&#45;friendly color name from ColorNamesSharp." alt="" coords="944,328,1149,387"/>
+<area shape="poly" title=" " alt="" coords="1240,407,1149,386,1149,380,1245,406"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a09b61844ce8c78c65f6426263c455425" title="Executes the GetPathsInfo method." alt="" coords="933,411,1160,453"/>
+<area shape="poly" title=" " alt="" coords="1212,433,1161,435,1160,429,1218,431"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a11de2e4ffed708af5947679872b3bd39" title="Groups CADFaces by color string representation." alt="" coords="918,560,1175,619"/>
+<area shape="poly" title=" " alt="" coords="1311,462,1253,509,1184,550,1157,562,1156,557,1181,546,1250,504,1306,465"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2c1ed898f8c023bcf78637e6077232ed" title="Groups CADHoles by color string representation." alt="" coords="919,477,1174,536"/>
+<area shape="poly" title=" " alt="" coords="1240,458,1167,479,1166,474,1245,457"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a3b00a067fd3d5527b8cefee117489927" title="Loads color&#45;tool correspondences from generated paths and configuration." alt="" coords="913,643,1180,685"/>
+<area shape="poly" title=" " alt="" coords="1328,465,1304,507,1271,552,1231,596,1184,633,1162,645,1160,640,1181,628,1227,592,1267,548,1300,504,1324,468"/>
+<area shape="rect" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html#a91db495f3a1ca2d864b3a632ccc88ded" title="Loads the paths from the PathManager and populates the local ObservableCollection." alt="" coords="926,804,1167,863"/>
+<area shape="poly" title=" " alt="" coords="1339,467,1322,535,1291,618,1271,662,1246,705,1218,746,1184,782,1150,806,1148,801,1181,778,1213,742,1242,702,1266,660,1286,616,1317,533,1335,470"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#af5e1e9808b7bb34d9d8b9bc42cde0c2b" title=" " alt="" coords="932,709,1161,768"/>
+<area shape="poly" title=" " alt="" coords="1334,466,1313,521,1281,583,1238,645,1213,674,1184,699,1162,713,1160,708,1181,695,1209,670,1234,642,1277,580,1308,518,1330,470"/>
+<area shape="rect" href="../../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a4d00b56a69ec15b9ba4daf70bc00d2c6" title="Populates the TreeView using the high&#45;performance UI node cache. This method will build the cache on ..." alt="" coords="623,29,837,88"/>
+<area shape="poly" title=" " alt="" coords="921,60,838,61,837,56,926,58"/>
+<area shape="poly" title=" " alt="" coords="776,16,760,11,730,8,704,10,687,15,679,21,678,30,673,28,674,19,685,10,703,5,730,3,761,5,782,14"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="598,175,862,233"/>
+<area shape="poly" title=" " alt="" coords="921,207,864,208,862,203,926,206"/>
+<area shape="poly" title=" " alt="" coords="776,161,760,156,730,153,704,155,687,160,679,167,678,175,673,173,674,164,685,155,703,150,730,148,761,151,782,160"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="322,175,548,233"/>
+<area shape="poly" title=" " alt="" coords="580,205,550,206,548,202,585,203"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="622,257,838,316"/>
+<area shape="poly" title=" " alt="" coords="892,285,840,288,838,283,897,284"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a30683bca5c9a3687d07523f9f06991ab" title="Executes the PerformFaceExtractionAsync method." alt="" coords="614,547,846,605"/>
+<area shape="poly" title=" " alt="" coords="900,584,847,584,846,578,906,583"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a54156d913b4f95e34e0e53f537639bb7" title="Re&#45;extracts faces after importing new entities while preserving the ignored state of previously ignor..." alt="" coords="608,440,852,499"/>
+<area shape="poly" title=" " alt="" coords="919,553,909,550,885,531,861,513,838,502,838,497,864,508,888,527,912,546,924,554"/>
+<area shape="poly" title=" " alt="" coords="776,532,760,528,730,525,704,527,687,532,679,539,678,548,673,545,674,536,685,527,703,522,730,520,761,523,782,532"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab53d619fd0ab8d43d9e24bb3c6652dbe" title="Handles Extract / Update Faces button logic. Runs a full or incremental extraction depending on model..." alt="" coords="322,547,549,605"/>
+<area shape="poly" title=" " alt="" coords="597,577,550,579,549,573,602,575"/>
+<area shape="poly" title=" " alt="" coords="902,539,847,553,846,548,907,537"/>
+<area shape="poly" title=" " alt="" coords="901,490,853,486,853,481,907,489"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#aaa59417e232021e226bbbb400eaee3a4" title="Triggers the MainViewModel to generate and draw the measurement paths, or cancels if already running." alt="" coords="611,763,849,805"/>
+<area shape="poly" title=" " alt="" coords="922,691,912,700,897,712,889,725,880,739,864,753,840,765,838,760,861,748,875,736,884,723,893,709,909,695,917,693"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a87e64f82c094bde19a2373b3faf218ae" title="Initializes a new instance of the Measuring_SidePanel class." alt="" coords="33,639,245,697"/>
+<area shape="poly" title=" " alt="" coords="897,667,245,670,245,665,898,662"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a9844d5a4443ffb74625da16ddde72d88" title="Public method to refresh the color&#45;tool list (called from MainViewModel after path generation)." alt="" coords="616,680,844,739"/>
+<area shape="poly" title=" " alt="" coords="895,686,845,696,844,690,900,685"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#ada23e52de0beda165b114a124a9fcc4c" title="Handles simulation state changes from PathManager." alt="" coords="321,787,550,845"/>
+<area shape="poly" title=" " alt="" coords="619,743,599,753,508,789,506,783,597,748,614,745"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a28e1ccdd7414aa6c8d1832a02a2020ed" title="Handles the Loaded event for the UserControl, ensuring CMMType is up&#45;to&#45;date." alt="" coords="321,680,550,739"/>
+<area shape="poly" title=" " alt="" coords="598,710,550,712,550,707,603,709"/>
+<area shape="poly" title=" " alt="" coords="360,780,271,736,201,700,201,695,274,731,365,779"/>
+<area shape="poly" title=" " alt="" coords="482,772,465,768,435,765,409,767,392,772,384,779,383,788,379,785,379,776,390,767,408,762,435,760,466,763,487,772"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a1981b1ce60b721b84a2b69bb6a7f9ba1" title="Clear event subscriptions to prevent memory leaks." alt="" coords="33,836,245,895"/>
+<area shape="poly" title=" " alt="" coords="303,838,246,850,245,845,308,837"/>
+<area shape="rect" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a4171fdc3369673dcd9cb9ecfe6bb919f" title="Triggers the MainViewModel to simulate the path execution based on the selected tool order." alt="" coords="5,745,273,788"/>
+<area shape="poly" title=" " alt="" coords="303,795,271,791,271,786,308,794"/>
+<area shape="poly" title=" " alt="" coords="185,822,169,817,139,815,113,817,96,821,87,828,86,837,82,835,83,825,93,817,112,811,139,809,170,812,191,821"/>
+<area shape="rect" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html#aa4d031b05bc59f2d567f632ad9ef8cd5" title="Initializes a new instance of the PathEditDialog class." alt="" coords="610,829,850,888"/>
+<area shape="poly" title=" " alt="" coords="913,844,851,852,850,846,908,844"/>
+<area shape="poly" title=" " alt="" coords="914,758,850,770,849,764,919,757"/>
+<area shape="poly" title=" " alt="" coords="914,727,845,723,845,717,919,726"/>
 </map>
 </div>
 

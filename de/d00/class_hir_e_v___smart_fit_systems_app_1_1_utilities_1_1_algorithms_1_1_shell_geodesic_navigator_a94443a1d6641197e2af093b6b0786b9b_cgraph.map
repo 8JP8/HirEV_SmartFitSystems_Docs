@@ -1,12 +1,19 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.ShellGeodesicNavigator" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.ShellGeodesicNavigator">
-<area shape="rect" id="Node000001" title="Initializes a navigator from shell mesh with face adjacency for proper gap&#45;jumping...." alt="" coords="5,72,227,131"/>
-<area shape="rect" id="Node000002" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a7af1fbf47180d3e2c4617dd84cd19aec" title=" " alt="" coords="275,72,544,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,99,262,101,257,102,228,104"/>
-<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#affb2c491b45bc225c47957594a2e8771" title=" " alt="" coords="592,5,833,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="544,69,579,64,574,65,545,74"/>
-<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a9e00577f97ad0f5686cf0ff7b7c59bc2" title=" " alt="" coords="881,39,1101,97"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="544,91,869,75,864,76,545,96"/>
-<area shape="rect" id="Node000005" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a4daad2d52d53ce51566629940127ac77" title=" " alt="" coords="598,139,828,197"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="544,128,585,139,580,139,544,134"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="834,46,869,53,863,53,834,52"/>
+<area shape="rect" id="Node000001" title="Initializes a new instance of the ShellGeodesicNavigator class using a shell mesh and face adjacency ..." alt="" coords="5,39,227,97"/>
+<area shape="rect" id="Node000002" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a7af1fbf47180d3e2c4617dd84cd19aec" title="Builds a navigation graph directly using the shell mesh vertices and triangles." alt="" coords="275,39,544,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,65,262,67,257,69,228,71"/>
+<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#affb2c491b45bc225c47957594a2e8771" title="Adds additional connection edges across adjacent CAD faces to avoid disconnected meshes." alt="" coords="592,39,833,97"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="544,65,579,68,574,68,545,71"/>
+<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a9e00577f97ad0f5686cf0ff7b7c59bc2" title="Adds an edge between two mesh vertex indices." alt="" coords="881,5,1101,64"/>
+<area shape="poly" id="edge7_Node000002_Node000004" title=" " alt="" coords="524,35,592,24,659,19,712,18,833,24,868,28,863,28,833,29,712,24,660,24,592,29,525,41"/>
+<area shape="rect" id="Node000008" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a4daad2d52d53ce51566629940127ac77" title="Ensures all disconnected components of the navigation graph are linked together." alt="" coords="598,121,828,180"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="520,95,590,117,585,117,519,101"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="833,51,869,49,863,50,834,56"/>
+<area shape="rect" id="Node000005" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a0e87fe034e86c698061a01e745090bf1" title="Checks if a linear path segment between two points maintains the required clearance offset." alt="" coords="881,104,1101,163"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="834,94,869,104,864,104,834,99"/>
+<area shape="rect" id="Node000006" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#aff43515535dc9f7cbd25c0f7bba7c772" title="Checks if a point stays sufficiently close to the shell surface (preventing cuts through the air or p..." alt="" coords="1149,104,1368,163"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1101,131,1136,133,1130,133,1101,136"/>
+<area shape="rect" id="Node000007" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ad1fcb7ae0afa03d59132f446a227b527" title="Finds the nearest point on a shell mesh to a given query point." alt="" coords="1416,104,1638,163"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1368,131,1403,133,1398,133,1368,136"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="828,141,863,141,868,141,828,146"/>
 </map>

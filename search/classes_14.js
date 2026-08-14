@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xmlexportutils_0',['XmlExportUtils',['../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_xml_export_utils.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
+  ['waypointdata_0',['WaypointData',['../d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_data.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['waypointreference_1',['WaypointReference',['../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_waypoint_reference.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
 ];

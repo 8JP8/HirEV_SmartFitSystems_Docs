@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.31</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -109,11 +109,11 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.DynamicToolSca
 Membros públicos estáticos</h2></td></tr>
 <tr class="memitem:a531b1c5a3b9390feff67f7c5b8a5cc2d" id="r_a531b1c5a3b9390feff67f7c5b8a5cc2d"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a531b1c5a3b9390feff67f7c5b8a5cc2d">SyncConfigurations</a> ()</td></tr>
 <tr class="memdesc:a531b1c5a3b9390feff67f7c5b8a5cc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes the scanner and tool configurations by scanning the folders for new STP/STEP/STL models and updating the corresponding XML configuration files.  <br /></td></tr>
+<tr class="memitem:a7ec9f4579f21e83443b44a9b6a102cc3" id="r_a7ec9f4579f21e83443b44a9b6a102cc3"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a7ec9f4579f21e83443b44a9b6a102cc3">ResolveFolder</a> (string relativeFolder)</td></tr>
+<tr class="memdesc:a7ec9f4579f21e83443b44a9b6a102cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the absolute directory path of a relative folder, checking parent directories up to 8 levels.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Membros privados estáticos</h2></td></tr>
-<tr class="memitem:a7ec9f4579f21e83443b44a9b6a102cc3" id="r_a7ec9f4579f21e83443b44a9b6a102cc3"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a7ec9f4579f21e83443b44a9b6a102cc3">ResolveFolder</a> (string relativeFolder)</td></tr>
-<tr class="memdesc:a7ec9f4579f21e83443b44a9b6a102cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the absolute directory path of a relative folder, checking parent directories up to 8 levels.  <br /></td></tr>
 <tr class="memitem:a00c4cd96a2ef5fde7d9acd0dcf0502df" id="r_a00c4cd96a2ef5fde7d9acd0dcf0502df"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a00c4cd96a2ef5fde7d9acd0dcf0502df">GetProjectRoot</a> ()</td></tr>
 <tr class="memdesc:a00c4cd96a2ef5fde7d9acd0dcf0502df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses upwards to locate the project root directory containing the <span class="tt">.csproj</span> file.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -189,7 +189,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -250,37 +250,41 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="reference">Referências <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.DefaultTool</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00124">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.GetAvailableTools()</a>, <a class="el" href="../../de/d01/_dynamic_tool_scanner_8cs_source.html#l00211">GetProjectRoot()</a>, <a class="el" href="../../d0/d02/_scanner_properties_8cs_source.html#l00153">HirEV_SmartFitSystemsApp.Models.ScannerPropertiesLoader.Load()</a>, <a class="el" href="../../de/d01/_dynamic_tool_scanner_8cs_source.html#l00172">ResolveFolder()</a>, <a class="el" href="../../d2/d03/_scanner_configuration_saver_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Utilities.ScannerConfigurationSaver.SaveScannerConfiguration()</a>, <a class="el" href="../../de/d01/_dynamic_tool_scanner_8cs_source.html#l00015">SCANNERS_FOLDER</a> e <a class="el" href="../../de/d01/_dynamic_tool_scanner_8cs_source.html#l00016">TOOLS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02458">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02936">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner_a531b1c5a3b9390feff67f7c5b8a5cc2d_cgraph.png" border="0" usemap="#ad9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner_a531b1c5a3b9390feff67f7c5b8a5cc2d_cgraph" loading="lazy" alt=""/></div>
 <map name="ad9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner_a531b1c5a3b9390feff67f7c5b8a5cc2d_cgraph" id="ad9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner_a531b1c5a3b9390feff67f7c5b8a5cc2d_cgraph">
-<area shape="rect" title="Synchronizes the scanner and tool configurations by scanning the folders for new STP/STEP/STL models ..." alt="" coords="5,147,233,205"/>
-<area shape="rect" href="../../d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_measuring_tool_types.html#a12e430ad72223769983bc166cf3f0c72" title="Scans the 3DModels/Machine_Tools directory and returns a list of available tool names,..." alt="" coords="281,5,576,48"/>
-<area shape="poly" title=" " alt="" coords="151,145,209,99,243,77,280,58,298,52,294,55,282,62,246,81,212,104,155,148"/>
-<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner.html#a00c4cd96a2ef5fde7d9acd0dcf0502df" title="Traverses upwards to locate the project root directory containing the .csproj file." alt="" coords="319,72,538,131"/>
-<area shape="poly" title=" " alt="" coords="232,146,307,130,302,133,234,151"/>
-<area shape="rect" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#ac3b95354f8e2bf7f3e389488f31c7127" title="Loads all scanner presets from the specified XML file." alt="" coords="306,155,551,197"/>
-<area shape="poly" title=" " alt="" coords="232,173,292,175,288,177,234,179"/>
-<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner.html#a7ec9f4579f21e83443b44a9b6a102cc3" title="Resolves the absolute directory path of a relative folder, checking parent directories up to 8 levels..." alt="" coords="306,221,551,280"/>
-<area shape="poly" title=" " alt="" coords="233,201,293,217,288,218,234,206"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#aafb91166e34e106a25f84533a0fafc4a" title="Saves a scanner configuration to the XML file. If the scanner exists, it updates its properties...." alt="" coords="321,304,536,363"/>
-<area shape="poly" title=" " alt="" coords="154,203,212,248,282,290,309,303,304,303,279,294,209,252,153,208"/>
-<area shape="rect" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e" title="Reads a double value from a child XML element, returning a default value if missing or invalid." alt="" coords="627,147,844,205"/>
-<area shape="poly" title=" " alt="" coords="551,173,614,175,609,177,552,179"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#aafc2ff670b1d9d8e876ef7e442f979ae" title="Creates a new ScannerConfigurations.xml file with a single scanner entry." alt="" coords="624,237,847,296"/>
-<area shape="poly" title=" " alt="" coords="535,308,611,294,606,295,536,313"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a91e3bffbf0b654c9dd1df8858bac67bc" title="Creates a new Scanner XML node with all properties." alt="" coords="914,288,1109,347"/>
-<area shape="poly" title=" " alt="" coords="536,328,902,320,896,321,536,333"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#af9305f35f046162d379b216109e61d31" title="Updates an existing Scanner XML node with new properties." alt="" coords="638,371,833,429"/>
-<area shape="poly" title=" " alt="" coords="536,354,626,376,621,376,536,359"/>
-<area shape="poly" title=" " alt="" coords="848,285,902,297,896,297,848,290"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a46c953de974e533d95c9c4739ce808e7" title="Appends a new text element to a parent node." alt="" coords="1176,329,1370,388"/>
-<area shape="poly" title=" " alt="" coords="1109,330,1163,341,1158,341,1109,335"/>
-<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a18f77dcb7e9ade1dba1cf0f7fe41929b" title="Updates an existing child element or creates it if it doesn&#39;t exist." alt="" coords="895,371,1128,429"/>
-<area shape="poly" title=" " alt="" coords="833,397,883,400,877,400,833,403"/>
-<area shape="poly" title=" " alt="" coords="1128,379,1158,377,1163,376,1128,384"/>
+<area shape="rect" title="Synchronizes the scanner and tool configurations by scanning the folders for new STP/STEP/STL models ..." alt="" coords="5,155,233,213"/>
+<area shape="rect" href="../../d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_measuring_tool_types.html#a12e430ad72223769983bc166cf3f0c72" title="Scans the 3DModels/Machine_Tools directory and returns a list of available tool names,..." alt="" coords="281,13,576,56"/>
+<area shape="poly" title=" " alt="" coords="151,153,209,107,243,85,280,66,298,60,294,63,282,70,246,89,212,112,155,156"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner.html#a00c4cd96a2ef5fde7d9acd0dcf0502df" title="Traverses upwards to locate the project root directory containing the .csproj file." alt="" coords="319,80,538,139"/>
+<area shape="poly" title=" " alt="" coords="232,154,307,138,302,141,234,159"/>
+<area shape="rect" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#ac3b95354f8e2bf7f3e389488f31c7127" title="Loads all scanner presets from the specified XML file." alt="" coords="306,163,551,205"/>
+<area shape="poly" title=" " alt="" coords="232,181,292,183,288,185,234,187"/>
+<area shape="rect" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_dynamic_tool_scanner.html#a7ec9f4579f21e83443b44a9b6a102cc3" title="Resolves the absolute directory path of a relative folder, checking parent directories up to 8 levels..." alt="" coords="306,229,551,288"/>
+<area shape="poly" title=" " alt="" coords="233,209,293,225,288,226,234,214"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#aafb91166e34e106a25f84533a0fafc4a" title="Saves a scanner configuration to the XML file. If the scanner exists, it updates its properties...." alt="" coords="321,312,536,371"/>
+<area shape="poly" title=" " alt="" coords="154,211,212,256,282,298,309,311,304,311,279,302,209,260,153,216"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a889b6c3f7f742c21faebd33ceaa45712" title="Scans the machine tools model folder and returns model names that can be used as tool selections." alt="" coords="624,5,869,64"/>
+<area shape="poly" title=" " alt="" coords="576,32,611,34,606,36,577,37"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a9f41b0f2cc155e06ba5ee049588c1092" title="Locates the actual folder on disk for the given relative path, searching up the directory tree if nec..." alt="" coords="924,5,1143,64"/>
+<area shape="poly" title=" " alt="" coords="869,32,911,34,905,35,870,37"/>
+<area shape="rect" href="../../d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties_loader.html#abefeb4f165280d1618505165f2fdba6e" title="Reads a double value from a child XML element, returning a default value if missing or invalid." alt="" coords="638,155,855,213"/>
+<area shape="poly" title=" " alt="" coords="551,181,625,183,620,185,552,187"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#aafc2ff670b1d9d8e876ef7e442f979ae" title="Creates a new ScannerConfigurations.xml file with a single scanner entry." alt="" coords="635,245,858,304"/>
+<area shape="poly" title=" " alt="" coords="536,316,622,301,617,302,537,321"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a91e3bffbf0b654c9dd1df8858bac67bc" title="Creates a new Scanner XML node with all properties." alt="" coords="936,296,1131,355"/>
+<area shape="poly" title=" " alt="" coords="536,336,923,328,918,329,536,341"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#af9305f35f046162d379b216109e61d31" title="Updates an existing Scanner XML node with new properties." alt="" coords="650,379,844,437"/>
+<area shape="poly" title=" " alt="" coords="536,361,637,384,631,385,536,366"/>
+<area shape="poly" title=" " alt="" coords="859,292,924,306,919,306,859,297"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a46c953de974e533d95c9c4739ce808e7" title="Appends a new text element to a parent node." alt="" coords="1198,337,1392,396"/>
+<area shape="poly" title=" " alt="" coords="1131,338,1185,349,1180,349,1131,343"/>
+<area shape="rect" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html#a18f77dcb7e9ade1dba1cf0f7fe41929b" title="Updates an existing child element or creates it if it doesn&#39;t exist." alt="" coords="917,379,1150,437"/>
+<area shape="poly" title=" " alt="" coords="844,405,905,408,899,408,844,411"/>
+<area shape="poly" title=" " alt="" coords="1150,387,1180,385,1185,384,1150,392"/>
 </map>
 </div>
 <div class="dynheader">
