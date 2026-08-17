@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae71a46c735640c19caa2e2706fe2cc92":[3,0,0,5,1,721],
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae79c8e1e94aa93098d2eedebb6f44378":[2,0,0,5,1,368],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae79c8e1e94aa93098d2eedebb6f44378":[3,0,0,5,1,368],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae7ab78583938e79c90886907e0961ee0":[2,0,0,5,1,443],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae7ab78583938e79c90886907e0961ee0":[3,0,0,5,1,443],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "d7/d01/_point4_d_converter_8cs_source.html":[4,0,0,4,18],
 "d7/d01/_scanner_configuration_dialog_8xaml_8cs.html":[4,0,0,3,2,9],
 "d7/d01/_scanner_configuration_dialog_8xaml_8cs_source.html":[4,0,0,3,2,9],
-"d7/d01/_shell_geodesic_navigator_8cs.html":[4,0,0,4,0,16],
-"d7/d01/_shell_geodesic_navigator_8cs_source.html":[4,0,0,4,0,16],
-"d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html":[2,0,0,2,53]
+"d7/d01/_shell_geodesic_navigator_8cs.html":[4,0,0,4,0,16]
 };

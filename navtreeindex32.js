@@ -1,5 +1,9 @@
 var NAVTREEINDEX32 =
 {
+"db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#a2969f980d2e9ceeed7fba25722e526db":[3,0,0,0,5,1],
+"db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#a6332cde8c7093aa0a2e244ff1c838534":[2,0,0,0,5,0],
+"db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#a6332cde8c7093aa0a2e244ff1c838534":[3,0,0,0,5,0],
+"db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#aa08877a5ecfea54f45f8895f4b5c11a3":[2,0,0,0,5,5],
 "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#aa08877a5ecfea54f45f8895f4b5c11a3":[3,0,0,0,5,5],
 "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#ad2e8de17f30c161e331b1c3a06778df6":[2,0,0,0,5,3],
 "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html#ad2e8de17f30c161e331b1c3a06778df6":[3,0,0,0,5,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX32 =
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887":[2,0,0,2,32,25],
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887":[3,0,0,2,32,25],
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262":[2,0,0,2,32,29],
-"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262":[3,0,0,2,32,29],
-"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b":[2,0,0,2,32,8],
-"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b":[3,0,0,2,32,8],
-"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad379a317773e60df94d060a16157ade0":[2,0,0,2,32,36],
-"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad379a317773e60df94d060a16157ade0":[3,0,0,2,32,36]
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262":[3,0,0,2,32,29]
 };

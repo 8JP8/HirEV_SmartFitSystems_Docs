@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.34</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -409,89 +409,100 @@ $(function(){initNavTree('d3/d00/_measuring___side_panel_8xaml_source.html','../
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                        &lt;/ItemsControl&gt;</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    &lt;/ScrollViewer&gt;</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                &lt;/Expander&gt;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                &lt;TextBlock Text=&quot;{Binding CurrentToolName, FallbackValue=&#39;Tool1&#39;}&quot; Grid.Row=&quot;6&quot; Background=&quot;{x:Null}&quot; HorizontalAlignment=&quot;Right&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot; Margin=&quot;0,15,6,0&quot; FontSize=&quot;11&quot; VerticalAlignment=&quot;Top&quot;/&gt;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                &lt;!-- PATH VIEWER EXPANDER --&gt;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                &lt;Expander x:Name=&quot;PathViewer_Expander&quot; BorderBrush=&quot;DarkGray&quot; Background=&quot;Transparent&quot; Margin=&quot;0,10,0,0&quot; IsExpanded=&quot;True&quot; Grid.ColumnSpan=&quot;2&quot; Grid.Row=&quot;5&quot; Visibility=&quot;{Binding PathViewerExpander_Visibility, FallbackValue=Visible}&quot; Expanded=&quot;PathViewer_Expander_Expanded&quot; MaxHeight=&quot;300&quot; VirtualizingStackPanel.IsVirtualizing=&quot;True&quot; VirtualizingStackPanel.VirtualizationMode=&quot;Recycling&quot; Loaded=&quot;InvertedExpanderArrow_Loaded&quot;&gt;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                    &lt;Expander.Header&gt;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                        &lt;TextBlock Text=&quot;{Binding Source={StaticResource Language}, XPath=GeneratedPaths/@Value, FallbackValue=&#39;Generated Paths&#39;}&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                    &lt;/Expander.Header&gt;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    &lt;Grid&gt;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                        &lt;Grid.RowDefinitions&gt;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                            &lt;RowDefinition Height=&quot;*&quot; /&gt;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                        &lt;/Grid.RowDefinitions&gt;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                        &lt;CheckBox Grid.Row=&quot;0&quot; IsChecked=&quot;{Binding IsExecutionOrderMode}&quot; Margin=&quot;0,-18,6,0&quot; HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; Cursor=&quot;Pen&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExecutionOrderMode/@Value, FallbackValue=&#39;Sort by Execution Order&#39;}&quot;/&gt;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                        &lt;TreeView Grid.Row=&quot;1&quot; x:Name=&quot;PathViewerTreeView&quot; BorderThickness=&quot;0&quot; Background=&quot;Transparent&quot; </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                                  ItemsSource=&quot;{Binding PathViewerItems}&quot; </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                                  ScrollViewer.VerticalScrollBarVisibility=&quot;Auto&quot;</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                                  VirtualizingStackPanel.IsVirtualizing=&quot;True&quot;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                                  VirtualizingStackPanel.VirtualizationMode=&quot;Standard&quot;</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                                  SelectedItemChanged=&quot;PathViewerTreeView_SelectedItemChanged&quot;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                  PreviewMouseLeftButtonDown=&quot;TreeScrollViewer_PreviewMouseLeftButtonDown&quot;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                                  MouseMove=&quot;TreeScrollViewer_MouseMove&quot;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                                  PreviewMouseLeftButtonUp=&quot;TreeScrollViewer_PreviewMouseLeftButtonUp&quot;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                                  Margin=&quot;5,5,5,0&quot;&gt;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                            &lt;TreeView.ItemContainerStyle&gt;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                            &lt;Style TargetType=&quot;TreeViewItem&quot;&gt;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                                    &lt;Setter Property=&quot;IsExpanded&quot; Value=&quot;{Binding IsExpanded}&quot;/&gt;</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                                      &lt;Setter Property=&quot;IsSelected&quot; Value=&quot;{Binding IsSelected, Mode=TwoWay}&quot;/&gt;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                    &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                                    &lt;EventSetter Event=&quot;PreviewMouseRightButtonDown&quot; Handler=&quot;TreeViewItem_PreviewMouseRightButtonDown&quot;/&gt;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                    &lt;Style.Resources&gt;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.HighlightBrushKey}&quot; Color=&quot;#FFE6E6E6&quot;/&gt;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.InactiveSelectionHighlightBrushKey}&quot; Color=&quot;#FFE6E6E6&quot;/&gt;</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.HighlightTextBrushKey}&quot; Color=&quot;Black&quot;/&gt;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}&quot; Color=&quot;Black&quot;/&gt;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                                    &lt;/Style.Resources&gt;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                                &lt;/Style&gt;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                            &lt;/TreeView.ItemContainerStyle&gt;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            &lt;TreeView.ItemTemplate&gt;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                                &lt;HierarchicalDataTemplate ItemsSource=&quot;{Binding Children}&quot;&gt;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                                    &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;2&quot;&gt;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                                        &lt;Border Width=&quot;12&quot; Height=&quot;12&quot; Background=&quot;{Binding IconBrush}&quot; BorderBrush=&quot;Gray&quot; BorderThickness=&quot;1&quot; Margin=&quot;0,0,5,0&quot; Visibility=&quot;{Binding IconVisibility}&quot;/&gt;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                        &lt;TextBlock Text=&quot;{Binding Header}&quot; Foreground=&quot;{Binding Foreground}&quot; FontWeight=&quot;{Binding FontWeight}&quot; /&gt;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                                        &lt;StackPanel.Style&gt;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                            &lt;Style TargetType=&quot;StackPanel&quot;&gt;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                                &lt;Setter Property=&quot;ContextMenu&quot;&gt;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                                    &lt;Setter.Value&gt;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                                        &lt;ContextMenu DataContext=&quot;{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}&quot;&gt;</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                                                            &lt;MenuItem Header=&quot;Zoom To Item&quot;</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                                                                      Command=&quot;{Binding Command}&quot;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                                                      CommandParameter=&quot;{Binding}&quot;&gt;</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                                                &lt;MenuItem.Icon&gt;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                                                    &lt;TextBlock Text=&quot;🔍&quot; FontSize=&quot;12&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                                                &lt;/MenuItem.Icon&gt;</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                                                            &lt;/MenuItem&gt;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                                                        &lt;/ContextMenu&gt;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                                                    &lt;/Setter.Value&gt;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                                                &lt;/Setter&gt;</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                                                &lt;Style.Triggers&gt;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                                    &lt;DataTrigger Binding=&quot;{Binding Visibility}&quot; Value=&quot;Collapsed&quot;&gt;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                                                        &lt;Setter Property=&quot;ContextMenu&quot; Value=&quot;{x:Null}&quot;/&gt;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                                                    &lt;/DataTrigger&gt;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                                                &lt;/Style.Triggers&gt;</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                                            &lt;/Style&gt;</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                                        &lt;/StackPanel.Style&gt;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                                    &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                                &lt;/HierarchicalDataTemplate&gt;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                            &lt;/TreeView.ItemTemplate&gt;</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                        &lt;/TreeView&gt;</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                        </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                        &lt;UniformGrid Grid.Row=&quot;2&quot; Columns=&quot;2&quot; Margin=&quot;5&quot;&gt;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                            &lt;Button x:Name=&quot;PathViewer_ExportJsonButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToJson/@Value, FallbackValue=&#39;Export Paths (JSON)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsJsonCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                            &lt;Button x:Name=&quot;PathViewer_ExportXmlButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToXml/@Value, FallbackValue=&#39;Export Paths (XML)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsXmlCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                        &lt;/UniformGrid&gt;</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                    &lt;/Grid&gt;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                &lt;/Expander&gt;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            &lt;/Grid&gt;</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        &lt;/GroupBox&gt;</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    &lt;/Grid&gt;</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>&lt;/UserControl&gt;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                &lt;TextBlock Text=&quot;{Binding CurrentToolName, FallbackValue=&#39;Tool1&#39;}&quot; Grid.Row=&quot;6&quot; Background=&quot;{x:Null}&quot; HorizontalAlignment=&quot;Right&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot; Margin=&quot;0,15,6,0&quot; FontSize=&quot;11&quot; VerticalAlignment=&quot;Top&quot;&gt;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    &lt;TextBlock.Style&gt;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                        &lt;Style TargetType=&quot;TextBlock&quot;&gt;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                            &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Visible&quot;/&gt;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                            &lt;Style.Triggers&gt;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                                &lt;DataTrigger Binding=&quot;{Binding CMMType}&quot; Value=&quot;Scanner&quot;&gt;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                                    &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                                &lt;/DataTrigger&gt;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                            &lt;/Style.Triggers&gt;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                        &lt;/Style&gt;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                    &lt;/TextBlock.Style&gt;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                &lt;/TextBlock&gt;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                &lt;!-- PATH VIEWER EXPANDER --&gt;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                &lt;Expander x:Name=&quot;PathViewer_Expander&quot; BorderBrush=&quot;DarkGray&quot; Background=&quot;Transparent&quot; Margin=&quot;0,10,0,0&quot; IsExpanded=&quot;True&quot; Grid.ColumnSpan=&quot;2&quot; Grid.Row=&quot;5&quot; Visibility=&quot;{Binding PathViewerExpander_Visibility, FallbackValue=Visible}&quot; Expanded=&quot;PathViewer_Expander_Expanded&quot; MaxHeight=&quot;300&quot; VirtualizingStackPanel.IsVirtualizing=&quot;True&quot; VirtualizingStackPanel.VirtualizationMode=&quot;Recycling&quot; Loaded=&quot;InvertedExpanderArrow_Loaded&quot;&gt;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                    &lt;Expander.Header&gt;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                        &lt;TextBlock Text=&quot;{Binding Source={StaticResource Language}, XPath=GeneratedPaths/@Value, FallbackValue=&#39;Generated Paths&#39;}&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                    &lt;/Expander.Header&gt;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                    &lt;Grid&gt;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                        &lt;Grid.RowDefinitions&gt;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                            &lt;RowDefinition Height=&quot;*&quot; /&gt;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                        &lt;/Grid.RowDefinitions&gt;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                        &lt;CheckBox Grid.Row=&quot;0&quot; IsChecked=&quot;{Binding IsExecutionOrderMode}&quot; Margin=&quot;0,-18,6,0&quot; HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; Cursor=&quot;Pen&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExecutionOrderMode/@Value, FallbackValue=&#39;Sort by Execution Order&#39;}&quot;/&gt;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                        &lt;TreeView Grid.Row=&quot;1&quot; x:Name=&quot;PathViewerTreeView&quot; BorderThickness=&quot;0&quot; Background=&quot;Transparent&quot; </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                                  ItemsSource=&quot;{Binding PathViewerItems}&quot; </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                                  ScrollViewer.VerticalScrollBarVisibility=&quot;Auto&quot;</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                  VirtualizingStackPanel.IsVirtualizing=&quot;True&quot;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                                  VirtualizingStackPanel.VirtualizationMode=&quot;Standard&quot;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                  SelectedItemChanged=&quot;PathViewerTreeView_SelectedItemChanged&quot;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                                  PreviewMouseLeftButtonDown=&quot;TreeScrollViewer_PreviewMouseLeftButtonDown&quot;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                                  MouseMove=&quot;TreeScrollViewer_MouseMove&quot;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                                  PreviewMouseLeftButtonUp=&quot;TreeScrollViewer_PreviewMouseLeftButtonUp&quot;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                  Margin=&quot;5,5,5,0&quot;&gt;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                            &lt;TreeView.ItemContainerStyle&gt;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                            &lt;Style TargetType=&quot;TreeViewItem&quot;&gt;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                                    &lt;Setter Property=&quot;IsExpanded&quot; Value=&quot;{Binding IsExpanded}&quot;/&gt;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                                      &lt;Setter Property=&quot;IsSelected&quot; Value=&quot;{Binding IsSelected, Mode=TwoWay}&quot;/&gt;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                                    &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                                    &lt;EventSetter Event=&quot;PreviewMouseRightButtonDown&quot; Handler=&quot;TreeViewItem_PreviewMouseRightButtonDown&quot;/&gt;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                                    &lt;Style.Resources&gt;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.HighlightBrushKey}&quot; Color=&quot;#FFE6E6E6&quot;/&gt;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.InactiveSelectionHighlightBrushKey}&quot; Color=&quot;#FFE6E6E6&quot;/&gt;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.HighlightTextBrushKey}&quot; Color=&quot;Black&quot;/&gt;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                        &lt;SolidColorBrush x:Key=&quot;{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}&quot; Color=&quot;Black&quot;/&gt;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                    &lt;/Style.Resources&gt;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                &lt;/Style&gt;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                            &lt;/TreeView.ItemContainerStyle&gt;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                            &lt;TreeView.ItemTemplate&gt;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                &lt;HierarchicalDataTemplate ItemsSource=&quot;{Binding Children}&quot;&gt;</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                    &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;2&quot;&gt;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                        &lt;Border Width=&quot;12&quot; Height=&quot;12&quot; Background=&quot;{Binding IconBrush}&quot; BorderBrush=&quot;Gray&quot; BorderThickness=&quot;1&quot; Margin=&quot;0,0,5,0&quot; Visibility=&quot;{Binding IconVisibility}&quot;/&gt;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                        &lt;TextBlock Text=&quot;{Binding Header}&quot; Foreground=&quot;{Binding Foreground}&quot; FontWeight=&quot;{Binding FontWeight}&quot; /&gt;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                                        &lt;StackPanel.Style&gt;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                                            &lt;Style TargetType=&quot;StackPanel&quot;&gt;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                                                &lt;Setter Property=&quot;ContextMenu&quot;&gt;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                                                    &lt;Setter.Value&gt;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                                                        &lt;ContextMenu DataContext=&quot;{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}&quot;&gt;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                                            &lt;MenuItem Header=&quot;Zoom To Item&quot;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                                                                      Command=&quot;{Binding Command}&quot;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                                                                      CommandParameter=&quot;{Binding}&quot;&gt;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                                                                &lt;MenuItem.Icon&gt;</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                                                                    &lt;TextBlock Text=&quot;🔍&quot; FontSize=&quot;12&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                                                                &lt;/MenuItem.Icon&gt;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                                                            &lt;/MenuItem&gt;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                                                        &lt;/ContextMenu&gt;</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                                                    &lt;/Setter.Value&gt;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                                                &lt;/Setter&gt;</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                                                &lt;Style.Triggers&gt;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                                                    &lt;DataTrigger Binding=&quot;{Binding Visibility}&quot; Value=&quot;Collapsed&quot;&gt;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                                                        &lt;Setter Property=&quot;ContextMenu&quot; Value=&quot;{x:Null}&quot;/&gt;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                                                    &lt;/DataTrigger&gt;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                                                &lt;/Style.Triggers&gt;</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                                            &lt;/Style&gt;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                                        &lt;/StackPanel.Style&gt;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                                    &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                                &lt;/HierarchicalDataTemplate&gt;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                            &lt;/TreeView.ItemTemplate&gt;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                        &lt;/TreeView&gt;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                        </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>                        &lt;UniformGrid Grid.Row=&quot;2&quot; Columns=&quot;2&quot; Margin=&quot;5&quot;&gt;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                            &lt;Button x:Name=&quot;PathViewer_ExportJsonButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToJson/@Value, FallbackValue=&#39;Export Paths (JSON)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsJsonCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                            &lt;Button x:Name=&quot;PathViewer_ExportXmlButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToXml/@Value, FallbackValue=&#39;Export Paths (XML)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsXmlCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                        &lt;/UniformGrid&gt;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                    &lt;/Grid&gt;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                &lt;/Expander&gt;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>            &lt;/Grid&gt;</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        &lt;/GroupBox&gt;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    &lt;/Grid&gt;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>&lt;/UserControl&gt;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

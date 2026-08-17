@@ -1,5 +1,9 @@
 var NAVTREEINDEX35 =
 {
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#affbf817350e90d1a77a8782c10217a86":[3,0,0,2,0,22,4],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html":[2,0,0,2,0,23],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html":[3,0,0,2,0,23],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a0b36d526b26e53eb47786c82b751c6dc":[2,0,0,2,0,23,3],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a0b36d526b26e53eb47786c82b751c6dc":[3,0,0,2,0,23,3],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a10fd0364e37a2f6371ff69b0150fa8ba":[2,0,0,2,0,23,2],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a10fd0364e37a2f6371ff69b0150fa8ba":[3,0,0,2,0,23,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX35 =
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a0e4be2f414f6c9299a5e03d294e91cfa":[3,0,0,0,18,3],
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891":[2,0,0,0,18,11],
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a1f061f1a85b1b69b8c7ef15bb9488891":[3,0,0,0,18,11],
-"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6":[2,0,0,0,18,19],
-"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6":[3,0,0,0,18,19],
-"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136":[2,0,0,0,18,4],
-"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136":[3,0,0,0,18,4],
-"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7":[2,0,0,0,18,10]
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6":[2,0,0,0,18,19]
 };

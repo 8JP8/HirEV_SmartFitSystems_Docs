@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"d7/d01/_shell_geodesic_navigator_8cs_source.html":[4,0,0,4,0,16],
+"d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html":[2,0,0,2,53],
 "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html":[3,0,0,2,53],
 "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a00dfe7165b2a18cf369e1e7e8eb0f7b5":[2,0,0,2,53,13],
 "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a00dfe7165b2a18cf369e1e7e8eb0f7b5":[3,0,0,2,53,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c":[2,0,0,2,40,11],
 "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ab81669be137e91814c422e8a44ff0b3c":[3,0,0,2,40,11],
 "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399":[2,0,0,2,40,7],
-"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399":[3,0,0,2,40,7],
-"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adace7dac3e2a078a3659a4d906836241":[2,0,0,2,40,3],
-"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#adace7dac3e2a078a3659a4d906836241":[3,0,0,2,40,3]
+"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html#ad7782ca25d8a47eb0956081f4785f399":[3,0,0,2,40,7]
 };

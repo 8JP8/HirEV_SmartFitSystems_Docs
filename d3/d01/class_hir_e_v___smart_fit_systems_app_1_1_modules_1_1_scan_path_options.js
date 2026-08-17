@@ -7,6 +7,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options =
     [ "ArcWaypoints", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a98c56d24055f7e6bb57eb9ca75e5dc4f", null ],
     [ "AvoidBottomFace", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a11c671e242ba7be355169e96837f5cf6", null ],
     [ "BottomAvoidanceAngleDeg", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a64204ebd2da741f4a98f7e53345b49f2", null ],
+    [ "BottomAvoidanceHeight", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#acb992ab99745d6ad1dd32e46443067e1", null ],
     [ "FibonacciBaseRadius", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a4c5a5b5db334984f491b8371335fa824", null ],
     [ "FibonacciMaxAmplification", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#acd262a756c8208dfa49003e16543af32", null ],
     [ "FibonacciMinAmplification", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_options.html#a24cfc212ae864a2887a2b8c485870e3e", null ],

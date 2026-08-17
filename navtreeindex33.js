@@ -1,5 +1,9 @@
 var NAVTREEINDEX33 =
 {
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b":[2,0,0,2,32,8],
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b":[3,0,0,2,32,8],
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad379a317773e60df94d060a16157ade0":[2,0,0,2,32,36],
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad379a317773e60df94d060a16157ade0":[3,0,0,2,32,36],
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ae5865276dd22c2c5ed5ef7c970cabdca":[2,0,0,2,32,14],
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ae5865276dd22c2c5ed5ef7c970cabdca":[3,0,0,2,32,14],
 "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ae95817692a04329494cd281389ea60c7":[2,0,0,2,32,56],
@@ -245,9 +249,5 @@ var NAVTREEINDEX33 =
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a5f16324b962da77279daf3e3d15fe5d0":[3,0,0,14,55],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a605e80458f50aedb6bc642579f3c7df5":[2,0,0,14,60],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a605e80458f50aedb6bc642579f3c7df5":[3,0,0,14,60],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a608e1f7fc461aaf8c4d4e607056d1ccd":[2,0,0,14,28],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a608e1f7fc461aaf8c4d4e607056d1ccd":[3,0,0,14,28],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a60d82e65c0fc88e4a08aaae723ae33cb":[2,0,0,14,53],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a60d82e65c0fc88e4a08aaae723ae33cb":[3,0,0,14,53],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a68636166388b241cc1db43dc8a9877d9":[2,0,0,14,45]
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a608e1f7fc461aaf8c4d4e607056d1ccd":[2,0,0,14,28]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a608e1f7fc461aaf8c4d4e607056d1ccd":[3,0,0,14,28],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a60d82e65c0fc88e4a08aaae723ae33cb":[2,0,0,14,53],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a60d82e65c0fc88e4a08aaae723ae33cb":[3,0,0,14,53],
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a68636166388b241cc1db43dc8a9877d9":[2,0,0,14,45],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a68636166388b241cc1db43dc8a9877d9":[3,0,0,14,45],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a68da963c6cdae94fa2152d50f29753a9":[2,0,0,14,101],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a68da963c6cdae94fa2152d50f29753a9":[3,0,0,14,101],
@@ -245,9 +249,5 @@ var NAVTREEINDEX34 =
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#ac4bdc29f6a8c10d99c86fcb65d35f6ed":[3,0,0,2,0,22,2],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#ae2b3a70b7cbf05863be48add5f0d04fb":[2,0,0,2,0,22,0],
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#ae2b3a70b7cbf05863be48add5f0d04fb":[3,0,0,2,0,22,0],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#affbf817350e90d1a77a8782c10217a86":[2,0,0,2,0,22,4],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#affbf817350e90d1a77a8782c10217a86":[3,0,0,2,0,22,4],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html":[2,0,0,2,0,23],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html":[3,0,0,2,0,23],
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a0b36d526b26e53eb47786c82b751c6dc":[2,0,0,2,0,23,3]
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#affbf817350e90d1a77a8782c10217a86":[2,0,0,2,0,22,4]
 };

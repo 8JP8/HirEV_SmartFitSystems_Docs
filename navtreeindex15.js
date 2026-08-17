@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#a7657a152ed8e30b2b475b739c9bdb0cc":[3,0,0,4,0,1,29],
+"d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#a7b2b7fe83046104a3d37bb61177105fa":[2,0,0,4,0,1,6],
 "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#a7b2b7fe83046104a3d37bb61177105fa":[3,0,0,4,0,1,6],
 "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#a7b844b58a7bce8b5d79635276944ebd9":[2,0,0,4,0,1,10],
 "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#a7b844b58a7bce8b5d79635276944ebd9":[3,0,0,4,0,1,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html":[3,0,0,2,0,12],
 "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#a16c29412f062f9d7b34f9f41d4699dc1":[2,0,0,2,0,12,3],
 "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#a16c29412f062f9d7b34f9f41d4699dc1":[3,0,0,2,0,12,3],
-"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#a55c83966afccce915256fa842ed01cd5":[2,0,0,2,0,12,2],
-"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#a55c83966afccce915256fa842ed01cd5":[3,0,0,2,0,12,2],
-"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#abbbe18b991a790db7ac3b29d65076519":[2,0,0,2,0,12,4]
+"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html#a55c83966afccce915256fa842ed01cd5":[2,0,0,2,0,12,2]
 };

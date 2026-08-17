@@ -1,5 +1,9 @@
 var NAVTREEINDEX36 =
 {
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a26cd3539858641782d003ece52b60ee6":[3,0,0,0,18,19],
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136":[2,0,0,0,18,4],
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a29b3b1554d5ee3aea606e5f96ad4a136":[3,0,0,0,18,4],
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7":[2,0,0,0,18,10],
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a452ebccb5fd4dfa25659ef63ac1f60e7":[3,0,0,0,18,10],
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666":[2,0,0,0,18,0],
 "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_scanner_properties.html#a562a68a42cc9ee4526d4c3f2388a3666":[3,0,0,0,18,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX36 =
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a15ccd981bdb99f7a881a40b90196e52c":[3,0,0,17,13],
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a25e9036b35f2b22568114c2b21da2b76":[2,0,0,17,28],
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a25e9036b35f2b22568114c2b21da2b76":[3,0,0,17,28],
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a263f4ef6569ddc12dd34efa5bc1b52a5":[2,0,0,17,5],
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a263f4ef6569ddc12dd34efa5bc1b52a5":[3,0,0,17,5],
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a34ffa3fc81c94b9215bdfc7e057a2e70":[2,0,0,17,36],
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a34ffa3fc81c94b9215bdfc7e057a2e70":[3,0,0,17,36],
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a350ffd4ba47eff16365459521883de13":[2,0,0,17,20]
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a263f4ef6569ddc12dd34efa5bc1b52a5":[2,0,0,17,5]
 };

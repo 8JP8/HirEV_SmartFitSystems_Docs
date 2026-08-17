@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html#ab1263490c45927d0b7ff7992e3f2e541":[3,0,0,1,6,1],
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html#ab2308461c819f951d56cf540ad5ad611":[2,0,0,1,6,0],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html#ab2308461c819f951d56cf540ad5ad611":[3,0,0,1,6,0],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html#acc6f195933c309e38c380d144c916ed5":[2,0,0,1,6,3],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_progress_event_args.html#acc6f195933c309e38c380d144c916ed5":[3,0,0,1,6,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a207abefdb9fd8e79e971807cef4c69af":[3,0,0,5,1,246],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a212b3c807410d12f2fcae4e0ad744212":[2,0,0,5,1,643],
 "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a212b3c807410d12f2fcae4e0ad744212":[3,0,0,5,1,643],
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a212fe72effc3b1d6b4e5c71c46e76c29":[2,0,0,5,1,657],
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a212fe72effc3b1d6b4e5c71c46e76c29":[3,0,0,5,1,657],
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a21d28279851649daa933d90ae06e1ce0":[2,0,0,5,1,285]
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a212fe72effc3b1d6b4e5c71c46e76c29":[2,0,0,5,1,657]
 };

@@ -1,5 +1,6 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face =
 [
+    [ "AutoIgnoredByBaseAvoidance", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#ad166965d3d30c8f8fc680b074810c96d", null ],
     [ "AxisOrNormal", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#ab94478a6755457e5f22347fcc9a22513", null ],
     [ "ControlPoints", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a56354aa624178d03917b27ea1cf9a1ff", null ],
     [ "EntityIndex", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a555874a7a3e3299b99704521bbb8de8c", null ],
