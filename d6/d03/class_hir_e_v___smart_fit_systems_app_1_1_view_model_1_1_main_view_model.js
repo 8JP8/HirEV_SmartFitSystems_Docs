@@ -206,6 +206,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model =
     [ "ManipulateObject", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5fadfcd08cef1b2e334e62b0cd44e217", null ],
     [ "MaximizeWindow", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8abc967da74b179cc743581914b1dc8b", null ],
     [ "MeasuringTab", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab98284bf1cb8683bbfcf325463191215", null ],
+    [ "MeasuringToolConfigManager_ConfigurationChanged", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9fee890b1214f4099a0b3928bc4301bd", null ],
     [ "MinimizeWindow", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a24b4f27e43c1c6d81bd3a833252e4afa", null ],
     [ "MoveObjectToOrigin", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a19637e278453791ccaee0b2f9bb4c564", null ],
     [ "NormalizeColorLightness", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa938b703dcc6bbb19518c3b44e0a4ad6", null ],

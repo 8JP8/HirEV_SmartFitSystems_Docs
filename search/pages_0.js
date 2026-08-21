@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['0_2034_0',['Capacidades Atuais da Aplicação (v0.0.34)',['../index.html#current_capabilities_sec',1,'']]]
+  ['0_2035_0',['Capacidades Atuais da Aplicação (v0.0.35)',['../index.html#current_capabilities_sec',1,'']]]
 ];

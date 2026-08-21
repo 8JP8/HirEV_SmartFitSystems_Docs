@@ -8,5 +8,6 @@ var searchData=
   ['approachgenerationaudit_5',['ApproachGenerationAudit',['../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_generation_audit.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
   ['approachmeasurementpair_6',['ApproachMeasurementPair',['../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
   ['approachpointgenerator_7',['ApproachPointGenerator',['../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_point_generator.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
-  ['axialrange_8',['AxialRange',['../dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector_1_1_axial_range.html',1,'HirEV_SmartFitSystemsApp::Modules::HoleDetector']]]
+  ['argbcolorcomparer_8',['ArgbColorComparer',['../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['axialrange_9',['AxialRange',['../dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector_1_1_axial_range.html',1,'HirEV_SmartFitSystemsApp::Modules::HoleDetector']]]
 ];

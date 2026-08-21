@@ -132,6 +132,7 @@ var annotated_dup =
         [ "HirEVDesign", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_hir_e_v_design.html", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_hir_e_v_design" ],
         [ "IgnoredItemManager", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager" ],
         [ "JsonExportUtils", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils" ],
+        [ "ArgbColorComparer", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer" ],
         [ "MeasuringToolConfigManager", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager" ],
         [ "Point3DComparer", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer" ],
         [ "Point4DConverter", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point4_d_converter" ],

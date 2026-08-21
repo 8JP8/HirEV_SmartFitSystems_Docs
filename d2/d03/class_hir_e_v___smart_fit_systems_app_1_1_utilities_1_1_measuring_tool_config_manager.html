@@ -122,6 +122,11 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:a606f2c12153aad1e0dcdb614a65a5a45" id="r_a606f2c12153aad1e0dcdb614a65a5a45"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a606f2c12153aad1e0dcdb614a65a5a45">LoadScannerSelection</a> ()</td></tr>
 <tr class="memdesc:a606f2c12153aad1e0dcdb614a65a5a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the previously saved scanner selection from configuration.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
+Eventos</h2></td></tr>
+<tr class="memitem:aebc0db79f1d15520b07c698fbc4b652f" id="r_aebc0db79f1d15520b07c698fbc4b652f"><td class="memItemLeft">static ? Action&#160;</td><td class="memItemRight"><a class="el" href="#aebc0db79f1d15520b07c698fbc4b652f">ConfigurationChanged</a></td></tr>
+<tr class="memdesc:aebc0db79f1d15520b07c698fbc4b652f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event fired globally whenever the configuration is updated and saved.  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Membros privados</h2></td></tr>
 <tr class="memitem:af3ea76eb469a53d6c32f52b62718cac8" id="r_af3ea76eb469a53d6c32f52b62718cac8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af3ea76eb469a53d6c32f52b62718cac8">EnsureConfigFileExists</a> ()</td></tr>
@@ -137,7 +142,7 @@ Membros privados</h2></td></tr>
 <tr class="memitem:acb66641f708ee82a9116f8dbaf863644" id="r_acb66641f708ee82a9116f8dbaf863644"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acb66641f708ee82a9116f8dbaf863644">AddColorToConfiguration</a> (Color color, string toolName)</td></tr>
 <tr class="memdesc:acb66641f708ee82a9116f8dbaf863644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new color-tool mapping to the configuration file.  <br /></td></tr>
 <tr class="memitem:a08d1df707d39f958d7a219dccda4a755" id="r_a08d1df707d39f958d7a219dccda4a755"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a08d1df707d39f958d7a219dccda4a755">GetColorName</a> (Color color)</td></tr>
-<tr class="memdesc:a08d1df707d39f958d7a219dccda4a755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a human-readable name for the color.  <br /></td></tr>
+<tr class="memdesc:a08d1df707d39f958d7a219dccda4a755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a human-readable name for the color using <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html" title="Provides functionality to get the name of a color.">ColorNamer</a> (same as the UI tool selector).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
@@ -154,7 +159,7 @@ Atributos Privados Estáticos</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Manages the MeasuringToolByColor.xml configuration file. Loads color-to-tool mappings and automatically updates the file when new colors are encountered. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00011">11</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a2ae550c5de32a3315cae7ff57821de3c" name="a2ae550c5de32a3315cae7ff57821de3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ae550c5de32a3315cae7ff57821de3c">&#9670;&#160;</a></span>MeasuringToolConfigManager()</h2>
@@ -173,9 +178,9 @@ Atributos Privados Estáticos</h2></td></tr>
 
 <p>Initializes a new instance of the <a class="el" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html" title="Manages the MeasuringToolByColor.xml configuration file. Loads color-to-tool mappings and automatical...">MeasuringToolConfigManager</a> class. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">38</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00013">CONFIG_FILE_NAME</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00039">EnsureConfigFileExists()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">CONFIG_FILE_NAME</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00054">EnsureConfigFileExists()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00013">HirEV_SmartFitSystemsApp.Utilities.ArgbColorComparer.Instance</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -232,11 +237,11 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">181</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">196</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00153">FormatRGBKey()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00231">GetColorName()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00168">FormatRGBKey()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00246">GetColorName()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00164">GetToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00179">GetToolForColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -245,8 +250,10 @@ Grafo de chamadas desta função:</div>
 <area shape="rect" title="Adds a new color&#45;tool mapping to the configuration file." alt="" coords="5,47,251,105"/>
 <area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#aaef54d1d7e3357cf0fe5f647feb7f630" title="Formats a Color to RGB key string in the format &quot;RGB(R,G,B)&quot;." alt="" coords="299,5,544,64"/>
 <area shape="poly" title=" " alt="" coords="250,56,286,53,281,55,252,61"/>
-<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color." alt="" coords="299,88,544,147"/>
+<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color using ColorNamer (same as the UI tool selector)." alt="" coords="299,88,544,147"/>
 <area shape="poly" title=" " alt="" coords="251,91,286,98,281,98,251,96"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="592,96,822,139"/>
+<area shape="poly" title=" " alt="" coords="544,115,579,117,573,117,544,120"/>
 </map>
 </div>
 <div class="dynheader">
@@ -287,11 +294,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates a default MeasuringToolByColor.xml file with sample mappings. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00050">50</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00065">65</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00039">EnsureConfigFileExists()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00054">EnsureConfigFileExists()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -332,11 +339,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Ensures the config file exists. If not, creates it with default content. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00039">39</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00054">54</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00050">CreateDefaultConfigFile()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00065">CreateDefaultConfigFile()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -392,9 +399,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The RGB key string.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00153">153</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00168">168</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -430,9 +437,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets all configured color-tool mappings. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A dictionary of color-tool mappings.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00247">247</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00269">269</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>.</p>
 
 </div>
 </div>
@@ -459,7 +466,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets a human-readable name for the color. </p>
+<p>Gets a human-readable name for the color using <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html" title="Provides functionality to get the name of a color.">ColorNamer</a> (same as the UI tool selector). </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">color</td><td>The color.</td></tr>
@@ -468,15 +475,27 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The name of the color.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00231">231</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00246">246</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d8/d02/_color_namer_8cs_source.html#l00055">HirEV_SmartFitSystemsApp.Utilities.ColorNamer.GetColorName()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_cgraph.png" border="0" usemap="#ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_cgraph" loading="lazy" alt=""/></div>
+<map name="ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_cgraph" id="ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_cgraph">
+<area shape="rect" title="Gets a human&#45;readable name for the color using ColorNamer (same as the UI tool selector)." alt="" coords="5,5,251,64"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="299,13,529,56"/>
+<area shape="poly" title=" " alt="" coords="251,32,285,34,280,35,251,37"/>
+</map>
+</div>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_icgraph.png" border="0" usemap="#ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_icgraph" loading="lazy" alt=""/></div>
 <map name="ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_icgraph" id="ad2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager_a08d1df707d39f958d7a219dccda4a755_icgraph">
-<area shape="rect" title="Gets a human&#45;readable name for the color." alt="" coords="592,47,837,105"/>
+<area shape="rect" title="Gets a human&#45;readable name for the color using ColorNamer (same as the UI tool selector)." alt="" coords="592,47,837,105"/>
 <area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#acb66641f708ee82a9116f8dbaf863644" title="Adds a new color&#45;tool mapping to the configuration file." alt="" coords="299,5,544,64"/>
 <area shape="poly" title=" " alt="" coords="574,57,544,55,544,49,579,56"/>
 <area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a24a75971f0a336d238629d21faceb62c" title="Updates the tool assignment for a specific color in the configuration. If the color doesn&#39;t exist,..." alt="" coords="299,88,544,147"/>
@@ -512,9 +531,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The tool name for the color.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00164">164</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00179">179</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00014">DEFAULT_TOOL_NAME</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00024">DEFAULT_TOOL_NAME</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -525,8 +544,10 @@ Grafo de chamadas desta função:</div>
 <area shape="poly" title=" " alt="" coords="251,73,286,76,281,76,251,79"/>
 <area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#aaef54d1d7e3357cf0fe5f647feb7f630" title="Formats a Color to RGB key string in the format &quot;RGB(R,G,B)&quot;." alt="" coords="592,5,837,64"/>
 <area shape="poly" title=" " alt="" coords="544,56,579,54,574,55,545,61"/>
-<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color." alt="" coords="592,88,837,147"/>
+<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color using ColorNamer (same as the UI tool selector)." alt="" coords="592,88,837,147"/>
 <area shape="poly" title=" " alt="" coords="544,91,579,98,574,98,544,96"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="885,96,1116,139"/>
+<area shape="poly" title=" " alt="" coords="838,115,872,117,867,117,838,120"/>
 </map>
 </div>
 
@@ -557,11 +578,11 @@ Grafo de chamadas desta função:</div>
 
 <p>Loads the configuration from the XML file. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">78</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">93</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00122">ParseRGBKey()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00137">ParseRGBKey()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00255">ReloadConfiguration()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00277">ReloadConfiguration()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -605,9 +626,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Loads the previously saved scanner selection from configuration. </p>
 <dl class="section return"><dt>Retorna</dt><dd>The saved scanner name, or empty string if not found.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00385">385</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00415">415</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">_lockObject</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">_lockObject</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a>.</p>
 
 </div>
 </div>
@@ -643,9 +664,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A Color object, or null if parsing fails.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00122">122</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00137">137</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -680,9 +701,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Reloads the configuration from the file. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00255">255</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00277">277</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -721,9 +742,9 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00347">347</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00377">377</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">_lockObject</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">_lockObject</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a>.</p>
 
 </div>
 </div>
@@ -756,9 +777,9 @@ Grafo de chamadas desta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd><code>true</code> if the update was successful, <code>false</code> otherwise.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">267</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">289</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00153">FormatRGBKey()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00231">GetColorName()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">_colorToolMapping</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">_configFilePath</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">_lockObject</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">_xmlDoc</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00033">ConfigurationChanged</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00168">FormatRGBKey()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00246">GetColorName()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -767,8 +788,10 @@ Grafo de chamadas desta função:</div>
 <area shape="rect" title="Updates the tool assignment for a specific color in the configuration. If the color doesn&#39;t exist,..." alt="" coords="5,47,251,105"/>
 <area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#aaef54d1d7e3357cf0fe5f647feb7f630" title="Formats a Color to RGB key string in the format &quot;RGB(R,G,B)&quot;." alt="" coords="299,5,544,64"/>
 <area shape="poly" title=" " alt="" coords="250,56,286,53,281,55,252,61"/>
-<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color." alt="" coords="299,88,544,147"/>
+<area shape="rect" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a08d1df707d39f958d7a219dccda4a755" title="Gets a human&#45;readable name for the color using ColorNamer (same as the UI tool selector)." alt="" coords="299,88,544,147"/>
 <area shape="poly" title=" " alt="" coords="251,91,286,98,281,98,251,96"/>
+<area shape="rect" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="592,96,822,139"/>
+<area shape="poly" title=" " alt="" coords="544,115,579,117,573,117,544,120"/>
 </map>
 </div>
 
@@ -795,9 +818,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00026">26</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00247">GetAllMappings()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00164">GetToolForColor()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00269">GetAllMappings()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00179">GetToolForColor()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +844,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00015">15</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00025">25</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00050">CreateDefaultConfigFile()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00039">EnsureConfigFileExists()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00347">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00065">CreateDefaultConfigFile()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00054">EnsureConfigFileExists()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00377">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 
 </div>
 </div>
@@ -847,9 +870,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00018">18</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00028">28</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00385">LoadScannerSelection()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00347">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00415">LoadScannerSelection()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00377">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 
 </div>
 </div>
@@ -873,9 +896,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00017">17</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00027">27</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00181">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00078">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00385">LoadScannerSelection()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00347">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00267">UpdateToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00196">AddColorToConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00093">LoadConfiguration()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00415">LoadScannerSelection()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a>, <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00377">SaveScannerSelection()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 
 </div>
 </div>
@@ -899,9 +922,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00013">13</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00023">MeasuringToolConfigManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00038">MeasuringToolConfigManager()</a>.</p>
 
 </div>
 </div>
@@ -925,9 +948,38 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00014">14</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00024">24</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00164">GetToolForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00179">GetToolForColor()</a>.</p>
+
+</div>
+</div>
+<a name="doc-event-members" id="doc-event-members"></a><h2 id="header-doc-event-members" class="groupheader">Documentação dos eventos</h2>
+<a id="aebc0db79f1d15520b07c698fbc4b652f" name="aebc0db79f1d15520b07c698fbc4b652f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc0db79f1d15520b07c698fbc4b652f">&#9670;&#160;</a></span>ConfigurationChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? Action HirEV_SmartFitSystemsApp.Utilities.MeasuringToolConfigManager.ConfigurationChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event fired globally whenever the configuration is updated and saved. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html">MeasuringToolConfigManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l02938">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.MainViewModel()</a> e <a class="el" href="../../dd/d02/_measuring_tool_config_manager_8cs_source.html#l00289">UpdateToolForColor()</a>.</p>
 
 </div>
 </div>

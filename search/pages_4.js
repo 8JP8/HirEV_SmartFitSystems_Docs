@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['da_20aplicação_20v0_200_2034_0',['Capacidades Atuais da Aplicação (v0.0.34)',['../index.html#current_capabilities_sec',1,'']]],
+  ['da_20aplicação_20v0_200_2035_0',['Capacidades Atuais da Aplicação (v0.0.35)',['../index.html#current_capabilities_sec',1,'']]],
   ['de_20autor_1',['Direitos de Autor',['../index.html#footer_sec',1,'']]],
   ['de_20configuração_20principais_2',['Ficheiros de Configuração Principais',['../index.html#quick_config_sec',1,'']]],
   ['de_20início_20rápido_3',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]],

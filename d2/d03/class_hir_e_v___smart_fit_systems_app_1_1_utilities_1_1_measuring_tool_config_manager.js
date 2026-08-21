@@ -19,5 +19,6 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_confi
     [ "_lockObject", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#ab9b96fd0bc22f93b1f00bf2c839dd183", null ],
     [ "_xmlDoc", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a0619b1a303ee00c0374ce19e337abc23", null ],
     [ "CONFIG_FILE_NAME", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#aa702eb6ef09408de2327f2ab9ee491fa", null ],
-    [ "DEFAULT_TOOL_NAME", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#ae54d72e92151614724c119f30eb36db6", null ]
+    [ "DEFAULT_TOOL_NAME", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#ae54d72e92151614724c119f30eb36db6", null ],
+    [ "ConfigurationChanged", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#aebc0db79f1d15520b07c698fbc4b652f", null ]
 ];

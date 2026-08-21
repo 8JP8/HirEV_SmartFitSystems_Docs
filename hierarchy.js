@@ -101,6 +101,7 @@ var hierarchy =
       [ "HirEV_SmartFitSystemsApp.Measuring_SidePanel.LocalPoint3DEqualityComparer", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel_1_1_local_point3_d_equality_comparer.html", null ],
       [ "HirEV_SmartFitSystemsApp.Modules.Point3DComparer", "de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_point3_d_comparer.html", null ],
       [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.MeshShellGenerator.Point3DComparer", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator_1_1_point3_d_comparer.html", null ],
+      [ "HirEV_SmartFitSystemsApp.Utilities.ArgbColorComparer", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html", null ],
       [ "HirEV_SmartFitSystemsApp.Utilities.Point3DComparer", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html", null ]
     ] ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.IgnoredBaseRegion", "d4/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_ignored_base_region.html", null ],
@@ -182,6 +183,7 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSample", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_sample.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSceneSnapshot", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_scene_snapshot.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeSegmentCollisionResult", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_segment_collision_result.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeToolGeometry", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html", null ],
     [ "ProtectedConfigManager", "dc/d03/class_protected_config_manager.html", null ],
     [ "HirEV_SmartFitSystemsApp.ViewModel.RecentPartItem", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_recent_part_item.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.RecentPartsManager", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html", null ],

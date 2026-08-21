@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v0_200_2034_0',['Capacidades Atuais da Aplicação (v0.0.34)',['../index.html#current_capabilities_sec',1,'']]],
+  ['v0_200_2035_0',['Capacidades Atuais da Aplicação (v0.0.35)',['../index.html#current_capabilities_sec',1,'']]],
   ['v1_1',['V1',['../dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html#a1955e1d15d4f0d31e55c5e45bf4daf00',1,'HirEV_SmartFitSystemsApp::Utilities::CollisionAvoidanceAlgorithm::Triangle']]],
   ['v2_2',['V2',['../dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html#af666d3ad500c21a11d10c816a49076c4',1,'HirEV_SmartFitSystemsApp::Utilities::CollisionAvoidanceAlgorithm::Triangle']]],
   ['v3_3',['V3',['../dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html#a848daad09bdaa0ac5d60827d93204e3d',1,'HirEV_SmartFitSystemsApp::Utilities::CollisionAvoidanceAlgorithm::Triangle']]],

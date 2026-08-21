@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['da_20aplicação_20v0_200_2034_0',['Capacidades Atuais da Aplicação (v0.0.34)',['../index.html#current_capabilities_sec',1,'']]],
+  ['da_20aplicação_20v0_200_2035_0',['Capacidades Atuais da Aplicação (v0.0.35)',['../index.html#current_capabilities_sec',1,'']]],
   ['dbl_1',['Dbl',['../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scanner_config.html#a5c89263fa57f11c6b93ca71b7d41701b',1,'HirEV_SmartFitSystemsApp::Modules::ScannerConfig']]],
   ['de_20autor_2',['Direitos de Autor',['../index.html#footer_sec',1,'']]],
   ['de_20configuração_20principais_3',['Ficheiros de Configuração Principais',['../index.html#quick_config_sec',1,'']]],
