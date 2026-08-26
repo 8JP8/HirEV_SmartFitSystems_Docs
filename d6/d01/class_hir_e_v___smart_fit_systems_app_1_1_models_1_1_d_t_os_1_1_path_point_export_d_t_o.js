@@ -1,6 +1,8 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o =
 [
     [ "EntityIndex", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#ac3d4be0e619102e985b9a547d844204f", null ],
+    [ "HeadAngleA", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#ad67fd0294139546c65f1bb7cd1fb2817", null ],
+    [ "HeadAngleB", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#a2c3ecc50f77f8aee1e592737d1c6ac8c", null ],
     [ "OrientationX", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#af4d361e15ab29d8e0fba4ac29621a1f9", null ],
     [ "OrientationY", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#abea1a9234d237164718de5b482b1b3f6", null ],
     [ "OrientationZ", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_path_point_export_d_t_o.html#a342552a7391db87beaebe72ff6fb7e89", null ],

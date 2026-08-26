@@ -40,7 +40,8 @@ var searchData=
   ['simulationblockreference_37',['SimulationBlockReference',['../da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
   ['simulationeventargs_38',['SimulationEventArgs',['../d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_simulation_event_args.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
   ['simulationpathrun_39',['SimulationPathRun',['../d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_path_run.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['state_40',['State',['../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command_1_1_state.html',1,'HirEV_SmartFitSystemsApp::Utilities::BroadUndoCommand']]],
-  ['surfacegridpoint_41',['SurfaceGridPoint',['../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_surface_grid_point.html',1,'HirEV_SmartFitSystemsApp::Modules']]],
-  ['surfacesample_42',['SurfaceSample',['../d7/d00/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager_1_1_surface_sample.html',1,'HirEV_SmartFitSystemsApp::Modules::ScanPathManager']]]
+  ['standardizationpasssummary_40',['StandardizationPassSummary',['../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
+  ['state_41',['State',['../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command_1_1_state.html',1,'HirEV_SmartFitSystemsApp::Utilities::BroadUndoCommand']]],
+  ['surfacegridpoint_42',['SurfaceGridPoint',['../da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_surface_grid_point.html',1,'HirEV_SmartFitSystemsApp::Modules']]],
+  ['surfacesample_43',['SurfaceSample',['../d7/d00/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager_1_1_surface_sample.html',1,'HirEV_SmartFitSystemsApp::Modules::ScanPathManager']]]
 ];

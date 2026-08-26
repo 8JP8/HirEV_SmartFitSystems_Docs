@@ -12,6 +12,7 @@ var dir_9e02225484435e697725a5e6202a9d69 =
     [ "JumpPathPlanner.cs", "de/d02/_jump_path_planner_8cs.html", "de/d02/_jump_path_planner_8cs" ],
     [ "NearestNeighborTwoOpt.cs", "d3/d02/_nearest_neighbor_two_opt_8cs.html", "d3/d02/_nearest_neighbor_two_opt_8cs" ],
     [ "PathVolumeValidator.cs", "d3/d02/_path_volume_validator_8cs.html", "d3/d02/_path_volume_validator_8cs" ],
+    [ "ProbeAngleStandardizer.cs", "de/d02/_probe_angle_standardizer_8cs.html", "de/d02/_probe_angle_standardizer_8cs" ],
     [ "RRTStarPathfinder.cs", "d8/d00/_r_r_t_star_pathfinder_8cs.html", "d8/d00/_r_r_t_star_pathfinder_8cs" ],
     [ "SdfShellGenerator.cs", "d6/d02/_sdf_shell_generator_8cs.html", "d6/d02/_sdf_shell_generator_8cs" ],
     [ "SegmentCollisionValidator.cs", "dd/d02/_segment_collision_validator_8cs.html", "dd/d02/_segment_collision_validator_8cs" ],

@@ -1,5 +1,6 @@
 var _path_manager_8cs =
 [
+    [ "HirEV_SmartFitSystemsApp.Utilities.BrepCorruptedGeometryException", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_brep_corrupted_geometry_exception.html", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_brep_corrupted_geometry_exception" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathPoint", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.ColorPath", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config" ],

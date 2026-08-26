@@ -150,6 +150,18 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a5cc4db19a79253ed8af6f59544e63551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum absolute distance for conservative approach/measurement reuse.  <br /></td></tr>
 <tr class="memitem:adb2af6c2809e525a5031f6c788172496" id="r_adb2af6c2809e525a5031f6c788172496"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#adb2af6c2809e525a5031f6c788172496">MeasureAngleToleranceDegrees</a> = 1.0<code> [get, set]</code></td></tr>
 <tr class="memdesc:adb2af6c2809e525a5031f6c788172496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum angular deviation allowed when sharing an approach point.  <br /></td></tr>
+<tr class="memitem:a71d4bef6e7a49b232b21cebf22643d9f" id="r_a71d4bef6e7a49b232b21cebf22643d9f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a71d4bef6e7a49b232b21cebf22643d9f">EnableProbeAngleStandardizationPass</a> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:a71d4bef6e7a49b232b21cebf22643d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether probe angle standardization pass is enabled.  <br /></td></tr>
+<tr class="memitem:a009d07002f4c024813ce020420cc811b" id="r_a009d07002f4c024813ce020420cc811b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a009d07002f4c024813ce020420cc811b">ProbeStandardAngleStepA_Degrees</a> = 7.5<code> [get, set]</code></td></tr>
+<tr class="memdesc:a009d07002f4c024813ce020420cc811b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the standard discrete step for head axis A in degrees (default: 7.5° for Renishaw PH10).  <br /></td></tr>
+<tr class="memitem:a36ce49ccd15e7d4c47a77431412ec503" id="r_a36ce49ccd15e7d4c47a77431412ec503"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a36ce49ccd15e7d4c47a77431412ec503">ProbeStandardAngleStepB_Degrees</a> = 7.5<code> [get, set]</code></td></tr>
+<tr class="memdesc:a36ce49ccd15e7d4c47a77431412ec503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the standard discrete step for head axis B in degrees (default: 7.5° for Renishaw PH10).  <br /></td></tr>
+<tr class="memitem:aaa5978f5adbe4eee14330a33e473a2e2" id="r_aaa5978f5adbe4eee14330a33e473a2e2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aaa5978f5adbe4eee14330a33e473a2e2">ProbeMaxAngleA_Degrees</a> = 105.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:aaa5978f5adbe4eee14330a33e473a2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the maximum allowable head axis A angle in degrees (default: 105.0° for Renishaw PH10).  <br /></td></tr>
+<tr class="memitem:a7215a402c428ab8dfd463980c0e3dcec" id="r_a7215a402c428ab8dfd463980c0e3dcec"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a7215a402c428ab8dfd463980c0e3dcec">ProbeAngleMeasuringToleranceDegrees</a> = 15.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a7215a402c428ab8dfd463980c0e3dcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the measuring angle tolerance from surface normal in degrees (default: 15.0°).  <br /></td></tr>
+<tr class="memitem:a53770213d2357e49cb25ca4ad8d21081" id="r_a53770213d2357e49cb25ca4ad8d21081"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a53770213d2357e49cb25ca4ad8d21081">ProbeAngleReuseThresholdDegrees</a> = 15.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a53770213d2357e49cb25ca4ad8d21081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the angular threshold in degrees to reuse the active calibrated head pose (default: 15.0°).  <br /></td></tr>
 <tr class="memitem:a281bd0a30ec7276edfec3c8dc7d54ac6" id="r_a281bd0a30ec7276edfec3c8dc7d54ac6"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a281bd0a30ec7276edfec3c8dc7d54ac6">RetractDistance</a> = 3.0<code> [get, set]</code></td></tr>
 <tr class="memdesc:a281bd0a30ec7276edfec3c8dc7d54ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the distance to retract probe when moving between points in mm.  <br /></td></tr>
 <tr class="memitem:a764a4f7d2493f62c2839d10fc5d67927" id="r_a764a4f7d2493f62c2839d10fc5d67927"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a764a4f7d2493f62c2839d10fc5d67927">ProbeRadius</a> = 2.0<code> [get, set]</code></td></tr>
@@ -220,7 +232,7 @@ Propriedades</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p><a class="el" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">Configuration</a> class for control point filtering settings. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00352">352</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00361">361</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
 <a id="a60c2886e9028a17a926dcc3b4c7c3997" name="a60c2886e9028a17a926dcc3b4c7c3997"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60c2886e9028a17a926dcc3b4c7c3997">&#9670;&#160;</a></span>LoadFromConfig()</h2>
@@ -248,9 +260,9 @@ Propriedades</h2></td></tr>
 <p>Loads configuration settings from App.config. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A <a class="el" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html" title="Configuration class for control point filtering settings.">ControlPointFilterConfig</a> instance populated with values from App.config, or defaults if loading fails.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00514">514</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00541">541</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01802">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -296,7 +308,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Maximum absolute distance for conservative approach/measurement reuse. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00406">406</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00415">415</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -322,7 +334,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the resolution for boundary path waypoints in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00493">493</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00520">520</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -348,7 +360,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the boundary tolerance in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00382">382</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00391">391</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -374,7 +386,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the size of collision markers in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00430">430</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00457">457</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -400,7 +412,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the collision tolerance in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00433">433</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00460">460</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -426,7 +438,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the clearance from control points as multiplier of GridSpacing. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00397">397</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00406">406</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -452,7 +464,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the corner angle threshold in degrees. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00361">361</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00370">370</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -478,7 +490,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to create new intermediate waypoints for circumnavigation when existing approach points are insufficient. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00499">499</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00526">526</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -504,7 +516,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to deduplicate control points. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00403">403</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00412">412</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -530,7 +542,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the minimum distance for edge points in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00364">364</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00373">373</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -556,7 +568,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to automatically check and flip normals if pointing inward. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00505">505</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00532">532</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -582,7 +594,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to enable circumnavigation around part when path is blocked. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00496">496</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00523">523</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -608,7 +620,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to enable post-generation collision validation and fixing. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00487">487</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00514">514</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -634,7 +646,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to enable grid generation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00385">385</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00394">394</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -660,7 +672,33 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to enable manual normal flip control via context menu. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00508">508</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00535">535</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a71d4bef6e7a49b232b21cebf22643d9f" name="a71d4bef6e7a49b232b21cebf22643d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d4bef6e7a49b232b21cebf22643d9f">&#9670;&#160;</a></span>EnableProbeAngleStandardizationPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.EnableProbeAngleStandardizationPass = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether probe angle standardization pass is enabled. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00421">421</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -686,7 +724,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether probe rotation to align with surface normals is enabled. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00424">424</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00451">451</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -712,7 +750,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether smart filtering is enabled. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00373">373</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00382">382</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -738,7 +776,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to enable verbose logging during path generation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00502">502</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00529">529</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -764,7 +802,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the grid margin from edge in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00391">391</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00400">400</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -790,7 +828,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the grid spacing distance in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00388">388</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00397">397</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -816,7 +854,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the minimum distance for interior points in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00367">367</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00376">376</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -842,7 +880,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the maximum number of attempts to fix collision issues. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00490">490</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00517">517</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -868,7 +906,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the maximum curvature for densification. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00370">370</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00379">379</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -894,7 +932,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the maximum number of grid points per face. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00394">394</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00403">403</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -920,7 +958,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Maximum angular deviation allowed when sharing an approach point. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00409">409</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00418">418</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -946,7 +984,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the minimum distance between path points in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00355">355</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00364">364</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -972,7 +1010,59 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to preserve corner points during filtering. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00358">358</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00367">367</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7215a402c428ab8dfd463980c0e3dcec" name="a7215a402c428ab8dfd463980c0e3dcec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7215a402c428ab8dfd463980c0e3dcec">&#9670;&#160;</a></span>ProbeAngleMeasuringToleranceDegrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeAngleMeasuringToleranceDegrees = 15.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the measuring angle tolerance from surface normal in degrees (default: 15.0°). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00433">433</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a53770213d2357e49cb25ca4ad8d21081" name="a53770213d2357e49cb25ca4ad8d21081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53770213d2357e49cb25ca4ad8d21081">&#9670;&#160;</a></span>ProbeAngleReuseThresholdDegrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeAngleReuseThresholdDegrees = 15.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the angular threshold in degrees to reuse the active calibrated head pose (default: 15.0°). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00436">436</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1088,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the distance step for distance-based validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00445">445</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00472">472</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1114,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to mark detected collision spots with red markers. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00461">461</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00488">488</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1140,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the percentage increment used by percentage-based probe collision validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00439">439</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00466">466</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1166,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the probe collision sampling mode. Supported values: Percentage, Count. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00436">436</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00463">463</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1192,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to display approach points during probe collision validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00455">455</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00482">482</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1218,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to display measurement points during probe collision validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00458">458</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00485">485</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1244,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to display path lines during probe collision validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00452">452</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00479">479</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1271,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets or sets whether to display the full tool model during probe collision validation. </p>
 <p>Gets or sets whether to display the full tool model visually during probe collision validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00449">449</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00476">476</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1297,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the total number of samples per path, including endpoints, for count-based validation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00442">442</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00469">469</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1323,33 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the height of the simulation probe cylinder in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00418">418</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00445">445</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="aaa5978f5adbe4eee14330a33e473a2e2" name="aaa5978f5adbe4eee14330a33e473a2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5978f5adbe4eee14330a33e473a2e2">&#9670;&#160;</a></span>ProbeMaxAngleA_Degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeMaxAngleA_Degrees = 105.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the maximum allowable head axis A angle in degrees (default: 105.0° for Renishaw PH10). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00430">430</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1375,59 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the radius of the simulation probe cylinder in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00415">415</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00442">442</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a009d07002f4c024813ce020420cc811b" name="a009d07002f4c024813ce020420cc811b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009d07002f4c024813ce020420cc811b">&#9670;&#160;</a></span>ProbeStandardAngleStepA_Degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeStandardAngleStepA_Degrees = 7.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the standard discrete step for head axis A in degrees (default: 7.5° for Renishaw PH10). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00424">424</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a36ce49ccd15e7d4c47a77431412ec503" name="a36ce49ccd15e7d4c47a77431412ec503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ce49ccd15e7d4c47a77431412ec503">&#9670;&#160;</a></span>ProbeStandardAngleStepB_Degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeStandardAngleStepB_Degrees = 7.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the standard discrete step for head axis B in degrees (default: 7.5° for Renishaw PH10). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00427">427</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1453,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to project outside points to surface. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00379">379</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00388">388</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1479,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the distance to retract probe when moving between points in mm. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00412">412</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00439">439</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1505,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Base speed in mm per tick at 1.0x simulation speed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00476">476</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00503">503</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1363,7 +1531,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether collision detection is enabled during simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00427">427</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00454">454</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1557,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets the size multiplier for the fallback default probe tool. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00421">421</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00448">448</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1415,7 +1583,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether approach points are hidden during active path simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00464">464</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00491">491</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1609,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether measurement points are hidden during active path simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00467">467</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00494">494</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1467,7 +1635,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether path lines are hidden during active path simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00470">470</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00497">497</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1493,7 +1661,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Speed multiplier applied to probe path simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00479">479</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00506">506</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1687,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Rotation smoothing factor. 1.0 = instant, 0.1 = very smooth gradual. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00485">485</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00512">512</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1545,7 +1713,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Speed multiplier applied to scanner path simulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00482">482</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00509">509</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1739,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Timer interval in ms for simulation animation. Lower = smoother. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00473">473</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00500">500</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1765,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to use control points in measurement set. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00400">400</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00409">409</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1791,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets or sets whether to validate control point boundaries using mesh triangulation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00376">376</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00385">385</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>

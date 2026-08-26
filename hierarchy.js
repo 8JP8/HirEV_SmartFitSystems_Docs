@@ -121,6 +121,9 @@ var hierarchy =
       [ "HirEV_SmartFitSystemsApp.ScannerConfigurationDialog", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Settings_SidePanel", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html", null ]
     ] ],
+    [ "InvalidOperationException", null, [
+      [ "HirEV_SmartFitSystemsApp.Utilities.BrepCorruptedGeometryException", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_brep_corrupted_geometry_exception.html", null ]
+    ] ],
     [ "HirEV_SmartFitSystemsApp.Utilities.IUndoCommand", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html", [
       [ "HirEV_SmartFitSystemsApp.Utilities.ActionUndoCommand", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command.html", null ],
       [ "HirEV_SmartFitSystemsApp.Utilities.BroadUndoCommand", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html", null ],
@@ -180,6 +183,8 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Models.PathWaypoint", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_path_waypoint.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.PointEditEventDTO", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_edit_event_d_t_o.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizationConfig", "d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSample", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_sample.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSceneSnapshot", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_scene_snapshot.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeSegmentCollisionResult", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_segment_collision_result.html", null ],
@@ -220,6 +225,7 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellProjectionUtils", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.SimulationPathRun", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_path_run.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.StandardizationPassSummary", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.BroadUndoCommand.State", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command_1_1_state.html", null ],
     [ "HirEV_SmartFitSystemsApp.Modules.SurfaceGridPoint", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_surface_grid_point.html", null ],
     [ "HirEV_SmartFitSystemsApp.Modules.ScanPathManager.SurfaceSample", "d7/d00/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager_1_1_surface_sample.html", null ],

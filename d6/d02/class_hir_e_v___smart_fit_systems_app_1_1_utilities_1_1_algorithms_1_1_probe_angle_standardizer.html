@@ -1,0 +1,900 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html','../../','d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utility class providing CMM bi-axial probe angle kinematics, angular reuse threshold optimization, measuring angle tolerance evaluation, and base avoidance coordination for path planning.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_angle_standardizer_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_angle_standardizer_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_angle_standardizer_coll__map">
+<area shape="rect" title="Utility class providing CMM bi&#45;axial probe angle kinematics, angular reuse threshold optimization,..." alt="" coords="5,5,254,357"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a142c1190b43a22727647953a6b9ae9e5" id="r_a142c1190b43a22727647953a6b9ae9e5"><td class="memItemLeft">static double double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a>&#160;</td><td class="memItemRight"><a class="el" href="#a142c1190b43a22727647953a6b9ae9e5">VectorToHeadAngles</a> (Vector3D v, double stepA=7.5, double stepB=7.5, double maxA=105.0)</td></tr>
+<tr class="memitem:a227d2956c4f16596d55f04bb9dabbc4e" id="r_a227d2956c4f16596d55f04bb9dabbc4e"><td class="memItemLeft">static Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#a227d2956c4f16596d55f04bb9dabbc4e">HeadAnglesToVector</a> (double aDeg, double bDeg)</td></tr>
+<tr class="memdesc:a227d2956c4f16596d55f04bb9dabbc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts discrete CMM bi-axial head angles (A, B) into a 3D unit orientation vector relative to the Eyeshot global vertical axis (+Z).  <br /></td></tr>
+<tr class="memitem:ae617e9e13afd2b8f25a61bee9c26f872" id="r_ae617e9e13afd2b8f25a61bee9c26f872"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#ae617e9e13afd2b8f25a61bee9c26f872">AngleBetweenVectorsDeg</a> (Vector3D v1, Vector3D v2)</td></tr>
+<tr class="memdesc:ae617e9e13afd2b8f25a61bee9c26f872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the angular deviation in degrees between two 3D vectors.  <br /></td></tr>
+<tr class="memitem:a226b4286608a7d8be4d9eec0e8651203" id="r_a226b4286608a7d8be4d9eec0e8651203"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a226b4286608a7d8be4d9eec0e8651203">IsHeadPoseSafeWithBaseAvoidance</a> (double aDeg, double bDeg, double localHeight, <a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a> baseConfig)</td></tr>
+<tr class="memdesc:a226b4286608a7d8be4d9eec0e8651203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local height.  <br /></td></tr>
+<tr class="memitem:abdc47dc7580a3b1d565f48f17634e94d" id="r_abdc47dc7580a3b1d565f48f17634e94d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#abdc47dc7580a3b1d565f48f17634e94d">IsHeadPoseValidForSurface</a> (double aDeg, double bDeg, Vector3D surfaceNormal, double localHeight, <a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a> config)</td></tr>
+<tr class="memdesc:abdc47dc7580a3b1d565f48f17634e94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a discrete head angle combination is valid for measuring a given surface within the measuring angle tolerance and satisfies base avoidance rules.  <br /></td></tr>
+<tr class="memitem:a0196a1b77604c9c2e3563860428ff543" id="r_a0196a1b77604c9c2e3563860428ff543"><td class="memItemLeft">static double double Vector3D bool bool WasAdjustedForBase&#160;</td><td class="memItemRight"><a class="el" href="#a0196a1b77604c9c2e3563860428ff543">SelectStandardProbeAngle</a> (Point3D point, Vector3D currentNormal, Vector3D surfaceNormal,(double <a class="el" href="#aa7abe6bcc3b3c57579a85d99a88e57e7">A</a>, double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a>)? activePreviousAngle, double baseZ, <a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a> config)</td></tr>
+<tr class="memitem:a3557f08f609cbd3f1a05294be1a9f735" id="r_a3557f08f609cbd3f1a05294be1a9f735"><td class="memItemLeft">static List&lt;(double <a class="el" href="#aa7abe6bcc3b3c57579a85d99a88e57e7">A</a>, double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a>)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3557f08f609cbd3f1a05294be1a9f735">GenerateCandidateHeadAnglesWithinTolerance</a> (Vector3D targetNormal, double toleranceDeg, double stepA, double stepB, double maxA)</td></tr>
+<tr class="memdesc:a3557f08f609cbd3f1a05294be1a9f735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates all discrete (A, B) combinations that lie within the specified angular cone from a target vector.  <br /></td></tr>
+<tr class="memitem:a20f82c3b0e1d5d627b245edfc0dbd5e3" id="r_a20f82c3b0e1d5d627b245edfc0dbd5e3"><td class="memItemLeft">static <a class="el" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html">StandardizationPassSummary</a>&#160;</td><td class="memItemRight"><a class="el" href="#a20f82c3b0e1d5d627b245edfc0dbd5e3">ApplyStandardization</a> (<a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html">ColorPath</a> path, <a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a> config, double defaultBaseZ=0.0, Func&lt; int, bool &gt;? isHolePointFunc=null, Func&lt; int, double &gt;? getPointBaseZFunc=null)</td></tr>
+<tr class="memdesc:a20f82c3b0e1d5d627b245edfc0dbd5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the probe angle standardization pass to all waypoints in a <a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html" title="Represents a complete path with metadata for visualization and simulation.">ColorPath</a>, preserving the hole vertical probe rule, optimizing angular reuse, and coordinating with base avoidance.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Atributos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a6066e50f82b66660f6c42a5c775e7c25" id="r_a6066e50f82b66660f6c42a5c775e7c25"><td class="memItemLeft">const double&#160;</td><td class="memItemRight"><a class="el" href="#a6066e50f82b66660f6c42a5c775e7c25">NumericalTolerance</a> = 1e-6</td></tr>
+<tr class="memitem:aa7abe6bcc3b3c57579a85d99a88e57e7" id="r_aa7abe6bcc3b3c57579a85d99a88e57e7"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#aa7abe6bcc3b3c57579a85d99a88e57e7">A</a></td></tr>
+<tr class="memdesc:aa7abe6bcc3b3c57579a85d99a88e57e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a continuous 3D orientation vector into discrete CMM bi-axial head angles (A, B) relative to the Eyeshot global vertical axis (+Z).  <br /></td></tr>
+<tr class="memitem:a1c9b17368f99eafaa6f34dde1362f97a" id="r_a1c9b17368f99eafaa6f34dde1362f97a"><td class="memItemLeft">static double double&#160;</td><td class="memItemRight"><a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a></td></tr>
+<tr class="memitem:a3ea7d40f8a55d5c0ba44f3178a51f595" id="r_a3ea7d40f8a55d5c0ba44f3178a51f595"><td class="memItemLeft">static double double Vector3D&#160;</td><td class="memItemRight"><a class="el" href="#a3ea7d40f8a55d5c0ba44f3178a51f595">Vector</a></td></tr>
+<tr class="memitem:aebd0624d42596b26d8a0994143d40718" id="r_aebd0624d42596b26d8a0994143d40718"><td class="memItemLeft">static double double Vector3D bool&#160;</td><td class="memItemRight"><a class="el" href="#aebd0624d42596b26d8a0994143d40718">WasReused</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Utility class providing CMM bi-axial probe angle kinematics, angular reuse threshold optimization, measuring angle tolerance evaluation, and base avoidance coordination for path planning. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00158">158</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="ae617e9e13afd2b8f25a61bee9c26f872" name="ae617e9e13afd2b8f25a61bee9c26f872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae617e9e13afd2b8f25a61bee9c26f872">&#9670;&#160;</a></span>AngleBetweenVectorsDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.AngleBetweenVectorsDeg </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the angular deviation in degrees between two 3D vectors. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00237">237</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00160">NumericalTolerance</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00267">IsHeadPoseValidForSurface()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_ae617e9e13afd2b8f25a61bee9c26f872_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_ae617e9e13afd2b8f25a61bee9c26f872_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_ae617e9e13afd2b8f25a61bee9c26f872_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_ae617e9e13afd2b8f25a61bee9c26f872_icgraph">
+<area shape="rect" title="Computes the angular deviation in degrees between two 3D vectors." alt="" coords="335,59,585,117"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a3557f08f609cbd3f1a05294be1a9f735" title="Generates all discrete (A, B) combinations that lie within the specified angular cone from a target v..." alt="" coords="5,5,287,80"/>
+<area shape="poly" title=" " alt="" coords="317,68,287,66,287,60,322,67"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#abdc47dc7580a3b1d565f48f17634e94d" title="Checks whether a discrete head angle combination is valid for measuring a given surface within the me..." alt="" coords="15,104,277,163"/>
+<area shape="poly" title=" " alt="" coords="317,109,278,117,277,112,322,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20f82c3b0e1d5d627b245edfc0dbd5e3" name="a20f82c3b0e1d5d627b245edfc0dbd5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f82c3b0e1d5d627b245edfc0dbd5e3">&#9670;&#160;</a></span>ApplyStandardization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html">StandardizationPassSummary</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.ApplyStandardization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html">ColorPath</a></td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>defaultBaseZ</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0::0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; int, bool &gt;?</td>          <td class="paramname"><span class="paramname"><em>isHolePointFunc</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; int, double &gt;?</td>          <td class="paramname"><span class="paramname"><em>getPointBaseZFunc</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the probe angle standardization pass to all waypoints in a <a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html" title="Represents a complete path with metadata for visualization and simulation.">ColorPath</a>, preserving the hole vertical probe rule, optimizing angular reuse, and coordinating with base avoidance. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The <a class="el" href="../../d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html" title="Represents a complete path with metadata for visualization and simulation.">ColorPath</a> instance to standardize.</td></tr>
+    <tr><td class="paramname">config</td><td>The standardization configuration.</td></tr>
+    <tr><td class="paramname">defaultBaseZ</td><td>The fallback part base baseline Z elevation in mm.</td></tr>
+    <tr><td class="paramname">isHolePointFunc</td><td>Optional predicate identifying hole waypoints to preserve vertical.</td></tr>
+    <tr><td class="paramname">getPointBaseZFunc</td><td>Optional per-point provider for base Z elevation in multi-part assemblies.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A <a class="el" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html" title="Summary data structure reporting the outcome of a probe angle standardization pass.">StandardizationPassSummary</a> containing telemetry of the standardization pass.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00432">432</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00171">A</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">B</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00055">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizationConfig.Enabled</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00109">HirEV_SmartFitSystemsApp.Utilities.ColorPath.Normals</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00130">HirEV_SmartFitSystemsApp.Utilities.ColorPath.PathCmmType</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00106">HirEV_SmartFitSystemsApp.Utilities.ColorPath.Points</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00123">HirEV_SmartFitSystemsApp.Utilities.ColorPath.PointTypes</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">SelectStandardProbeAngle()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06663">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_cgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_cgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_cgraph">
+<area shape="rect" title="Applies the probe angle standardization pass to all waypoints in a ColorPath, preserving the hole ver..." alt="" coords="5,5,227,64"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a0196a1b77604c9c2e3563860428ff543" title=" " alt="" coords="275,5,529,64"/>
+<area shape="poly" title=" " alt="" coords="227,32,262,34,256,35,227,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a20f82c3b0e1d5d627b245edfc0dbd5e3_icgraph">
+<area shape="rect" title="Applies the probe angle standardization pass to all waypoints in a ColorPath, preserving the hole ver..." alt="" coords="270,5,491,64"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,5,222,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,222,37,222,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3557f08f609cbd3f1a05294be1a9f735" name="a3557f08f609cbd3f1a05294be1a9f735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3557f08f609cbd3f1a05294be1a9f735">&#9670;&#160;</a></span>GenerateCandidateHeadAnglesWithinTolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;(double <a class="el" href="#aa7abe6bcc3b3c57579a85d99a88e57e7">A</a>, double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a>)&gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.GenerateCandidateHeadAnglesWithinTolerance </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>targetNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>toleranceDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stepA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stepB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxA</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates all discrete (A, B) combinations that lie within the specified angular cone from a target vector. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">366</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00171">A</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00237">AngleBetweenVectorsDeg()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">B</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00213">HeadAnglesToVector()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00160">NumericalTolerance</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00171">VectorToHeadAngles()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a3557f08f609cbd3f1a05294be1a9f735_cgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a3557f08f609cbd3f1a05294be1a9f735_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a3557f08f609cbd3f1a05294be1a9f735_cgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a3557f08f609cbd3f1a05294be1a9f735_cgraph">
+<area shape="rect" title="Generates all discrete (A, B) combinations that lie within the specified angular cone from a target v..." alt="" coords="5,80,287,155"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#ae617e9e13afd2b8f25a61bee9c26f872" title="Computes the angular deviation in degrees between two 3D vectors." alt="" coords="335,5,585,64"/>
+<area shape="poly" title=" " alt="" coords="286,78,334,67,329,69,288,83"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a227d2956c4f16596d55f04bb9dabbc4e" title="Converts discrete CMM bi&#45;axial head angles (A, B) into a 3D unit orientation vector relative to the E..." alt="" coords="350,88,570,147"/>
+<area shape="poly" title=" " alt="" coords="287,115,336,117,331,118,287,120"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a142c1190b43a22727647953a6b9ae9e5" title=" " alt="" coords="350,171,570,229"/>
+<area shape="poly" title=" " alt="" coords="287,152,337,167,332,167,287,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a227d2956c4f16596d55f04bb9dabbc4e" name="a227d2956c4f16596d55f04bb9dabbc4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227d2956c4f16596d55f04bb9dabbc4e">&#9670;&#160;</a></span>HeadAnglesToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.HeadAnglesToVector </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>aDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bDeg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts discrete CMM bi-axial head angles (A, B) into a 3D unit orientation vector relative to the Eyeshot global vertical axis (+Z). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aDeg</td><td>Axis A angle in degrees (inclination from +Z).</td></tr>
+    <tr><td class="paramname">bDeg</td><td>Axis B angle in degrees (azimuth in XY plane from +X).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A normalized 3D direction vector.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00213">213</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00250">IsHeadPoseSafeWithBaseAvoidance()</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00267">IsHeadPoseValidForSurface()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a227d2956c4f16596d55f04bb9dabbc4e_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a227d2956c4f16596d55f04bb9dabbc4e_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a227d2956c4f16596d55f04bb9dabbc4e_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a227d2956c4f16596d55f04bb9dabbc4e_icgraph">
+<area shape="rect" title="Converts discrete CMM bi&#45;axial head angles (A, B) into a 3D unit orientation vector relative to the E..." alt="" coords="1507,88,1727,147"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a3557f08f609cbd3f1a05294be1a9f735" title="Generates all discrete (A, B) combinations that lie within the specified angular cone from a target v..." alt="" coords="1161,5,1442,80"/>
+<area shape="poly" title=" " alt="" coords="1489,88,1442,79,1442,73,1495,88"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a226b4286608a7d8be4d9eec0e8651203" title="Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local ..." alt="" coords="1144,155,1459,213"/>
+<area shape="poly" title=" " alt="" coords="1495,143,1444,157,1443,151,1490,144"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#abdc47dc7580a3b1d565f48f17634e94d" title="Checks whether a discrete head angle combination is valid for measuring a given surface within the me..." alt="" coords="833,88,1096,147"/>
+<area shape="poly" title=" " alt="" coords="1489,118,1096,120,1096,115,1494,117"/>
+<area shape="poly" title=" " alt="" coords="1133,151,1096,146,1096,141,1138,151"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4402959b87f6787ccc9c5e0ff2b96834" title=" " alt="" coords="854,171,1075,229"/>
+<area shape="poly" title=" " alt="" coords="1125,192,1075,197,1075,192,1131,192"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,171,222,229"/>
+<area shape="poly" title=" " alt="" coords="836,194,785,195,527,191,270,195,223,196,222,191,270,189,527,185,785,189,842,193"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6226ee4fcacb65656b123e71b32d9a41" title=" " alt="" coords="569,204,785,263"/>
+<area shape="poly" title=" " alt="" coords="836,215,786,223,785,218,842,214"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5db437dc074f17f6586ba659a50be910" title=" " alt="" coords="270,204,521,263"/>
+<area shape="poly" title=" " alt="" coords="551,234,521,236,521,231,556,233"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a93db353e64cf8a398fd55f70172574e2" title=" " alt="" coords="291,287,500,345"/>
+<area shape="poly" title=" " alt="" coords="563,267,499,289,497,283,558,268"/>
+<area shape="poly" title=" " alt="" coords="251,217,223,215,222,210,257,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a226b4286608a7d8be4d9eec0e8651203" name="a226b4286608a7d8be4d9eec0e8651203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226b4286608a7d8be4d9eec0e8651203">&#9670;&#160;</a></span>IsHeadPoseSafeWithBaseAvoidance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.IsHeadPoseSafeWithBaseAvoidance </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>aDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>localHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html">BaseAvoidanceConfig</a></td>          <td class="paramname"><span class="paramname"><em>baseConfig</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local height. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00250">250</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00030">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceConfig.Enabled</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00213">HeadAnglesToVector()</a> e <a class="el" href="../../d0/d00/_base_avoidance_clearance_8cs_source.html#l00361">HirEV_SmartFitSystemsApp.Utilities.Algorithms.BaseAvoidanceClearance.IsAngleSafeAtHeight()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00267">IsHeadPoseValidForSurface()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05013">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPairBelowBaseAvoidanceClearance()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_cgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_cgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_cgraph">
+<area shape="rect" title="Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local ..." alt="" coords="5,47,321,105"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a227d2956c4f16596d55f04bb9dabbc4e" title="Converts discrete CMM bi&#45;axial head angles (A, B) into a 3D unit orientation vector relative to the E..." alt="" coords="372,5,592,64"/>
+<area shape="poly" title=" " alt="" coords="320,53,359,50,354,52,322,58"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aab018f76f6ff3599c664c4cad106351b" title="Checks whether an approach or probe orientation vector meets base clearance constraints at a specific..." alt="" coords="369,88,595,147"/>
+<area shape="poly" title=" " alt="" coords="321,94,356,100,351,101,321,99"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="643,88,870,147"/>
+<area shape="poly" title=" " alt="" coords="595,115,630,117,625,118,596,120"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="944,47,1184,105"/>
+<area shape="poly" title=" " alt="" coords="870,99,926,94,932,94,871,105"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a1a78b073ae064063dae3dbc9ebe24787" title="Calculates the required minimum angle in degrees relative to the horizontal base plane for a given lo..." alt="" coords="918,129,1210,188"/>
+<area shape="poly" title=" " alt="" coords="871,130,906,137,900,137,870,135"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a226b4286608a7d8be4d9eec0e8651203_icgraph">
+<area shape="rect" title="Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local ..." alt="" coords="1144,47,1459,105"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#abdc47dc7580a3b1d565f48f17634e94d" title="Checks whether a discrete head angle combination is valid for measuring a given surface within the me..." alt="" coords="833,5,1096,64"/>
+<area shape="poly" title=" " alt="" coords="1125,55,1096,53,1096,48,1131,55"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4402959b87f6787ccc9c5e0ff2b96834" title=" " alt="" coords="854,88,1075,147"/>
+<area shape="poly" title=" " alt="" coords="1125,98,1075,106,1075,101,1131,97"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,88,222,147"/>
+<area shape="poly" title=" " alt="" coords="836,111,785,112,527,108,270,112,223,114,222,108,270,107,527,103,785,107,842,111"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6226ee4fcacb65656b123e71b32d9a41" title=" " alt="" coords="569,121,785,180"/>
+<area shape="poly" title=" " alt="" coords="836,132,786,141,785,135,842,131"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5db437dc074f17f6586ba659a50be910" title=" " alt="" coords="270,121,521,180"/>
+<area shape="poly" title=" " alt="" coords="551,151,521,153,521,148,556,150"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a93db353e64cf8a398fd55f70172574e2" title=" " alt="" coords="291,204,500,263"/>
+<area shape="poly" title=" " alt="" coords="563,184,499,206,497,201,558,185"/>
+<area shape="poly" title=" " alt="" coords="251,135,223,133,222,128,257,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abdc47dc7580a3b1d565f48f17634e94d" name="abdc47dc7580a3b1d565f48f17634e94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc47dc7580a3b1d565f48f17634e94d">&#9670;&#160;</a></span>IsHeadPoseValidForSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.IsHeadPoseValidForSurface </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>aDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>surfaceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>localHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a discrete head angle combination is valid for measuring a given surface within the measuring angle tolerance and satisfies base avoidance rules. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00267">267</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00237">AngleBetweenVectorsDeg()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00073">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizationConfig.BaseAvoidance</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00213">HeadAnglesToVector()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00250">IsHeadPoseSafeWithBaseAvoidance()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00067">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizationConfig.MeasuringAngleToleranceDeg</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00160">NumericalTolerance</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_abdc47dc7580a3b1d565f48f17634e94d_cgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_abdc47dc7580a3b1d565f48f17634e94d_cgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_abdc47dc7580a3b1d565f48f17634e94d_cgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_abdc47dc7580a3b1d565f48f17634e94d_cgraph">
+<area shape="rect" title="Checks whether a discrete head angle combination is valid for measuring a given surface within the me..." alt="" coords="5,72,268,131"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#ae617e9e13afd2b8f25a61bee9c26f872" title="Computes the angular deviation in degrees between two 3D vectors." alt="" coords="348,5,598,64"/>
+<area shape="poly" title=" " alt="" coords="267,73,335,61,331,64,269,78"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a227d2956c4f16596d55f04bb9dabbc4e" title="Converts discrete CMM bi&#45;axial head angles (A, B) into a 3D unit orientation vector relative to the E..." alt="" coords="682,72,902,131"/>
+<area shape="poly" title=" " alt="" coords="268,99,668,99,665,104,268,104"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a226b4286608a7d8be4d9eec0e8651203" title="Checks whether a discrete head angle combination satisfies base avoidance clearance at a given local ..." alt="" coords="316,139,631,197"/>
+<area shape="poly" title=" " alt="" coords="268,125,310,135,304,136,268,130"/>
+<area shape="poly" title=" " alt="" coords="616,135,664,128,669,127,617,141"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aab018f76f6ff3599c664c4cad106351b" title="Checks whether an approach or probe orientation vector meets base clearance constraints at a specific..." alt="" coords="679,155,905,213"/>
+<area shape="poly" title=" " alt="" coords="631,173,666,177,661,178,631,179"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9" title="Checks whether a specific local height and approach vector violate local base clearance rules." alt="" coords="953,155,1181,213"/>
+<area shape="poly" title=" " alt="" coords="906,181,940,184,935,184,906,187"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf361313aa4a7695322d5c1969589d80" title="Computes the angle of an approach vector relative to the horizontal base plane (0 degrees = horizonta..." alt="" coords="1255,113,1494,172"/>
+<area shape="poly" title=" " alt="" coords="1181,166,1237,161,1242,161,1181,171"/>
+<area shape="rect" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a1a78b073ae064063dae3dbc9ebe24787" title="Calculates the required minimum angle in degrees relative to the horizontal base plane for a given lo..." alt="" coords="1229,196,1520,255"/>
+<area shape="poly" title=" " alt="" coords="1181,197,1216,204,1211,204,1181,202"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0196a1b77604c9c2e3563860428ff543" name="a0196a1b77604c9c2e3563860428ff543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0196a1b77604c9c2e3563860428ff543">&#9670;&#160;</a></span>SelectStandardProbeAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double Vector3D bool bool WasAdjustedForBase HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.SelectStandardProbeAngle </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>currentNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>surfaceNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(double <a class="el" href="#aa7abe6bcc3b3c57579a85d99a88e57e7">A</a>, double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a>)?</td>          <td class="paramname"><span class="paramname"><em>activePreviousAngle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>baseZ</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html">ProbeAngleStandardizationConfig</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">286</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00432">ApplyStandardization()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l05013">HirEV_SmartFitSystemsApp.Utilities.PathManager.IsPairBelowBaseAvoidanceClearance()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a0196a1b77604c9c2e3563860428ff543_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a0196a1b77604c9c2e3563860428ff543_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a0196a1b77604c9c2e3563860428ff543_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a0196a1b77604c9c2e3563860428ff543_icgraph">
+<area shape="rect" title=" " alt="" coords="1107,39,1361,97"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a20f82c3b0e1d5d627b245edfc0dbd5e3" title="Applies the probe angle standardization pass to all waypoints in a ColorPath, preserving the hole ver..." alt="" coords="569,5,790,64"/>
+<area shape="poly" title=" " alt="" coords="1089,60,791,44,791,39,1094,59"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4402959b87f6787ccc9c5e0ff2b96834" title=" " alt="" coords="838,72,1059,131"/>
+<area shape="poly" title=" " alt="" coords="1088,85,1059,91,1059,86,1094,84"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,72,222,131"/>
+<area shape="poly" title=" " alt="" coords="552,51,270,85,223,91,221,86,269,80,555,47"/>
+<area shape="poly" title=" " alt="" coords="822,104,222,104,222,99,824,99"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6226ee4fcacb65656b123e71b32d9a41" title=" " alt="" coords="572,139,788,197"/>
+<area shape="poly" title=" " alt="" coords="826,132,789,144,788,139,820,133"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a5db437dc074f17f6586ba659a50be910" title=" " alt="" coords="270,139,521,197"/>
+<area shape="poly" title=" " alt="" coords="553,168,522,171,521,165,558,168"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a93db353e64cf8a398fd55f70172574e2" title=" " alt="" coords="291,221,500,280"/>
+<area shape="poly" title=" " alt="" coords="565,202,499,223,498,218,559,203"/>
+<area shape="poly" title=" " alt="" coords="252,135,222,130,222,124,257,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a142c1190b43a22727647953a6b9ae9e5" name="a142c1190b43a22727647953a6b9ae9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142c1190b43a22727647953a6b9ae9e5">&#9670;&#160;</a></span>VectorToHeadAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double <a class="el" href="#a1c9b17368f99eafaa6f34dde1362f97a">B</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.VectorToHeadAngles </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stepA</em></span><span class="paramdefsep"> = </span><span class="paramdefval">7::5</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>stepB</em></span><span class="paramdefsep"> = </span><span class="paramdefval">7::5</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxA</em></span><span class="paramdefsep"> = </span><span class="paramdefval">105::0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00171">171</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a> e <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l20795">HirEV_SmartFitSystemsApp.Utilities.PathManager.GetPathExportDTO()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a142c1190b43a22727647953a6b9ae9e5_icgraph.png" border="0" usemap="#ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a142c1190b43a22727647953a6b9ae9e5_icgraph" loading="lazy" alt=""/></div>
+<map name="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a142c1190b43a22727647953a6b9ae9e5_icgraph" id="ad6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer_a142c1190b43a22727647953a6b9ae9e5_icgraph">
+<area shape="rect" title=" " alt="" coords="865,55,1086,113"/>
+<area shape="rect" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#a3557f08f609cbd3f1a05294be1a9f735" title="Generates all discrete (A, B) combinations that lie within the specified angular cone from a target v..." alt="" coords="536,5,817,80"/>
+<area shape="poly" title=" " alt="" coords="847,67,818,65,818,59,853,67"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a90294346eb4c8d77fd9f5c10c622fae2" title="Generates a PathExportDTO from the current path state." alt="" coords="544,104,809,147"/>
+<area shape="poly" title=" " alt="" coords="852,101,809,110,809,104,847,102"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adab406171dd932d4255fe8ff822d24f5" title=" " alt="" coords="266,104,488,147"/>
+<area shape="poly" title=" " alt="" coords="527,125,488,128,488,123,532,125"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9075b1f5b91830f1f4618d2893f8291d" title="Executes the LoadPaths method." alt="" coords="5,104,218,147"/>
+<area shape="poly" title=" " alt="" coords="248,125,218,128,218,123,253,125"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="aa7abe6bcc3b3c57579a85d99a88e57e7" name="aa7abe6bcc3b3c57579a85d99a88e57e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7abe6bcc3b3c57579a85d99a88e57e7">&#9670;&#160;</a></span>A</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.A</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a continuous 3D orientation vector into discrete CMM bi-axial head angles (A, B) relative to the Eyeshot global vertical axis (+Z). </p>
+<p>Selects the optimal standardized discrete probe angle (A, B) for a waypoint, evaluating the angular reuse threshold to avoid unnecessary head rotations, measuring angle tolerance, and base avoidance.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The 3D direction vector.</td></tr>
+    <tr><td class="paramname">stepA</td><td>Discrete angular step for axis A (in degrees).</td></tr>
+    <tr><td class="paramname">stepB</td><td>Discrete angular step for axis B (in degrees).</td></tr>
+    <tr><td class="paramname">maxA</td><td>Maximum permissible A angle (in degrees).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A tuple containing discrete angles (A, B) in degrees.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00171">171</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00432">ApplyStandardization()</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a>.</p>
+
+</div>
+</div>
+<a id="a1c9b17368f99eafaa6f34dde1362f97a" name="a1c9b17368f99eafaa6f34dde1362f97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9b17368f99eafaa6f34dde1362f97a">&#9670;&#160;</a></span>B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.B</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">286</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00432">ApplyStandardization()</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a>.</p>
+
+</div>
+</div>
+<a id="a6066e50f82b66660f6c42a5c775e7c25" name="a6066e50f82b66660f6c42a5c775e7c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6066e50f82b66660f6c42a5c775e7c25">&#9670;&#160;</a></span>NumericalTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.NumericalTolerance = 1e-6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00160">160</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00237">AngleBetweenVectorsDeg()</a>, <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00366">GenerateCandidateHeadAnglesWithinTolerance()</a> e <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00267">IsHeadPoseValidForSurface()</a>.</p>
+
+</div>
+</div>
+<a id="a3ea7d40f8a55d5c0ba44f3178a51f595" name="a3ea7d40f8a55d5c0ba44f3178a51f595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea7d40f8a55d5c0ba44f3178a51f595">&#9670;&#160;</a></span>Vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double Vector3D HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.Vector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">286</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="aebd0624d42596b26d8a0994143d40718" name="aebd0624d42596b26d8a0994143d40718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd0624d42596b26d8a0994143d40718">&#9670;&#160;</a></span>WasReused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double Vector3D bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer.WasReused</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html#l00286">286</a> do ficheiro <a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../de/d02/_probe_angle_standardizer_8cs_source.html">ProbeAngleStandardizer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

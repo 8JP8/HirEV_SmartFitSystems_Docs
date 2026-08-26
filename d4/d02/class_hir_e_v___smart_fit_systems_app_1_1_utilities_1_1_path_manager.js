@@ -502,6 +502,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager =
     [ "_forceCompactPathVisuals", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac5949e652792cf58549c38da272bcc6e", null ],
     [ "_hasRaisedCompletion", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad43acc038ad8d5ad34f6e0de798def70", null ],
     [ "_isDrawingAllPaths", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#acbb30e80e0e38a0464d8bfa0d36f921a", null ],
+    [ "_isEyeshotAnimationActive", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac26eb725f6435d109d6182890445d169", null ],
     [ "_isFinishingVerification", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae6618c125904b43a8f0bd2d7038a308d", null ],
     [ "_isPathTransitionActive", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3dcc345c6fd07ca8481d1c86c91416cb", null ],
     [ "_isPausedInternal", "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a755b926dd99cc50e3f224cf54b6bdb3a", null ],

@@ -3,6 +3,7 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities =
     [ "Algorithms", "d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html", "d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms" ],
     [ "Diagnostics", "df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics.html", "df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics" ],
     [ "Configuration", "d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html", "d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration" ],
+    [ "BrepCorruptedGeometryException", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_brep_corrupted_geometry_exception.html", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_brep_corrupted_geometry_exception" ],
     [ "PathPoint", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_point" ],
     [ "ColorPath", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_path" ],
     [ "ControlPointFilterConfig", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config" ],

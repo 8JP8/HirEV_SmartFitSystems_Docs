@@ -8,6 +8,8 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_
     [ "GetMinimumZ", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#afd9a6f5d000316adc892b2ca51aad10d", null ],
     [ "GetPairMinimumZ", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a446e21d1e0971a7bcf8c0fb2c916cd94", null ],
     [ "GetPairMinimumZ", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aa45933fede2742671c45f0dd60220089", null ],
+    [ "GetRequiredAngleToBasePlaneDeg", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#a1a78b073ae064063dae3dbc9ebe24787", null ],
+    [ "IsAngleSafeAtHeight", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aab018f76f6ff3599c664c4cad106351b", null ],
     [ "IsDownwardOrLevel", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#aaf9ead845a011a7e4ae4c7fae0b552c0", null ],
     [ "IsLocalClearanceUnsafe", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#acc587f31b74e293b9bbcdb41fa5832a9", null ],
     [ "IsPairUnsafe", "d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_clearance.html#ae92b7005d111bf7230bba1e0430a70a3", null ],

@@ -16,5 +16,6 @@ var searchData=
   ['point3dcomparer_2ecs_13',['Point3DComparer.cs',['../d8/d03/_point3_d_comparer_8cs.html',1,'']]],
   ['point4dconverter_2ecs_14',['Point4DConverter.cs',['../d7/d01/_point4_d_converter_8cs.html',1,'']]],
   ['pointvectorjsonconverter_2ecs_15',['PointVectorJsonConverter.cs',['../d2/d02/_point_vector_json_converter_8cs.html',1,'']]],
-  ['protectedconfigmanager_2ecs_16',['ProtectedConfigManager.cs',['../dc/d03/_protected_config_manager_8cs.html',1,'']]]
+  ['probeanglestandardizer_2ecs_16',['ProbeAngleStandardizer.cs',['../de/d02/_probe_angle_standardizer_8cs.html',1,'']]],
+  ['protectedconfigmanager_2ecs_17',['ProtectedConfigManager.cs',['../dc/d03/_protected_config_manager_8cs.html',1,'']]]
 ];
