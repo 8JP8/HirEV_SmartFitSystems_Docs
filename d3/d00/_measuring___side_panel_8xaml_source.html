@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -191,7 +191,7 @@ $(function(){initNavTree('d3/d00/_measuring___side_panel_8xaml_source.html','../
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        &lt;Label Content=&quot;{Binding ToolChanges_Count, FallbackValue=&#39;0&#39;, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True, UpdateSourceTrigger=PropertyChanged}&quot; HorizontalAlignment=&quot;Right&quot; Grid.ColumnSpan=&quot;2&quot; FontSize=&quot;11&quot;/&gt;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    &lt;/StackPanel&gt;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                &lt;/Grid&gt;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                &lt;Button Command=&quot;{Binding GenerateJobCommand}&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=GenerateJob/@Value, FallbackValue=&#39;Generate Job&#39;}&quot; Grid.Row=&quot;2&quot; Height=&quot;35&quot; Margin=&quot;10&quot; Cursor=&quot;Hand&quot; Visibility=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                &lt;Button Command=&quot;{Binding GenerateJobCommand}&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=GenerateProgram/@Value, FallbackValue=&#39;Generate DMIS Program&#39;}&quot; Grid.Row=&quot;2&quot; Height=&quot;25&quot; Margin=&quot;10&quot; Cursor=&quot;Hand&quot; Visibility=&quot;Visible&quot; ToolTip=&quot;{Binding Source={StaticResource Language}, XPath=GenerateProgram_ToolTip/@Value, FallbackValue=&#39;Generate ANSI/DMIS 5.3 inspection program from probe paths.&#39;}&quot;/&gt;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                &lt;Grid  Grid.Row=&quot;2&quot; Visibility=&quot;Collapsed&quot;&gt;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    &lt;Grid.ColumnDefinitions&gt;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        &lt;ColumnDefinition/&gt;</div>
@@ -493,16 +493,17 @@ $(function(){initNavTree('d3/d00/_measuring___side_panel_8xaml_source.html','../
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                        &lt;/TreeView&gt;</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                        </div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>                        &lt;UniformGrid Grid.Row=&quot;2&quot; Columns=&quot;2&quot; Margin=&quot;5&quot;&gt;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                            &lt;Button x:Name=&quot;PathViewer_ExportJsonButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToJson/@Value, FallbackValue=&#39;Export Paths (JSON)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsJsonCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                            &lt;Button x:Name=&quot;PathViewer_ExportXmlButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToXml/@Value, FallbackValue=&#39;Export Paths (XML)&#39;}&quot; Margin=&quot;5&quot; Padding=&quot;5&quot; Command=&quot;{Binding ExportPathsXmlCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                        &lt;/UniformGrid&gt;</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                    &lt;/Grid&gt;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                &lt;/Expander&gt;</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>            &lt;/Grid&gt;</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        &lt;/GroupBox&gt;</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    &lt;/Grid&gt;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>&lt;/UserControl&gt;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                            &lt;Button x:Name=&quot;PathViewer_ExportJsonButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToJson/@Value, FallbackValue=&#39;Export Paths (JSON)&#39;}&quot; Margin=&quot;3&quot; Padding=&quot;3&quot; Command=&quot;{Binding ExportPathsJsonCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                            &lt;Button x:Name=&quot;PathViewer_ExportXmlButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToXml/@Value, FallbackValue=&#39;Export Paths (XML)&#39;}&quot; Margin=&quot;3&quot; Padding=&quot;3&quot; Command=&quot;{Binding ExportPathsXmlCommand}&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                            &lt;Button x:Name=&quot;PathViewer_ExportDmisButton&quot; Content=&quot;{Binding Source={StaticResource Language}, XPath=ExportPathsToDmis/@Value, FallbackValue=&#39;Generate DMIS&#39;}&quot; Margin=&quot;3&quot; Padding=&quot;3&quot; Command=&quot;{Binding GenerateJobCommand}&quot; Cursor=&quot;Hand&quot; ToolTip=&quot;{Binding Source={StaticResource Language}, XPath=GenerateProgram_ToolTip/@Value, FallbackValue=&#39;Generate ANSI/DMIS 5.3 inspection program from probe paths.&#39;}&quot; Visibility=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                        &lt;/UniformGrid&gt;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                    &lt;/Grid&gt;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                &lt;/Expander&gt;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            &lt;/Grid&gt;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        &lt;/GroupBox&gt;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    &lt;/Grid&gt;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>&lt;/UserControl&gt;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

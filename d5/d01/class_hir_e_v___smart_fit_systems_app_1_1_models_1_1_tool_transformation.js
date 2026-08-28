@@ -1,11 +1,26 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation =
 [
+    [ "GetEffectiveWristAngles", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ae0c01f2580147229e8f7d27f243a4072", null ],
+    [ "AngleA", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a4cbb2fcdf4459ef6426c15914425f854", null ],
+    [ "CylinderDiameter", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ac4f8eaaf0a82376e67e40bb84c276aae", null ],
+    [ "CylinderHeight", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a20885cf2e06fd72b49b8c49863926c40", null ],
+    [ "HeadAlwaysVertical", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a1f4c41cf86b77c6ebd29708091cf6adb", null ],
+    [ "PivotAOffsetZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a3a2a23efadade06713bd76eaea5bb23b", null ],
+    [ "PivotBOffsetZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a2ec1dfca05776950f1ac27fb4ad5ef77", null ],
     [ "RotateX", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a8151f84cd6da351938737c88b6620a51", null ],
     [ "RotateY", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ad2af670a44fc7fd635586aa0fa98d751", null ],
     [ "RotateZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a4b9d8a27486c4737d4bf1b409a204ee6", null ],
+    [ "RubyBallRadius", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aa7245057694107b666616cf0c13374ae", null ],
     [ "ScaleFactor", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#afaa37b8253e9055d0c9b0b51f6ccb30b", null ],
+    [ "TipApproachX", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a1f0494c93cb7163c7a31540e1ff909e9", null ],
+    [ "TipApproachY", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#ab606be4d0d6575d2aea5fe9599fbcf89", null ],
+    [ "TipApproachZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a3b9e8563daa6c08cd652de1a1a779933", null ],
     [ "ToolName", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#adb2559c62cb4d06ce1e88babdde913e9", null ],
+    [ "TotalReachLength", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a3f7cb6c75e2fdd4ab36e9e226a172928", null ],
     [ "TranslateX", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aa7e7efbde54b12fc766812425a9df1ed", null ],
     [ "TranslateY", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#aeec0db21a3be727b3c3cde826abd0c61", null ],
-    [ "TranslateZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a05ee2811651db6e68c17910a30e3d5bc", null ]
+    [ "TranslateZ", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a05ee2811651db6e68c17910a30e3d5bc", null ],
+    [ "UseKinematicSimulation", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#af48e7684e923566794b7e2f8c794260f", null ],
+    [ "WristAngleA", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a226f2b06629cb51efa961ffc2be7f98d", null ],
+    [ "WristAngleB", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html#a9868d9164717f286911eba2bf2c4b796", null ]
 ];

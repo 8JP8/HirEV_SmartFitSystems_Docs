@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/CmmMontageConfigFile.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('da/d01/_cmm_montage_config_file_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CmmMontageConfigFile.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d01/_cmm_montage_config_file_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.IO;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Xml.Serialization;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    [XmlRoot(<span class="stringliteral">&quot;CmmMontageConfig&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">CmmMontageConfigFile</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aadb0df6d7e10ccd8cf9c67333ffcd04f">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aadb0df6d7e10ccd8cf9c67333ffcd04f">MontageName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a008f63db9559c0ee25104b1d5e9d7b43">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a008f63db9559c0ee25104b1d5e9d7b43">Description</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca5afe4608aca8eb17b1c5e8eee6dc6a">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca5afe4608aca8eb17b1c5e8eee6dc6a">HeadModelFile</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;Head.stp&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#add9cab57ae8ec27f20185a0abdaecd37">   26</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#add9cab57ae8ec27f20185a0abdaecd37">TipModelFile</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;Tip.stp&quot;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a514812649669d9463af171f87d5bfc33">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a514812649669d9463af171f87d5bfc33">StylusModelFile</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="stringliteral">&quot;Stylus.stl&quot;</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a307780e6f87711f63f3ff6ff7cc528f1">   37</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a307780e6f87711f63f3ff6ff7cc528f1">StylusLength</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 20.0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8b856b9597949fbfde59d275481e585d">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8b856b9597949fbfde59d275481e585d">StylusStemDiameter</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 1.2;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a384399cbf4a7814a27169d5e2672b61d">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a384399cbf4a7814a27169d5e2672b61d">AttachmentOffsetX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 0.0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aad03ed1361bca677ea4ae0bca8303245">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aad03ed1361bca677ea4ae0bca8303245">AttachmentOffsetY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 0.0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a6279973c259112e040dd18984d95882d">   50</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a6279973c259112e040dd18984d95882d">AttachmentOffsetZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = -45.0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a39f7e5411835758d4f3faff0a91da367">   55</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a39f7e5411835758d4f3faff0a91da367">PivotOffsetB</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = -5.0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a08cf1d4a1760911279167460d6b7b71f">   60</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a08cf1d4a1760911279167460d6b7b71f">PivotOffsetA</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = -25.0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a1d974922c49020a6677a91ee2e6b687a">   65</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a1d974922c49020a6677a91ee2e6b687a">TipContactOffsetX</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 0.0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca7111b46fec17dc003bf3c3592e05ec">   66</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca7111b46fec17dc003bf3c3592e05ec">TipContactOffsetY</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 0.0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a4bb40688c25bd7443e04b26ff86fa204">   67</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a4bb40688c25bd7443e04b26ff86fa204">TipContactOffsetZ</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = -59.2;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ac66c278fb6e7667f20f61a12effdc745">   72</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ac66c278fb6e7667f20f61a12effdc745">RubyBallRadius</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 1.0;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ab6427eeac71de8b292986faeab491a68">   77</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ab6427eeac71de8b292986faeab491a68">AxisAMin</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 0.0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a3bb7e6b89fc6a24dcae62012fa2946cf">   78</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a3bb7e6b89fc6a24dcae62012fa2946cf">AxisAMax</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 105.0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a0b738539c94443b0c6181e8ea5468828">   79</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a0b738539c94443b0c6181e8ea5468828">AxisAStep</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 7.5;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a9b21d07f9a89ea28c077433dfcdf346d">   84</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a9b21d07f9a89ea28c077433dfcdf346d">AxisBMin</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = -180.0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a41a38fd57b2f3f1963193fba04c84f73">   85</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a41a38fd57b2f3f1963193fba04c84f73">AxisBMax</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 180.0;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8bb17b38bd1026d92f966d79d46639ae">   86</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8bb17b38bd1026d92f966d79d46639ae">AxisBStep</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 7.5;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a933908b7ec17fb7c71982b8f4cf04ba6">   91</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a933908b7ec17fb7c71982b8f4cf04ba6">TargetDmisSensorLabel</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#adecfa41b03c4cc8ba2d8f7f61d6793df">   92</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#adecfa41b03c4cc8ba2d8f7f61d6793df">DefaultRackSlot</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = 1;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#af2c7793cec134cd2097f7a9180048189">   94</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">CmmMontageConfigFile</a> <a class="code hl_function" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#af2c7793cec134cd2097f7a9180048189">LoadFromFile</a>(<span class="keywordtype">string</span> xmlPath)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            var serializer = <span class="keyword">new</span> XmlSerializer(typeof(<a class="code hl_class" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">CmmMontageConfigFile</a>));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keyword">using </span>var stream = File.OpenRead(xmlPath);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">return</span> (<a class="code hl_class" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">CmmMontageConfigFile</a>)serializer.Deserialize(stream)!;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aa264d050dacb828ed96ce126a6f2a85a">  101</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aa264d050dacb828ed96ce126a6f2a85a">SaveToFile</a>(<span class="keywordtype">string</span> xmlPath)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            var serializer = <span class="keyword">new</span> XmlSerializer(typeof(<a class="code hl_class" href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">CmmMontageConfigFile</a>));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">using </span>var writer = <span class="keyword">new</span> StreamWriter(xmlPath, <span class="keyword">false</span>, System.Text.Encoding.UTF8);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            serializer.Serialize(writer, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile</a></div><div class="ttdoc">Configuration file representing an arbitrary CMM head + probe tip montage with customizable attachmen...</div><div class="ttdef"><b>Definição</b> <a href="#l00011">CmmMontageConfigFile.cs:12</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a008f63db9559c0ee25104b1d5e9d7b43"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a008f63db9559c0ee25104b1d5e9d7b43">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.Description</a></div><div class="ttdeci">string Description</div><div class="ttdef"><b>Definição</b> <a href="#l00014">CmmMontageConfigFile.cs:14</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a08cf1d4a1760911279167460d6b7b71f"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a08cf1d4a1760911279167460d6b7b71f">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.PivotOffsetA</a></div><div class="ttdeci">double PivotOffsetA</div><div class="ttdoc">Articulation pivot center for Axis A (Pitch / Tilt). Default: (0, 0, -25).</div><div class="ttdef"><b>Definição</b> <a href="#l00060">CmmMontageConfigFile.cs:60</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a0b738539c94443b0c6181e8ea5468828"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a0b738539c94443b0c6181e8ea5468828">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisAStep</a></div><div class="ttdeci">double AxisAStep</div><div class="ttdef"><b>Definição</b> <a href="#l00079">CmmMontageConfigFile.cs:79</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a1d974922c49020a6677a91ee2e6b687a"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a1d974922c49020a6677a91ee2e6b687a">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.TipContactOffsetX</a></div><div class="ttdeci">double TipContactOffsetX</div><div class="ttdoc">Center of the ruby ball contact point relative to the probe tip base (mm).</div><div class="ttdef"><b>Definição</b> <a href="#l00065">CmmMontageConfigFile.cs:65</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a307780e6f87711f63f3ff6ff7cc528f1"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a307780e6f87711f63f3ff6ff7cc528f1">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.StylusLength</a></div><div class="ttdeci">double StylusLength</div><div class="ttdoc">Overall length of the ruby stylus from probe module mounting thread to ball center (mm)....</div><div class="ttdef"><b>Definição</b> <a href="#l00037">CmmMontageConfigFile.cs:37</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a384399cbf4a7814a27169d5e2672b61d"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a384399cbf4a7814a27169d5e2672b61d">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AttachmentOffsetX</a></div><div class="ttdeci">double AttachmentOffsetX</div><div class="ttdoc">Attachment point coordinates on the head model where the probe tip mounts (mm). Default for Renishaw ...</div><div class="ttdef"><b>Definição</b> <a href="#l00048">CmmMontageConfigFile.cs:48</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a39f7e5411835758d4f3faff0a91da367"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a39f7e5411835758d4f3faff0a91da367">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.PivotOffsetB</a></div><div class="ttdeci">double PivotOffsetB</div><div class="ttdoc">Articulation pivot center for Axis B (Azimuth / Yaw around Z). Default: (0, 0, -5).</div><div class="ttdef"><b>Definição</b> <a href="#l00055">CmmMontageConfigFile.cs:55</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a3bb7e6b89fc6a24dcae62012fa2946cf"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a3bb7e6b89fc6a24dcae62012fa2946cf">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisAMax</a></div><div class="ttdeci">double AxisAMax</div><div class="ttdef"><b>Definição</b> <a href="#l00078">CmmMontageConfigFile.cs:78</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a41a38fd57b2f3f1963193fba04c84f73"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a41a38fd57b2f3f1963193fba04c84f73">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisBMax</a></div><div class="ttdeci">double AxisBMax</div><div class="ttdef"><b>Definição</b> <a href="#l00085">CmmMontageConfigFile.cs:85</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a4bb40688c25bd7443e04b26ff86fa204"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a4bb40688c25bd7443e04b26ff86fa204">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.TipContactOffsetZ</a></div><div class="ttdeci">double TipContactOffsetZ</div><div class="ttdef"><b>Definição</b> <a href="#l00067">CmmMontageConfigFile.cs:67</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a514812649669d9463af171f87d5bfc33"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a514812649669d9463af171f87d5bfc33">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.StylusModelFile</a></div><div class="ttdeci">string StylusModelFile</div><div class="ttdoc">Optional separate 3D model for the precision ruby stylus (e.g. &quot;Stylus.stl&quot; or &quot;Stylus....</div><div class="ttdef"><b>Definição</b> <a href="#l00032">CmmMontageConfigFile.cs:32</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a6279973c259112e040dd18984d95882d"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a6279973c259112e040dd18984d95882d">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AttachmentOffsetZ</a></div><div class="ttdeci">double AttachmentOffsetZ</div><div class="ttdef"><b>Definição</b> <a href="#l00050">CmmMontageConfigFile.cs:50</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a8b856b9597949fbfde59d275481e585d"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8b856b9597949fbfde59d275481e585d">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.StylusStemDiameter</a></div><div class="ttdeci">double StylusStemDiameter</div><div class="ttdoc">Diameter of the stylus stem (e.g. 1.2mm for M2 tungsten carbide).</div><div class="ttdef"><b>Definição</b> <a href="#l00042">CmmMontageConfigFile.cs:42</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a8bb17b38bd1026d92f966d79d46639ae"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a8bb17b38bd1026d92f966d79d46639ae">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisBStep</a></div><div class="ttdeci">double AxisBStep</div><div class="ttdef"><b>Definição</b> <a href="#l00086">CmmMontageConfigFile.cs:86</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a933908b7ec17fb7c71982b8f4cf04ba6"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a933908b7ec17fb7c71982b8f4cf04ba6">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.TargetDmisSensorLabel</a></div><div class="ttdeci">string TargetDmisSensorLabel</div><div class="ttdoc">Label for standard DMIS post-processing.</div><div class="ttdef"><b>Definição</b> <a href="#l00091">CmmMontageConfigFile.cs:91</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_a9b21d07f9a89ea28c077433dfcdf346d"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#a9b21d07f9a89ea28c077433dfcdf346d">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisBMin</a></div><div class="ttdeci">double AxisBMin</div><div class="ttdoc">Discrete angular limits and resolution for Axis B (Azimuth).</div><div class="ttdef"><b>Definição</b> <a href="#l00084">CmmMontageConfigFile.cs:84</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_aa264d050dacb828ed96ce126a6f2a85a"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aa264d050dacb828ed96ce126a6f2a85a">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.SaveToFile</a></div><div class="ttdeci">void SaveToFile(string xmlPath)</div><div class="ttdef"><b>Definição</b> <a href="#l00101">CmmMontageConfigFile.cs:101</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_aad03ed1361bca677ea4ae0bca8303245"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aad03ed1361bca677ea4ae0bca8303245">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AttachmentOffsetY</a></div><div class="ttdeci">double AttachmentOffsetY</div><div class="ttdef"><b>Definição</b> <a href="#l00049">CmmMontageConfigFile.cs:49</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_aadb0df6d7e10ccd8cf9c67333ffcd04f"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aadb0df6d7e10ccd8cf9c67333ffcd04f">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.MontageName</a></div><div class="ttdeci">string MontageName</div><div class="ttdef"><b>Definição</b> <a href="#l00013">CmmMontageConfigFile.cs:13</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_ab6427eeac71de8b292986faeab491a68"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ab6427eeac71de8b292986faeab491a68">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.AxisAMin</a></div><div class="ttdeci">double AxisAMin</div><div class="ttdoc">Discrete angular limits and resolution for Axis A (Tilt).</div><div class="ttdef"><b>Definição</b> <a href="#l00077">CmmMontageConfigFile.cs:77</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_ac66c278fb6e7667f20f61a12effdc745"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#ac66c278fb6e7667f20f61a12effdc745">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.RubyBallRadius</a></div><div class="ttdeci">double RubyBallRadius</div><div class="ttdoc">Radius of the ruby ball sphere for touch compensation (mm).</div><div class="ttdef"><b>Definição</b> <a href="#l00072">CmmMontageConfigFile.cs:72</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_aca5afe4608aca8eb17b1c5e8eee6dc6a"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca5afe4608aca8eb17b1c5e8eee6dc6a">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.HeadModelFile</a></div><div class="ttdeci">string HeadModelFile</div><div class="ttdoc">Relative or absolute path to the 3D model of the machine head (e.g. &quot;Head.stp&quot;). Stays upright on the...</div><div class="ttdef"><b>Definição</b> <a href="#l00020">CmmMontageConfigFile.cs:20</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_aca7111b46fec17dc003bf3c3592e05ec"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aca7111b46fec17dc003bf3c3592e05ec">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.TipContactOffsetY</a></div><div class="ttdeci">double TipContactOffsetY</div><div class="ttdef"><b>Definição</b> <a href="#l00066">CmmMontageConfigFile.cs:66</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_add9cab57ae8ec27f20185a0abdaecd37"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#add9cab57ae8ec27f20185a0abdaecd37">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.TipModelFile</a></div><div class="ttdeci">string TipModelFile</div><div class="ttdoc">Relative or absolute path to the 3D model of the probe tip/holder (e.g. &quot;Tip.stp&quot;)....</div><div class="ttdef"><b>Definição</b> <a href="#l00026">CmmMontageConfigFile.cs:26</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_adecfa41b03c4cc8ba2d8f7f61d6793df"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#adecfa41b03c4cc8ba2d8f7f61d6793df">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.DefaultRackSlot</a></div><div class="ttdeci">int DefaultRackSlot</div><div class="ttdef"><b>Definição</b> <a href="#l00092">CmmMontageConfigFile.cs:92</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file_html_af2c7793cec134cd2097f7a9180048189"><div class="ttname"><a href="../../dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#af2c7793cec134cd2097f7a9180048189">HirEV_SmartFitSystemsApp.Models.CmmMontageConfigFile.LoadFromFile</a></div><div class="ttdeci">static CmmMontageConfigFile LoadFromFile(string xmlPath)</div><div class="ttdef"><b>Definição</b> <a href="#l00094">CmmMontageConfigFile.cs:94</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

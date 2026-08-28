@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -96,9 +96,111 @@ $(function(){initNavTree('d9/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_m
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Componentes</h2></td></tr>
+<tr class="memitem:DMISPostProcessorSettings" id="r_DMISPostProcessorSettings"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor_settings.html">DMISPostProcessorSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration.html">Configuration</a> options for the DMIS 5.3 post-processor.  <a href="../../df/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor_settings.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmToolMapping" id="r_CmmToolMapping"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_mapping.html">CmmToolMapping</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the correspondence between an application tool and a target CMM sensor/probe.  <a href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_mapping.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:DMISPostProcessor" id="r_DMISPostProcessor"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html">DMISPostProcessor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMIS 5.3 compliant post-processor for coordinate measuring machines (CMM). Converts CAD inspection paths and intermediate representations into ANSI/DMIS 5.3 programs.  <a href="../../da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:PartInspectL" id="r_PartInspectL"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html">PartInspectL</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the <a class="el" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html" title="Represents the PartInspectL post-processor implementation.">PartInspectL</a> post-processor implementation.  <a href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html#details">Mais...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy <a class="el" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html" title="Legacy PartInspectL post-processor wrapper delegating to the DMIS 5.3 post-processor.">PartInspectL</a> post-processor wrapper delegating to the DMIS 5.3 post-processor.  <a href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_part_inspect_l.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmProgram" id="r_CmmProgram"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_program.html">CmmProgram</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root container for a complete CMM intermediate inspection program. Acts as an agnostic intermediate representation between CAD path planning and specific machine post-processors.  <a href="../../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_program.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmPartBounds" id="r_CmmPartBounds"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html">CmmPartBounds</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding box and top centerpoint representation for a part in single-part or multipart inspection.  <a href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmMachineDefinition" id="r_CmmMachineDefinition"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html">CmmMachineDefinition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines CMM physical and kinematic characteristics.  <a href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmWristDefinition" id="r_CmmWristDefinition"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_wrist_definition.html">CmmWristDefinition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an indexable/motorized probe head (wrist) such as the Renishaw PH10M.  <a href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_wrist_definition.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmToolDefinition" id="r_CmmToolDefinition"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html">CmmToolDefinition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a measuring tool assembly (probe head + extensions + stylus tip).  <a href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmSequence" id="r_CmmSequence"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html">CmmSequence</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an ordered sequence of measurement commands (e.g. for a specific face or color group).  <a href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmCommand" id="r_CmmCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_command.html">CmmCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base command for all intermediate CMM instructions.  <a href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmCommentCommand" id="r_CmmCommentCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_comment_command.html">CmmCommentCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic, traceability, or metadata comment command.  <a href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_comment_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmParameterSetCommand" id="r_CmmParameterSetCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_parameter_set_command.html">CmmParameterSetCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Machine parameter configuration command (speeds, clearance offsets, probe comp).  <a href="../../d1/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_parameter_set_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmToolChangeCommand" id="r_CmmToolChangeCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_change_command.html">CmmToolChangeCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool selection and mounting command.  <a href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_change_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmSensorOrientationCommand" id="r_CmmSensorOrientationCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sensor_orientation_command.html">CmmSensorOrientationCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-orientation command for indexable motorized head (A &amp; B angles).  <a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sensor_orientation_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmMotionCommand" id="r_CmmMotionCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d8/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_motion_command.html">CmmMotionCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-contact positioning or clearance move.  <a href="../../d8/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_motion_command.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmTouchPointCommand" id="r_CmmTouchPointCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_touch_point_command.html">CmmTouchPointCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tactile touch measurement point on a workpiece surface.  <a href="../../de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_touch_point_command.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ae534c3ec37dc9ae06eaf220a6b85af1c" id="r_ae534c3ec37dc9ae06eaf220a6b85af1c"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ae534c3ec37dc9ae06eaf220a6b85af1c">DmisWristAnglesMode</a> { <a class="el" href="#ae534c3ec37dc9ae06eaf220a6b85af1ca9087d93638ccb6e66637456930a71047">WristAngles</a>
+, <a class="el" href="#ae534c3ec37dc9ae06eaf220a6b85af1ca8abf5a23a37730bb62dacf10fd01c3e7">HeadCs</a>
+, <a class="el" href="#ae534c3ec37dc9ae06eaf220a6b85af1ca130c5b3473c57faa76e2a1c54e26f88e">Both</a>
+ }</td></tr>
+<tr class="memdesc:ae534c3ec37dc9ae06eaf220a6b85af1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the DMIS syntax style for motorized wrist head orientation statements.  <a href="#ae534c3ec37dc9ae06eaf220a6b85af1c">Mais...</a><br /></td></tr>
+<tr class="memitem:ab2b1d0f42b0fefc1cd6baac7c7edcdcf" id="r_ab2b1d0f42b0fefc1cd6baac7c7edcdcf"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcf">CmmMotionType</a> { <br />
+&#160;&#160;<a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcfab571ef5b2664270d25bea4f4b61ffe68">Rapid</a>
+, <a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcfa975e8b324cf1e05ee9c7490b51c230e0">Traverse</a>
+, <a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcfa40a68b5da4b9b224764558bb02ecd028">Approach</a>
+, <a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcfa0dfc45bc99de47ebc26a3a7752eb1e19">Retract</a>
+, <br />
+&#160;&#160;<a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcfafaaad9343dac03b28bb32e4b4156a604">Clearance</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ab2b1d0f42b0fefc1cd6baac7c7edcdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the motion movement category for CMM navigation.  <a href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcf">Mais...</a><br /></td></tr>
 </table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcf" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcf">&#9670;&#160;</a></span>CmmMotionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ab2b1d0f42b0fefc1cd6baac7c7edcdcf">HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmMotionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the motion movement category for CMM navigation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcfab571ef5b2664270d25bea4f4b61ffe68" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcfab571ef5b2664270d25bea4f4b61ffe68"></a>Rapid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa975e8b324cf1e05ee9c7490b51c230e0" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa975e8b324cf1e05ee9c7490b51c230e0"></a>Traverse&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa40a68b5da4b9b224764558bb02ecd028" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa40a68b5da4b9b224764558bb02ecd028"></a>Approach&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa0dfc45bc99de47ebc26a3a7752eb1e19" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcfa0dfc45bc99de47ebc26a3a7752eb1e19"></a>Retract&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab2b1d0f42b0fefc1cd6baac7c7edcdcfafaaad9343dac03b28bb32e4b4156a604" name="ab2b1d0f42b0fefc1cd6baac7c7edcdcfafaaad9343dac03b28bb32e4b4156a604"></a>Clearance&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00009">9</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae534c3ec37dc9ae06eaf220a6b85af1c" name="ae534c3ec37dc9ae06eaf220a6b85af1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae534c3ec37dc9ae06eaf220a6b85af1c">&#9670;&#160;</a></span>DmisWristAnglesMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae534c3ec37dc9ae06eaf220a6b85af1c">HirEV_SmartFitSystemsApp.Modules.PostProcessors.DmisWristAnglesMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the DMIS syntax style for motorized wrist head orientation statements. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="ae534c3ec37dc9ae06eaf220a6b85af1ca9087d93638ccb6e66637456930a71047" name="ae534c3ec37dc9ae06eaf220a6b85af1ca9087d93638ccb6e66637456930a71047"></a>WristAngles&#160;</td><td class="fielddoc"><p>Standard wrist angle minor words: SW(PH10),'RotAngle',B,'TiltAngle',A Conforms to ANSI/DMIS 5.3 Clause 6.182 and Annex A.29. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae534c3ec37dc9ae06eaf220a6b85af1ca8abf5a23a37730bb62dacf10fd01c3e7" name="ae534c3ec37dc9ae06eaf220a6b85af1ca8abf5a23a37730bb62dacf10fd01c3e7"></a>HeadCs&#160;</td><td class="fielddoc"><p>Head coordinate system minor words: HEADCS,A,B Conforms to ANSI/DMIS 5.3 Clause 6.182 and Clause 6.147. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae534c3ec37dc9ae06eaf220a6b85af1ca130c5b3473c57faa76e2a1c54e26f88e" name="ae534c3ec37dc9ae06eaf220a6b85af1ca130c5b3473c57faa76e2a1c54e26f88e"></a>Both&#160;</td><td class="fielddoc"><p>Emits wrist angles in SNSLCT and HEADCS in PTMEAS. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definido na linha <a class="el" href="../../de/d02/_d_m_i_s_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../de/d02/_d_m_i_s_8cs_source.html">DMIS.cs</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

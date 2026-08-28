@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -93,13 +93,13 @@ $(function(){initNavTree('db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_
   <div class="headertitle"><div class="title">App.config Configuration Guide </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md2"></a></p>
 <p>This guide documents the <span class="tt">App.config</span> <span class="tt">appSettings</span> used by the Hi-rEV SmartFitSystems WPF application. The project copies <span class="tt">App.config</span> to the output directory, and the application reads it through <span class="tt">System.Configuration.ConfigurationManager.AppSettings</span>.</p>
 <p>Most numeric geometry and motion values are in millimeters unless the setting name or description says otherwise. Boolean values should be <span class="tt">True</span> or <span class="tt">False</span>; the code is generally case-insensitive, but keeping the existing capitalization makes changes easier to review. Decimal values should use <span class="tt">.</span> as the separator because many readers parse with invariant culture.</p>
 <blockquote class="doxtable">
 <p><b>Note:</b> Settings with their unit tagged with Units depend on the Units configuration key. If the Units key is changed (e.g., to inch), these values are interpreted in the configured unit rather than absolute millimeters. </p>
 </blockquote>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 How Configuration Is Applied</h1>
 <ul>
 <li><span class="tt">App.config</span> is the source configuration in the project root. At build time it is copied to the executable output because the project marks it with <span class="tt">CopyToOutputDirectory=PreserveNewest</span>.</li>
@@ -107,7 +107,7 @@ How Configuration Is Applied</h1>
 <li><span class="tt">Scanner_Type</span> links this file to <span class="tt">ScannerConfigurations.xml</span>. When the selected scanner name exists in <span class="tt">ScannerConfigurations.xml</span>, scanner preset geometry such as FOV and standoff is loaded from that XML file. The <span class="tt">Scanner_FOV_X</span>, <span class="tt">Scanner_FOV_Y</span>, <span class="tt">Scanner_Standoff</span>, <span class="tt">Scanner_MinStandoff</span>, <span class="tt">Scanner_MaxStandoff</span>, and <span class="tt">Scanner_AspectRatio</span> values in <span class="tt">App.config</span> act as fallbacks when the named scanner preset cannot be loaded.</li>
 <li><span class="tt">CMM_Type</span> has a fallback role. The main measuring mode normally comes from protected user configuration (<span class="tt">CMM_MeasuringType</span>), and <span class="tt">CMM_Type</span> is used when that protected value is missing or invalid.</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 Runtime-Written Settings</h1>
 <p>The application can update these settings in the executable config at runtime.</p>
 <table class="markdownTable">
@@ -130,7 +130,7 @@ Runtime-Written Settings</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">Eyeshot_ShowNormals</span>  </td><td class="markdownTableBodyNone">Main view model command  </td><td class="markdownTableBodyNone">Toggles whether Eyeshot displays face normals.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 General App Settings</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -158,7 +158,7 @@ General App Settings</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">CMM_BoundingBox_Size_Z</span>  </td><td class="markdownTableBodyNone"><span class="tt">1000.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Z dimension size in mm for the CMM machine volume bounding box height.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 Scanner Selection And Geometry</h1>
 <p>These settings define the scanner model, basic field of view, standoff range, and base scan-line generation. For a valid <span class="tt">Scanner_Type</span>, values from <span class="tt">ScannerConfigurations.xml</span> are authoritative for scanner geometry.</p>
 <table class="markdownTable">
@@ -197,7 +197,7 @@ Scanner Selection And Geometry</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">Coordinates_RelativeToPart</span>  </td><td class="markdownTableBodyNone"><span class="tt">True</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Exports or generates coordinates relative to the part origin instead of the Eyeshot scene origin. Use <span class="tt">True</span> for part-local programming; use <span class="tt">False</span> when absolute scene coordinates are required.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 Scanner Coverage And Candidate Generation</h1>
 <p>These settings drive spherical scanner path generation, candidate pose density, bottom-face handling, and dedicated hole scanning.</p>
 <table class="markdownTable">
@@ -254,7 +254,7 @@ Scanner Coverage And Candidate Generation</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">Scanner_OrientationOptimizationSamples</span>  </td><td class="markdownTableBodyNone"><span class="tt">120</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of samples considered during scanner orientation optimization. Higher values can find better orientations but take longer.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 Scanner Verification</h1>
 <p>Scanner verification estimates visible coverage and animates or queues verification snapshots. These values mainly trade accuracy, responsiveness, and render cost.</p>
 <table class="markdownTable">
@@ -303,7 +303,7 @@ Scanner Verification</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">Scanner_VerificationTickInterval</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Milliseconds  </td><td class="markdownTableBodyNone">Timer interval for verification processing ticks. Lower values process more frequently; higher values reduce UI pressure.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
 Scanner Raycasting Optimization</h1>
 <p>These values control scanner coverage sampling, visibility shortcuts, and collision margins. They have strong performance impact on complex meshes.</p>
 <table class="markdownTable">
@@ -340,7 +340,7 @@ Scanner Raycasting Optimization</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">Scanner_HoleSpatialMatchPartRadiusFactor</span>  </td><td class="markdownTableBodyNone"><span class="tt">0.05</span>  </td><td class="markdownTableBodyNone">Part-radius multiplier  </td><td class="markdownTableBodyNone">Adds tolerance proportional to part radius during multipart hole mapping. Useful for large parts where fixed tolerances are too tight.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 Export Defaults</h1>
 <p>These settings initialize export option state in the settings side panel and can be saved back by the UI.</p>
 <table class="markdownTable">
@@ -355,7 +355,7 @@ Export Defaults</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">ExportOnlyMeasurementPointsDefault</span>  </td><td class="markdownTableBodyNone"><span class="tt">False</span>  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">Default export option to include only measurement points. Enable only for measurement-point-only output workflows.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 Visual And Section View Settings</h1>
 <p>These settings control Eyeshot display details, ignored-face rendering, and section view defaults.</p>
 <table class="markdownTable">
@@ -406,7 +406,7 @@ Visual And Section View Settings</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">SectionView_DimTextHeightMultiplier</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Multiplier  </td><td class="markdownTableBodyNone">Scales section-view dimension text height. Increase for readability on high-resolution displays; decrease when text overlaps geometry.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 Probe Path Planning And Point Filtering</h1>
 <p>These settings influence contact-probe measurement point density, boundary validation, generated grids, and path approach behavior.</p>
 <table class="markdownTable">
@@ -473,7 +473,7 @@ Probe Path Planning And Point Filtering</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">PathPlanning_ProbeAngleReuseThresholdDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">15.0</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Maximum angular deviation threshold for reusing the currently active calibrated head pose $(A, B)$ on adjacent points, minimizing total probe head indexing rotations and machine calibration requirements.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Mesh Creation And Collision Avoidance</h1>
 <p>These settings control shell mesh creation and higher-cost collision validation during path planning.</p>
 <table class="markdownTable">
@@ -500,7 +500,7 @@ Mesh Creation And Collision Avoidance</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">PathPlanning_MaxAlternativePathAttempts</span>  </td><td class="markdownTableBodyNone"><span class="tt">3</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of alternative collision-free segment attempts before giving up. Increase for complex parts where direct segments frequently collide.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Hole Detection And Hole Safety</h1>
 <p>Hole detection settings tune how cylindrical/conical faces are grouped, classified, and associated with bridge faces or joined-hole patterns.</p>
 <table class="markdownTable">
@@ -561,7 +561,7 @@ Hole Detection And Hole Safety</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinConcaveSideWallSeparationDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">30</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum angular separation required between concave side wall faces. Prevents false positives from closely packed wall segments.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 SmartFit Shell Pathing</h1>
 <p>These settings drive shell-based interpolation and spline/geodesic path generation over offset shell surfaces.</p>
 <table class="markdownTable">
@@ -590,7 +590,7 @@ SmartFit Shell Pathing</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">ShellPath_HoleAxisProjectionMargin</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Margin used when projecting path points around hole axes. Increase if shell routes pass too close to hole edges.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 SDF Shell Mesh And Shell Offset</h1>
 <p>These values affect generated shell mesh smoothing and stitching.</p>
 <table class="markdownTable">
@@ -607,7 +607,7 @@ SDF Shell Mesh And Shell Offset</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">ShellOffset_FilletRadius</span>  </td><td class="markdownTableBodyNone"><span class="tt">5.0</span>  </td><td class="markdownTableBodyNone">Millimeters Units  </td><td class="markdownTableBodyNone">Fillet radius used when <span class="tt">OffsetShell_StitchingMode</span> is <span class="tt">Fillet</span>. Larger radii produce broader blends and are more likely to fail on complex geometry.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Path Generation Logging And Ordering</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -623,7 +623,7 @@ Path Generation Logging And Ordering</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">ProbePathPlanningMode</span>  </td><td class="markdownTableBodyNone"><span class="tt">ByColor</span>  </td><td class="markdownTableBodyNone"><span class="tt">ByColor</span> or <span class="tt">ByPart</span>  </td><td class="markdownTableBodyNone">Controls runtime simulation/program sequencing for probe paths. <span class="tt">ByColor</span> groups by selected color/tool logic; <span class="tt">ByPart</span> sequences by part.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Jump Path Planning</h1>
 <p>Jump settings govern movement between measurement regions and optional collision validation for jump moves.</p>
 <table class="markdownTable">
@@ -646,7 +646,7 @@ Jump Path Planning</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">DescentSteps</span>  </td><td class="markdownTableBodyNone"><span class="tt">5</span>  </td><td class="markdownTableBodyNone">Count  </td><td class="markdownTableBodyNone">Number of discrete ascent/descent points used when moving toward or away from a measurement. More steps are smoother and longer.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Path Visualization Performance</h1>
 <p>These settings keep the viewer responsive when paths contain many points.</p>
 <table class="markdownTable">
@@ -661,7 +661,7 @@ Path Visualization Performance</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">PathVisualization_MaxInteractiveWaypointMarkersPerPath</span>  </td><td class="markdownTableBodyNone"><span class="tt">1500</span>  </td><td class="markdownTableBodyNone">Count per path  </td><td class="markdownTableBodyNone">Above this, waypoint marker meshes are sampled while full path data remains intact. Lower values improve rendering speed.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 Simulation And Camera</h1>
 <p>These values control probe/scanner simulation geometry, camera following behavior, collision visualization, and animation speed.</p>
 <table class="markdownTable">
@@ -736,7 +736,7 @@ Simulation And Camera</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">Simulation_RotationSmoothing</span>  </td><td class="markdownTableBodyNone"><span class="tt">1.0</span>  </td><td class="markdownTableBodyNone">Factor  </td><td class="markdownTableBodyNone">Rotation smoothing factor. <span class="tt">1.0</span> snaps instantly to target orientation; lower values such as <span class="tt">0.3</span> rotate more gradually.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Optional Code-Supported Settings Not Currently In App.config</h1>
 <p>The code reads the following keys with fallback defaults, but they are not present in the current <span class="tt">App.config</span>. Add them only when you need to override the fallback behavior.</p>
 <table class="markdownTable">
@@ -753,7 +753,7 @@ Optional Code-Supported Settings Not Currently In App.config</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">HoleDetection_MinCircularCoverageDegrees</span>  </td><td class="markdownTableBodyNone"><span class="tt">240.0</span>  </td><td class="markdownTableBodyNone">Degrees  </td><td class="markdownTableBodyNone">Minimum circular coverage for general cylindrical hole recognition. Higher values require more complete cylinder arcs before detection.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Tuning Profiles</h1>
 <p>Use these as starting points rather than fixed recipes.</p>
 <table class="markdownTable">

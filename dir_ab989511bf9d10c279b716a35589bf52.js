@@ -1,6 +1,7 @@
 var dir_ab989511bf9d10c279b716a35589bf52 =
 [
     [ "Algorithms", "dir_9e02225484435e697725a5e6202a9d69.html", "dir_9e02225484435e697725a5e6202a9d69" ],
+    [ "CmmKinematicAssembly.cs", "db/d00/_cmm_kinematic_assembly_8cs.html", "db/d00/_cmm_kinematic_assembly_8cs" ],
     [ "ColorJsonConverter.cs", "d8/d03/_color_json_converter_8cs.html", "d8/d03/_color_json_converter_8cs" ],
     [ "ColorNamer.cs", "d8/d02/_color_namer_8cs.html", "d8/d02/_color_namer_8cs" ],
     [ "ColorToolMappingUtils.cs", "d4/d03/_color_tool_mapping_utils_8cs.html", "d4/d03/_color_tool_mapping_utils_8cs" ],

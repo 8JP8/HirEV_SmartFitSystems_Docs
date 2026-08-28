@@ -1,0 +1,20 @@
+<map id="HirEV_SmartFitSystemsApp.Modules.PostProcessors.DMISPostProcessor.PostProcess" name="HirEV_SmartFitSystemsApp.Modules.PostProcessors.DMISPostProcessor.PostProcess">
+<area shape="rect" id="Node000001" title="Direct end&#45;to&#45;end conversion from PathExportDTO to DMIS 5.3 text." alt="" coords="5,51,238,109"/>
+<area shape="rect" id="Node000002" href="$da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html#a9e48fb64cb782d9f222ad36b47bd2128" title="Converts a PathExportDTO into a neutral CMM intermediate representation (CmmProgram)." alt="" coords="302,9,540,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,61,289,56,284,58,239,66"/>
+<area shape="rect" id="Node000006" href="$da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html#af449256abf495a376f3960ef2ad1f6c5" title="Converts a CmmProgram intermediate representation into standard ANSI/DMIS 5.3 language text." alt="" coords="286,92,556,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="238,93,273,100,267,101,238,99"/>
+<area shape="rect" id="Node000003" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#a85db193ee133556275d7759acd74eb77" title="Resolves any tool name (montage ID, folder name, or legacy alias) into a complete paired CmmToolMonta..." alt="" coords="608,9,832,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="539,36,595,38,590,39,540,41"/>
+<area shape="rect" id="Node000004" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#ae98043774eb85da77af2a05dda4425e9" title="Associates a standalone ruby stylus with the standard Renishaw CMM montage that best adapts to it." alt="" coords="888,88,1113,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="827,66,882,83,877,83,827,71"/>
+<area shape="rect" id="Node000005" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#a5a4cbf1f6747678ff8538d5166a8f5c8" title="Determines if the tool name corresponds to a standalone ruby stylus." alt="" coords="888,5,1113,64"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="833,34,875,36,870,37,833,40"/>
+<area shape="rect" id="Node000007" href="$da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html#aefafc1c540daa9c667c280bfc93deac1" title="Sanitizes label names to conform with DMIS alphanumeric label rules." alt="" coords="884,171,1117,229"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="544,149,604,160,740,178,871,192,866,192,740,183,604,165,544,154"/>
+<area shape="rect" id="Node000008" href="$da/d03/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_d_m_i_s_post_processor.html#a7aa3df243cd661e30d4e1cd61cd81234" title="Resolves an application tool name to the target CMM tool label using configured tool mappings if avai..." alt="" coords="604,92,836,151"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="556,119,591,121,586,122,557,124"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="837,117,875,119,870,119,837,122"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="817,89,886,70,891,69,818,94"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="828,149,882,166,877,166,827,154"/>
+</map>

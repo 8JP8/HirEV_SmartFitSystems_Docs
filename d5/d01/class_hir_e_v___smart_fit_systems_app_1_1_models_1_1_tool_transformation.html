@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -94,41 +94,247 @@ $(function(){initNavTree('d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_model
 </div><!--header-->
 <div class="contents">
 
-<p>Represents transformation data for positioning tool 3D models correctly.  
+<p>Represents transformation and kinematic chain data for a CMM probe tool.  
  <a href="#details">Mais...</a></p>
 <div class="dynheader">
 Diagrama de colaboração para HirEV_SmartFitSystemsApp.Models.ToolTransformation:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_models_8_tool_transformation_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_models_8_tool_transformation_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_models_8_tool_transformation_coll__map">
-<area shape="rect" title="Represents transformation data for positioning tool 3D models correctly." alt="" coords="5,5,187,240"/>
+<area shape="rect" title="Represents transformation and kinematic chain data for a CMM probe tool." alt="" coords="5,5,187,325"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:ae0c01f2580147229e8f7d27f243a4072" id="r_ae0c01f2580147229e8f7d27f243a4072"><td class="memItemLeft">double double AngleB&#160;</td><td class="memItemRight"><a class="el" href="#ae0c01f2580147229e8f7d27f243a4072">GetEffectiveWristAngles</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a4cbb2fcdf4459ef6426c15914425f854" id="r_a4cbb2fcdf4459ef6426c15914425f854"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a4cbb2fcdf4459ef6426c15914425f854">AngleA</a></td></tr>
+<tr class="memdesc:a4cbb2fcdf4459ef6426c15914425f854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the effective wrist angles (AngleA_deg, AngleB_deg) for the kinematic pose. If <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a> is non-zero the explicit angles are used; otherwise they are derived from the normalised TipApproachX/Y/Z vector.  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Propriedades</h2></td></tr>
 <tr class="memitem:adb2559c62cb4d06ce1e88babdde913e9" id="r_adb2559c62cb4d06ce1e88babdde913e9"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#adb2559c62cb4d06ce1e88babdde913e9">ToolName</a> = string.Empty<code> [get, set]</code></td></tr>
-<tr class="memdesc:adb2559c62cb4d06ce1e88babdde913e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the tool.  <br /></td></tr>
+<tr class="memdesc:adb2559c62cb4d06ce1e88babdde913e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool or montage name (e.g. "PH10M_TP20").  <br /></td></tr>
 <tr class="memitem:aa7e7efbde54b12fc766812425a9df1ed" id="r_aa7e7efbde54b12fc766812425a9df1ed"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa7e7efbde54b12fc766812425a9df1ed">TranslateX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa7e7efbde54b12fc766812425a9df1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the translation along the X axis.  <br /></td></tr>
+<tr class="memdesc:aa7e7efbde54b12fc766812425a9df1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional translation along X applied after kinematic pose (mm).  <br /></td></tr>
 <tr class="memitem:aeec0db21a3be727b3c3cde826abd0c61" id="r_aeec0db21a3be727b3c3cde826abd0c61"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aeec0db21a3be727b3c3cde826abd0c61">TranslateY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aeec0db21a3be727b3c3cde826abd0c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the translation along the Y axis.  <br /></td></tr>
+<tr class="memdesc:aeec0db21a3be727b3c3cde826abd0c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional translation along Y applied after kinematic pose (mm).  <br /></td></tr>
 <tr class="memitem:a05ee2811651db6e68c17910a30e3d5bc" id="r_a05ee2811651db6e68c17910a30e3d5bc"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a05ee2811651db6e68c17910a30e3d5bc">TranslateZ</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a05ee2811651db6e68c17910a30e3d5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the translation along the Z axis.  <br /></td></tr>
+<tr class="memdesc:a05ee2811651db6e68c17910a30e3d5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional translation along Z applied after kinematic pose (mm).  <br /></td></tr>
 <tr class="memitem:a8151f84cd6da351938737c88b6620a51" id="r_a8151f84cd6da351938737c88b6620a51"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a8151f84cd6da351938737c88b6620a51">RotateX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8151f84cd6da351938737c88b6620a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the rotation around the X axis in degrees.  <br /></td></tr>
+<tr class="memdesc:a8151f84cd6da351938737c88b6620a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional rotation around X after kinematic pose (degrees).  <br /></td></tr>
 <tr class="memitem:ad2af670a44fc7fd635586aa0fa98d751" id="r_ad2af670a44fc7fd635586aa0fa98d751"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ad2af670a44fc7fd635586aa0fa98d751">RotateY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ad2af670a44fc7fd635586aa0fa98d751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the rotation around the Y axis in degrees.  <br /></td></tr>
+<tr class="memdesc:ad2af670a44fc7fd635586aa0fa98d751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional rotation around Y after kinematic pose (degrees).  <br /></td></tr>
 <tr class="memitem:a4b9d8a27486c4737d4bf1b409a204ee6" id="r_a4b9d8a27486c4737d4bf1b409a204ee6"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a4b9d8a27486c4737d4bf1b409a204ee6">RotateZ</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4b9d8a27486c4737d4bf1b409a204ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the rotation around the Z axis in degrees.  <br /></td></tr>
+<tr class="memdesc:a4b9d8a27486c4737d4bf1b409a204ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional rotation around Z after kinematic pose (degrees).  <br /></td></tr>
 <tr class="memitem:afaa37b8253e9055d0c9b0b51f6ccb30b" id="r_afaa37b8253e9055d0c9b0b51f6ccb30b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#afaa37b8253e9055d0c9b0b51f6ccb30b">ScaleFactor</a> = 1.0<code> [get, set]</code></td></tr>
-<tr class="memdesc:afaa37b8253e9055d0c9b0b51f6ccb30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the scale factor of the tool.  <br /></td></tr>
+<tr class="memdesc:afaa37b8253e9055d0c9b0b51f6ccb30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform scale factor (default 1.0).  <br /></td></tr>
+<tr class="memitem:ac4f8eaaf0a82376e67e40bb84c276aae" id="r_ac4f8eaaf0a82376e67e40bb84c276aae"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac4f8eaaf0a82376e67e40bb84c276aae">CylinderDiameter</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:ac4f8eaaf0a82376e67e40bb84c276aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fallback cylinder diameter for simple probe visualization (mm).  <br /></td></tr>
+<tr class="memitem:a20885cf2e06fd72b49b8c49863926c40" id="r_a20885cf2e06fd72b49b8c49863926c40"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a20885cf2e06fd72b49b8c49863926c40">CylinderHeight</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a20885cf2e06fd72b49b8c49863926c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fallback cylinder height for simple probe visualization (mm).  <br /></td></tr>
+<tr class="memitem:af48e7684e923566794b7e2f8c794260f" id="r_af48e7684e923566794b7e2f8c794260f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af48e7684e923566794b7e2f8c794260f">UseKinematicSimulation</a> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:af48e7684e923566794b7e2f8c794260f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When <code>true</code>, the kinematic chain simulation is active. The head stays vertical and wrist angles are computed from the <a class="el" href="#a1f0494c93cb7163c7a31540e1ff909e9" title="Normalized X component of the desired probe tip approach direction in world space....">TipApproachX</a>/<a class="el" href="#ab606be4d0d6575d2aea5fe9599fbcf89" title="Normalized Y component of tip approach direction.">TipApproachY</a>/<a class="el" href="#a3b9e8563daa6c08cd652de1a1a779933" title="Normalized Z component of tip approach direction. Default -1.0 = straight down.">TipApproachZ</a> vector, unless explicit <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a>/<a class="el" href="#a9868d9164717f286911eba2bf2c4b796" title="Explicit Axis-B (pan) angle in degrees (0–360°). 0° = pan toward +Y. Increases counter-clockwise view...">WristAngleB</a> are non-zero.  <br /></td></tr>
+<tr class="memitem:a1f4c41cf86b77c6ebd29708091cf6adb" id="r_a1f4c41cf86b77c6ebd29708091cf6adb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1f4c41cf86b77c6ebd29708091cf6adb">HeadAlwaysVertical</a> = true<code> [get, set]</code></td></tr>
+<tr class="memdesc:a1f4c41cf86b77c6ebd29708091cf6adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">When <code>true</code>, the head body is always rendered in a vertical orientation (aligned with the CMM Z-quill). Only the articulating wrist rotates. Applies only when <a class="el" href="#af48e7684e923566794b7e2f8c794260f" title="When true, the kinematic chain simulation is active. The head stays vertical and wrist angles are com...">UseKinematicSimulation</a> is <code>true</code>.  <br /></td></tr>
+<tr class="memitem:a1f0494c93cb7163c7a31540e1ff909e9" id="r_a1f0494c93cb7163c7a31540e1ff909e9"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1f0494c93cb7163c7a31540e1ff909e9">TipApproachX</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a1f0494c93cb7163c7a31540e1ff909e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized X component of the desired probe tip approach direction in world space. The probe axis points from the stylus mounting face toward the ruby ball. Default (0, 0, -1) = straight down (probe pointing at floor = neutral).  <br /></td></tr>
+<tr class="memitem:ab606be4d0d6575d2aea5fe9599fbcf89" id="r_ab606be4d0d6575d2aea5fe9599fbcf89"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab606be4d0d6575d2aea5fe9599fbcf89">TipApproachY</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:ab606be4d0d6575d2aea5fe9599fbcf89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized Y component of tip approach direction.  <br /></td></tr>
+<tr class="memitem:a3b9e8563daa6c08cd652de1a1a779933" id="r_a3b9e8563daa6c08cd652de1a1a779933"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3b9e8563daa6c08cd652de1a1a779933">TipApproachZ</a> = -1.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a3b9e8563daa6c08cd652de1a1a779933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized Z component of tip approach direction. Default -1.0 = straight down.  <br /></td></tr>
+<tr class="memitem:a226f2b06629cb51efa961ffc2be7f98d" id="r_a226f2b06629cb51efa961ffc2be7f98d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d">WristAngleA</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a226f2b06629cb51efa961ffc2be7f98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typically 105°. When set, overrides <a class="el" href="#a1f0494c93cb7163c7a31540e1ff909e9" title="Normalized X component of the desired probe tip approach direction in world space....">TipApproachX</a>/<a class="el" href="#ab606be4d0d6575d2aea5fe9599fbcf89" title="Normalized Y component of tip approach direction.">TipApproachY</a>/<a class="el" href="#a3b9e8563daa6c08cd652de1a1a779933" title="Normalized Z component of tip approach direction. Default -1.0 = straight down.">TipApproachZ</a>.  <br /></td></tr>
+<tr class="memitem:a9868d9164717f286911eba2bf2c4b796" id="r_a9868d9164717f286911eba2bf2c4b796"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9868d9164717f286911eba2bf2c4b796">WristAngleB</a> = 0.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a9868d9164717f286911eba2bf2c4b796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit Axis-B (pan) angle in degrees (0–360°). 0° = pan toward +Y. Increases counter-clockwise viewed from above. When <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a> is also set, these two fully define the probe direction.  <br /></td></tr>
+<tr class="memitem:a2ec1dfca05776950f1ac27fb4ad5ef77" id="r_a2ec1dfca05776950f1ac27fb4ad5ef77"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a2ec1dfca05776950f1ac27fb4ad5ef77">PivotBOffsetZ</a> = -5.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a2ec1dfca05776950f1ac27fb4ad5ef77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z offset (mm, negative = below head face) of the Axis-B (pan) rotation centre measured from the head quill mounting face. Renishaw PH10M default: -5.0 mm.  <br /></td></tr>
+<tr class="memitem:a3a2a23efadade06713bd76eaea5bb23b" id="r_a3a2a23efadade06713bd76eaea5bb23b"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3a2a23efadade06713bd76eaea5bb23b">PivotAOffsetZ</a> = -25.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a3a2a23efadade06713bd76eaea5bb23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z offset (mm, negative = below head face) of the Axis-A (tilt) rotation centre measured from the head quill mounting face. Renishaw PH10M default: -25.0 mm.  <br /></td></tr>
+<tr class="memitem:a3f7cb6c75e2fdd4ab36e9e226a172928" id="r_a3f7cb6c75e2fdd4ab36e9e226a172928"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3f7cb6c75e2fdd4ab36e9e226a172928">TotalReachLength</a> = 58.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a3f7cb6c75e2fdd4ab36e9e226a172928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total reach length (mm) from the Axis-A pivot to the ruby ball centre. This is the distance the kinematic chain uses to compute the tip world position.  <br /></td></tr>
+<tr class="memitem:aa7245057694107b666616cf0c13374ae" id="r_aa7245057694107b666616cf0c13374ae"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa7245057694107b666616cf0c13374ae">RubyBallRadius</a> = 1.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:aa7245057694107b666616cf0c13374ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruby ball radius (mm) used for DMIS output and collision checking.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Represents transformation data for positioning tool 3D models correctly. </p>
+<div class="textblock"><p>Represents transformation and kinematic chain data for a CMM probe tool. </p>
+<p><b>Tip-centric design:</b> All positioning is defined relative to the ruby ball contact point (the tip). The kinematic chain (head → wrist → probe body → stylus) adapts to place the tip at the correct location with the correct approach angle. </p>
+<p><b>Head always vertical:</b> For Cartesian CMMs the head stays aligned with the Z-quill. Only the articulating wrist (Axis A tilt + Axis B pan) rotates the probe body. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00006">6</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
-</div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00017">17</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="ae0c01f2580147229e8f7d27f243a4072" name="ae0c01f2580147229e8f7d27f243a4072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c01f2580147229e8f7d27f243a4072">&#9670;&#160;</a></span>GetEffectiveWristAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double double AngleB HirEV_SmartFitSystemsApp.Models.ToolTransformation.GetEffectiveWristAngles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00134">134</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a4cbb2fcdf4459ef6426c15914425f854" name="a4cbb2fcdf4459ef6426c15914425f854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cbb2fcdf4459ef6426c15914425f854">&#9670;&#160;</a></span>AngleA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.AngleA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the effective wrist angles (AngleA_deg, AngleB_deg) for the kinematic pose. If <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a> is non-zero the explicit angles are used; otherwise they are derived from the normalised TipApproachX/Y/Z vector. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00134">134</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="ac4f8eaaf0a82376e67e40bb84c276aae" name="ac4f8eaaf0a82376e67e40bb84c276aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f8eaaf0a82376e67e40bb84c276aae">&#9670;&#160;</a></span>CylinderDiameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.CylinderDiameter = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fallback cylinder diameter for simple probe visualization (mm). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00044">44</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a20885cf2e06fd72b49b8c49863926c40" name="a20885cf2e06fd72b49b8c49863926c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20885cf2e06fd72b49b8c49863926c40">&#9670;&#160;</a></span>CylinderHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.CylinderHeight = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fallback cylinder height for simple probe visualization (mm). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00047">47</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1f4c41cf86b77c6ebd29708091cf6adb" name="a1f4c41cf86b77c6ebd29708091cf6adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4c41cf86b77c6ebd29708091cf6adb">&#9670;&#160;</a></span>HeadAlwaysVertical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Models.ToolTransformation.HeadAlwaysVertical = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When <code>true</code>, the head body is always rendered in a vertical orientation (aligned with the CMM Z-quill). Only the articulating wrist rotates. Applies only when <a class="el" href="#af48e7684e923566794b7e2f8c794260f" title="When true, the kinematic chain simulation is active. The head stays vertical and wrist angles are com...">UseKinematicSimulation</a> is <code>true</code>. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00064">64</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3a2a23efadade06713bd76eaea5bb23b" name="a3a2a23efadade06713bd76eaea5bb23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2a23efadade06713bd76eaea5bb23b">&#9670;&#160;</a></span>PivotAOffsetZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.PivotAOffsetZ = -25.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Z offset (mm, negative = below head face) of the Axis-A (tilt) rotation centre measured from the head quill mounting face. Renishaw PH10M default: -25.0 mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00114">114</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a2ec1dfca05776950f1ac27fb4ad5ef77" name="a2ec1dfca05776950f1ac27fb4ad5ef77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec1dfca05776950f1ac27fb4ad5ef77">&#9670;&#160;</a></span>PivotBOffsetZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.PivotBOffsetZ = -5.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Z offset (mm, negative = below head face) of the Axis-B (pan) rotation centre measured from the head quill mounting face. Renishaw PH10M default: -5.0 mm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00107">107</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
 <a id="a8151f84cd6da351938737c88b6620a51" name="a8151f84cd6da351938737c88b6620a51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8151f84cd6da351938737c88b6620a51">&#9670;&#160;</a></span>RotateX</h2>
 
@@ -149,9 +355,9 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the rotation around the X axis in degrees. </p>
+<p>Additional rotation around X after kinematic pose (degrees). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00029">29</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00034">34</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -175,9 +381,9 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the rotation around the Y axis in degrees. </p>
+<p>Additional rotation around Y after kinematic pose (degrees). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00036">36</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -201,9 +407,35 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the rotation around the Z axis in degrees. </p>
+<p>Additional rotation around Z after kinematic pose (degrees). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00037">37</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00038">38</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa7245057694107b666616cf0c13374ae" name="aa7245057694107b666616cf0c13374ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7245057694107b666616cf0c13374ae">&#9670;&#160;</a></span>RubyBallRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.RubyBallRadius = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ruby ball radius (mm) used for DMIS output and collision checking. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00125">125</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -227,9 +459,87 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the scale factor of the tool. </p>
+<p>Uniform scale factor (default 1.0). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00042">42</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00041">41</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1f0494c93cb7163c7a31540e1ff909e9" name="a1f0494c93cb7163c7a31540e1ff909e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0494c93cb7163c7a31540e1ff909e9">&#9670;&#160;</a></span>TipApproachX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.TipApproachX = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalized X component of the desired probe tip approach direction in world space. The probe axis points from the stylus mounting face toward the ruby ball. Default (0, 0, -1) = straight down (probe pointing at floor = neutral). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00073">73</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab606be4d0d6575d2aea5fe9599fbcf89" name="ab606be4d0d6575d2aea5fe9599fbcf89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab606be4d0d6575d2aea5fe9599fbcf89">&#9670;&#160;</a></span>TipApproachY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.TipApproachY = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalized Y component of tip approach direction. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00076">76</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3b9e8563daa6c08cd652de1a1a779933" name="a3b9e8563daa6c08cd652de1a1a779933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9e8563daa6c08cd652de1a1a779933">&#9670;&#160;</a></span>TipApproachZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.TipApproachZ = -1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalized Z component of tip approach direction. Default -1.0 = straight down. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00082">82</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -253,9 +563,35 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the name of the tool. </p>
+<p>Tool or montage name (e.g. "PH10M_TP20"). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00011">11</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3f7cb6c75e2fdd4ab36e9e226a172928" name="a3f7cb6c75e2fdd4ab36e9e226a172928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7cb6c75e2fdd4ab36e9e226a172928">&#9670;&#160;</a></span>TotalReachLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.TotalReachLength = 58.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Total reach length (mm) from the Axis-A pivot to the ruby ball centre. This is the distance the kinematic chain uses to compute the tip world position. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00122">122</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -279,9 +615,9 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the translation along the X axis. </p>
+<p>Additional translation along X applied after kinematic pose (mm). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00027">27</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -305,9 +641,9 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the translation along the Y axis. </p>
+<p>Additional translation along Y applied after kinematic pose (mm). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00020">20</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00029">29</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>
@@ -331,9 +667,87 @@ Propriedades</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the translation along the Z axis. </p>
+<p>Additional translation along Z applied after kinematic pose (mm). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00024">24</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="af48e7684e923566794b7e2f8c794260f" name="af48e7684e923566794b7e2f8c794260f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48e7684e923566794b7e2f8c794260f">&#9670;&#160;</a></span>UseKinematicSimulation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Models.ToolTransformation.UseKinematicSimulation = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When <code>true</code>, the kinematic chain simulation is active. The head stays vertical and wrist angles are computed from the <a class="el" href="#a1f0494c93cb7163c7a31540e1ff909e9" title="Normalized X component of the desired probe tip approach direction in world space....">TipApproachX</a>/<a class="el" href="#ab606be4d0d6575d2aea5fe9599fbcf89" title="Normalized Y component of tip approach direction.">TipApproachY</a>/<a class="el" href="#a3b9e8563daa6c08cd652de1a1a779933" title="Normalized Z component of tip approach direction. Default -1.0 = straight down.">TipApproachZ</a> vector, unless explicit <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a>/<a class="el" href="#a9868d9164717f286911eba2bf2c4b796" title="Explicit Axis-B (pan) angle in degrees (0–360°). 0° = pan toward +Y. Increases counter-clockwise view...">WristAngleB</a> are non-zero. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00057">57</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a226f2b06629cb51efa961ffc2be7f98d" name="a226f2b06629cb51efa961ffc2be7f98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226f2b06629cb51efa961ffc2be7f98d">&#9670;&#160;</a></span>WristAngleA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.WristAngleA = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typically 105°. When set, overrides <a class="el" href="#a1f0494c93cb7163c7a31540e1ff909e9" title="Normalized X component of the desired probe tip approach direction in world space....">TipApproachX</a>/<a class="el" href="#ab606be4d0d6575d2aea5fe9599fbcf89" title="Normalized Y component of tip approach direction.">TipApproachY</a>/<a class="el" href="#a3b9e8563daa6c08cd652de1a1a779933" title="Normalized Z component of tip approach direction. Default -1.0 = straight down.">TipApproachZ</a>. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00091">91</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9868d9164717f286911eba2bf2c4b796" name="a9868d9164717f286911eba2bf2c4b796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9868d9164717f286911eba2bf2c4b796">&#9670;&#160;</a></span>WristAngleB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Models.ToolTransformation.WristAngleB = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Explicit Axis-B (pan) angle in degrees (0–360°). 0° = pan toward +Y. Increases counter-clockwise viewed from above. When <a class="el" href="#a226f2b06629cb51efa961ffc2be7f98d" title="Explicit Axis-A (tilt) angle in degrees. 0° = probe pointing straight down; 90° = horizontal; max typ...">WristAngleA</a> is also set, these two fully define the probe direction. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html#l00098">98</a> do ficheiro <a class="el" href="../../d0/d00/_tool_transformation_8cs_source.html">ToolTransformation.cs</a>.</p>
 
 </div>
 </div>

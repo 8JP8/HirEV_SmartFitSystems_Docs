@@ -1,125 +1,127 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.ResolveTransformationsFolder" name="HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.ResolveTransformationsFolder">
-<area shape="rect" id="Node000001" title="Resolves the absolute directory path of the tool transformations folder." alt="" coords="4073,719,4292,777"/>
-<area shape="rect" id="Node000002" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a6b353028a6798def11a5b3eac5823816" title="Ensures the transformation file for a given tool exists. If not, creates a default one." alt="" coords="3167,719,3379,777"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="4055,769,3927,788,3769,801,3598,804,3511,800,3427,792,3370,781,3370,775,3428,787,3512,795,3598,799,3769,796,3927,783,4060,768"/>
-<area shape="rect" id="Node000059" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3892093a328217cada7a564d37fe0cbe" title="Resolves the absolute path to a specific tool&#39;s transformation file." alt="" coords="3719,635,4025,677"/>
-<area shape="poly" id="edge62_Node000001_Node000059" title=" " alt="" coords="4064,714,3946,681,3947,675,4069,714"/>
-<area shape="rect" id="Node000003" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3bf15a747e6508e9f6d0c02f3757699f" title="Creates a missing XML transformation file for a specific model path or model name." alt="" coords="2089,1203,2302,1261"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3251,790,3197,878,3161,924,3121,967,3059,1021,3006,1058,2949,1087,2873,1118,2799,1145,2722,1168,2566,1200,2421,1220,2302,1230,2301,1225,2421,1215,2565,1195,2720,1162,2797,1140,2871,1114,2946,1082,3003,1053,3056,1017,3117,963,3157,921,3193,875,3247,792"/>
-<area shape="rect" id="Node000033" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a039a547cc28e383b0e0a13da475f0483" title="Creates missing XML transformation files for every supported 3D model found in Machine_Tools and Mach..." alt="" coords="2617,1045,2872,1104"/>
-<area shape="poly" id="edge23_Node000002_Node000033" title=" " alt="" coords="3213,785,2795,1047,2793,1042,3208,787"/>
-<area shape="rect" id="Node000034" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a25dcb9b0a6ec6c91a923041cbcbd3230" title="Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed." alt="" coords="2096,716,2295,775"/>
-<area shape="poly" id="edge25_Node000002_Node000034" title=" " alt="" coords="3149,748,2296,748,2295,743,3154,747"/>
-<area shape="rect" id="Node000049" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a7667230dd6f9656b099d7fce401fb326" title="Loads the transformation for a specific tool from an XML file." alt="" coords="2920,633,3119,692"/>
-<area shape="poly" id="edge45_Node000002_Node000049" title=" " alt="" coords="3167,713,3108,695,3109,690,3172,713"/>
-<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0df0ce05afaae1882d0551846601fc57" title="Executes the EnsureCurrentScannerConfiguration method." alt="" coords="1785,855,2020,913"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2170,1188,2114,1096,2077,1042,2037,992,1992,951,1948,916,1949,911,1996,947,2041,989,2082,1039,2119,1093,2174,1190"/>
-<area shape="rect" id="Node000024" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#abfbd38adf27b3c7de3c8e4b2a173a174" title="Updates the MeasuringToolByColor.xml configuration when user changes tool selection." alt="" coords="1794,1223,2011,1281"/>
-<area shape="poly" id="edge18_Node000003_Node000024" title=" " alt="" coords="2071,1240,2012,1247,2011,1242,2077,1240"/>
-<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a28e581c8814d33044e87ecde751ceb5e" title=" " alt="" coords="1458,755,1711,813"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1790,850,1680,817,1680,811,1795,849"/>
-<area shape="rect" id="Node000022" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7374cc91a006d24cf91a1ece6333a0a0" title="Executes the RunScannerVerificationPassAsync method." alt="" coords="866,1003,1089,1061"/>
-<area shape="poly" id="edge15_Node000004_Node000022" title=" " alt="" coords="1767,906,1090,1017,1089,1012,1772,904"/>
-<area shape="rect" id="Node000015" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="1465,688,1704,731"/>
-<area shape="poly" id="edge17_Node000004_Node000015" title=" " alt="" coords="1850,844,1771,784,1717,745,1690,734,1690,729,1720,740,1774,779,1855,845"/>
-<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a1da9491b671468608d67b9f1457ba87b" title="Executes the CreateSimulationToolForPath method." alt="" coords="1146,885,1396,944"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1518,820,1404,876,1373,887,1371,882,1402,871,1513,822"/>
-<area shape="rect" id="Node000016" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae3e2438082683ba849ddc8c5d2c2d038" title="Executes the PlantSimulationToolAtPathPose method." alt="" coords="1150,720,1392,779"/>
-<area shape="poly" id="edge12_Node000005_Node000016" title=" " alt="" coords="1441,769,1392,765,1392,760,1446,768"/>
-<area shape="rect" id="Node000020" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a597b3517641bc6b7dbfccf6807abcd4b" title="Executes the SeekSimulationToPercent method." alt="" coords="1150,803,1392,861"/>
-<area shape="poly" id="edge13_Node000005_Node000020" title=" " alt="" coords="1441,806,1393,816,1391,811,1446,805"/>
-<area shape="rect" id="Node000021" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa2f9a196aeb2314b6ea7a01947d419b5" title="Executes the UpdatePathTransitionFrame method." alt="" coords="1161,637,1380,696"/>
-<area shape="poly" id="edge14_Node000005_Node000021" title=" " alt="" coords="1460,748,1450,745,1425,728,1402,710,1377,699,1377,694,1404,706,1429,723,1452,740,1465,748"/>
-<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="872,885,1083,944"/>
-<area shape="poly" id="edge6_Node000006_Node000008" title=" " alt="" coords="1128,915,1084,917,1083,912,1133,914"/>
-<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="610,903,808,961"/>
-<area shape="poly" id="edge7_Node000008_Node000009" title=" " alt="" coords="854,923,809,928,807,923,859,922"/>
-<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="326,877,553,920"/>
-<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="592,919,554,915,553,910,597,917"/>
-<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="568,887,689,884,817,888,874,896,869,897,816,893,689,889,569,892"/>
-<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="24,828,259,887"/>
-<area shape="poly" id="edge9_Node000010_Node000011" title=" " alt="" coords="308,882,260,876,258,871,313,879"/>
-<area shape="rect" id="Node000012" href="$da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="5,911,278,969"/>
-<area shape="poly" id="edge10_Node000010_Node000012" title=" " alt="" coords="308,918,279,923,276,919,312,915"/>
-<area shape="rect" id="Node000023" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#accaea5d48fa4642b6ee72bae72b3171a" title="Executes the PromptAndRunScannerVerificationPass method." alt="" coords="601,1003,816,1061"/>
-<area shape="poly" id="edge16_Node000022_Node000023" title=" " alt="" coords="848,1033,817,1035,816,1029,854,1031"/>
-<area shape="rect" id="Node000025" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a3b00a067fd3d5527b8cefee117489927" title="Loads color&#45;tool correspondences from generated paths and configuration." alt="" coords="1451,1272,1718,1315"/>
-<area shape="poly" id="edge19_Node000024_Node000025" title=" " alt="" coords="1781,1268,1719,1279,1718,1273,1776,1268"/>
-<area shape="rect" id="Node000026" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#aaa59417e232021e226bbbb400eaee3a4" title="Triggers the MainViewModel to generate and draw the measurement paths, or cancels if already running." alt="" coords="1152,1368,1390,1411"/>
-<area shape="poly" id="edge20_Node000025_Node000026" title=" " alt="" coords="1513,1320,1404,1359,1363,1370,1362,1365,1402,1353,1508,1321"/>
-<area shape="rect" id="Node000027" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a87e64f82c094bde19a2373b3faf218ae" title="Initializes a new instance of the Measuring_SidePanel class." alt="" coords="1165,1203,1376,1261"/>
-<area shape="poly" id="edge21_Node000025_Node000027" title=" " alt="" coords="1454,1268,1377,1255,1377,1250,1460,1268"/>
-<area shape="rect" id="Node000028" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a9844d5a4443ffb74625da16ddde72d88" title="Public method to refresh the color&#45;tool list (called from MainViewModel after path generation)." alt="" coords="1157,1285,1385,1344"/>
-<area shape="poly" id="edge22_Node000025_Node000028" title=" " alt="" coords="1433,1304,1386,1310,1385,1304,1438,1303"/>
-<area shape="poly" id="edge24_Node000033_Node000010" title=" " alt="" coords="2618,1108,2524,1131,2419,1149,2308,1163,2197,1168,976,1168,866,1166,779,1155,739,1143,697,1127,600,1076,551,1040,510,998,476,956,454,923,454,918,480,953,514,994,555,1036,602,1071,699,1122,740,1138,780,1150,866,1161,976,1163,2197,1163,2307,1157,2419,1144,2523,1125,2613,1109"/>
-<area shape="rect" id="Node000035" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a12b19e2dc217ba6e254cd4dbcf8812aa" title="Creates a scanner visualization (rectangle or 3D model) at the specified position." alt="" coords="1766,721,2039,764"/>
-<area shape="poly" id="edge26_Node000034_Node000035" title=" " alt="" coords="2078,745,2040,747,2039,741,2083,744"/>
-<area shape="rect" id="Node000042" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7844588d723932ed17af2d9b34397e23" title="Executes the EnsureVerificationScannerTemplates method." alt="" coords="1775,1003,2030,1061"/>
-<area shape="poly" id="edge34_Node000034_Node000042" title=" " alt="" coords="2164,785,2109,855,2041,927,1993,969,1947,1005,1944,1000,1990,965,2037,923,2105,852,2160,788"/>
-<area shape="rect" id="Node000045" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8978e0116000369b6df4421c415f1af2" title=" " alt="" coords="1781,404,2024,463"/>
-<area shape="poly" id="edge39_Node000034_Node000045" title=" " alt="" coords="2088,707,2085,706,2067,687,2057,669,2036,627,1925,465,1926,460,2041,624,2062,666,2071,684,2088,702,2093,708"/>
-<area shape="poly" id="edge32_Node000035_Node000005" title=" " alt="" coords="1748,763,1712,770,1711,765,1753,762"/>
-<area shape="poly" id="edge33_Node000035_Node000015" title=" " alt="" coords="1748,727,1705,725,1705,719,1753,726"/>
-<area shape="rect" id="Node000036" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6600a2cd0f05752c1f51d26731491fc2" title=" " alt="" coords="1472,504,1697,563"/>
-<area shape="poly" id="edge27_Node000035_Node000036" title=" " alt="" coords="1778,715,1765,710,1716,677,1672,638,1608,566,1609,561,1676,634,1720,673,1768,706,1783,715"/>
-<area shape="rect" id="Node000037" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a776ae9e3a638feb6d489a910ebbc6c5e" title=" " alt="" coords="1162,371,1380,429"/>
-<area shape="poly" id="edge28_Node000036_Node000037" title=" " alt="" coords="1514,496,1402,444,1373,433,1372,427,1404,439,1520,496"/>
-<area shape="rect" id="Node000040" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4ecb02206e332859ae40670c182b497b" title=" " alt="" coords="1164,453,1378,512"/>
-<area shape="poly" id="edge29_Node000036_Node000040" title=" " alt="" coords="1454,513,1378,503,1377,497,1459,512"/>
-<area shape="rect" id="Node000041" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="873,453,1082,512"/>
-<area shape="poly" id="edge31_Node000036_Node000041" title=" " alt="" coords="1454,539,1304,540,1220,535,1138,527,1081,515,1079,510,1139,521,1221,530,1304,535,1459,538"/>
-<area shape="poly" id="edge30_Node000040_Node000041" title=" " alt="" coords="1146,484,1083,485,1081,480,1151,482"/>
-<area shape="poly" id="edge38_Node000042_Node000022" title=" " alt="" coords="1757,1033,1089,1035,1089,1029,1762,1031"/>
-<area shape="rect" id="Node000043" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8a1afc66be59b4c875c48b6fbb49a17a" title="Executes the MoveDirectScannerVerificationVisualToSnapshot method." alt="" coords="1466,1069,1704,1128"/>
-<area shape="poly" id="edge35_Node000042_Node000043" title=" " alt="" coords="1762,1061,1705,1076,1704,1071,1757,1062"/>
-<area shape="rect" id="Node000044" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a351b54ff12328123b8a6940b3bd59298" title="Executes the MoveScannerToolToSnapshot method." alt="" coords="1156,1069,1386,1128"/>
-<area shape="poly" id="edge36_Node000043_Node000044" title=" " alt="" coords="1447,1099,1387,1101,1386,1096,1453,1098"/>
-<area shape="poly" id="edge37_Node000044_Node000022" title=" " alt="" coords="1137,1069,1089,1060,1089,1055,1143,1069"/>
-<area shape="rect" id="Node000046" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6e2b57efadc809fd6955d601c1886d89" title=" " alt="" coords="1461,304,1708,363"/>
-<area shape="poly" id="edge40_Node000045_Node000046" title=" " alt="" coords="1790,399,1680,366,1680,361,1795,399"/>
-<area shape="rect" id="Node000047" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="1139,237,1403,296"/>
-<area shape="poly" id="edge44_Node000045_Node000047" title=" " alt="" coords="1861,393,1798,340,1759,314,1717,294,1639,272,1557,260,1477,256,1404,257,1402,252,1477,250,1557,255,1640,267,1719,290,1762,310,1801,336,1866,393"/>
-<area shape="poly" id="edge41_Node000046_Node000047" title=" " alt="" coords="1443,304,1404,297,1403,292,1448,303"/>
-<area shape="poly" id="edge43_Node000047_Node000047" title=" " alt="" coords="1317,224,1300,219,1271,216,1245,218,1228,223,1220,229,1219,238,1214,236,1215,227,1226,218,1244,213,1271,211,1302,213,1322,222"/>
-<area shape="rect" id="Node000048" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="864,237,1091,296"/>
-<area shape="poly" id="edge42_Node000047_Node000048" title=" " alt="" coords="1121,268,1092,269,1090,264,1125,266"/>
-<area shape="rect" id="Node000050" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3396797ec53dc55c048e8f713f54cccb" title="Centers the model&#39;s bounding box and applies saved/predefined translation/rotation transformations to..." alt="" coords="2639,633,2850,692"/>
-<area shape="poly" id="edge46_Node000049_Node000050" title=" " alt="" coords="2902,663,2850,665,2850,660,2907,662"/>
-<area shape="rect" id="Node000051" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#aa2190c09a2669bae4886be6cc93b554e" title="Reads and loads the cached 3D model data from a specified file." alt="" coords="2361,633,2560,692"/>
-<area shape="poly" id="edge47_Node000050_Node000051" title=" " alt="" coords="2621,663,2561,665,2561,660,2626,662"/>
-<area shape="poly" id="edge48_Node000051_Node000034" title=" " alt="" coords="2352,696,2293,718,2291,713,2347,698"/>
-<area shape="rect" id="Node000052" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a553bf6d49ddd81519a1b66fcc8ba5314" title="Loads a model into memory cache asynchronously, reporting progress." alt="" coords="2096,551,2295,609"/>
-<area shape="poly" id="edge49_Node000051_Node000052" title=" " alt="" coords="2347,628,2292,613,2292,607,2352,628"/>
-<area shape="rect" id="Node000057" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a0d7b6ed9bede1db563a11438cb3acf9c" title="Attempts to load a tool model for the given tool name. Returns null if not found." alt="" coords="2096,633,2295,692"/>
-<area shape="poly" id="edge55_Node000051_Node000057" title=" " alt="" coords="2343,663,2296,665,2295,660,2348,662"/>
-<area shape="poly" id="edge50_Node000052_Node000010" title=" " alt="" coords="2077,587,1852,598,1586,603,976,603,934,605,892,612,810,636,732,672,660,715,595,761,540,806,463,879,459,875,536,802,592,757,657,710,730,667,808,631,891,606,933,600,976,597,1586,597,1852,593,2082,585"/>
-<area shape="rect" id="Node000053" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab7d80e5b024fd31d7f7d33f5b47c954d" title=" " alt="" coords="1788,171,2017,229"/>
-<area shape="poly" id="edge51_Node000052_Node000053" title=" " alt="" coords="2086,540,2085,540,2070,522,2061,504,2054,470,2050,434,2036,393,2010,347,1981,303,1928,232,1929,227,1985,300,2015,344,2041,391,2055,433,2059,469,2066,503,2075,519,2089,537,2091,541"/>
-<area shape="rect" id="Node000054" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a03e4b2565f4868e6a9630e717559b726" title=" " alt="" coords="1462,88,1707,147"/>
-<area shape="poly" id="edge52_Node000053_Node000054" title=" " alt="" coords="1770,167,1701,150,1700,145,1775,166"/>
-<area shape="rect" id="Node000055" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#abff381ce4fc8b7dbb0a55c38d5890732" title=" " alt="" coords="1463,171,1706,229"/>
-<area shape="poly" id="edge53_Node000053_Node000055" title=" " alt="" coords="1770,201,1707,203,1706,197,1775,199"/>
-<area shape="rect" id="Node000056" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab70832b6b6df942ae40bc9d600656386" title="Begins the simulation with the current path order." alt="" coords="1464,5,1705,64"/>
-<area shape="poly" id="edge54_Node000053_Node000056" title=" " alt="" coords="1850,161,1789,119,1717,78,1692,67,1692,62,1720,74,1792,115,1855,161"/>
-<area shape="poly" id="edge61_Node000057_Node000045" title=" " alt="" coords="2091,626,2085,624,2036,586,1991,543,1925,466,1927,461,1995,539,2039,582,2088,619,2097,626"/>
-<area shape="rect" id="Node000058" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9bfc5c51aa50d5fa184042821cc8b2a3" title="Executes the CreateProbeCylinder method." alt="" coords="1791,637,2014,696"/>
-<area shape="poly" id="edge56_Node000057_Node000058" title=" " alt="" coords="2078,665,2015,668,2014,663,2083,664"/>
-<area shape="poly" id="edge58_Node000058_Node000005" title=" " alt="" coords="1784,701,1768,712,1744,728,1720,745,1693,756,1691,752,1717,740,1741,724,1765,707,1779,703"/>
-<area shape="poly" id="edge60_Node000058_Node000015" title=" " alt="" coords="1773,684,1706,696,1704,691,1778,683"/>
-<area shape="poly" id="edge57_Node000058_Node000036" title=" " alt="" coords="1814,631,1656,566,1657,560,1819,631"/>
-<area shape="poly" id="edge59_Node000058_Node000041" title=" " alt="" coords="1864,626,1799,561,1759,526,1717,494,1660,466,1562,423,1463,382,1402,361,1328,346,1269,338,1211,342,1140,361,1100,379,1064,403,1007,455,1004,451,1061,399,1098,375,1138,356,1210,337,1269,333,1329,341,1404,356,1464,377,1564,418,1662,461,1720,490,1763,521,1803,557,1869,626"/>
-<area shape="poly" id="edge63_Node000059_Node000002" title=" " alt="" coords="3701,670,3568,687,3428,709,3377,721,3376,715,3427,704,3568,682,3706,669"/>
-<area shape="poly" id="edge66_Node000059_Node000049" title=" " alt="" coords="3700,658,3120,665,3119,659,3706,657"/>
-<area shape="rect" id="Node000060" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a50d2fccf095f84ef4a92239c82b01bd6" title="Checks if a model name is already cached in memory." alt="" coords="2087,468,2304,527"/>
-<area shape="poly" id="edge64_Node000059_Node000060" title=" " alt="" coords="3803,628,3704,593,3574,553,3501,535,3426,521,3350,511,3274,508,2743,508,2305,502,2304,497,2743,503,3275,503,3350,506,3427,516,3502,530,3575,548,3706,588,3809,629"/>
-<area shape="rect" id="Node000061" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a8e9e5463ec304fc6a2fd8db9fbf408ab" title="Synchronizes and converts transformation settings between XML and JSON files." alt="" coords="3427,719,3671,777"/>
-<area shape="poly" id="edge67_Node000059_Node000061" title=" " alt="" coords="3782,681,3655,721,3654,715,3777,683"/>
-<area shape="rect" id="Node000062" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#ad3c2a11c16856283a2d954e6ee6393a6" title="Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed...." alt="" coords="2352,551,2569,609"/>
-<area shape="poly" id="edge69_Node000059_Node000062" title=" " alt="" coords="3746,631,3646,616,3528,600,3401,588,3274,583,3018,583,2570,583,2569,577,3018,577,3275,577,3401,582,3529,595,3647,611,3751,631"/>
-<area shape="poly" id="edge65_Node000060_Node000053" title=" " alt="" coords="2152,457,1932,233,1934,227,2157,457"/>
-<area shape="poly" id="edge68_Node000061_Node000002" title=" " alt="" coords="3409,748,3380,751,3380,745,3415,748"/>
-<area shape="poly" id="edge71_Node000062_Node000034" title=" " alt="" coords="2358,617,2354,623,2338,643,2331,664,2323,685,2306,706,2289,718,2287,713,2302,702,2318,682,2325,662,2333,641,2350,619,2354,619"/>
-<area shape="poly" id="edge72_Node000062_Node000052" title=" " alt="" coords="2333,580,2296,583,2295,577,2339,580"/>
-<area shape="poly" id="edge73_Node000062_Node000057" title=" " alt="" coords="2347,615,2293,635,2291,630,2352,614"/>
-<area shape="poly" id="edge70_Node000062_Node000060" title=" " alt="" coords="2347,546,2292,530,2292,525,2352,545"/>
+<area shape="rect" id="Node000001" title="Resolves the absolute directory path of the canonical tool transformations folder...." alt="" coords="4069,691,4288,749"/>
+<area shape="rect" id="Node000002" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a6b353028a6798def11a5b3eac5823816" title="Ensures the transformation file for a given tool exists in the canonical Machine_Tools/Tool_Transform..." alt="" coords="3163,723,3375,781"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="4051,728,3667,748,3376,754,3375,749,3667,743,4057,727"/>
+<area shape="rect" id="Node000061" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3892093a328217cada7a564d37fe0cbe" title="Resolves the absolute path to a specific tool&#39;s transformation file." alt="" coords="3715,607,4021,649"/>
+<area shape="poly" id="edge64_Node000001_Node000061" title=" " alt="" coords="4060,686,3942,653,3943,647,4065,686"/>
+<area shape="rect" id="Node000003" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3bf15a747e6508e9f6d0c02f3757699f" title="Creates a missing XML transformation file for a specific model path or model name." alt="" coords="2085,805,2298,864"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3145,762,2298,829,2298,824,3151,761"/>
+<area shape="rect" id="Node000033" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a039a547cc28e383b0e0a13da475f0483" title="Creates missing XML transformation files for every supported 3D model found in Machine_Tools and Mach..." alt="" coords="2613,1024,2868,1083"/>
+<area shape="poly" id="edge23_Node000002_Node000033" title=" " alt="" coords="3205,789,2795,1026,2793,1021,3200,790"/>
+<area shape="rect" id="Node000034" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a25dcb9b0a6ec6c91a923041cbcbd3230" title="Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed." alt="" coords="2092,723,2291,781"/>
+<area shape="poly" id="edge25_Node000002_Node000034" title=" " alt="" coords="3145,753,2292,755,2291,749,3150,751"/>
+<area shape="rect" id="Node000049" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a7667230dd6f9656b099d7fce401fb326" title="Loads the transformation for a specific tool from an XML file." alt="" coords="2916,607,3115,665"/>
+<area shape="poly" id="edge44_Node000002_Node000049" title=" " alt="" coords="3187,716,3081,669,3082,663,3192,716"/>
+<area shape="rect" id="Node000004" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0df0ce05afaae1882d0551846601fc57" title="Executes the EnsureCurrentScannerConfiguration method." alt="" coords="1781,804,2016,863"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2067,835,2016,837,2016,831,2073,834"/>
+<area shape="rect" id="Node000024" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#abfbd38adf27b3c7de3c8e4b2a173a174" title="Updates the MeasuringToolByColor.xml configuration and active simulation tool when user changes tool ..." alt="" coords="1790,1109,2007,1168"/>
+<area shape="poly" id="edge18_Node000003_Node000024" title=" " alt="" coords="2178,877,2157,930,2127,990,2087,1049,2063,1076,2036,1099,2009,1116,2007,1111,2033,1095,2059,1072,2082,1045,2122,987,2152,928,2173,880"/>
+<area shape="rect" id="Node000005" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a28e581c8814d33044e87ecde751ceb5e" title=" " alt="" coords="1454,728,1707,787"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1764,802,1706,790,1706,785,1769,802"/>
+<area shape="rect" id="Node000022" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7374cc91a006d24cf91a1ece6333a0a0" title="Executes the RunScannerVerificationPassAsync method." alt="" coords="864,1043,1087,1101"/>
+<area shape="poly" id="edge15_Node000004_Node000022" title=" " alt="" coords="1805,868,1618,935,1509,968,1400,999,1261,1026,1088,1057,1086,1051,1260,1021,1398,993,1508,963,1616,930,1800,869"/>
+<area shape="rect" id="Node000015" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="1461,811,1700,853"/>
+<area shape="poly" id="edge17_Node000004_Node000015" title=" " alt="" coords="1763,833,1701,835,1700,830,1768,832"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a1da9491b671468608d67b9f1457ba87b" title="Executes the CreateSimulationToolForPath method." alt="" coords="1142,925,1392,984"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1452,795,1449,801,1437,814,1431,828,1426,856,1421,886,1413,901,1401,915,1385,927,1382,923,1397,911,1409,898,1415,884,1420,856,1425,826,1433,811,1445,797,1447,798"/>
+<area shape="rect" id="Node000016" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae3e2438082683ba849ddc8c5d2c2d038" title="Executes the PlantSimulationToolAtPathPose method." alt="" coords="1146,677,1388,736"/>
+<area shape="poly" id="edge12_Node000005_Node000016" title=" " alt="" coords="1437,735,1388,729,1388,724,1442,734"/>
+<area shape="rect" id="Node000020" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a597b3517641bc6b7dbfccf6807abcd4b" title="Executes the SeekSimulationToPercent method." alt="" coords="1146,760,1388,819"/>
+<area shape="poly" id="edge13_Node000005_Node000020" title=" " alt="" coords="1437,772,1389,780,1387,774,1442,771"/>
+<area shape="rect" id="Node000021" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa2f9a196aeb2314b6ea7a01947d419b5" title="Executes the UpdatePathTransitionFrame method." alt="" coords="1157,843,1376,901"/>
+<area shape="poly" id="edge14_Node000005_Node000021" title=" " alt="" coords="1457,794,1448,801,1424,817,1400,833,1373,844,1371,840,1398,828,1422,812,1446,796,1462,792"/>
+<area shape="rect" id="Node000008" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="870,925,1081,984"/>
+<area shape="poly" id="edge6_Node000006_Node000008" title=" " alt="" coords="1124,955,1082,957,1081,952,1129,954"/>
+<area shape="rect" id="Node000009" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="610,884,808,943"/>
+<area shape="poly" id="edge7_Node000008_Node000009" title=" " alt="" coords="852,937,809,931,808,926,857,935"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="326,925,553,968"/>
+<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="592,929,555,935,552,930,597,926"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="568,951,601,952,872,955,867,957,601,957,570,956"/>
+<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene." alt="" coords="24,876,259,935"/>
+<area shape="poly" id="edge9_Node000010_Node000011" title=" " alt="" coords="308,930,260,924,258,919,313,927"/>
+<area shape="rect" id="Node000012" href="$da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="5,959,278,1017"/>
+<area shape="poly" id="edge10_Node000010_Node000012" title=" " alt="" coords="308,966,279,971,276,967,312,963"/>
+<area shape="rect" id="Node000023" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#accaea5d48fa4642b6ee72bae72b3171a" title="Executes the PromptAndRunScannerVerificationPass method." alt="" coords="601,1043,816,1101"/>
+<area shape="poly" id="edge16_Node000022_Node000023" title=" " alt="" coords="846,1073,817,1075,816,1069,851,1071"/>
+<area shape="rect" id="Node000025" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a3b00a067fd3d5527b8cefee117489927" title="Loads color&#45;tool correspondences from generated paths and configuration." alt="" coords="1447,1280,1714,1323"/>
+<area shape="poly" id="edge19_Node000024_Node000025" title=" " alt="" coords="1828,1175,1625,1282,1623,1277,1823,1176"/>
+<area shape="rect" id="Node000026" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#aaa59417e232021e226bbbb400eaee3a4" title="Triggers the MainViewModel to generate and draw the measurement paths, or cancels if already running." alt="" coords="1148,1243,1386,1285"/>
+<area shape="poly" id="edge20_Node000025_Node000026" title=" " alt="" coords="1429,1284,1386,1281,1386,1276,1434,1284"/>
+<area shape="rect" id="Node000027" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a87e64f82c094bde19a2373b3faf218ae" title="Initializes a new instance of the Measuring_SidePanel class." alt="" coords="1161,1309,1372,1368"/>
+<area shape="poly" id="edge21_Node000025_Node000027" title=" " alt="" coords="1434,1319,1373,1329,1373,1323,1429,1319"/>
+<area shape="rect" id="Node000028" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a9844d5a4443ffb74625da16ddde72d88" title="Public method to refresh the color&#45;tool list (called from MainViewModel after path generation)." alt="" coords="1153,1392,1381,1451"/>
+<area shape="poly" id="edge22_Node000025_Node000028" title=" " alt="" coords="1522,1329,1400,1382,1367,1394,1366,1389,1398,1378,1516,1330"/>
+<area shape="poly" id="edge24_Node000033_Node000010" title=" " alt="" coords="2665,1088,2570,1129,2454,1167,2325,1196,2258,1205,2193,1208,974,1208,864,1206,778,1194,738,1182,697,1166,600,1116,553,1082,511,1042,455,971,456,966,515,1038,556,1078,602,1111,699,1161,740,1177,780,1189,865,1200,974,1203,2193,1203,2258,1200,2324,1191,2452,1161,2568,1124,2660,1090"/>
+<area shape="rect" id="Node000035" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a12b19e2dc217ba6e254cd4dbcf8812aa" title="Creates a scanner visualization (rectangle or 3D model) at the specified position." alt="" coords="1762,736,2035,779"/>
+<area shape="poly" id="edge26_Node000034_Node000035" title=" " alt="" coords="2074,755,2036,757,2035,752,2079,754"/>
+<area shape="rect" id="Node000042" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a7844588d723932ed17af2d9b34397e23" title="Executes the EnsureVerificationScannerTemplates method." alt="" coords="1771,1027,2026,1085"/>
+<area shape="poly" id="edge34_Node000034_Node000042" title=" " alt="" coords="2089,789,2084,795,2067,814,2058,832,2050,852,2037,876,1978,960,1925,1029,1922,1024,1973,956,2032,873,2045,850,2053,830,2063,811,2081,791,2084,791"/>
+<area shape="rect" id="Node000045" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8978e0116000369b6df4421c415f1af2" title=" " alt="" coords="1777,640,2020,699"/>
+<area shape="poly" id="edge39_Node000034_Node000045" title=" " alt="" coords="2074,720,2005,702,2005,697,2079,720"/>
+<area shape="poly" id="edge32_Node000035_Node000005" title=" " alt="" coords="1744,758,1708,760,1707,755,1749,757"/>
+<area shape="poly" id="edge33_Node000035_Node000015" title=" " alt="" coords="1787,784,1676,813,1674,807,1792,782"/>
+<area shape="rect" id="Node000036" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6600a2cd0f05752c1f51d26731491fc2" title=" " alt="" coords="1468,488,1693,547"/>
+<area shape="poly" id="edge27_Node000035_Node000036" title=" " alt="" coords="1789,729,1761,713,1743,693,1734,673,1726,653,1712,631,1668,586,1624,550,1624,544,1671,582,1716,628,1731,651,1739,671,1747,690,1764,709,1794,729"/>
+<area shape="rect" id="Node000037" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a776ae9e3a638feb6d489a910ebbc6c5e" title=" " alt="" coords="1158,405,1376,464"/>
+<area shape="poly" id="edge28_Node000036_Node000037" title=" " alt="" coords="1450,484,1376,466,1376,461,1455,483"/>
+<area shape="rect" id="Node000040" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4ecb02206e332859ae40670c182b497b" title=" " alt="" coords="1160,488,1374,547"/>
+<area shape="poly" id="edge29_Node000036_Node000040" title=" " alt="" coords="1450,518,1375,520,1373,515,1455,517"/>
+<area shape="rect" id="Node000041" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="871,339,1080,397"/>
+<area shape="poly" id="edge31_Node000036_Node000041" title=" " alt="" coords="1534,478,1473,434,1436,412,1398,396,1317,375,1233,364,1152,360,1081,362,1079,357,1152,355,1233,359,1318,370,1400,391,1439,408,1476,429,1539,478"/>
+<area shape="poly" id="edge30_Node000040_Node000041" title=" " alt="" coords="1144,482,1133,478,1068,440,1014,401,1014,395,1071,436,1136,474,1149,481"/>
+<area shape="poly" id="edge38_Node000042_Node000022" title=" " alt="" coords="1753,1059,1087,1073,1087,1067,1758,1057"/>
+<area shape="rect" id="Node000043" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8a1afc66be59b4c875c48b6fbb49a17a" title="Executes the MoveDirectScannerVerificationVisualToSnapshot method." alt="" coords="1462,1109,1700,1168"/>
+<area shape="poly" id="edge35_Node000042_Node000043" title=" " alt="" coords="1771,1089,1697,1111,1696,1106,1766,1090"/>
+<area shape="rect" id="Node000044" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a351b54ff12328123b8a6940b3bd59298" title="Executes the MoveScannerToolToSnapshot method." alt="" coords="1152,1109,1382,1168"/>
+<area shape="poly" id="edge36_Node000043_Node000044" title=" " alt="" coords="1443,1139,1383,1141,1382,1136,1449,1138"/>
+<area shape="poly" id="edge37_Node000044_Node000022" title=" " alt="" coords="1134,1109,1087,1100,1087,1095,1140,1109"/>
+<area shape="rect" id="Node000046" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6e2b57efadc809fd6955d601c1886d89" title=" " alt="" coords="1457,641,1704,700"/>
+<area shape="poly" id="edge40_Node000045_Node000046" title=" " alt="" coords="1759,670,1705,673,1704,668,1765,669"/>
+<area shape="rect" id="Node000047" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="1135,595,1399,653"/>
+<area shape="poly" id="edge43_Node000045_Node000047" title=" " alt="" coords="1759,637,1714,632,1551,621,1400,621,1399,616,1551,616,1715,627,1765,636"/>
+<area shape="poly" id="edge41_Node000046_Node000047" title=" " alt="" coords="1439,650,1400,646,1399,641,1444,649"/>
+<area shape="poly" id="edge42_Node000047_Node000047" title=" " alt="" coords="1312,581,1296,576,1267,573,1241,575,1224,580,1216,587,1215,596,1211,593,1211,584,1222,575,1240,570,1267,568,1297,571,1318,580"/>
+<area shape="rect" id="Node000050" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a3396797ec53dc55c048e8f713f54cccb" title="Centers the model&#39;s bounding box and applies saved/predefined translation/rotation transformations to..." alt="" coords="2635,573,2846,632"/>
+<area shape="poly" id="edge45_Node000049_Node000050" title=" " alt="" coords="2898,622,2846,618,2846,613,2903,622"/>
+<area shape="rect" id="Node000060" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#afc58c6daaf4f9ea56495845386b9b066" title="Creates a default cylinder probe if no 3D model is available." alt="" coords="2086,640,2296,699"/>
+<area shape="poly" id="edge61_Node000049_Node000060" title=" " alt="" coords="2898,643,2868,647,2297,669,2296,663,2868,641,2903,642"/>
+<area shape="rect" id="Node000051" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#aa2190c09a2669bae4886be6cc93b554e" title="Reads and loads the cached 3D model data from a specified file." alt="" coords="2357,573,2556,632"/>
+<area shape="poly" id="edge46_Node000050_Node000051" title=" " alt="" coords="2617,603,2557,605,2557,600,2622,602"/>
+<area shape="poly" id="edge47_Node000051_Node000034" title=" " alt="" coords="2408,640,2357,679,2301,713,2277,725,2275,720,2299,708,2354,675,2404,643"/>
+<area shape="rect" id="Node000052" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a553bf6d49ddd81519a1b66fcc8ba5314" title="Loads a model into memory cache asynchronously, reporting progress." alt="" coords="2092,475,2291,533"/>
+<area shape="poly" id="edge48_Node000051_Node000052" title=" " alt="" coords="2359,568,2272,537,2272,531,2364,567"/>
+<area shape="rect" id="Node000057" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a0d7b6ed9bede1db563a11438cb3acf9c" title="Attempts to load a tool model for the given tool name. Returns null if not found." alt="" coords="2092,557,2291,616"/>
+<area shape="poly" id="edge54_Node000051_Node000057" title=" " alt="" coords="2339,596,2292,595,2291,590,2344,595"/>
+<area shape="poly" id="edge49_Node000052_Node000010" title=" " alt="" coords="2095,469,2082,465,2006,432,1943,398,1837,335,1786,308,1729,288,1663,274,1582,269,974,269,913,275,855,293,802,320,753,355,708,398,666,446,629,498,595,553,538,667,495,774,466,864,448,926,444,924,461,862,490,772,533,664,590,551,624,495,662,443,704,394,749,351,799,315,853,288,912,270,974,264,1582,264,1663,269,1730,283,1788,303,1840,330,1945,393,2008,427,2084,460,2101,469"/>
+<area shape="rect" id="Node000053" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab7d80e5b024fd31d7f7d33f5b47c954d" title=" " alt="" coords="1784,171,2013,229"/>
+<area shape="poly" id="edge50_Node000052_Node000053" title=" " alt="" coords="2081,463,2081,464,2063,436,2055,409,2054,381,2056,355,2059,328,2058,302,2050,276,2033,250,2013,232,2013,227,2037,246,2055,274,2063,302,2064,329,2062,355,2059,382,2060,408,2067,434,2085,461,2086,464"/>
+<area shape="rect" id="Node000054" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a03e4b2565f4868e6a9630e717559b726" title=" " alt="" coords="1458,5,1703,64"/>
+<area shape="poly" id="edge51_Node000053_Node000054" title=" " alt="" coords="1846,161,1785,119,1713,78,1688,67,1687,62,1716,74,1788,115,1851,161"/>
+<area shape="rect" id="Node000055" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#abff381ce4fc8b7dbb0a55c38d5890732" title=" " alt="" coords="1459,88,1702,147"/>
+<area shape="poly" id="edge52_Node000053_Node000055" title=" " alt="" coords="1766,167,1697,150,1696,145,1771,166"/>
+<area shape="rect" id="Node000056" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab70832b6b6df942ae40bc9d600656386" title="Begins the simulation with the current path order." alt="" coords="1460,171,1701,229"/>
+<area shape="poly" id="edge53_Node000053_Node000056" title=" " alt="" coords="1766,201,1702,203,1701,197,1771,199"/>
+<area shape="poly" id="edge60_Node000057_Node000045" title=" " alt="" coords="2074,620,2006,642,2004,637,2079,618"/>
+<area shape="rect" id="Node000058" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9bfc5c51aa50d5fa184042821cc8b2a3" title="Executes the CreateProbeCylinder method." alt="" coords="1787,557,2010,616"/>
+<area shape="poly" id="edge55_Node000057_Node000058" title=" " alt="" coords="2074,587,2011,589,2010,584,2079,586"/>
+<area shape="poly" id="edge57_Node000058_Node000005" title=" " alt="" coords="1775,619,1764,630,1748,650,1741,671,1733,692,1716,714,1692,730,1690,725,1713,710,1729,690,1736,669,1743,647,1761,626,1771,622"/>
+<area shape="poly" id="edge59_Node000058_Node000015" title=" " alt="" coords="1776,617,1764,630,1749,650,1742,671,1742,714,1741,757,1733,779,1716,801,1701,812,1699,808,1712,797,1728,777,1735,756,1736,714,1737,670,1744,648,1760,626,1771,620"/>
+<area shape="poly" id="edge56_Node000058_Node000036" title=" " alt="" coords="1769,560,1694,545,1693,539,1774,559"/>
+<area shape="poly" id="edge58_Node000058_Node000041" title=" " alt="" coords="1838,549,1757,502,1649,446,1527,395,1463,375,1399,360,1316,350,1232,347,1151,350,1081,356,1079,351,1151,345,1232,342,1316,345,1399,355,1464,370,1529,390,1652,441,1759,497,1843,549"/>
+<area shape="poly" id="edge63_Node000060_Node000045" title=" " alt="" coords="2068,670,2020,672,2020,667,2073,669"/>
+<area shape="poly" id="edge62_Node000060_Node000058" title=" " alt="" coords="2069,636,2005,619,2005,614,2074,635"/>
+<area shape="poly" id="edge65_Node000061_Node000002" title=" " alt="" coords="3807,655,3739,683,3667,705,3592,721,3516,733,3376,748,3376,743,3515,728,3591,716,3666,700,3738,678,3802,656"/>
+<area shape="poly" id="edge68_Node000061_Node000049" title=" " alt="" coords="3697,621,3667,623,3423,623,3116,634,3115,628,3423,617,3667,617,3702,621"/>
+<area shape="rect" id="Node000062" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a50d2fccf095f84ef4a92239c82b01bd6" title="Checks if a model name is already cached in memory." alt="" coords="2083,392,2300,451"/>
+<area shape="poly" id="edge66_Node000061_Node000062" title=" " alt="" coords="3811,599,3715,554,3582,501,3507,477,3429,458,3350,445,3270,440,2739,440,2504,436,2301,429,2300,424,2504,431,2739,435,3271,435,3350,439,3430,452,3508,472,3584,496,3717,549,3817,599"/>
+<area shape="rect" id="Node000063" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a8e9e5463ec304fc6a2fd8db9fbf408ab" title="Synchronizes and converts transformation settings between XML and JSON files." alt="" coords="3423,632,3667,691"/>
+<area shape="poly" id="edge69_Node000061_Node000063" title=" " alt="" coords="3697,646,3668,651,3667,646,3702,645"/>
+<area shape="rect" id="Node000064" href="$d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#ad3c2a11c16856283a2d954e6ee6393a6" title="Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed...." alt="" coords="2348,491,2565,549"/>
+<area shape="poly" id="edge71_Node000061_Node000064" title=" " alt="" coords="3770,602,3669,581,3544,557,3408,538,3270,531,3014,531,2566,525,2565,520,3014,525,3271,525,3408,533,3545,551,3670,576,3775,602"/>
+<area shape="poly" id="edge67_Node000062_Node000053" title=" " alt="" coords="2159,379,2105,314,2071,280,2033,250,2002,233,2002,227,2036,246,2074,276,2109,310,2164,379"/>
+<area shape="poly" id="edge70_Node000063_Node000002" title=" " alt="" coords="3441,695,3361,725,3360,720,3436,697"/>
+<area shape="poly" id="edge73_Node000064_Node000034" title=" " alt="" coords="2352,558,2350,563,2336,581,2330,600,2327,636,2324,674,2316,693,2302,712,2288,724,2285,720,2298,709,2312,691,2318,672,2321,636,2324,598,2332,579,2346,560,2347,561"/>
+<area shape="poly" id="edge74_Node000064_Node000052" title=" " alt="" coords="2329,513,2292,513,2291,507,2335,512"/>
+<area shape="poly" id="edge75_Node000064_Node000057" title=" " alt="" coords="2330,552,2292,564,2291,559,2335,550"/>
+<area shape="poly" id="edge72_Node000064_Node000062" title=" " alt="" coords="2359,485,2272,454,2272,449,2364,485"/>
 </map>

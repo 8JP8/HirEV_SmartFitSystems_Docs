@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.35</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -139,6 +139,10 @@ Componentes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RRT* (Rapidly-exploring Random Tree Star) Pathfinder for collision-free path planning.  <a href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:VisibilityGraphPathfinder" id="r_VisibilityGraphPathfinder"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html">VisibilityGraphPathfinder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visibility Graph Pathfinder for collision-free path planning.  <a href="../../d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmKinematicState" id="r_CmmKinematicState"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_state.html">CmmKinematicState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the computed forward-kinematic world positions for a CMM probe assembly.  <a href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_state.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:CmmKinematicAssembly" id="r_CmmKinematicAssembly"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_assembly.html">CmmKinematicAssembly</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility for computing CMM probe kinematic chains and building Eyeshot 3D block assemblies.  <a href="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_assembly.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:ColorJsonConverter" id="r_ColorJsonConverter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html">ColorJsonConverter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom JSON converter for Color objects. Handles serialization and deserialization of Color to/from hex string format #AARRGGBB.  <a href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:ColorNamer" id="r_ColorNamer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html">ColorNamer</a></td></tr>
@@ -166,7 +170,7 @@ Componentes</h2></td></tr>
 <tr class="memitem:JsonExportUtils" id="r_JsonExportUtils"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html">JsonExportUtils</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for exporting <a class="el" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html" title="Data model representing a single face extracted from a 3D CAD model. Contains geometric,...">CADFace</a> and <a class="el" href="../../d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html" title="Data model representing a detected hole feature in a 3D CAD model. Holes are identified from pairs of...">CADHole</a> data to JSON.  <a href="../../d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:ArgbColorComparer" id="r_ArgbColorComparer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html">ArgbColorComparer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares System.Drawing.Color by ARGB value only, ignoring named-color state. This prevents mismatches between Color.Red and Color.FromArgb(255, 0, 0).  <a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html#details">Mais...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares System.Drawing.Color by RGB values (R, G, B), ignoring Alpha state. This prevents mismatches between Color.FromArgb(255, 0, 0) and transparent/semi-transparent face colors.  <a href="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_argb_color_comparer.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:MeasuringToolConfigManager" id="r_MeasuringToolConfigManager"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html">MeasuringToolConfigManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the MeasuringToolByColor.xml configuration file. Loads color-to-tool mappings and automatically updates the file when new colors are encountered.  <a href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:Point3DComparer" id="r_Point3DComparer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d7/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_point3_d_comparer.html">Point3DComparer</a></td></tr>
@@ -281,7 +285,7 @@ Enumerações</h2></td></tr>
 <tr><td class="fieldname"><a id="a2086ec85a99510e5682b88df11218a86aa149e85a44aeec9140e92733d9ed694e" name="a2086ec85a99510e5682b88df11218a86aa149e85a44aeec9140e92733d9ed694e"></a>Cancelled&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22882">22882</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l23168">23168</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>
@@ -314,7 +318,7 @@ Enumerações</h2></td></tr>
 <tr><td class="fieldname"><a id="aa83bd889182e492dfaaaa6fb4c9739c3ad7c8c85bf79bbe1b7188497c32c3b0ca" name="aa83bd889182e492dfaaaa6fb4c9739c3ad7c8c85bf79bbe1b7188497c32c3b0ca"></a>Failed&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l22864">22864</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l23150">23150</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>

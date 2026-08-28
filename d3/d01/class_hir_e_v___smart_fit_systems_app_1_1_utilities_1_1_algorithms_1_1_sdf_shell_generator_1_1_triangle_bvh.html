@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html','../../','df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh<span class="mlabels"><span class="mlabel sealed">sealed</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Bounding Volume Hierarchy over <a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html" title="Represents a lightweight 3D triangle for accelerated spatial bounding box culling and SDF raycasting.">Triangle3D</a> geometry for accelerated distance and raycasting.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_sdf_shell_generator_8_triangle_bvh_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_sdf_shell_generator_8_triangle_bvh_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_sdf_shell_generator_8_triangle_bvh_coll__map">
+<area shape="rect" title="Bounding Volume Hierarchy over Triangle3D geometry for accelerated distance and raycasting." alt="" coords="123,392,357,728"/>
+<area shape="rect" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html" title=" " alt="" coords="5,5,240,320"/>
+<area shape="poly" title=" " alt="" coords="169,317,188,376,183,376,169,323"/>
+<area shape="rect" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html" title="Represents a lightweight 3D triangle for accelerated spatial bounding box culling and SDF raycasting." alt="" coords="264,13,451,312"/>
+<area shape="poly" title=" " alt="" coords="315,309,297,377,292,375,312,314"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:Node" id="r_Node"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html">Node</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a7339c583bbfc6f74703b5e495d1d2530" id="r_a7339c583bbfc6f74703b5e495d1d2530"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7339c583bbfc6f74703b5e495d1d2530">TriangleBvh</a> (<a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html">Triangle3D</a>[] triangles)</td></tr>
+<tr class="memitem:ab9c038bd1a4167d2527a6e26ce588b59" id="r_ab9c038bd1a4167d2527a6e26ce588b59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab9c038bd1a4167d2527a6e26ce588b59">CastRay</a> (double ox, double oy, double oz, double dx, double dy, double dz, out int hitsA, out int hitsB, out bool edgeHitA, out bool edgeHitB)</td></tr>
+<tr class="memitem:a5bfe446cacc2406477ba2ac5ea20f0a7" id="r_a5bfe446cacc2406477ba2ac5ea20f0a7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5bfe446cacc2406477ba2ac5ea20f0a7">ClosestDistance</a> (double px, double py, double pz, ref float bestA, ref float bestB)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a0a6220b6748d128812b6c7236ba61b33" id="r_a0a6220b6748d128812b6c7236ba61b33"><td class="memItemLeft">readonly <a class="el" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html">Node</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a0a6220b6748d128812b6c7236ba61b33">Nodes</a></td></tr>
+<tr class="memitem:a5208ef610f0bbbc735e6cd69d15a1a95" id="r_a5208ef610f0bbbc735e6cd69d15a1a95"><td class="memItemLeft">readonly int[]&#160;</td><td class="memItemRight"><a class="el" href="#a5208ef610f0bbbc735e6cd69d15a1a95">Indices</a></td></tr>
+<tr class="memitem:a50564225688f956840dfb614eff49ee8" id="r_a50564225688f956840dfb614eff49ee8"><td class="memItemLeft">readonly <a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html">Triangle3D</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a50564225688f956840dfb614eff49ee8">Triangles</a></td></tr>
+<tr class="memitem:a84c0d19860e408959ce81b8f1426420c" id="r_a84c0d19860e408959ce81b8f1426420c"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#a84c0d19860e408959ce81b8f1426420c">RootIndex</a></td></tr>
+<tr class="memitem:a3572a3b297d97b713855fde64d39bac6" id="r_a3572a3b297d97b713855fde64d39bac6"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#a3572a3b297d97b713855fde64d39bac6">BoundsMinX</a></td></tr>
+<tr class="memitem:a62c5aee3c1b8ebb92d59c155f05b4400" id="r_a62c5aee3c1b8ebb92d59c155f05b4400"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#a62c5aee3c1b8ebb92d59c155f05b4400">BoundsMaxX</a></td></tr>
+<tr class="memitem:ad31a07964ea3c703d3e2abc7c4ea9c47" id="r_ad31a07964ea3c703d3e2abc7c4ea9c47"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#ad31a07964ea3c703d3e2abc7c4ea9c47">BoundsMinY</a></td></tr>
+<tr class="memitem:ae71c792274b798bf82e5cbf4c2f36071" id="r_ae71c792274b798bf82e5cbf4c2f36071"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#ae71c792274b798bf82e5cbf4c2f36071">BoundsMaxY</a></td></tr>
+<tr class="memitem:a7edcdadb1374eb0629478184745cf240" id="r_a7edcdadb1374eb0629478184745cf240"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#a7edcdadb1374eb0629478184745cf240">BoundsMinZ</a></td></tr>
+<tr class="memitem:aa0bdf79a659c0b293959143e8aa119c0" id="r_aa0bdf79a659c0b293959143e8aa119c0"><td class="memItemLeft">readonly float&#160;</td><td class="memItemRight"><a class="el" href="#aa0bdf79a659c0b293959143e8aa119c0">BoundsMaxZ</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a6512754b9516402b5dd35dafa5151f1c" id="r_a6512754b9516402b5dd35dafa5151f1c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6512754b9516402b5dd35dafa5151f1c">BuildNode</a> (int start, int count, ref int nodeCount)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a3c2bfd4b73dff2c28f6d6bf0712bd6f2" id="r_a3c2bfd4b73dff2c28f6d6bf0712bd6f2"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a3c2bfd4b73dff2c28f6d6bf0712bd6f2">SqrDistToAabb</a> (in <a class="el" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html">Node</a> node, double px, double py, double pz)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Bounding Volume Hierarchy over <a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html" title="Represents a lightweight 3D triangle for accelerated spatial bounding box culling and SDF raycasting.">Triangle3D</a> geometry for accelerated distance and raycasting. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02210">2210</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a7339c583bbfc6f74703b5e495d1d2530" name="a7339c583bbfc6f74703b5e495d1d2530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7339c583bbfc6f74703b5e495d1d2530">&#9670;&#160;</a></span>TriangleBvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.TriangleBvh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html">Triangle3D</a>[]</td>          <td class="paramname"><span class="paramname"><em>triangles</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">2231</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02227">BoundsMaxX</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02228">BoundsMaxY</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02229">BoundsMaxZ</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02227">BoundsMinX</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02228">BoundsMinY</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02229">BoundsMinZ</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">Indices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02222">Nodes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02225">RootIndex</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02224">Triangles</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a7339c583bbfc6f74703b5e495d1d2530_cgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a7339c583bbfc6f74703b5e495d1d2530_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a7339c583bbfc6f74703b5e495d1d2530_cgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a7339c583bbfc6f74703b5e495d1d2530_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,251,88"/>
+<area shape="rect" href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html#a6512754b9516402b5dd35dafa5151f1c" title=" " alt="" coords="299,29,544,88"/>
+<area shape="poly" title=" " alt="" coords="251,56,286,58,281,59,251,61"/>
+<area shape="poly" title=" " alt="" coords="365,27,366,19,376,10,395,5,421,3,452,5,473,15,467,15,451,11,421,8,396,10,378,15,370,21,369,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a6512754b9516402b5dd35dafa5151f1c" name="a6512754b9516402b5dd35dafa5151f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6512754b9516402b5dd35dafa5151f1c">&#9670;&#160;</a></span>BuildNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BuildNode </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int</td>          <td class="paramname"><span class="paramname"><em>nodeCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">2248</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">Indices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02222">Nodes</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02224">Triangles</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_cgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_cgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,251,88"/>
+<area shape="poly" title=" " alt="" coords="80,28,81,19,90,10,105,5,128,3,154,5,171,15,166,15,153,11,128,8,107,10,93,15,86,21,85,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_icgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_icgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a6512754b9516402b5dd35dafa5151f1c_icgraph">
+<area shape="rect" title=" " alt="" coords="299,29,544,88"/>
+<area shape="poly" title=" " alt="" coords="467,15,451,11,421,8,396,10,378,15,370,21,369,31,365,27,366,19,376,10,395,5,421,3,452,5,473,15"/>
+<area shape="rect" href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html#a7339c583bbfc6f74703b5e495d1d2530" title=" " alt="" coords="5,29,251,88"/>
+<area shape="poly" title=" " alt="" coords="281,59,251,61,251,56,286,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9c038bd1a4167d2527a6e26ce588b59" name="ab9c038bd1a4167d2527a6e26ce588b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c038bd1a4167d2527a6e26ce588b59">&#9670;&#160;</a></span>CastRay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.CastRay </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>ox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>oy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>oz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int</td>          <td class="paramname"><span class="paramname"><em>hitsA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int</td>          <td class="paramname"><span class="paramname"><em>hitsB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool</td>          <td class="paramname"><span class="paramname"><em>edgeHitA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool</td>          <td class="paramname"><span class="paramname"><em>edgeHitB</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">2336</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">Indices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02222">Nodes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02158">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.RayTriT_Scalar()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02225">RootIndex</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02224">Triangles</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01592">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.DetermineVoxelSigns()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_cgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_cgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,251,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a21ce10c2f55f9b38b7b4e6588ddc6dfd" title=" " alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="251,32,286,34,281,35,251,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_icgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_icgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_ab9c038bd1a4167d2527a6e26ce588b59_icgraph">
+<area shape="rect" title=" " alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a744630649616c8e6f5d30cd895dce68c" title="Determines whether a grid voxel point is inside (&#45;1) or outside (+1) the original part (A) and the ca..." alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5bfe446cacc2406477ba2ac5ea20f0a7" name="a5bfe446cacc2406477ba2ac5ea20f0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bfe446cacc2406477ba2ac5ea20f0a7">&#9670;&#160;</a></span>ClosestDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.ClosestDistance </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>px</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>py</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref float</td>          <td class="paramname"><span class="paramname"><em>bestA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref float</td>          <td class="paramname"><span class="paramname"><em>bestB</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">2404</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">Indices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02222">Nodes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02079">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.PtTriDistSq_Scalar()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02225">RootIndex</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02475">SqrDistToAabb()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02224">Triangles</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a5bfe446cacc2406477ba2ac5ea20f0a7_cgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a5bfe446cacc2406477ba2ac5ea20f0a7_cgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a5bfe446cacc2406477ba2ac5ea20f0a7_cgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a5bfe446cacc2406477ba2ac5ea20f0a7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,251,105"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a1b3161729f0c4717077b780ad37c39a7" title=" " alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="250,56,286,53,281,55,252,61"/>
+<area shape="rect" href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html#a3c2bfd4b73dff2c28f6d6bf0712bd6f2" title=" " alt="" coords="299,88,544,147"/>
+<area shape="poly" title=" " alt="" coords="251,91,286,98,281,98,251,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c2bfd4b73dff2c28f6d6bf0712bd6f2" name="a3c2bfd4b73dff2c28f6d6bf0712bd6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2bfd4b73dff2c28f6d6bf0712bd6f2">&#9670;&#160;</a></span>SqrDistToAabb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.SqrDistToAabb </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html">Node</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>px</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>py</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>pz</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02475">2475</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">ClosestDistance()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a3c2bfd4b73dff2c28f6d6bf0712bd6f2_icgraph.png" border="0" usemap="#ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a3c2bfd4b73dff2c28f6d6bf0712bd6f2_icgraph" loading="lazy" alt=""/></div>
+<map name="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a3c2bfd4b73dff2c28f6d6bf0712bd6f2_icgraph" id="ad3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_a3c2bfd4b73dff2c28f6d6bf0712bd6f2_icgraph">
+<area shape="rect" title=" " alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html#a5bfe446cacc2406477ba2ac5ea20f0a7" title=" " alt="" coords="5,5,251,64"/>
+<area shape="poly" title=" " alt="" coords="281,35,251,37,251,32,286,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a62c5aee3c1b8ebb92d59c155f05b4400" name="a62c5aee3c1b8ebb92d59c155f05b4400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c5aee3c1b8ebb92d59c155f05b4400">&#9670;&#160;</a></span>BoundsMaxX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02227">2227</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01592">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.DetermineVoxelSigns()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="ae71c792274b798bf82e5cbf4c2f36071" name="ae71c792274b798bf82e5cbf4c2f36071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71c792274b798bf82e5cbf4c2f36071">&#9670;&#160;</a></span>BoundsMaxY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02228">2228</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01592">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.DetermineVoxelSigns()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="aa0bdf79a659c0b293959143e8aa119c0" name="aa0bdf79a659c0b293959143e8aa119c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bdf79a659c0b293959143e8aa119c0">&#9670;&#160;</a></span>BoundsMaxZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02229">2229</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01592">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.DetermineVoxelSigns()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a3572a3b297d97b713855fde64d39bac6" name="a3572a3b297d97b713855fde64d39bac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3572a3b297d97b713855fde64d39bac6">&#9670;&#160;</a></span>BoundsMinX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMinX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02227">2227</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="ad31a07964ea3c703d3e2abc7c4ea9c47" name="ad31a07964ea3c703d3e2abc7c4ea9c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31a07964ea3c703d3e2abc7c4ea9c47">&#9670;&#160;</a></span>BoundsMinY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMinY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02228">2228</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a7edcdadb1374eb0629478184745cf240" name="a7edcdadb1374eb0629478184745cf240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edcdadb1374eb0629478184745cf240">&#9670;&#160;</a></span>BoundsMinZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMinZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02229">2229</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a5208ef610f0bbbc735e6cd69d15a1a95" name="a5208ef610f0bbbc735e6cd69d15a1a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5208ef610f0bbbc735e6cd69d15a1a95">&#9670;&#160;</a></span>Indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int [] HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.Indices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02223">2223</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">CastRay()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a0a6220b6748d128812b6c7236ba61b33" name="a0a6220b6748d128812b6c7236ba61b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6220b6748d128812b6c7236ba61b33">&#9670;&#160;</a></span>Nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../dc/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh_1_1_node.html">Node</a> [] HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.Nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02222">2222</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">CastRay()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a84c0d19860e408959ce81b8f1426420c" name="a84c0d19860e408959ce81b8f1426420c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c0d19860e408959ce81b8f1426420c">&#9670;&#160;</a></span>RootIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.RootIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02225">2225</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">CastRay()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a50564225688f956840dfb614eff49ee8" name="a50564225688f956840dfb614eff49ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50564225688f956840dfb614eff49ee8">&#9670;&#160;</a></span>Triangles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html">Triangle3D</a> [] HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.Triangles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02224">2224</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02248">BuildNode()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">CastRay()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02231">TriangleBvh()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

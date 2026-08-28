@@ -1,10 +1,26 @@
 var searchData=
 [
-  ['general_20app_20settings_0',['General App Settings',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md3',1,'']]],
-  ['generation_1',['Scanner Coverage And Candidate Generation',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md5',1,'']]],
-  ['generation_20logging_20and_20ordering_2',['Path Generation Logging And Ordering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md15',1,'']]],
-  ['geometry_3',['Scanner Selection And Geometry',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md4',1,'']]],
-  ['gerar_20a_20documentação_4',['Gerar a Documentação',['../index.html#docs_sec',1,'']]],
-  ['guia_20de_20início_20rápido_5',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]],
-  ['guide_6',['App.config Configuration Guide',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html',1,'']]]
+  ['a_2029_0',['2.3 Machine, Wrist &amp;amp; Tool Kinematics (Section 5.4.4, Clause 6, Annex A.29)',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md29',1,'']]],
+  ['a_20documentação_1',['Gerar a Documentação',['../index.html#docs_sec',1,'']]],
+  ['analysis_20ansi_20dmis_205_203_2',['2. Standard Reference Analysis (ANSI/DMIS 5.3)',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md26',1,'']]],
+  ['and_20camera_3',['Simulation And Camera',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md20',1,'']]],
+  ['and_20candidate_20generation_4',['Scanner Coverage And Candidate Generation',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md7',1,'']]],
+  ['and_20collision_20avoidance_5',['Mesh Creation And Collision Avoidance',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md13',1,'']]],
+  ['and_20geometry_6',['Scanner Selection And Geometry',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md6',1,'']]],
+  ['and_20hole_20safety_7',['Hole Detection And Hole Safety',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md14',1,'']]],
+  ['and_20ordering_8',['Path Generation Logging And Ordering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md17',1,'']]],
+  ['and_20point_20filtering_9',['Probe Path Planning And Point Filtering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md12',1,'']]],
+  ['and_20section_20view_20settings_10',['Visual And Section View Settings',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md11',1,'']]],
+  ['and_20shell_20offset_11',['SDF Shell Mesh And Shell Offset',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md16',1,'']]],
+  ['annex_20a_2029_12',['2.3 Machine, Wrist &amp;amp; Tool Kinematics (Section 5.4.4, Clause 6, Annex A.29)',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md29',1,'']]],
+  ['ansi_20dmis_205_203_13',['2. Standard Reference Analysis (ANSI/DMIS 5.3)',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md26',1,'']]],
+  ['aplicação_20v0_200_2036_14',['Capacidades Atuais da Aplicação (v0.0.36)',['../index.html#current_capabilities_sec',1,'']]],
+  ['app_20config_15',['Optional Code-Supported Settings Not Currently In App.config',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md21',1,'']]],
+  ['app_20config_20configuration_20guide_16',['App.config Configuration Guide',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html',1,'']]],
+  ['app_20settings_17',['General App Settings',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md5',1,'']]],
+  ['applied_18',['How Configuration Is Applied',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md3',1,'']]],
+  ['architecture_19',['Architecture',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md32',1,'3. Intermediate Representation (IR) Architecture'],['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html',1,'DMIS 5.3 Post-Processor &amp; Intermediate Language Architecture']]],
+  ['atuais_20da_20aplicação_20v0_200_2036_20',['Capacidades Atuais da Aplicação (v0.0.36)',['../index.html#current_capabilities_sec',1,'']]],
+  ['autor_21',['Direitos de Autor',['../index.html#footer_sec',1,'']]],
+  ['avoidance_22',['Mesh Creation And Collision Avoidance',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md13',1,'']]]
 ];

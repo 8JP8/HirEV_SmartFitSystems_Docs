@@ -22,6 +22,8 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_utilities =
     [ "CollisionAvoidanceAlgorithm", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm" ],
     [ "RRTStarPathfinder", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html", "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder" ],
     [ "VisibilityGraphPathfinder", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_visibility_graph_pathfinder" ],
+    [ "CmmKinematicState", "dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_state.html", "dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_state" ],
+    [ "CmmKinematicAssembly", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_assembly.html", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_assembly" ],
     [ "ColorJsonConverter", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter.html", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_json_converter" ],
     [ "ColorNamer", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer" ],
     [ "ColorToolMappingUtils", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils" ],

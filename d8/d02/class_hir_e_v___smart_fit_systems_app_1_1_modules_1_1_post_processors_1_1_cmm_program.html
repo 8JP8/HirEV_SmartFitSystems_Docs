@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_program.html','../../','da/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_program-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Root container for a complete CMM intermediate inspection program. Acts as an agnostic intermediate representation between CAD path planning and specific machine post-processors.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_program__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_modules_8_post_processors_8_cmm_program_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_modules_8_post_processors_8_cmm_program_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_modules_8_post_processors_8_cmm_program_coll__map">
+<area shape="rect" title="Root container for a complete CMM intermediate inspection program. Acts as an agnostic intermediate r..." alt="" coords="5,5,247,325"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a21943afe30cd0eda5bde7348b465ce2c" id="r_a21943afe30cd0eda5bde7348b465ce2c"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a21943afe30cd0eda5bde7348b465ce2c">ProgramName</a> = &quot;INSPECTION_PROGRAM&quot;<code> [get, set]</code></td></tr>
+<tr class="memitem:a87c75924c41f6560e17c4d648190d54e" id="r_a87c75924c41f6560e17c4d648190d54e"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a87c75924c41f6560e17c4d648190d54e">ModelName</a> = string.Empty<code> [get, set]</code></td></tr>
+<tr class="memitem:aedac44c207319c14f57300837f77f7d8" id="r_aedac44c207319c14f57300837f77f7d8"><td class="memItemLeft">DateTime&#160;</td><td class="memItemRight"><a class="el" href="#aedac44c207319c14f57300837f77f7d8">CreatedAt</a> = DateTime.Now<code> [get, set]</code></td></tr>
+<tr class="memitem:a8ef439b08b3691eca943dd84399a65f9" id="r_a8ef439b08b3691eca943dd84399a65f9"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a8ef439b08b3691eca943dd84399a65f9">Units</a> = &quot;MM&quot;<code> [get, set]</code></td></tr>
+<tr class="memitem:ab28e2d54c3fee9812cdc565d209f49be" id="r_ab28e2d54c3fee9812cdc565d209f49be"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab28e2d54c3fee9812cdc565d209f49be">Decimals</a> = 4<code> [get, set]</code></td></tr>
+<tr class="memitem:ad04df4fbc19a49dca8991d99d779f3e5" id="r_ad04df4fbc19a49dca8991d99d779f3e5"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#ad04df4fbc19a49dca8991d99d779f3e5">WorkingPlane</a> = &quot;XYPLAN&quot;<code> [get, set]</code></td></tr>
+<tr class="memitem:a647dd46537e2c8645d2d1b8c553e1bbe" id="r_a647dd46537e2c8645d2d1b8c553e1bbe"><td class="memItemLeft"><a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html">CmmMachineDefinition</a>&#160;</td><td class="memItemRight"><a class="el" href="#a647dd46537e2c8645d2d1b8c553e1bbe">Machine</a> = new <a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html">CmmMachineDefinition</a>()<code> [get, set]</code></td></tr>
+<tr class="memitem:aa3dee7888cebeca65a2f083d1045458e" id="r_aa3dee7888cebeca65a2f083d1045458e"><td class="memItemLeft">List&lt; <a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html">CmmToolDefinition</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa3dee7888cebeca65a2f083d1045458e">Tools</a> = new List&lt;<a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html">CmmToolDefinition</a>&gt;()<code> [get, set]</code></td></tr>
+<tr class="memitem:a5722f97f0343f087333469f0128b03b4" id="r_a5722f97f0343f087333469f0128b03b4"><td class="memItemLeft">List&lt; <a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html">CmmSequence</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5722f97f0343f087333469f0128b03b4">Sequences</a> = new List&lt;<a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html">CmmSequence</a>&gt;()<code> [get, set]</code></td></tr>
+<tr class="memitem:a13f940d84dbf302c0082d5b9125f9a82" id="r_a13f940d84dbf302c0082d5b9125f9a82"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a13f940d84dbf302c0082d5b9125f9a82">SafeClearanceZ</a> = 500.0<code> [get, set]</code></td></tr>
+<tr class="memitem:ae1f2a685fa3e9b07e227ce7c49365a88" id="r_ae1f2a685fa3e9b07e227ce7c49365a88"><td class="memItemLeft">Dictionary&lt; int, <a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html">CmmPartBounds</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae1f2a685fa3e9b07e227ce7c49365a88">MultipartBounds</a> = new Dictionary&lt;int, <a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html">CmmPartBounds</a>&gt;()<code> [get, set]</code></td></tr>
+<tr class="memitem:af9d3256dc4e99fb64858b0e1ce9c17b4" id="r_af9d3256dc4e99fb64858b0e1ce9c17b4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af9d3256dc4e99fb64858b0e1ce9c17b4">IsMultipart</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Root container for a complete CMM intermediate inspection program. Acts as an agnostic intermediate representation between CAD path planning and specific machine post-processors. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+</div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="aedac44c207319c14f57300837f77f7d8" name="aedac44c207319c14f57300837f77f7d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedac44c207319c14f57300837f77f7d8">&#9670;&#160;</a></span>CreatedAt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.CreatedAt = DateTime.Now</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00026">26</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab28e2d54c3fee9812cdc565d209f49be" name="ab28e2d54c3fee9812cdc565d209f49be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28e2d54c3fee9812cdc565d209f49be">&#9670;&#160;</a></span>Decimals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.Decimals = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00028">28</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="af9d3256dc4e99fb64858b0e1ce9c17b4" name="af9d3256dc4e99fb64858b0e1ce9c17b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d3256dc4e99fb64858b0e1ce9c17b4">&#9670;&#160;</a></span>IsMultipart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.IsMultipart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00035">35</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_d_m_i_s_8cs_source.html#l00468">HirEV_SmartFitSystemsApp.Modules.PostProcessors.DMISPostProcessor.GenerateDmisFromIntermediate()</a>.</p>
+
+</div>
+</div>
+<a id="a647dd46537e2c8645d2d1b8c553e1bbe" name="a647dd46537e2c8645d2d1b8c553e1bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647dd46537e2c8645d2d1b8c553e1bbe">&#9670;&#160;</a></span>Machine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html">CmmMachineDefinition</a> HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.Machine = new <a class="el" href="../../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html">CmmMachineDefinition</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00030">30</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a87c75924c41f6560e17c4d648190d54e" name="a87c75924c41f6560e17c4d648190d54e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c75924c41f6560e17c4d648190d54e">&#9670;&#160;</a></span>ModelName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.ModelName = string.Empty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00025">25</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae1f2a685fa3e9b07e227ce7c49365a88" name="ae1f2a685fa3e9b07e227ce7c49365a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f2a685fa3e9b07e227ce7c49365a88">&#9670;&#160;</a></span>MultipartBounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;int, <a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html">CmmPartBounds</a>&gt; HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.MultipartBounds = new Dictionary&lt;int, <a class="el" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_part_bounds.html">CmmPartBounds</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00034">34</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a21943afe30cd0eda5bde7348b465ce2c" name="a21943afe30cd0eda5bde7348b465ce2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21943afe30cd0eda5bde7348b465ce2c">&#9670;&#160;</a></span>ProgramName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.ProgramName = &quot;INSPECTION_PROGRAM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00024">24</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a13f940d84dbf302c0082d5b9125f9a82" name="a13f940d84dbf302c0082d5b9125f9a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f940d84dbf302c0082d5b9125f9a82">&#9670;&#160;</a></span>SafeClearanceZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.SafeClearanceZ = 500.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5722f97f0343f087333469f0128b03b4" name="a5722f97f0343f087333469f0128b03b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5722f97f0343f087333469f0128b03b4">&#9670;&#160;</a></span>Sequences</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html">CmmSequence</a>&gt; HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.Sequences = new List&lt;<a class="el" href="../../dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html">CmmSequence</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00032">32</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa3dee7888cebeca65a2f083d1045458e" name="aa3dee7888cebeca65a2f083d1045458e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dee7888cebeca65a2f083d1045458e">&#9670;&#160;</a></span>Tools</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html">CmmToolDefinition</a>&gt; HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.Tools = new List&lt;<a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_tool_definition.html">CmmToolDefinition</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../de/d02/_d_m_i_s_8cs_source.html#l00468">HirEV_SmartFitSystemsApp.Modules.PostProcessors.DMISPostProcessor.GenerateDmisFromIntermediate()</a>.</p>
+
+</div>
+</div>
+<a id="a8ef439b08b3691eca943dd84399a65f9" name="a8ef439b08b3691eca943dd84399a65f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef439b08b3691eca943dd84399a65f9">&#9670;&#160;</a></span>Units</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.Units = &quot;MM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00027">27</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad04df4fbc19a49dca8991d99d779f3e5" name="ad04df4fbc19a49dca8991d99d779f3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad04df4fbc19a49dca8991d99d779f3e5">&#9670;&#160;</a></span>WorkingPlane</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Modules.PostProcessors.CmmProgram.WorkingPlane = &quot;XYPLAN&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html#l00029">29</a> do ficheiro <a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Modules/PostProcessors/<a class="el" href="../../d7/d01/_intermediate_model_8cs_source.html">IntermediateModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

@@ -1,16 +1,12 @@
 var searchData=
 [
-  ['path_20generation_20logging_20and_20ordering_0',['Path Generation Logging And Ordering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md15',1,'']]],
-  ['path_20planning_1',['Jump Path Planning',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md16',1,'']]],
-  ['path_20planning_20and_20point_20filtering_2',['Probe Path Planning And Point Filtering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md10',1,'']]],
-  ['path_20visualization_20performance_3',['Path Visualization Performance',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md17',1,'']]],
-  ['pathing_4',['SmartFit Shell Pathing',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md13',1,'']]],
-  ['performance_5',['Path Visualization Performance',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md17',1,'']]],
-  ['planning_6',['Jump Path Planning',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md16',1,'']]],
-  ['planning_20and_20point_20filtering_7',['Probe Path Planning And Point Filtering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md10',1,'']]],
-  ['point_20filtering_8',['Probe Path Planning And Point Filtering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md10',1,'']]],
-  ['principais_9',['Principais',['../index.html#dependencies_sec',1,'Dependências Principais'],['../index.html#quick_config_sec',1,'Ficheiros de Configuração Principais'],['../index.html#features_sec',1,'Funcionalidades Principais']]],
-  ['probe_20path_20planning_20and_20point_20filtering_10',['Probe Path Planning And Point Filtering',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md10',1,'']]],
-  ['profiles_11',['Tuning Profiles',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md20',1,'']]],
-  ['projeto_12',['Compilar o Projeto',['../index.html#build_sec',1,'']]]
+  ['início_20rápido_0',['Guia de Início Rápido',['../index.html#quick_start_sec',1,'']]],
+  ['in_20app_20config_1',['Optional Code-Supported Settings Not Currently In App.config',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md21',1,'']]],
+  ['intermediate_20dmis_205_203_2',['4. Mapping Rules: JSON Paths -&amp;gt; Intermediate -&amp;gt; DMIS 5.3',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md35',1,'']]],
+  ['intermediate_20language_20architecture_3',['DMIS 5.3 Post-Processor &amp;amp; Intermediate Language Architecture',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html',1,'']]],
+  ['intermediate_20representation_20ir_20architecture_4',['3. Intermediate Representation (IR) Architecture',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md32',1,'']]],
+  ['intermediate_20representation_3a_5',['Benefits of the Intermediate Representation:',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md33',1,'']]],
+  ['introdução_6',['Introdução',['../index.html#intro_sec',1,'']]],
+  ['ir_20architecture_7',['3. Intermediate Representation (IR) Architecture',['../de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md32',1,'']]],
+  ['is_20applied_8',['How Configuration Is Applied',['../db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md3',1,'']]]
 ];

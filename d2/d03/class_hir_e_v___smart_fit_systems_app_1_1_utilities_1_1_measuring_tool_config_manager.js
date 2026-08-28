@@ -12,6 +12,8 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_confi
     [ "LoadScannerSelection", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a606f2c12153aad1e0dcdb614a65a5a45", null ],
     [ "ParseRGBKey", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a8a0fe69269df397f4aa0a6ca5c3e6e39", null ],
     [ "ReloadConfiguration", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#ae147baed26bafe9345b940c46d27c572", null ],
+    [ "ResolveConfigPath", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#ae9d724916911152701792f939e6f7fea", null ],
+    [ "SaveConfigFile", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a40ab7e55886c707ebf8995bb0f9145fb", null ],
     [ "SaveScannerSelection", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a119eabd51d308cf3d6106a46b063d461", null ],
     [ "UpdateToolForColor", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a24a75971f0a336d238629d21faceb62c", null ],
     [ "_colorToolMapping", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_measuring_tool_config_manager.html#a7698b3978f3b7e84c8b9b6d1169e852f", null ],

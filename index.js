@@ -2,7 +2,7 @@ var index =
 [
     [ "Introdução", "index.html#intro_sec", null ],
     [ "Funcionalidades Principais", "index.html#features_sec", [
-      [ "Capacidades Atuais da Aplicação (v0.0.35)", "index.html#current_capabilities_sec", null ]
+      [ "Capacidades Atuais da Aplicação (v0.0.36)", "index.html#current_capabilities_sec", null ]
     ] ],
     [ "Guia de Início Rápido", "index.html#quick_start_sec", [
       [ "Requisitos", "index.html#quick_reqs_sec", null ],
