@@ -1,5 +1,17 @@
 var NAVTREEINDEX41 =
 {
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#aeb5b7a21fb7ddae3c84e13addb8e1cdb":[4,0,0,17,0],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#aef23030c74605d577a759ef2b2d77e24":[3,0,0,17,19],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#aef23030c74605d577a759ef2b2d77e24":[4,0,0,17,19],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af18ce86fc5cf36d5a06c51fcb199aac4":[3,0,0,17,63],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af18ce86fc5cf36d5a06c51fcb199aac4":[4,0,0,17,63],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af584342e5b34f6d49736d10f69ea2458":[3,0,0,17,22],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af584342e5b34f6d49736d10f69ea2458":[4,0,0,17,22],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af9b736d15ab2cfc0180d8d676ca7a625":[3,0,0,17,12],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af9b736d15ab2cfc0180d8d676ca7a625":[4,0,0,17,12],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#afbe80647ee524a0b3bb43572e35535c8":[3,0,0,17,62],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#afbe80647ee524a0b3bb43572e35535c8":[4,0,0,17,62],
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#afe5e0b58b56ccbdaf970a3b3f81b853d":[3,0,0,17,39],
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#afe5e0b58b56ccbdaf970a3b3f81b853d":[4,0,0,17,39],
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html":[3,0,0,2,0,4,0],
 "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_collision_heuristics_1_1_collision_check_result.html":[4,0,0,2,0,4,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX41 =
 "dir_b72536205cfb273ecedd60fb9b7aede9.html":[5,0,0,4,2],
 "dir_beeb59d76ded99acce51ac8f5c49ea87.html":[5,0,0,3],
 "dir_c078612de7d29c1e64bc616a1e24d27d.html":[5,0,0,6],
-"dir_d6c75461690148149e96e69f82d18357.html":[5,0,0,2,0],
-"dir_d87d3702f362378419675ede7900990a.html":[5,0,0,0,0],
-"dir_ec64a36d5623e5695c99f6634d75bca2.html":[5,0,0,1,0],
-"dir_f2f6b998881c527cd44ca0f75bcaefbf.html":[5,0,0,4,0],
-"files.html":[5,0],
-"functions.html":[4,3,0],
-"functions.html":[4,3,0,0],
-"functions_a.html":[4,3,0,1],
-"functions_b.html":[4,3,0,2],
-"functions_c.html":[4,3,0,3],
-"functions_d.html":[4,3,0,4],
-"functions_e.html":[4,3,0,5],
-"functions_enum.html":[4,3,3]
+"dir_d6c75461690148149e96e69f82d18357.html":[5,0,0,2,0]
 };

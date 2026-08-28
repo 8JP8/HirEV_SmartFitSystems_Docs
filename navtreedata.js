@@ -133,9 +133,9 @@ var NAVTREEINDEX =
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a69234056ec0a7cd791dcdec9934a78a9",
 "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a2dd773a37f3c7fa559221731fc5bcbd4",
 "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html",
-"de/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_probe_camera_pose_event_args.html#a508e955c0edcb34f5f8c57364c07acf2",
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#afe5e0b58b56ccbdaf970a3b3f81b853d",
-"functions_evnt.html"
+"de/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_body.html",
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#aeb5b7a21fb7ddae3c84e13addb8e1cdb",
+"dir_d87d3702f362378419675ede7900990a.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

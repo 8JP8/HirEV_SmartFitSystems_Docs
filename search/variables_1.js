@@ -20,7 +20,8 @@ var searchData=
   ['apppreference4_5fcommand_17',['appPreference4_Command',['../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#af584342e5b34f6d49736d10f69ea2458',1,'HirEV_SmartFitSystemsApp::Settings_SidePanel']]],
   ['apppreference4_5fischecked_18',['appPreference4_IsChecked',['../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#a4583c19a22c96ea3a49fc57fac31292c',1,'HirEV_SmartFitSystemsApp::Settings_SidePanel']]],
   ['apppreference4_5fselectedindex_19',['appPreference4_SelectedIndex',['../df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#ac205839198a18927f12125c08bf5166c',1,'HirEV_SmartFitSystemsApp::Settings_SidePanel']]],
-  ['availablescanners_20',['availableScanners',['../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a6e7ba59c89ec3c883dda9ad479ebcf68',1,'HirEV_SmartFitSystemsApp::Measuring_SidePanel']]],
-  ['availabletools_21',['availableTools',['../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#adcafb338e5b3fc91c513b5b5a16ae483',1,'HirEV_SmartFitSystemsApp::ColorToolItem']]],
-  ['axis_22',['axis',['../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aed6a125ec3a293a9469a05948ca738b2',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]]
+  ['approach_5fgrid_5fcell_5fsize_20',['APPROACH_GRID_CELL_SIZE',['../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a686ff0b8a77e0ee1850d2138aa1b8b7b',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms::ShellGeodesicNavigator']]],
+  ['availablescanners_21',['availableScanners',['../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a6e7ba59c89ec3c883dda9ad479ebcf68',1,'HirEV_SmartFitSystemsApp::Measuring_SidePanel']]],
+  ['availabletools_22',['availableTools',['../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_color_tool_item.html#adcafb338e5b3fc91c513b5b5a16ae483',1,'HirEV_SmartFitSystemsApp::ColorToolItem']]],
+  ['axis_23',['axis',['../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aed6a125ec3a293a9469a05948ca738b2',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]]
 ];
