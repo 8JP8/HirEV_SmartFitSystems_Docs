@@ -43,6 +43,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader =
     [ "_cachedToolModels", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a0113707924da7716fde5964922ba0273", null ],
     [ "_cachedToolModelsData", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a525dcde313b67e7bf2d2d9b1ae3e3289", null ],
     [ "_cachedTransformations", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a296d4ea00bb6b9934e8662417d86dadd", null ],
+    [ "_rawCadEntitiesCache", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a5316fc65a45496b77fca61d30d423a3a", null ],
     [ "SCANNERS_FOLDER", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#ab780169b166c34d0a090cd4d658c9bac", null ],
     [ "SupportedModelExtensions", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#ae394ec47af4ae00edf49c8f28a0d3c42", null ],
     [ "TOOLS_FOLDER", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#aeece37a04dd7fd32764c0b3910a8eb8c", null ],

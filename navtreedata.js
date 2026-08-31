@@ -48,18 +48,24 @@ var NAVTREE =
       [ "Optional Code-Supported Settings Not Currently In App.config", "db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md21", null ],
       [ "Tuning Profiles", "db/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_950258e0a4ae35a6757ffce88af775f6.html#autotoc_md22", null ]
     ] ],
+    [ "PowerPoint Presentation Notes: DMIS 5.3 Post-Processor &amp; Intermediate Language", "df/d00/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_e9ec7c5bcc09bc4383bf4b2bac99fca9.html", [
+      [ "Slide 1: Introduction to Program Generation", "df/d00/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_e9ec7c5bcc09bc4383bf4b2bac99fca9.html#autotoc_md25", null ],
+      [ "Slide 2: Stage 1 - Intermediate Representation (IR)", "df/d00/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_e9ec7c5bcc09bc4383bf4b2bac99fca9.html#autotoc_md27", null ],
+      [ "Slide 3: Stage 2 - ANSI/DMIS 5.3 Post-Processor", "df/d00/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_e9ec7c5bcc09bc4383bf4b2bac99fca9.html#autotoc_md29", null ],
+      [ "Slide 4: Key Benefits &amp; Impact", "df/d00/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_e9ec7c5bcc09bc4383bf4b2bac99fca9.html#autotoc_md31", null ]
+    ] ],
     [ "DMIS 5.3 Post-Processor &amp; Intermediate Language Architecture", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html", [
-      [ "1. Executive Summary &amp; Objective", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md24", null ],
-      [ "2. Standard Reference Analysis (ANSI/DMIS 5.3)", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md26", [
-        [ "2.1 Core Statements &amp; Syntax Rules", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md27", null ],
-        [ "2.2 Machine Parameters &amp; Sensor Settings", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md28", null ],
-        [ "2.3 Machine, Wrist &amp; Tool Kinematics (Section 5.4.4, Clause 6, Annex A.29)", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md29", null ],
-        [ "2.4 Motion &amp; Measurement Sequences", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md30", null ]
+      [ "1. Executive Summary &amp; Objective", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md33", null ],
+      [ "2. Standard Reference Analysis (ANSI/DMIS 5.3)", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md35", [
+        [ "2.1 Core Statements &amp; Syntax Rules", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md36", null ],
+        [ "2.2 Machine Parameters &amp; Sensor Settings", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md37", null ],
+        [ "2.3 Machine, Wrist &amp; Tool Kinematics (Section 5.4.4, Clause 6, Annex A.29)", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md38", null ],
+        [ "2.4 Motion &amp; Measurement Sequences", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md39", null ]
       ] ],
-      [ "3. Intermediate Representation (IR) Architecture", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md32", [
-        [ "Benefits of the Intermediate Representation:", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md33", null ]
+      [ "3. Intermediate Representation (IR) Architecture", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md41", [
+        [ "Benefits of the Intermediate Representation:", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md42", null ]
       ] ],
-      [ "4. Mapping Rules: JSON Paths -&gt; Intermediate -&gt; DMIS 5.3", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md35", null ]
+      [ "4. Mapping Rules: JSON Paths -&gt; Intermediate -&gt; DMIS 5.3", "de/d03/md__c_1_2_users_2_j_o_a_o-_s_a_r_k_k_i_s_2_one_drive_01-_01_a_g_t_01_robotique_01_inc_2_s_a_r_k_caef9c994cec7bb5733b1e00b67d620c.html#autotoc_md44", null ]
     ] ],
     [ "Pacotes", "namespaces.html", [
       [ "Lista de pacotes", "namespaces.html", "namespaces_dup" ],
@@ -105,37 +111,37 @@ var NAVTREEINDEX =
 "d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder.html#aaf622483773a120c5fd5dc2c9b73ea31",
 "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a269def358f114e4cafaa353c4cf70f21",
 "d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a57f31e8b59bcc0115a4fa106274abc1d",
-"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8d4d4096e25ec3bbe1d2ff5e8092d599",
-"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac4f92daecc85a293c81d46d73e3e648d",
-"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af0d154b69b4bfac50ab9089bfc5d43cb",
-"d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html#abf5010a379f8d964169464110b14a6fb",
-"d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#ab73af8bae730fbe925f6b28909983eda",
-"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#aeecbca44b148d73dedf4c507b207783a",
-"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel.html#a428d7b351bf1800d9aedf3471336f058",
-"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a772e7dc47dce2327a7edc1e574e8d0a0",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0c30b1cb765dde19dc3cf7e31ef05471",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2e33cd0d22fd4c99a1162e7b8616b37d",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a59259ebeebae81f28f16404cb9fadcfc",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a809be1cd501ac6004185ef0454f44f39",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa4966c07ba02a058303665eed8c97cd4",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac8b105268536a98e1a1e907656ac2419",
-"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aee9cef8d6ddfd3a658326df4065608ec",
-"d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_machine_definition.html",
-"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html#ab9c2382fe1ecf89b27c8f771bd8cbce4",
-"d8/d03/_color_json_converter_8cs.html",
-"d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html#abbcdde5e806df1f83564ae1ab4e0300b",
-"d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac8fabd6fc72bb9e27365963a5f5024ed",
-"da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a68f7f14f76a4ce586246382ecf9a055d",
-"da/d02/class_hir_e_v___smart_fit_systems_app_1_1_log_node.html#a7e60b939bafa0b9322264398181f0cad",
-"db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a1cdcfdf655f3948d9311b1e6cf8e506d",
-"db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html#a3925de088fa22cd714e3b2bdb143dc5f",
-"dc/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_post_processors_1_1_cmm_sequence.html#a01edc072cab801b774e66a1d8e9e343f",
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a69234056ec0a7cd791dcdec9934a78a9",
-"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#a2dd773a37f3c7fa559221731fc5bcbd4",
-"dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_jump_collision_validator.html",
-"de/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_feature_row___m_body.html",
-"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#aeb5b7a21fb7ddae3c84e13addb8e1cdb",
-"dir_d87d3702f362378419675ede7900990a.html"
+"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8d47ada4eda8136229c9e12201277149",
+"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac32711b8f9d1864b37b7d2c34e93f3b7",
+"d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af00998d97fd34dfbe09905de5106bf3b",
+"d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html#a94592a7aea4a990347dffd13c3f21819",
+"d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_controls_1_1_tolerance_sliders_view_model.html#ab5357ad5001667c4795f0507e5d22f9d",
+"d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#ae98043774eb85da77af2a05dda4425e9",
+"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_planning___side_panel.html#a23758176fd29e74d506e69d908dc93c8",
+"d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a2d8305d79c50f7686788ca9a7556f912",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0bb6ca5e82b1d6993ca7ebc5b75661c5",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2cff5cb1857270b753cf6d2621aab394",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a56f3e9abc3e6eea4e6d80bbac2b3df8c",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8042e54ff880692ad2689578f1411aa2",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa2fb681b164d876f8aef96d42bd8372b",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac745d186ffd9fa07f8fc8c7ce4e67192",
+"d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aeb8f9338eeb2d106265e24b01294e69d",
+"d7/d00/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_scan_path_manager_1_1_surface_sample.html#a3b2a5fb6074785b22e77405ecaa49d57",
+"d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_tool_mapping_utils.html#a5d47efa959d376cf715a56d13b844412",
+"d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#af4585ff1333827885c5d0ecdcb7181a0",
+"d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html#a74f1df1801292b208061e2e58317d2b5",
+"d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#abdd6c5cd753fad061f44f48e993b5e34",
+"da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a5294753251164026b695a58254384d88",
+"da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_selection_utils.html#a3911c4f56daf073514e6675dbf1de358",
+"db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a0afaf452e2c77d64538aa077681bb228",
+"db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_cmm_kinematic_assembly.html",
+"dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_r_r_t_star_pathfinder_1_1_tree_node.html#afbc269c6d39ea31c444c90b6431972d7",
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a5e3632370a6fa8d7972a4244b361becc",
+"dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#a7487e68b6e10b265910fa537522fccbc",
+"dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html#aadb0df6d7e10ccd8cf9c67333ffcd04f",
+"de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#aa8a892190d995cdebe2c292e91d7c40b",
+"df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html#ac2a76d65d4bfb809edb3a3a979aa618a",
+"df/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_segment_data.html#ab1f21d78dbeb8f82800129581cb83a20"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

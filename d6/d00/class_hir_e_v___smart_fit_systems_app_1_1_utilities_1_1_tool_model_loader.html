@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.ToolModelLoade
 <div class="dyncontent">
 <div class="center"><img src="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_tool_model_loader_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_tool_model_loader_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_tool_model_loader_coll__map">
-<area shape="rect" title="Utility for loading and managing 3D tool/scanner models from the 3DModels directories." alt="" coords="5,5,224,832"/>
+<area shape="rect" title="Utility for loading and managing 3D tool/scanner models from the 3DModels directories." alt="" coords="5,5,224,853"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -198,6 +198,7 @@ Atributos Privados Estáticos</h2></td></tr>
 <tr class="memitem:a0113707924da7716fde5964922ba0273" id="r_a0113707924da7716fde5964922ba0273"><td class="memItemLeft">static Dictionary&lt; string, Entity &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0113707924da7716fde5964922ba0273">_cachedToolModels</a> = new Dictionary&lt;string, Entity&gt;(StringComparer.OrdinalIgnoreCase)</td></tr>
 <tr class="memitem:a296d4ea00bb6b9934e8662417d86dadd" id="r_a296d4ea00bb6b9934e8662417d86dadd"><td class="memItemLeft">static Dictionary&lt; string, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html">ToolTransformation</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a296d4ea00bb6b9934e8662417d86dadd">_cachedTransformations</a> = new Dictionary&lt;string, <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html">ToolTransformation</a>&gt;(StringComparer.OrdinalIgnoreCase)</td></tr>
 <tr class="memitem:a5c000c760f92dc17434368b6aaee9c44" id="r_a5c000c760f92dc17434368b6aaee9c44"><td class="memItemLeft">static Dictionary&lt; string, DateTime &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5c000c760f92dc17434368b6aaee9c44">_cachedModelTransformationTimestamps</a> = new Dictionary&lt;string, DateTime&gt;(StringComparer.OrdinalIgnoreCase)</td></tr>
+<tr class="memitem:a5316fc65a45496b77fca61d30d423a3a" id="r_a5316fc65a45496b77fca61d30d423a3a"><td class="memItemLeft">static readonly System.Collections.Concurrent.ConcurrentDictionary&lt; string, List&lt; Entity &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5316fc65a45496b77fca61d30d423a3a">_rawCadEntitiesCache</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Utility for loading and managing 3D tool/scanner models from the 3DModels directories. </p>
@@ -235,9 +236,9 @@ Atributos Privados Estáticos</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01619">1619</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01634">1634</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01595">CreateDefaultCylinderProbe()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01610">CreateDefaultCylinderProbe()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -362,11 +363,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00475">475</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00477">477</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00037">HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.CachedModelData.Blocks</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00032">HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.CachedModelData.Entities</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00037">HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.CachedModelData.Blocks</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00032">HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.CachedModelData.Entities</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00384">LoadCachedModelDataFromFile()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00386">LoadCachedModelDataFromFile()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -570,11 +571,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A Mesh representing the default cylinder probe.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01595">1595</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01610">1610</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01619">AnchorMeshBaseAtOrigin()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01634">AnchorMeshBaseAtOrigin()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18590">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18665">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -734,9 +735,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A default <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html" title="Represents transformation and kinematic chain data for a CMM probe tool.">ToolTransformation</a>.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01522">1522</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01537">1537</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -907,11 +908,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">1434</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">1449</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01522">CreateDefaultTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">ResolveTransformationsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01753">ResolveTransformationToolName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01551">WriteXmlTransformation()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01537">CreateDefaultTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">ResolveTransformationsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01768">ResolveTransformationToolName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01566">WriteXmlTransformation()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00209">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00211">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1112,9 +1113,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates a missing XML transformation file for a specific model path or model name. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00209">209</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00211">211</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01902">HirEV_SmartFitSystemsApp.Utilities.PathManager.EnsureCurrentScannerConfiguration()</a> e <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l03064">HirEV_SmartFitSystemsApp.Measuring_SidePanel.UpdateToolConfiguration()</a>.</p>
 <div class="dynheader">
@@ -1262,9 +1263,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates missing XML transformation files for every supported 3D model found in Machine_Tools and Machine_Scanners. Tool transformations are stored under Machine_Tools; scanner transformations are stored under Machine_Scanners. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">179</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">181</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a>.</p>
 <div class="dynheader">
@@ -1351,9 +1352,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01169">1169</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01171">1171</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1468,11 +1469,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01140">1140</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01142">1142</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
 <p class="reference">Referências <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00080">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.MontageId</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1518,11 +1519,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01152">1152</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01154">1154</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
 <p class="reference">Referências <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00080">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.MontageId</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1562,11 +1563,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Scans the machine scanners model folder and returns model names that can be used as scanner selections. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A sorted list of available scanner names without file extensions.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00126">126</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00128">128</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00151">HirEV_SmartFitSystemsApp.Models.ScannerTypes.DefaultScanner</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00021">TRANSFORMATIONS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00151">HirEV_SmartFitSystemsApp.Models.ScannerTypes.DefaultScanner</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00021">TRANSFORMATIONS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19181">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19283">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1636,11 +1637,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A sorted list of available tool names without file extensions.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00058">58</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00060">60</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.DefaultTool</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00369">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.StandardMontages</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.DefaultTool</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00369">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.StandardMontages</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00124">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.GetAvailableTools()</a>, <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l02908">HirEV_SmartFitSystemsApp.Measuring_SidePanel.LoadColorToolItems()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19181">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00124">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.GetAvailableTools()</a>, <a class="el" href="../../de/d00/_measuring___side_panel_8xaml_8cs_source.html#l02908">HirEV_SmartFitSystemsApp.Measuring_SidePanel.LoadColorToolItems()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19283">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1743,9 +1744,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A string cache key.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01514">1514</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01529">1529</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1923,11 +1924,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The absolute file path of the transformation file.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">1783</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">1798</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01753">ResolveTransformationToolName()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01768">ResolveTransformationToolName()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2101,11 +2102,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Checks if a model name is already cached in memory. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">280</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">282</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19181">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19283">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2175,11 +2176,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Determines if the tool is a standalone ruby stylus (e.g. from Ruby_Styli) rather than a full CMM head montage. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00908">908</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00910">910</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l11248">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GenerateProgramAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l11277">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GenerateProgramAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2319,11 +2320,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The loaded <a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_1_1_cached_model_data.html" title="Represents cached 3D model data containing design entities and blocks.">CachedModelData</a>, or null if an error occurs.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00384">384</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00386">386</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00475">CenterAndTransformCachedEntities()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00477">CenterAndTransformCachedEntities()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2539,11 +2540,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if blocks were loaded or created successfully.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00951">951</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00953">953</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00951">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00953">LoadKinematicMontageBlocks()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00951">LoadKinematicMontageBlocks()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00855">LoadMontageEntity()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00953">LoadKinematicMontageBlocks()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00857">LoadMontageEntity()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18665">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2558,22 +2559,24 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_afddfe91e5213e93b69025cf20c45650d_icgraph.png" border="0" usemap="#ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_afddfe91e5213e93b69025cf20c45650d_icgraph" loading="lazy" alt=""/></div>
 <map name="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_afddfe91e5213e93b69025cf20c45650d_icgraph" id="ad6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_afddfe91e5213e93b69025cf20c45650d_icgraph">
-<area shape="rect" title="Loads or creates the separate Head block and Probe Arm block in design &#160;for dynamic kinematic simulat..." alt="" coords="3228,307,3427,365"/>
-<area shape="poly" title=" " alt="" coords="3366,292,3352,288,3328,285,3306,287,3292,292,3285,298,3284,308,3280,305,3280,296,3289,287,3305,282,3328,280,3354,283,3371,293"/>
-<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9bfc5c51aa50d5fa184042821cc8b2a3" title="Executes the CreateProbeCylinder method." alt="" coords="2452,273,2676,332"/>
-<area shape="poly" title=" " alt="" coords="3210,330,3180,331,2676,309,2676,304,3180,325,3215,330"/>
-<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#afa51c324df889d2c3db30b8d1600744e" title="Attempts to load or synthesize a CMM head + probe tip montage entity. Assembles a unified block with ..." alt="" coords="2981,340,3180,399"/>
-<area shape="poly" title=" " alt="" coords="3215,351,3181,359,3180,353,3210,352"/>
+<area shape="rect" title="Loads or creates the separate Head block and Probe Arm block in design &#160;for dynamic kinematic simulat..." alt="" coords="3228,409,3427,468"/>
+<area shape="poly" title=" " alt="" coords="3366,395,3352,391,3328,388,3306,390,3292,395,3285,401,3284,411,3280,407,3280,399,3289,390,3305,385,3328,383,3354,385,3371,395"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a9bfc5c51aa50d5fa184042821cc8b2a3" title="Executes the CreateProbeCylinder method." alt="" coords="2452,323,2676,381"/>
+<area shape="poly" title=" " alt="" coords="3214,405,3180,400,3045,381,2909,368,2676,356,2676,351,2909,362,3045,375,3180,395,3219,405"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#afa51c324df889d2c3db30b8d1600744e" title="Attempts to load or synthesize a CMM head + probe tip montage entity. Assembles a unified block with ..." alt="" coords="2981,409,3180,468"/>
+<area shape="poly" title=" " alt="" coords="3210,439,3181,441,3180,436,3215,439"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8978e0116000369b6df4421c415f1af2" title=" " alt="" coords="2443,489,2685,548"/>
+<area shape="poly" title=" " alt="" coords="3219,472,3180,483,3049,501,2916,512,2686,521,2686,516,2916,507,3048,495,3180,477,3214,473"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a6600a2cd0f05752c1f51d26731491fc2" title=" " alt="" coords="2156,223,2382,281"/>
-<area shape="poly" title=" " alt="" coords="2435,281,2382,274,2382,269,2440,281"/>
+<area shape="poly" title=" " alt="" coords="2459,317,2357,285,2358,279,2464,317"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="1558,297,1766,356"/>
-<area shape="poly" title=" " alt="" coords="2435,311,2095,329,1767,331,1766,325,2095,324,2440,310"/>
+<area shape="poly" title=" " alt="" coords="2434,349,1767,332,1766,327,2439,348"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="326,416,565,459"/>
-<area shape="poly" title=" " alt="" coords="2500,265,2402,213,2271,154,2197,128,2121,107,2042,93,1964,88,1048,88,976,90,914,95,859,105,810,120,763,143,717,173,668,212,615,260,597,286,590,312,584,339,567,368,535,396,500,418,497,413,532,392,563,365,579,337,585,311,592,284,611,257,665,208,713,169,760,138,808,115,858,100,913,89,976,84,1048,83,1964,83,2043,88,2122,102,2199,123,2273,149,2405,208,2505,265"/>
+<area shape="poly" title=" " alt="" coords="2521,311,2464,262,2430,236,2394,213,2281,152,2234,131,2188,114,2142,102,2091,94,1964,88,1048,88,976,90,914,95,859,105,810,120,763,143,717,173,668,212,615,260,597,286,590,312,584,339,567,368,535,396,500,418,497,413,532,392,563,365,579,337,585,311,592,284,611,257,665,208,713,169,760,138,808,115,858,100,913,89,976,84,1048,83,1964,83,2091,89,2143,97,2190,109,2236,126,2283,148,2396,208,2433,231,2467,258,2526,312"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a28e581c8814d33044e87ecde751ceb5e" title=" " alt="" coords="2143,424,2395,483"/>
-<area shape="poly" title=" " alt="" coords="2494,339,2329,426,2327,421,2489,340"/>
+<area shape="poly" title=" " alt="" coords="2464,386,2357,426,2356,421,2459,388"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a0b4d9a35dced8453e643e1b6168fddb2" title="Switches the active simulation tool immediately and updates the 3D model in the viewport." alt="" coords="2143,5,2394,48"/>
-<area shape="poly" title=" " alt="" coords="2540,258,2516,215,2483,164,2442,113,2393,69,2362,51,2362,46,2397,64,2446,109,2487,161,2521,213,2545,260"/>
+<area shape="poly" title=" " alt="" coords="2546,307,2524,254,2491,189,2448,124,2422,95,2393,69,2364,51,2365,46,2397,65,2426,91,2452,121,2496,186,2528,252,2551,309"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a776ae9e3a638feb6d489a910ebbc6c5e" title=" " alt="" coords="1854,123,2071,181"/>
 <area shape="poly" title=" " alt="" coords="2160,217,2054,185,2055,179,2165,217"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a4ecb02206e332859ae40670c182b497b" title=" " alt="" coords="1856,256,2069,315"/>
@@ -2607,7 +2610,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae3e2438082683ba849ddc8c5d2c2d038" title="Executes the PlantSimulationToolAtPathPose method." alt="" coords="1842,491,2083,549"/>
 <area shape="poly" title=" " alt="" coords="2130,484,2084,496,2083,491,2125,484"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a597b3517641bc6b7dbfccf6807abcd4b" title="Executes the SeekSimulationToPercent method." alt="" coords="1842,573,2083,632"/>
-<area shape="poly" title=" " alt="" coords="2216,491,2159,530,2096,564,2068,575,2067,570,2094,559,2156,526,2211,493"/>
+<area shape="poly" title=" " alt="" coords="2210,490,2096,564,2068,575,2067,570,2093,559,2205,492"/>
 <area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa2f9a196aeb2314b6ea7a01947d419b5" title="Executes the UpdatePathTransitionFrame method." alt="" coords="1258,453,1478,512"/>
 <area shape="poly" title=" " alt="" coords="2125,458,1478,482,1478,476,2130,457"/>
 <area shape="poly" title=" " alt="" coords="1225,338,1156,350,1155,345,1230,337"/>
@@ -2621,16 +2624,15 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="1585,483,1492,444,1463,433,1463,427,1494,439,1590,484"/>
 <area shape="poly" title=" " alt="" coords="628,500,511,462,511,457,633,499"/>
 <area shape="poly" title=" " alt="" coords="1240,465,1195,461,1195,455,1246,465"/>
-<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a0d7b6ed9bede1db563a11438cb3acf9c" title="Attempts to load a tool model for the given tool name. Returns null if not found." alt="" coords="2733,340,2933,399"/>
-<area shape="poly" title=" " alt="" coords="2962,370,2933,372,2933,367,2968,369"/>
-<area shape="poly" title=" " alt="" coords="2716,341,2676,333,2676,328,2721,341"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8978e0116000369b6df4421c415f1af2" title=" " alt="" coords="2443,613,2685,672"/>
-<area shape="poly" title=" " alt="" coords="2795,409,2596,615,2593,611,2790,411"/>
-<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6e2b57efadc809fd6955d601c1886d89" title=" " alt="" coords="2145,680,2392,739"/>
-<area shape="poly" title=" " alt="" coords="2430,673,2393,684,2393,679,2425,674"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html#a0d7b6ed9bede1db563a11438cb3acf9c" title="Attempts to load a tool model for the given tool name. Returns null if not found." alt="" coords="2733,409,2933,468"/>
+<area shape="poly" title=" " alt="" coords="2962,439,2933,441,2933,436,2968,439"/>
+<area shape="poly" title=" " alt="" coords="2722,404,2657,385,2658,379,2728,404"/>
+<area shape="poly" title=" " alt="" coords="2721,472,2665,491,2664,486,2716,473"/>
+<area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6e2b57efadc809fd6955d601c1886d89" title=" " alt="" coords="2145,649,2392,708"/>
+<area shape="poly" title=" " alt="" coords="2497,555,2325,651,2324,646,2492,557"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aacf707d4926f4cfcc3e551998d986cc0" title="Main entry point for showing a context menu. Dynamically builds the menu based on the item type (Face..." alt="" coords="1830,680,2095,739"/>
-<area shape="poly" title=" " alt="" coords="2430,645,2290,655,2143,671,2081,682,2080,677,2142,665,2289,650,2425,645"/>
-<area shape="poly" title=" " alt="" coords="2127,709,2095,712,2095,707,2132,709"/>
+<area shape="poly" title=" " alt="" coords="2432,552,2291,594,2144,640,2034,682,2033,677,2142,635,2290,588,2427,553"/>
+<area shape="poly" title=" " alt="" coords="2132,692,2095,699,2095,693,2127,693"/>
 <area shape="poly" title=" " alt="" coords="2010,665,1993,661,1962,659,1936,661,1918,665,1910,672,1909,682,1905,678,1905,669,1916,661,1935,655,1963,653,1994,656,2015,666"/>
 <area shape="rect" href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="1548,680,1775,739"/>
 <area shape="poly" title=" " alt="" coords="1812,709,1775,712,1775,707,1818,709"/>
@@ -2688,9 +2690,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Loads or creates the separate Head block and Probe Arm block in <em>design</em>  for dynamic kinematic simulation where the Head remains vertical and only the probe arm tilts. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">965</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">967</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00085">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.Adapter</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.DefaultTool</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01140">FindCompiledTipCadPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01152">FindHeadCadPath()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00812">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.GetBestMontageForStylus()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00908">IsStandaloneStylusTool()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00053">HirEV_SmartFitSystemsApp.Models.CmmExtensionBarDefinition.Length</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00063">HirEV_SmartFitSystemsApp.Models.CmmStylusExtensionDefinition.Length</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01182">LoadRawEntitiesFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01286">PositionHeadCad()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00741">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.ResolveToolMontage()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00088">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.StylusExtension</a>, <a class="el" href="../../db/d00/_cmm_kinematic_assembly_8cs_source.html#l00269">HirEV_SmartFitSystemsApp.Utilities.CmmKinematicAssembly.SynthesisHeadMesh()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00094">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.TotalReachLength</a>.</p>
+<p class="reference">Referências <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00085">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.Adapter</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.MeasuringToolTypes.DefaultTool</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01142">FindCompiledTipCadPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01154">FindHeadCadPath()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00812">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.GetBestMontageForStylus()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00910">IsStandaloneStylusTool()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00053">HirEV_SmartFitSystemsApp.Models.CmmExtensionBarDefinition.Length</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00063">HirEV_SmartFitSystemsApp.Models.CmmStylusExtensionDefinition.Length</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01184">LoadRawEntitiesFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01301">PositionHeadCad()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00741">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.ResolveToolMontage()</a>, <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00088">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.StylusExtension</a>, <a class="el" href="../../db/d00/_cmm_kinematic_assembly_8cs_source.html#l00269">HirEV_SmartFitSystemsApp.Utilities.CmmKinematicAssembly.SynthesisHeadMesh()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00094">HirEV_SmartFitSystemsApp.Models.CmmToolMontage.TotalReachLength</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2755,11 +2757,11 @@ Grafo de chamadas desta função:</div>
 
 <p>Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">630</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">632</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00384">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00386">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13526">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateScannerModel()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l18140">HirEV_SmartFitSystemsApp.Utilities.PathManager.EnsureVerificationScannerTemplates()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18590">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13526">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateScannerModel()</a>, <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l18160">HirEV_SmartFitSystemsApp.Utilities.PathManager.EnsureVerificationScannerTemplates()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18665">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2941,11 +2943,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Loads a model into memory cache asynchronously, reporting progress. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">318</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">320</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00384">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00386">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19181">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01847">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l19283">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.PreloadToolModelsAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3067,11 +3069,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Attempts to load or synthesize a CMM head + probe tip montage entity. Assembles a unified block with the ruby ball contact point (tip) at (0,0,0). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00855">855</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00857">857</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00951">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00953">LoadKinematicMontageBlocks()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3190,9 +3192,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Reads raw CAD entities from an STL or STEP file without modifying coordinates. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01182">1182</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01184">1184</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00044">_rawCadEntitiesCache</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -3245,11 +3249,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Attempts to load a tool model for the given tool name. Returns null if not found. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">711</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">713</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01169">ExtractBallDiameterFromStylusName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00908">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00384">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00855">LoadMontageEntity()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01243">TryGetEntityBounds()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01171">ExtractBallDiameterFromStylusName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00910">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00386">LoadCachedModelDataFromFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00857">LoadMontageEntity()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01258">TryGetEntityBounds()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18590">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l13315">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreateProbeCylinder()</a> e <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18665">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.ShowToolPreviewOnPoint()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3436,11 +3440,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The loaded tool transformation, or a default transformation if not found or an error occurs.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">1389</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">1404</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01514">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01564">ReadJsonTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01539">ReadXmlTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01753">ResolveTransformationToolName()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01529">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01579">ReadJsonTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01554">ReadXmlTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01768">ResolveTransformationToolName()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00475">CenterAndTransformCachedEntities()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01595">CreateDefaultCylinderProbe()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00477">CenterAndTransformCachedEntities()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01610">CreateDefaultCylinderProbe()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3644,9 +3648,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Centers entities in X and Y and aligns their top (maxZ) to <em>targetTopZ</em> . Returns the resulting bottom Z coordinate. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01337">1337</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01352">1352</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01243">TryGetEntityBounds()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01258">TryGetEntityBounds()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3694,11 +3698,11 @@ Grafo de chamadas desta função:</div>
 
 <p>Positions head entities centered in X and Y with bottom autojoint face at Z = 0 and upper housing extending along +Z towards the CMM quill, rotated 90 degrees around Z so the motorized system is oriented correctly. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01286">1286</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01301">1301</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01243">TryGetEntityBounds()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01258">TryGetEntityBounds()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3754,9 +3758,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The parsed <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html" title="Represents transformation and kinematic chain data for a CMM probe tool.">ToolTransformation</a>, or null if reading fails.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01564">1564</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01579">1579</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -3920,9 +3924,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The parsed <a class="el" href="../../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_tool_transformation.html" title="Represents transformation and kinematic chain data for a CMM probe tool.">ToolTransformation</a>, or null if reading fails.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01539">1539</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01554">1554</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -4091,11 +4095,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The resolved absolute path of the model file, or null if not found.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">1683</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">1698</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">SupportedModelExtensions</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00209">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00211">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -4273,9 +4277,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The resolved absolute directory path.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">1643</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">1658</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00126">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00058">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00908">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">ResolveTransformationsFolder()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00128">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00060">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00910">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">ResolveTransformationsFolder()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -4454,11 +4458,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The transformations folder absolute path.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">1729</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">1744</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01643">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01658">ResolveModelsFolder()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -4629,9 +4633,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Resolves the tool name key used for the transformation file lookup. For files inside a <code>Cmm_Montages/&lt;MontageFolder&gt;/</code> path, the montage folder name is returned as the key (so Head.stp, Tip.stp and Stylus.stl all share one XML like <code>PH10M_TP20.xml</code>). For all other files, the file's own name without extension is used. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01753">1753</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01768">1768</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -4804,11 +4808,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">1469</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">1484</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01522">CreateDefaultTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01514">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01564">ReadJsonTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01539">ReadXmlTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01753">ResolveTransformationToolName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01578">WriteJsonTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01551">WriteXmlTransformation()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01537">CreateDefaultTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01529">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01579">ReadJsonTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01554">ReadXmlTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01768">ResolveTransformationToolName()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01593">WriteJsonTransformation()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01566">WriteXmlTransformation()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -5005,9 +5009,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01243">1243</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01258">1258</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01337">PositionCadAtTopZ()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01286">PositionHeadCad()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01352">PositionCadAtTopZ()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01301">PositionHeadCad()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -5125,11 +5129,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Loads a machine model from Machine_Scanners and falls back to Machine_Tools when needed. The returned entity is aligned so the local tool axis is +Z through the model base center. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">224</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">226</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00043">_cachedModelTransformationTimestamps</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01514">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01783">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00043">_cachedModelTransformationTimestamps</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">_cachedToolModels</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">_cachedToolModelsData</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">_cachedTransformations</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01529">GetTransformationCacheKey()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01798">GetTransformationPath()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">SCANNERS_FOLDER</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">TOOLS_FOLDER</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -5303,9 +5307,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01578">1578</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01593">1593</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -5475,9 +5479,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01551">1551</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01566">1566</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01434">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01449">EnsureTransformationFileExists()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -5635,7 +5639,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00043">43</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
 </div>
 </div>
@@ -5661,7 +5665,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00041">41</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
 </div>
 </div>
@@ -5687,7 +5691,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00040">40</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
 </div>
 </div>
@@ -5713,7 +5717,35 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00042">42</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01389">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01469">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01404">LoadTransformation()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01484">SynchronizeTransformationFiles()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
+
+</div>
+</div>
+<a id="a5316fc65a45496b77fca61d30d423a3a" name="a5316fc65a45496b77fca61d30d423a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5316fc65a45496b77fca61d30d423a3a">&#9670;&#160;</a></span>_rawCadEntitiesCache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly System.Collections.Concurrent.ConcurrentDictionary&lt;string, List&lt;Entity&gt; &gt; HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader._rawCadEntitiesCache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">                                                                                         =</div>
+<div class="line"><span class="keyword">new</span> System.Collections.Concurrent.ConcurrentDictionary&lt;string, List&lt;Entity&gt;&gt;(StringComparer.OrdinalIgnoreCase)</div>
+</div><!-- fragment -->
+<p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00044">44</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01184">LoadRawEntitiesFromFile()</a>.</p>
 
 </div>
 </div>
@@ -5739,7 +5771,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00020">20</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00209">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00126">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00211">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00128">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
 </div>
 </div>
@@ -5765,7 +5797,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00126">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00058">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01683">ResolveModelFile()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00128">GetAvailableScannerNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00060">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01698">ResolveModelFile()</a>.</p>
 
 </div>
 </div>
@@ -5791,7 +5823,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00019">19</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00209">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00179">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00058">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00280">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00908">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00965">LoadKinematicMontageBlocks()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00630">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00318">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00711">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01729">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00224">ValidateCacheFreshness()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00211">EnsureTransformationFileForModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00181">EnsureTransformationFilesForKnown3DModels()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00060">GetAvailableToolNames()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00282">IsModelCached()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00910">IsStandaloneStylusTool()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00967">LoadKinematicMontageBlocks()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00632">LoadMachineModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00320">LoadModelIntoCacheAsync()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00713">LoadToolModel()</a>, <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l01744">ResolveTransformationsFolder()</a> e <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00226">ValidateCacheFreshness()</a>.</p>
 
 </div>
 </div>
@@ -5817,7 +5849,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html">ToolModelLoader.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00126">GetAvailableScannerNames()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d03/_tool_model_loader_8cs_source.html#l00128">GetAvailableScannerNames()</a>.</p>
 
 </div>
 </div>
