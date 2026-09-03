@@ -1,6 +1,7 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command =
 [
     [ "InsertWaypointCommand", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html#a10bc306aa52492a7e72f1e4e7413743e", null ],
+    [ "GetLocalizedDescription", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html#ab2f557b82d18e090f30edcb700961d63", null ],
     [ "Redo", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html#ac240c1164d82dcda74b9adcc6892024c", null ],
     [ "Undo", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html#a7a6cb0ea399031e9912ba7a72d83a485", null ],
     [ "_designControl", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_insert_waypoint_command.html#a2b2ac6fd77c68ca852f7ac65823edbec", null ],

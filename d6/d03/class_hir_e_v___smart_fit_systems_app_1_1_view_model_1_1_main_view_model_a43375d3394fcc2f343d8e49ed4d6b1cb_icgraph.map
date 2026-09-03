@@ -1,33 +1,39 @@
 <map id="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPartOwnedManipulationHelper" name="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPartOwnedManipulationHelper">
-<area shape="rect" id="Node000001" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="1644,117,1864,176"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae0321e8cfb21b8a7b796a0b2003f9753" title="Executes the GetAssociatedEntities method." alt="" coords="1325,117,1596,176"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1626,147,1597,149,1596,144,1631,146"/>
-<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a59699962acd6e14c8190c10eccffac4d" title="Executes the GetManipulationEntitiesForPart method." alt="" coords="997,117,1277,176"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1307,147,1278,149,1277,144,1312,146"/>
-<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5fadfcd08cef1b2e334e62b0cd44e217" title="Enables the object manipulator for the selected object and its associated meshes." alt="" coords="682,35,931,93"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1000,113,927,97,927,91,1005,113"/>
-<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a19637e278453791ccaee0b2f9bb4c564" title="Moves the selected object and its associated meshes to the origin." alt="" coords="679,117,934,176"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="979,147,935,149,934,144,984,146"/>
-<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a01f70add08f616cd274af5d6ee27f7da" title="Executes the StopManipulating method." alt="" coords="664,328,949,371"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="1077,184,845,330,842,325,1072,185"/>
-<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1717b5a54ea72acb44d0829b4bec1ad5" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="362,5,584,64"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="676,112,663,108,639,93,615,78,585,66,585,61,617,74,641,88,665,103,681,111"/>
+<area shape="rect" id="Node000001" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="1644,225,1864,284"/>
+<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae0321e8cfb21b8a7b796a0b2003f9753" title="Executes the GetAssociatedEntities method." alt="" coords="1325,225,1596,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1626,255,1597,257,1596,252,1631,254"/>
+<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5fadfcd08cef1b2e334e62b0cd44e217" title="Enables the object manipulator for the selected object and its associated meshes." alt="" coords="682,76,931,135"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="1683,218,1641,201,1595,185,1508,164,1417,147,1236,124,1069,112,932,108,931,102,1069,107,1237,119,1418,142,1509,159,1597,180,1643,196,1688,218"/>
+<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a19637e278453791ccaee0b2f9bb4c564" title="Moves the selected object and its associated meshes to the origin." alt="" coords="679,159,934,217"/>
+<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="1635,221,1596,216,1417,197,1237,187,1071,184,935,186,934,181,1071,179,1237,182,1417,191,1596,211,1641,221"/>
+<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a01f70add08f616cd274af5d6ee27f7da" title="Executes the StopManipulating method." alt="" coords="664,320,949,363"/>
+<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="1639,288,1596,299,1423,321,1249,334,1086,342,950,344,950,339,1086,336,1248,329,1423,315,1596,293,1634,289"/>
+<area shape="rect" id="Node000017" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ea7d7c9bd8d2f7f9132a4b589fac25d" title="Executes the ResetObjectPosition method." alt="" coords="1008,399,1266,457"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="1700,292,1650,323,1597,346,1513,373,1427,393,1267,419,1266,413,1426,388,1512,368,1595,342,1648,318,1695,293"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a59699962acd6e14c8190c10eccffac4d" title="Executes the GetManipulationEntitiesForPart method." alt="" coords="997,225,1277,284"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1307,255,1278,257,1277,252,1312,254"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1076,217,1016,183,948,149,920,138,920,133,950,144,1019,178,1081,217"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="979,224,935,216,935,211,984,223"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="1011,288,891,322,890,317,1005,289"/>
+<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab6d32407e859cd43d89008fa043bcbe8" title="Asynchronously imports a 3D model from a file without clearing the existing entities." alt="" coords="362,5,584,64"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="667,150,662,149,646,131,638,112,630,95,614,78,585,61,585,56,618,74,634,92,642,110,650,128,666,145,672,151"/>
 <area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab1482a087fb4f8854ce03aeaeb7c3616" title=" " alt="" coords="331,88,616,131"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="661,131,617,128,616,123,666,130"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="663,155,615,145,568,134,567,129,617,140,668,154"/>
 <area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a34788bc025603784b3623e3c472c428d" title="Loads a CAD part from a specific file path without showing a file dialog." alt="" coords="355,155,592,213"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="661,164,593,173,592,168,666,162"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="661,187,593,188,592,183,666,186"/>
 <area shape="rect" id="Node000009" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae5622e46342ae8e75f14fff6d693b689" title="Loads the most recently opened valid part file." alt="" coords="25,155,263,213"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="336,185,265,186,263,182,341,183"/>
 <area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aae688714e6a78ecf619242bd12c2aabe" title="Executes the HandleDesignControlMouseUp method." alt="" coords="360,237,586,296"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="701,324,587,297,587,292,706,323"/>
-<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af523491bc508b8423c6716c41e22f456" title="Handles key down events on the parent window." alt="" coords="363,320,584,379"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="646,350,585,352,584,347,651,349"/>
-<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8c9b77b076a85bcd5db14d78eaa8bd9e" title="Executes the SaveNewPosition method." alt="" coords="352,403,594,461"/>
-<area shape="poly" id="edge13_Node000010_Node000014" title=" " alt="" coords="706,374,595,405,594,399,701,376"/>
-<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a21d28279851649daa933d90ae06e1ce0" title="Executes the ShowCustomDraggingContextMenu method." alt="" coords="341,485,606,544"/>
-<area shape="poly" id="edge14_Node000010_Node000015" title=" " alt="" coords="768,379,699,430,617,476,589,487,587,482,615,471,696,425,763,381"/>
-<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,328,283,371"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="345,350,284,352,283,347,350,348"/>
-<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="31,485,257,544"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="323,515,258,517,258,512,328,514"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="690,316,587,295,587,289,696,316"/>
+<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af523491bc508b8423c6716c41e22f456" title="Handles key down events on the parent window." alt="" coords="363,485,584,544"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="767,371,686,432,617,476,585,489,584,484,615,471,683,428,762,373"/>
+<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8c9b77b076a85bcd5db14d78eaa8bd9e" title="Executes the SaveNewPosition method." alt="" coords="352,320,594,379"/>
+<area shape="poly" id="edge13_Node000010_Node000014" title=" " alt="" coords="646,346,595,349,594,344,651,345"/>
+<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a21d28279851649daa933d90ae06e1ce0" title="Executes the ShowCustomDraggingContextMenu method." alt="" coords="341,403,606,461"/>
+<area shape="poly" id="edge14_Node000010_Node000015" title=" " alt="" coords="713,367,585,405,583,399,708,368"/>
+<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a2d5251f09f55da1645e1f07f386c4ba4" title="Initializes a new instance of the MainViewModel class." alt="" coords="5,493,283,536"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="345,515,283,517,283,512,350,514"/>
+<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0ceadce0cf195209558dd01ff9d827fa" title="Handles mouse down events on the Eyeshot design control. This method manages the selection process an..." alt="" coords="31,403,257,461"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="323,433,258,435,257,429,328,431"/>
+<area shape="poly" id="edge19_Node000017_Node000012" title=" " alt="" coords="995,447,585,503,584,498,990,447"/>
 </map>

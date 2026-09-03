@@ -1,54 +1,51 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager.ApplyTransformation" name="HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager.ApplyTransformation">
-<area shape="rect" id="Node000001" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="5,263,231,321"/>
-<area shape="rect" id="Node000002" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,139,524,197"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,260,278,207,295,202,291,205,280,212,174,264"/>
-<area shape="rect" id="Node000010" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="279,221,524,280"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="230,273,265,269,261,272,232,278"/>
-<area shape="rect" id="Node000016" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,304,512,363"/>
-<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="230,306,277,314,273,316,232,311"/>
-<area shape="rect" id="Node000017" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,487,520,545"/>
-<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="157,319,353,475,348,478,156,324"/>
-<area shape="rect" id="Node000003" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="572,139,817,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,165,559,167,554,169,525,171"/>
-<area shape="rect" id="Node000005" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="572,5,817,64"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="457,136,571,80,603,69,598,72,573,85,460,140"/>
-<area shape="rect" id="Node000007" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="572,221,817,280"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="508,195,576,216,571,217,508,201"/>
-<area shape="rect" id="Node000008" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="572,304,817,363"/>
-<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="507,195,526,207,543,229,551,250,558,270,574,290,579,295,573,295,570,294,553,273,545,252,538,231,522,211,507,201"/>
-<area shape="rect" id="Node000009" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="881,283,1095,341"/>
-<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="467,136,544,109,588,99,635,91,683,88,730,92,776,104,819,124,832,135,841,148,848,173,853,200,867,228,891,251,920,274,914,274,888,255,863,231,848,202,842,174,836,150,828,139,816,129,774,109,729,97,683,94,635,96,589,104,545,115,469,140"/>
-<area shape="rect" id="Node000004" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="881,159,1095,217"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="817,174,868,179,863,180,818,179"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="777,62,819,80,878,113,933,149,928,150,875,118,816,85,777,67"/>
-<area shape="rect" id="Node000006" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="865,5,1111,64"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="817,32,852,34,847,36,818,37"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="817,222,869,213,864,215,818,227"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="789,301,816,290,876,258,929,228,934,225,878,262,818,294,791,306"/>
-<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="507,218,576,201,571,203,509,223"/>
-<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="506,219,522,207,539,188,547,169,555,148,570,125,600,96,635,71,631,75,603,100,574,128,560,150,552,171,544,191,526,211,509,223"/>
-<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="523,248,559,250,554,252,525,253"/>
-<area shape="poly" id="edge16_Node000010_Node000008" title=" " alt="" coords="508,278,576,299,571,300,508,283"/>
+<area shape="rect" id="Node000001" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="5,295,231,353"/>
+<area shape="rect" id="Node000002" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,171,524,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,292,278,239,295,234,291,237,280,244,174,296"/>
+<area shape="rect" id="Node000010" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="279,253,524,312"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="230,305,265,301,261,304,232,310"/>
+<area shape="rect" id="Node000016" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,336,512,395"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="230,338,277,346,272,348,232,343"/>
+<area shape="rect" id="Node000017" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,453,520,512"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="173,351,336,444,332,447,172,356"/>
+<area shape="rect" id="Node000003" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="572,5,817,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,168,496,120,571,74,585,69,581,72,573,78,499,125,439,172"/>
+<area shape="rect" id="Node000005" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="572,253,817,312"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="508,227,576,248,571,249,508,233"/>
+<area shape="rect" id="Node000007" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="572,88,817,147"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="507,168,576,150,571,153,509,172"/>
+<area shape="rect" id="Node000008" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="572,171,817,229"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="523,197,559,199,554,201,525,203"/>
+<area shape="rect" id="Node000009" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="881,328,1095,387"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="507,227,526,239,543,261,549,283,556,304,574,322,595,332,624,340,698,350,783,356,868,359,863,360,782,361,697,356,623,345,593,337,570,326,552,307,544,285,538,264,522,243,507,233"/>
+<area shape="rect" id="Node000004" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="881,163,1095,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="792,62,819,74,883,111,940,153,935,153,880,116,816,78,792,67"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="791,250,879,225,874,227,793,255"/>
+<area shape="rect" id="Node000006" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="865,245,1111,304"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="817,277,853,278,847,279,818,282"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="812,145,869,161,864,161,813,150"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="817,194,868,195,863,196,818,199"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="509,251,522,240,537,219,544,199,545,159,547,117,555,95,570,74,572,76,576,72,574,78,559,98,552,118,551,159,549,200,541,222,526,243,512,255"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="524,280,559,282,554,283,525,285"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="506,251,522,239,538,220,545,199,553,178,570,157,574,157,578,154,574,161,558,180,551,201,543,222,526,243,509,255"/>
+<area shape="poly" id="edge16_Node000010_Node000008" title=" " alt="" coords="507,250,576,233,571,235,509,255"/>
 <area shape="rect" id="Node000011" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3154c3cd339e0d8402c06f1089712b68" title="Gets material name for specific color (creates red variants)." alt="" coords="588,387,801,445"/>
-<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="507,278,526,290,543,311,551,332,558,353,574,373,579,378,573,378,570,377,553,355,545,334,538,314,522,294,507,283"/>
-<area shape="poly" id="edge25_Node000011_Node000009" title=" " alt="" coords="784,384,816,372,890,348,895,346,818,377,786,389"/>
-<area shape="rect" id="Node000012" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b" title="Creates a colored variant of an existing material." alt="" coords="872,387,1104,445"/>
-<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="801,413,860,416,855,416,802,419"/>
-<area shape="rect" id="Node000013" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a93728115a9cb0d48823fcccbe55d4445" title="Creates the gray mesh material." alt="" coords="1159,280,1390,339"/>
-<area shape="poly" id="edge19_Node000012_Node000013" title=" " alt="" coords="1065,384,1158,348,1173,345,1178,344,1160,353,1067,389"/>
-<area shape="rect" id="Node000014" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a342c410ed9ef2af00c3c6c1bc487826a" title="Creates the square texture material." alt="" coords="1159,387,1390,445"/>
-<area shape="poly" id="edge21_Node000012_Node000014" title=" " alt="" coords="1104,413,1146,416,1141,416,1105,419"/>
-<area shape="rect" id="Node000015" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a042cfa2f5495b53b788122fa514ec2a6" title="Creates the stripe texture material." alt="" coords="1159,493,1390,552"/>
-<area shape="poly" id="edge23_Node000012_Node000015" title=" " alt="" coords="1069,443,1182,488,1177,487,1069,449"/>
-<area shape="poly" id="edge20_Node000013_Node000013" title=" " alt="" coords="1219,278,1220,269,1230,261,1248,255,1274,253,1304,256,1324,266,1319,266,1303,261,1274,259,1249,261,1233,265,1225,272,1223,281"/>
-<area shape="poly" id="edge22_Node000014_Node000014" title=" " alt="" coords="1219,385,1220,376,1230,367,1248,362,1274,360,1304,363,1324,373,1319,372,1303,368,1274,365,1249,367,1233,372,1225,379,1223,388"/>
-<area shape="poly" id="edge24_Node000015_Node000015" title=" " alt="" coords="1219,491,1220,483,1230,474,1248,469,1274,467,1304,469,1324,479,1319,479,1303,475,1274,472,1249,474,1233,479,1225,485,1223,495"/>
-<area shape="poly" id="edge32_Node000017_Node000017" title=" " alt="" coords="347,485,347,476,357,467,375,462,401,460,431,463,451,472,446,472,430,468,401,465,376,467,360,472,352,479,351,488"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="502,310,525,322,540,333,550,344,559,355,573,366,596,380,591,380,571,370,556,359,546,348,537,337,523,326,502,315"/>
+<area shape="poly" id="edge25_Node000011_Node000009" title=" " alt="" coords="801,392,869,381,864,382,802,397"/>
+<area shape="rect" id="Node000012" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b" title="Creates a colored variant of an existing material." alt="" coords="872,411,1104,469"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="802,422,860,429,855,429,802,427"/>
+<area shape="rect" id="Node000013" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a93728115a9cb0d48823fcccbe55d4445" title="Creates the gray mesh material." alt="" coords="1159,304,1390,363"/>
+<area shape="poly" id="edge19_Node000012_Node000013" title=" " alt="" coords="1081,408,1110,396,1158,372,1171,369,1176,368,1160,377,1112,401,1082,413"/>
+<area shape="rect" id="Node000014" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a342c410ed9ef2af00c3c6c1bc487826a" title="Creates the square texture material." alt="" coords="1159,411,1390,469"/>
+<area shape="poly" id="edge21_Node000012_Node000014" title=" " alt="" coords="1104,437,1146,440,1141,440,1104,443"/>
+<area shape="rect" id="Node000015" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a042cfa2f5495b53b788122fa514ec2a6" title="Creates the stripe texture material." alt="" coords="1159,517,1390,576"/>
+<area shape="poly" id="edge23_Node000012_Node000015" title=" " alt="" coords="1070,467,1182,512,1177,511,1069,473"/>
+<area shape="poly" id="edge20_Node000013_Node000013" title=" " alt="" coords="1219,302,1220,293,1230,285,1248,279,1274,277,1304,280,1324,290,1319,289,1303,285,1274,283,1249,285,1233,289,1225,296,1223,305"/>
+<area shape="poly" id="edge22_Node000014_Node000014" title=" " alt="" coords="1219,409,1220,400,1230,391,1248,386,1274,384,1304,387,1324,397,1319,396,1303,392,1274,389,1249,391,1233,396,1225,403,1223,412"/>
+<area shape="poly" id="edge24_Node000015_Node000015" title=" " alt="" coords="1219,515,1220,507,1230,498,1248,493,1274,491,1304,493,1324,503,1319,503,1303,499,1274,496,1249,498,1233,503,1225,509,1223,519"/>
 <area shape="rect" id="Node000018" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="584,520,805,579"/>
-<area shape="poly" id="edge28_Node000017_Node000018" title=" " alt="" coords="520,527,571,535,566,535,520,532"/>
-<area shape="rect" id="Node000019" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="886,495,1090,553"/>
-<area shape="poly" id="edge31_Node000017_Node000019" title=" " alt="" coords="519,507,662,503,817,505,874,511,868,512,817,511,662,508,520,512"/>
-<area shape="rect" id="Node000020" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="588,603,801,661"/>
-<area shape="poly" id="edge30_Node000017_Node000020" title=" " alt="" coords="467,543,573,588,591,597,586,597,571,593,466,548"/>
-<area shape="poly" id="edge29_Node000018_Node000019" title=" " alt="" coords="806,537,874,534,868,534,806,542"/>
+<area shape="poly" id="edge28_Node000017_Node000018" title=" " alt="" coords="520,507,571,521,566,521,520,512"/>
+<area shape="rect" id="Node000019" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="886,503,1090,561"/>
+<area shape="poly" id="edge30_Node000017_Node000019" title=" " alt="" coords="520,485,662,493,818,505,874,514,868,514,817,511,662,498,520,490"/>
+<area shape="poly" id="edge29_Node000018_Node000019" title=" " alt="" coords="806,540,868,539,873,539,806,545"/>
 </map>

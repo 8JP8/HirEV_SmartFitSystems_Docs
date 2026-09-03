@@ -8,6 +8,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialog
     [ "CanDeleteSelectedEntity", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#af5354fafc734375d3bcd97723550c19d", null ],
     [ "CanMoveDown", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#ac8f7d00a886d0e27ff025d4d4561b907", null ],
     [ "CanMoveUp", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a59661f253fbef0189c4cc49380fd2ae7", null ],
+    [ "ClearPathBackup", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#ab811a31b21ce7554ec24ef33ce6b7f9c", null ],
     [ "DeleteEntity", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#aed1b419c1c4c2b48d8b2a651370e7b42", null ],
     [ "FindVisualParent< T >", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#a0710d148c5fdf53d54958db45f67bbaf", null ],
     [ "GetXMLElementValue", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html#aad229e0d5ac83971dbc8bffd51e156aa", null ],

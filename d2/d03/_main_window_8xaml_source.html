@@ -910,7 +910,7 @@ $(function(){initNavTree('d2/d03/_main_window_8xaml_source.html','../../',''); }
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>                    &lt;/Border&gt;</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                    &lt;!-- Point Rotation Overlay (On Top of Simulation Speed and Camera Overlays) --&gt;</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>                    &lt;Border x:Name=&quot;PointRotationPanel&quot;</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>                    &lt;Border x:Name=&quot;PartManipulationPanel&quot;</div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                            Background=&quot;WhiteSmoke&quot;</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                            BorderBrush=&quot;DarkGray&quot;</div>
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>                            BorderThickness=&quot;1&quot;</div>
@@ -925,7 +925,7 @@ $(function(){initNavTree('d2/d03/_main_window_8xaml_source.html','../../',''); }
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>                        &lt;Border.Style&gt;</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                            &lt;Style TargetType=&quot;Border&quot;&gt;</div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>                                &lt;Style.Triggers&gt;</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>                                    &lt;DataTrigger Binding=&quot;{Binding IsPointRotationPanelOpen}&quot; Value=&quot;True&quot;&gt;</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>                                    &lt;DataTrigger Binding=&quot;{Binding IsPartManipulationPanelOpen}&quot; Value=&quot;True&quot;&gt;</div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>                                        &lt;DataTrigger.EnterActions&gt;</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>                                            &lt;BeginStoryboard&gt;</div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>                                                &lt;Storyboard&gt;</div>
@@ -954,7 +954,7 @@ $(function(){initNavTree('d2/d03/_main_window_8xaml_source.html','../../',''); }
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>                        &lt;/Border.Style&gt;</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>                        &lt;Grid&gt;</div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot;&gt;</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Change Point Rotation&#39;, Source={StaticResource Language}, XPath=ContextMenu_ChangePointRotation/@Value}&quot; </div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Part Manipulation&#39;, Source={StaticResource Language}, XPath=PartManipulation/@Value}&quot; </div>
 <div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>                                        FontWeight=&quot;Bold&quot; </div>
 <div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>                                        Margin=&quot;0,-3,0,5&quot;/&gt;</div>
 <div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
@@ -962,271 +962,383 @@ $(function(){initNavTree('d2/d03/_main_window_8xaml_source.html','../../',''); }
 <div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>                                    &lt;Grid.ColumnDefinitions&gt;</div>
 <div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>                                        &lt;ColumnDefinition Width=&quot;20&quot;/&gt;</div>
 <div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>                                        &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>                                        &lt;ColumnDefinition Width=&quot;44.5&quot;/&gt;</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>                                        &lt;ColumnDefinition Width=&quot;52&quot;/&gt;</div>
 <div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>                                    &lt;/Grid.ColumnDefinitions&gt;</div>
 <div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>                                    &lt;Grid.RowDefinitions&gt;</div>
 <div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>                                        &lt;RowDefinition/&gt;</div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>                                        &lt;RowDefinition/&gt;</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>                                        &lt;RowDefinition/&gt;</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>                                    &lt;/Grid.RowDefinitions&gt;</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>                                    &lt;TextBlock Text=&quot;RX:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot;/&gt;</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationX, StringFormat=N1, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot;/&gt;</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot;/&gt;</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>                                    &lt;TextBlock Text=&quot;RY:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;1&quot; Margin=&quot;0,5&quot;/&gt;</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationY, StringFormat=N1, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>                                    &lt;TextBlock Text=&quot;RZ:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;2&quot;/&gt;</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationZ, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;2&quot;/&gt;</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationZ, StringFormat=N1, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;2&quot;/&gt;</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;2&quot;/&gt;</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>                                &lt;/Grid&gt;</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,5,0,0&quot;&gt;</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Reset&#39;, Source={StaticResource Language}, XPath=Reset/@Value}&quot; Command=&quot;{Binding ResetPointRotationCommand}&quot; Width=&quot;60&quot; Margin=&quot;0,0,10,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Save&#39;, Source={StaticResource Language}, XPath=Save/@Value}&quot; Command=&quot;{Binding SavePointRotationCommand}&quot; Width=&quot;60&quot; Margin=&quot;0,0,10,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Cancel&#39;, Source={StaticResource Language}, XPath=ContextMenu_Cancel/@Value}&quot; Command=&quot;{Binding CancelPointRotationCommand}&quot; Width=&quot;60&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>                                &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                            &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                            &lt;Button Content=&quot;🗙&quot; FontSize=&quot;14&quot; Command=&quot;{Binding CancelPointRotationCommand}&quot; Padding=&quot;0&quot; Margin=&quot;0,-5,-2,0&quot; BorderThickness=&quot;0&quot; Background=&quot;{x:Null}&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Top&quot; Cursor=&quot;Hand&quot;&gt;</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                                &lt;Button.Style&gt;</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                                    &lt;Style TargetType=&quot;Button&quot;&gt;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                                        &lt;Setter Property=&quot;OverridesDefaultStyle&quot; Value=&quot;True&quot;/&gt;</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>                                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>                                        &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;Transparent&quot;/&gt;</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>                                        &lt;Setter Property=&quot;Template&quot;&gt;</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>                                            &lt;Setter.Value&gt;</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>                                                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>                                                    &lt;ContentPresenter HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>                                                &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>                                            &lt;/Setter.Value&gt;</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                                        &lt;/Setter&gt;</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>                                    &lt;/Style&gt;</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>                                &lt;/Button.Style&gt;</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>                            &lt;/Button&gt;</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                        &lt;/Grid&gt;</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                    &lt;/Border&gt;</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                    &lt;!-- Section View Overlay (Bottom Right) --&gt;</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                    &lt;Border x:Name=&quot;SectionViewOverlay&quot;</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>                            Visibility=&quot;{Binding SectionViewOverlayVisibility, FallbackValue=Collapsed}&quot;</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>                            HorizontalAlignment=&quot;Right&quot;</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                            VerticalAlignment=&quot;Bottom&quot;</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>                            Margin=&quot;{Binding SectionViewOverlayMargin}&quot;</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                            Background=&quot;WhiteSmoke&quot;</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                            BorderBrush=&quot;DarkGray&quot;</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>                            BorderThickness=&quot;1&quot;</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                            CornerRadius=&quot;5&quot;</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>                            Padding=&quot;10&quot;</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                            Width=&quot;220&quot;&gt;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                        &lt;Grid&gt;</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot;&gt;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Section View Controls&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionViewSettings/@Value}&quot;</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>                                           FontWeight=&quot;Bold&quot; Margin=&quot;0,-3,0,10&quot;/&gt;</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Plane Axis&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionPlaneAxis/@Value}&quot; FontSize=&quot;10&quot;/&gt;</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;0,0,0,10&quot;&gt;</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>                                    &lt;RadioButton Content=&quot;X&quot; IsChecked=&quot;{Binding IsSectionAxisX}&quot; Margin=&quot;0,0,10,0&quot;/&gt;</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>                                    &lt;RadioButton Content=&quot;Y&quot; IsChecked=&quot;{Binding IsSectionAxisY}&quot; Margin=&quot;0,0,10,0&quot;/&gt;</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>                                    &lt;RadioButton Content=&quot;Z&quot; IsChecked=&quot;{Binding IsSectionAxisZ}&quot;/&gt;</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>                                &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Plane Position&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionPlanePosition/@Value}&quot; FontSize=&quot;10&quot;/&gt;</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;0,0,0,10&quot;&gt;</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                                    &lt;Slider Width=&quot;135&quot; Minimum=&quot;0&quot; Maximum=&quot;{Binding SectionPlaneMaxPosition}&quot; </div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                                            Value=&quot;{Binding SectionPlanePosition, Mode=TwoWay}&quot; TickFrequency=&quot;1&quot; IsSnapToTickEnabled=&quot;False&quot;/&gt;</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                                    &lt;TextBlock Text=&quot;{Binding SectionPlanePosition, FallbackValue=0000.0 mm, StringFormat={}{0:F1} mm}&quot; Margin=&quot;5,0,0,0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; FontWeight=&quot;Bold&quot;/&gt;</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>                                &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>                                &lt;Button Content=&quot;{Binding FallbackValue=&#39;Show current section view&#39;, Source={StaticResource Language}, XPath=ContextMenu_ShowCurrentSectionView/@Value}&quot;</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>                                        Command=&quot;{Binding ShowSectionViewWindowCommand}&quot;</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>                                        Padding=&quot;5&quot; Margin=&quot;0,5,0,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>                            &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,-5,-5,0&quot;&gt;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>                                &lt;StackPanel.Resources&gt;</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>                                    &lt;Style x:Key=&quot;FlatButtonNoHover&quot; TargetType=&quot;Button&quot;&gt;</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>                                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>                                        &lt;Setter Property=&quot;BorderThickness&quot; Value=&quot;0&quot;/&gt;</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>                                        &lt;Setter Property=&quot;Cursor&quot; Value=&quot;Hand&quot;/&gt;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>                                        &lt;Setter Property=&quot;Focusable&quot; Value=&quot;False&quot;/&gt;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>                                        &lt;Setter Property=&quot;Template&quot;&gt;</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>                                            &lt;Setter.Value&gt;</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>                                                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>                                                    &lt;ContentPresenter </div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>                                                    HorizontalAlignment=&quot;Center&quot;</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>                                                    VerticalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>                                                &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>                                            &lt;/Setter.Value&gt;</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>                                        &lt;/Setter&gt;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>                                    &lt;/Style&gt;</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>                                &lt;/StackPanel.Resources&gt;</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>                                &lt;Button Content=&quot;🗙&quot;</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>                                    Command=&quot;{Binding CloseSectionViewOverlayCommand}&quot;</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>                                    Style=&quot;{StaticResource FlatButtonNoHover}&quot;</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>                                    FontSize=&quot;14&quot; Margin=&quot;0,0,1,0&quot;/&gt;</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>                                &lt;Button Content=&quot;❯&quot;</div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>                                    Command=&quot;{Binding HideSectionViewBehindPanelCommand}&quot;</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>                                    Visibility=&quot;{Binding HideSectionViewBehindPanelVisibility, FallbackValue=Collapsed}&quot;</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>                                    Style=&quot;{StaticResource FlatButtonNoHover}&quot;</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>                                    FontSize=&quot;14&quot; Margin=&quot;0,0,1,0&quot;</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>                                    ToolTip=&quot;Hide behind side panel&quot;</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>                                    HorizontalContentAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span> </div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>                            &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>                        &lt;/Grid&gt;</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>                    &lt;/Border&gt;</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>                &lt;/Grid&gt;</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>            &lt;/GroupBox&gt;</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>            &lt;Label Grid.Column=&quot;1&quot; HorizontalContentAlignment=&quot;Center&quot; VerticalContentAlignment=&quot;Center&quot; Content=&quot;{Binding FallbackValue=&#39;No Part Loaded&#39;, Source={StaticResource Language}, XPath=NoPartLoaded/@Value}&quot;&gt;</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>                &lt;Label.Style&gt;</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>                    &lt;Style TargetType=&quot;Label&quot;&gt;</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>                        &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Visible&quot;/&gt;</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                        &lt;Style.Triggers&gt;</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>                            &lt;DataTrigger Binding=&quot;{Binding ElementName=designControl, Path=Visibility}&quot; Value=&quot;Visible&quot;&gt;</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>                                &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Collapsed&quot;/&gt;</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>                            &lt;/DataTrigger&gt;</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>                        &lt;/Style.Triggers&gt;</div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>                    &lt;/Style&gt;</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>                &lt;/Label.Style&gt;</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>            &lt;/Label&gt;</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>            &lt;!-- 3. STATUS BAR --&gt;</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>            &lt;Grid Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Bottom&quot; Margin=&quot;17,10,17,14&quot; Visibility=&quot;{Binding DesignerVisibility, FallbackValue=Collapsed}&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot;&gt;</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>                &lt;Grid.ColumnDefinitions&gt;</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>                    &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>                    &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>                &lt;/Grid.ColumnDefinitions&gt;</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>                &lt;StatusBar Background=&quot;{x:Null}&quot; VerticalAlignment=&quot;Bottom&quot;&gt;</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>                    &lt;TextBlock x:Name=&quot;EyeshotStatusText&quot; Text=&quot;{Binding EyeshotStatus_Text}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot;/&gt;</div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>                &lt;/StatusBar&gt;</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>                &lt;StatusBar Grid.Column=&quot;1&quot; FlowDirection=&quot;RightToLeft&quot; Background=&quot;{x:Null}&quot; Padding=&quot;0&quot; VerticalAlignment=&quot;Bottom&quot;&gt;</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>                    &lt;StackPanel Orientation=&quot;Vertical&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot;&gt;</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>                        &lt;TextBlock x:Name=&quot;CurrentRelativePointCoords&quot; Text=&quot;{Binding CurrentRelativePointCoords}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot; FontSize=&quot;9&quot;/&gt;</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>                        &lt;TextBlock x:Name=&quot;CurrentPointCoords&quot; Text=&quot;{Binding CurrentPointCoords}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot; FontSize=&quot;11&quot;/&gt;</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>                    &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>                &lt;/StatusBar&gt;</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>            &lt;/Grid&gt;</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        &lt;/Grid&gt;</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span> </div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>        &lt;!-- Settings Side Panel --&gt;</div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        &lt;resources:SidePanelTab x:Name=&quot;SettingsSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot; </div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>                            FlowDirection=&quot;RightToLeft&quot;</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>                            HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>        &lt;!-- About Side Panel --&gt;</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>        &lt;resources:SidePanelTab x:Name=&quot;AboutSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>                            FlowDirection=&quot;RightToLeft&quot;</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>                            HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span> </div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>        &lt;!-- Manual Side Panel --&gt;</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>        &lt;resources:SidePanelTab x:Name=&quot;PlanningSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>                    FlowDirection=&quot;RightToLeft&quot;</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                    HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span> </div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>        &lt;!-- Auto Side Panel --&gt;</div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>        &lt;resources:SidePanelTab x:Name=&quot;MeasuringSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>                    FlowDirection=&quot;RightToLeft&quot;</div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>                    HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span> </div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>        &lt;!-- Copy --&gt;</div>
-<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>        &lt;Grid Grid.Row=&quot;2&quot; Grid.ColumnSpan=&quot;3&quot;&gt;</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>            &lt;Grid.ColumnDefinitions&gt;</div>
-<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>                &lt;ColumnDefinition Width=&quot;2*&quot;/&gt;</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>            &lt;/Grid.ColumnDefinitions&gt;</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>            &lt;TextBlock Grid.Row=&quot;2&quot; Margin=&quot;12,5,5,5&quot;  VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot; Text=&quot;{Binding FallbackValue=© 2026 Sarkkis Robotics, Source={StaticResource Language}, XPath=CopyRights/@Value}&quot;/&gt;</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>            &lt;Separator Grid.Column=&quot;1&quot;  Margin=&quot;5,2,5,2&quot;&gt;</div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                &lt;Separator.LayoutTransform&gt;</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                    &lt;TransformGroup&gt;</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                        &lt;RotateTransform Angle=&quot;90&quot;/&gt;</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                    &lt;/TransformGroup&gt;</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>                &lt;/Separator.LayoutTransform&gt;</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>            &lt;/Separator&gt;</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>            &lt;Label Grid.Column=&quot;2&quot; Content=&quot;{Binding FallbackValue=Machine Status:, Source={StaticResource Language}, XPath=MachineStatusLabel/@Value}&quot; FontWeight=&quot;SemiBold&quot; VerticalAlignment=&quot;Center&quot; Visibility=&quot;Collapsed&quot;/&gt;</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            &lt;Ellipse Grid.Column=&quot;3&quot; Fill=&quot;{Binding Status_Indicator_Color, FallbackValue=Red}&quot; Width=&quot;16&quot; Height=&quot;16&quot; Margin=&quot;5,0,0,0&quot; Visibility=&quot;Collapsed&quot;&gt;</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                &lt;Ellipse.Stroke&gt;</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>                    &lt;SolidColorBrush Color=&quot;{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}&quot;/&gt;</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>                &lt;/Ellipse.Stroke&gt;</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>            &lt;/Ellipse&gt;</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>            &lt;TextBox Grid.Column=&quot;4&quot; Text=&quot;{Binding Status_Text, FallbackValue=&#39;Idle&#39;}&quot; FontWeight=&quot;SemiBold&quot; VerticalAlignment=&quot;Center&quot; HorizontalContentAlignment=&quot;Center&quot; Padding=&quot;5,0,5,0&quot; Visibility=&quot;Collapsed&quot; Background=&quot;Transparent&quot; IsReadOnly=&quot;True&quot; BorderThickness=&quot;0&quot;/&gt;</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>            &lt;ProgressBar Grid.Column=&quot;5&quot; Margin=&quot;4&quot; Value=&quot;{Binding Machine_Status_Progress, FallbackValue=0}&quot; Foreground=&quot;{Binding StatusProgressBarColor}&quot;/&gt;</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>            &lt;Slider Grid.Column=&quot;5&quot; Margin=&quot;4&quot; Panel.ZIndex=&quot;1&quot;</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                    Value=&quot;{Binding Machine_Status_Progress, FallbackValue=0, Mode=TwoWay}&quot; </div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                    Minimum=&quot;0&quot; Maximum=&quot;100&quot; </div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                    IsEnabled=&quot;{Binding IsSimulationSeekEnabled, FallbackValue=False}&quot;</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                    IsHitTestVisible=&quot;{Binding IsSimulationSeekEnabled, FallbackValue=False}&quot;</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>                    IsMoveToPointEnabled=&quot;True&quot; Background=&quot;Transparent&quot;&gt;</div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>                &lt;Slider.Style&gt;</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>                    &lt;Style TargetType=&quot;Slider&quot;&gt;</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>                        &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Collapsed&quot;/&gt;</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>                        &lt;Style.Triggers&gt;</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>                            &lt;DataTrigger Binding=&quot;{Binding IsSimulationSeekEnabled}&quot; Value=&quot;True&quot;&gt;</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>                                &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Visible&quot;/&gt;</div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>                            &lt;/DataTrigger&gt;</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>                        &lt;/Style.Triggers&gt;</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>                    &lt;/Style&gt;</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>                &lt;/Slider.Style&gt;</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>                &lt;Slider.Template&gt;</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>                    &lt;ControlTemplate TargetType=&quot;Slider&quot;&gt;</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>                        &lt;Border Background=&quot;{TemplateBinding Background}&quot;&gt;</div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>                            &lt;Track x:Name=&quot;PART_Track&quot;&gt;</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>                                &lt;Track.DecreaseRepeatButton&gt;</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                                    &lt;RepeatButton Command=&quot;{x:Static Slider.DecreaseLarge}&quot;&gt;</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>                                        &lt;RepeatButton.Template&gt;</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>                                            &lt;ControlTemplate TargetType=&quot;RepeatButton&quot;&gt;</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>                                                &lt;Border Background=&quot;Transparent&quot; /&gt;</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>                                            &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>                                        &lt;/RepeatButton.Template&gt;</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>                                    &lt;/RepeatButton&gt;</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>                                &lt;/Track.DecreaseRepeatButton&gt;</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>                                &lt;Track.IncreaseRepeatButton&gt;</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>                                    &lt;RepeatButton Command=&quot;{x:Static Slider.IncreaseLarge}&quot;&gt;</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>                                        &lt;RepeatButton.Template&gt;</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>                                            &lt;ControlTemplate TargetType=&quot;RepeatButton&quot;&gt;</div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>                                                &lt;Border Background=&quot;Transparent&quot; /&gt;</div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>                                            &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>                                        &lt;/RepeatButton.Template&gt;</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>                                    &lt;/RepeatButton&gt;</div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>                                &lt;/Track.IncreaseRepeatButton&gt;</div>
-<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>                                &lt;Track.Thumb&gt;</div>
-<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>                                    &lt;Thumb Cursor=&quot;SizeWE&quot; BorderThickness=&quot;0&quot; Padding=&quot;0&quot;&gt;</div>
-<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>                                        &lt;Thumb.Template&gt;</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>                                            &lt;ControlTemplate TargetType=&quot;Thumb&quot;&gt;</div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>                                                &lt;Rectangle Width=&quot;3&quot; Fill=&quot;Gray&quot; VerticalAlignment=&quot;Stretch&quot; Stroke=&quot;DarkGray&quot; StrokeThickness=&quot;0.5&quot;/&gt;</div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>                                            &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>                                        &lt;/Thumb.Template&gt;</div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>                                    &lt;/Thumb&gt;</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>                                &lt;/Track.Thumb&gt;</div>
-<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>                            &lt;/Track&gt;</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>                        &lt;/Border&gt;</div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>                    &lt;/ControlTemplate&gt;</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>                &lt;/Slider.Template&gt;</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>            &lt;/Slider&gt;</div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>            &lt;TextBlock Grid.Column=&quot;5&quot; Text=&quot;{Binding Machine_Status_ProgressText, FallbackValue=Idle}&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; IsHitTestVisible=&quot;False&quot;/&gt;</div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>            &lt;Separator Grid.Column=&quot;6&quot;  Margin=&quot;5,2,5,2&quot;&gt;</div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>                &lt;Separator.LayoutTransform&gt;</div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>                    &lt;TransformGroup&gt;</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>                        &lt;RotateTransform Angle=&quot;90&quot;/&gt;</div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>                    &lt;/TransformGroup&gt;</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>                &lt;/Separator.LayoutTransform&gt;</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>            &lt;/Separator&gt;</div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>            &lt;StackPanel Grid.Column=&quot;7&quot; Orientation=&quot;Vertical&quot; VerticalAlignment=&quot;Center&quot; Margin=&quot;0,0,8,0&quot;&gt;</div>
-<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>                &lt;TextBlock Text=&quot;{Binding CurrentTime, FallbackValue=00:00:00}&quot; FontSize=&quot;10&quot; Margin=&quot;5,4,5,0&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>                &lt;TextBlock Text=&quot;{Binding CurrentDate, FallbackValue=00/00/0000}&quot; FontSize=&quot;10&quot; Margin=&quot;5,0,5,4&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>            &lt;/StackPanel&gt;</div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>        &lt;/Grid&gt;</div>
-<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    &lt;/Grid&gt;</div>
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>&lt;/Window&gt;</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>                                    &lt;/Grid.RowDefinitions&gt;</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>                                    &lt;TextBlock Text=&quot;TX:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot;/&gt;</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>                                    &lt;Slider Minimum=&quot;-2000&quot; Maximum=&quot;2000&quot; Value=&quot;{Binding PartManipulationTranslateX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationTranslateX, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,13,0&quot;/&gt;</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>                                    &lt;TextBlock Text=&quot;{Binding Units, FallbackValue=mm}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;0,3,4,0&quot; FontSize=&quot;6&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span> </div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>                                    &lt;TextBlock Text=&quot;TY:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>                                    &lt;Slider Minimum=&quot;-2000&quot; Maximum=&quot;2000&quot; Value=&quot;{Binding PartManipulationTranslateY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;1&quot; Margin=&quot;0,5&quot;/&gt;</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationTranslateY, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,13,0&quot; Grid.Row=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>                                    &lt;TextBlock Text=&quot;{Binding Units, FallbackValue=mm}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;0,3,4,0&quot; Grid.Row=&quot;1&quot; FontSize=&quot;6&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>                                    &lt;TextBlock Text=&quot;TZ:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>                                    &lt;Slider Minimum=&quot;-2000&quot; Maximum=&quot;2000&quot; Value=&quot;{Binding PartManipulationTranslateZ, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationTranslateZ, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,13,0&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>                                    &lt;TextBlock Text=&quot;{Binding Units, FallbackValue=mm}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;0,3,4,0&quot; Grid.Row=&quot;2&quot; FontSize=&quot;6&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>                                    &lt;TextBlock Text=&quot;RX:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;3&quot;/&gt;</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PartManipulationRotateX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;3&quot; Margin=&quot;0,5&quot;/&gt;</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationRotateX, StringFormat={}{0:000.00}, FallbackValue=000.00, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;3&quot;/&gt;</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;3&quot;/&gt;</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span> </div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                                    &lt;TextBlock Text=&quot;RY:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;4&quot;/&gt;</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PartManipulationRotateY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;4&quot;/&gt;</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationRotateY, StringFormat={}{0:000.00}, FallbackValue=000.00, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;4&quot;/&gt;</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;4&quot;/&gt;</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>                                    &lt;TextBlock Text=&quot;RZ:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;5&quot;/&gt;</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PartManipulationRotateZ, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;5&quot; Margin=&quot;0,5&quot;/&gt;</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>                                    &lt;TextBox Text=&quot;{Binding PartManipulationRotateZ, StringFormat={}{0:000.00}, FallbackValue=000.00, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;5&quot;/&gt;</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;5&quot;/&gt;</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                                &lt;/Grid&gt;</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>                            &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>                            &lt;Button Content=&quot;🗙&quot; FontSize=&quot;14&quot; Command=&quot;{Binding ClosePartManipulationCommand}&quot; Padding=&quot;0&quot; Margin=&quot;0,-5,-2,0&quot; BorderThickness=&quot;0&quot; Background=&quot;{x:Null}&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Top&quot; Cursor=&quot;Hand&quot;&gt;</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>                                &lt;Button.Style&gt;</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                                    &lt;Style TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                                        &lt;Setter Property=&quot;OverridesDefaultStyle&quot; Value=&quot;True&quot;/&gt;</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                                        &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                                        &lt;Setter Property=&quot;Template&quot;&gt;</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>                                            &lt;Setter.Value&gt;</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>                                                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                                                    &lt;ContentPresenter HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>                                                &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                                            &lt;/Setter.Value&gt;</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                                        &lt;/Setter&gt;</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>                                    &lt;/Style&gt;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                                &lt;/Button.Style&gt;</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>                            &lt;/Button&gt;</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                        &lt;/Grid&gt;</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                    &lt;/Border&gt;</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                    &lt;Border x:Name=&quot;PointRotationPanel&quot;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>                            Background=&quot;WhiteSmoke&quot;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>                            BorderBrush=&quot;DarkGray&quot;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>                            BorderThickness=&quot;1&quot;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>                            CornerRadius=&quot;5&quot;</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>                            HorizontalAlignment=&quot;Left&quot;</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>                            VerticalAlignment=&quot;Top&quot;</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>                            Margin=&quot;10,35,0,0&quot;</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>                            Padding=&quot;10&quot; Width=&quot;222&quot; Canvas.ZIndex=&quot;10&quot;&gt;</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>                        &lt;Border.RenderTransform&gt;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>                            &lt;TranslateTransform X=&quot;-300&quot;/&gt;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                        &lt;/Border.RenderTransform&gt;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                        &lt;Border.Style&gt;</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                            &lt;Style TargetType=&quot;Border&quot;&gt;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                                &lt;Style.Triggers&gt;</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>                                    &lt;DataTrigger Binding=&quot;{Binding IsPointRotationPanelOpen}&quot; Value=&quot;True&quot;&gt;</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>                                        &lt;DataTrigger.EnterActions&gt;</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>                                            &lt;BeginStoryboard&gt;</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>                                                &lt;Storyboard&gt;</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>                                                    &lt;DoubleAnimation Storyboard.TargetProperty=&quot;(UIElement.RenderTransform).(TranslateTransform.X)&quot; To=&quot;0&quot; Duration=&quot;0:0:0.25&quot;&gt;</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>                                                        &lt;DoubleAnimation.EasingFunction&gt;</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>                                                            &lt;QuadraticEase EasingMode=&quot;EaseOut&quot;/&gt;</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>                                                        &lt;/DoubleAnimation.EasingFunction&gt;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>                                                    &lt;/DoubleAnimation&gt;</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>                                                &lt;/Storyboard&gt;</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>                                            &lt;/BeginStoryboard&gt;</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>                                        &lt;/DataTrigger.EnterActions&gt;</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>                                        &lt;DataTrigger.ExitActions&gt;</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>                                            &lt;BeginStoryboard&gt;</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>                                                &lt;Storyboard&gt;</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>                                                    &lt;DoubleAnimation Storyboard.TargetProperty=&quot;(UIElement.RenderTransform).(TranslateTransform.X)&quot; To=&quot;-300&quot; Duration=&quot;0:0:0.25&quot;&gt;</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>                                                        &lt;DoubleAnimation.EasingFunction&gt;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>                                                            &lt;QuadraticEase EasingMode=&quot;EaseIn&quot;/&gt;</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>                                                        &lt;/DoubleAnimation.EasingFunction&gt;</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>                                                    &lt;/DoubleAnimation&gt;</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>                                                &lt;/Storyboard&gt;</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>                                            &lt;/BeginStoryboard&gt;</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>                                        &lt;/DataTrigger.ExitActions&gt;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>                                    &lt;/DataTrigger&gt;</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>                                &lt;/Style.Triggers&gt;</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>                            &lt;/Style&gt;</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>                        &lt;/Border.Style&gt;</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>                        &lt;Grid&gt;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot;&gt;</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Change Point Rotation&#39;, Source={StaticResource Language}, XPath=ContextMenu_ChangePointRotation/@Value}&quot; </div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>                                        FontWeight=&quot;Bold&quot; </div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>                                        Margin=&quot;0,-3,0,5&quot;/&gt;</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span> </div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>                                &lt;Grid Margin=&quot;0,5&quot;&gt;</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>                                    &lt;Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>                                        &lt;ColumnDefinition Width=&quot;20&quot;/&gt;</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>                                        &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>                                        &lt;ColumnDefinition Width=&quot;44.5&quot;/&gt;</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>                                    &lt;/Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>                                    &lt;Grid.RowDefinitions&gt;</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>                                        &lt;RowDefinition/&gt;</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>                                    &lt;/Grid.RowDefinitions&gt;</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>                                    &lt;TextBlock Text=&quot;RX:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot;/&gt;</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationX, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot;/&gt;</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot;/&gt;</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>                                    &lt;TextBlock Text=&quot;RY:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;1&quot; Margin=&quot;0,5&quot;/&gt;</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationY, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>                                    &lt;TextBlock Text=&quot;RZ:&quot; Grid.Column=&quot;0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>                                    &lt;Slider Minimum=&quot;-180&quot; Maximum=&quot;180&quot; Value=&quot;{Binding PointRotationZ, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>                                    &lt;TextBox Text=&quot;{Binding PointRotationZ, StringFormat={}{0:000.0}, FallbackValue=000.0, UpdateSourceTrigger=PropertyChanged}&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; TextAlignment=&quot;Right&quot; Margin=&quot;5,0,0,0&quot; Padding=&quot;0,0,7,0&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>                                    &lt;TextBlock Text=&quot;°&quot; Grid.Column=&quot;2&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Right&quot; FontSize=&quot;11&quot; Focusable=&quot;False&quot; IsHitTestVisible=&quot;False&quot; Margin=&quot;3.5,0&quot; Grid.Row=&quot;2&quot;/&gt;</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>                                &lt;/Grid&gt;</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,5,0,0&quot;&gt;</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Reset&#39;, Source={StaticResource Language}, XPath=Reset/@Value}&quot; Command=&quot;{Binding ResetPointRotationCommand}&quot; Width=&quot;60&quot; Margin=&quot;0,0,10,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Save&#39;, Source={StaticResource Language}, XPath=Save/@Value}&quot; Command=&quot;{Binding SavePointRotationCommand}&quot; Width=&quot;60&quot; Margin=&quot;0,0,10,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>                                    &lt;Button Content=&quot;{Binding FallbackValue=&#39;Cancel&#39;, Source={StaticResource Language}, XPath=ContextMenu_Cancel/@Value}&quot; Command=&quot;{Binding CancelPointRotationCommand}&quot; Width=&quot;60&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>                                &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>                            &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>                            &lt;Button Content=&quot;🗙&quot; FontSize=&quot;14&quot; Command=&quot;{Binding CancelPointRotationCommand}&quot; Padding=&quot;0&quot; Margin=&quot;0,-5,-2,0&quot; BorderThickness=&quot;0&quot; Background=&quot;{x:Null}&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Top&quot; Cursor=&quot;Hand&quot;&gt;</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>                                &lt;Button.Style&gt;</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>                                    &lt;Style TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>                                        &lt;Setter Property=&quot;OverridesDefaultStyle&quot; Value=&quot;True&quot;/&gt;</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>                                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>                                        &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>                                        &lt;Setter Property=&quot;Template&quot;&gt;</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>                                            &lt;Setter.Value&gt;</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>                                                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>                                                    &lt;ContentPresenter HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>                                                &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>                                            &lt;/Setter.Value&gt;</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>                                        &lt;/Setter&gt;</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>                                    &lt;/Style&gt;</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>                                &lt;/Button.Style&gt;</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>                            &lt;/Button&gt;</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>                        &lt;/Grid&gt;</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>                    &lt;/Border&gt;</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span> </div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>                    &lt;!-- Section View Overlay (Bottom Right) --&gt;</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>                    &lt;Border x:Name=&quot;SectionViewOverlay&quot;</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>                            Visibility=&quot;{Binding SectionViewOverlayVisibility, FallbackValue=Collapsed}&quot;</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>                            HorizontalAlignment=&quot;Right&quot;</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>                            VerticalAlignment=&quot;Bottom&quot;</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                            Margin=&quot;{Binding SectionViewOverlayMargin}&quot;</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>                            Background=&quot;WhiteSmoke&quot;</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>                            BorderBrush=&quot;DarkGray&quot;</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>                            BorderThickness=&quot;1&quot;</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>                            CornerRadius=&quot;5&quot;</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>                            Padding=&quot;10&quot;</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>                            Width=&quot;220&quot;&gt;</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>                        &lt;Grid&gt;</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot;&gt;</div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Section View Controls&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionViewSettings/@Value}&quot;</div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>                                           FontWeight=&quot;Bold&quot; Margin=&quot;0,-3,0,10&quot;/&gt;</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span> </div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Plane Axis&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionPlaneAxis/@Value}&quot; FontSize=&quot;10&quot;/&gt;</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;0,0,0,10&quot;&gt;</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>                                    &lt;RadioButton Content=&quot;X&quot; IsChecked=&quot;{Binding IsSectionAxisX}&quot; Margin=&quot;0,0,10,0&quot;/&gt;</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>                                    &lt;RadioButton Content=&quot;Y&quot; IsChecked=&quot;{Binding IsSectionAxisY}&quot; Margin=&quot;0,0,10,0&quot;/&gt;</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>                                    &lt;RadioButton Content=&quot;Z&quot; IsChecked=&quot;{Binding IsSectionAxisZ}&quot;/&gt;</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>                                &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span> </div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>                                &lt;TextBlock Text=&quot;{Binding FallbackValue=&#39;Plane Position&#39;, Source={StaticResource Language}, XPath=ContextMenu_SectionPlanePosition/@Value}&quot; FontSize=&quot;10&quot;/&gt;</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                                &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;0,0,0,10&quot;&gt;</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                                    &lt;Slider Width=&quot;135&quot; Minimum=&quot;0&quot; Maximum=&quot;{Binding SectionPlaneMaxPosition}&quot; </div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                                            Value=&quot;{Binding SectionPlanePosition, Mode=TwoWay}&quot; TickFrequency=&quot;1&quot; IsSnapToTickEnabled=&quot;False&quot;/&gt;</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                                    &lt;TextBlock Text=&quot;{Binding SectionPlanePosition, FallbackValue=0000.0 mm, StringFormat={}{0:F1} mm}&quot; Margin=&quot;5,0,0,0&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;11&quot; FontWeight=&quot;Bold&quot;/&gt;</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                                &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span> </div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                                &lt;Button Content=&quot;{Binding FallbackValue=&#39;Show current section view&#39;, Source={StaticResource Language}, XPath=ContextMenu_ShowCurrentSectionView/@Value}&quot;</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>                                        Command=&quot;{Binding ShowSectionViewWindowCommand}&quot;</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>                                        Padding=&quot;5&quot; Margin=&quot;0,5,0,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                            &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span> </div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>                            &lt;StackPanel Orientation=&quot;Vertical&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,-5,-5,0&quot;&gt;</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span> </div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>                                &lt;StackPanel.Resources&gt;</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>                                    &lt;Style x:Key=&quot;FlatButtonNoHover&quot; TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot;/&gt;</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                                        &lt;Setter Property=&quot;BorderThickness&quot; Value=&quot;0&quot;/&gt;</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                                        &lt;Setter Property=&quot;Cursor&quot; Value=&quot;Hand&quot;/&gt;</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                                        &lt;Setter Property=&quot;Focusable&quot; Value=&quot;False&quot;/&gt;</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                                        &lt;Setter Property=&quot;Template&quot;&gt;</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>                                            &lt;Setter.Value&gt;</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>                                                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>                                                    &lt;ContentPresenter </div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>                                                    HorizontalAlignment=&quot;Center&quot;</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>                                                    VerticalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>                                                &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>                                            &lt;/Setter.Value&gt;</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>                                        &lt;/Setter&gt;</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>                                    &lt;/Style&gt;</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>                                &lt;/StackPanel.Resources&gt;</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span> </div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>                                &lt;Button Content=&quot;🗙&quot;</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>                                    Command=&quot;{Binding CloseSectionViewOverlayCommand}&quot;</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>                                    Style=&quot;{StaticResource FlatButtonNoHover}&quot;</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>                                    FontSize=&quot;14&quot; Margin=&quot;0,0,1,0&quot;/&gt;</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span> </div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                                &lt;Button Content=&quot;❯&quot;</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>                                    Command=&quot;{Binding HideSectionViewBehindPanelCommand}&quot;</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>                                    Visibility=&quot;{Binding HideSectionViewBehindPanelVisibility, FallbackValue=Collapsed}&quot;</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>                                    Style=&quot;{StaticResource FlatButtonNoHover}&quot;</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>                                    FontSize=&quot;14&quot; Margin=&quot;0,0,1,0&quot;</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>                                    ToolTip=&quot;Hide behind side panel&quot;</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>                                    HorizontalContentAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span> </div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>                            &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>                        &lt;/Grid&gt;</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>                    &lt;/Border&gt;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>                &lt;/Grid&gt;</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>            &lt;/GroupBox&gt;</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>            &lt;Label Grid.Column=&quot;1&quot; HorizontalContentAlignment=&quot;Center&quot; VerticalContentAlignment=&quot;Center&quot; Content=&quot;{Binding FallbackValue=&#39;No Part Loaded&#39;, Source={StaticResource Language}, XPath=NoPartLoaded/@Value}&quot;&gt;</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>                &lt;Label.Style&gt;</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>                    &lt;Style TargetType=&quot;Label&quot;&gt;</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>                        &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Visible&quot;/&gt;</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>                        &lt;Style.Triggers&gt;</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>                            &lt;DataTrigger Binding=&quot;{Binding ElementName=designControl, Path=Visibility}&quot; Value=&quot;Visible&quot;&gt;</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>                                &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>                            &lt;/DataTrigger&gt;</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>                        &lt;/Style.Triggers&gt;</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>                    &lt;/Style&gt;</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>                &lt;/Label.Style&gt;</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>            &lt;/Label&gt;</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>            &lt;!-- 3. STATUS BAR --&gt;</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>            &lt;Grid Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Bottom&quot; Margin=&quot;17,10,17,14&quot; Visibility=&quot;{Binding DesignerVisibility, FallbackValue=Collapsed}&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot;&gt;</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>                &lt;Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>                    &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>                    &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>                &lt;/Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>                &lt;StatusBar Background=&quot;{x:Null}&quot; VerticalAlignment=&quot;Bottom&quot;&gt;</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>                    &lt;TextBlock x:Name=&quot;EyeshotStatusText&quot; Text=&quot;{Binding EyeshotStatus_Text}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot;/&gt;</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>                &lt;/StatusBar&gt;</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>                &lt;StatusBar Grid.Column=&quot;1&quot; FlowDirection=&quot;RightToLeft&quot; Background=&quot;{x:Null}&quot; Padding=&quot;0&quot; VerticalAlignment=&quot;Bottom&quot;&gt;</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>                    &lt;StackPanel Orientation=&quot;Vertical&quot; IsHitTestVisible=&quot;False&quot; Focusable=&quot;False&quot;&gt;</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>                        &lt;TextBlock x:Name=&quot;CurrentRelativePointCoords&quot; Text=&quot;{Binding CurrentRelativePointCoords}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot; FontSize=&quot;9&quot;/&gt;</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>                        &lt;TextBlock x:Name=&quot;CurrentPointCoords&quot; Text=&quot;{Binding CurrentPointCoords}&quot; IsHitTestVisible=&quot;False&quot; TextWrapping=&quot;NoWrap&quot; FontSize=&quot;11&quot;/&gt;</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>                    &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>                &lt;/StatusBar&gt;</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>            &lt;/Grid&gt;</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>        &lt;/Grid&gt;</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span> </div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>        &lt;!-- Settings Side Panel --&gt;</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>        &lt;resources:SidePanelTab x:Name=&quot;SettingsSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot; </div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>                            FlowDirection=&quot;RightToLeft&quot;</div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>                            HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span> </div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>        &lt;!-- About Side Panel --&gt;</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>        &lt;resources:SidePanelTab x:Name=&quot;AboutSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>                            FlowDirection=&quot;RightToLeft&quot;</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>                            HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span> </div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>        &lt;!-- Manual Side Panel --&gt;</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>        &lt;resources:SidePanelTab x:Name=&quot;PlanningSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>                    FlowDirection=&quot;RightToLeft&quot;</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>                    HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span> </div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>        &lt;!-- Auto Side Panel --&gt;</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>        &lt;resources:SidePanelTab x:Name=&quot;MeasuringSidePanel&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>                    FlowDirection=&quot;RightToLeft&quot;</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>                    HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Stretch&quot; Panel.ZIndex=&quot;1&quot;/&gt;</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span> </div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>        &lt;!-- Copy --&gt;</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>        &lt;Grid Grid.Row=&quot;2&quot; Grid.ColumnSpan=&quot;3&quot;&gt;</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>            &lt;Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>                &lt;ColumnDefinition Width=&quot;2*&quot;/&gt;</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>                &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;</div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>            &lt;/Grid.ColumnDefinitions&gt;</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>            &lt;TextBlock Grid.Row=&quot;2&quot; Margin=&quot;12,5,5,5&quot;  VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot; Text=&quot;{Binding FallbackValue=© 2026 Sarkkis Robotics, Source={StaticResource Language}, XPath=CopyRights/@Value}&quot;/&gt;</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>            &lt;Separator Grid.Column=&quot;1&quot;  Margin=&quot;5,2,5,2&quot;&gt;</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>                &lt;Separator.LayoutTransform&gt;</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>                    &lt;TransformGroup&gt;</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>                        &lt;RotateTransform Angle=&quot;90&quot;/&gt;</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>                    &lt;/TransformGroup&gt;</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>                &lt;/Separator.LayoutTransform&gt;</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>            &lt;/Separator&gt;</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>            &lt;Label Grid.Column=&quot;2&quot; Content=&quot;{Binding FallbackValue=Machine Status:, Source={StaticResource Language}, XPath=MachineStatusLabel/@Value}&quot; FontWeight=&quot;SemiBold&quot; VerticalAlignment=&quot;Center&quot; Visibility=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>            &lt;Ellipse Grid.Column=&quot;3&quot; Fill=&quot;{Binding Status_Indicator_Color, FallbackValue=Red}&quot; Width=&quot;16&quot; Height=&quot;16&quot; Margin=&quot;5,0,0,0&quot; Visibility=&quot;Collapsed&quot;&gt;</div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>                &lt;Ellipse.Stroke&gt;</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>                    &lt;SolidColorBrush Color=&quot;{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}&quot;/&gt;</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>                &lt;/Ellipse.Stroke&gt;</div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>            &lt;/Ellipse&gt;</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>            &lt;TextBox Grid.Column=&quot;4&quot; Text=&quot;{Binding Status_Text, FallbackValue=&#39;Idle&#39;}&quot; FontWeight=&quot;SemiBold&quot; VerticalAlignment=&quot;Center&quot; HorizontalContentAlignment=&quot;Center&quot; Padding=&quot;5,0,5,0&quot; Visibility=&quot;Collapsed&quot; Background=&quot;Transparent&quot; IsReadOnly=&quot;True&quot; BorderThickness=&quot;0&quot;/&gt;</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>            &lt;ProgressBar Grid.Column=&quot;5&quot; Margin=&quot;4&quot; Value=&quot;{Binding Machine_Status_Progress, FallbackValue=0}&quot; Foreground=&quot;{Binding StatusProgressBarColor}&quot;/&gt;</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>            &lt;Slider Grid.Column=&quot;5&quot; Margin=&quot;4&quot; Panel.ZIndex=&quot;1&quot;</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>                    Value=&quot;{Binding Machine_Status_Progress, FallbackValue=0, Mode=TwoWay}&quot; </div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>                    Minimum=&quot;0&quot; Maximum=&quot;100&quot; </div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>                    IsEnabled=&quot;{Binding IsSimulationSeekEnabled, FallbackValue=False}&quot;</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>                    IsHitTestVisible=&quot;{Binding IsSimulationSeekEnabled, FallbackValue=False}&quot;</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>                    IsMoveToPointEnabled=&quot;True&quot; Background=&quot;Transparent&quot;&gt;</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>                &lt;Slider.Style&gt;</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>                    &lt;Style TargetType=&quot;Slider&quot;&gt;</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>                        &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Collapsed&quot;/&gt;</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>                        &lt;Style.Triggers&gt;</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>                            &lt;DataTrigger Binding=&quot;{Binding IsSimulationSeekEnabled}&quot; Value=&quot;True&quot;&gt;</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>                                &lt;Setter Property=&quot;Visibility&quot; Value=&quot;Visible&quot;/&gt;</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>                            &lt;/DataTrigger&gt;</div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>                        &lt;/Style.Triggers&gt;</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>                    &lt;/Style&gt;</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>                &lt;/Slider.Style&gt;</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>                &lt;Slider.Template&gt;</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>                    &lt;ControlTemplate TargetType=&quot;Slider&quot;&gt;</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>                        &lt;Border Background=&quot;{TemplateBinding Background}&quot;&gt;</div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>                            &lt;Track x:Name=&quot;PART_Track&quot;&gt;</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>                                &lt;Track.DecreaseRepeatButton&gt;</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>                                    &lt;RepeatButton Command=&quot;{x:Static Slider.DecreaseLarge}&quot;&gt;</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>                                        &lt;RepeatButton.Template&gt;</div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>                                            &lt;ControlTemplate TargetType=&quot;RepeatButton&quot;&gt;</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>                                                &lt;Border Background=&quot;Transparent&quot; /&gt;</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>                                            &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>                                        &lt;/RepeatButton.Template&gt;</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>                                    &lt;/RepeatButton&gt;</div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>                                &lt;/Track.DecreaseRepeatButton&gt;</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>                                &lt;Track.IncreaseRepeatButton&gt;</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                                    &lt;RepeatButton Command=&quot;{x:Static Slider.IncreaseLarge}&quot;&gt;</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>                                        &lt;RepeatButton.Template&gt;</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>                                            &lt;ControlTemplate TargetType=&quot;RepeatButton&quot;&gt;</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>                                                &lt;Border Background=&quot;Transparent&quot; /&gt;</div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>                                            &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>                                        &lt;/RepeatButton.Template&gt;</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>                                    &lt;/RepeatButton&gt;</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>                                &lt;/Track.IncreaseRepeatButton&gt;</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>                                &lt;Track.Thumb&gt;</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>                                    &lt;Thumb Cursor=&quot;SizeWE&quot; BorderThickness=&quot;0&quot; Padding=&quot;0&quot;&gt;</div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>                                        &lt;Thumb.Template&gt;</div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>                                            &lt;ControlTemplate TargetType=&quot;Thumb&quot;&gt;</div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>                                                &lt;Rectangle Width=&quot;3&quot; Fill=&quot;Gray&quot; VerticalAlignment=&quot;Stretch&quot; Stroke=&quot;DarkGray&quot; StrokeThickness=&quot;0.5&quot;/&gt;</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>                                            &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>                                        &lt;/Thumb.Template&gt;</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>                                    &lt;/Thumb&gt;</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>                                &lt;/Track.Thumb&gt;</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>                            &lt;/Track&gt;</div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>                        &lt;/Border&gt;</div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>                    &lt;/ControlTemplate&gt;</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>                &lt;/Slider.Template&gt;</div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>            &lt;/Slider&gt;</div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>            &lt;TextBlock Grid.Column=&quot;5&quot; Text=&quot;{Binding Machine_Status_ProgressText, FallbackValue=Idle}&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; IsHitTestVisible=&quot;False&quot;/&gt;</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>            &lt;Separator Grid.Column=&quot;6&quot;  Margin=&quot;5,2,5,2&quot;&gt;</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>                &lt;Separator.LayoutTransform&gt;</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>                    &lt;TransformGroup&gt;</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>                        &lt;RotateTransform Angle=&quot;90&quot;/&gt;</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>                    &lt;/TransformGroup&gt;</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>                &lt;/Separator.LayoutTransform&gt;</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>            &lt;/Separator&gt;</div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>            &lt;StackPanel Grid.Column=&quot;7&quot; Orientation=&quot;Vertical&quot; VerticalAlignment=&quot;Center&quot; Margin=&quot;0,0,8,0&quot;&gt;</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>                &lt;TextBlock Text=&quot;{Binding CurrentTime, FallbackValue=00:00:00}&quot; FontSize=&quot;10&quot; Margin=&quot;5,4,5,0&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>                &lt;TextBlock Text=&quot;{Binding CurrentDate, FallbackValue=00/00/0000}&quot; FontSize=&quot;10&quot; Margin=&quot;5,0,5,4&quot; HorizontalAlignment=&quot;Center&quot;/&gt;</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>            &lt;/StackPanel&gt;</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>        &lt;/Grid&gt;</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>    &lt;/Grid&gt;</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>&lt;/Window&gt;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

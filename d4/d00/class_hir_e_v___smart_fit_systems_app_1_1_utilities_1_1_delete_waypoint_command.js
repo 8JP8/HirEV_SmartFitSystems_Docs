@@ -1,6 +1,7 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command =
 [
     [ "DeleteWaypointCommand", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html#a1d3428afe86751ff5b560b7a9e3a2e1c", null ],
+    [ "GetLocalizedDescription", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html#a9222d034af04759c948fe2101ab2a608", null ],
     [ "Redo", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html#af38ad3a20df87c8be20e4210372df60d", null ],
     [ "Undo", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html#ad8fdadb8f5262cbcead7ad2400ebe201", null ],
     [ "_designControl", "d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_delete_waypoint_command.html#a7e2044663bb1124fea187a5f4338a200", null ],

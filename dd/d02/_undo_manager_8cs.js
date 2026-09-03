@@ -1,5 +1,6 @@
 var _undo_manager_8cs =
 [
+    [ "HirEV_SmartFitSystemsApp.Utilities.UndoLocalizationHelper", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper.html", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.IUndoCommand", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoRedoEventArgs", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args" ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoManager", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager" ],

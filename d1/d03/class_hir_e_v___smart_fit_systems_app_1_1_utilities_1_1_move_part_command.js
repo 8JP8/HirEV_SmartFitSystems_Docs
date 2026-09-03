@@ -4,6 +4,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command =
     [ "MovePartCommand", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#af22cd9589fe3c80e2e172812d3a77ea8", null ],
     [ "MovePartCommand", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#a97c8e057cd9bf5414313e503c795db01", null ],
     [ "ApplyTransform", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#af8b79641a0d3a769245de84e1750f293", null ],
+    [ "GetLocalizedDescription", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#a9a51f94040e48dd7dd2bc7a8f0b3cedc", null ],
     [ "Redo", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#a019085770cb25984ba3409865c8e3213", null ],
     [ "Undo", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#a8c2ae1ff93dde502c7ff8d7f5c992df9", null ],
     [ "_designControl", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html#a2c064da63576c0f53c74304e1a49f170", null ],

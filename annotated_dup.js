@@ -172,6 +172,7 @@ var annotated_dup =
         [ "RecentPartsManager", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager.html", "d8/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_recent_parts_manager" ],
         [ "ScannerConfigurationSaver", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_scanner_configuration_saver" ],
         [ "ToolModelLoader", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader.html", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader" ],
+        [ "UndoLocalizationHelper", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper.html", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper" ],
         [ "IUndoCommand", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html", "d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command" ],
         [ "UndoRedoEventArgs", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args.html", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args" ],
         [ "UndoManager", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager" ],

@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCach
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_models_8_d_t_os_8_sdf_shell_cache_d_t_o_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_models_8_d_t_os_8_sdf_shell_cache_d_t_o_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_models_8_d_t_os_8_sdf_shell_cache_d_t_o_coll__map">
-<area shape="rect" title="Data Transfer Object for caching signed distance field (SDF) shell computations. Used for serializati..." alt="" coords="5,5,216,283"/>
+<area shape="rect" title="Data Transfer Object for caching signed distance field (SDF) shell computations. Used for serializati..." alt="" coords="5,5,216,304"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -123,6 +123,8 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a447045dae0d68e0ec2b80846df6cf712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the indices of faces with flipped normals.  <br /></td></tr>
 <tr class="memitem:a82d32f6556d405961a55e9391248b18c" id="r_a82d32f6556d405961a55e9391248b18c"><td class="memItemLeft"><a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a82d32f6556d405961a55e9391248b18c">ShellMesh</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a82d32f6556d405961a55e9391248b18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the calculated shell mesh.  <br /></td></tr>
+<tr class="memitem:acb28ed860e1c8ec31d303a22d9e362c7" id="r_acb28ed860e1c8ec31d303a22d9e362c7"><td class="memItemLeft">List&lt; <a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acb28ed860e1c8ec31d303a22d9e362c7">ShellMeshes</a> = new List&lt;<a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a>&gt;()<code> [get, set]</code></td></tr>
+<tr class="memdesc:acb28ed860e1c8ec31d303a22d9e362c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of individual shell meshes for multi-part setups.  <br /></td></tr>
 <tr class="memitem:a516ec2070173d784b16ca0ef38ef10c9" id="r_a516ec2070173d784b16ca0ef38ef10c9"><td class="memItemLeft">List&lt; <a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o.html">SdfContextCacheDTO</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a516ec2070173d784b16ca0ef38ef10c9">SdfContexts</a> = new List&lt;<a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o.html">SdfContextCacheDTO</a>&gt;()<code> [get, set]</code></td></tr>
 <tr class="memdesc:a516ec2070173d784b16ca0ef38ef10c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of serialized SDF grid contexts.  <br /></td></tr>
 <tr class="memitem:a93da878c1c869ea50652bfd6fc540d70" id="r_a93da878c1c869ea50652bfd6fc540d70"><td class="memItemLeft">Dictionary&lt; int, List&lt; int &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a93da878c1c869ea50652bfd6fc540d70">FaceAdjacencyMap</a> = new Dictionary&lt;int, List&lt;int&gt;&gt;()<code> [get, set]</code></td></tr>
@@ -155,9 +157,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the dictionary mapping face indices to their adjacent faces. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00066">66</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +187,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00046">46</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -213,7 +215,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -241,7 +243,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00041">41</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -269,7 +271,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00026">26</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +299,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +327,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00016">16</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -351,9 +353,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the list of serialized SDF grid contexts. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +383,35 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00051">51</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+
+</div>
+</div>
+<a id="acb28ed860e1c8ec31d303a22d9e362c7" name="acb28ed860e1c8ec31d303a22d9e362c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb28ed860e1c8ec31d303a22d9e362c7">&#9670;&#160;</a></span>ShellMeshes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a>&gt; HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.ShellMeshes = new List&lt;<a class="el" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html">ShellMeshDTO</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the list of individual shell meshes for multi-part setups. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -409,7 +439,7 @@ Propriedades</h2></td></tr>
 
 <p class="definition">Definido na linha <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00036">36</a> do ficheiro <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html">SdfShellCacheDTO.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>

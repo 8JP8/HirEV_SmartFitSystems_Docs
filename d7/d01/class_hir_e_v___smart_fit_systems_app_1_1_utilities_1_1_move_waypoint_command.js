@@ -2,6 +2,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_comman
 [
     [ "MoveWaypointCommand", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a3817a1c14e59ee75227acfef806d8f48", null ],
     [ "ApplyPointChange", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a4ad4b60abf8cf39e287e7b9c53a8fad5", null ],
+    [ "GetLocalizedDescription", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a3d0d8b69b38ff83c2681af4d5a1e08a5", null ],
     [ "Redo", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a3613b4cf6adc01d4af1256e3fdd7039f", null ],
     [ "Undo", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a0a3dd9e6b0f1e29005b751b11a5a6ea6", null ],
     [ "_designControl", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html#a114a594a3eed811ac6b380c68715a7f7", null ],

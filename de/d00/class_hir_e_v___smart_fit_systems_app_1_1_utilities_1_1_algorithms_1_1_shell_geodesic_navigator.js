@@ -2,7 +2,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell
 [
     [ "ShellGeodesicNavigator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a94443a1d6641197e2af093b6b0786b9b", null ],
     [ "ShellGeodesicNavigator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a45be1be9007dbc289ce72bc2a40ef463", null ],
-    [ "ShellGeodesicNavigator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#ae781850dfca16a5c86bdeef157d76a0c", null ],
+    [ "ShellGeodesicNavigator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#afa30164a5fe08d3478436ffaef83074c", null ],
     [ "AddApproachEdgeFromMesh", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a1c9baf053ed4572aeca8f61327449437", null ],
     [ "AddCrossFaceConnections", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#affb2c491b45bc225c47957594a2e8771", null ],
     [ "AddMeshEdge", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a9e00577f97ad0f5686cf0ff7b7c59bc2", null ],
@@ -30,6 +30,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell
     [ "_partBrep", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a034c888f82cd5fbe64b66dd9c6367599", null ],
     [ "_partCentroid", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a55c53753719a515506d457514281ebde", null ],
     [ "_safetyOffset", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#ac236bd89c94b88c42ae63554c75239e7", null ],
+    [ "_shellGenerator", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a82982f5e32ec59783d7090187faaad00", null ],
     [ "_shellMesh", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a2f9770eb9405ef1f0fd6f01ee5abe1bd", null ],
     [ "_shellMeshVertexGrid", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a83a85e906fd6b8307fac29dbf1147ae7", null ],
     [ "_splineInsertionThreshold", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a5c23370f18e2a0a561934930ac19ac4c", null ],

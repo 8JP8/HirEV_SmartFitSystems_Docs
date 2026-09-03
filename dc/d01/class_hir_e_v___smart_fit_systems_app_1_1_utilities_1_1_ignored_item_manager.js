@@ -39,7 +39,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager
     [ "_designControl", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad379a317773e60df94d060a16157ade0", null ],
     [ "_flippedFaceDataMap", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#afa0c1733589636836a2b2e4b73f41fa0", null ],
     [ "_ignoredFaceDataMap", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a8581fd25d46d3cde8587e944b1b5ed40", null ],
-    [ "_ignoredOverlayReference", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#af1f0fc8d24678b13825a7433a3484dab", null ],
+    [ "_ignoredOverlayReferences", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#af7c5f976e087c48770fe50e2427b9617", null ],
     [ "_lastRebuiltOverlayDataVersion", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a2fcbdc7a0c42dc0efdf9aae65e3de00e", null ],
     [ "_lastVisibleParentSignature", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04c91cd0d58ba47ae54390917c0ee1ba", null ],
     [ "_lineOffset", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5525fc81943651fc72857d50c869a273", null ],
@@ -54,6 +54,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager
     [ "GrayMeshMaterialName", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a8cd872a35ccddb54da587dc4ee40f7a5", null ],
     [ "IgnoredBlockName", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a0b3bf317301121c9c3c73dcd659a1610", null ],
     [ "IgnoredBlockRefIdentifier", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a06fdda2cca240eeced452ef6665645b3", null ],
+    [ "IgnoredLayerName", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#acf1535015bf091c10b1823f0e51129b9", null ],
     [ "SquareTextureMaterialName", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a395901b1a6e202cb6e727624599eff15", null ],
     [ "StripeTextureMaterialName", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3ddbbd075f3675057d1aac1aeb38945a", null ],
     [ "DocLanguage", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ae95817692a04329494cd281389ea60c7", null ]

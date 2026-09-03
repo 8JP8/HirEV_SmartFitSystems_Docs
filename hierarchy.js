@@ -266,6 +266,7 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D", "d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoHistoryEntryDTO", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.UndoLocalizationHelper", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoManager", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html", null ],
     [ "UserControl", null, [
       [ "HirEV_SmartFitSystemsApp.About_SidePanel", "d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_about___side_panel.html", null ],

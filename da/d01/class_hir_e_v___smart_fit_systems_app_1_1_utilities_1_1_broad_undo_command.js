@@ -2,6 +2,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command =
 [
     [ "State", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command_1_1_state.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command_1_1_state" ],
     [ "BroadUndoCommand", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html#a89282238af1fd05f1bf83e2c96292e6a", null ],
+    [ "GetLocalizedDescription", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html#ab9e8f1ae2e09b10d7c50ae34220600c8", null ],
     [ "Redo", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html#a2313d58600130251f6994b11b8921a99", null ],
     [ "Undo", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html#a1b4408a3da4200012022e6015c1fd95a", null ],
     [ "_applyStateAction", "da/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_broad_undo_command.html#a12fa478aa174a4edfa7146453132da17", null ],

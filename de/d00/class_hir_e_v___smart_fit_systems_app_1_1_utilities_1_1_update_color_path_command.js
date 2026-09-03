@@ -3,6 +3,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_co
     [ "UpdateColorPathCommand", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#ad8f6b476885d54dacdf9fd77b6abe082", null ],
     [ "ApplyState", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a7d42c012d7852d2ec78fa306b3d5cecc", null ],
     [ "ApplyStateWithoutVisualRefresh", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a8cb755d95ce830daef7d536e33537307", null ],
+    [ "GetLocalizedDescription", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a92fa6a161f36fab030914b65eb3ae81a", null ],
     [ "Redo", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a845c3df22402d063cc9a06845299f135", null ],
     [ "RefreshVisuals", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#aaaabc8a95b490f35e24f811ec7d318f1", null ],
     [ "Undo", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_update_color_path_command.html#a53dd1e42ea063882b4f672e87371f388", null ],

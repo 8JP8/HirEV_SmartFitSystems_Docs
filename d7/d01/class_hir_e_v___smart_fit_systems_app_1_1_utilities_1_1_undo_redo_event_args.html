@@ -101,9 +101,9 @@ Diagrama de heranças da classe HirEV_SmartFitSystemsApp.Utilities.UndoRedoEvent
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args__inherit__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_inherit__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_inherit__map">
-<area shape="rect" title="Provides event arguments for undo and redo action notification events." alt="" coords="5,123,187,251"/>
+<area shape="rect" title="Provides event arguments for undo and redo action notification events." alt="" coords="5,123,187,272"/>
 <area shape="rect" title=" " alt="" coords="60,5,132,75"/>
-<area shape="poly" title=" " alt="" coords="97,87,99,124,94,122,95,92"/>
+<area shape="poly" title=" " alt="" coords="97,87,99,123,94,122,95,92"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,12 +111,17 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.UndoRedoEventA
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_redo_event_args__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_undo_redo_event_args_coll__map">
-<area shape="rect" title="Provides event arguments for undo and redo action notification events." alt="" coords="5,123,187,251"/>
+<area shape="rect" title="Provides event arguments for undo and redo action notification events." alt="" coords="5,123,187,272"/>
 <area shape="rect" title=" " alt="" coords="60,5,132,75"/>
-<area shape="poly" title=" " alt="" coords="97,87,99,124,94,122,95,92"/>
+<area shape="poly" title=" " alt="" coords="97,87,99,123,94,122,95,92"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a2c0cd2a2176778d5d4d222e1d6ecb43c" id="r_a2c0cd2a2176778d5d4d222e1d6ecb43c"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a2c0cd2a2176778d5d4d222e1d6ecb43c">GetLocalizedDescription</a> (XmlDocument? docLanguage=null)</td></tr>
+<tr class="memdesc:a2c0cd2a2176778d5d4d222e1d6ecb43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the localized description of the command using the provided language document.  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Propriedades</h2></td></tr>
 <tr class="memitem:aba40f67bc0dae02b7b0440f3dc2292ef" id="r_aba40f67bc0dae02b7b0440f3dc2292ef"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#aba40f67bc0dae02b7b0440f3dc2292ef">Description</a> = string.Empty<code> [get, set]</code></td></tr>
@@ -125,12 +130,45 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a4b94fed4c2db7216d68aea1fe1100c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the category of the command that was processed.  <br /></td></tr>
 <tr class="memitem:a02ff2daccf54c86d44a3d1b07babd288" id="r_a02ff2daccf54c86d44a3d1b07babd288"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a02ff2daccf54c86d44a3d1b07babd288">IsUndo</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a02ff2daccf54c86d44a3d1b07babd288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether this event represents an undo operation (true) or a redo operation (false).  <br /></td></tr>
+<tr class="memitem:a24170ebd9272ee9a874a97d92c12dce3" id="r_a24170ebd9272ee9a874a97d92c12dce3"><td class="memItemLeft"><a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a24170ebd9272ee9a874a97d92c12dce3">Command</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a24170ebd9272ee9a874a97d92c12dce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the undo command instance that was processed.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Provides event arguments for undo and redo action notification events. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00046">46</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
-</div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00074">74</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a2c0cd2a2176778d5d4d222e1d6ecb43c" name="a2c0cd2a2176778d5d4d222e1d6ecb43c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0cd2a2176778d5d4d222e1d6ecb43c">&#9670;&#160;</a></span>GetLocalizedDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.UndoRedoEventArgs.GetLocalizedDescription </td>
+          <td>(</td>
+          <td class="paramtype">XmlDocument?</td>          <td class="paramname"><span class="paramname"><em>docLanguage</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolves the localized description of the command using the provided language document. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">docLanguage</td><td>The language XML document.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The localized description string.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00101">101</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00094">Command</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00079">Description</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
 <a id="a4b94fed4c2db7216d68aea1fe1100c15" name="a4b94fed4c2db7216d68aea1fe1100c15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b94fed4c2db7216d68aea1fe1100c15">&#9670;&#160;</a></span>Category</h2>
 
@@ -153,7 +191,35 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the category of the command that was processed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00084">84</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a24170ebd9272ee9a874a97d92c12dce3" name="a24170ebd9272ee9a874a97d92c12dce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24170ebd9272ee9a874a97d92c12dce3">&#9670;&#160;</a></span>Command</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a>? HirEV_SmartFitSystemsApp.Utilities.UndoRedoEventArgs.Command</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the undo command instance that was processed. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00094">94</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00101">GetLocalizedDescription()</a>.</p>
 
 </div>
 </div>
@@ -179,7 +245,9 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets the description of the command that was processed. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00051">51</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00079">79</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00101">GetLocalizedDescription()</a>.</p>
 
 </div>
 </div>
@@ -205,7 +273,7 @@ Propriedades</h2></td></tr>
 
 <p>Gets or sets a value indicating whether this event represents an undo operation (true) or a redo operation (false). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00089">89</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
 </div>
 </div>

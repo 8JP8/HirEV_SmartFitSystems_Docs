@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.IgnoredItemMan
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_ignored_item_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_ignored_item_manager_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_ignored_item_manager_coll__map">
-<area shape="rect" title="Manages the visual representation of ignored faces in the Eyeshot design control. Provides methods to..." alt="" coords="5,5,202,891"/>
+<area shape="rect" title="Manages the visual representation of ignored faces in the Eyeshot design control. Provides methods to..." alt="" coords="5,5,202,912"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,6 +132,11 @@ Membros públicos</h2></td></tr>
 <tr class="memdesc:a6827ccb21bccc2f0e7e33b01cafc38f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies RED overlay to faces with flipped normals (that are not ignored).  <br /></td></tr>
 <tr class="memitem:a257d4af8bcf0afad0d0ad07f95ee6456" id="r_a257d4af8bcf0afad0d0ad07f95ee6456"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a257d4af8bcf0afad0d0ad07f95ee6456">ClearFlippedFaceOverlays</a> (List&lt; int &gt; flippedFaceIndices)</td></tr>
 <tr class="memdesc:a257d4af8bcf0afad0d0ad07f95ee6456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes flipped face overlays (only for flipped, not ignored faces).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Atributos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a0b3bf317301121c9c3c73dcd659a1610" id="r_a0b3bf317301121c9c3c73dcd659a1610"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a0b3bf317301121c9c3c73dcd659a1610">IgnoredBlockName</a> = &quot;IgnoredOverlay_Block&quot;</td></tr>
+<tr class="memitem:acf1535015bf091c10b1823f0e51129b9" id="r_acf1535015bf091c10b1823f0e51129b9"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#acf1535015bf091c10b1823f0e51129b9">IgnoredLayerName</a> = &quot;IGNORED_ITEMS_OVERLAY&quot;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Propriedades</h2></td></tr>
@@ -194,7 +199,7 @@ Atributos Privados</h2></td></tr>
 <tr class="memitem:a094b20ae984f003f9ad654e29193f8dc" id="r_a094b20ae984f003f9ad654e29193f8dc"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a094b20ae984f003f9ad654e29193f8dc">_cubeSize</a></td></tr>
 <tr class="memitem:a60cc62a1bcd4198bb8191cf55fdbdc73" id="r_a60cc62a1bcd4198bb8191cf55fdbdc73"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a60cc62a1bcd4198bb8191cf55fdbdc73">_targetSpacing</a></td></tr>
 <tr class="memitem:a4c975afcad2268bc5029f2dfb88a528b" id="r_a4c975afcad2268bc5029f2dfb88a528b"><td class="memItemLeft">readonly double&#160;</td><td class="memItemRight"><a class="el" href="#a4c975afcad2268bc5029f2dfb88a528b">_clearenceoffset</a></td></tr>
-<tr class="memitem:af1f0fc8d24678b13825a7433a3484dab" id="r_af1f0fc8d24678b13825a7433a3484dab"><td class="memItemLeft">readonly BlockReference&#160;</td><td class="memItemRight"><a class="el" href="#af1f0fc8d24678b13825a7433a3484dab">_ignoredOverlayReference</a></td></tr>
+<tr class="memitem:af7c5f976e087c48770fe50e2427b9617" id="r_af7c5f976e087c48770fe50e2427b9617"><td class="memItemLeft">readonly Dictionary&lt; int, BlockReference &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af7c5f976e087c48770fe50e2427b9617">_ignoredOverlayReferences</a> = new Dictionary&lt;int, BlockReference&gt;()</td></tr>
 <tr class="memitem:a8581fd25d46d3cde8587e944b1b5ed40" id="r_a8581fd25d46d3cde8587e944b1b5ed40"><td class="memItemLeft">readonly Dictionary&lt;(int, int), <a class="el" href="../../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_1_1_ignored_face_data.html">IgnoredFaceData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8581fd25d46d3cde8587e944b1b5ed40">_ignoredFaceDataMap</a> = new Dictionary&lt;(int, int), <a class="el" href="../../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_1_1_ignored_face_data.html">IgnoredFaceData</a>&gt;()</td></tr>
 <tr class="memitem:afa0c1733589636836a2b2e4b73f41fa0" id="r_afa0c1733589636836a2b2e4b73f41fa0"><td class="memItemLeft">readonly Dictionary&lt;(int, int), <a class="el" href="../../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_1_1_ignored_face_data.html">IgnoredFaceData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afa0c1733589636836a2b2e4b73f41fa0">_flippedFaceDataMap</a> = new Dictionary&lt;(int, int), <a class="el" href="../../db/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_1_1_ignored_face_data.html">IgnoredFaceData</a>&gt;()</td></tr>
 <tr class="memitem:aa6daf4d2bdba99b2efc7a124bc47537a" id="r_aa6daf4d2bdba99b2efc7a124bc47537a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa6daf4d2bdba99b2efc7a124bc47537a">_overlayDataVersion</a></td></tr>
@@ -203,7 +208,6 @@ Atributos Privados</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Atributos Privados Estáticos</h2></td></tr>
-<tr class="memitem:a0b3bf317301121c9c3c73dcd659a1610" id="r_a0b3bf317301121c9c3c73dcd659a1610"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a0b3bf317301121c9c3c73dcd659a1610">IgnoredBlockName</a> = &quot;IgnoredOverlay_Block&quot;</td></tr>
 <tr class="memitem:a06fdda2cca240eeced452ef6665645b3" id="r_a06fdda2cca240eeced452ef6665645b3"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a06fdda2cca240eeced452ef6665645b3">IgnoredBlockRefIdentifier</a> = &quot;IgnoredOverlay_Ref&quot;</td></tr>
 <tr class="memitem:a3ddbbd075f3675057d1aac1aeb38945a" id="r_a3ddbbd075f3675057d1aac1aeb38945a"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a3ddbbd075f3675057d1aac1aeb38945a">StripeTextureMaterialName</a> = &quot;StripeTextureMaterial&quot;</td></tr>
 <tr class="memitem:a395901b1a6e202cb6e727624599eff15" id="r_a395901b1a6e202cb6e727624599eff15"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#a395901b1a6e202cb6e727624599eff15">SquareTextureMaterialName</a> = &quot;SquareTextureMaterial&quot;</td></tr>
@@ -237,9 +241,9 @@ Atributos Privados Estáticos</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">119</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">120</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">_clearenceoffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">_cubeSize</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00094">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00107">_ignoredOverlayReference</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">_lineOffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">_lineRadius</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">_lineSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">_lineThickness</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_stripesDensity</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">_targetSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_textureResolution</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00096">_textureScale</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00088">IgnoredBlockName</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00089">IgnoredBlockRefIdentifier</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00106">_clearenceoffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">_cubeSize</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00095">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">_lineOffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">_lineRadius</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">_lineSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_lineThickness</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">_stripesDensity</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">_targetSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_textureResolution</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">_textureScale</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00088">IgnoredBlockName</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00089">IgnoredLayerName</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -284,40 +288,40 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">369</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">366</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a6827ccb21bccc2f0e7e33b01cafc38f9_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a6827ccb21bccc2f0e7e33b01cafc38f9_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a6827ccb21bccc2f0e7e33b01cafc38f9_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a6827ccb21bccc2f0e7e33b01cafc38f9_cgraph">
-<area shape="rect" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="5,319,221,377"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="269,225,514,284"/>
-<area shape="poly" title=" " alt="" coords="201,316,289,288,285,291,204,320"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="281,319,502,377"/>
-<area shape="poly" title=" " alt="" coords="220,346,268,347,263,349,222,350"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="273,447,510,505"/>
-<area shape="poly" title=" " alt="" coords="179,375,314,438,309,441,178,381"/>
+<area shape="rect" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="5,344,221,403"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="269,212,514,271"/>
+<area shape="poly" title=" " alt="" coords="175,341,316,276,312,280,178,346"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="281,344,502,403"/>
+<area shape="poly" title=" " alt="" coords="221,371,268,372,263,374,222,376"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="273,427,510,485"/>
+<area shape="poly" title=" " alt="" coords="214,401,278,421,273,422,214,406"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="562,5,807,64"/>
-<area shape="poly" title=" " alt="" coords="412,223,473,149,515,109,561,74,572,70,567,73,563,78,518,113,477,153,416,227"/>
+<area shape="poly" title=" " alt="" coords="414,210,476,142,516,106,561,74,572,70,568,73,563,78,520,110,480,146,418,213"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="562,253,807,312"/>
-<area shape="poly" title=" " alt="" coords="514,264,549,269,544,270,515,269"/>
+<area shape="poly" title=" " alt="" coords="514,256,549,263,544,264,515,261"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="562,88,807,147"/>
-<area shape="poly" title=" " alt="" coords="438,222,496,189,561,156,578,151,573,154,563,161,499,194,441,227"/>
+<area shape="poly" title=" " alt="" coords="448,209,561,156,580,151,575,154,563,161,451,214"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="562,171,807,229"/>
-<area shape="poly" title=" " alt="" coords="513,229,549,225,545,227,515,234"/>
+<area shape="poly" title=" " alt="" coords="513,222,549,218,544,220,515,227"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3154c3cd339e0d8402c06f1089712b68" title="Gets material name for specific color (creates red variants)." alt="" coords="578,336,791,395"/>
-<area shape="poly" title=" " alt="" coords="463,282,563,322,582,330,577,331,561,326,463,287"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="871,129,1085,188"/>
-<area shape="poly" title=" " alt="" coords="778,62,808,74,909,122,904,122,806,78,778,67"/>
-<area shape="poly" title=" " alt="" coords="777,250,806,239,909,194,904,197,808,244,779,255"/>
+<area shape="poly" title=" " alt="" coords="450,269,563,322,580,330,575,330,561,326,449,274"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="871,125,1085,184"/>
+<area shape="poly" title=" " alt="" coords="777,62,808,74,905,118,900,118,806,78,777,67"/>
+<area shape="poly" title=" " alt="" coords="778,250,806,239,907,193,912,191,808,244,780,255"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="855,245,1101,304"/>
 <area shape="poly" title=" " alt="" coords="807,277,843,278,837,279,808,282"/>
-<area shape="poly" title=" " alt="" coords="807,132,858,141,853,142,808,137"/>
-<area shape="poly" title=" " alt="" coords="807,180,858,175,853,177,808,185"/>
+<area shape="poly" title=" " alt="" coords="807,130,858,139,853,140,808,136"/>
+<area shape="poly" title=" " alt="" coords="807,178,858,173,853,174,808,184"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b" title="Creates a colored variant of an existing material." alt="" coords="862,328,1094,387"/>
-<area shape="poly" title=" " alt="" coords="791,360,850,360,845,361,792,365"/>
+<area shape="poly" title=" " alt="" coords="791,360,850,361,845,361,792,365"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="871,411,1085,469"/>
 <area shape="poly" title=" " alt="" coords="792,390,859,409,854,409,792,395"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a93728115a9cb0d48823fcccbe55d4445" title="Creates the gray mesh material." alt="" coords="1149,221,1380,280"/>
@@ -325,17 +329,14 @@ Grafo de chamadas desta função:</div>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a342c410ed9ef2af00c3c6c1bc487826a" title="Creates the square texture material." alt="" coords="1149,328,1380,387"/>
 <area shape="poly" title=" " alt="" coords="1094,355,1136,357,1131,358,1095,360"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a042cfa2f5495b53b788122fa514ec2a6" title="Creates the stripe texture material." alt="" coords="1149,435,1380,493"/>
-<area shape="poly" title=" " alt="" coords="1069,385,1102,396,1180,428,1174,428,1100,401,1069,390"/>
+<area shape="poly" title=" " alt="" coords="1069,385,1102,396,1180,429,1174,428,1100,401,1069,390"/>
 <area shape="poly" title=" " alt="" coords="1209,219,1210,211,1220,202,1238,197,1264,195,1294,197,1314,207,1309,207,1293,203,1264,200,1239,202,1223,207,1215,213,1213,223"/>
-<area shape="poly" title=" " alt="" coords="1209,326,1210,317,1220,309,1238,303,1264,301,1294,304,1314,314,1309,313,1293,309,1264,307,1239,309,1223,313,1215,320,1213,329"/>
+<area shape="poly" title=" " alt="" coords="1209,326,1210,317,1220,309,1238,303,1264,301,1294,304,1314,314,1309,313,1293,309,1264,307,1239,309,1223,313,1215,320,1213,330"/>
 <area shape="poly" title=" " alt="" coords="1209,433,1210,424,1220,415,1238,410,1264,408,1294,411,1314,421,1309,420,1293,416,1264,413,1239,415,1223,420,1215,427,1213,436"/>
-<area shape="poly" title=" " alt="" coords="338,445,338,436,348,427,366,422,391,420,421,423,440,432,435,432,419,428,391,425,367,427,351,432,343,439,342,448"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="574,427,795,485"/>
-<area shape="poly" title=" " alt="" coords="510,465,561,464,556,465,510,471"/>
+<area shape="poly" title=" " alt="" coords="510,453,561,456,556,456,510,459"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="876,493,1080,552"/>
-<area shape="poly" title=" " alt="" coords="510,489,562,495,863,517,858,518,562,500,510,494"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="578,560,791,619"/>
-<area shape="poly" title=" " alt="" coords="470,503,595,554,590,554,469,509"/>
+<area shape="poly" title=" " alt="" coords="503,483,562,495,718,511,863,521,858,521,717,517,562,500,503,489"/>
 <area shape="poly" title=" " alt="" coords="796,479,864,496,858,496,796,484"/>
 </map>
 </div>
@@ -365,45 +366,42 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">170</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">167</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_ab5b746eb2089a5af883717e78c175fe2_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_ab5b746eb2089a5af883717e78c175fe2_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_ab5b746eb2089a5af883717e78c175fe2_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_ab5b746eb2089a5af883717e78c175fe2_cgraph">
-<area shape="rect" title="Applies the ignored style to the specified faces." alt="" coords="5,319,231,377"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,225,524,284"/>
-<area shape="poly" title=" " alt="" coords="208,316,298,288,294,291,211,320"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,319,512,377"/>
-<area shape="poly" title=" " alt="" coords="230,345,277,347,273,349,232,351"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,447,520,505"/>
-<area shape="poly" title=" " alt="" coords="185,375,323,439,319,441,185,381"/>
+<area shape="rect" title="Applies the ignored style to the specified faces." alt="" coords="5,336,231,395"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,212,524,271"/>
+<area shape="poly" title=" " alt="" coords="186,333,321,275,317,279,188,338"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,336,512,395"/>
+<area shape="poly" title=" " alt="" coords="230,363,277,364,272,366,232,368"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,419,520,477"/>
+<area shape="poly" title=" " alt="" coords="221,393,286,413,281,414,221,398"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="572,5,817,64"/>
-<area shape="poly" title=" " alt="" coords="422,223,483,149,525,109,571,74,582,70,577,73,573,78,528,113,487,153,426,227"/>
+<area shape="poly" title=" " alt="" coords="424,210,486,142,526,106,571,74,582,70,578,73,573,78,530,110,490,146,428,214"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="572,253,817,312"/>
-<area shape="poly" title=" " alt="" coords="524,264,559,269,554,270,525,269"/>
+<area shape="poly" title=" " alt="" coords="524,256,559,263,554,264,525,261"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="572,88,817,147"/>
-<area shape="poly" title=" " alt="" coords="448,222,506,189,571,156,588,151,583,154,573,161,509,194,451,227"/>
+<area shape="poly" title=" " alt="" coords="458,209,571,156,590,151,585,154,573,161,461,214"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="572,171,817,229"/>
-<area shape="poly" title=" " alt="" coords="523,229,559,225,555,227,525,234"/>
+<area shape="poly" title=" " alt="" coords="523,222,559,219,554,220,525,227"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="588,336,801,395"/>
-<area shape="poly" title=" " alt="" coords="473,282,573,322,592,330,587,331,571,326,473,287"/>
+<area shape="poly" title=" " alt="" coords="460,269,573,322,590,330,585,330,571,326,459,274"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="881,129,1095,188"/>
 <area shape="poly" title=" " alt="" coords="788,62,818,74,919,122,914,122,816,78,788,67"/>
-<area shape="poly" title=" " alt="" coords="787,250,816,239,914,197,919,194,818,244,789,255"/>
+<area shape="poly" title=" " alt="" coords="787,250,816,239,914,196,919,194,818,244,789,255"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="865,253,1111,312"/>
 <area shape="poly" title=" " alt="" coords="817,280,853,282,847,283,818,285"/>
 <area shape="poly" title=" " alt="" coords="817,132,868,141,863,142,818,137"/>
 <area shape="poly" title=" " alt="" coords="817,180,868,175,863,177,818,185"/>
-<area shape="poly" title=" " alt="" coords="347,445,347,436,357,427,375,422,401,420,431,423,451,432,446,432,430,428,401,425,376,427,360,432,352,439,351,448"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="584,419,805,477"/>
-<area shape="poly" title=" " alt="" coords="520,462,571,460,566,461,521,467"/>
+<area shape="poly" title=" " alt="" coords="520,445,571,448,566,448,520,451"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="886,452,1090,511"/>
-<area shape="poly" title=" " alt="" coords="520,484,572,487,695,489,817,487,874,487,868,488,817,492,695,495,572,492,520,489"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="588,552,801,611"/>
-<area shape="poly" title=" " alt="" coords="486,503,599,546,594,546,485,509"/>
+<area shape="poly" title=" " alt="" coords="509,475,572,487,649,493,728,495,868,492,873,492,728,500,649,498,572,492,508,481"/>
 <area shape="poly" title=" " alt="" coords="806,458,874,468,868,468,806,463"/>
 </map>
 </div>
@@ -431,66 +429,63 @@ Grafo de chamadas desta função:</div>
 
 <p>Applies a transformation to the overlay entities belonging to a specific parent entity. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">218</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">215</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a78fbd35d769aec7ed4f43ba5f99a2144_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a78fbd35d769aec7ed4f43ba5f99a2144_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a78fbd35d769aec7ed4f43ba5f99a2144_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a78fbd35d769aec7ed4f43ba5f99a2144_cgraph">
-<area shape="rect" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="5,263,231,321"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,139,524,197"/>
-<area shape="poly" title=" " alt="" coords="171,260,278,207,295,202,291,205,280,212,174,264"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="279,221,524,280"/>
-<area shape="poly" title=" " alt="" coords="230,273,265,269,261,272,232,278"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,304,512,363"/>
-<area shape="poly" title=" " alt="" coords="230,306,277,314,273,316,232,311"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,487,520,545"/>
-<area shape="poly" title=" " alt="" coords="157,319,353,475,348,478,156,324"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="572,139,817,197"/>
-<area shape="poly" title=" " alt="" coords="523,165,559,167,554,169,525,171"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="572,5,817,64"/>
-<area shape="poly" title=" " alt="" coords="457,136,571,80,603,69,598,72,573,85,460,140"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="572,221,817,280"/>
-<area shape="poly" title=" " alt="" coords="508,195,576,216,571,217,508,201"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="572,304,817,363"/>
-<area shape="poly" title=" " alt="" coords="507,195,526,207,543,229,551,250,558,270,574,290,579,295,573,295,570,294,553,273,545,252,538,231,522,211,507,201"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="881,283,1095,341"/>
-<area shape="poly" title=" " alt="" coords="467,136,544,109,588,99,635,91,683,88,730,92,776,104,819,124,832,135,841,148,848,173,853,200,867,228,891,251,920,274,914,274,888,255,863,231,848,202,842,174,836,150,828,139,816,129,774,109,729,97,683,94,635,96,589,104,545,115,469,140"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="881,159,1095,217"/>
-<area shape="poly" title=" " alt="" coords="817,174,868,179,863,180,818,179"/>
-<area shape="poly" title=" " alt="" coords="777,62,819,80,878,113,933,149,928,150,875,118,816,85,777,67"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="865,5,1111,64"/>
-<area shape="poly" title=" " alt="" coords="817,32,852,34,847,36,818,37"/>
-<area shape="poly" title=" " alt="" coords="817,222,869,213,864,215,818,227"/>
-<area shape="poly" title=" " alt="" coords="789,301,816,290,876,258,929,228,934,225,878,262,818,294,791,306"/>
-<area shape="poly" title=" " alt="" coords="507,218,576,201,571,203,509,223"/>
-<area shape="poly" title=" " alt="" coords="506,219,522,207,539,188,547,169,555,148,570,125,600,96,635,71,631,75,603,100,574,128,560,150,552,171,544,191,526,211,509,223"/>
-<area shape="poly" title=" " alt="" coords="523,248,559,250,554,252,525,253"/>
-<area shape="poly" title=" " alt="" coords="508,278,576,299,571,300,508,283"/>
+<area shape="rect" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="5,295,231,353"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a361f37b598f4523ca96e971e6bd54fa9" title="Generates the overlay entities for a given face based on the current style." alt="" coords="279,171,524,229"/>
+<area shape="poly" title=" " alt="" coords="171,292,278,239,295,234,291,237,280,244,174,296"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="279,253,524,312"/>
+<area shape="poly" title=" " alt="" coords="230,305,265,301,261,304,232,310"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="291,336,512,395"/>
+<area shape="poly" title=" " alt="" coords="230,338,277,346,272,348,232,343"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="283,453,520,512"/>
+<area shape="poly" title=" " alt="" coords="173,351,336,444,332,447,172,356"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a963856af476a4ee30d1d46df9ca65fdf" title="Generates cubes for the specified face." alt="" coords="572,5,817,64"/>
+<area shape="poly" title=" " alt="" coords="435,168,496,120,571,74,585,69,581,72,573,78,499,125,439,172"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a51b90f925374dd3b3b521a1645e59ff4" title="Generates diagonal lines for the specified face." alt="" coords="572,253,817,312"/>
+<area shape="poly" title=" " alt="" coords="508,227,576,248,571,249,508,233"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4ab730ade765c15eac29f75614c6da16" title="Generates a textured mesh for the specified face." alt="" coords="572,88,817,147"/>
+<area shape="poly" title=" " alt="" coords="507,168,576,150,571,153,509,172"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3dee6e07b3da7ed9f93ad55ff7151bae" title="Generates a transparency mesh for the specified face." alt="" coords="572,171,817,229"/>
+<area shape="poly" title=" " alt="" coords="523,197,559,199,554,201,525,203"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ac71a7227a846037b23de5bca3db00887" title="Gets the name of the material for the current style." alt="" coords="881,328,1095,387"/>
+<area shape="poly" title=" " alt="" coords="507,227,526,239,543,261,549,283,556,304,574,322,595,332,624,340,698,350,783,356,868,359,863,360,782,361,697,356,623,345,593,337,570,326,552,307,544,285,538,264,522,243,507,233"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a21bb184131d60657b7a5c318bd87c9df" title="Gets the mesh for a specific face." alt="" coords="881,163,1095,221"/>
+<area shape="poly" title=" " alt="" coords="792,62,819,74,883,111,940,153,935,153,880,116,816,78,792,67"/>
+<area shape="poly" title=" " alt="" coords="791,250,879,225,874,227,793,255"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a5f6a5a2580407178824f593d5dda24e9" title="Generates line segments on the surface of a face." alt="" coords="865,245,1111,304"/>
+<area shape="poly" title=" " alt="" coords="817,277,853,278,847,279,818,282"/>
+<area shape="poly" title=" " alt="" coords="812,145,869,161,864,161,813,150"/>
+<area shape="poly" title=" " alt="" coords="817,194,868,195,863,196,818,199"/>
+<area shape="poly" title=" " alt="" coords="509,251,522,240,537,219,544,199,545,159,547,117,555,95,570,74,572,76,576,72,574,78,559,98,552,118,551,159,549,200,541,222,526,243,512,255"/>
+<area shape="poly" title=" " alt="" coords="524,280,559,282,554,283,525,285"/>
+<area shape="poly" title=" " alt="" coords="506,251,522,239,538,220,545,199,553,178,570,157,574,157,578,154,574,161,558,180,551,201,543,222,526,243,509,255"/>
+<area shape="poly" title=" " alt="" coords="507,250,576,233,571,235,509,255"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3154c3cd339e0d8402c06f1089712b68" title="Gets material name for specific color (creates red variants)." alt="" coords="588,387,801,445"/>
-<area shape="poly" title=" " alt="" coords="507,278,526,290,543,311,551,332,558,353,574,373,579,378,573,378,570,377,553,355,545,334,538,314,522,294,507,283"/>
-<area shape="poly" title=" " alt="" coords="784,384,816,372,890,348,895,346,818,377,786,389"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b" title="Creates a colored variant of an existing material." alt="" coords="872,387,1104,445"/>
-<area shape="poly" title=" " alt="" coords="801,413,860,416,855,416,802,419"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a93728115a9cb0d48823fcccbe55d4445" title="Creates the gray mesh material." alt="" coords="1159,280,1390,339"/>
-<area shape="poly" title=" " alt="" coords="1065,384,1158,348,1173,345,1178,344,1160,353,1067,389"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a342c410ed9ef2af00c3c6c1bc487826a" title="Creates the square texture material." alt="" coords="1159,387,1390,445"/>
-<area shape="poly" title=" " alt="" coords="1104,413,1146,416,1141,416,1105,419"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a042cfa2f5495b53b788122fa514ec2a6" title="Creates the stripe texture material." alt="" coords="1159,493,1390,552"/>
-<area shape="poly" title=" " alt="" coords="1069,443,1182,488,1177,487,1069,449"/>
-<area shape="poly" title=" " alt="" coords="1219,278,1220,269,1230,261,1248,255,1274,253,1304,256,1324,266,1319,266,1303,261,1274,259,1249,261,1233,265,1225,272,1223,281"/>
-<area shape="poly" title=" " alt="" coords="1219,385,1220,376,1230,367,1248,362,1274,360,1304,363,1324,373,1319,372,1303,368,1274,365,1249,367,1233,372,1225,379,1223,388"/>
-<area shape="poly" title=" " alt="" coords="1219,491,1220,483,1230,474,1248,469,1274,467,1304,469,1324,479,1319,479,1303,475,1274,472,1249,474,1233,479,1225,485,1223,495"/>
-<area shape="poly" title=" " alt="" coords="347,485,347,476,357,467,375,462,401,460,431,463,451,472,446,472,430,468,401,465,376,467,360,472,352,479,351,488"/>
+<area shape="poly" title=" " alt="" coords="502,310,525,322,540,333,550,344,559,355,573,366,596,380,591,380,571,370,556,359,546,348,537,337,523,326,502,315"/>
+<area shape="poly" title=" " alt="" coords="801,392,869,381,864,382,802,397"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ad2a4af733ac2b5505f517d1a136bcc1b" title="Creates a colored variant of an existing material." alt="" coords="872,411,1104,469"/>
+<area shape="poly" title=" " alt="" coords="802,422,860,429,855,429,802,427"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a93728115a9cb0d48823fcccbe55d4445" title="Creates the gray mesh material." alt="" coords="1159,304,1390,363"/>
+<area shape="poly" title=" " alt="" coords="1081,408,1110,396,1158,372,1171,369,1176,368,1160,377,1112,401,1082,413"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a342c410ed9ef2af00c3c6c1bc487826a" title="Creates the square texture material." alt="" coords="1159,411,1390,469"/>
+<area shape="poly" title=" " alt="" coords="1104,437,1146,440,1141,440,1104,443"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a042cfa2f5495b53b788122fa514ec2a6" title="Creates the stripe texture material." alt="" coords="1159,517,1390,576"/>
+<area shape="poly" title=" " alt="" coords="1070,467,1182,512,1177,511,1069,473"/>
+<area shape="poly" title=" " alt="" coords="1219,302,1220,293,1230,285,1248,279,1274,277,1304,280,1324,290,1319,289,1303,285,1274,283,1249,285,1233,289,1225,296,1223,305"/>
+<area shape="poly" title=" " alt="" coords="1219,409,1220,400,1230,391,1248,386,1274,384,1304,387,1324,397,1319,396,1303,392,1274,389,1249,391,1233,396,1225,403,1223,412"/>
+<area shape="poly" title=" " alt="" coords="1219,515,1220,507,1230,498,1248,493,1274,491,1304,493,1324,503,1319,503,1303,499,1274,496,1249,498,1233,503,1225,509,1223,519"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="584,520,805,579"/>
-<area shape="poly" title=" " alt="" coords="520,527,571,535,566,535,520,532"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="886,495,1090,553"/>
-<area shape="poly" title=" " alt="" coords="519,507,662,503,817,505,874,511,868,512,817,511,662,508,520,512"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="588,603,801,661"/>
-<area shape="poly" title=" " alt="" coords="467,543,573,588,591,597,586,597,571,593,466,548"/>
-<area shape="poly" title=" " alt="" coords="806,537,874,534,868,534,806,542"/>
+<area shape="poly" title=" " alt="" coords="520,507,571,521,566,521,520,512"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="886,503,1090,561"/>
+<area shape="poly" title=" " alt="" coords="520,485,662,493,818,505,874,514,868,514,817,511,662,498,520,490"/>
+<area shape="poly" title=" " alt="" coords="806,540,868,539,873,539,806,545"/>
 </map>
 </div>
 
@@ -519,11 +514,11 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00656">656</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00678">678</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00668">IsParentCadEntityVisible()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00690">IsParentCadEntityVisible()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -544,7 +539,6 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="611,449,473,382,474,376,617,448"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a82e5a9a479e16f04e7771c7e9df4e285" title="Synchronizes the visibility of the ignored overlay." alt="" coords="14,592,237,651"/>
 <area shape="poly" title=" " alt="" coords="564,518,238,597,237,592,562,513"/>
-<area shape="poly" title=" " alt="" coords="455,306,440,301,412,299,388,301,372,305,364,312,363,321,358,319,359,309,369,301,387,295,412,293,441,296,460,305"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="18,5,233,64"/>
 <area shape="poly" title=" " alt="" coords="392,305,370,254,338,193,296,131,271,103,244,78,229,67,228,62,247,74,275,99,300,128,343,190,375,252,398,306"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ab5b746eb2089a5af883717e78c175fe2" title="Applies the ignored style to the specified faces." alt="" coords="13,88,238,147"/>
@@ -583,27 +577,24 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Clears all ignored and flipped faces. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00344">344</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00341">341</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a3c6e86fec4955e4e2f200dc97410cb55_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a3c6e86fec4955e4e2f200dc97410cb55_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a3c6e86fec4955e4e2f200dc97410cb55_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a3c6e86fec4955e4e2f200dc97410cb55_cgraph">
-<area shape="rect" title="Clears all ignored and flipped faces." alt="" coords="5,67,244,109"/>
+<area shape="rect" title="Clears all ignored and flipped faces." alt="" coords="5,55,244,97"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="299,5,520,64"/>
-<area shape="poly" title=" " alt="" coords="241,64,286,57,281,59,243,69"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="292,112,528,171"/>
-<area shape="poly" title=" " alt="" coords="242,107,279,116,274,117,242,113"/>
-<area shape="poly" title=" " alt="" coords="356,110,357,101,367,93,385,87,410,85,439,88,458,98,453,98,438,93,410,91,386,93,370,97,362,104,361,113"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="576,45,797,104"/>
-<area shape="poly" title=" " alt="" coords="528,110,558,106,564,104,529,115"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="845,79,1049,137"/>
-<area shape="poly" title=" " alt="" coords="528,131,832,115,827,116,529,137"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="580,179,793,237"/>
-<area shape="poly" title=" " alt="" coords="529,167,567,179,562,179,528,173"/>
-<area shape="poly" title=" " alt="" coords="798,86,832,93,827,93,798,92"/>
+<area shape="poly" title=" " alt="" coords="243,56,287,52,281,54,245,61"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="292,88,528,147"/>
+<area shape="poly" title=" " alt="" coords="244,91,279,98,273,98,244,96"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="576,55,797,113"/>
+<area shape="poly" title=" " alt="" coords="528,100,558,99,563,99,529,106"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="845,88,1049,147"/>
+<area shape="poly" title=" " alt="" coords="529,121,576,123,797,123,827,124,832,124,797,128,576,128,529,126"/>
+<area shape="poly" title=" " alt="" coords="798,96,832,102,827,102,798,101"/>
 </map>
 </div>
 
@@ -632,27 +623,24 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00452">452</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00449">449</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a257d4af8bcf0afad0d0ad07f95ee6456_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a257d4af8bcf0afad0d0ad07f95ee6456_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a257d4af8bcf0afad0d0ad07f95ee6456_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a257d4af8bcf0afad0d0ad07f95ee6456_cgraph">
-<area shape="rect" title="Removes flipped face overlays (only for flipped, not ignored faces)." alt="" coords="5,59,229,117"/>
+<area shape="rect" title="Removes flipped face overlays (only for flipped, not ignored faces)." alt="" coords="5,47,229,105"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="284,5,506,64"/>
-<area shape="poly" title=" " alt="" coords="228,64,271,58,267,60,230,69"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="277,112,513,171"/>
-<area shape="poly" title=" " alt="" coords="229,107,264,115,259,116,229,112"/>
-<area shape="poly" title=" " alt="" coords="341,110,342,101,352,93,370,87,395,85,424,88,443,98,438,98,423,93,395,91,371,93,355,97,347,104,346,113"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="561,45,782,104"/>
-<area shape="poly" title=" " alt="" coords="513,110,549,104,543,106,514,115"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="830,79,1034,137"/>
-<area shape="poly" title=" " alt="" coords="513,131,817,115,812,116,514,137"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="565,179,778,237"/>
-<area shape="poly" title=" " alt="" coords="514,167,552,179,547,179,513,173"/>
-<area shape="poly" title=" " alt="" coords="783,86,817,93,812,93,783,92"/>
+<area shape="poly" title=" " alt="" coords="228,57,272,53,266,54,230,62"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="277,88,513,147"/>
+<area shape="poly" title=" " alt="" coords="229,90,264,97,258,98,229,95"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="561,55,782,113"/>
+<area shape="poly" title=" " alt="" coords="513,100,543,99,548,99,514,106"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="830,88,1034,147"/>
+<area shape="poly" title=" " alt="" coords="514,121,561,123,782,123,812,124,817,124,782,128,561,128,514,126"/>
+<area shape="poly" title=" " alt="" coords="783,96,817,102,812,102,783,101"/>
 </map>
 </div>
 
@@ -692,11 +680,11 @@ Grafo de chamadas desta função:</div>
 
 <p>Creates a colored variant of an existing material. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">1084</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">1106</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">GrayMeshMaterialName</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">SquareTextureMaterialName</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00090">StripeTextureMaterialName</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00093">GrayMeshMaterialName</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">SquareTextureMaterialName</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">StripeTextureMaterialName</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00566">GetMaterialNameForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00563">GetMaterialNameForColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -758,11 +746,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the gray mesh material. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">1032</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">1054</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">GrayMeshMaterialName</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00093">GrayMeshMaterialName</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -825,9 +813,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the gray mesh material with custom color. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01040">1040</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01062">1062</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">_lineThickness</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_textureResolution</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_lineThickness</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_textureResolution</a>.</p>
 
 </div>
 </div>
@@ -856,11 +844,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the square texture material. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">975</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">997</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">SquareTextureMaterialName</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">SquareTextureMaterialName</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -923,9 +911,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the square texture material with custom color. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00983">983</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01005">1005</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_textureResolution</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_textureResolution</a>.</p>
 
 </div>
 </div>
@@ -954,11 +942,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the stripe texture material. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">922</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">944</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00090">StripeTextureMaterialName</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">StripeTextureMaterialName</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1021,9 +1009,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Creates the stripe texture material with custom color. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00930">930</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00952">952</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">_lineThickness</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_stripesDensity</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_textureResolution</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">_lineThickness</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">_stripesDensity</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">_textureResolution</a>.</p>
 
 </div>
 </div>
@@ -1064,11 +1052,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A list of solids representing the cubes.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">845</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">867</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">_cubeSize</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">_targetSpacing</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">GetFaceMesh()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">_cubeSize</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">_targetSpacing</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">GetFaceMesh()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1138,11 +1126,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A list of meshes representing the diagonal lines.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">783</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">805</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">_lineSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01118">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">GetFaceMesh()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">_lineSpacing</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01140">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">GetFaceMesh()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1243,11 +1231,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01118">1118</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01140">1140</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">_lineOffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">_lineRadius</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">_lineSpacing</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">_lineOffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">_lineRadius</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">_lineSpacing</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">GenerateDiagonalLinesForFace()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">GenerateDiagonalLinesForFace()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1309,11 +1297,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A list of entities representing the overlay.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">493</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">490</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00094">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00691">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00095">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00713">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">ApplyIgnoredStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">ApplyIgnoredStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1388,11 +1376,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Generates overlay for a face with custom color (for flipped normals). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">534</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">531</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00094">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00691">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00566">GetMaterialNameForColor()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00095">_currentStyle</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00713">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00563">GetMaterialNameForColor()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1489,11 +1477,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A mesh representing the textured overlay.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">736</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">758</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">_clearenceoffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00096">_textureScale</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">GetFaceMesh()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00106">_clearenceoffset</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">_textureScale</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">GetFaceMesh()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1563,11 +1551,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A mesh representing the transparency overlay.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00691">691</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00713">713</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">_clearenceoffset</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">GetFaceMesh()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00106">_clearenceoffset</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">GetFaceMesh()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1637,11 +1625,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A mesh object.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">1182</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">1204</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
 <p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">GenerateTexturedMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00691">GenerateTransparencyMeshForFace()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">GenerateCubesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">GenerateTexturedMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00713">GenerateTransparencyMeshForFace()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1696,9 +1684,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets the indices of the currently ignored faces. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A list of face indices.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00360">360</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00357">357</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>.</p>
 
 </div>
 </div>
@@ -1727,11 +1715,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets material name for specific color (creates red variants). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00566">566</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00563">563</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1796,11 +1784,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets the name of the material for the current style. </p>
 <dl class="section return"><dt>Retorna</dt><dd>The material name.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">520</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">517</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00094">_currentStyle</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00101">HirEV_SmartFitSystemsApp.Models.GrayMesh</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">GrayMeshMaterialName</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00093">HirEV_SmartFitSystemsApp.Models.SquareTexture</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">SquareTextureMaterialName</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00097">HirEV_SmartFitSystemsApp.Models.StripeTexture</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00090">StripeTextureMaterialName</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00095">_currentStyle</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00101">HirEV_SmartFitSystemsApp.Models.GrayMesh</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00093">GrayMeshMaterialName</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00093">HirEV_SmartFitSystemsApp.Models.SquareTexture</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">SquareTextureMaterialName</a>, <a class="el" href="../../d2/d00/_enums_8cs_source.html#l00097">HirEV_SmartFitSystemsApp.Models.StripeTexture</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">StripeTextureMaterialName</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00566">GetMaterialNameForColor()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00563">GetMaterialNameForColor()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1856,36 +1844,6 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00023">DocLanguage</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
-<div class="dynheader">
-Este é o diagrama das funções que utilizam esta função:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a13819a5b9c007ebdd1fa0cdff5523b1f_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a13819a5b9c007ebdd1fa0cdff5523b1f_icgraph" loading="lazy" alt=""/></div>
-<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a13819a5b9c007ebdd1fa0cdff5523b1f_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a13819a5b9c007ebdd1fa0cdff5523b1f_icgraph">
-<area shape="rect" title=" " alt="" coords="578,283,791,341"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="294,283,530,341"/>
-<area shape="poly" title=" " alt="" coords="560,313,531,315,530,309,565,311"/>
-<area shape="poly" title=" " alt="" coords="454,269,439,264,412,261,388,263,372,268,364,275,364,283,359,281,360,272,370,263,387,258,412,256,441,259,460,268"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="18,5,233,64"/>
-<area shape="poly" title=" " alt="" coords="388,268,364,225,332,173,291,122,244,78,229,67,227,62,247,74,295,119,336,170,369,222,393,269"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ab5b746eb2089a5af883717e78c175fe2" title="Applies the ignored style to the specified faces." alt="" coords="13,88,238,147"/>
-<area shape="poly" title=" " alt="" coords="373,272,316,215,281,186,244,161,225,150,223,145,247,156,285,182,320,212,378,271"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a78fbd35d769aec7ed4f43ba5f99a2144" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="13,171,238,229"/>
-<area shape="poly" title=" " alt="" coords="327,277,245,244,216,232,214,227,247,239,332,275"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3c6e86fec4955e4e2f200dc97410cb55" title="Clears all ignored and flipped faces." alt="" coords="6,253,245,296"/>
-<area shape="poly" title=" " alt="" coords="276,296,246,293,244,288,281,293"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a257d4af8bcf0afad0d0ad07f95ee6456" title="Removes flipped face overlays (only for flipped, not ignored faces)." alt="" coords="14,320,237,379"/>
-<area shape="poly" title=" " alt="" coords="276,331,239,337,237,332,280,328"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a79f4265730307bb4b5534f36a2fa5945" title="Remaps stored ParentEntityIndex values after entities have been added to or removed from _designContr..." alt="" coords="5,403,246,461"/>
-<area shape="poly" title=" " alt="" coords="336,350,247,393,218,404,215,400,245,388,341,347"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#aa6b8092e8e1977fa41d611f016d34497" title="Restores the original style of the specified faces." alt="" coords="6,485,245,544"/>
-<area shape="poly" title=" " alt="" coords="380,351,322,417,286,448,247,476,226,487,223,482,244,471,282,444,318,413,376,355"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a82e5a9a479e16f04e7771c7e9df4e285" title="Synchronizes the visibility of the ignored overlay." alt="" coords="14,592,237,651"/>
-<area shape="poly" title=" " alt="" coords="391,354,334,455,294,509,247,558,222,577,195,594,193,589,219,573,244,554,289,506,329,452,387,357"/>
-<area shape="poly" title=" " alt="" coords="170,578,154,573,125,571,100,573,84,577,76,584,75,593,70,591,71,581,81,573,99,567,126,565,156,568,176,577"/>
-</map>
-</div>
-
 </div>
 </div>
 <a id="a04dbc32a8439e978b83e17477fd4505b" name="a04dbc32a8439e978b83e17477fd4505b"></a>
@@ -1911,11 +1869,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00668">668</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00690">690</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
 <p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00656">BuildVisibleParentSignature()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00678">BuildVisibleParentSignature()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1929,7 +1887,6 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="560,386,531,380,530,375,565,385"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a82e5a9a479e16f04e7771c7e9df4e285" title="Synchronizes the visibility of the ignored overlay." alt="" coords="14,592,237,651"/>
 <area shape="poly" title=" " alt="" coords="593,453,209,594,208,589,591,449"/>
-<area shape="poly" title=" " alt="" coords="455,306,440,301,412,299,388,301,372,305,364,312,363,321,358,319,359,309,369,301,387,295,412,293,441,296,460,305"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="18,5,233,64"/>
 <area shape="poly" title=" " alt="" coords="392,305,370,254,338,193,296,131,271,103,244,78,229,67,228,62,247,74,275,99,300,128,343,190,375,252,398,306"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ab5b746eb2089a5af883717e78c175fe2" title="Applies the ignored style to the specified faces." alt="" coords="13,88,238,147"/>
@@ -1974,11 +1931,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">648</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">670</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_overlayDataVersion</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">_overlayDataVersion</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00344">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00452">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00270">ReindexParentEntities()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00198">RestoreOriginalStyle()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00341">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00449">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00267">ReindexParentEntities()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00195">RestoreOriginalStyle()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2029,24 +1986,21 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Rebuilds the ignored overlay block. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">590</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">587</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00107">_ignoredOverlayReference</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">_lastRebuiltOverlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">_lastVisibleParentSignature</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_overlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00656">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00025">GetXMLElement()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00088">IgnoredBlockName</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00668">IsParentCadEntityVisible()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">_designControl</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredOverlayReferences</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">_lastRebuiltOverlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00113">_lastVisibleParentSignature</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">_overlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00678">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00088">IgnoredBlockName</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00089">IgnoredLayerName</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00690">IsParentCadEntityVisible()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00344">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00452">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00270">ReindexParentEntities()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00198">RestoreOriginalStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00341">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00449">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00267">ReindexParentEntities()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00195">RestoreOriginalStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_cgraph">
-<area shape="rect" title="Rebuilds the ignored overlay block." alt="" coords="5,72,242,131"/>
-<area shape="poly" title=" " alt="" coords="70,71,71,61,81,53,98,47,124,45,153,48,172,57,167,58,151,53,123,51,99,53,83,57,75,64,75,72"/>
+<area shape="rect" title="Rebuilds the ignored overlay block." alt="" coords="5,39,242,97"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="290,5,511,64"/>
-<area shape="poly" title=" " alt="" coords="241,70,277,64,272,66,243,75"/>
+<area shape="poly" title=" " alt="" coords="242,51,277,49,272,50,243,56"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="559,39,762,97"/>
-<area shape="poly" title=" " alt="" coords="242,91,544,73,542,78,242,97"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="294,139,507,197"/>
-<area shape="poly" title=" " alt="" coords="242,127,281,139,276,139,242,133"/>
+<area shape="poly" title=" " alt="" coords="242,72,290,73,511,73,546,75,540,75,511,79,290,79,242,77"/>
 <area shape="poly" title=" " alt="" coords="511,46,546,53,541,53,511,52"/>
 </map>
 </div>
@@ -2056,7 +2010,6 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_icgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_accd2453abbd18d78909f8b7d58fcf262_icgraph">
 <area shape="rect" title="Rebuilds the ignored overlay block." alt="" coords="294,283,530,341"/>
-<area shape="poly" title=" " alt="" coords="457,269,441,264,412,261,387,263,370,268,362,275,361,283,356,281,357,272,368,263,386,258,412,256,442,259,462,268"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="18,5,233,64"/>
 <area shape="poly" title=" " alt="" coords="388,268,364,225,332,173,291,122,244,78,229,67,227,62,247,74,295,119,336,170,369,222,393,269"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#ab5b746eb2089a5af883717e78c175fe2" title="Applies the ignored style to the specified faces." alt="" coords="13,88,238,147"/>
@@ -2102,27 +2055,24 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00270">270</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00267">267</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_flippedFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a79f4265730307bb4b5534f36a2fa5945_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a79f4265730307bb4b5534f36a2fa5945_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a79f4265730307bb4b5534f36a2fa5945_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_a79f4265730307bb4b5534f36a2fa5945_cgraph">
-<area shape="rect" title="Remaps stored ParentEntityIndex values after entities have been added to or removed from _designContr..." alt="" coords="5,59,246,117"/>
+<area shape="rect" title="Remaps stored ParentEntityIndex values after entities have been added to or removed from _designContr..." alt="" coords="5,47,246,105"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="301,5,522,64"/>
-<area shape="poly" title=" " alt="" coords="245,63,288,57,283,59,247,68"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="294,112,530,171"/>
-<area shape="poly" title=" " alt="" coords="246,108,281,116,276,117,247,113"/>
-<area shape="poly" title=" " alt="" coords="358,110,359,101,369,93,387,87,412,85,441,88,460,98,455,98,440,93,412,91,388,93,372,97,364,104,363,113"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="578,45,799,104"/>
-<area shape="poly" title=" " alt="" coords="530,110,560,106,566,104,531,115"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="847,79,1051,137"/>
-<area shape="poly" title=" " alt="" coords="530,131,834,115,829,116,531,137"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="582,179,795,237"/>
-<area shape="poly" title=" " alt="" coords="531,167,569,179,564,179,530,173"/>
-<area shape="poly" title=" " alt="" coords="800,86,834,93,829,93,800,92"/>
+<area shape="poly" title=" " alt="" coords="246,56,288,52,283,54,247,61"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="294,88,530,147"/>
+<area shape="poly" title=" " alt="" coords="246,91,281,98,276,98,246,96"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="578,55,799,113"/>
+<area shape="poly" title=" " alt="" coords="530,100,560,99,565,99,531,106"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="847,88,1051,147"/>
+<area shape="poly" title=" " alt="" coords="531,121,578,123,799,123,829,124,834,124,799,128,578,128,531,126"/>
+<area shape="poly" title=" " alt="" coords="800,96,834,102,829,102,800,101"/>
 </map>
 </div>
 
@@ -2151,27 +2101,24 @@ Grafo de chamadas desta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00198">198</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00195">195</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">_ignoredFaceDataMap</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_aa6b8092e8e1977fa41d611f016d34497_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_aa6b8092e8e1977fa41d611f016d34497_cgraph" loading="lazy" alt=""/></div>
 <map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_aa6b8092e8e1977fa41d611f016d34497_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager_aa6b8092e8e1977fa41d611f016d34497_cgraph">
-<area shape="rect" title="Restores the original style of the specified faces." alt="" coords="5,59,244,117"/>
+<area shape="rect" title="Restores the original style of the specified faces." alt="" coords="5,47,244,105"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a1effecb51523554d1008ca100d6ae17b" title=" " alt="" coords="299,5,520,64"/>
-<area shape="poly" title=" " alt="" coords="243,63,286,57,282,59,245,68"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="292,112,528,171"/>
-<area shape="poly" title=" " alt="" coords="244,108,279,116,274,117,244,113"/>
-<area shape="poly" title=" " alt="" coords="356,110,357,101,367,93,385,87,410,85,439,88,458,98,453,98,438,93,410,91,386,93,370,97,362,104,361,113"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="576,45,797,104"/>
-<area shape="poly" title=" " alt="" coords="528,110,558,106,564,104,529,115"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="845,79,1049,137"/>
-<area shape="poly" title=" " alt="" coords="528,131,832,115,827,116,529,137"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="580,179,793,237"/>
-<area shape="poly" title=" " alt="" coords="529,167,567,179,562,179,528,173"/>
-<area shape="poly" title=" " alt="" coords="798,86,832,93,827,93,798,92"/>
+<area shape="poly" title=" " alt="" coords="243,56,287,52,281,54,245,61"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="292,88,528,147"/>
+<area shape="poly" title=" " alt="" coords="244,91,279,98,273,98,244,96"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="576,55,797,113"/>
+<area shape="poly" title=" " alt="" coords="528,100,558,99,563,99,529,106"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="845,88,1049,147"/>
+<area shape="poly" title=" " alt="" coords="529,121,576,123,797,123,827,124,832,124,797,128,576,128,529,126"/>
+<area shape="poly" title=" " alt="" coords="798,96,832,102,827,102,798,101"/>
 </map>
 </div>
 
@@ -2194,11 +2141,11 @@ Grafo de chamadas desta função:</div>
 
 <p>Synchronizes the visibility of the ignored overlay. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">323</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">320</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">_lastRebuiltOverlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">_lastVisibleParentSignature</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">_overlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00656">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">_lastRebuiltOverlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00113">_lastVisibleParentSignature</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">_overlayDataVersion</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00678">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2207,16 +2154,13 @@ Grafo de chamadas desta função:</div>
 <area shape="rect" title="Synchronizes the visibility of the ignored overlay." alt="" coords="5,39,228,97"/>
 <area shape="poly" title=" " alt="" coords="63,38,64,28,74,19,91,14,117,12,146,15,165,24,160,25,144,20,116,17,92,19,76,24,68,31,68,39"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a997bb791f4656742bb57ea1bb1dc17ca" title=" " alt="" coords="560,5,781,64"/>
-<area shape="poly" title=" " alt="" coords="227,50,275,45,415,37,547,35,542,37,415,43,276,51,229,55"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="276,84,512,143"/>
-<area shape="poly" title=" " alt="" coords="228,84,263,91,257,92,228,89"/>
+<area shape="poly" title=" " alt="" coords="228,59,545,40,544,45,228,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#accd2453abbd18d78909f8b7d58fcf262" title="Rebuilds the ignored overlay block." alt="" coords="276,72,512,131"/>
+<area shape="poly" title=" " alt="" coords="228,79,263,85,257,85,228,84"/>
 <area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a04dbc32a8439e978b83e17477fd4505b" title=" " alt="" coords="829,39,1033,97"/>
 <area shape="poly" title=" " alt="" coords="782,46,816,53,811,53,782,52"/>
-<area shape="poly" title=" " alt="" coords="499,81,548,69,553,68,500,86"/>
-<area shape="poly" title=" " alt="" coords="512,101,816,77,811,78,513,106"/>
-<area shape="poly" title=" " alt="" coords="340,82,341,73,351,65,369,59,394,57,423,60,442,70,437,70,422,65,394,63,370,65,354,69,346,76,345,85"/>
-<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a13819a5b9c007ebdd1fa0cdff5523b1f" title=" " alt="" coords="564,139,777,197"/>
-<area shape="poly" title=" " alt="" coords="513,134,551,144,546,144,512,139"/>
+<area shape="poly" title=" " alt="" coords="512,70,542,65,548,64,513,75"/>
+<area shape="poly" title=" " alt="" coords="512,91,816,75,811,75,513,97"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2252,9 +2196,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">105</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00106">106</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00691">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">GenerateTexturedMeshForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00713">GenerateTransparencyMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2278,9 +2222,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">103</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">104</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">GenerateCubesForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">GenerateCubesForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2304,9 +2248,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00094">94</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00095">95</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00493">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00534">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00490">GenerateOverlayForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00531">GenerateOverlayForFaceWithColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2332,7 +2276,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00087">87</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00452">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01040">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00983">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00930">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01182">GetFaceMesh()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00566">GetMaterialNameForColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00668">IsParentCadEntityVisible()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00449">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01062">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01005">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00952">CreateStripeTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01204">GetFaceMesh()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00563">GetMaterialNameForColor()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00690">IsParentCadEntityVisible()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 
 </div>
 </div>
@@ -2356,9 +2300,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">109</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">110</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00656">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00344">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00452">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00270">ReindexParentEntities()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00678">BuildVisibleParentSignature()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00341">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00449">ClearFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00267">ReindexParentEntities()</a>.</p>
 
 </div>
 </div>
@@ -2382,14 +2326,14 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">108</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00109">109</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00369">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00170">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00218">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00344">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00360">GetIgnoredFaceIndices()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00270">ReindexParentEntities()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00198">RestoreOriginalStyle()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00366">AddFlippedFaceOverlays()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00167">ApplyIgnoredStyle()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00215">ApplyTransformation()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00341">ClearAll()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00357">GetIgnoredFaceIndices()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00267">ReindexParentEntities()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00195">RestoreOriginalStyle()</a>.</p>
 
 </div>
 </div>
-<a id="af1f0fc8d24678b13825a7433a3484dab" name="af1f0fc8d24678b13825a7433a3484dab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1f0fc8d24678b13825a7433a3484dab">&#9670;&#160;</a></span>_ignoredOverlayReference</h2>
+<a id="af7c5f976e087c48770fe50e2427b9617" name="af7c5f976e087c48770fe50e2427b9617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c5f976e087c48770fe50e2427b9617">&#9670;&#160;</a></span>_ignoredOverlayReferences</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2398,7 +2342,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">readonly BlockReference HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager._ignoredOverlayReference</td>
+          <td class="memname">readonly Dictionary&lt;int, BlockReference&gt; HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager._ignoredOverlayReferences = new Dictionary&lt;int, BlockReference&gt;()</td>
         </tr>
       </table>
   </td>
@@ -2408,9 +2352,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00107">107</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00108">108</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 
 </div>
 </div>
@@ -2434,9 +2378,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">111</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">112</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 
 </div>
 </div>
@@ -2460,9 +2404,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00112">112</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00113">113</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 
 </div>
 </div>
@@ -2486,9 +2430,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">102</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00103">103</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01118">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01140">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2512,9 +2456,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">100</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">101</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01118">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01140">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2538,9 +2482,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00101">101</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00102">102</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00783">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01118">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00805">GenerateDiagonalLinesForFace()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01140">GenerateLineSegmentsOnSurface()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2564,9 +2508,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">97</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">98</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01040">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00930">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01062">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00952">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2590,9 +2534,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00110">110</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00111">111</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00648">MarkOverlayDataChanged()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00323">SyncVisibility()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00670">MarkOverlayDataChanged()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00320">SyncVisibility()</a>.</p>
 
 </div>
 </div>
@@ -2616,9 +2560,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">99</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00100">100</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00930">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00952">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2642,9 +2586,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00104">104</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00105">105</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00845">GenerateCubesForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00867">GenerateCubesForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2668,9 +2612,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00098">98</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00099">99</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01040">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00983">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00930">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01062">CreateGrayMeshMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01005">CreateSquareTextureMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00952">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2694,9 +2638,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00096">96</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00097">97</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00736">GenerateTexturedMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00758">GenerateTexturedMeshForFace()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>.</p>
 
 </div>
 </div>
@@ -2720,9 +2664,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">92</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00093">93</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01032">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01054">CreateGrayMeshMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a>.</p>
 
 </div>
 </div>
@@ -2741,14 +2685,14 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00088">88</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00590">RebuildIgnoredOverlayBlock()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a>, <a class="el" href="../../d8/d00/_main_view_model_8cs_source.html#l18216">HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IsPartOwnedManipulationHelper()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 
 </div>
 </div>
@@ -2772,9 +2716,33 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00090">90</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="acf1535015bf091c10b1823f0e51129b9" name="acf1535015bf091c10b1823f0e51129b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1535015bf091c10b1823f0e51129b9">&#9670;&#160;</a></span>IgnoredLayerName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager.IgnoredLayerName = &quot;IGNORED_ITEMS_OVERLAY&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00089">89</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00119">IgnoredItemManager()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00120">IgnoredItemManager()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00587">RebuildIgnoredOverlayBlock()</a>.</p>
 
 </div>
 </div>
@@ -2798,9 +2766,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">91</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00092">92</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00975">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00997">CreateSquareTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a>.</p>
 
 </div>
 </div>
@@ -2824,9 +2792,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00090">90</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00091">91</a> do ficheiro <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html">IgnoredItemManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01084">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00922">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00520">GetMaterialNameForStyle()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l01106">CreateColoredMaterial()</a>, <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00944">CreateStripeTextureMaterial()</a> e <a class="el" href="../../db/d03/_ignored_item_manager_8cs_source.html#l00517">GetMaterialNameForStyle()</a>.</p>
 
 </div>
 </div>

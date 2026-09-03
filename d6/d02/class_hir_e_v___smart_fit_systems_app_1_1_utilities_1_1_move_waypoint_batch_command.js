@@ -4,6 +4,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_
     [ "MoveWaypointBatchCommand", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a508942504c8fe6dd51de396e5c239448", null ],
     [ "AddChange", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a838e588c39d4bce0b7401e78af226bc8", null ],
     [ "ApplyPointChange", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a04c5f49ec9b20003cd01c43e04b81a1a", null ],
+    [ "GetLocalizedDescription", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a9bb235a43ec11fbe5b86263e9a81e836", null ],
     [ "Redo", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a6378a3a34c4c0deb8127411c5370fea6", null ],
     [ "Undo", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#a53cfa6c3613b650e8ca6a91db580174d", null ],
     [ "_changes", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html#aa1d14d982344c1bd6907563d8547f2b5", null ],

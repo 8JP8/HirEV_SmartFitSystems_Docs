@@ -4,16 +4,16 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_s
     [ "TriangleBvh", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh" ],
     [ "SdfShellGenerator", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a5be883d981077ff987080e5b8bbdd24a", null ],
     [ "AddVert", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a0d2eab9012449a1939630816a00bd711", null ],
-    [ "ApplyTransformation", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ab41b0239778a185fde66d4327f7db974", null ],
+    [ "ApplyTransformation", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#adf118d0ffa9d71b0641c8b4717d17ae6", null ],
     [ "AreFacesAdjacent", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#af623e35074cf1b6c49fed9642ed853ea", null ],
     [ "BuildAsync", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2432216281ae5fd2375bfc1fa35d671f", null ],
-    [ "BuildFaceAdjacencyMap", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ae5fface654bf860029f0e22c28134420", null ],
+    [ "BuildFaceAdjacencyMap", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2b6ca3b311fc846b09447b31c18e8d40", null ],
     [ "BuildGrid", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a996ea4c5cf07e2ac85ae2bf90e7272a3", null ],
     [ "CloneModels", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a9a845d2b05a0eb630fc3624452c4b37b", null ],
     [ "ClosestPointOnTriangle", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a443423120e1ef72e2d21cf0685af6a3b", null ],
     [ "ClosestPointOnTriangle_Scalar", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3e3ab72144eb41de55c6272c82db6589", null ],
     [ "ClosestPtOnTri", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ab62f46b514ede3a322d92a433f6bb9fe", null ],
-    [ "CombineMeshes", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a83955d1fca93ee737fcfe83630d0f5ad", null ],
+    [ "CombineMeshes", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3153be6ae579a4bdac4e27a6404ebae6", null ],
     [ "CompressFloatArray", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a0a769961f147aded0771aa2ba94fffdd", null ],
     [ "ComputeSDF", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a58c48408bd6198d60ba2a9f5b0db072c", null ],
     [ "ComputeSharpFeature", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2fd1bbade6a065f73aeff17985682a1a", null ],
@@ -73,5 +73,6 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_s
     [ "OffsetDistance", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ae30978c1b2217221261f000662c76c22", null ],
     [ "OffsetShellMesh", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a1a5c96cc0b48a8e54e45d406f5a8717e", null ],
     [ "PartBrepCount", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a79b0fd120ba9dbf59701a80c749e1cc9", null ],
-    [ "ResultMesh", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a07e71f4b4def539929b299be8e06ea0a", null ]
+    [ "ResultMesh", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a07e71f4b4def539929b299be8e06ea0a", null ],
+    [ "ResultMeshes", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3bc972a2bb8b645b0ff4f70ed7c705dc", null ]
 ];

@@ -16,5 +16,6 @@ var class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face =
     [ "IsIgnored", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a4b938474b50f3af615b3bf3c9a227fe5", null ],
     [ "KeyPoints", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a8bd157a9db66c9de2ff120080b740457", null ],
     [ "MeasurementPoints", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#a6ff9919a71f2842ac24228a98334a4e5", null ],
-    [ "ModelFilePath", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#ab55e47c144d6caf25aab5235face2aa0", null ]
+    [ "ModelFilePath", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#ab55e47c144d6caf25aab5235face2aa0", null ],
+    [ "PartSource", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html#add6e8198ab3096356a137f8566bbe8c5", null ]
 ];

@@ -1,15 +1,18 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.FindShortestPath" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellGeodesicNavigator.FindShortestPath">
-<area shape="rect" id="Node000001" title="Finds the shortest obstacle&#45;avoiding path between start and end points using the configured shortest&#45;..." alt="" coords="5,88,225,147"/>
+<area shape="rect" id="Node000001" title="Finds the shortest obstacle&#45;avoiding path between start and end points using the configured shortest&#45;..." alt="" coords="5,121,225,180"/>
 <area shape="rect" id="Node000002" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#afa818ca735ab18349e893d44946e8601" title="Finds the index of the nearest approach point to the specified point." alt="" coords="273,5,510,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,85,279,68,274,70,217,90"/>
-<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a6c68da409c02c4c52170d5c5addf122c" title="Computes shortest path node indices on the graph using the algorithm configured in App...." alt="" coords="277,88,506,147"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,115,264,117,259,118,226,120"/>
-<area shape="rect" id="Node000005" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a0e87fe034e86c698061a01e745090bf1" title="Checks if a linear path segment between two points maintains the required clearance offset." alt="" coords="282,171,501,229"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="216,145,279,165,274,166,215,150"/>
-<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#af13461167576ecad3884e280e5a223ff" title="Calculates perpendicular distance from point p to line defined by lineOrigin and direction lineDir." alt="" coords="558,88,777,147"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="506,115,545,117,540,118,506,120"/>
-<area shape="rect" id="Node000006" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#aff43515535dc9f7cbd25c0f7bba7c772" title="Checks if a point stays sufficiently close to the shell surface (preventing cuts through the air or p..." alt="" coords="558,171,777,229"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="502,197,545,200,540,200,502,203"/>
-<area shape="rect" id="Node000007" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ad1fcb7ae0afa03d59132f446a227b527" title="Finds the nearest point on a shell mesh to a given query point." alt="" coords="825,171,1048,229"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="778,197,812,200,807,200,778,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,118,272,74,290,69,285,71,274,78,176,123"/>
+<area shape="rect" id="Node000003" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a6c68da409c02c4c52170d5c5addf122c" title="Finds the shortest obstacle&#45;avoiding sequence of node indices between two graph nodes." alt="" coords="277,88,506,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,135,264,132,260,134,226,140"/>
+<area shape="rect" id="Node000005" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a1afc6ca5bc11083b9e80c0fe5314ca1c" title="Interpolates path segments by inserting nearby mesh points that lie within a corridor threshold." alt="" coords="558,155,796,213"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="225,154,544,174,541,178,225,160"/>
+<area shape="rect" id="Node000007" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#a0e87fe034e86c698061a01e745090bf1" title="Checks if a linear path segment between two points maintains the required clearance offset." alt="" coords="282,229,501,288"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="193,178,302,222,297,224,192,183"/>
+<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#af13461167576ecad3884e280e5a223ff" title="Calculates perpendicular distance from point p to line defined by lineOrigin and direction lineDir." alt="" coords="568,72,787,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="505,108,554,108,549,109,506,114"/>
+<area shape="rect" id="Node000006" href="$dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#ad1fcb7ae0afa03d59132f446a227b527" title="Finds the nearest point on a shell mesh to a given query point." alt="" coords="844,196,1067,255"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="797,199,831,207,826,206,797,204"/>
+<area shape="rect" id="Node000008" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html#aff43515535dc9f7cbd25c0f7bba7c772" title="Checks if a point stays sufficiently close to the shell surface (preventing cuts through the air or p..." alt="" coords="568,237,787,296"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="501,259,554,263,549,263,501,264"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="787,248,826,244,832,244,788,253"/>
 </map>

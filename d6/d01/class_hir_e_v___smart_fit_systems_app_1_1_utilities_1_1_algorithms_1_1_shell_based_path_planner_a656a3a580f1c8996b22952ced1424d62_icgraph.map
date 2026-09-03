@@ -1,35 +1,76 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.IsInsidePartSolid" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.IsInsidePartSolid">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1492,203,1693,261"/>
-<area shape="rect" id="Node000002" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#acf5b459010ec1b9009c3014022f7ad4d" title="Generates collision&#45;checked approach points corresponding to the raw measurement target points." alt="" coords="270,5,511,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1526,194,1458,159,1372,118,1275,79,1176,51,1088,34,997,23,816,14,649,16,512,25,511,20,648,11,816,8,997,18,1089,29,1177,45,1277,74,1374,113,1460,155,1531,195"/>
-<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a4ddfdd524e8c9c30184f6f2bf175d128" title=" " alt="" coords="1225,203,1444,261"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1473,232,1445,235,1444,229,1479,232"/>
-<area shape="rect" id="Node000011" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a035da98f464c486114af155992cb48ae" title="Removes non&#45;hole measurement pairs whose approach point is inside the inner half of the offset shell...." alt="" coords="906,377,1171,436"/>
-<area shape="poly" id="edge21_Node000001_Node000011" title=" " alt="" coords="1488,266,1177,368,1140,379,1139,374,1176,363,1483,267"/>
-<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,228,222,287"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="302,74,271,95,232,128,196,164,140,229,135,226,192,160,229,124,268,91,306,70"/>
-<area shape="rect" id="Node000005" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#ae465ab2b23f1ffc4942f3d16e9362427" title=" " alt="" coords="900,60,1177,119"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1274,194,1227,167,1176,140,1133,122,1134,117,1178,135,1230,162,1279,194"/>
-<area shape="rect" id="Node000006" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#afd5c1969ebd478502ebff70cda5f604c" title="Builds the navigation roadmap graph connecting all generated approach points." alt="" coords="598,63,813,121"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1217,198,1176,189,814,116,814,111,1177,184,1223,198"/>
-<area shape="rect" id="Node000007" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a62a734b0c6c58505f4ce63cba534343b" title="Finds the closest approach shell point on a specific part to the given high air waypoint." alt="" coords="583,145,828,204"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="1207,221,829,188,829,183,1212,220"/>
-<area shape="rect" id="Node000009" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#accfef8fa0f4edf90dd95bf3f42f6d8ea" title=" " alt="" coords="937,295,1140,353"/>
-<area shape="poly" id="edge11_Node000004_Node000009" title=" " alt="" coords="1226,266,1136,297,1135,291,1220,267"/>
-<area shape="poly" id="edge17_Node000004_Node000011" title=" " alt="" coords="1298,271,1243,323,1178,368,1153,379,1152,374,1175,363,1240,319,1293,273"/>
-<area shape="rect" id="Node000012" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a138a3ae174c2e691c64f29903e975f8b" title=" " alt="" coords="559,228,852,287"/>
-<area shape="poly" id="edge19_Node000004_Node000012" title=" " alt="" coords="1207,238,853,254,852,249,1212,236"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="580,111,432,141,350,161,271,185,218,206,170,229,167,225,216,201,269,180,349,156,431,136,585,108"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="565,183,424,197,270,219,219,230,216,225,269,213,423,192,570,181"/>
-<area shape="rect" id="Node000008" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a6f4c3a789f523c2ddc3b358871ce5d4f" title="Generates the complete ordered sequence of waypoint points, normals, and entity indices for the entir..." alt="" coords="290,228,491,287"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="574,210,493,233,491,228,579,207"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="272,259,223,260,221,255,277,256"/>
-<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="919,327,852,331,688,334,559,335,432,326,269,301,219,290,218,285,270,296,432,321,559,329,688,328,852,325,925,327"/>
-<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="978,286,919,252,851,218,823,207,823,202,853,214,921,247,983,286"/>
-<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="919,324,750,320,654,313,559,301,492,288,491,283,559,296,654,307,750,315,924,324"/>
-<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad9976f889513d8540be198eac0a4f170" title="Executes the InferShellGeneratedPointType method." alt="" coords="288,396,493,455"/>
-<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="925,356,902,368,878,383,853,396,760,418,664,430,573,434,494,434,493,429,573,429,663,424,759,413,851,391,875,378,899,363,920,357"/>
-<area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="290,389,268,380,201,334,147,290,148,284,204,330,271,375,295,389"/>
-<area shape="poly" id="edge18_Node000011_Node000003" title=" " alt="" coords="952,441,812,487,728,505,638,519,544,525,449,520,356,503,312,488,268,469,241,452,217,431,175,382,145,332,126,290,127,285,149,329,180,379,220,428,244,448,271,464,313,483,358,498,450,515,544,520,637,514,727,500,811,481,947,442"/>
-<area shape="poly" id="edge20_Node000012_Node000008" title=" " alt="" coords="541,258,492,260,491,255,546,257"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="2563,309,2765,368"/>
+<area shape="rect" id="Node000002" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#acf5b459010ec1b9009c3014022f7ad4d" title="Generates collision&#45;checked approach points corresponding to the raw measurement target points." alt="" coords="2025,92,2266,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2575,303,2217,154,2218,148,2580,303"/>
+<area shape="rect" id="Node000004" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a4ddfdd524e8c9c30184f6f2bf175d128" title=" " alt="" coords="1757,260,1977,318"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2545,332,1977,299,1977,293,2551,331"/>
+<area shape="rect" id="Node000012" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a035da98f464c486114af155992cb48ae" title="Removes non&#45;hole measurement pairs whose approach point is inside the inner half of the offset shell...." alt="" coords="1439,342,1703,401"/>
+<area shape="poly" id="edge47_Node000001_Node000012" title=" " alt="" coords="2546,343,1704,370,1703,365,2551,341"/>
+<area shape="rect" id="Node000014" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a0e51ff503aea1d5fce29960335f5e224" title=" " alt="" coords="2314,526,2515,585"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="2620,377,2451,528,2449,524,2615,379"/>
+<area shape="rect" id="Node000003" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,242,222,301"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2035,87,1940,63,1824,37,1699,17,1572,9,637,9,529,8,445,12,405,20,365,32,321,52,271,79,225,116,185,160,154,205,132,243,127,241,150,202,181,157,221,112,268,75,318,47,363,27,404,14,444,7,529,3,637,4,1573,4,1699,12,1825,31,1941,57,2041,87"/>
+<area shape="rect" id="Node000005" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#ae465ab2b23f1ffc4942f3d16e9362427" title=" " alt="" coords="1433,260,1709,318"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1739,290,1710,292,1709,287,1744,289"/>
+<area shape="rect" id="Node000006" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#afd5c1969ebd478502ebff70cda5f604c" title="Builds the navigation roadmap graph connecting all generated approach points." alt="" coords="530,44,746,102"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1836,246,1813,217,1783,184,1748,153,1708,129,1673,115,1629,103,1521,85,1393,73,1253,66,973,65,747,71,745,66,973,59,1253,61,1393,68,1522,80,1630,98,1674,110,1711,124,1751,149,1786,180,1817,214,1841,248"/>
+<area shape="rect" id="Node000007" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a62a734b0c6c58505f4ce63cba534343b" title="Finds the closest approach shell point on a specific part to the given high air waypoint." alt="" coords="1116,110,1361,169"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="1826,248,1774,205,1742,184,1708,168,1621,143,1530,130,1441,127,1362,129,1361,124,1441,121,1530,125,1622,138,1710,163,1745,179,1777,201,1831,249"/>
+<area shape="rect" id="Node000009" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#accfef8fa0f4edf90dd95bf3f42f6d8ea" title=" " alt="" coords="1470,177,1672,236"/>
+<area shape="poly" id="edge11_Node000004_Node000009" title=" " alt="" coords="1742,255,1673,237,1672,232,1748,255"/>
+<area shape="poly" id="edge19_Node000004_Node000012" title=" " alt="" coords="1743,324,1680,344,1678,339,1748,322"/>
+<area shape="rect" id="Node000013" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a138a3ae174c2e691c64f29903e975f8b" title=" " alt="" coords="1092,410,1385,469"/>
+<area shape="poly" id="edge21_Node000004_Node000013" title=" " alt="" coords="1831,328,1777,378,1745,399,1710,416,1629,439,1545,452,1462,457,1386,456,1385,451,1462,452,1544,447,1628,434,1708,411,1742,394,1774,373,1826,331"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="513,71,456,76,394,84,330,99,271,122,230,148,193,180,138,243,133,241,189,176,226,144,268,117,329,94,393,79,456,70,517,68"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="1097,135,894,130,655,130,538,133,431,140,339,151,270,166,235,181,202,201,148,244,143,241,199,197,233,177,269,161,339,145,430,134,538,128,655,124,895,125,1102,132"/>
+<area shape="rect" id="Node000008" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a6f4c3a789f523c2ddc3b358871ce5d4f" title="Generates the complete ordered sequence of waypoint points, normals, and entity indices for the entir..." alt="" coords="820,456,1021,514"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1202,179,951,457,947,453,1198,182"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="802,468,556,421,411,386,269,344,175,304,173,299,271,339,413,381,557,416,807,466"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="1452,226,1210,258,1066,270,922,274,637,274,223,274,222,269,637,269,922,269,1066,265,1210,253,1457,224"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="1452,184,1361,167,1361,162,1457,183"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="1453,238,1434,250,1420,260,1411,271,1401,282,1386,293,1308,332,1242,353,1175,371,1093,401,978,458,975,453,1091,396,1174,366,1241,348,1306,327,1384,288,1398,278,1407,267,1417,256,1432,246,1458,236"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad9976f889513d8540be198eac0a4f170" title="Executes the InferShellGeneratedPointType method." alt="" coords="272,176,477,234"/>
+<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="1453,209,478,208,477,203,1456,204"/>
+<area shape="rect" id="Node000011" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#ac447555a909e05c4c4731c980f9070b6" title="Plans and appends collision&#45;free transition steps to or between hole features, prioritizing the netwo..." alt="" coords="1124,626,1352,685"/>
+<area shape="poly" id="edge17_Node000009_Node000011" title=" " alt="" coords="1459,227,1435,250,1410,288,1400,326,1400,363,1406,401,1412,440,1415,480,1408,521,1387,565,1372,585,1354,602,1313,628,1311,624,1350,597,1368,581,1383,562,1403,520,1410,479,1407,440,1401,402,1395,364,1395,325,1405,286,1431,246,1454,230"/>
+<area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="255,237,224,246,220,242,259,233"/>
+<area shape="poly" id="edge18_Node000011_Node000008" title=" " alt="" coords="1117,620,1090,610,1016,564,956,518,957,512,1019,560,1093,605,1122,621"/>
+<area shape="poly" id="edge20_Node000012_Node000003" title=" " alt="" coords="1421,355,1188,336,1055,328,922,325,637,325,526,322,415,314,223,291,221,286,415,308,526,317,637,320,922,320,1055,323,1189,330,1426,354"/>
+<area shape="poly" id="edge22_Node000013_Node000008" title=" " alt="" coords="1074,464,1023,473,1021,468,1079,462"/>
+<area shape="poly" id="edge44_Node000014_Node000011" title=" " alt="" coords="2296,566,1353,649,1353,644,2301,565"/>
+<area shape="rect" id="Node000015" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a0cd4d4e3745eb6b712a55c8021d0b109" title=" " alt="" coords="2045,660,2246,718"/>
+<area shape="poly" id="edge24_Node000014_Node000015" title=" " alt="" coords="2356,593,2267,644,2226,662,2225,657,2265,639,2350,594"/>
+<area shape="rect" id="Node000020" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#aa30a4c17c3a7b6b792eaf794675c87b1" title="Plans and appends geodesic transition steps from a source coordinate to a destination coordinate." alt="" coords="1470,526,1672,585"/>
+<area shape="poly" id="edge46_Node000014_Node000020" title=" " alt="" coords="2296,556,1672,558,1672,553,2301,555"/>
+<area shape="rect" id="Node000021" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#af9c1fc0d6b7cbd132b656ff5740005b5" title=" " alt="" coords="1138,493,1339,552"/>
+<area shape="poly" id="edge45_Node000014_Node000021" title=" " alt="" coords="2296,540,2266,540,2032,522,1850,514,1667,513,1433,517,1340,520,1339,515,1433,512,1667,508,1850,509,2032,517,2266,535,2301,540"/>
+<area shape="poly" id="edge43_Node000015_Node000011" title=" " alt="" coords="2027,686,1353,663,1353,657,2032,684"/>
+<area shape="rect" id="Node000016" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a43c83097f6a4c3f08bacb4295c5ce292" title="Computes a geodesic, obstacle&#45;avoiding route along the shell mesh between start and end points." alt="" coords="1766,710,1968,769"/>
+<area shape="poly" id="edge25_Node000015_Node000016" title=" " alt="" coords="2032,710,1968,724,1967,719,2027,711"/>
+<area shape="rect" id="Node000017" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#abc26ff8b7bf037dee46f26d8ca1dec71" title=" " alt="" coords="1448,793,1694,852"/>
+<area shape="poly" id="edge26_Node000016_Node000017" title=" " alt="" coords="1754,772,1679,795,1678,790,1749,773"/>
+<area shape="rect" id="Node000019" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a4850cfa3da1dfdd51973718ff00a3b78" title="Compatibility overload for callers that retain part metadata. Commit 97&#39;s navigator owns routing glob..." alt="" coords="1470,710,1672,769"/>
+<area shape="poly" id="edge29_Node000016_Node000019" title=" " alt="" coords="1748,740,1673,742,1672,737,1754,740"/>
+<area shape="poly" id="edge30_Node000016_Node000020" title=" " alt="" coords="1803,702,1620,588,1621,583,1808,702"/>
+<area shape="rect" id="Node000022" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ac589e66f372051530f276ecd7ec4e3aa" title=" " alt="" coords="1459,876,1683,934"/>
+<area shape="poly" id="edge34_Node000016_Node000022" title=" " alt="" coords="1827,779,1773,826,1711,866,1684,878,1683,873,1708,861,1770,822,1822,781"/>
+<area shape="rect" id="Node000018" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a8f86fcd48099679e5825b1f9e168e204" title=" " alt="" coords="1138,709,1339,768"/>
+<area shape="poly" id="edge27_Node000017_Node000018" title=" " alt="" coords="1435,789,1339,767,1340,761,1440,789"/>
+<area shape="poly" id="edge28_Node000018_Node000008" title=" " alt="" coords="1120,713,1090,699,1039,657,995,607,960,558,937,518,938,512,965,555,999,604,1043,653,1093,695,1126,714"/>
+<area shape="poly" id="edge31_Node000020_Node000008" title=" " alt="" coords="1453,573,1375,582,1283,585,1186,581,1091,566,1027,545,971,518,972,512,1029,540,1092,561,1186,575,1283,580,1374,577,1458,572"/>
+<area shape="poly" id="edge32_Node000020_Node000021" title=" " alt="" coords="1452,545,1340,535,1339,530,1458,544"/>
+<area shape="poly" id="edge33_Node000021_Node000008" title=" " alt="" coords="1120,509,1022,500,1021,494,1125,508"/>
+<area shape="poly" id="edge35_Node000022_Node000003" title=" " alt="" coords="1442,874,1333,854,1203,831,1062,814,922,808,637,808,584,803,534,791,487,771,442,745,400,713,361,677,290,597,231,512,183,429,148,357,127,304,126,299,152,354,188,426,235,509,294,594,365,674,404,709,445,740,489,766,536,786,585,798,637,802,922,802,1063,809,1203,826,1334,848,1447,874"/>
+<area shape="rect" id="Node000023" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#af89e28788c6a0c887f6fe0f558a6fd5b" title="Executes the TryBuildShellRouteInterior method." alt="" coords="1139,876,1338,934"/>
+<area shape="poly" id="edge36_Node000022_Node000023" title=" " alt="" coords="1441,905,1338,908,1338,902,1446,905"/>
+<area shape="rect" id="Node000024" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a076cbd7ad2cf7f01e78c976b6812d4cc" title="Executes the InsertLeavingHighZRoute method." alt="" coords="806,842,1035,901"/>
+<area shape="poly" id="edge37_Node000023_Node000024" title=" " alt="" coords="1121,893,1035,886,1035,881,1126,893"/>
+<area shape="rect" id="Node000027" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8a60afd5c01ee7fca0f1402c06d9786d" title="Executes the ReplaceEnteringHighZNeighbor method." alt="" coords="797,925,1044,984"/>
+<area shape="poly" id="edge41_Node000023_Node000027" title=" " alt="" coords="1126,923,1044,938,1044,933,1121,923"/>
+<area shape="rect" id="Node000025" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#abb17411bd97ea392e0f76746479aaa5a" title="Executes the RewriteHighZTransition method." alt="" coords="527,842,749,901"/>
+<area shape="poly" id="edge38_Node000024_Node000025" title=" " alt="" coords="788,872,750,874,750,869,793,872"/>
+<area shape="rect" id="Node000026" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a39ab265cd0821a93527d98ac78d92c58" title="Executes the NormalizeHighZTransitions method." alt="" coords="270,842,479,901"/>
+<area shape="poly" id="edge39_Node000025_Node000026" title=" " alt="" coords="509,872,480,874,479,869,514,872"/>
+<area shape="poly" id="edge40_Node000026_Node000003" title=" " alt="" coords="276,833,268,826,222,760,186,688,159,613,139,537,126,464,118,399,115,304,115,299,123,398,131,464,144,536,164,611,191,686,226,758,272,822,281,833"/>
+<area shape="poly" id="edge42_Node000027_Node000025" title=" " alt="" coords="801,920,741,904,741,899,806,921"/>
 </map>

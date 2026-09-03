@@ -1,82 +1,89 @@
 <map id="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetManipulationEntitiesForPart" name="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.GetManipulationEntitiesForPart">
-<area shape="rect" id="Node000001" title="Executes the GetManipulationEntitiesForPart method." alt="" coords="5,661,285,720"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae0321e8cfb21b8a7b796a0b2003f9753" title="Executes the GetAssociatedEntities method." alt="" coords="351,404,622,463"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,659,435,470,433,475,187,663"/>
-<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acc79af5c6366fa332c4378bfdbc06da3" title="Executes the GetExclusiveFallbackColorsForPart method." alt="" coords="355,620,618,679"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="284,672,341,665,337,669,287,676"/>
-<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa952c8f888dfd94bacbb8fa75ad908ef" title="Executes the GetPartPathVisualEntities method." alt="" coords="371,703,602,761"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="284,705,358,715,353,718,286,710"/>
-<area shape="rect" id="Node000023" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a153a4bbdcffe21a394335a12c9e6a4e4" title="Executes the RepairMissingPathPointOwnershipFromModelGeometry method." alt="" coords="333,1073,640,1132"/>
-<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="172,718,453,1060,449,1062,170,723"/>
-<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a43375d3394fcc2f343d8e49ed4d6b1cb" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="714,253,934,312"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,401,744,317,740,321,556,406"/>
-<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac179d631185f5ff05109c8460b326872" title="Executes the GetPartSourceKey method." alt="" coords="1319,279,1550,337"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="933,309,1008,321,1084,327,1161,328,1306,322,1301,324,1161,333,1083,332,1007,327,935,314"/>
-<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9c3af38ef0f79ecbc4fa82b41b5177a5" title="Checks whether a visual entity belongs to a specific base avoidance source path." alt="" coords="1023,88,1249,147"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="860,251,927,203,1006,156,1021,151,1017,155,1009,161,929,207,864,255"/>
-<area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5c75b49ee730bf23db3ccb9cb7552a5b" title="Executes the IsPartOriginEntityForPart method." alt="" coords="1026,171,1246,229"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="933,251,1013,232,1008,235,936,256"/>
-<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a24bffd4460a4eca8bf29508ae260dda6" title="Executes the IsPathVisualEntity method." alt="" coords="1024,253,1248,312"/>
-<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="933,280,1011,282,1006,284,935,285"/>
-<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a81aa9a5f2b44b2507f39a14f6c8b7cf8" title="Normalizes a file path or source identifier into a canonical lookup key for base avoidance data." alt="" coords="1316,88,1552,147"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1249,115,1303,116,1299,118,1250,120"/>
-<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a3cb26be4cdc442748937fcc4252da59d" title="Attempts to extract the source CAD file path embedded within a base avoidance visual entity&#39;s tag." alt="" coords="1322,5,1547,64"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1243,85,1314,67,1309,70,1246,90"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="1231,227,1266,239,1349,272,1344,273,1264,244,1232,233"/>
-<area shape="rect" id="Node000009" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acbc2414bac12886d5b3b74d6f333a6a3" title="Executes the IsOriginNearPart method." alt="" coords="1319,171,1550,229"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1246,197,1306,199,1301,201,1247,203"/>
-<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a71395ddc93febd878d0f078d75dccffc" title="Executes the IsNonBridgePathPointForPart method." alt="" coords="1007,669,1265,728"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="601,724,994,704,990,708,602,729"/>
-<area shape="rect" id="Node000021" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6b5c8832bd2db9e9ededab23d9a1f46c" title="Executes the IsNonBridgePathSegmentForPart method." alt="" coords="695,736,952,795"/>
-<area shape="poly" id="edge24_Node000012_Node000021" title=" " alt="" coords="601,741,682,750,677,752,603,746"/>
-<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae61cf838a6037ac8c3df40d5de2803fa" title="Executes the GetPathPointType method." alt="" coords="1903,421,2137,480"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1183,667,1260,621,1362,567,1480,514,1542,492,1603,473,1675,459,1749,449,1890,445,1885,447,1750,455,1676,464,1605,479,1543,497,1482,519,1364,572,1262,626,1185,671"/>
-<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aea64c6f08cc85026d61d28ab25995188" title="Executes the IsBridgeManipulationType method." alt="" coords="1903,853,2137,912"/>
-<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="1206,726,1385,794,1494,828,1605,855,1677,866,1750,874,1890,883,1885,884,1750,879,1676,872,1603,860,1492,833,1383,799,1206,731"/>
-<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8a7c69e1f519c1f3bdbce85251bcbcae" title="Executes the IsPathPointPertinentToPart method." alt="" coords="1323,653,1546,712"/>
-<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="1265,689,1310,689,1305,690,1266,694"/>
-<area shape="rect" id="Node000017" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a648314d9cb97746d3bfc301b60f585d1" title="Executes the ColorSetContains method." alt="" coords="1612,488,1848,547"/>
-<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1468,651,1528,603,1603,556,1613,554,1617,552,1605,561,1531,608,1470,655"/>
-<area shape="rect" id="Node000018" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae4d00f08c333dd579a598de87e71d68a" title="Executes the GetPathPointOwnerIndex method." alt="" coords="1903,720,2137,779"/>
-<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="1545,710,1604,721,1751,737,1890,747,1885,748,1750,743,1604,727,1546,715"/>
-<area shape="rect" id="Node000019" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ad00db2970cc6c4e04a7ce846d50f214e" title="Executes the HasUsablePathPointOwnership method." alt="" coords="1604,571,1855,629"/>
-<area shape="poly" id="edge19_Node000016_Node000019" title=" " alt="" coords="1541,650,1610,633,1605,635,1543,655"/>
-<area shape="rect" id="Node000020" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a281343a77a8b27fe620bca58733eaccc" title="Executes the IsUnownedPointInsidePartRun method." alt="" coords="1604,653,1855,712"/>
-<area shape="poly" id="edge20_Node000016_Node000020" title=" " alt="" coords="1546,680,1591,682,1586,683,1547,685"/>
-<area shape="poly" id="edge22_Node000020_Node000014" title=" " alt="" coords="1834,650,1854,639,1896,606,1933,567,1990,495,1994,492,1937,570,1899,610,1857,644,1837,655"/>
-<area shape="poly" id="edge23_Node000020_Node000015" title=" " alt="" coords="1775,710,1966,844,1961,844,1773,715"/>
-<area shape="poly" id="edge21_Node000020_Node000018" title=" " alt="" coords="1856,709,1891,719,1886,719,1856,714"/>
-<area shape="poly" id="edge27_Node000021_Node000013" title=" " alt="" coords="952,735,994,728,990,730,954,740"/>
-<area shape="poly" id="edge25_Node000021_Node000014" title=" " alt="" coords="870,733,1006,655,1166,573,1294,514,1358,491,1428,472,1508,455,1604,440,1676,433,1751,431,1890,437,1885,438,1751,436,1677,438,1604,445,1509,460,1429,477,1359,496,1296,519,1168,577,1009,660,873,738"/>
-<area shape="poly" id="edge26_Node000021_Node000015" title=" " alt="" coords="952,784,1008,792,1305,828,1604,855,1891,876,1885,877,1604,860,1305,834,1007,797,953,789"/>
-<area shape="rect" id="Node000022" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8c135beb18e8ed030d37e513ca586806" title="Executes the IsPathPointOwnedByAnotherPart method." alt="" coords="1618,787,1841,845"/>
-<area shape="poly" id="edge28_Node000021_Node000022" title=" " alt="" coords="953,770,1605,808,1600,810,953,775"/>
-<area shape="poly" id="edge29_Node000022_Node000018" title=" " alt="" coords="1841,788,1891,779,1885,780,1842,793"/>
-<area shape="rect" id="Node000024" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a406af154d91a53cead6b5af4cc5990c8" title="Executes the BuildExclusiveFaceColorOwnersByArgb method." alt="" coords="688,1239,959,1297"/>
-<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="529,1130,603,1178,689,1224,704,1233,699,1232,687,1229,600,1182,528,1135"/>
-<area shape="rect" id="Node000025" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a49577873526a90f4041f28787611b64a" title="Executes the IsCurrentSessionModelEntityIndex method." alt="" coords="1016,1239,1256,1297"/>
-<area shape="poly" id="edge45_Node000023_Node000025" title=" " alt="" coords="506,1130,537,1174,578,1223,629,1271,658,1291,689,1307,733,1321,778,1330,825,1333,871,1332,960,1319,1036,1303,1042,1302,961,1325,871,1337,824,1338,777,1335,731,1327,687,1312,655,1296,626,1275,574,1227,532,1177,504,1135"/>
-<area shape="rect" id="Node000029" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af1fa298bd0e7eb3dc57da34fe0dc5124" title="Executes the BuildPathOwnershipRepairPartBounds method." alt="" coords="703,1156,944,1215"/>
-<area shape="poly" id="edge36_Node000023_Node000029" title=" " alt="" coords="609,1130,690,1152,685,1152,609,1135"/>
-<area shape="rect" id="Node000032" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9033e9b5b2f3441ddbd274282f4184f5" title="Executes the EnsurePathPointEntityIndexCount method." alt="" coords="710,991,937,1049"/>
-<area shape="poly" id="edge40_Node000023_Node000032" title=" " alt="" coords="608,1070,698,1050,693,1052,610,1075"/>
-<area shape="rect" id="Node000033" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0f935fe83ce549c98e72965f3097cefd" title="Executes the FindNearestPartEntityIndex method." alt="" coords="696,908,952,967"/>
-<area shape="poly" id="edge41_Node000023_Node000033" title=" " alt="" coords="528,1070,600,1023,687,976,704,972,699,974,689,981,603,1028,530,1075"/>
-<area shape="rect" id="Node000035" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a352387a2cdc758621f275d520ba1ff62" title="Executes the IsBridgeIntermediaryPathPoint method." alt="" coords="707,1073,940,1132"/>
-<area shape="poly" id="edge44_Node000023_Node000035" title=" " alt="" coords="640,1100,694,1102,689,1103,641,1105"/>
-<area shape="poly" id="edge32_Node000024_Node000025" title=" " alt="" coords="960,1265,1003,1268,998,1268,960,1271"/>
-<area shape="rect" id="Node000026" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d01866527b22384c78f641bfad23067" title="Executes the IsSessionModelEntity method." alt="" coords="1313,1175,1556,1233"/>
-<area shape="poly" id="edge33_Node000025_Node000026" title=" " alt="" coords="1256,1240,1295,1234,1300,1233,1257,1245"/>
-<area shape="rect" id="Node000027" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aef74fdaa64dd767d090da3ab18753434" title="Executes the IsSessionSystemLayer method." alt="" coords="1608,1216,1851,1275"/>
-<area shape="poly" id="edge34_Node000026_Node000027" title=" " alt="" coords="1556,1218,1595,1226,1590,1226,1556,1224"/>
-<area shape="rect" id="Node000028" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b" title="Attempts to convert an entity to a Brep if it supports the operation." alt="" coords="1627,1133,1832,1192"/>
-<area shape="poly" id="edge35_Node000026_Node000028" title=" " alt="" coords="1556,1184,1609,1179,1614,1179,1557,1190"/>
-<area shape="poly" id="edge37_Node000029_Node000026" title=" " alt="" coords="945,1186,1300,1200,1295,1200,945,1192"/>
-<area shape="rect" id="Node000030" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a079376db289c268478f312778e3d1016" title="Executes the TryGetFiniteEntityBounds method." alt="" coords="1023,1087,1249,1145"/>
-<area shape="poly" id="edge38_Node000029_Node000030" title=" " alt="" coords="944,1156,1006,1145,1011,1144,945,1161"/>
-<area shape="rect" id="Node000031" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#afeeeb2b056b975fa9dda4907ed5f4c22" title="Executes the IsFiniteGeometryPoint method." alt="" coords="1320,1067,1548,1125"/>
-<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="1249,1106,1307,1104,1302,1105,1249,1111"/>
-<area shape="poly" id="edge43_Node000033_Node000031" title=" " alt="" coords="925,965,1008,988,1308,1066,1303,1066,1007,993,925,970"/>
-<area shape="rect" id="Node000034" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab665335aaf1f8e193f8ade08fc7801d9" title="Executes the DistanceSquaredToBox method." alt="" coords="1017,920,1255,979"/>
-<area shape="poly" id="edge42_Node000033_Node000034" title=" " alt="" coords="952,940,1004,944,999,945,953,945"/>
+<area shape="rect" id="Node000001" title="Executes the GetManipulationEntitiesForPart method." alt="" coords="5,636,285,695"/>
+<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae0321e8cfb21b8a7b796a0b2003f9753" title="Executes the GetAssociatedEntities method." alt="" coords="351,363,622,421"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,634,437,429,435,434,185,637"/>
+<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acc79af5c6366fa332c4378bfdbc06da3" title="Executes the GetExclusiveFallbackColorsForPart method." alt="" coords="355,595,618,653"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="284,646,341,640,337,644,287,651"/>
+<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aa952c8f888dfd94bacbb8fa75ad908ef" title="Executes the GetPartPathVisualEntities method." alt="" coords="371,677,602,736"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="284,680,358,689,354,692,286,685"/>
+<area shape="rect" id="Node000026" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a153a4bbdcffe21a394335a12c9e6a4e4" title="Executes the RepairMissingPathPointOwnershipFromModelGeometry method." alt="" coords="333,1152,640,1211"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="168,693,460,1138,455,1140,164,698"/>
+<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a43375d3394fcc2f343d8e49ed4d6b1cb" title="Executes the IsPartOwnedManipulationHelper method." alt="" coords="714,204,934,263"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="549,360,747,268,744,272,552,364"/>
+<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac179d631185f5ff05109c8460b326872" title="Executes the GetPartSourceKey method." alt="" coords="1339,88,1569,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="876,201,938,172,1007,148,1087,131,1170,121,1325,114,1321,116,1171,126,1088,137,1008,153,940,177,880,205"/>
+<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9c3af38ef0f79ecbc4fa82b41b5177a5" title="Checks whether a visual entity belongs to a specific base avoidance source path." alt="" coords="1023,336,1249,395"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="888,261,1008,314,1044,329,1039,330,1006,318,889,266"/>
+<area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a5c75b49ee730bf23db3ccb9cb7552a5b" title="Executes the IsPartOriginEntityForPart method." alt="" coords="1026,29,1246,88"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="860,202,927,153,1006,104,1035,93,1031,96,1009,109,930,157,864,205"/>
+<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a24bffd4460a4eca8bf29508ae260dda6" title="Executes the IsPathVisualEntity method." alt="" coords="1024,163,1248,221"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="933,216,1011,207,1007,210,935,221"/>
+<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a58e1cccdee28ba421de034c038c32bf8" title="Validates if an entity is a true part geometry entity (Brep or Mesh from loaded model) and not a mark..." alt="" coords="1024,245,1248,304"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="933,245,1011,257,1006,259,935,250"/>
+<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a81aa9a5f2b44b2507f39a14f6c8b7cf8" title="Normalizes a file path or source identifier into a canonical lookup key for base avoidance data." alt="" coords="1336,336,1572,395"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1249,363,1323,364,1318,366,1251,368"/>
+<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a3cb26be4cdc442748937fcc4252da59d" title="Attempts to extract the source CAD file path embedded within a base avoidance visual entity&#39;s tag." alt="" coords="1341,419,1566,477"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1249,392,1329,414,1323,415,1250,397"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="1246,76,1326,92,1321,94,1247,82"/>
+<area shape="rect" id="Node000009" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#acbc2414bac12886d5b3b74d6f333a6a3" title="Executes the IsOriginNearPart method." alt="" coords="1339,5,1569,64"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1246,48,1326,43,1321,46,1248,53"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="1245,243,1263,231,1279,213,1286,195,1294,176,1311,157,1327,149,1323,152,1314,161,1299,178,1291,197,1283,216,1266,235,1249,247"/>
+<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a242a2df0a3e69c7e120d9332e3a6dc20" title="Determines whether a given Eyeshot entity is a visual base avoidance plane or label." alt="" coords="1341,171,1567,229"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1247,246,1328,229,1323,231,1250,251"/>
+<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ac31db30cca5e68242fe3e010d7ddfc75" title="Determines whether a given Eyeshot entity is a CMM bounding box visual entity." alt="" coords="1313,253,1595,312"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="1248,275,1299,278,1295,280,1249,280"/>
+<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a71395ddc93febd878d0f078d75dccffc" title="Executes the IsNonBridgePathPointForPart method." alt="" coords="1007,711,1265,769"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="601,710,994,731,990,734,602,715"/>
+<area shape="rect" id="Node000024" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6b5c8832bd2db9e9ededab23d9a1f46c" title="Executes the IsNonBridgePathSegmentForPart method." alt="" coords="695,644,952,703"/>
+<area shape="poly" id="edge28_Node000015_Node000024" title=" " alt="" coords="601,693,682,686,677,689,603,698"/>
+<area shape="rect" id="Node000017" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae61cf838a6037ac8c3df40d5de2803fa" title="Executes the GetPathPointType method." alt="" coords="1942,968,2176,1027"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1200,767,1314,820,1405,867,1475,906,1547,939,1644,969,1715,984,1789,993,1930,1001,1924,1002,1789,998,1715,989,1642,975,1545,944,1473,911,1403,871,1311,825,1200,773"/>
+<area shape="rect" id="Node000018" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aea64c6f08cc85026d61d28ab25995188" title="Executes the IsBridgeManipulationType method." alt="" coords="1942,536,2176,595"/>
+<area shape="poly" id="edge19_Node000016_Node000018" title=" " alt="" coords="1217,708,1409,645,1525,613,1643,588,1789,570,1930,565,1924,566,1790,575,1643,593,1526,618,1411,650,1219,713"/>
+<area shape="rect" id="Node000019" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8a7c69e1f519c1f3bdbce85251bcbcae" title="Executes the IsPathPointPertinentToPart method." alt="" coords="1342,752,1566,811"/>
+<area shape="poly" id="edge20_Node000016_Node000019" title=" " alt="" coords="1265,754,1330,764,1324,765,1265,759"/>
+<area shape="rect" id="Node000020" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a648314d9cb97746d3bfc301b60f585d1" title="Executes the ColorSetContains method." alt="" coords="1650,819,1887,877"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="1566,802,1638,819,1632,820,1566,808"/>
+<area shape="rect" id="Node000021" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ae4d00f08c333dd579a598de87e71d68a" title="Executes the GetPathPointOwnerIndex method." alt="" coords="1942,685,2176,744"/>
+<area shape="poly" id="edge22_Node000019_Node000021" title=" " alt="" coords="1565,778,1722,771,1808,764,1894,753,1939,747,1934,749,1895,759,1809,769,1722,777,1566,783"/>
+<area shape="rect" id="Node000022" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ad00db2970cc6c4e04a7ce846d50f214e" title="Executes the HasUsablePathPointOwnership method." alt="" coords="1644,901,1894,960"/>
+<area shape="poly" id="edge23_Node000019_Node000022" title=" " alt="" coords="1501,808,1568,848,1644,887,1659,895,1654,895,1642,892,1566,853,1501,814"/>
+<area shape="rect" id="Node000023" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a281343a77a8b27fe620bca58733eaccc" title="Executes the IsUnownedPointInsidePartRun method." alt="" coords="1643,685,1894,744"/>
+<area shape="poly" id="edge24_Node000019_Node000023" title=" " alt="" coords="1565,755,1630,744,1625,745,1567,760"/>
+<area shape="poly" id="edge26_Node000023_Node000017" title=" " alt="" coords="1815,742,1856,771,1896,805,1970,882,2029,956,2024,955,1966,885,1893,809,1853,775,1815,747"/>
+<area shape="poly" id="edge27_Node000023_Node000018" title=" " alt="" coords="1867,682,1893,671,1952,638,2004,605,2009,603,1955,642,1896,676,1869,687"/>
+<area shape="poly" id="edge25_Node000023_Node000021" title=" " alt="" coords="1894,712,1929,714,1924,715,1895,717"/>
+<area shape="poly" id="edge31_Node000024_Node000016" title=" " alt="" coords="952,698,995,709,989,710,953,703"/>
+<area shape="poly" id="edge29_Node000024_Node000017" title=" " alt="" coords="862,700,941,758,1049,830,1177,903,1245,935,1314,961,1393,985,1475,1001,1558,1012,1640,1018,1796,1019,1930,1013,1925,1014,1796,1024,1640,1023,1557,1017,1474,1006,1391,990,1312,967,1243,940,1175,907,1047,835,938,762,862,706"/>
+<area shape="poly" id="edge30_Node000024_Node000018" title=" " alt="" coords="952,648,1007,639,1324,589,1463,572,1643,557,1769,554,1894,557,1929,560,1924,561,1894,563,1769,559,1643,563,1464,577,1325,594,1008,644,954,653"/>
+<area shape="rect" id="Node000025" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a8c135beb18e8ed030d37e513ca586806" title="Executes the IsPathPointOwnedByAnotherPart method." alt="" coords="1657,603,1880,661"/>
+<area shape="poly" id="edge32_Node000024_Node000025" title=" " alt="" coords="952,665,1643,636,1639,639,953,670"/>
+<area shape="poly" id="edge33_Node000025_Node000021" title=" " alt="" coords="1874,659,1941,680,1936,681,1874,665"/>
+<area shape="rect" id="Node000027" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a406af154d91a53cead6b5af4cc5990c8" title="Executes the BuildExclusiveFaceColorOwnersByArgb method." alt="" coords="688,1317,959,1376"/>
+<area shape="poly" id="edge35_Node000026_Node000027" title=" " alt="" coords="529,1209,603,1256,689,1303,704,1312,699,1311,687,1308,600,1261,528,1214"/>
+<area shape="rect" id="Node000028" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a49577873526a90f4041f28787611b64a" title="Executes the IsCurrentSessionModelEntityIndex method." alt="" coords="1016,1352,1256,1411"/>
+<area shape="poly" id="edge49_Node000026_Node000028" title=" " alt="" coords="506,1209,537,1252,578,1302,629,1350,658,1370,689,1386,727,1399,766,1409,847,1418,927,1416,998,1411,1004,1411,927,1422,847,1423,765,1414,725,1404,687,1390,655,1374,626,1354,574,1306,532,1255,504,1214"/>
+<area shape="rect" id="Node000032" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af1fa298bd0e7eb3dc57da34fe0dc5124" title="Executes the BuildPathOwnershipRepairPartBounds method." alt="" coords="703,1235,944,1293"/>
+<area shape="poly" id="edge40_Node000026_Node000032" title=" " alt="" coords="609,1209,690,1231,685,1231,609,1214"/>
+<area shape="rect" id="Node000035" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a9033e9b5b2f3441ddbd274282f4184f5" title="Executes the EnsurePathPointEntityIndexCount method." alt="" coords="710,987,937,1045"/>
+<area shape="poly" id="edge44_Node000026_Node000035" title=" " alt="" coords="528,1149,600,1102,687,1055,704,1050,699,1053,689,1060,603,1106,530,1154"/>
+<area shape="rect" id="Node000036" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0f935fe83ce549c98e72965f3097cefd" title="Executes the FindNearestPartEntityIndex method." alt="" coords="696,1069,952,1128"/>
+<area shape="poly" id="edge45_Node000026_Node000036" title=" " alt="" coords="608,1149,689,1131,683,1133,610,1154"/>
+<area shape="rect" id="Node000038" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a352387a2cdc758621f275d520ba1ff62" title="Executes the IsBridgeIntermediaryPathPoint method." alt="" coords="707,1152,940,1211"/>
+<area shape="poly" id="edge48_Node000026_Node000038" title=" " alt="" coords="640,1179,694,1181,689,1182,641,1184"/>
+<area shape="poly" id="edge36_Node000027_Node000028" title=" " alt="" coords="960,1359,1003,1366,998,1366,960,1364"/>
+<area shape="rect" id="Node000029" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d01866527b22384c78f641bfad23067" title="Executes the IsSessionModelEntity method." alt="" coords="1332,1307,1576,1365"/>
+<area shape="poly" id="edge37_Node000028_Node000029" title=" " alt="" coords="1256,1362,1314,1356,1320,1355,1256,1367"/>
+<area shape="rect" id="Node000030" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aef74fdaa64dd767d090da3ab18753434" title="Executes the IsSessionSystemLayer method." alt="" coords="1647,1348,1890,1407"/>
+<area shape="poly" id="edge38_Node000029_Node000030" title=" " alt="" coords="1576,1349,1634,1359,1629,1359,1576,1355"/>
+<area shape="rect" id="Node000031" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b" title="Attempts to convert an entity to a Brep if it supports the operation." alt="" coords="1666,1265,1871,1324"/>
+<area shape="poly" id="edge39_Node000029_Node000031" title=" " alt="" coords="1576,1317,1648,1310,1653,1310,1576,1323"/>
+<area shape="poly" id="edge41_Node000032_Node000029" title=" " alt="" coords="945,1279,1008,1287,1320,1323,1314,1323,1007,1292,945,1284"/>
+<area shape="rect" id="Node000033" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a079376db289c268478f312778e3d1016" title="Executes the TryGetFiniteEntityBounds method." alt="" coords="1023,1219,1249,1277"/>
+<area shape="poly" id="edge42_Node000032_Node000033" title=" " alt="" coords="944,1255,1010,1254,1005,1255,945,1260"/>
+<area shape="rect" id="Node000034" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#afeeeb2b056b975fa9dda4907ed5f4c22" title="Executes the IsFiniteGeometryPoint method." alt="" coords="1340,1199,1568,1257"/>
+<area shape="poly" id="edge43_Node000033_Node000034" title=" " alt="" coords="1249,1238,1327,1236,1322,1236,1249,1244"/>
+<area shape="poly" id="edge47_Node000036_Node000034" title=" " alt="" coords="952,1089,1024,1089,1104,1093,1186,1104,1265,1121,1337,1151,1401,1190,1396,1189,1335,1156,1264,1127,1185,1109,1103,1099,1024,1094,952,1094"/>
+<area shape="rect" id="Node000037" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab665335aaf1f8e193f8ade08fc7801d9" title="Executes the DistanceSquaredToBox method." alt="" coords="1017,1136,1255,1195"/>
+<area shape="poly" id="edge46_Node000036_Node000037" title=" " alt="" coords="952,1123,1005,1137,999,1137,952,1129"/>
 </map>

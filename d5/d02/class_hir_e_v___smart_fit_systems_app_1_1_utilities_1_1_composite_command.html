@@ -101,9 +101,9 @@ Diagrama de heranças da classe HirEV_SmartFitSystemsApp.Utilities.CompositeComm
 <div class="dyncontent">
 <div class="center"><img src="../../de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command__inherit__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_inherit__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_inherit__map">
-<area shape="rect" title="Combines multiple undo commands into a single compound action." alt="" coords="5,203,187,437"/>
-<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="5,5,187,155"/>
-<area shape="poly" title=" " alt="" coords="97,167,99,203,94,203,96,172"/>
+<area shape="rect" title="Combines multiple undo commands into a single compound action." alt="" coords="5,224,187,480"/>
+<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="5,5,187,176"/>
+<area shape="poly" title=" " alt="" coords="97,189,99,225,94,224,96,194"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,9 +111,9 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.CompositeComma
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_composite_command_coll__map">
-<area shape="rect" title="Combines multiple undo commands into a single compound action." alt="" coords="5,203,187,437"/>
-<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="5,5,187,155"/>
-<area shape="poly" title=" " alt="" coords="97,167,99,203,94,203,96,172"/>
+<area shape="rect" title="Combines multiple undo commands into a single compound action." alt="" coords="5,224,187,480"/>
+<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="5,5,187,176"/>
+<area shape="poly" title=" " alt="" coords="97,189,99,225,94,224,96,194"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -121,6 +121,8 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.CompositeComma
 Membros públicos</h2></td></tr>
 <tr class="memitem:ac822bc7fa371e0465b182cc560628d08" id="r_ac822bc7fa371e0465b182cc560628d08"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac822bc7fa371e0465b182cc560628d08">CompositeCommand</a> (List&lt; <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html">IUndoCommand</a> &gt; commands)</td></tr>
 <tr class="memdesc:ac822bc7fa371e0465b182cc560628d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command.html" title="Combines multiple undo commands into a single compound action.">CompositeCommand</a> class.  <br /></td></tr>
+<tr class="memitem:a3156871cdbbc0684e08d9b7afb9a24fd" id="r_a3156871cdbbc0684e08d9b7afb9a24fd"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a3156871cdbbc0684e08d9b7afb9a24fd">GetLocalizedDescription</a> (XmlDocument? docLanguage=null)</td></tr>
+<tr class="memdesc:a3156871cdbbc0684e08d9b7afb9a24fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a localized description of the composite command.  <br /></td></tr>
 <tr class="memitem:a514d9ee072da9e754074920e5ff56962" id="r_a514d9ee072da9e754074920e5ff56962"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a514d9ee072da9e754074920e5ff56962">Undo</a> ()</td></tr>
 <tr class="memdesc:a514d9ee072da9e754074920e5ff56962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts all grouped commands in reverse chronological order.  <br /></td></tr>
 <tr class="memitem:a78da1685848e00101e1d078aa300231c" id="r_a78da1685848e00101e1d078aa300231c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a78da1685848e00101e1d078aa300231c">Redo</a> ()</td></tr>
@@ -149,7 +151,7 @@ Atributos Privados</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Combines multiple undo commands into a single compound action. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00227">227</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00272">272</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="ac822bc7fa371e0465b182cc560628d08" name="ac822bc7fa371e0465b182cc560628d08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac822bc7fa371e0465b182cc560628d08">&#9670;&#160;</a></span>CompositeCommand()</h2>
@@ -174,9 +176,9 @@ Atributos Privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00250">250</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00295">295</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00229">_commands</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00274">_commands</a>.</p>
 
 </div>
 </div>
@@ -207,9 +209,9 @@ Atributos Privados</h2></td></tr>
 <p>Helper to generate a combined human-readable description for the composite command. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A combined description string.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00259">259</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00304">304</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00229">_commands</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00274">_commands</a>.</p>
 
 </div>
 </div>
@@ -244,11 +246,11 @@ Atributos Privados</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00296">296</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00372">372</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00229">_commands</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00393">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.RegenerateAllPaths</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00274">_commands</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00481">HirEV_SmartFitSystemsApp.Utilities.UpdateColorPathCommand.RegenerateAllPaths</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00287">Redo()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00279">Undo()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00363">Redo()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00355">Undo()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -259,6 +261,48 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <area shape="poly" title=" " alt="" coords="263,44,233,43,233,37,268,43"/>
 <area shape="rect" href="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command.html#a514d9ee072da9e754074920e5ff56962" title="Reverts all grouped commands in reverse chronological order." alt="" coords="5,72,233,115"/>
 <area shape="poly" title=" " alt="" coords="263,77,234,83,233,77,268,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3156871cdbbc0684e08d9b7afb9a24fd" name="a3156871cdbbc0684e08d9b7afb9a24fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3156871cdbbc0684e08d9b7afb9a24fd">&#9670;&#160;</a></span>GetLocalizedDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.CompositeCommand.GetLocalizedDescription </td>
+          <td>(</td>
+          <td class="paramtype">XmlDocument?</td>          <td class="paramname"><span class="paramname"><em>docLanguage</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a localized description of the composite command. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">docLanguage</td><td>The active language XML document.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The localized description string.</dd></dl>
+
+<p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#a599b0c223033b675be2c503ef089fe58">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00326">326</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00274">_commands</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00279">Description</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00018">HirEV_SmartFitSystemsApp.Utilities.UndoLocalizationHelper.GetString()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command_a3156871cdbbc0684e08d9b7afb9a24fd_cgraph.png" border="0" usemap="#ad5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command_a3156871cdbbc0684e08d9b7afb9a24fd_cgraph" loading="lazy" alt=""/></div>
+<map name="ad5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command_a3156871cdbbc0684e08d9b7afb9a24fd_cgraph" id="ad5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_composite_command_a3156871cdbbc0684e08d9b7afb9a24fd_cgraph">
+<area shape="rect" title="Gets a localized description of the composite command." alt="" coords="5,5,223,64"/>
+<area shape="rect" href="../../df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper.html#a645e3c687a28bfc8dd3dee7e08c700d0" title=" " alt="" coords="271,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="223,32,258,34,253,35,223,37"/>
 </map>
 </div>
 
@@ -283,9 +327,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#acda4c74abed13ea68fadebabe90c34f7">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00287">287</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00363">363</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00296">Execute()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00372">Execute()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -318,9 +362,9 @@ Grafo de chamadas desta função:</div>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#af6baceaaa547918b4507b280d5ae790f">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00279">279</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00355">355</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00296">Execute()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00372">Execute()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -355,9 +399,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00229">229</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00274">274</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00259">BuildDescription()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00250">CompositeCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00296">Execute()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00304">BuildDescription()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00295">CompositeCommand()</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00372">Execute()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00326">GetLocalizedDescription()</a>.</p>
 
 </div>
 </div>
@@ -386,7 +430,7 @@ Grafo de chamadas desta função:</div>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#ab8bd604fe2be1a9d4882678b792280ce">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00239">239</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00284">284</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
 </div>
 </div>
@@ -414,7 +458,9 @@ Grafo de chamadas desta função:</div>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#a6e38bbb819206dcaa7d6340fb92bdedc">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00234">234</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00279">279</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00326">GetLocalizedDescription()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +488,7 @@ Grafo de chamadas desta função:</div>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#adb83f54333160baedb864bd2985ad186">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00244">244</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l00289">289</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
 </div>
 </div>

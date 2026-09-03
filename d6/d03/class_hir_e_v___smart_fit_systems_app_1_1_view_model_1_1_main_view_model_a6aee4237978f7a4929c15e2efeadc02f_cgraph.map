@@ -1,63 +1,69 @@
 <map id="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IgnoreItem" name="HirEV_SmartFitSystemsApp.ViewModel.MainViewModel.IgnoreItem">
-<area shape="rect" id="Node000001" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="5,503,253,545"/>
-<area shape="rect" id="Node000002" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="301,495,532,553"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,522,287,523,283,525,254,526"/>
-<area shape="rect" id="Node000003" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af9c81ee794b81ba88ea0d1a7c52e7d00" title="Repopulates the TreeView based on the current _facesByColor and IsExteriorOnlyChecked status." alt="" coords="591,453,827,512"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="531,505,578,500,573,503,533,510"/>
-<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="580,536,838,595"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="532,538,567,544,562,546,533,543"/>
-<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adbe2ce35aa14260e319e9e0059cc3856" title="Executes the BuildCurrentSessionModelInfos method." alt="" coords="888,188,1146,247"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="823,533,836,522,851,504,859,488,866,453,869,416,874,396,884,373,927,310,973,260,977,256,931,313,889,376,879,397,874,417,871,454,864,489,855,507,840,526,826,538"/>
-<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a42dba1333300a9f8213df1d83d1b1a12" title="Executes the BuildSdfShellCacheValidationInput method." alt="" coords="900,387,1134,445"/>
-<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="818,533,837,522,852,506,860,489,868,472,885,455,894,452,890,455,888,459,873,475,865,492,856,509,840,526,821,538"/>
-<area shape="rect" id="Node000015" href="$db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a0d419964331e5665cba45d1fe01b04cf" title="Creates a ShellMeshDTO from an existing Eyeshot Mesh object." alt="" coords="886,469,1148,512"/>
-<area shape="poly" id="edge16_Node000004_Node000015" title=" " alt="" coords="832,533,914,515,909,517,834,538"/>
-<area shape="rect" id="Node000016" href="$d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a273a87165d18f7c3b577413e53b829c4" title="Generates a list of ColorGroupedExportDTOs from the provided face and hole data. This is used for ses..." alt="" coords="908,536,1126,595"/>
-<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="838,563,895,565,889,566,839,568"/>
-<area shape="rect" id="Node000018" href="$d0/d01/class_tolerance_config_manager.html#a67fe05051abf74068797f67a4ecd3e1d" title="Reads the value of a tolerance key from ColorTolerances.config." alt="" coords="922,619,1112,661"/>
-<area shape="poly" id="edge19_Node000004_Node000018" title=" " alt="" coords="833,593,914,614,909,615,833,598"/>
-<area shape="rect" id="Node000019" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1c41c113702281c5ea69e2c55a6b6b9d" title=" " alt="" coords="895,685,1139,744"/>
-<area shape="poly" id="edge20_Node000004_Node000019" title=" " alt="" coords="753,593,816,633,887,671,903,679,897,679,885,676,813,637,752,598"/>
-<area shape="rect" id="Node000020" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="902,768,1132,827"/>
-<area shape="poly" id="edge21_Node000004_Node000020" title=" " alt="" coords="731,593,796,673,839,717,888,754,897,761,891,760,885,758,836,721,792,677,730,598"/>
-<area shape="rect" id="Node000006" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="1214,304,1474,363"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1084,245,1197,289,1219,299,1214,299,1195,295,1084,250"/>
-<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a72b1023e676e7b1902925d754667425e" title="Executes the GetCurrentTransformForSessionEntity method." alt="" coords="1219,5,1468,64"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1046,186,1111,129,1151,99,1194,74,1210,69,1205,72,1197,78,1154,104,1114,133,1049,190"/>
-<area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1c6d4b410445478f5f7adf2ee8b8554c" title="Executes the GetMatrixAsArray method." alt="" coords="1223,88,1465,147"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1114,185,1234,150,1229,153,1116,190"/>
-<area shape="rect" id="Node000009" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d01866527b22384c78f641bfad23067" title="Executes the IsSessionModelEntity method." alt="" coords="1222,221,1466,280"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="1145,228,1209,236,1204,237,1147,233"/>
-<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aef74fdaa64dd767d090da3ab18753434" title="Executes the IsSessionSystemLayer method." alt="" coords="1559,155,1802,213"/>
-<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="1146,208,1546,190,1541,192,1147,213"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1465,224,1547,210,1542,212,1467,229"/>
-<area shape="rect" id="Node000011" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b" title="Attempts to convert an entity to a Brep if it supports the operation." alt="" coords="1578,237,1783,296"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1465,254,1565,260,1560,262,1466,259"/>
-<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="1133,384,1213,366,1208,368,1135,389"/>
-<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab346cc7c8afe8d3c7384a3e7388a2d61" title="Executes the GetCurrentShellHoleFaceIndices method." alt="" coords="1219,387,1468,445"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1134,413,1206,415,1201,417,1135,419"/>
-<area shape="rect" id="Node000014" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a11eee9a6ec9f68a5c07c494818090d58" title="Executes the NormalizeTransformArray method." alt="" coords="1222,469,1466,528"/>
-<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="1134,443,1213,465,1208,465,1135,448"/>
-<area shape="rect" id="Node000017" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html#a250b53249dcb051299e27c246dc77333" title="Converts from CADHole to export DTO." alt="" coords="1213,552,1475,611"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1126,568,1200,574,1195,575,1127,573"/>
-<area shape="rect" id="Node000021" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="1201,660,1487,719"/>
-<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="1117,765,1147,754,1195,728,1210,725,1215,723,1197,733,1149,758,1119,770"/>
-<area shape="rect" id="Node000024" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8f0687254b80ad82709293de12b9a25c" title=" " alt="" coords="1245,743,1442,801"/>
-<area shape="poly" id="edge25_Node000020_Node000024" title=" " alt="" coords="1132,786,1232,780,1227,781,1133,791"/>
-<area shape="rect" id="Node000025" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1235,825,1453,884"/>
-<area shape="poly" id="edge26_Node000020_Node000025" title=" " alt="" coords="1132,815,1222,833,1217,833,1132,820"/>
-<area shape="rect" id="Node000026" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a88147e6684e8456d3294b7ef2627d185" title="Normalizes nullable collection properties and legacy scanner path placement before serialization." alt="" coords="1196,908,1492,967"/>
-<area shape="poly" id="edge27_Node000020_Node000026" title=" " alt="" coords="1066,825,1127,860,1197,894,1215,903,1209,902,1195,898,1125,865,1064,830"/>
-<area shape="rect" id="Node000022" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1552,619,1809,677"/>
-<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="1487,669,1540,665,1534,666,1488,674"/>
-<area shape="rect" id="Node000023" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1540,701,1821,760"/>
-<area shape="poly" id="edge24_Node000021_Node000023" title=" " alt="" coords="1487,704,1527,711,1522,712,1487,710"/>
-<area shape="rect" id="Node000027" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad08bd4b4a84e651f6b89b7d1040ea7cd" title=" " alt="" coords="1542,867,1819,925"/>
-<area shape="poly" id="edge28_Node000026_Node000027" title=" " alt="" coords="1492,916,1524,915,1530,915,1493,922"/>
-<area shape="rect" id="Node000028" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a3160ad41c45ba16019884ae4b0322584" title="Ensures nested path DTO collections are initialized for save/load round&#45;trips." alt="" coords="1542,949,1819,1008"/>
-<area shape="poly" id="edge29_Node000026_Node000028" title=" " alt="" coords="1492,953,1530,960,1524,960,1492,958"/>
-<area shape="rect" id="Node000029" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8ca4f53a85dec69d430912677396279d" title=" " alt="" coords="1886,892,2121,967"/>
-<area shape="poly" id="edge30_Node000028_Node000029" title=" " alt="" coords="1819,955,1868,950,1873,949,1819,960"/>
-<area shape="rect" id="Node000030" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a134b36384fe376d1bcf698a623981a99" title=" " alt="" coords="1869,991,2138,1065"/>
-<area shape="poly" id="edge31_Node000028_Node000030" title=" " alt="" coords="1819,997,1856,1005,1851,1005,1819,1002"/>
+<area shape="rect" id="Node000001" title="Ignores the specified item (CADFace or CADHole)." alt="" coords="5,424,253,467"/>
+<area shape="rect" id="Node000002" href="$d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#abdf0c8fb2b971e66ef73b3228a8d22cd" title="Formats a color as its friendly face color name followed by RGB values, e.g. &quot;Red (RGB: 255,..." alt="" coords="350,341,565,400"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,421,337,397,333,400,228,426"/>
+<area shape="rect" id="Node000004" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a4a2484baebec82df71f901ae4939facf" title="Gets a localized XML element value by key." alt="" coords="301,424,614,467"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,443,287,444,283,447,254,448"/>
+<area shape="rect" id="Node000005" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1223e05fe5a7db459f97d852bc9445e8" title="Executes the SetItemIgnoredState method." alt="" coords="342,491,573,549"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="225,465,329,489,324,492,227,470"/>
+<area shape="rect" id="Node000003" href="$d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_color_namer.html#a0279563b4eab034eb3c97f76d3d4ef5f" title="Encontra o nome da cor mais próxima da cor fornecida, usando a biblioteca ColorNamesSharp." alt="" coords="676,349,906,392"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="564,368,663,369,658,372,566,373"/>
+<area shape="rect" id="Node000006" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af9c81ee794b81ba88ea0d1a7c52e7d00" title="Repopulates the TreeView based on the current _facesByColor and IsExteriorOnlyChecked status." alt="" coords="673,453,909,512"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="573,505,660,496,656,499,575,510"/>
+<area shape="rect" id="Node000007" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aff4f5ba89844c2a3e1d53fd6f1d17dc3" title="Executes the SaveCurrentSession method." alt="" coords="662,536,920,595"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="573,533,649,545,644,547,574,538"/>
+<area shape="rect" id="Node000008" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#adbe2ce35aa14260e319e9e0059cc3856" title="Executes the BuildCurrentSessionModelInfos method." alt="" coords="970,188,1228,247"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="905,533,918,522,933,504,941,488,948,453,951,416,956,396,966,373,1009,310,1055,260,1059,256,1013,313,971,376,961,397,956,417,953,454,946,489,937,507,922,526,908,538"/>
+<area shape="rect" id="Node000015" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a42dba1333300a9f8213df1d83d1b1a12" title="Executes the BuildSdfShellCacheValidationInput method." alt="" coords="982,387,1216,445"/>
+<area shape="poly" id="edge15_Node000007_Node000015" title=" " alt="" coords="900,533,919,522,934,506,942,489,950,472,967,455,972,455,976,452,970,459,955,475,947,492,938,509,922,526,903,538"/>
+<area shape="rect" id="Node000018" href="$db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a0d419964331e5665cba45d1fe01b04cf" title="Creates a ShellMeshDTO from an existing Eyeshot Mesh object." alt="" coords="968,469,1230,512"/>
+<area shape="poly" id="edge19_Node000007_Node000018" title=" " alt="" coords="914,533,996,515,991,517,916,538"/>
+<area shape="rect" id="Node000019" href="$d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_json_export_utils.html#a273a87165d18f7c3b577413e53b829c4" title="Generates a list of ColorGroupedExportDTOs from the provided face and hole data. This is used for ses..." alt="" coords="990,536,1208,595"/>
+<area shape="poly" id="edge20_Node000007_Node000019" title=" " alt="" coords="920,563,977,565,971,566,921,568"/>
+<area shape="rect" id="Node000021" href="$d0/d01/class_tolerance_config_manager.html#a67fe05051abf74068797f67a4ecd3e1d" title="Reads the value of a tolerance key from ColorTolerances.config." alt="" coords="1004,619,1194,661"/>
+<area shape="poly" id="edge22_Node000007_Node000021" title=" " alt="" coords="915,593,996,614,991,615,915,598"/>
+<area shape="rect" id="Node000022" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1c41c113702281c5ea69e2c55a6b6b9d" title=" " alt="" coords="977,685,1221,744"/>
+<area shape="poly" id="edge23_Node000007_Node000022" title=" " alt="" coords="835,593,898,633,969,671,985,679,979,679,967,676,895,637,834,598"/>
+<area shape="rect" id="Node000023" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ab8d0ebf9d7e3f51d0ce2a2c0bf64d1a4" title="Serialises config &#160;and writes it atomically to CurrentSessionFilePath (creates a new file if none is ..." alt="" coords="984,768,1214,827"/>
+<area shape="poly" id="edge24_Node000007_Node000023" title=" " alt="" coords="813,593,878,673,921,717,970,754,979,761,973,760,967,758,918,721,874,677,812,598"/>
+<area shape="rect" id="Node000009" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#aef87ae270963833163943a81457ca734" title="Computes the SHA&#45;256 hash of a file (used to detect model changes between sessions)." alt="" coords="1296,304,1556,363"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1166,245,1279,289,1301,299,1296,299,1277,295,1166,250"/>
+<area shape="rect" id="Node000010" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a72b1023e676e7b1902925d754667425e" title="Executes the GetCurrentTransformForSessionEntity method." alt="" coords="1301,5,1550,64"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1128,186,1193,129,1233,99,1276,74,1292,69,1287,72,1279,78,1236,104,1196,133,1131,190"/>
+<area shape="rect" id="Node000011" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a1c6d4b410445478f5f7adf2ee8b8554c" title="Executes the GetMatrixAsArray method." alt="" coords="1305,88,1547,147"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1196,185,1316,150,1311,153,1198,190"/>
+<area shape="rect" id="Node000012" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a0d01866527b22384c78f641bfad23067" title="Executes the IsSessionModelEntity method." alt="" coords="1304,221,1548,280"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1227,228,1291,236,1286,237,1229,233"/>
+<area shape="rect" id="Node000013" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#aef74fdaa64dd767d090da3ab18753434" title="Executes the IsSessionSystemLayer method." alt="" coords="1641,155,1884,213"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="1228,208,1628,190,1623,192,1229,213"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1547,224,1629,210,1624,212,1549,229"/>
+<area shape="rect" id="Node000014" href="$d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_geometry_utils.html#aefd23e8c298387b749220171817b747b" title="Attempts to convert an entity to a Brep if it supports the operation." alt="" coords="1660,237,1865,296"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1547,254,1647,260,1642,262,1548,259"/>
+<area shape="poly" id="edge16_Node000015_Node000009" title=" " alt="" coords="1215,384,1295,366,1290,368,1217,389"/>
+<area shape="rect" id="Node000016" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#ab346cc7c8afe8d3c7384a3e7388a2d61" title="Executes the GetCurrentShellHoleFaceIndices method." alt="" coords="1301,387,1550,445"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="1216,413,1288,415,1283,417,1217,419"/>
+<area shape="rect" id="Node000017" href="$d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a11eee9a6ec9f68a5c07c494818090d58" title="Executes the NormalizeTransformArray method." alt="" coords="1304,469,1548,528"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="1216,443,1295,465,1290,465,1217,448"/>
+<area shape="rect" id="Node000020" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html#a250b53249dcb051299e27c246dc77333" title="Converts from CADHole to export DTO." alt="" coords="1295,552,1557,611"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="1208,568,1282,574,1277,575,1209,573"/>
+<area shape="rect" id="Node000024" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad1ce204c72c084bf3f40753d97fbb0da" title="Creates a new, uniquely&#45;named session file based on the current date and time. Call this once at appl..." alt="" coords="1283,660,1569,719"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="1199,765,1229,754,1277,728,1292,725,1297,723,1279,733,1231,758,1201,770"/>
+<area shape="rect" id="Node000027" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8f0687254b80ad82709293de12b9a25c" title=" " alt="" coords="1327,743,1524,801"/>
+<area shape="poly" id="edge28_Node000023_Node000027" title=" " alt="" coords="1214,786,1314,780,1309,781,1215,791"/>
+<area shape="rect" id="Node000028" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a7814065a4417dba469024c6a54eda028" title="Gets the configured JSON serializer options used for session serialization." alt="" coords="1317,825,1535,884"/>
+<area shape="poly" id="edge29_Node000023_Node000028" title=" " alt="" coords="1214,815,1304,833,1299,833,1214,820"/>
+<area shape="rect" id="Node000029" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a88147e6684e8456d3294b7ef2627d185" title="Normalizes nullable collection properties and legacy scanner path placement before serialization." alt="" coords="1278,908,1574,967"/>
+<area shape="poly" id="edge30_Node000023_Node000029" title=" " alt="" coords="1148,825,1209,860,1279,894,1297,903,1291,902,1277,898,1207,865,1146,830"/>
+<area shape="rect" id="Node000025" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8463d1405b87255158939e74d50ef3cf" title="Retrieves the absolute path to the directory where sessions are saved, creating it if it doesn&#39;t exis..." alt="" coords="1634,619,1891,677"/>
+<area shape="poly" id="edge26_Node000024_Node000025" title=" " alt="" coords="1569,669,1622,665,1616,666,1570,674"/>
+<area shape="rect" id="Node000026" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#af75c137406529f2e927fa29f68deeaad" title="Deletes the oldest Session_*.json files so that no more than MaxSessionFiles remain in dir ." alt="" coords="1622,701,1903,760"/>
+<area shape="poly" id="edge27_Node000024_Node000026" title=" " alt="" coords="1569,704,1609,711,1604,712,1569,710"/>
+<area shape="rect" id="Node000030" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#ad08bd4b4a84e651f6b89b7d1040ea7cd" title=" " alt="" coords="1624,867,1901,925"/>
+<area shape="poly" id="edge31_Node000029_Node000030" title=" " alt="" coords="1574,916,1606,915,1612,915,1575,922"/>
+<area shape="rect" id="Node000031" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a3160ad41c45ba16019884ae4b0322584" title="Ensures nested path DTO collections are initialized for save/load round&#45;trips." alt="" coords="1624,949,1901,1008"/>
+<area shape="poly" id="edge32_Node000029_Node000031" title=" " alt="" coords="1574,953,1612,960,1606,960,1574,958"/>
+<area shape="rect" id="Node000032" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a8ca4f53a85dec69d430912677396279d" title=" " alt="" coords="1968,892,2203,967"/>
+<area shape="poly" id="edge33_Node000031_Node000032" title=" " alt="" coords="1901,955,1950,950,1955,949,1901,960"/>
+<area shape="rect" id="Node000033" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration_1_1_session_configuration_manager.html#a134b36384fe376d1bcf698a623981a99" title=" " alt="" coords="1951,991,2220,1065"/>
+<area shape="poly" id="edge34_Node000031_Node000033" title=" " alt="" coords="1901,997,1938,1005,1933,1005,1901,1002"/>
 </map>

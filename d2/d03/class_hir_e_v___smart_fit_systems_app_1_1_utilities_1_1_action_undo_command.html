@@ -101,9 +101,9 @@ Diagrama de heranças da classe HirEV_SmartFitSystemsApp.Utilities.ActionUndoCom
 <div class="dyncontent">
 <div class="center"><img src="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command__inherit__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_inherit__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_inherit__map">
-<area shape="rect" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M..." alt="" coords="5,203,192,416"/>
-<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="8,5,190,155"/>
-<area shape="poly" title=" " alt="" coords="99,167,101,203,96,203,98,172"/>
+<area shape="rect" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M..." alt="" coords="5,224,192,480"/>
+<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="8,5,190,176"/>
+<area shape="poly" title=" " alt="" coords="99,189,101,225,96,224,98,194"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,16 +111,18 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.ActionUndoComm
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_action_undo_command_coll__map">
-<area shape="rect" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M..." alt="" coords="5,203,192,416"/>
-<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="8,5,190,155"/>
-<area shape="poly" title=" " alt="" coords="99,167,101,203,96,203,98,172"/>
+<area shape="rect" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M..." alt="" coords="5,224,192,480"/>
+<area shape="rect" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html" title="Defines the contract for an undoable/redoable command action." alt="" coords="8,5,190,176"/>
+<area shape="poly" title=" " alt="" coords="99,189,101,225,96,224,98,194"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros públicos</h2></td></tr>
-<tr class="memitem:a6152a93e4a3ffe41139f85792a94083d" id="r_a6152a93e4a3ffe41139f85792a94083d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6152a93e4a3ffe41139f85792a94083d">ActionUndoCommand</a> (Action undoAction, Action redoAction, string description=&quot;Action Action&quot;, string category=&quot;General&quot;)</td></tr>
-<tr class="memdesc:a6152a93e4a3ffe41139f85792a94083d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command.html" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M...">ActionUndoCommand</a> class.  <br /></td></tr>
+<tr class="memitem:a77c178961c35dc28bec62facf23ad51d" id="r_a77c178961c35dc28bec62facf23ad51d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a77c178961c35dc28bec62facf23ad51d">GetLocalizedDescription</a> (XmlDocument? docLanguage=null)</td></tr>
+<tr class="memdesc:a77c178961c35dc28bec62facf23ad51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a localized description of the action command.  <br /></td></tr>
+<tr class="memitem:a994467298401d209f221ab94e9c237ba" id="r_a994467298401d209f221ab94e9c237ba"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a994467298401d209f221ab94e9c237ba">ActionUndoCommand</a> (Action undoAction, Action redoAction, string description=&quot;Action Action&quot;, string category=&quot;General&quot;, Func&lt; XmlDocument?, string &gt;? localizedDescriptionFunc=null)</td></tr>
+<tr class="memdesc:a994467298401d209f221ab94e9c237ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="../../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_action_undo_command.html" title="A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex M...">ActionUndoCommand</a> class.  <br /></td></tr>
 <tr class="memitem:a085bc95c89f70b9d397bfeca847a2473" id="r_a085bc95c89f70b9d397bfeca847a2473"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a085bc95c89f70b9d397bfeca847a2473">Undo</a> ()</td></tr>
 <tr class="memdesc:a085bc95c89f70b9d397bfeca847a2473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the Undo action callback delegate.  <br /></td></tr>
 <tr class="memitem:acbb32c7d47dbb80cc799ffc3f830f2cb" id="r_acbb32c7d47dbb80cc799ffc3f830f2cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acbb32c7d47dbb80cc799ffc3f830f2cb">Redo</a> ()</td></tr>
@@ -139,14 +141,15 @@ Propriedades</h2></td></tr>
 Atributos Privados</h2></td></tr>
 <tr class="memitem:a8ae0896470ca5998a4a29b3e0eac120a" id="r_a8ae0896470ca5998a4a29b3e0eac120a"><td class="memItemLeft">readonly Action&#160;</td><td class="memItemRight"><a class="el" href="#a8ae0896470ca5998a4a29b3e0eac120a">_undoAction</a></td></tr>
 <tr class="memitem:ab1c1b48064b2ee51fd30f27d57be0f52" id="r_ab1c1b48064b2ee51fd30f27d57be0f52"><td class="memItemLeft">readonly Action&#160;</td><td class="memItemRight"><a class="el" href="#ab1c1b48064b2ee51fd30f27d57be0f52">_redoAction</a></td></tr>
+<tr class="memitem:a7e63ca22fea3bd735f543c42be21d707" id="r_a7e63ca22fea3bd735f543c42be21d707"><td class="memItemLeft">readonly? Func&lt; XmlDocument?, string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7e63ca22fea3bd735f543c42be21d707">_localizedDescriptionFunc</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>A generic undo command that executes provided Actions for Undo and Redo. Ideal for wrapping complex MainViewModel logic without tightly coupling <a class="el" href="../../d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html" title="Manages the application undo and redo stacks.">UndoManager</a> to it. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01213">1213</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01388">1388</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
-<a id="a6152a93e4a3ffe41139f85792a94083d" name="a6152a93e4a3ffe41139f85792a94083d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6152a93e4a3ffe41139f85792a94083d">&#9670;&#160;</a></span>ActionUndoCommand()</h2>
+<a id="a994467298401d209f221ab94e9c237ba" name="a994467298401d209f221ab94e9c237ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994467298401d209f221ab94e9c237ba">&#9670;&#160;</a></span>ActionUndoCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +172,12 @@ Atributos Privados</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>category</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;General&quot;</span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>category</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;General&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; XmlDocument?, string &gt;?</td>          <td class="paramname"><span class="paramname"><em>localizedDescriptionFunc</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,17 +189,50 @@ Atributos Privados</h2></td></tr>
     <tr><td class="paramname">redoAction</td><td>The delegate action to execute during Redo.</td></tr>
     <tr><td class="paramname">description</td><td>The human-readable description of the command.</td></tr>
     <tr><td class="paramname">category</td><td>The category of the command.</td></tr>
+    <tr><td class="paramname">localizedDescriptionFunc</td><td>Optional callback function to resolve a localized description.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01240">1240</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">1438</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01216">_redoAction</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01215">_undoAction</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01226">Category</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01221">Description</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01392">_localizedDescriptionFunc</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01391">_redoAction</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01390">_undoAction</a>, <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01423">Category</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01397">Description</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a77c178961c35dc28bec62facf23ad51d" name="a77c178961c35dc28bec62facf23ad51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c178961c35dc28bec62facf23ad51d">&#9670;&#160;</a></span>GetLocalizedDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.ActionUndoCommand.GetLocalizedDescription </td>
+          <td>(</td>
+          <td class="paramtype">XmlDocument?</td>          <td class="paramname"><span class="paramname"><em>docLanguage</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a localized description of the action command. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">docLanguage</td><td>The active language XML document.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>The localized description string.</dd></dl>
+
+<p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#a599b0c223033b675be2c503ef089fe58">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01404">1404</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01392">_localizedDescriptionFunc</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01397">Description</a>.</p>
+
+</div>
+</div>
 <a id="acbb32c7d47dbb80cc799ffc3f830f2cb" name="acbb32c7d47dbb80cc799ffc3f830f2cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbb32c7d47dbb80cc799ffc3f830f2cb">&#9670;&#160;</a></span>Redo()</h2>
 
@@ -211,9 +252,9 @@ Atributos Privados</h2></td></tr>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#acda4c74abed13ea68fadebabe90c34f7">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01259">1259</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01458">1458</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01216">_redoAction</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01391">_redoAction</a>.</p>
 
 </div>
 </div>
@@ -236,13 +277,39 @@ Atributos Privados</h2></td></tr>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#af6baceaaa547918b4507b280d5ae790f">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01251">1251</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01450">1450</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01215">_undoAction</a>.</p>
+<p class="reference">Referências <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01390">_undoAction</a>.</p>
 
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a7e63ca22fea3bd735f543c42be21d707" name="a7e63ca22fea3bd735f543c42be21d707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e63ca22fea3bd735f543c42be21d707">&#9670;&#160;</a></span>_localizedDescriptionFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly? Func&lt;XmlDocument?, string&gt; HirEV_SmartFitSystemsApp.Utilities.ActionUndoCommand._localizedDescriptionFunc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01392">1392</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01404">GetLocalizedDescription()</a>.</p>
+
+</div>
+</div>
 <a id="ab1c1b48064b2ee51fd30f27d57be0f52" name="ab1c1b48064b2ee51fd30f27d57be0f52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1c1b48064b2ee51fd30f27d57be0f52">&#9670;&#160;</a></span>_redoAction</h2>
 
@@ -263,9 +330,9 @@ Atributos Privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01216">1216</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01391">1391</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01240">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01259">Redo()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01458">Redo()</a>.</p>
 
 </div>
 </div>
@@ -289,9 +356,9 @@ Atributos Privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01215">1215</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01390">1390</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01240">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01251">Undo()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01450">Undo()</a>.</p>
 
 </div>
 </div>
@@ -320,9 +387,9 @@ Atributos Privados</h2></td></tr>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#ab8bd604fe2be1a9d4882678b792280ce">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01226">1226</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01423">1423</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01240">ActionUndoCommand()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">ActionUndoCommand()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +417,9 @@ Atributos Privados</h2></td></tr>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#a6e38bbb819206dcaa7d6340fb92bdedc">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01221">1221</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01397">1397</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01240">ActionUndoCommand()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01438">ActionUndoCommand()</a> e <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01404">GetLocalizedDescription()</a>.</p>
 
 </div>
 </div>
@@ -380,7 +447,7 @@ Atributos Privados</h2></td></tr>
 
 <p>Implementa <a class="el" href="../../d8/d01/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_i_undo_command.html#adb83f54333160baedb864bd2985ad186">HirEV_SmartFitSystemsApp.Utilities.IUndoCommand</a>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01231">1231</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html#l01428">1428</a> do ficheiro <a class="el" href="../../dd/d02/_undo_manager_8cs_source.html">UndoManager.cs</a>.</p>
 
 </div>
 </div>

@@ -108,7 +108,6 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.Sdf
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Componentes</h2></td></tr>
 <tr class="memitem:SdfContext" id="r_SdfContext"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private context class storing voxel grid dimensions and Signed Distance Field float data.  <a href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:TriangleBvh" id="r_TriangleBvh"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html">TriangleBvh</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding Volume Hierarchy over <a class="el" href="../../d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html" title="Represents a lightweight 3D triangle for accelerated spatial bounding box culling and SDF raycasting.">Triangle3D</a> geometry for accelerated distance and raycasting.  <a href="../../d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html#details">Mais...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -116,8 +115,8 @@ Componentes</h2></td></tr>
 Membros públicos</h2></td></tr>
 <tr class="memitem:a15e36fcdc80c7309d79f8e2c60b02db5" id="r_a15e36fcdc80c7309d79f8e2c60b02db5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a15e36fcdc80c7309d79f8e2c60b02db5">LoadExistingShellMesh</a> (Mesh mesh)</td></tr>
 <tr class="memdesc:a15e36fcdc80c7309d79f8e2c60b02db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an externally pre-computed shell mesh, bypassing the SDF voxel computation pipeline.  <br /></td></tr>
-<tr class="memitem:ab41b0239778a185fde66d4327f7db974" id="r_ab41b0239778a185fde66d4327f7db974"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab41b0239778a185fde66d4327f7db974">ApplyTransformation</a> (devDept.Geometry.Transformation trans)</td></tr>
-<tr class="memdesc:ab41b0239778a185fde66d4327f7db974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the internal SDF grids and cached geometry.  <br /></td></tr>
+<tr class="memitem:adf118d0ffa9d71b0641c8b4717d17ae6" id="r_adf118d0ffa9d71b0641c8b4717d17ae6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adf118d0ffa9d71b0641c8b4717d17ae6">ApplyTransformation</a> (devDept.Geometry.Transformation trans, int? partIndex=null)</td></tr>
+<tr class="memdesc:adf118d0ffa9d71b0641c8b4717d17ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the internal SDF grids and cached geometry.  <br /></td></tr>
 <tr class="memitem:a1cdcfdf655f3948d9311b1e6cf8e506d" id="r_a1cdcfdf655f3948d9311b1e6cf8e506d"><td class="memItemLeft"><a class="el" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html">SdfShellCacheDTO</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a1cdcfdf655f3948d9311b1e6cf8e506d">ExportCache</a> (<a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html">SdfShellCacheValidationInput</a> validationInput)</td></tr>
 <tr class="memdesc:a1cdcfdf655f3948d9311b1e6cf8e506d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the generated shell mesh and generation settings to a cache DTO.  <br /></td></tr>
 <tr class="memitem:a4c3f3bc3ac16defbf3ee15d361b46a4b" id="r_a4c3f3bc3ac16defbf3ee15d361b46a4b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4c3f3bc3ac16defbf3ee15d361b46a4b">TryRestoreFromCache</a> (<a class="el" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html">SdfShellCacheDTO</a>? dto, IReadOnlyList&lt; Brep &gt; liveBreps, <a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_validation_input.html">SdfShellCacheValidationInput</a> validationInput, out string reason)</td></tr>
@@ -142,8 +141,13 @@ Membros públicos</h2></td></tr>
 <tr class="memdesc:a014613a87cfe68c0ec82f03d24603c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a ray against the generated shell mesh and returns the first intersection point.  <br /></td></tr>
 <tr class="memitem:a3aad3c508c400ba08dfb2f1d02bbd4ea" id="r_a3aad3c508c400ba08dfb2f1d02bbd4ea"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3aad3c508c400ba08dfb2f1d02bbd4ea">ProjectMeasurementPointToShell</a> (Point3D point, Vector3D normalHint, out Point3D projectedPoint, out Vector3D projectedNormal)</td></tr>
 <tr class="memdesc:a3aad3c508c400ba08dfb2f1d02bbd4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a measurement point onto the shell mesh along a normal hint.  <br /></td></tr>
+<tr class="memitem:a2b6ca3b311fc846b09447b31c18e8d40" id="r_a2b6ca3b311fc846b09447b31c18e8d40"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b6ca3b311fc846b09447b31c18e8d40">BuildFaceAdjacencyMap</a> (IReadOnlyList&lt; Brep &gt; breps)</td></tr>
 <tr class="memitem:ae605043b97a10f06f86868f26ac62181" id="r_ae605043b97a10f06f86868f26ac62181"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae605043b97a10f06f86868f26ac62181">IsPointOnShellSurface</a> (Point3D point, double tolerance)</td></tr>
 <tr class="memitem:a37eb4b24d004852e36a370ffdec8a169" id="r_a37eb4b24d004852e36a370ffdec8a169"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a37eb4b24d004852e36a370ffdec8a169">VerifyApproachPointPlacement</a> (Point3D measurementPt, Vector3D outwardNormal, double offsetDist, double tolerance)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a3153be6ae579a4bdac4e27a6404ebae6" id="r_a3153be6ae579a4bdac4e27a6404ebae6"><td class="memItemLeft">static ? Mesh&#160;</td><td class="memItemRight"><a class="el" href="#a3153be6ae579a4bdac4e27a6404ebae6">CombineMeshes</a> (List&lt; Mesh &gt; meshes)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Atributos Públicos Estáticos</h2></td></tr>
@@ -156,6 +160,7 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:ae30978c1b2217221261f000662c76c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the offset clearance distance (mm) used to generate the shell mesh.  <br /></td></tr>
 <tr class="memitem:a07e71f4b4def539929b299be8e06ea0a" id="r_a07e71f4b4def539929b299be8e06ea0a"><td class="memItemLeft">Mesh?&#160;</td><td class="memItemRight"><a class="el" href="#a07e71f4b4def539929b299be8e06ea0a">ResultMesh</a><code> [get, private set]</code></td></tr>
 <tr class="memdesc:a07e71f4b4def539929b299be8e06ea0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the generated watertight manifold mesh.  <br /></td></tr>
+<tr class="memitem:a3bc972a2bb8b645b0ff4f70ed7c705dc" id="r_a3bc972a2bb8b645b0ff4f70ed7c705dc"><td class="memItemLeft">List&lt; Mesh?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3bc972a2bb8b645b0ff4f70ed7c705dc">ResultMeshes</a> = new List&lt;Mesh?&gt;()<code> [get, private set]</code></td></tr>
 <tr class="memitem:a1a5c96cc0b48a8e54e45d406f5a8717e" id="r_a1a5c96cc0b48a8e54e45d406f5a8717e"><td class="memItemLeft">Mesh?&#160;</td><td class="memItemRight"><a class="el" href="#a1a5c96cc0b48a8e54e45d406f5a8717e">OffsetShellMesh</a><code> [get]</code></td></tr>
 <tr class="memdesc:a1a5c96cc0b48a8e54e45d406f5a8717e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility property for legacy path planning logic.  <br /></td></tr>
 <tr class="memitem:ae669522f4fcca97ae05e50c3904cf476" id="r_ae669522f4fcca97ae05e50c3904cf476"><td class="memItemLeft">Dictionary&lt; int, HashSet&lt; int &gt; &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#ae669522f4fcca97ae05e50c3904cf476">FaceAdjacencyMap</a><code> [get, private set]</code></td></tr>
@@ -173,7 +178,6 @@ Membros privados</h2></td></tr>
 <tr class="memdesc:af9a20929a97941959604af54f7bfa155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the internal triangle cache of all faces in the parts to speed up distance queries.  <br /></td></tr>
 <tr class="memitem:a149c706ef90b00d18859960007832b5d" id="r_a149c706ef90b00d18859960007832b5d"><td class="memItemLeft">Point3D?&#160;</td><td class="memItemRight"><a class="el" href="#a149c706ef90b00d18859960007832b5d">FindClosestPointOnMesh</a> (Mesh mesh, Point3D queryPoint)</td></tr>
 <tr class="memitem:a443423120e1ef72e2d21cf0685af6a3b" id="r_a443423120e1ef72e2d21cf0685af6a3b"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a443423120e1ef72e2d21cf0685af6a3b">ClosestPointOnTriangle</a> (Point3D p, Point3D a, Point3D b, Point3D c)</td></tr>
-<tr class="memitem:ae5fface654bf860029f0e22c28134420" id="r_ae5fface654bf860029f0e22c28134420"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae5fface654bf860029f0e22c28134420">BuildFaceAdjacencyMap</a> (Brep brep)</td></tr>
 <tr class="memitem:a47d0bfd616fb667992ce158d931c898e" id="r_a47d0bfd616fb667992ce158d931c898e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47d0bfd616fb667992ce158d931c898e">TessellateBRep</a> (List&lt; Brep &gt; breps, HashSet&lt; int &gt; holeFaceIndices, HashSet&lt; int &gt;? flippedFaces, int faceOffset=0, System.Threading.CancellationToken cancellationToken=default)</td></tr>
 <tr class="memitem:a996ea4c5cf07e2ac85ae2bf90e7272a3" id="r_a996ea4c5cf07e2ac85ae2bf90e7272a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a996ea4c5cf07e2ac85ae2bf90e7272a3">BuildGrid</a> (double voxelSize, <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> ctx, System.Threading.CancellationToken cancellationToken=default)</td></tr>
 <tr class="memitem:a58c48408bd6198d60ba2a9f5b0db072c" id="r_a58c48408bd6198d60ba2a9f5b0db072c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a58c48408bd6198d60ba2a9f5b0db072c">ComputeSDF</a> (<a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> ctx, double baseProgress, double progressRange, Action&lt; int, string &gt;? progressCallback=null, System.Threading.CancellationToken cancellationToken=default)</td></tr>
@@ -182,16 +186,15 @@ Membros privados</h2></td></tr>
 <tr class="memitem:a2fd1bbade6a065f73aeff17985682a1a" id="r_a2fd1bbade6a065f73aeff17985682a1a"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a2fd1bbade6a065f73aeff17985682a1a">ComputeSharpFeature</a> (List&lt; Point3D &gt; points, List&lt; Vector3D &gt; normals, Point3D centroid, double voxelSize)</td></tr>
 <tr class="memdesc:a2fd1bbade6a065f73aeff17985682a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the QEM system to find intersection of tangent planes.  <br /></td></tr>
 <tr class="memitem:adf0aba756ed67354733de2b576570aa0" id="r_adf0aba756ed67354733de2b576570aa0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adf0aba756ed67354733de2b576570aa0">EnsureOutwardNormals</a> (Mesh mesh, <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> ctx, System.Threading.CancellationToken cancellationToken=default)</td></tr>
-<tr class="memitem:a83955d1fca93ee737fcfe83630d0f5ad" id="r_a83955d1fca93ee737fcfe83630d0f5ad"><td class="memItemLeft">Mesh?&#160;</td><td class="memItemRight"><a class="el" href="#a83955d1fca93ee737fcfe83630d0f5ad">CombineMeshes</a> (List&lt; Mesh &gt; meshes)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Membros privados estáticos</h2></td></tr>
 <tr class="memitem:a8f9bdd2c52549de8a9fa924c9d64b530" id="r_a8f9bdd2c52549de8a9fa924c9d64b530"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8f9bdd2c52549de8a9fa924c9d64b530">IsValidContext</a> (<a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a>? ctx)</td></tr>
 <tr class="memdesc:a8f9bdd2c52549de8a9fa924c9d64b530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that an SDF context instance has valid non-null grid dimensions and float array data.  <br /></td></tr>
 <tr class="memitem:a3c360c76cf06b06903301bfdb7987497" id="r_a3c360c76cf06b06903301bfdb7987497"><td class="memItemLeft">static <a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o.html">SdfContextCacheDTO</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3c360c76cf06b06903301bfdb7987497">ToDto</a> (<a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> ctx)</td></tr>
-<tr class="memdesc:a3c360c76cf06b06903301bfdb7987497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html" title="Private context class storing voxel grid dimensions and Signed Distance Field float data.">SdfContext</a> into a DTO representation for caching.  <br /></td></tr>
+<tr class="memdesc:a3c360c76cf06b06903301bfdb7987497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> into a DTO representation for caching.  <br /></td></tr>
 <tr class="memitem:a2672472e8000b4f529f5089a4a8d554f" id="r_a2672472e8000b4f529f5089a4a8d554f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2672472e8000b4f529f5089a4a8d554f">TryCreateContext</a> (<a class="el" href="../../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_context_cache_d_t_o.html">SdfContextCacheDTO</a>? dto, out <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> context, out string reason)</td></tr>
-<tr class="memdesc:a2672472e8000b4f529f5089a4a8d554f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html" title="Private context class storing voxel grid dimensions and Signed Distance Field float data.">SdfContext</a> from a cached DTO representation.  <br /></td></tr>
+<tr class="memdesc:a2672472e8000b4f529f5089a4a8d554f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> from a cached DTO representation.  <br /></td></tr>
 <tr class="memitem:a0a769961f147aded0771aa2ba94fffdd" id="r_a0a769961f147aded0771aa2ba94fffdd"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a0a769961f147aded0771aa2ba94fffdd">CompressFloatArray</a> (float[] values)</td></tr>
 <tr class="memdesc:a0a769961f147aded0771aa2ba94fffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compresses a large float array into a base64 string using GZip.  <br /></td></tr>
 <tr class="memitem:a28349afb6ed64d7e5df8cc893a11284d" id="r_a28349afb6ed64d7e5df8cc893a11284d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a28349afb6ed64d7e5df8cc893a11284d">TryDecompressFloatArray</a> (string? base64, int expectedCount, out float[] values, out string reason)</td></tr>
@@ -250,7 +253,7 @@ Atributos Privados Estáticos</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field (SDF) + Extended Marching Cubes (EMC) pipeline. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00019">19</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00020">20</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a5be883d981077ff987080e5b8bbdd24a" name="a5be883d981077ff987080e5b8bbdd24a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5be883d981077ff987080e5b8bbdd24a">&#9670;&#160;</a></span>SdfShellGenerator()</h2>
@@ -280,9 +283,9 @@ Atributos Privados Estáticos</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00701">701</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00743">743</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00268">_partCentroid</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">OffsetDistance</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00314">_partCentroid</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">OffsetDistance</a>.</p>
 
 </div>
 </div>
@@ -319,9 +322,9 @@ Atributos Privados Estáticos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02200">2200</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02258">2258</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -339,8 +342,8 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 </div>
 </div>
-<a id="ab41b0239778a185fde66d4327f7db974" name="ab41b0239778a185fde66d4327f7db974"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41b0239778a185fde66d4327f7db974">&#9670;&#160;</a></span>ApplyTransformation()</h2>
+<a id="adf118d0ffa9d71b0641c8b4717d17ae6" name="adf118d0ffa9d71b0641c8b4717d17ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf118d0ffa9d71b0641c8b4717d17ae6">&#9670;&#160;</a></span>ApplyTransformation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,17 +351,31 @@ Este é o diagrama das funções que utilizam esta função:</div>
         <tr>
           <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.ApplyTransformation </td>
           <td>(</td>
-          <td class="paramtype">devDept.Geometry.Transformation</td>          <td class="paramname"><span class="paramname"><em>trans</em></span></td><td>)</td>
+          <td class="paramtype">devDept.Geometry.Transformation</td>          <td class="paramname"><span class="paramname"><em>trans</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int?</td>          <td class="paramname"><span class="paramname"><em>partIndex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Transforms the internal SDF grids and cached geometry. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00069">69</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00072">72</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">_contexts</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02116">CombineMeshes()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">ResultMeshes</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_adf118d0ffa9d71b0641c8b4717d17ae6_cgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_adf118d0ffa9d71b0641c8b4717d17ae6_cgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_adf118d0ffa9d71b0641c8b4717d17ae6_cgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_adf118d0ffa9d71b0641c8b4717d17ae6_cgraph">
+<area shape="rect" title="Transforms the internal SDF grids and cached geometry." alt="" coords="5,5,251,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3153be6ae579a4bdac4e27a6404ebae6" title=" " alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="251,32,286,34,281,35,251,37"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -383,9 +400,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Checks if two faces are adjacent in the original BREP topology. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00894">894</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00939">939</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">FaceAdjacencyMap</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">FaceAdjacencyMap</a>.</p>
 
 </div>
 </div>
@@ -430,22 +447,22 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Main entry point. Replaces BuildScaledSolidShellAsync from the old generator. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">711</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">753</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00273">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00283">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01203">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">CombineMeshes()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01457">ComputeSDF()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02015">EnsureOutwardNormals()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01942">LaplacianSmooth()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01281">TessellateBRep()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00319">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00329">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01248">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02116">CombineMeshes()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01507">ComputeSDF()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02073">EnsureOutwardNormals()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02000">LaplacianSmooth()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">ResultMeshes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01331">TessellateBRep()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06664">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06682">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2432216281ae5fd2375bfc1fa35d671f_cgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2432216281ae5fd2375bfc1fa35d671f_cgraph" loading="lazy" alt=""/></div>
 <map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2432216281ae5fd2375bfc1fa35d671f_cgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2432216281ae5fd2375bfc1fa35d671f_cgraph">
 <area shape="rect" title="Main entry point. Replaces BuildScaledSolidShellAsync from the old generator." alt="" coords="5,319,251,377"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ae5fface654bf860029f0e22c28134420" title=" " alt="" coords="299,5,544,64"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2b6ca3b311fc846b09447b31c18e8d40" title=" " alt="" coords="299,5,544,64"/>
 <area shape="poly" title=" " alt="" coords="137,317,160,265,194,200,239,133,267,101,297,74,305,70,302,75,300,78,271,105,244,136,198,203,164,268,142,319"/>
 <area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a996ea4c5cf07e2ac85ae2bf90e7272a3" title=" " alt="" coords="299,112,544,171"/>
 <area shape="poly" title=" " alt="" coords="150,317,212,249,253,212,297,180,309,176,305,180,300,185,256,216,216,252,155,320"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a83955d1fca93ee737fcfe83630d0f5ad" title=" " alt="" coords="299,195,544,253"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3153be6ae579a4bdac4e27a6404ebae6" title=" " alt="" coords="299,195,544,253"/>
 <area shape="poly" title=" " alt="" coords="185,316,298,263,316,258,312,261,300,268,188,320"/>
 <area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a58c48408bd6198d60ba2a9f5b0db072c" title=" " alt="" coords="299,277,544,336"/>
 <area shape="poly" title=" " alt="" coords="250,328,285,325,281,328,252,333"/>
@@ -481,39 +498,31 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 </div>
 </div>
-<a id="ae5fface654bf860029f0e22c28134420" name="ae5fface654bf860029f0e22c28134420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5fface654bf860029f0e22c28134420">&#9670;&#160;</a></span>BuildFaceAdjacencyMap()</h2>
+<a id="a2b6ca3b311fc846b09447b31c18e8d40" name="a2b6ca3b311fc846b09447b31c18e8d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6ca3b311fc846b09447b31c18e8d40">&#9670;&#160;</a></span>BuildFaceAdjacencyMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.BuildFaceAdjacencyMap </td>
           <td>(</td>
-          <td class="paramtype">Brep</td>          <td class="paramname"><span class="paramname"><em>brep</em></span></td><td>)</td>
+          <td class="paramtype">IReadOnlyList&lt; Brep &gt;</td>          <td class="paramname"><span class="paramname"><em>breps</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01203">1203</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01248">1248</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">FaceAdjacencyMap</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">FaceAdjacencyMap</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_ae5fface654bf860029f0e22c28134420_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_ae5fface654bf860029f0e22c28134420_icgraph" loading="lazy" alt=""/></div>
-<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_ae5fface654bf860029f0e22c28134420_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_ae5fface654bf860029f0e22c28134420_icgraph">
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2b6ca3b311fc846b09447b31c18e8d40_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2b6ca3b311fc846b09447b31c18e8d40_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2b6ca3b311fc846b09447b31c18e8d40_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a2b6ca3b311fc846b09447b31c18e8d40_icgraph">
 <area shape="rect" title=" " alt="" coords="563,5,808,64"/>
 <area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2432216281ae5fd2375bfc1fa35d671f" title="Main entry point. Replaces BuildScaledSolidShellAsync from the old generator." alt="" coords="270,5,515,64"/>
 <area shape="poly" title=" " alt="" coords="545,35,515,37,515,32,550,35"/>
@@ -556,11 +565,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">1420</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">1470</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00283">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">OffsetDistance</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00329">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">OffsetDistance</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">BuildGrid()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">BuildGrid()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -618,9 +627,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A cloned list of fingerprints.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00545">545</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00587">587</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -671,9 +680,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01166">1166</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01211">1211</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01078">ClosestPointOnTriangle_Scalar()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01123">ClosestPointOnTriangle_Scalar()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -754,9 +763,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01078">1078</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01123">1123</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01166">ClosestPointOnTriangle()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01582">ClosestPtOnTri()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01053">FindClosestPointOnMesh()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01211">ClosestPointOnTriangle()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01632">ClosestPtOnTri()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01098">FindClosestPointOnMesh()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -811,9 +820,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Computes the exact closest point on a 3D triangle boundary to a query point. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01582">1582</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01632">1632</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02888">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.A</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02890">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.B</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02892">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.C</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01078">ClosestPointOnTriangle_Scalar()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02986">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.A</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02988">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.B</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02990">HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D.C</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01123">ClosestPointOnTriangle_Scalar()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -827,8 +836,8 @@ Grafo de chamadas desta função:</div>
 
 </div>
 </div>
-<a id="a83955d1fca93ee737fcfe83630d0f5ad" name="a83955d1fca93ee737fcfe83630d0f5ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83955d1fca93ee737fcfe83630d0f5ad">&#9670;&#160;</a></span>CombineMeshes()</h2>
+<a id="a3153be6ae579a4bdac4e27a6404ebae6" name="a3153be6ae579a4bdac4e27a6404ebae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3153be6ae579a4bdac4e27a6404ebae6">&#9670;&#160;</a></span>CombineMeshes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -837,7 +846,7 @@ Grafo de chamadas desta função:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Mesh? HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.CombineMeshes </td>
+          <td class="memname">? Mesh HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.CombineMeshes </td>
           <td>(</td>
           <td class="paramtype">List&lt; Mesh &gt;</td>          <td class="paramname"><span class="paramname"><em>meshes</em></span></td><td>)</td>
           <td></td>
@@ -845,24 +854,28 @@ Grafo de chamadas desta função:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02058">2058</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02116">2116</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00072">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a83955d1fca93ee737fcfe83630d0f5ad_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a83955d1fca93ee737fcfe83630d0f5ad_icgraph" loading="lazy" alt=""/></div>
-<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a83955d1fca93ee737fcfe83630d0f5ad_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a83955d1fca93ee737fcfe83630d0f5ad_icgraph">
-<area shape="rect" title=" " alt="" coords="563,5,808,64"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2432216281ae5fd2375bfc1fa35d671f" title="Main entry point. Replaces BuildScaledSolidShellAsync from the old generator." alt="" coords="270,5,515,64"/>
-<area shape="poly" title=" " alt="" coords="545,35,515,37,515,32,550,35"/>
-<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,5,222,64"/>
-<area shape="poly" title=" " alt="" coords="251,35,222,37,222,32,257,34"/>
+<div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a3153be6ae579a4bdac4e27a6404ebae6_icgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a3153be6ae579a4bdac4e27a6404ebae6_icgraph" loading="lazy" alt=""/></div>
+<map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a3153be6ae579a4bdac4e27a6404ebae6_icgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a3153be6ae579a4bdac4e27a6404ebae6_icgraph">
+<area shape="rect" title=" " alt="" coords="563,88,808,147"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#adf118d0ffa9d71b0641c8b4717d17ae6" title="Transforms the internal SDF grids and cached geometry." alt="" coords="270,5,515,64"/>
+<area shape="poly" title=" " alt="" coords="562,84,499,67,499,62,567,83"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2432216281ae5fd2375bfc1fa35d671f" title="Main entry point. Replaces BuildScaledSolidShellAsync from the old generator." alt="" coords="270,88,515,147"/>
+<area shape="poly" title=" " alt="" coords="545,118,515,120,515,115,550,117"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a4c3f3bc3ac16defbf3ee15d361b46a4b" title="Attempts to restore a pre&#45;calculated shell mesh from cache by validating its model fingerprint." alt="" coords="270,171,515,229"/>
+<area shape="poly" title=" " alt="" coords="567,151,500,173,499,167,562,152"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a312d057340b97292761a4a45509026bf" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,88,222,147"/>
+<area shape="poly" title=" " alt="" coords="251,118,223,120,222,115,257,117"/>
 </map>
 </div>
 
@@ -900,9 +913,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The base64 encoded compressed string.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00462">462</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00504">504</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00384">ToDto()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00426">ToDto()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -960,11 +973,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01457">1457</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01507">1507</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00283">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00291">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00297">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00329">_triangles</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00337">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00333">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00339">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1019,9 +1032,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Solves the QEM system to find intersection of tangent planes. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01860">1860</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01912">1912</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1088,9 +1101,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Determines whether a grid voxel point is inside (-1) or outside (+1) the original part (A) and the capped part (B). Uses BVH-accelerated parity voting with fast-path bounding box culling. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01592">1592</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01642">1642</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02227">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxX</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02228">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxY</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02229">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxZ</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.CastRay()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02285">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxX</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02286">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxY</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02287">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.BoundsMaxZ</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02394">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.CastRay()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1138,9 +1151,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02015">2015</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02073">2073</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1180,9 +1193,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A serializable <a class="el" href="../../d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_sdf_shell_cache_d_t_o.html" title="Data Transfer Object for caching signed distance field (SDF) shell computations. Used for serializati...">SdfShellCacheDTO</a>, or null if generation was not successful.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">98</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">129</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00545">CloneModels()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00021">CurrentCacheSchemaVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">CurrentGeneratorVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">FaceAdjacencyMap</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00154">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.FlippedNormals</a>, <a class="el" href="../../d5/d03/_shell_mesh_d_t_o_8cs_source.html#l00039">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.FromMesh()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00149">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.HoleFaceIndices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00368">IsValidContext()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00134">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.Models</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00535">NormalizeIndices()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00384">ToDto()</a> e <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00144">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00587">CloneModels()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">CurrentCacheSchemaVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00023">CurrentGeneratorVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">FaceAdjacencyMap</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00159">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.FlippedNormals</a>, <a class="el" href="../../d5/d03/_shell_mesh_d_t_o_8cs_source.html#l00049">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.FromMesh()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00154">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.HoleFaceIndices</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00410">IsValidContext()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00139">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.Models</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00577">NormalizeIndices()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">ResultMeshes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00426">ToDto()</a> e <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00149">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.VoxelSize</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1233,11 +1246,11 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01053">1053</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01098">1098</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01078">ClosestPointOnTriangle_Scalar()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01123">ClosestPointOnTriangle_Scalar()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00868">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00967">GetFaceIndexAtPoint()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00913">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01012">GetFaceIndexAtPoint()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1284,11 +1297,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Finds the nearest point on the shell mesh surface. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00868">868</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00913">913</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01053">FindClosestPointOnMesh()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01098">FindClosestPointOnMesh()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01264">IsPointOnShellSurface()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01034">ProjectMeasurementPointToShell()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01314">IsPointOnShellSurface()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01079">ProjectMeasurementPointToShell()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1333,11 +1346,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Queries the signed distance value (SDF) at a specific 3D coordinate. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00853">853</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00898">898</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">_contexts</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">_contexts</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00877">IsPointInsidePart()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00922">IsPointInsidePart()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1368,9 +1381,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Finds the index of the nearest face in the original BREP to the given point. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00967">967</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01012">1012</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00273">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01053">FindClosestPointOnMesh()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00319">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01098">FindClosestPointOnMesh()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1438,9 +1451,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01914">1914</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01966">1966</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00302">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GetDistance()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00344">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GetDistance()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1481,11 +1494,11 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01908">1908</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01960">1960</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01908">GetGradient()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01960">GetGradient()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01908">GetGradient()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01942">LaplacianSmooth()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01960">GetGradient()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02000">LaplacianSmooth()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1533,9 +1546,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Checks whether a point is inside the original part geometry. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00877">877</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00922">922</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00273">_breps</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00853">GetDistance()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00319">_breps</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00898">GetDistance()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1568,9 +1581,9 @@ Grafo de chamadas desta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01264">1264</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01314">1314</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00868">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00913">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1620,11 +1633,11 @@ Grafo de chamadas desta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd><code>true</code> if context data is complete; otherwise, <code>false</code>.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00368">368</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00410">410</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00297">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00337">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00339">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1690,11 +1703,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01942">1942</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02000">2000</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01908">GetGradient()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01960">GetGradient()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -1744,9 +1757,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00060">60</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00062">62</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">FaceAdjacencyMap</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">FaceAdjacencyMap</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">ResultMeshes</a>.</p>
 
 </div>
 </div>
@@ -1793,9 +1806,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if close enough; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00658">658</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00700">700</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1841,9 +1854,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>A sorted unique list of indices.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00535">535</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00577">577</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00563">SameIntSet()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00605">SameIntSet()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1893,9 +1906,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The normalized path.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00634">634</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00676">676</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00624">PathsEqual()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00666">PathsEqual()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1950,11 +1963,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if paths are equal; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00624">624</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00666">666</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00634">NormalizePath()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00676">NormalizePath()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00575">ValidateModels()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00617">ValidateModels()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2011,9 +2024,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Projects a measurement point onto the shell mesh along a normal hint. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01034">1034</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01079">1079</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00868">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01001">RaycastToShell()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00913">FindNearestShellPoint()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01046">RaycastToShell()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2061,9 +2074,9 @@ Grafo de chamadas desta função:</div>
 
 <p>Projects a point onto the shared edge between two faces in the original BREP. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00904">904</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00949">949</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a>.</p>
 
 </div>
 </div>
@@ -2094,9 +2107,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02074">2074</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02132">2132</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02079">PtTriDistSq_Scalar()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02137">PtTriDistSq_Scalar()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2147,9 +2160,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02079">2079</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02137">2137</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02404">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02074">PtTriDist()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02462">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.ClosestDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02132">PtTriDist()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2186,11 +2199,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Casts a ray against the generated shell mesh and returns the first intersection point. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01001">1001</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01046">1046</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01172">RayTriangleIntersection()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01217">RayTriangleIntersection()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01034">ProjectMeasurementPointToShell()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01079">ProjectMeasurementPointToShell()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2261,9 +2274,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01172">1172</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01217">1217</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01001">RaycastToShell()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01046">RaycastToShell()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2316,9 +2329,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02153">2153</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02211">2211</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02158">RayTriT_Scalar()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02216">RayTriT_Scalar()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2389,9 +2402,9 @@ Grafo de chamadas desta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02158">2158</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02216">2216</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02336">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.CastRay()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02153">RayTriT()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02394">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh.CastRay()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02211">RayTriT()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2440,11 +2453,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00667">667</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00709">709</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2497,11 +2510,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Runs Marching Cubes augmented with Feature-Snapping and QEM to preserve sharp corners. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">1672</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">1722</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02200">AddVert()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01860">ComputeSharpFeature()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02494">EA</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02495">EB</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02497">EdgeTable</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01908">GetGradient()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00291">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02532">TriTable</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00297">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02258">AddVert()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01912">ComputeSharpFeature()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02552">EA</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02553">EB</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02555">EdgeTable</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01960">GetGradient()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00337">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00333">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02590">TriTable</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00339">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2569,11 +2582,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if sets are equal; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00563">563</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00605">605</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00535">NormalizeIndices()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00577">NormalizeIndices()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2639,11 +2652,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01281">1281</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01331">1331</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00283">_triangles</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">_faceMeshCache</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00329">_triangles</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2682,7 +2695,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Serializes an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html" title="Private context class storing voxel grid dimensions and Signed Distance Field float data.">SdfContext</a> into a DTO representation for caching. </p>
+<p>Serializes an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> into a DTO representation for caching. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>The active context.</td></tr>
@@ -2691,11 +2704,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>The context DTO.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00384">384</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00426">426</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00462">CompressFloatArray()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00293">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00291">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00297">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00504">CompressFloatArray()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00337">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.GridOrigin</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nx</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Ny</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00335">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00333">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.Sdf</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00339">HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.SdfContext.VoxelSize</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2751,7 +2764,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Recreates an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html" title="Private context class storing voxel grid dimensions and Signed Distance Field float data.">SdfContext</a> from a cached DTO representation. </p>
+<p>Recreates an <a class="el" href="../../d2/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_sdf_context.html">SdfContext</a> from a cached DTO representation. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">dto</td><td>The cached DTO.</td></tr>
@@ -2762,11 +2775,11 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if context was restored successfully; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00405">405</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00447">447</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00123">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.CompressedSdfDataBase64</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.FloatCount</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00108">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.GridOrigin</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00093">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Nx</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00098">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Ny</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00103">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00484">TryDecompressFloatArray()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00113">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.VoxelSize</a>, <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00135">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.X</a>, <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00139">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.Y</a> e <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00143">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.Z</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00128">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.CompressedSdfDataBase64</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00123">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.FloatCount</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00113">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.GridOrigin</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00098">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Nx</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00103">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Ny</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00108">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.Nz</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00526">TryDecompressFloatArray()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00118">HirEV_SmartFitSystemsApp.Models.DTOs.SdfContextCacheDTO.VoxelSize</a>, <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00135">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.X</a>, <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00139">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.Y</a> e <a class="el" href="../../de/d00/_c_a_d_hole_export_d_t_o_8cs_source.html#l00143">HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO.Z</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -2839,9 +2852,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if decompression was successful; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00484">484</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00526">526</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00405">TryCreateContext()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00447">TryCreateContext()</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -2898,35 +2911,37 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if restoration was successful; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">142</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">176</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00273">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00021">CurrentCacheSchemaVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">CurrentGeneratorVersion</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00061">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.FaceAdjacencyMap</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">FaceAdjacencyMap</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00046">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.FlippedNormals</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00154">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.FlippedNormals</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.GeneratorVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00042">HasPartGeometry</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00054">HasSdfContexts</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00041">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.HoleFaceIndices</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00149">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.HoleFaceIndices</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00026">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.Models</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00134">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.Models</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00658">NearlyEqual()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00031">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.OffsetDistance</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00139">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00667">RebuildFaceMeshCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00563">SameIntSet()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00016">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.SchemaVersion</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00056">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.SdfContexts</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00051">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.ShellMesh</a>, <a class="el" href="../../d5/d03/_shell_mesh_d_t_o_8cs_source.html#l00069">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.ToMesh()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00405">TryCreateContext()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00575">ValidateModels()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00036">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.VoxelSize</a> e <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00144">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.VoxelSize</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00319">_breps</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">_contexts</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02116">CombineMeshes()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">CurrentCacheSchemaVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00023">CurrentGeneratorVersion</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00066">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.FaceAdjacencyMap</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">FaceAdjacencyMap</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00046">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.FlippedNormals</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00159">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.FlippedNormals</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00021">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.GeneratorVersion</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00044">HasPartGeometry</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00056">HasSdfContexts</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00041">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.HoleFaceIndices</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00154">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.HoleFaceIndices</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00026">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.Models</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00139">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.Models</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00700">NearlyEqual()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00031">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.OffsetDistance</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00144">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.OffsetDistance</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00709">RebuildFaceMeshCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">ResultMesh</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">ResultMeshes</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00605">SameIntSet()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00016">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.SchemaVersion</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00061">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.SdfContexts</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00051">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.ShellMesh</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00056">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.ShellMeshes</a>, <a class="el" href="../../d5/d03/_shell_mesh_d_t_o_8cs_source.html#l00093">HirEV_SmartFitSystemsApp.Models.DTOs.ShellMeshDTO.ToMesh()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00447">TryCreateContext()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00617">ValidateModels()</a>, <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00036">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheDTO.VoxelSize</a> e <a class="el" href="../../d5/d01/_sdf_shell_cache_d_t_o_8cs_source.html#l00149">HirEV_SmartFitSystemsApp.Models.DTOs.SdfShellCacheValidationInput.VoxelSize</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a4c3f3bc3ac16defbf3ee15d361b46a4b_cgraph.png" border="0" usemap="#adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a4c3f3bc3ac16defbf3ee15d361b46a4b_cgraph" loading="lazy" alt=""/></div>
 <map name="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a4c3f3bc3ac16defbf3ee15d361b46a4b_cgraph" id="adb/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_a4c3f3bc3ac16defbf3ee15d361b46a4b_cgraph">
-<area shape="rect" title="Attempts to restore a pre&#45;calculated shell mesh from cache by validating its model fingerprint." alt="" coords="5,208,251,267"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ad004208b55da54a6375269d3ecca7c8b" title="Compares two doubles with a delta tolerance." alt="" coords="299,5,544,64"/>
-<area shape="poly" title=" " alt="" coords="151,206,213,140,254,105,297,74,309,70,305,73,300,78,257,109,217,144,155,209"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#af9a20929a97941959604af54f7bfa155" title="Rebuilds the internal triangle cache of all faces in the parts to speed up distance queries." alt="" coords="299,88,544,147"/>
-<area shape="poly" title=" " alt="" coords="188,205,298,156,317,151,312,154,300,161,191,210"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ad5705f53fa414dc199ad63e8969a92a2" title="Compares two index collections to check if they contain the identical set of values." alt="" coords="299,171,544,229"/>
-<area shape="poly" title=" " alt="" coords="250,219,286,216,281,219,252,224"/>
-<area shape="rect" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a5cfe56f9d45b8d7165e9422820a4e2b1" title="Converts the current DTO back into an Eyeshot Mesh object." alt="" coords="299,253,544,296"/>
-<area shape="poly" title=" " alt="" coords="250,250,286,256,281,258,252,256"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2672472e8000b4f529f5089a4a8d554f" title="Recreates an SdfContext from a cached DTO representation." alt="" coords="299,320,544,379"/>
-<area shape="poly" title=" " alt="" coords="198,265,300,306,319,314,314,315,298,310,198,270"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#aa976475ebe2eeab4bf880b3ef0deb1bf" title="Compares cached model fingerprints against the current CAD models to detect if geometry has changed." alt="" coords="299,403,544,461"/>
-<area shape="poly" title=" " alt="" coords="156,265,219,327,258,360,300,388,310,396,305,395,297,393,255,364,215,331,155,270"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#abb9a8d8624f30a62752a5152807fa5f3" title="Sorts and filters unique indices." alt="" coords="592,171,837,229"/>
-<area shape="poly" title=" " alt="" coords="544,197,579,199,574,201,545,203"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a28349afb6ed64d7e5df8cc893a11284d" title="Decompresses a base64 GZipped string back into a float array." alt="" coords="592,320,837,379"/>
-<area shape="poly" title=" " alt="" coords="544,347,579,349,574,350,544,352"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a65da9b5057d695408ab061cd67d68fec" title="Checks if two file paths are equivalent, ignoring case and directory separators." alt="" coords="592,403,837,461"/>
+<area shape="rect" title="Attempts to restore a pre&#45;calculated shell mesh from cache by validating its model fingerprint." alt="" coords="5,253,251,312"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a3153be6ae579a4bdac4e27a6404ebae6" title=" " alt="" coords="299,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="144,252,169,212,204,164,247,116,297,74,307,70,303,74,300,78,251,120,209,167,174,215,149,254"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ad004208b55da54a6375269d3ecca7c8b" title="Compares two doubles with a delta tolerance." alt="" coords="299,88,544,147"/>
+<area shape="poly" title=" " alt="" coords="162,251,223,203,297,156,312,152,308,155,300,161,226,207,166,255"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#af9a20929a97941959604af54f7bfa155" title="Rebuilds the internal triangle cache of all faces in the parts to speed up distance queries." alt="" coords="299,171,544,229"/>
+<area shape="poly" title=" " alt="" coords="233,250,302,232,298,236,236,255"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#ad5705f53fa414dc199ad63e8969a92a2" title="Compares two index collections to check if they contain the identical set of values." alt="" coords="299,253,544,312"/>
+<area shape="poly" title=" " alt="" coords="250,280,286,282,281,284,252,285"/>
+<area shape="rect" href="../../db/d01/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_shell_mesh_d_t_o.html#a5cfe56f9d45b8d7165e9422820a4e2b1" title="Converts the current DTO back into an Eyeshot Mesh object." alt="" coords="299,336,544,379"/>
+<area shape="poly" title=" " alt="" coords="246,310,323,331,318,333,246,315"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a2672472e8000b4f529f5089a4a8d554f" title="Recreates an SdfContext from a cached DTO representation." alt="" coords="299,403,544,461"/>
+<area shape="poly" title=" " alt="" coords="170,310,231,350,300,388,314,396,309,397,297,393,228,354,170,315"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#aa976475ebe2eeab4bf880b3ef0deb1bf" title="Compares cached model fingerprints against the current CAD models to detect if geometry has changed." alt="" coords="299,485,544,544"/>
+<area shape="poly" title=" " alt="" coords="149,310,211,390,253,434,300,471,308,478,303,477,297,476,250,438,207,394,148,315"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#abb9a8d8624f30a62752a5152807fa5f3" title="Sorts and filters unique indices." alt="" coords="592,253,837,312"/>
+<area shape="poly" title=" " alt="" coords="544,280,579,282,574,283,545,285"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a28349afb6ed64d7e5df8cc893a11284d" title="Decompresses a base64 GZipped string back into a float array." alt="" coords="592,403,837,461"/>
 <area shape="poly" title=" " alt="" coords="544,429,579,432,574,432,544,435"/>
-<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a9b0c89cbbc83b7983912153b03f152ce" title="Normalizes file path formatting by converting separators to lowercase backslashes." alt="" coords="885,403,1131,461"/>
-<area shape="poly" title=" " alt="" coords="838,429,873,432,867,432,838,435"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a65da9b5057d695408ab061cd67d68fec" title="Checks if two file paths are equivalent, ignoring case and directory separators." alt="" coords="592,485,837,544"/>
+<area shape="poly" title=" " alt="" coords="544,512,579,515,574,515,544,517"/>
+<area shape="rect" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#a9b0c89cbbc83b7983912153b03f152ce" title="Normalizes file path formatting by converting separators to lowercase backslashes." alt="" coords="885,485,1131,544"/>
+<area shape="poly" title=" " alt="" coords="838,512,873,515,867,515,838,517"/>
 </map>
 </div>
 
@@ -2975,11 +2990,11 @@ Grafo de chamadas desta função:</div>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>True if the models are compatible; otherwise, false.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00575">575</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00617">617</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00624">PathsEqual()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00666">PathsEqual()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 <div class="dynheader">
 Grafo de chamadas desta função:</div>
 <div class="dyncontent">
@@ -3034,7 +3049,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01272">1272</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01322">1322</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3061,9 +3076,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>List of underlying part BREP geometry solids. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00273">273</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00319">319</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00967">GetFaceIndexAtPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00877">IsPointInsidePart()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01012">GetFaceIndexAtPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00922">IsPointInsidePart()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3089,9 +3104,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Collection of SDF grid contexts generated during shell calculation. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00361">361</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00403">403</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00069">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00853">GetDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00072">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00898">GetDistance()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3117,9 +3132,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Cached tessellated face meshes indexed by global face index. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00278">278</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00324">324</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01203">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00967">GetFaceIndexAtPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00904">ProjectOntoSharedEdge()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00667">RebuildFaceMeshCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01281">TessellateBRep()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01248">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01012">GetFaceIndexAtPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00949">ProjectOntoSharedEdge()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00709">RebuildFaceMeshCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01331">TessellateBRep()</a>.</p>
 
 </div>
 </div>
@@ -3143,9 +3158,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00268">268</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00314">314</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00701">SdfShellGenerator()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00743">SdfShellGenerator()</a>.</p>
 
 </div>
 </div>
@@ -3171,9 +3186,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Collection of tessellated 3D triangles representing the part surface. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00283">283</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00329">329</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01457">ComputeSDF()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01281">TessellateBRep()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01507">ComputeSDF()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01331">TessellateBRep()</a>.</p>
 
 </div>
 </div>
@@ -3197,9 +3212,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3223,9 +3238,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00022">22</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00023">23</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3249,7 +3264,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02491">2491</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02549">2549</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3273,7 +3288,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02492">2492</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02550">2550</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3297,7 +3312,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02493">2493</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02551">2551</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3321,9 +3336,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02494">2494</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02552">2552</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 
 </div>
 </div>
@@ -3347,9 +3362,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02495">2495</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02553">2553</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 
 </div>
 </div>
@@ -3373,9 +3388,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02497">2497</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02555">2555</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 
 </div>
 </div>
@@ -3399,9 +3414,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02532">2532</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l02590">2590</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01672">RunMarchingCubesEMC()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01722">RunMarchingCubesEMC()</a>.</p>
 
 </div>
 </div>
@@ -3428,9 +3443,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Face adjacency map (same contract as old generator, built on demand). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00036">36</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00038">38</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00894">AreFacesAdjacent()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01203">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00060">LoadExistingShellMesh()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00939">AreFacesAdjacent()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01248">BuildFaceAdjacencyMap()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00062">LoadExistingShellMesh()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3457,9 +3472,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets a value indicating whether valid part BREP geometry is currently loaded. </p>
 <p><code>true</code> if BREPs exist; otherwise, <code>false</code>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00042">42</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00044">44</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3486,9 +3501,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets a value indicating whether valid Signed Distance Field (SDF) voxel contexts exist. </p>
 <p><code>true</code> if valid SDF contexts are populated; otherwise, <code>false</code>.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00054">54</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
@@ -3514,9 +3529,9 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets the offset clearance distance (mm) used to generate the shell mesh. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00028">28</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00029">29</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01420">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01457">ComputeSDF()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00701">SdfShellGenerator()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01470">BuildGrid()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01507">ComputeSDF()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00743">SdfShellGenerator()</a>.</p>
 
 </div>
 </div>
@@ -3542,7 +3557,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Compatibility property for legacy path planning logic. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00033">33</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00035">35</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3569,7 +3584,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets the total count of loaded part BREP solids. </p>
 <p>Number of loaded BREP entities.</p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00048">48</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00050">50</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
 </div>
 </div>
@@ -3595,9 +3610,35 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 <p>Gets the generated watertight manifold mesh. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00030">30</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00069">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00711">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00098">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00868">FindNearestShellPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01264">IsPointOnShellSurface()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00060">LoadExistingShellMesh()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01001">RaycastToShell()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00142">TryRestoreFromCache()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00072">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00913">FindNearestShellPoint()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01314">IsPointOnShellSurface()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00062">LoadExistingShellMesh()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l01046">RaycastToShell()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
+
+</div>
+</div>
+<a id="a3bc972a2bb8b645b0ff4f70ed7c705dc" name="a3bc972a2bb8b645b0ff4f70ed7c705dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc972a2bb8b645b0ff4f70ed7c705dc">&#9670;&#160;</a></span>ResultMeshes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Mesh?&gt; HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.ResultMeshes = new List&lt;Mesh?&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00032">32</a> do ficheiro <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html">SdfShellGenerator.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00072">ApplyTransformation()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00753">BuildAsync()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00129">ExportCache()</a>, <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00062">LoadExistingShellMesh()</a> e <a class="el" href="../../d6/d02/_sdf_shell_generator_8cs_source.html#l00176">TryRestoreFromCache()</a>.</p>
 
 </div>
 </div>
