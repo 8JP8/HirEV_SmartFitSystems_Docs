@@ -9,7 +9,8 @@ var searchData=
   ['measuringtooltypes_6',['MeasuringToolTypes',['../d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_measuring_tool_types.html',1,'HirEV_SmartFitSystemsApp::Models']]],
   ['meshshellgenerator_7',['MeshShellGenerator',['../d4/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_mesh_shell_generator.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
   ['modelfileinfo_8',['ModelFileInfo',['../d9/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_configuration_1_1_model_file_info.html',1,'HirEV_SmartFitSystemsApp::Models::Configuration']]],
-  ['movepartcommand_9',['MovePartCommand',['../d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['movewaypointbatchcommand_10',['MoveWaypointBatchCommand',['../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['movewaypointcommand_11',['MoveWaypointCommand',['../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
+  ['modelitemviewmodel_9',['ModelItemViewModel',['../d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_m66753ddfc08d382b12b1210241236f98.html',1,'HirEV_SmartFitSystemsApp::Resource_Tools::CustomDialogs::SectionViewModelSelectDialog']]],
+  ['movepartcommand_10',['MovePartCommand',['../d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_part_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['movewaypointbatchcommand_11',['MoveWaypointBatchCommand',['../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['movewaypointcommand_12',['MoveWaypointCommand',['../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_command.html',1,'HirEV_SmartFitSystemsApp::Utilities']]]
 ];

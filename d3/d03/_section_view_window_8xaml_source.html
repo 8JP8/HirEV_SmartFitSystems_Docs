@@ -135,7 +135,7 @@ $(function(){initNavTree('d3/d03/_section_view_window_8xaml_source.html','../../
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        &lt;/local:SectionViewDesign&gt;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        &lt;!-- Top-left: Slice information overlay --&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        &lt;TextBlock VerticalAlignment=&quot;Top&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;12&quot; x:Name=&quot;sliceOverlayText&quot; FontSize=&quot;14&quot; FontWeight=&quot;Bold&quot; Foreground=&quot;Black&quot; Text=&quot;Slice:&quot;/&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        &lt;TextBlock VerticalAlignment=&quot;Top&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;12&quot; x:Name=&quot;sliceOverlayText&quot; FontSize=&quot;14&quot; FontWeight=&quot;Bold&quot; Foreground=&quot;Black&quot; Text=&quot;{Binding XPath=/Lang/SectionView_Slice/@Value, FallbackValue=&#39;Slice:&#39;}&quot;/&gt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        &lt;!-- Bottom-left: tool buttons --&gt;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        &lt;Border VerticalAlignment=&quot;Bottom&quot; HorizontalAlignment=&quot;Left&quot;</div>
@@ -153,7 +153,7 @@ $(function(){initNavTree('d3/d03/_section_view_window_8xaml_source.html','../../
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                Click=&quot;BtnSave_Click&quot; Padding=&quot;8,4&quot; Margin=&quot;6,0,0,0&quot; Cursor=&quot;Hand&quot;/&gt;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                &lt;Button x:Name=&quot;btnMeasure&quot; Margin=&quot;6,0,0,0&quot; Content=&quot;{Binding XPath=/Lang/SectionView_Measure/@Value, FallbackValue=&#39;Measure&#39;}&quot; Click=&quot;BtnMeasure_Click&quot;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                Padding=&quot;8,4&quot; Cursor=&quot;Hand&quot;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                ToolTip=&quot;Measure mode: click a point or segment, then another — shows minimum distance&quot;/&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                ToolTip=&quot;{Binding XPath=/Lang/SectionView_MeasureToolTip/@Value, FallbackValue=&#39;Measure mode: click a point or segment, then another — shows minimum distance&#39;}&quot;/&gt;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            &lt;/StackPanel&gt;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        &lt;/Border&gt;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -175,7 +175,7 @@ $(function(){initNavTree('d3/d03/_section_view_window_8xaml_source.html','../../
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                            Visibility=&quot;Collapsed&quot;&gt;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    &lt;TextBlock Text=&quot;⌀&quot; FontSize=&quot;12&quot; Foreground=&quot;DimGray&quot;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                               VerticalAlignment=&quot;Center&quot; FontWeight=&quot;Bold&quot; Margin=&quot;0,0,2,0&quot;/&gt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    &lt;TextBlock x:Name=&quot;segDiameterLabel&quot; Text=&quot;{Binding XPath=/Lang/Radius/@Value, FallbackValue=Radius}&quot; FontSize=&quot;12&quot; Foreground=&quot;DimGray&quot;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    &lt;TextBlock x:Name=&quot;segDiameterLabel&quot; Text=&quot;{Binding XPath=/Lang/SectionView_Radius/@Value, FallbackValue=&#39;Radius:&#39;}&quot; FontSize=&quot;12&quot; Foreground=&quot;DimGray&quot;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                               VerticalAlignment=&quot;Center&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    &lt;TextBlock x:Name=&quot;segRadiusValue&quot; FontSize=&quot;12&quot; FontWeight=&quot;Bold&quot;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                               VerticalAlignment=&quot;Center&quot; Margin=&quot;4,0,0,0&quot;/&gt;</div>
@@ -197,14 +197,14 @@ $(function(){initNavTree('d3/d03/_section_view_window_8xaml_source.html','../../
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                &lt;Button x:Name=&quot;btnProperties&quot; Click=&quot;BtnProperties_Click&quot; Margin=&quot;0,6,0,0&quot;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        Padding=&quot;6,2&quot; FontSize=&quot;10&quot; Visibility=&quot;Collapsed&quot; HorizontalAlignment=&quot;Stretch&quot;&gt;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        &lt;TextBlock x:Name=&quot;txtPropertiesBtn&quot; Text=&quot;Face Properties&quot;/&gt;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        &lt;TextBlock x:Name=&quot;txtPropertiesBtn&quot; Text=&quot;{Binding XPath=/Lang/SectionView_FaceProperties/@Value, FallbackValue=&#39;Face Properties&#39;}&quot;/&gt;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    &lt;/StackPanel&gt;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                &lt;/Button&gt;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                &lt;!-- Measure details (shown when clicking a measure annotation) --&gt;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                &lt;Grid x:Name=&quot;measureDetailsGrid&quot; Visibility=&quot;Collapsed&quot; Margin=&quot;0,4,0,0&quot;&gt;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    &lt;Grid.ColumnDefinitions&gt;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        &lt;ColumnDefinition Width=&quot;55&quot;/&gt;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        &lt;ColumnDefinition Width=&quot;65&quot;/&gt;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                        &lt;ColumnDefinition Width=&quot;*&quot;/&gt;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    &lt;/Grid.ColumnDefinitions&gt;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    &lt;Grid.RowDefinitions&gt;</div>
@@ -213,7 +213,7 @@ $(function(){initNavTree('d3/d03/_section_view_window_8xaml_source.html','../../
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                        &lt;RowDefinition Height=&quot;Auto&quot;/&gt;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        &lt;RowDefinition Height=&quot;Auto&quot;/&gt;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    &lt;/Grid.RowDefinitions&gt;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    &lt;TextBlock Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Text=&quot;Distance:&quot; FontSize=&quot;10&quot; Foreground=&quot;OrangeRed&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    &lt;TextBlock Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Text=&quot;{Binding XPath=/Lang/SectionView_Distance/@Value, FallbackValue=&#39;Distance:&#39;}&quot; FontSize=&quot;10&quot; Foreground=&quot;OrangeRed&quot; FontWeight=&quot;SemiBold&quot;/&gt;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    &lt;TextBlock x:Name=&quot;txtMeasDist&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; FontSize=&quot;10&quot; FontWeight=&quot;Bold&quot; HorizontalAlignment=&quot;Right&quot;/&gt;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    &lt;StackPanel x:Name=&quot;rowMeasDX&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot; Grid.ColumnSpan=&quot;2&quot; Orientation=&quot;Horizontal&quot; HorizontalAlignment=&quot;Stretch&quot; Margin=&quot;0,1&quot;&gt;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                        &lt;TextBlock Text=&quot;dX:&quot; FontSize=&quot;10&quot; Foreground=&quot;DimGray&quot; Width=&quot;55&quot;/&gt;</div>

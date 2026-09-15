@@ -4,6 +4,7 @@ var dir_7dc8dce2094edd55103bb2968f9c2654 =
     [ "DTOs", "dir_8a83e628f42fa5515b85d29951832a8c.html", "dir_8a83e628f42fa5515b85d29951832a8c" ],
     [ "CADFace.cs", "d5/d00/_c_a_d_face_8cs.html", "d5/d00/_c_a_d_face_8cs" ],
     [ "CADHole.cs", "d7/d00/_c_a_d_hole_8cs.html", "d7/d00/_c_a_d_hole_8cs" ],
+    [ "CADMeasurementPoint.cs", "d4/d01/_c_a_d_measurement_point_8cs.html", "d4/d01/_c_a_d_measurement_point_8cs" ],
     [ "CmmMontageConfigFile.cs", "da/d01/_cmm_montage_config_file_8cs.html", "da/d01/_cmm_montage_config_file_8cs" ],
     [ "CmmStandardToolCatalog.cs", "da/d02/_cmm_standard_tool_catalog_8cs.html", "da/d02/_cmm_standard_tool_catalog_8cs" ],
     [ "DiscretePath.cs", "d1/d01/_discrete_path_8cs.html", "d1/d01/_discrete_path_8cs" ],

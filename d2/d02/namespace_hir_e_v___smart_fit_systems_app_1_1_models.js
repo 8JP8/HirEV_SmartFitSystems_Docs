@@ -4,6 +4,7 @@ var namespace_hir_e_v___smart_fit_systems_app_1_1_models =
     [ "DTOs", "d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os.html", "d3/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os" ],
     [ "CADFace", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face" ],
     [ "CADHole", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole" ],
+    [ "CADMeasurementPoint", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point" ],
     [ "CmmMontageConfigFile", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file" ],
     [ "CmmHeadDefinition", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition" ],
     [ "CmmProbeSensorDefinition", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_probe_sensor_definition.html", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_probe_sensor_definition" ],

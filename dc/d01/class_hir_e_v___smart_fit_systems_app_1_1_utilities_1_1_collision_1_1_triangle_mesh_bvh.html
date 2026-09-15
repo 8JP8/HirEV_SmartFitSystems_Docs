@@ -1,0 +1,1311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html','../../','db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh<span class="mlabels"><span class="mlabel sealed">sealed</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>High-performance, immutable, thread-safe Bounding Volume Hierarchy (BVH) over triangle meshes. Provides accelerated broad-phase and narrow-phase triangle-triangle collision queries and ray-cast containment.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_collision_8_triangle_mesh_bvh_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_collision_8_triangle_mesh_bvh_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_collision_8_triangle_mesh_bvh_coll__map">
+<area shape="rect" title="High&#45;performance, immutable, thread&#45;safe Bounding Volume Hierarchy (BVH) over triangle meshes...." alt="" coords="92,291,306,739"/>
+<area shape="rect" href="../../de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html" title="Represents a single flattened triangle in 3D space with precomputed bounding box." alt="" coords="5,27,187,197"/>
+<area shape="poly" title=" " alt="" coords="118,195,140,274,135,274,118,200"/>
+<area shape="rect" href="../../d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html" title="Node in the Bounding Volume Hierarchy tree." alt="" coords="211,5,392,219"/>
+<area shape="poly" title=" " alt="" coords="276,216,263,275,258,273,274,221"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:af2ee026ca44229af6e70de2f5023cf40" id="r_af2ee026ca44229af6e70de2f5023cf40"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af2ee026ca44229af6e70de2f5023cf40">TriangleMeshBvh</a> (Mesh mesh, string partName)</td></tr>
+<tr class="memitem:a9f9f464e9f8f49aee81fbd3d61fec05d" id="r_a9f9f464e9f8f49aee81fbd3d61fec05d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9f9f464e9f8f49aee81fbd3d61fec05d">IntersectsBox</a> (Point3D qMin, Point3D qMax)</td></tr>
+<tr class="memdesc:a9f9f464e9f8f49aee81fbd3d61fec05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the query bounding box intersects the BVH.  <br /></td></tr>
+<tr class="memitem:a611a7a9bbaa3c3de1e4b307ad30773de" id="r_a611a7a9bbaa3c3de1e4b307ad30773de"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a611a7a9bbaa3c3de1e4b307ad30773de">IntersectsMesh</a> (Mesh toolMesh, Transformation transform, Point3D toolWorldMin, Point3D toolWorldMax)</td></tr>
+<tr class="memdesc:a611a7a9bbaa3c3de1e4b307ad30773de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a transformed tool mesh collides with this BVH.  <br /></td></tr>
+<tr class="memitem:aa501f690544a20e626ad569b10369e42" id="r_aa501f690544a20e626ad569b10369e42"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa501f690544a20e626ad569b10369e42">IsPointInside</a> (Point3D point)</td></tr>
+<tr class="memdesc:aa501f690544a20e626ad569b10369e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accelerated solid containment test using BVH ray casting along the +Z direction. An odd number of surface intersections indicates the point is inside the solid mesh.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a6d4cae644f5743fdaa2fb1c90a83c664" id="r_a6d4cae644f5743fdaa2fb1c90a83c664"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a6d4cae644f5743fdaa2fb1c90a83c664">TrianglesIntersect</a> (Point3D v0, Point3D v1, Point3D v2, Point3D u0, Point3D u1, Point3D u2)</td></tr>
+<tr class="memdesc:a6d4cae644f5743fdaa2fb1c90a83c664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact 3D Triangle-Triangle intersection using Möller's algorithm.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a37a0138ca3889935159fa303b3ed0da9" id="r_a37a0138ca3889935159fa303b3ed0da9"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a37a0138ca3889935159fa303b3ed0da9">PartName</a><code> [get]</code></td></tr>
+<tr class="memitem:a71fe5d695d4b9473a890b9448c9ac148" id="r_a71fe5d695d4b9473a890b9448c9ac148"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a71fe5d695d4b9473a890b9448c9ac148">BoxMin</a><code> [get]</code></td></tr>
+<tr class="memitem:a3c10abefbc543f80b57a9e7dac0a31d4" id="r_a3c10abefbc543f80b57a9e7dac0a31d4"><td class="memItemLeft">Point3D&#160;</td><td class="memItemRight"><a class="el" href="#a3c10abefbc543f80b57a9e7dac0a31d4">BoxMax</a><code> [get]</code></td></tr>
+<tr class="memitem:a889bebf253bbfb3007d5d8ed1470c3c8" id="r_a889bebf253bbfb3007d5d8ed1470c3c8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a889bebf253bbfb3007d5d8ed1470c3c8">TriangleCount</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:abc5ee79310faca446ede9fddeaa95d97" id="r_abc5ee79310faca446ede9fddeaa95d97"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#abc5ee79310faca446ede9fddeaa95d97">BuildTree</a> (<a class="el" href="../../de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html">BvhTriangle</a>[] triangles, int start, int count, List&lt; <a class="el" href="../../d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html">BvhNode</a> &gt; nodes)</td></tr>
+<tr class="memitem:a6c37b640ca9dd165ccf74a5ddde78098" id="r_a6c37b640ca9dd165ccf74a5ddde78098"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a6c37b640ca9dd165ccf74a5ddde78098">BoxesOverlap</a> (Point3D aMin, Point3D aMax, Point3D bMin, Point3D bMax)</td></tr>
+<tr class="memitem:ae65bf84ebf3bae8e36c9acad3305446f" id="r_ae65bf84ebf3bae8e36c9acad3305446f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae65bf84ebf3bae8e36c9acad3305446f">RayIntersectsTriangleZ</a> (Point3D orig, Point3D v0, Point3D v1, Point3D v2)</td></tr>
+<tr class="memitem:a50289780931e5ef33aceb284a4f1c0f0" id="r_a50289780931e5ef33aceb284a4f1c0f0"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#a50289780931e5ef33aceb284a4f1c0f0">GetCoord</a> (Point3D p, int axis)</td></tr>
+<tr class="memitem:a09088fd1f3617f5da34aa4019ca03589" id="r_a09088fd1f3617f5da34aa4019ca03589"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a09088fd1f3617f5da34aa4019ca03589">ComputeIntervals</a> (double vv0, double vv1, double vv2, double d0, double d1, double d2, double d0d1, double d0d2, out double a, out double b)</td></tr>
+<tr class="memitem:af94333b186f8193d9fd16c474c23b45b" id="r_af94333b186f8193d9fd16c474c23b45b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#af94333b186f8193d9fd16c474c23b45b">CoplanarTrianglesIntersect</a> (Vector3D normal, Point3D a0, Point3D a1, Point3D a2, Point3D b0, Point3D b1, Point3D b2)</td></tr>
+<tr class="memitem:a55592f3cdae78a8e359cd7518afcbcd4" id="r_a55592f3cdae78a8e359cd7518afcbcd4"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a55592f3cdae78a8e359cd7518afcbcd4">EdgeIntersectsTriangle2D</a> (Point3D a, Point3D b, Point3D c, Point3D p, Point3D q, int ax, int ay)</td></tr>
+<tr class="memitem:a4281f96d3446f0b7a814b9b2b4495a4d" id="r_a4281f96d3446f0b7a814b9b2b4495a4d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a4281f96d3446f0b7a814b9b2b4495a4d">LineSegmentsIntersect2D</a> (Point3D p1, Point3D p2, Point3D p3, Point3D p4, int ax, int ay)</td></tr>
+<tr class="memitem:a458a9df4305893170a02617dafc5fd22" id="r_a458a9df4305893170a02617dafc5fd22"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a458a9df4305893170a02617dafc5fd22">PointInTriangle2D</a> (Point3D p, Point3D a, Point3D b, Point3D c, int ax, int ay)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a4ce076052ac2426d769f8592f23c8bad" id="r_a4ce076052ac2426d769f8592f23c8bad"><td class="memItemLeft">readonly <a class="el" href="../../de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html">BvhTriangle</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a4ce076052ac2426d769f8592f23c8bad">_triangles</a></td></tr>
+<tr class="memitem:a52e305173f6b9b041c86fb64a467cef2" id="r_a52e305173f6b9b041c86fb64a467cef2"><td class="memItemLeft">readonly <a class="el" href="../../d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html">BvhNode</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a52e305173f6b9b041c86fb64a467cef2">_nodes</a></td></tr>
+<tr class="memitem:ab4e0adeebe953005a94c3a5f043f121d" id="r_ab4e0adeebe953005a94c3a5f043f121d"><td class="memItemLeft">readonly int&#160;</td><td class="memItemRight"><a class="el" href="#ab4e0adeebe953005a94c3a5f043f121d">_rootIndex</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>High-performance, immutable, thread-safe Bounding Volume Hierarchy (BVH) over triangle meshes. Provides accelerated broad-phase and narrow-phase triangle-triangle collision queries and ray-cast containment. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00053">53</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="af2ee026ca44229af6e70de2f5023cf40" name="af2ee026ca44229af6e70de2f5023cf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ee026ca44229af6e70de2f5023cf40">&#9670;&#160;</a></span>TriangleMeshBvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.TriangleMeshBvh </td>
+          <td>(</td>
+          <td class="paramtype">Mesh</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>partName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">64</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00056">_nodes</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00057">_rootIndex</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00055">_triangles</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">BoxMax</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">BoxMin</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00059">PartName</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af2ee026ca44229af6e70de2f5023cf40_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af2ee026ca44229af6e70de2f5023cf40_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af2ee026ca44229af6e70de2f5023cf40_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af2ee026ca44229af6e70de2f5023cf40_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,207,88"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#abc5ee79310faca446ede9fddeaa95d97" title=" " alt="" coords="255,29,456,88"/>
+<area shape="poly" title=" " alt="" coords="207,56,242,58,237,59,207,61"/>
+<area shape="poly" title=" " alt="" coords="307,27,307,19,316,10,332,5,355,3,382,5,399,15,394,15,380,11,355,8,334,10,319,15,312,21,311,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a6c37b640ca9dd165ccf74a5ddde78098" name="a6c37b640ca9dd165ccf74a5ddde78098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c37b640ca9dd165ccf74a5ddde78098">&#9670;&#160;</a></span>BoxesOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.BoxesOverlap </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>aMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>aMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>bMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>bMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00346">346</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00209">IntersectsBox()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6c37b640ca9dd165ccf74a5ddde78098_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6c37b640ca9dd165ccf74a5ddde78098_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6c37b640ca9dd165ccf74a5ddde78098_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6c37b640ca9dd165ccf74a5ddde78098_icgraph">
+<area shape="rect" title=" " alt="" coords="255,47,456,105"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a9f9f464e9f8f49aee81fbd3d61fec05d" title="Checks if the query bounding box intersects the BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,57,207,54,207,49,242,56"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,88,207,147"/>
+<area shape="poly" title=" " alt="" coords="236,96,208,103,207,98,242,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abc5ee79310faca446ede9fddeaa95d97" name="abc5ee79310faca446ede9fddeaa95d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5ee79310faca446ede9fddeaa95d97">&#9670;&#160;</a></span>BuildTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.BuildTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html">BvhTriangle</a>[]</td>          <td class="paramname"><span class="paramname"><em>triangles</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html">BvhNode</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">113</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">BoxMax</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">BoxMin</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00016">HirEV_SmartFitSystemsApp.Utilities.Collision.BvhTriangle.Min</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00062">TriangleCount</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,207,88"/>
+<area shape="poly" title=" " alt="" coords="66,28,67,19,74,10,87,5,106,3,127,5,142,14,136,15,126,10,106,8,89,10,77,15,72,21,71,30"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_abc5ee79310faca446ede9fddeaa95d97_icgraph">
+<area shape="rect" title=" " alt="" coords="255,29,456,88"/>
+<area shape="poly" title=" " alt="" coords="394,15,380,11,355,8,334,10,319,15,312,21,311,31,307,27,307,19,316,10,332,5,355,3,382,5,399,15"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af2ee026ca44229af6e70de2f5023cf40" title=" " alt="" coords="5,29,207,88"/>
+<area shape="poly" title=" " alt="" coords="236,59,207,61,207,56,242,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09088fd1f3617f5da34aa4019ca03589" name="a09088fd1f3617f5da34aa4019ca03589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09088fd1f3617f5da34aa4019ca03589">&#9670;&#160;</a></span>ComputeIntervals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.ComputeIntervals </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>vv0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>vv1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>vv2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d0d1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d0d2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out double</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out double</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00466">466</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00397">TrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a09088fd1f3617f5da34aa4019ca03589_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a09088fd1f3617f5da34aa4019ca03589_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a09088fd1f3617f5da34aa4019ca03589_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a09088fd1f3617f5da34aa4019ca03589_icgraph">
+<area shape="rect" title=" " alt="" coords="504,5,705,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="486,35,456,37,456,32,491,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af94333b186f8193d9fd16c474c23b45b" name="af94333b186f8193d9fd16c474c23b45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94333b186f8193d9fd16c474c23b45b">&#9670;&#160;</a></span>CoplanarTrianglesIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.CoplanarTrianglesIntersect </td>
+          <td>(</td>
+          <td class="paramtype">Vector3D</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00500">500</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00515">EdgeIntersectsTriangle2D()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00538">PointInTriangle2D()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00397">TrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,210,105"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a55592f3cdae78a8e359cd7518afcbcd4" title=" " alt="" coords="258,9,459,68"/>
+<area shape="poly" title=" " alt="" coords="209,58,245,55,240,57,211,63"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a458a9df4305893170a02617dafc5fd22" title=" " alt="" coords="507,88,708,147"/>
+<area shape="poly" title=" " alt="" coords="210,82,493,105,490,110,210,87"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a4281f96d3446f0b7a814b9b2b4495a4d" title=" " alt="" coords="507,5,708,64"/>
+<area shape="poly" title=" " alt="" coords="459,34,494,36,489,37,460,40"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="756,47,958,105"/>
+<area shape="poly" title=" " alt="" coords="709,49,744,57,738,57,709,54"/>
+<area shape="poly" title=" " alt="" coords="709,98,738,96,744,95,709,103"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_af94333b186f8193d9fd16c474c23b45b_icgraph">
+<area shape="rect" title=" " alt="" coords="504,5,708,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="486,35,457,37,456,32,491,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55592f3cdae78a8e359cd7518afcbcd4" name="a55592f3cdae78a8e359cd7518afcbcd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55592f3cdae78a8e359cd7518afcbcd4">&#9670;&#160;</a></span>EdgeIntersectsTriangle2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.EdgeIntersectsTriangle2D </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>q</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ay</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00515">515</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00522">LineSegmentsIntersect2D()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00500">CoplanarTrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a4281f96d3446f0b7a814b9b2b4495a4d" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="207,32,242,34,237,35,207,37"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="504,5,705,64"/>
+<area shape="poly" title=" " alt="" coords="457,32,491,35,486,35,457,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a55592f3cdae78a8e359cd7518afcbcd4_icgraph">
+<area shape="rect" title=" " alt="" coords="756,5,958,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="504,5,708,64"/>
+<area shape="poly" title=" " alt="" coords="738,35,709,37,709,32,743,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="486,35,457,37,456,32,491,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a50289780931e5ef33aceb284a4f1c0f0" name="a50289780931e5ef33aceb284a4f1c0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50289780931e5ef33aceb284a4f1c0f0">&#9670;&#160;</a></span>GetCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.GetCoord </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>axis</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00464">464</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00522">LineSegmentsIntersect2D()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00538">PointInTriangle2D()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00397">TrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a50289780931e5ef33aceb284a4f1c0f0_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a50289780931e5ef33aceb284a4f1c0f0_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a50289780931e5ef33aceb284a4f1c0f0_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a50289780931e5ef33aceb284a4f1c0f0_icgraph">
+<area shape="rect" title=" " alt="" coords="1255,88,1456,147"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a4281f96d3446f0b7a814b9b2b4495a4d" title=" " alt="" coords="1006,88,1207,147"/>
+<area shape="poly" title=" " alt="" coords="1237,117,1207,120,1207,115,1242,117"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,121,456,180"/>
+<area shape="poly" title=" " alt="" coords="1250,151,1207,161,1104,173,998,179,790,182,603,175,456,164,456,158,603,169,790,176,998,174,1104,167,1207,156,1245,151"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a458a9df4305893170a02617dafc5fd22" title=" " alt="" coords="756,5,958,64"/>
+<area shape="poly" title=" " alt="" coords="1239,84,1206,79,1077,58,958,45,958,40,1078,53,1208,73,1244,84"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a55592f3cdae78a8e359cd7518afcbcd4" title=" " alt="" coords="756,88,958,147"/>
+<area shape="poly" title=" " alt="" coords="987,117,958,120,958,115,993,117"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="504,88,708,147"/>
+<area shape="poly" title=" " alt="" coords="738,117,709,120,709,115,743,117"/>
+<area shape="poly" title=" " alt="" coords="491,133,457,140,456,135,486,133"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,121,207,180"/>
+<area shape="poly" title=" " alt="" coords="236,151,207,153,207,148,242,150"/>
+<area shape="poly" title=" " alt="" coords="754,69,698,90,697,85,749,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9f9f464e9f8f49aee81fbd3d61fec05d" name="a9f9f464e9f8f49aee81fbd3d61fec05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9f464e9f8f49aee81fbd3d61fec05d">&#9670;&#160;</a></span>IntersectsBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.IntersectsBox </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>qMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>qMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the query bounding box intersects the BVH. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00209">209</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00057">_rootIndex</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00346">BoxesOverlap()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">BoxMax</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">BoxMin</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a9f9f464e9f8f49aee81fbd3d61fec05d_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a9f9f464e9f8f49aee81fbd3d61fec05d_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a9f9f464e9f8f49aee81fbd3d61fec05d_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a9f9f464e9f8f49aee81fbd3d61fec05d_cgraph">
+<area shape="rect" title="Checks if the query bounding box intersects the BVH." alt="" coords="5,5,207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6c37b640ca9dd165ccf74a5ddde78098" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="207,32,242,34,237,35,207,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a611a7a9bbaa3c3de1e4b307ad30773de" name="a611a7a9bbaa3c3de1e4b307ad30773de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611a7a9bbaa3c3de1e4b307ad30773de">&#9670;&#160;</a></span>IntersectsMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.IntersectsMesh </td>
+          <td>(</td>
+          <td class="paramtype">Mesh</td>          <td class="paramname"><span class="paramname"><em>toolMesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transformation</td>          <td class="paramname"><span class="paramname"><em>transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>toolWorldMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>toolWorldMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a transformed tool mesh collides with this BVH. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">218</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00056">_nodes</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00057">_rootIndex</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00055">_triangles</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00346">BoxesOverlap()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">BoxMax</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">BoxMin</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00397">TrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a611a7a9bbaa3c3de1e4b307ad30773de_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a611a7a9bbaa3c3de1e4b307ad30773de_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a611a7a9bbaa3c3de1e4b307ad30773de_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a611a7a9bbaa3c3de1e4b307ad30773de_cgraph">
+<area shape="rect" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,47,207,105"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6c37b640ca9dd165ccf74a5ddde78098" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="206,57,242,53,237,55,208,62"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,88,456,147"/>
+<area shape="poly" title=" " alt="" coords="207,90,242,98,237,99,208,95"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a09088fd1f3617f5da34aa4019ca03589" title=" " alt="" coords="506,5,707,64"/>
+<area shape="poly" title=" " alt="" coords="446,85,498,70,503,69,447,90"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="504,88,708,147"/>
+<area shape="poly" title=" " alt="" coords="456,115,491,117,486,118,457,120"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="1255,88,1456,147"/>
+<area shape="poly" title=" " alt="" coords="449,145,504,156,701,180,856,188,1010,180,1207,156,1245,151,1250,151,1207,161,1010,185,856,193,701,185,504,161,448,150"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a55592f3cdae78a8e359cd7518afcbcd4" title=" " alt="" coords="756,13,958,72"/>
+<area shape="poly" title=" " alt="" coords="706,85,739,78,744,76,708,90"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a458a9df4305893170a02617dafc5fd22" title=" " alt="" coords="1006,88,1207,147"/>
+<area shape="poly" title=" " alt="" coords="709,115,993,117,988,118,709,120"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a4281f96d3446f0b7a814b9b2b4495a4d" title=" " alt="" coords="1006,5,1207,64"/>
+<area shape="poly" title=" " alt="" coords="958,37,993,38,988,39,959,42"/>
+<area shape="poly" title=" " alt="" coords="1197,62,1253,83,1248,82,1197,67"/>
+<area shape="poly" title=" " alt="" coords="1208,115,1242,117,1237,117,1208,120"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa501f690544a20e626ad569b10369e42" name="aa501f690544a20e626ad569b10369e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa501f690544a20e626ad569b10369e42">&#9670;&#160;</a></span>IsPointInside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.IsPointInside </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accelerated solid containment test using BVH ray casting along the +Z direction. An odd number of surface intersections indicates the point is inside the solid mesh. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">292</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00056">_nodes</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00057">_rootIndex</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00055">_triangles</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">BoxMax</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">BoxMin</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00353">RayIntersectsTriangleZ()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_aa501f690544a20e626ad569b10369e42_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_aa501f690544a20e626ad569b10369e42_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_aa501f690544a20e626ad569b10369e42_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_aa501f690544a20e626ad569b10369e42_cgraph">
+<area shape="rect" title="Accelerated solid containment test using BVH ray casting along the +Z direction. An odd number of sur..." alt="" coords="5,5,207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#ae65bf84ebf3bae8e36c9acad3305446f" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="207,32,242,34,237,35,207,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4281f96d3446f0b7a814b9b2b4495a4d" name="a4281f96d3446f0b7a814b9b2b4495a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4281f96d3446f0b7a814b9b2b4495a4d">&#9670;&#160;</a></span>LineSegmentsIntersect2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.LineSegmentsIntersect2D </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p4</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ay</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00522">522</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00464">GetCoord()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00515">EdgeIntersectsTriangle2D()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="207,32,242,34,237,35,207,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a4281f96d3446f0b7a814b9b2b4495a4d_icgraph">
+<area shape="rect" title=" " alt="" coords="1006,5,1207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a55592f3cdae78a8e359cd7518afcbcd4" title=" " alt="" coords="756,5,958,64"/>
+<area shape="poly" title=" " alt="" coords="987,35,958,37,958,32,993,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="504,5,708,64"/>
+<area shape="poly" title=" " alt="" coords="738,35,709,37,709,32,743,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="486,35,457,37,456,32,491,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a458a9df4305893170a02617dafc5fd22" name="a458a9df4305893170a02617dafc5fd22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458a9df4305893170a02617dafc5fd22">&#9670;&#160;</a></span>PointInTriangle2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.PointInTriangle2D </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ay</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00538">538</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00464">GetCoord()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00500">CoplanarTrianglesIntersect()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,207,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="207,32,242,34,237,35,207,37"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a458a9df4305893170a02617dafc5fd22_icgraph">
+<area shape="rect" title=" " alt="" coords="756,5,958,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="504,5,708,64"/>
+<area shape="poly" title=" " alt="" coords="738,35,709,37,709,32,743,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a6d4cae644f5743fdaa2fb1c90a83c664" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="poly" title=" " alt="" coords="486,35,457,37,456,32,491,35"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae65bf84ebf3bae8e36c9acad3305446f" name="ae65bf84ebf3bae8e36c9acad3305446f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65bf84ebf3bae8e36c9acad3305446f">&#9670;&#160;</a></span>RayIntersectsTriangleZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.RayIntersectsTriangleZ </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>orig</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00353">353</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_ae65bf84ebf3bae8e36c9acad3305446f_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_ae65bf84ebf3bae8e36c9acad3305446f_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_ae65bf84ebf3bae8e36c9acad3305446f_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_ae65bf84ebf3bae8e36c9acad3305446f_icgraph">
+<area shape="rect" title=" " alt="" coords="255,5,456,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#aa501f690544a20e626ad569b10369e42" title="Accelerated solid containment test using BVH ray casting along the +Z direction. An odd number of sur..." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6d4cae644f5743fdaa2fb1c90a83c664" name="a6d4cae644f5743fdaa2fb1c90a83c664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4cae644f5743fdaa2fb1c90a83c664">&#9670;&#160;</a></span>TrianglesIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.TrianglesIntersect </td>
+          <td>(</td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>u0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>u1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Point3D</td>          <td class="paramname"><span class="paramname"><em>u2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exact 3D Triangle-Triangle intersection using Möller's algorithm. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00397">397</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00466">ComputeIntervals()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00500">CoplanarTrianglesIntersect()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00464">GetCoord()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_cgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_cgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_cgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_cgraph">
+<area shape="rect" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="5,88,207,147"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a09088fd1f3617f5da34aa4019ca03589" title=" " alt="" coords="256,5,458,64"/>
+<area shape="poly" title=" " alt="" coords="196,85,254,68,249,71,198,90"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#af94333b186f8193d9fd16c474c23b45b" title=" " alt="" coords="255,88,459,147"/>
+<area shape="poly" title=" " alt="" coords="207,115,242,117,237,118,208,120"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a50289780931e5ef33aceb284a4f1c0f0" title=" " alt="" coords="1006,88,1207,147"/>
+<area shape="poly" title=" " alt="" coords="199,145,255,156,452,180,606,188,761,180,957,156,996,151,1001,151,958,161,761,185,606,193,451,185,254,161,199,150"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a55592f3cdae78a8e359cd7518afcbcd4" title=" " alt="" coords="507,13,708,72"/>
+<area shape="poly" title=" " alt="" coords="457,85,490,78,495,76,458,90"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a458a9df4305893170a02617dafc5fd22" title=" " alt="" coords="756,88,958,147"/>
+<area shape="poly" title=" " alt="" coords="459,115,743,117,738,118,460,120"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a4281f96d3446f0b7a814b9b2b4495a4d" title=" " alt="" coords="756,5,958,64"/>
+<area shape="poly" title=" " alt="" coords="709,37,744,38,738,39,709,42"/>
+<area shape="poly" title=" " alt="" coords="948,62,1004,83,999,82,947,67"/>
+<area shape="poly" title=" " alt="" coords="958,115,993,117,988,117,958,120"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_icgraph.png" border="0" usemap="#adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_icgraph" loading="lazy" alt=""/></div>
+<map name="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_icgraph" id="adc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh_a6d4cae644f5743fdaa2fb1c90a83c664_icgraph">
+<area shape="rect" title="Exact 3D Triangle&#45;Triangle intersection using Möller&#39;s algorithm." alt="" coords="255,5,456,64"/>
+<area shape="rect" href="../../dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html#a611a7a9bbaa3c3de1e4b307ad30773de" title="Checks if a transformed tool mesh collides with this BVH." alt="" coords="5,5,207,64"/>
+<area shape="poly" title=" " alt="" coords="236,35,207,37,207,32,242,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentação dos dados membro</h2>
+<a id="a52e305173f6b9b041c86fb64a467cef2" name="a52e305173f6b9b041c86fb64a467cef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e305173f6b9b041c86fb64a467cef2">&#9670;&#160;</a></span>_nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html">BvhNode</a> [] HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh._nodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00056">56</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a id="ab4e0adeebe953005a94c3a5f043f121d" name="ab4e0adeebe953005a94c3a5f043f121d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e0adeebe953005a94c3a5f043f121d">&#9670;&#160;</a></span>_rootIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh._rootIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00057">57</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00209">IntersectsBox()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a4ce076052ac2426d769f8592f23c8bad" name="a4ce076052ac2426d769f8592f23c8bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce076052ac2426d769f8592f23c8bad">&#9670;&#160;</a></span>_triangles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html">BvhTriangle</a> [] HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh._triangles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00055">55</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="a3c10abefbc543f80b57a9e7dac0a31d4" name="a3c10abefbc543f80b57a9e7dac0a31d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c10abefbc543f80b57a9e7dac0a31d4">&#9670;&#160;</a></span>BoxMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.BoxMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00209">IntersectsBox()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a71fe5d695d4b9473a890b9448c9ac148" name="a71fe5d695d4b9473a890b9448c9ac148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fe5d695d4b9473a890b9448c9ac148">&#9670;&#160;</a></span>BoxMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point3D HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.BoxMin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00060">60</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00209">IntersectsBox()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00218">IntersectsMesh()</a>, <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00292">IsPointInside()</a> e <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a37a0138ca3889935159fa303b3ed0da9" name="a37a0138ca3889935159fa303b3ed0da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a0138ca3889935159fa303b3ed0da9">&#9670;&#160;</a></span>PartName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.PartName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00059">59</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00064">TriangleMeshBvh()</a>.</p>
+
+</div>
+</div>
+<a id="a889bebf253bbfb3007d5d8ed1470c3c8" name="a889bebf253bbfb3007d5d8ed1470c3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889bebf253bbfb3007d5d8ed1470c3c8">&#9670;&#160;</a></span>TriangleCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh.TriangleCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00062">62</a> do ficheiro <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html#l00113">BuildTree()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Collision/<a class="el" href="../../da/d00/_triangle_mesh_bvh_8cs_source.html">TriangleMeshBvh.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

@@ -1,11 +1,19 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager.CreateColoredMaterial" name="HirEV_SmartFitSystemsApp.Utilities.IgnoredItemManager.CreateColoredMaterial">
-<area shape="rect" id="Node000001" title="Creates a colored variant of an existing material." alt="" coords="833,47,1065,105"/>
-<area shape="rect" id="Node000002" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3154c3cd339e0d8402c06f1089712b68" title="Gets material name for specific color (creates red variants)." alt="" coords="572,47,785,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="815,76,786,79,786,73,821,76"/>
-<area shape="rect" id="Node000003" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="279,47,524,105"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="554,76,525,79,524,73,559,76"/>
-<area shape="rect" id="Node000004" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies RED overlay to faces with flipped normals (that are not ignored)." alt="" coords="10,5,226,64"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="260,56,226,53,226,48,266,55"/>
-<area shape="rect" id="Node000005" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a78fbd35d769aec7ed4f43ba5f99a2144" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="5,88,231,147"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="260,97,231,104,230,98,266,96"/>
+<area shape="rect" id="Node000001" title="Creates a colored variant of an existing material." alt="" coords="849,212,1081,271"/>
+<area shape="rect" id="Node000002" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a3154c3cd339e0d8402c06f1089712b68" title="Gets material name for specific color (creates red variants)." alt="" coords="588,212,801,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="831,242,802,244,802,239,837,241"/>
+<area shape="rect" id="Node000003" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6330a600d49315130c85f2ff54ad45a8" title="Generates overlay for a face with custom color (for flipped normals)." alt="" coords="295,212,540,271"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="570,242,541,244,540,239,575,241"/>
+<area shape="rect" id="Node000004" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a03e64fe5ee75069ee8d6194c59ccb9fe" title="Applies YELLOW overlay to CADFaces with flipped normals (that are not ignored and not unmeasured)." alt="" coords="18,5,234,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="380,200,322,139,285,106,245,78,226,67,225,62,248,74,288,102,325,135,386,200"/>
+<area shape="rect" id="Node000005" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a6827ccb21bccc2f0e7e33b01cafc38f9" title="Applies YELLOW overlay to faces with flipped normals (that are not ignored and not unmeasured)." alt="" coords="18,88,234,147"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,206,246,161,218,150,217,145,248,156,348,204"/>
+<area shape="rect" id="Node000006" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#adefee72e9fef24885dcece9918652169" title="Applies RED overlay to faces without measurement points (that are not ignored). Takes precedence over..." alt="" coords="18,171,234,229"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="277,223,235,218,233,213,282,221"/>
+<area shape="rect" id="Node000007" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a78fbd35d769aec7ed4f43ba5f99a2144" title="Applies a transformation to the overlay entities belonging to a specific parent entity." alt="" coords="13,253,239,312"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="277,262,240,269,238,264,282,260"/>
+<area shape="rect" id="Node000008" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a4cc075b127b915daa5660a7fd07bdf58" title="Removes RED overlay from a face when manual marking is triggered or points are added...." alt="" coords="5,336,247,395"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="343,279,248,326,219,338,217,333,246,322,348,277"/>
+<area shape="rect" id="Node000009" href="$dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_ignored_item_manager.html#a2d02fe01d52fce7a09c436627e3ecb61" title="Removes RED overlays from multiple faces and optionally restores YELLOW flipped overlays if flipped." alt="" coords="5,419,247,477"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="385,281,325,348,288,380,248,409,226,421,224,416,245,404,285,376,322,344,381,284"/>
 </map>

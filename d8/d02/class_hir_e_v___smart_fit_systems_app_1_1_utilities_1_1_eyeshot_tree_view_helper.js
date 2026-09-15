@@ -24,6 +24,8 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_he
     [ "SelectVertexInTree", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a23a1be2cc467a4c058a7bfc6be8ddf2f", null ],
     [ "UnselectAllPathNodes", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a5c76b89299640301f2680f542f665072", null ],
     [ "UpdateColorNodeHeader", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a5c9eb7c9b8f921553a50d794727ad187", null ],
+    [ "UpdateFaceNodeVisuals", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#ac7c7bdbd93f61fa40e42a047042c569e", null ],
+    [ "UpdateMeasurementPointsSubNode", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a67ec302e60cc231091fb12e0dee31c6b", null ],
     [ "_allFacesCached", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#ad2f4acb2fa4bf4ea6e56a3a1acd254c4", null ],
     [ "_cachedHierarchy", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#a8e953f9917ad02007898e919368c6fde", null ],
     [ "_totalFaceCount", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper.html#af4585ff1333827885c5d0ecdcb7181a0", null ],

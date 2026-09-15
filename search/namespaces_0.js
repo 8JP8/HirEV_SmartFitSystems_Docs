@@ -13,8 +13,9 @@ var searchData=
   ['hirev_5fsmartfitsystemsapp_3a_3aresource_5ftools_3a_3avalidation_10',['Validation',['../da/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation.html',1,'HirEV_SmartFitSystemsApp::Resource_Tools']]],
   ['hirev_5fsmartfitsystemsapp_3a_3autilities_11',['Utilities',['../d5/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities.html',1,'HirEV_SmartFitSystemsApp']]],
   ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3aalgorithms_12',['Algorithms',['../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3aconfiguration_13',['Configuration',['../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3adiagnostics_14',['Diagnostics',['../df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['hirev_5fsmartfitsystemsapp_3a_3aviewmodel_15',['ViewModel',['../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html',1,'HirEV_SmartFitSystemsApp']]],
-  ['hirev_5fsmartfitsystemsapp_3a_3awindows_16',['Windows',['../db/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_windows.html',1,'HirEV_SmartFitSystemsApp']]]
+  ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3acollision_13',['Collision',['../d4/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3aconfiguration_14',['Configuration',['../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['hirev_5fsmartfitsystemsapp_3a_3autilities_3a_3adiagnostics_15',['Diagnostics',['../df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
+  ['hirev_5fsmartfitsystemsapp_3a_3aviewmodel_16',['ViewModel',['../de/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_view_model.html',1,'HirEV_SmartFitSystemsApp']]],
+  ['hirev_5fsmartfitsystemsapp_3a_3awindows_17',['Windows',['../db/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_windows.html',1,'HirEV_SmartFitSystemsApp']]]
 ];

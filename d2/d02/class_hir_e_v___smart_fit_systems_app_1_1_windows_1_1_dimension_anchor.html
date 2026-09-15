@@ -101,7 +101,7 @@ Diagrama de colaboração para HirEV_SmartFitSystemsApp.Windows.DimensionAnchor:
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d03/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_dimension_anchor__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_windows_8_dimension_anchor_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_hir_e_v___smart_fit_systems_app_8_windows_8_dimension_anchor_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_windows_8_dimension_anchor_coll__map">
-<area shape="rect" title="Stores the original measured points on a dimension entity so that axis&#45;aligned re&#45;dimensioning always..." alt="" coords="5,5,187,133"/>
+<area shape="rect" title="Stores the original measured points on a dimension entity so that axis&#45;aligned re&#45;dimensioning always..." alt="" coords="5,5,187,176"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -113,11 +113,15 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a0ddb29b7c9a8f3109885476f3074ce4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second measured point in DrawingPlane-projected XY space (Z=0).  <br /></td></tr>
 <tr class="memitem:a79f6ff1b87d83a98d51ffad08ce7a42a" id="r_a79f6ff1b87d83a98d51ffad08ce7a42a"><td class="memItemLeft">string?&#160;</td><td class="memItemRight"><a class="el" href="#a79f6ff1b87d83a98d51ffad08ce7a42a">ActiveAxis</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a79f6ff1b87d83a98d51ffad08ce7a42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently active axis alignment ("X", "Y", "Z"), or null for direct measurement.  <br /></td></tr>
+<tr class="memitem:a1f061a95bbfe8603eb2d4ae025443673" id="r_a1f061a95bbfe8603eb2d4ae025443673"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1f061a95bbfe8603eb2d4ae025443673">IsRadiusMeasurement</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1f061a95bbfe8603eb2d4ae025443673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this dimension is a cylindrical radius measurement.  <br /></td></tr>
+<tr class="memitem:a18acc18f825646235dce94cad8c36305" id="r_a18acc18f825646235dce94cad8c36305"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a18acc18f825646235dce94cad8c36305">Radius</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a18acc18f825646235dce94cad8c36305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius value if this is a radius measurement.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Stores the original measured points on a dimension entity so that axis-aligned re-dimensioning always uses the exact anchor positions. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01564">1564</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02099">2099</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
 </div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
 <a id="a79f6ff1b87d83a98d51ffad08ce7a42a" name="a79f6ff1b87d83a98d51ffad08ce7a42a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f6ff1b87d83a98d51ffad08ce7a42a">&#9670;&#160;</a></span>ActiveAxis</h2>
@@ -141,7 +145,33 @@ Propriedades</h2></td></tr>
 
 <p>Currently active axis alignment ("X", "Y", "Z"), or null for direct measurement. </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01571">1571</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02106">2106</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1f061a95bbfe8603eb2d4ae025443673" name="a1f061a95bbfe8603eb2d4ae025443673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f061a95bbfe8603eb2d4ae025443673">&#9670;&#160;</a></span>IsRadiusMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Windows.DimensionAnchor.IsRadiusMeasurement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether this dimension is a cylindrical radius measurement. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02108">2108</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
 
 </div>
 </div>
@@ -167,9 +197,9 @@ Propriedades</h2></td></tr>
 
 <p>First measured point in DrawingPlane-projected XY space (Z=0). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01567">1567</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02102">2102</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01171">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.AlignDimensionWithAxis()</a>, <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01277">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.RestoreDirectDimension()</a> e <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l00336">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.SectionDesign_MouseDown()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01692">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.AlignDimensionWithAxis()</a>, <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01798">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.RestoreDirectDimension()</a> e <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l00349">HirEV_SmartFitSystemsApp.Windows.SectionViewWindow.SectionDesign_MouseDown()</a>.</p>
 
 </div>
 </div>
@@ -195,7 +225,33 @@ Propriedades</h2></td></tr>
 
 <p>Second measured point in DrawingPlane-projected XY space (Z=0). </p>
 
-<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l01569">1569</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02104">2104</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
+
+</div>
+</div>
+<a id="a18acc18f825646235dce94cad8c36305" name="a18acc18f825646235dce94cad8c36305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18acc18f825646235dce94cad8c36305">&#9670;&#160;</a></span>Radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Windows.DimensionAnchor.Radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Radius value if this is a radius measurement. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html#l02110">2110</a> do ficheiro <a class="el" href="../../dd/d00/_section_view_window_8xaml_8cs_source.html">SectionViewWindow.xaml.cs</a>.</p>
 
 </div>
 </div>

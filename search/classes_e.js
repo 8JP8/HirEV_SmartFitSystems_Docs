@@ -34,9 +34,11 @@ var searchData=
   ['probeanglestandardizationconfig_31',['ProbeAngleStandardizationConfig',['../d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
   ['probeanglestandardizer_32',['ProbeAngleStandardizer',['../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html',1,'HirEV_SmartFitSystemsApp::Utilities::Algorithms']]],
   ['probecameraposeeventargs_33',['ProbeCameraPoseEventArgs',['../de/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_probe_camera_pose_event_args.html',1,'HirEV_SmartFitSystemsApp::Utilities']]],
-  ['probecollisionsample_34',['ProbeCollisionSample',['../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_sample.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['probecollisionscenesnapshot_35',['ProbeCollisionSceneSnapshot',['../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_scene_snapshot.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['probesegmentcollisionresult_36',['ProbeSegmentCollisionResult',['../da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_segment_collision_result.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['probetoolgeometry_37',['ProbeToolGeometry',['../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
-  ['protectedconfigmanager_38',['ProtectedConfigManager',['../dc/d03/class_protected_config_manager.html',1,'']]]
+  ['probecollisionenginefactory_34',['ProbeCollisionEngineFactory',['../d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_engine_factory.html',1,'HirEV_SmartFitSystemsApp::Utilities::Collision']]],
+  ['probecollisionevaluationresult_35',['ProbeCollisionEvaluationResult',['../d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_evaluation_result.html',1,'HirEV_SmartFitSystemsApp::Utilities::Collision']]],
+  ['probecollisionsample_36',['ProbeCollisionSample',['../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_sample.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
+  ['probecollisionscenesnapshot_37',['ProbeCollisionSceneSnapshot',['../d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_scene_snapshot.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
+  ['probesegmentcollisionresult_38',['ProbeSegmentCollisionResult',['../da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_segment_collision_result.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
+  ['probetoolgeometry_39',['ProbeToolGeometry',['../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html',1,'HirEV_SmartFitSystemsApp::Utilities::PathManager']]],
+  ['protectedconfigmanager_40',['ProtectedConfigManager',['../dc/d03/class_protected_config_manager.html',1,'']]]
 ];

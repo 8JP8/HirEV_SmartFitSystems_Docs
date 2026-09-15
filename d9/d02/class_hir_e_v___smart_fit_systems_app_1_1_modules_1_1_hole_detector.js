@@ -68,6 +68,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector =
     [ "IsPlanarSeparatorBetweenCylinders", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a02a5da69a2a68c502e59bb1359922db4", null ],
     [ "IsSingleFaceJoinedHoleCandidate", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a46e1046fcc973af3e98e3da261ed4fe4", null ],
     [ "MarkHoleAndFacesIgnored", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a302538696f735c7b3aa7d0f8e42f3738", null ],
+    [ "MarkSeparatorFacesAsBridge", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a071d94750c556ccab700780594e3c76a", null ],
     [ "NormalizeAxis", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#ac3cd4e56681ce4946e2fe58ead45b0fa", null ],
     [ "PointOnAxis", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#a8fc61e89e3575684a018c3d30d1d706a", null ],
     [ "ProjectOnAxis", "d9/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector.html#aecbc71693d1f2d403d6f072797d3f0a1", null ],

@@ -1,5 +1,6 @@
 var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry =
 [
+    [ "CloneForWorker", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html#a569738206a1f845964d91203131813f2", null ],
     [ "BaseMesh", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html#a9b2d11215a5d4581316037de2e760db9", null ],
     [ "HeadBoxMax", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html#aca6d2308c58fb08120019622e05a491d", null ],
     [ "HeadBoxMin", "db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_tool_geometry.html#a335b37772a4833833ac47816ddef2280", null ],

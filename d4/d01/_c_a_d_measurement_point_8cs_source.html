@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Código-Fonte de C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Models/CADMeasurementPoint.cs</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d01/_c_a_d_measurement_point_8cs_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CADMeasurementPoint.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d01/_c_a_d_measurement_point_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>devDept.Geometry;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html">    9</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a4345e14ff3a068f6993f0bbd29b04f42">CADMeasurementPoint</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a0ae104bdacd4518e27e953b48f6cd19c">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a0ae104bdacd4518e27e953b48f6cd19c">Face</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a6473f2ea88ec3624ed0134633ba430e8">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a6473f2ea88ec3624ed0134633ba430e8">Index</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">   24</a></span>        <span class="keyword">public</span> Point4D <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a4345e14ff3a068f6993f0bbd29b04f42">   32</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a4345e14ff3a068f6993f0bbd29b04f42">CADMeasurementPoint</a>(<a class="code hl_class" href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">CADFace</a> face, <span class="keywordtype">int</span> index, Point4D point)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a0ae104bdacd4518e27e953b48f6cd19c">Face</a> = face;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a6473f2ea88ec3624ed0134633ba430e8">Index</a> = index;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a> = point;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a653a8487e0639a7bf16ae201ef749ff7">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a653a8487e0639a7bf16ae201ef749ff7">X</a> =&gt; <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.X;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a81445e2acab3e29420126e87f054fe9a">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a81445e2acab3e29420126e87f054fe9a">Y</a> =&gt; <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.Y;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a90548edafd4e44a88f42f33d8eb482bd">   52</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a90548edafd4e44a88f42f33d8eb482bd">Z</a> =&gt; <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.Z;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a918b61e8c8a3d19f3d5c1cf7008e2dc9">   57</a></span>        <span class="keyword">public</span> Point3D <a class="code hl_function" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a918b61e8c8a3d19f3d5c1cf7008e2dc9">ToPoint3D</a>() =&gt; <span class="keyword">new</span> Point3D(<a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.X, <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.Y, <a class="code hl_property" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">Point</a>.Z);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a434a5d1bee59c958279b762d47f1e2b4">   60</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a434a5d1bee59c958279b762d47f1e2b4">ToString</a>() =&gt; $<span class="stringliteral">&quot;MP{Index}: ({Point.X:F3}, {Point.Y:F3}, {Point.Z:F3})&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face_html"><div class="ttname"><a href="../../d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html">HirEV_SmartFitSystemsApp.Models.CADFace</a></div><div class="ttdoc">Data model representing a single face extracted from a 3D CAD model. Contains geometric,...</div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00023">CADFace.cs:24</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a0ae104bdacd4518e27e953b48f6cd19c"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a0ae104bdacd4518e27e953b48f6cd19c">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.Face</a></div><div class="ttdeci">CADFace Face</div><div class="ttdoc">Gets or sets the parent CADFace this measurement point belongs to.</div><div class="ttdef"><b>Definição</b> <a href="#l00014">CADMeasurementPoint.cs:14</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a4345e14ff3a068f6993f0bbd29b04f42"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a4345e14ff3a068f6993f0bbd29b04f42">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.CADMeasurementPoint</a></div><div class="ttdeci">CADMeasurementPoint(CADFace face, int index, Point4D point)</div><div class="ttdoc">Initializes a new instance of the CADMeasurementPoint class.</div><div class="ttdef"><b>Definição</b> <a href="#l00032">CADMeasurementPoint.cs:32</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a434a5d1bee59c958279b762d47f1e2b4"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a434a5d1bee59c958279b762d47f1e2b4">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definição</b> <a href="#l00060">CADMeasurementPoint.cs:60</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a6473f2ea88ec3624ed0134633ba430e8"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a6473f2ea88ec3624ed0134633ba430e8">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.Index</a></div><div class="ttdeci">int Index</div><div class="ttdoc">Gets or sets the index of this measurement point within the Face.MeasurementPoints list.</div><div class="ttdef"><b>Definição</b> <a href="#l00019">CADMeasurementPoint.cs:19</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a653a8487e0639a7bf16ae201ef749ff7"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a653a8487e0639a7bf16ae201ef749ff7">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.X</a></div><div class="ttdeci">double X</div><div class="ttdoc">Gets the X coordinate of the measurement point.</div><div class="ttdef"><b>Definição</b> <a href="#l00042">CADMeasurementPoint.cs:42</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a81445e2acab3e29420126e87f054fe9a"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a81445e2acab3e29420126e87f054fe9a">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.Y</a></div><div class="ttdeci">double Y</div><div class="ttdoc">Gets the Y coordinate of the measurement point.</div><div class="ttdef"><b>Definição</b> <a href="#l00047">CADMeasurementPoint.cs:47</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a90548edafd4e44a88f42f33d8eb482bd"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a90548edafd4e44a88f42f33d8eb482bd">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.Z</a></div><div class="ttdeci">double Z</div><div class="ttdoc">Gets the Z coordinate of the measurement point.</div><div class="ttdef"><b>Definição</b> <a href="#l00052">CADMeasurementPoint.cs:52</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a918b61e8c8a3d19f3d5c1cf7008e2dc9"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a918b61e8c8a3d19f3d5c1cf7008e2dc9">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.ToPoint3D</a></div><div class="ttdeci">Point3D ToPoint3D()</div><div class="ttdoc">Converts the measurement point coordinates to a 3D point.</div><div class="ttdef"><b>Definição</b> <a href="#l00057">CADMeasurementPoint.cs:57</a></div></div>
+<div class="ttc" id="aclass_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point_html_a9aa0b931f4811d8de02c40214f09beaa"><div class="ttname"><a href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html#a9aa0b931f4811d8de02c40214f09beaa">HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint.Point</a></div><div class="ttdeci">Point4D Point</div><div class="ttdoc">Gets or sets the 3D homogeneous coordinates of the measurement point.</div><div class="ttdef"><b>Definição</b> <a href="#l00024">CADMeasurementPoint.cs:24</a></div></div>
+<div class="ttc" id="anamespace_hir_e_v___smart_fit_systems_app_1_1_models_html"><div class="ttname"><a href="../../d2/d02/namespace_hir_e_v___smart_fit_systems_app_1_1_models.html">HirEV_SmartFitSystemsApp.Models</a></div><div class="ttdef"><b>Definição</b> <a href="../../d5/d00/_c_a_d_face_8cs_source.html#l00004">CADFace.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

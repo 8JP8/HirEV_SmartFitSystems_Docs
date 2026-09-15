@@ -32,6 +32,7 @@ var annotated_dup =
         ] ],
         [ "CADFace", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face" ],
         [ "CADHole", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole" ],
+        [ "CADMeasurementPoint", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point" ],
         [ "CmmMontageConfigFile", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file.html", "dd/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_montage_config_file" ],
         [ "CmmHeadDefinition", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html", "d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition" ],
         [ "CmmProbeSensorDefinition", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_probe_sensor_definition.html", "d0/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_probe_sensor_definition" ],
@@ -122,6 +123,16 @@ var annotated_dup =
           [ "ApproachMeasurementPair", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair" ],
           [ "ShellProjectionUtils", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils" ]
         ] ],
+        [ "Collision", "d4/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision.html", [
+          [ "EyeshotSubdivisionCollisionEngine", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_eyeshot_subdivision_collision_engine.html", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_eyeshot_subdivision_collision_engine" ],
+          [ "FastBvhCollisionEngine", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_fast_bvh_collision_engine.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_fast_bvh_collision_engine" ],
+          [ "ProbeCollisionEvaluationResult", "d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_evaluation_result.html", "d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_evaluation_result" ],
+          [ "IProbeCollisionEngine", "d5/d02/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_i_probe_collision_engine.html", "d5/d02/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_i_probe_collision_engine" ],
+          [ "ProbeCollisionEngineFactory", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_engine_factory.html", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_engine_factory" ],
+          [ "BvhTriangle", "de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html", "de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle" ],
+          [ "BvhNode", "d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html", "d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node" ],
+          [ "TriangleMeshBvh", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh" ]
+        ] ],
         [ "Diagnostics", "df/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics.html", [
           [ "PathPlanningDiagnostics", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics.html", "d4/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_diagnostics_1_1_path_planning_diagnostics" ]
         ] ],
@@ -203,7 +214,8 @@ var annotated_dup =
           [ "EyeshotEntityFilterDialog", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog" ],
           [ "PasswordInputDialog", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog.html", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog" ],
           [ "PathItemViewModel", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model.html", "d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_item_view_model" ],
-          [ "PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog" ]
+          [ "PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog" ],
+          [ "SectionViewModelSelectDialog", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_model_select_dialog.html", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_model_select_dialog" ]
         ] ],
         [ "Validation", "da/d03/namespace_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation.html", [
           [ "NumericValidationRule", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_numeric_validation_rule.html", "df/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_validation_1_1_numeric_validation_rule" ],

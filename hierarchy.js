@@ -26,12 +26,15 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.BridgePathConsumer", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_bridge_path_consumer.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.BridgePointMetadata", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_bridge_point_metadata.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.BridgeRunSnapshot", "de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_bridge_run_snapshot.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Collision.BvhNode", "d0/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_node.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Collision.BvhTriangle", "de/d00/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_bvh_triangle.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.EyeshotTreeViewHelper.CachedColorHierarchy", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper_1_1_cached_color_hierarchy.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.ToolModelLoader.CachedModelData", "d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_tool_model_loader_1_1_cached_model_data.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.EyeshotTreeViewHelper.CachedTreeViewNode", "d8/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_tree_view_helper_1_1_cached_tree_view_node.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.CADFace", "d8/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_face.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.CADHole", "d3/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_hole.html", null ],
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.CADHoleExportDTO", "db/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_c_a_d_hole_export_d_t_o.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Models.CADMeasurementPoint", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_c_a_d_measurement_point.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.CadVisibilitySnapshot", "db/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_cad_visibility_snapshot.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.EyeshotCameraUtils.CameraFollowPartInfo", "d0/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_eyeshot_camera_utils_1_1_camera_follow_part_info.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.MoveWaypointBatchCommand.ChangeInfo", "da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_move_waypoint_batch_command_1_1_change_info.html", null ],
@@ -126,6 +129,12 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.HoleAxisExtractor.HoleProbeStep", "d0/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_hole_axis_extractor_1_1_hole_probe_step.html", null ],
     [ "HirEV_SmartFitSystemsApp.Modules.HoleDetector.HoleReachabilityInfo", "da/d03/struct_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_hole_detector_1_1_hole_reachability_info.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner.HoleRouteCandidate", "d5/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner_1_1_hole_route_candidate.html", null ],
+    [ "IDisposable", null, [
+      [ "HirEV_SmartFitSystemsApp.Utilities.Collision.IProbeCollisionEngine", "d5/d02/interface_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_i_probe_collision_engine.html", [
+        [ "HirEV_SmartFitSystemsApp.Utilities.Collision.EyeshotSubdivisionCollisionEngine", "d5/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_eyeshot_subdivision_collision_engine.html", null ],
+        [ "HirEV_SmartFitSystemsApp.Utilities.Collision.FastBvhCollisionEngine", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_fast_bvh_collision_engine.html", null ]
+      ] ]
+    ] ],
     [ "IEqualityComparer", null, [
       [ "HirEV_SmartFitSystemsApp.Measuring_SidePanel.LocalPoint3DEqualityComparer", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel_1_1_local_point3_d_equality_comparer.html", null ],
       [ "HirEV_SmartFitSystemsApp.Modules.Point3DComparer", "de/d02/class_hir_e_v___smart_fit_systems_app_1_1_modules_1_1_point3_d_comparer.html", null ],
@@ -147,6 +156,8 @@ var hierarchy =
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog.EntityViewModel", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity78997ddff1edc05c62bbbbffe547920d.html", null ],
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PasswordInputDialog", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", null ],
+      [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.SectionViewModelSelectDialog", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_model_select_dialog.html", null ],
+      [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.SectionViewModelSelectDialog.ModelItemViewModel", "d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_m66753ddfc08d382b12b1210241236f98.html", null ],
       [ "HirEV_SmartFitSystemsApp.ScannerConfigurationDialog", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Settings_SidePanel", "df/d01/class_hir_e_v___smart_fit_systems_app_1_1_settings___side_panel.html", null ]
     ] ],
@@ -214,6 +225,8 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Models.DTOs.PointExportDTO", "d1/d03/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_d_t_os_1_1_point_export_d_t_o.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizationConfig", "d4/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardization_config.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeAngleStandardizer", "d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Collision.ProbeCollisionEngineFactory", "d2/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_engine_factory.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Collision.ProbeCollisionEvaluationResult", "d9/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_probe_collision_evaluation_result.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSample", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_sample.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeCollisionSceneSnapshot", "d7/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_collision_scene_snapshot.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.PathManager.ProbeSegmentCollisionResult", "da/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_probe_segment_collision_result.html", null ],
@@ -265,6 +278,7 @@ var hierarchy =
     [ "HirEV_SmartFitSystemsApp.Utilities.CollisionAvoidanceAlgorithm.Triangle", "dd/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_avoidance_algorithm_1_1_triangle.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.Triangle3D", "d5/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_triangle3_d.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.Algorithms.SdfShellGenerator.TriangleBvh", "d3/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator_1_1_triangle_bvh.html", null ],
+    [ "HirEV_SmartFitSystemsApp.Utilities.Collision.TriangleMeshBvh", "dc/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_collision_1_1_triangle_mesh_bvh.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoHistoryEntryDTO", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_history_entry_d_t_o.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoLocalizationHelper", "df/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_localization_helper.html", null ],
     [ "HirEV_SmartFitSystemsApp.Utilities.UndoManager", "d2/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_undo_manager.html", null ],
@@ -291,6 +305,7 @@ var hierarchy =
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.EyeshotEntityFilterDialog", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_eyeshot_entity_filter_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PasswordInputDialog", "d0/d03/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_password_input_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.PathEditDialog", "d1/d01/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_path_edit_dialog.html", null ],
+      [ "HirEV_SmartFitSystemsApp.Resource_Tools.CustomDialogs.SectionViewModelSelectDialog", "db/d02/class_hir_e_v___smart_fit_systems_app_1_1_resource___tools_1_1_custom_dialogs_1_1_section_view_model_select_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.ScannerConfigurationDialog", "d9/d01/class_hir_e_v___smart_fit_systems_app_1_1_scanner_configuration_dialog.html", null ],
       [ "HirEV_SmartFitSystemsApp.Windows.SectionViewWindow", "d1/d00/class_hir_e_v___smart_fit_systems_app_1_1_windows_1_1_section_view_window.html", null ]
     ] ],
