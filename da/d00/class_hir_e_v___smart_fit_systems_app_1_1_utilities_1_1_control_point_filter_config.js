@@ -34,6 +34,8 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter
     [ "ProbeCollisionAnimateProbe", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#ad73990883acbcbd5ae0c06b8e12800ba", null ],
     [ "ProbeCollisionDistanceStepMm", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#ae391bbcf9b8b35e898d8434643677eba", null ],
     [ "ProbeCollisionEngine", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a1186eb1d6d2d5d0e6421ccdddefe2d60", null ],
+    [ "ProbeCollisionHighlightCollidingElements", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a39c50cfde684eaca212ceb12943b9af7", null ],
+    [ "ProbeCollisionHighlightCollidingPathsAndPoints", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#aff5fba137178890ac13aec8b1290edbc", null ],
     [ "ProbeCollisionMarkCollisionSpots", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a9e287c259f753b37400efd4232f4531a", null ],
     [ "ProbeCollisionPercentIncrement", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a822a6677d633c0473561aeb4f44ad3c3", null ],
     [ "ProbeCollisionSamplingMode", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a718fe065827f49bf50eddb15f4138f9c", null ],

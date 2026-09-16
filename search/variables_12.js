@@ -38,5 +38,6 @@ var searchData=
   ['rp_35',['RP',['../d7/d03/class_secure_password_manager.html#a346b67b001bbdf627ff40ca0216dd155',1,'SecurePasswordManager']]],
   ['rp2_36',['RP2',['../d7/d03/class_secure_password_manager.html#a7bb508b53c58f15cd3b424b87a220cfe',1,'SecurePasswordManager']]],
   ['runprobecollisioncheckcommand_37',['runProbeCollisionCheckCommand',['../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a6b62eacc71600974f58e8bbd85ff70a1',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]],
-  ['runsegmentcollisioncheckcommand_38',['runSegmentCollisionCheckCommand',['../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af89b52063583a8346488694a922e0548',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]]
+  ['runscannerpointverificationcommand_38',['runScannerPointVerificationCommand',['../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#a60989f591926b826530178d303347170',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]],
+  ['runsegmentcollisioncheckcommand_39',['runSegmentCollisionCheckCommand',['../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_view_model_1_1_main_view_model.html#af89b52063583a8346488694a922e0548',1,'HirEV_SmartFitSystemsApp::ViewModel::MainViewModel']]]
 ];

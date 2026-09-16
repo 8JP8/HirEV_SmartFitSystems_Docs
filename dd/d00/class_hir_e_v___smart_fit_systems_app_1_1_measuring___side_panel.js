@@ -154,6 +154,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel =
     [ "DocLanguage", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#abbd3aa3291c07b2c66d675bf00f75f36", null ],
     [ "ExportPathsJsonCommand", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#ae2999ba49bb7b6f46d2b30c9b5d7cc68", null ],
     [ "ExportPathsXmlCommand", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a52d3affd43579e5255b3a2d377ef2b3e", null ],
+    [ "GenerateDmisButtonVisibility", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#af9f53cf3d10eebf903fc81e81cdb49a0", null ],
     [ "GenerateJobCommand", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a4f30b549d745666f06ea75843dacc0bd", null ],
     [ "GeneratePaths_Visibility", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#aefec6cb08c7715566c32fb9bb695ba6c", null ],
     [ "GeneratePathsButtonText", "dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_measuring___side_panel.html#a7cfefca23468892675638e9da8c39990", null ],
