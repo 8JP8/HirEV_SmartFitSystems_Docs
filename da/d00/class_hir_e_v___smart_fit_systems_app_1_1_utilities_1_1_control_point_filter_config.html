@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.37</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -240,6 +240,8 @@ Propriedades</h2></td></tr>
 <tr class="memdesc:a46ef2639817ea82ca826073228eb31a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether to automatically check and flip normals if pointing inward.  <br /></td></tr>
 <tr class="memitem:ab3cd62b08472286ebccd2dbaca189643" id="r_ab3cd62b08472286ebccd2dbaca189643"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab3cd62b08472286ebccd2dbaca189643">EnableManualNormalControl</a> = false<code> [get, set]</code></td></tr>
 <tr class="memdesc:ab3cd62b08472286ebccd2dbaca189643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether to enable manual normal flip control via context menu.  <br /></td></tr>
+<tr class="memitem:acc3491b5f5171ae662c91da5d9735f11" id="r_acc3491b5f5171ae662c91da5d9735f11"><td class="memItemLeft"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#acc3491b5f5171ae662c91da5d9735f11">ProbeKinematics</a> = new <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>()<code> [get, set]</code></td></tr>
+<tr class="memdesc:acc3491b5f5171ae662c91da5d9735f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the probe head kinematics configuration for PAO trajectory optimization.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p><a class="el" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">Configuration</a> class for control point filtering settings. </p>
@@ -272,9 +274,21 @@ Propriedades</h2></td></tr>
 <p>Loads configuration settings from App.config. </p>
 <dl class="section return"><dt>Retorna</dt><dd>A <a class="el" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html" title="Configuration class for control point filtering settings.">ControlPointFilterConfig</a> instance populated with values from App.config, or defaults if loading fails.</dd></dl>
 
-<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00567">567</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00570">570</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01885">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a>.</p>
+<p class="reference">Referências <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00156">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.LoadFromConfig()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l01891">HirEV_SmartFitSystemsApp.Utilities.PathManager.PathManager()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config_a60c2886e9028a17a926dcc3b4c7c3997_cgraph.png" border="0" usemap="#ada/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config_a60c2886e9028a17a926dcc3b4c7c3997_cgraph" loading="lazy" alt=""/></div>
+<map name="ada/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config_a60c2886e9028a17a926dcc3b4c7c3997_cgraph" id="ada/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config_a60c2886e9028a17a926dcc3b4c7c3997_cgraph">
+<area shape="rect" title="Loads configuration settings from App.config." alt="" coords="5,5,218,64"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html#a3c1a01abbbe44e3b5e1c6a2eec8e3ef9" title="Loads probe head kinematics and PAO configuration from application configuration (App...." alt="" coords="266,5,490,64"/>
+<area shape="poly" title=" " alt="" coords="218,32,253,34,248,35,218,37"/>
+</map>
+</div>
 <div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
@@ -1508,6 +1522,32 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <p>Gets or sets the height of the simulation probe cylinder in mm. </p>
 
 <p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00446">446</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="acc3491b5f5171ae662c91da5d9735f11" name="acc3491b5f5171ae662c91da5d9735f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3491b5f5171ae662c91da5d9735f11">&#9670;&#160;</a></span>ProbeKinematics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a> HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.ProbeKinematics = new <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the probe head kinematics configuration for PAO trajectory optimization. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00564">564</a> do ficheiro <a class="el" href="../../da/d00/_path_manager_8cs_source.html">PathManager.cs</a>.</p>
 
 </div>
 </div>

@@ -47,6 +47,7 @@ var class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter
     [ "ProbeCollisionTotalSampleCount", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a738dfd624c3d449bdecb7b515a8dac23", null ],
     [ "ProbeCollisionVisualPoseDelayMs", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#aad0d93ee0d21bdc8a42f88ca7c333c19", null ],
     [ "ProbeHeight", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a0dd708e525c12fa2a4a2aeadcb454e9a", null ],
+    [ "ProbeKinematics", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#acc3491b5f5171ae662c91da5d9735f11", null ],
     [ "ProbeMaxAngleA_Degrees", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#aaa5978f5adbe4eee14330a33e473a2e2", null ],
     [ "ProbeRadius", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a764a4f7d2493f62c2839d10fc5d67927", null ],
     [ "ProbeStandardAngleStepA_Degrees", "da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a009d07002f4c024813ce020420cc811b", null ],

@@ -1,0 +1,30 @@
+<map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime">
+<area shape="rect" id="Node000001" title="Calculates the time in seconds required to reorient the probe head between two normal vectors." alt="" coords="1643,197,1868,256"/>
+<area shape="rect" id="Node000002" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#afe6bbf4e5f6b2f6d85497c6c5e169654" title="Evaluates the combined multi&#45;objective transition cost between two poses: C(p1, p2) = w_dist * T_tran..." alt="" coords="1370,123,1594,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1628,192,1592,185,1592,179,1634,193"/>
+<area shape="rect" id="Node000010" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a77867f3461b3c349564ecd8b0a0e2f8b" title="Orders feature clusters by proximity of their centroids and PAO head rotation costs." alt="" coords="1369,272,1595,331"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1634,260,1592,274,1592,269,1628,261"/>
+<area shape="rect" id="Node000003" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#ac8cd77e39975bec7e206e6af8a4f0b55" title="Executes a 2&#45;Opt improvement loop evaluating combined transition cost." alt="" coords="1091,5,1316,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1396,116,1320,85,1277,67,1278,62,1322,80,1401,116"/>
+<area shape="rect" id="Node000004" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#a8437b59482e413ce573490df0e3e20cf" title="Orders pairs greedily by combined cost metric C(p1, p2) = w_dist * T_trans + w_rot * T_rot,..." alt="" coords="791,44,1038,103"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="1352,135,1038,93,1038,88,1357,134"/>
+<area shape="rect" id="Node000008" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#a7cdd1c0ab2087d165026550eb2dc754c" title="Partitions pairs into discrete iso&#45;orientation clusters, orders each cluster internally by spatial pr..." alt="" coords="794,127,1035,185"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="1352,153,1035,158,1035,152,1357,153"/>
+<area shape="rect" id="Node000009" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#a8982a6c33c1ea01a655c22e28e040911" title="Orders a list of generic items (e.g. PathPoint) using position and normal providers." alt="" coords="1086,189,1321,248"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="1358,182,1322,193,1321,188,1352,183"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1073,52,1038,59,1037,54,1078,51"/>
+<area shape="rect" id="Node000005" href="$db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#a9667e64ce237aa8e84b36c3d8ba78565" title="Orders a list of approach&#45;measurement pairs to minimize total inspection time, balancing spatial dist..." alt="" coords="519,127,743,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="795,108,735,129,734,123,800,107"/>
+<area shape="rect" id="Node000006" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adae12147e36771b63c3994b0d24ec5d5" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,193,222,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="501,160,390,169,270,184,217,195,215,190,269,179,389,164,506,158"/>
+<area shape="rect" id="Node000007" href="$d6/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_based_path_planner.html#a6f4c3a789f523c2ddc3b358871ce5d4f" title="Generates the complete ordered sequence of waypoint points, normals, and entity indices for the entir..." alt="" coords="270,193,471,252"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="501,189,472,200,471,194,506,188"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="251,223,223,225,222,220,256,222"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="776,156,744,159,743,153,781,156"/>
+<area shape="rect" id="Node000011" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a1936685aa571992f8a32d88fc9626de8" title="Orders feature clusters by adjacency &#45; processes all adjacent faces before jumping to disconnected re..." alt="" coords="1090,272,1316,331"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1351,301,1317,304,1317,299,1356,301"/>
+<area shape="rect" id="Node000012" href="$d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae57cff78278f5f6e08c149101c6a4828" title="Orders points by first clustering them per face (feature), then sequencing features by proximity,..." alt="" coords="805,272,1024,331"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="1369,334,1321,345,1255,353,1203,355,1085,345,1022,334,1022,329,1086,340,1203,350,1255,347,1321,340,1363,335"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="1072,301,1025,304,1024,299,1077,301"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="787,302,548,296,408,284,269,267,215,255,215,250,270,261,408,279,548,290,792,301"/>
+</map>

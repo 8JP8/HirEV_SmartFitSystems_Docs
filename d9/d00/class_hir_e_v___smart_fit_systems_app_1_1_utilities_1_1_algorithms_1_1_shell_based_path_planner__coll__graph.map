@@ -1,13 +1,15 @@
 <map id="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner" name="HirEV_SmartFitSystemsApp.Utilities.Algorithms.ShellBasedPathPlanner">
-<area shape="rect" id="Node000001" title="Coordinates shell&#45;constrained path planning for CAD models. Manages approach point generation,..." alt="" coords="298,2373,527,3643"/>
-<area shape="rect" id="Node000002" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html" title="Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field ..." alt="" coords="175,5,405,1200"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,889,117,1075,91,1174,72,1272,28,1555,15,1670,9,1778,10,1885,21,2000,41,2129,72,2279,90,2350,113,2422,168,2561,230,2692,292,2808,287,2809,225,2694,163,2563,108,2423,85,2352,67,2281,36,2130,16,2001,5,1886,4,1778,10,1670,23,1554,67,1272,86,1173,112,1074,175,884"/>
-<area shape="rect" id="Node000003" href="$d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_point_generator.html" title="Generates approach points for measurement points. Logic:" alt="" coords="185,1672,395,1880"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="290,1197,293,1655,287,1655,290,1202"/>
-<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html" title="Computes shortest paths on the shell for navigation between approach points. Uses a K&#45;nearest neighbo..." alt="" coords="419,1272,649,2280"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="405,1155,428,1255,423,1255,405,1160"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,1877,349,2349,350,2357,344,2356,344,2350,299,1882"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="485,2277,479,2357,474,2356,484,2282"/>
-<area shape="rect" id="Node000005" href="$db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html" title="Configuration data structure holding parameters for shared local&#45;base clearance rules during path gen..." alt="" coords="673,1704,888,1848"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="767,1845,725,2044,663,2281,601,2482,535,2677,530,2675,596,2480,658,2279,719,2043,765,1850"/>
+<area shape="rect" id="Node000001" title="Coordinates shell&#45;constrained path planning for CAD models. Manages approach point generation,..." alt="" coords="433,2373,662,3557"/>
+<area shape="rect" id="Node000002" href="$db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html" title="Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field ..." alt="" coords="189,5,419,1200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,889,131,1075,105,1174,86,1272,38,1556,20,1673,10,1781,10,1889,21,2004,45,2131,86,2279,115,2359,151,2438,192,2514,237,2587,333,2720,425,2831,420,2833,329,2723,233,2590,187,2516,146,2440,110,2361,81,2281,40,2132,15,2004,4,1890,5,1781,15,1672,32,1555,81,1272,100,1173,126,1074,189,884"/>
+<area shape="rect" id="Node000003" href="$d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_point_generator.html" title="Generates approach points for measurement points. Logic:" alt="" coords="199,1672,409,1880"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="304,1197,307,1655,301,1655,304,1202"/>
+<area shape="rect" id="Node000004" href="$de/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_geodesic_navigator.html" title="Computes shortest paths on the shell for navigation between approach points. Uses a K&#45;nearest neighbo..." alt="" coords="433,1272,663,2280"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="419,1155,442,1255,437,1255,419,1160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,1877,416,2349,433,2428,427,2428,411,2350,322,1882"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="548,2277,550,2357,545,2356,547,2282"/>
+<area shape="rect" id="Node000005" href="$db/d03/struct_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_base_avoidance_config.html" title="Configuration data structure holding parameters for shared local&#45;base clearance rules during path gen..." alt="" coords="687,1704,902,1848"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="781,1845,668,2397,663,2396,779,1850"/>
+<area shape="rect" id="Node000006" href="$d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html" title="Configuration data holding CMM probe head kinematic parameters, velocities, and cost weighting factor..." alt="" coords="926,1597,1130,1955"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="1001,1952,968,2115,944,2199,917,2281,863,2411,801,2540,736,2661,673,2770,669,2767,731,2659,796,2538,858,2409,912,2279,939,2198,962,2114,999,1957"/>
 </map>

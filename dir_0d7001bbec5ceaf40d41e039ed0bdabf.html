@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.37</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -104,22 +104,103 @@ Grafo de dependências do diretório Cmm_Montages:</div>
 </div>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
-CMM Head &amp; Probe Montages Folder</h1>
-<p>This directory allows you to define arbitrary CMM motorized/manual heads and probe tip assemblies with automated kinematic chain simulation.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
-Directory Structure</h1>
-<p>Each subfolder represents a tool montage: <span class="tt">
-Cmm_Montages/
-  ├── PH10M_TP20/
-  │     ├── MontageConfig.xml   (Defines kinematics, attachment offsets, and pivot centers)
-  │     ├── Head.stp            (3D CAD file for the head body - stays vertical on Z-ram)
-  │     └── Tip.stp             (3D CAD file for probe + stylus - articulates in A/B angles)
-  └── Custom_Head_Probe/
-        ├── MontageConfig.xml
-        ├── Head.stl
-        └── Tip.stl
-</span></p>
-<p>If Head.stp or Tip.stp are omitted, the application automatically synthesizes high-fidelity parametric CAD geometry matching the dimensions specified in MontageConfig.xml. </p>
+CMM Head &amp; Probe Montages Library (v0.0.37)</h1>
+<p>This directory contains definitions, configuration files, and 3D CAD models for Coordinate Measuring Machine (CMM) motorized/manual heads and probe tip assemblies. It drives forward kinematic chain simulation, DMIS 5.3 sensor definitions, and the <b>Probe Approach Optimizer (PAO)</b> introduced in <b>v0.0.37</b>.</p>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Directory Overview</h1>
+<p>Each subfolder represents a concrete CMM tool montage. In addition, the shared <span class="tt">Renishaw_CAD_Library/</span> provides standard head bodies, probe sensors, modules, and ruby styli used to compose assemblies:</p>
+<div class="fragment"><div class="line">Cmm_Montages/</div>
+<div class="line">  ├── Renishaw_CAD_Library/       # Shared master CAD library</div>
+<div class="line">  │     ├── Heads/                # PH10M, PH20 STEP models (mated &amp; isolated)</div>
+<div class="line">  │     ├── Probes/               # TP20 body, TP20 SF/EM1/EM2 modules, TP200, SP25M</div>
+<div class="line">  │     └── Ruby_Styli/           # M2/M3 styli (1x10mm up to 5x50mm) and extensions (10-100mm)</div>
+<div class="line">  │</div>
+<div class="line">  ├── PH10M_TP20/                 # Standard Renishaw PH10M with TP20 &amp; 20mm stylus</div>
+<div class="line">  │     ├── MontageConfig.xml     # Kinematic chain, angle limits, pivot offsets, DMIS label</div>
+<div class="line">  │     ├── Head.stp              # Head body CAD model (mounted to CMM Z-ram)</div>
+<div class="line">  │     └── Tip.stp / Tip.stl     # Articulated probe + stylus sub-assembly</div>
+<div class="line">  │</div>
+<div class="line">  ├── PH10M_TP20_3x30/            # PH10M + TP20 with Ø3mm x 30mm stylus</div>
+<div class="line">  ├── PH10M_TP20_EM1_3x30/        # PH10M + TP20 EM1 (50mm extension module) + Ø3x30mm stylus</div>
+<div class="line">  ├── PH10M_TP20_EM2_4x50/        # PH10M + TP20 EM2 (100mm extension module) + Ø4x50mm stylus</div>
+<div class="line">  ├── PH10M_TP20_SE20_3x30/       # PH10M + TP20 + 20mm extension bar + Ø3x30mm stylus</div>
+<div class="line">  ├── PH10M_TP200_.../            # PH10M with high-accuracy strain-gauge TP200 assemblies</div>
+<div class="line">  ├── PH10M_SP25M_.../            # PH10M with SP25M scanning probe assemblies</div>
+<div class="line">  ├── PH20_TP20_.../              # Renishaw PH20 5-axis continuous articulating head assemblies</div>
+<div class="line">  └── Custom_Head_Probe/          # User-defined custom head and probe configurations</div>
+</div><!-- fragment --><hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Montage Configuration Schema (<span class="tt">MontageConfig.xml</span>)</h1>
+<p>Every montage folder includes a <span class="tt">MontageConfig.xml</span> that parameterizes the tool kinematics, physical dimensions, and DMIS mapping:</p>
+<div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div>
+<div class="line">&lt;<span class="keywordtype">CmmMontageConfig</span> <span class="keyword">xmlns:xsi</span>=<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="keyword">xmlns:xsd</span>=<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">MontageName</span>&gt;<span class="keyword">PH10M_TP20</span>&lt;/<span class="keywordtype">MontageName</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">Description</span>&gt;<span class="keyword">Renishaw</span> <span class="keyword">PH10M</span> <span class="keyword">indexing</span> <span class="keyword">head</span> <span class="keyword">with</span> <span class="keyword">TP20</span> <span class="keyword">probe</span> <span class="keyword">module</span> <span class="keyword">and</span> 20<span class="keyword">mm</span> <span class="keyword">stylus</span>&lt;/<span class="keywordtype">Description</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">HeadModelFile</span>&gt;<span class="keyword">Head.stp</span>&lt;/<span class="keywordtype">HeadModelFile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">TipModelFile</span>&gt;<span class="keyword">Tip.stp</span>&lt;/<span class="keywordtype">TipModelFile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AttachmentOffsetX</span>&gt;0.0&lt;/<span class="keywordtype">AttachmentOffsetX</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AttachmentOffsetY</span>&gt;0.0&lt;/<span class="keywordtype">AttachmentOffsetY</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AttachmentOffsetZ</span>&gt;-45.0&lt;/<span class="keywordtype">AttachmentOffsetZ</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">PivotOffsetB</span>&gt;-5.0&lt;/<span class="keywordtype">PivotOffsetB</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">PivotOffsetA</span>&gt;-25.0&lt;/<span class="keywordtype">PivotOffsetA</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">TipContactOffsetX</span>&gt;0.0&lt;/<span class="keywordtype">TipContactOffsetX</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">TipContactOffsetY</span>&gt;0.0&lt;/<span class="keywordtype">TipContactOffsetY</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">TipContactOffsetZ</span>&gt;-59.2&lt;/<span class="keywordtype">TipContactOffsetZ</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">RubyBallRadius</span>&gt;1.0&lt;/<span class="keywordtype">RubyBallRadius</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisAMin</span>&gt;0.0&lt;/<span class="keywordtype">AxisAMin</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisAMax</span>&gt;105.0&lt;/<span class="keywordtype">AxisAMax</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisAStep</span>&gt;7.5&lt;/<span class="keywordtype">AxisAStep</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisBMin</span>&gt;-180.0&lt;/<span class="keywordtype">AxisBMin</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisBMax</span>&gt;180.0&lt;/<span class="keywordtype">AxisBMax</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">AxisBStep</span>&gt;7.5&lt;/<span class="keywordtype">AxisBStep</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">TargetDmisSensorLabel</span>&gt;<span class="keyword">PH10M_TP20</span>&lt;/<span class="keywordtype">TargetDmisSensorLabel</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">DefaultRackSlot</span>&gt;1&lt;/<span class="keywordtype">DefaultRackSlot</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">CmmMontageConfig</span>&gt;</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Parameter Reference</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parameter  </th><th class="markdownTableHeadLeft">Type / Units  </th><th class="markdownTableHeadLeft">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">MontageName</span>  </td><td class="markdownTableBodyLeft">string  </td><td class="markdownTableBodyLeft">Unique identifier matching the folder name and tool assignment catalog.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">HeadModelFile</span>  </td><td class="markdownTableBodyLeft">filename  </td><td class="markdownTableBodyLeft">CAD file (<span class="tt">.stp</span>, <span class="tt">.step</span>, <span class="tt">.stl</span>) for the stationary head body mounted on the CMM quill.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">TipModelFile</span>  </td><td class="markdownTableBodyLeft">filename  </td><td class="markdownTableBodyLeft">CAD file (<span class="tt">.stp</span>, <span class="tt">.step</span>, <span class="tt">.stl</span>) for the articulating wrist and stylus sub-assembly.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">AttachmentOffsetZ</span>  </td><td class="markdownTableBodyLeft">mm  </td><td class="markdownTableBodyLeft">Vertical distance from CMM quill flange to head mounting datum.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">PivotOffsetB</span>  </td><td class="markdownTableBodyLeft">mm  </td><td class="markdownTableBodyLeft">Z-offset for the <b>B-axis</b> (Yaw / Azimuth rotation about Z).  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">PivotOffsetA</span>  </td><td class="markdownTableBodyLeft">mm  </td><td class="markdownTableBodyLeft">Z-offset for the <b>A-axis</b> (Pitch / Inclination rotation about local X).  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">TipContactOffsetZ</span>  </td><td class="markdownTableBodyLeft">mm  </td><td class="markdownTableBodyLeft">Distance from the A-axis pivot center to the ruby ball center.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">RubyBallRadius</span>  </td><td class="markdownTableBodyLeft">mm  </td><td class="markdownTableBodyLeft">Calibrated radius of the spherical contact tip (used in tip radius compensation).  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">AxisAMin / AxisAMax</span>  </td><td class="markdownTableBodyLeft">degrees  </td><td class="markdownTableBodyLeft">Inclination angle limits (e.g., 0.0° to 105.0° for PH10; up to 115.0° for PH20).  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">AxisAStep / AxisBStep</span>  </td><td class="markdownTableBodyLeft">degrees  </td><td class="markdownTableBodyLeft">Angular indexing resolution (7.5° for discrete Hirth joint heads; 0.0° for continuous 5-axis heads).  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt">TargetDmisSensorLabel</span>  </td><td class="markdownTableBodyLeft">string  </td><td class="markdownTableBodyLeft">Symbolic label emitted in DMIS <span class="tt">S(name)=SNSDEF/...</span> statements.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt">DefaultRackSlot</span>  </td><td class="markdownTableBodyLeft">integer  </td><td class="markdownTableBodyLeft">Default slot number assigned in tool changing racks (e.g., MCR20, SCR200, FCR25).  </td></tr>
+</table>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Parametric CAD Fallback</h1>
+<p>If <span class="tt">HeadModelFile</span> or <span class="tt">TipModelFile</span> is omitted or missing from a montage folder, the application dynamically generates parametric Eyeshot 3D CAD geometry matching the offsets, shank diameters, and ruby ball radius defined in <span class="tt">MontageConfig.xml</span>.</p>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Integration with v0.0.37 Path Planning &amp; PAO</h1>
+<p>In version <b>0.0.37</b>, montages defined in this directory are directly coupled with the core planning algorithms:</p>
+<ol type="1">
+<li><b>Probe Approach Optimizer (PAO):</b> The application resolves the active tool montage via <span class="tt">CmmStandardToolCatalog.ResolveToolMontage(toolName)</span> and constructs a <span class="tt">ProbeHeadKinematicsConfig</span>. The optimizer uses the head's mechanical properties (indexable vs. continuous, indexing step, unlock/lock latency, angular velocity) to sequence measurement waypoints and cluster features by iso-orientation, minimizing head rotations.</li>
+<li><b>Standardized Angle Limits:</b> When converting surface normals to discrete (A, B) wrist angles (<span class="tt">ProbeAngleStandardizer</span>), the planner uses the montage's exact <span class="tt">AxisAStep</span>, <span class="tt">AxisBStep</span>, and <span class="tt">AxisAMax</span> instead of generic fallbacks.</li>
+<li><b>ANSI/DMIS 5.3 Code Generation:</b> The post-processor pulls the montage's <span class="tt">TargetDmisSensorLabel</span> and <span class="tt">DefaultRackSlot</span> to emit accurate <span class="tt">SNSDEF</span>, <span class="tt">SNSLCT</span>, <span class="tt">THLDEF</span>, and <span class="tt">WRIST</span> statements.</li>
+<li><b>Kinematic Collision Checking:</b> The multi-body forward kinematics assembly loads the exact 3D solid meshes from this directory for collision verification against part geometry. </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

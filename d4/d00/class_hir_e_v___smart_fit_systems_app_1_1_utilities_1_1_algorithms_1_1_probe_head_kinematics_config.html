@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HirEV SmartFitSystems: Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.37</span>
+   </div>
+   <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html','../../','d5/d01/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência à classe HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">Configuration</a> data holding CMM probe head kinematic parameters, velocities, and cost weighting factors for PAO (Probe Approach Orientation) trajectory optimization.  
+ <a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config__coll__graph.png" border="0" usemap="#a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_head_kinematics_config_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_head_kinematics_config_coll__map" id="a_hir_e_v___smart_fit_systems_app_8_utilities_8_algorithms_8_probe_head_kinematics_config_coll__map">
+<area shape="rect" title="Configuration data holding CMM probe head kinematic parameters, velocities, and cost weighting factor..." alt="" coords="5,5,209,363"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a26f25995b47df623fb439a14c3cae03a" id="r_a26f25995b47df623fb439a14c3cae03a"><td class="memItemLeft">static <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#a26f25995b47df623fb439a14c3cae03a">CreateFromTool</a> (string? toolName, <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>? baseConfig=null)</td></tr>
+<tr class="memdesc:a26f25995b47df623fb439a14c3cae03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a dynamic kinematic configuration corresponding directly to a specific CMM tool montage and real DMIS head.  <br /></td></tr>
+<tr class="memitem:acfede6046edd453db45582d8bb6b9077" id="r_acfede6046edd453db45582d8bb6b9077"><td class="memItemLeft">static <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#acfede6046edd453db45582d8bb6b9077">CreateFromCmmHead</a> (<a class="el" href="../../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html">CmmHeadDefinition</a> head, string? toolName=null, <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>? baseConfig=null)</td></tr>
+<tr class="memdesc:acfede6046edd453db45582d8bb6b9077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a dynamic kinematic configuration directly from a real DMIS head definition.  <br /></td></tr>
+<tr class="memitem:a3c1a01abbbe44e3b5e1c6a2eec8e3ef9" id="r_a3c1a01abbbe44e3b5e1c6a2eec8e3ef9"><td class="memItemLeft">static <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3c1a01abbbe44e3b5e1c6a2eec8e3ef9">LoadFromConfig</a> ()</td></tr>
+<tr class="memdesc:a3c1a01abbbe44e3b5e1c6a2eec8e3ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads probe head kinematics and PAO configuration from application configuration (<code>App.config</code>).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Propriedades</h2></td></tr>
+<tr class="memitem:a79e5b47ccca1eb26ba274b70f033c060" id="r_a79e5b47ccca1eb26ba274b70f033c060"><td class="memItemLeft"><a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#a0727a0cb1f86bc9ba6b610bc5a50f4c4">ProbeHeadPreset</a>&#160;</td><td class="memItemRight"><a class="el" href="#a79e5b47ccca1eb26ba274b70f033c060">Preset</a> = <a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#a0727a0cb1f86bc9ba6b610bc5a50f4c4abaf7194db678ec6c4b136af52490bf88">ProbeHeadPreset.PH10M</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a79e5b47ccca1eb26ba274b70f033c060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active probe head preset.  <br /></td></tr>
+<tr class="memitem:adff292542ea7ea21a0dd974e306000d0" id="r_adff292542ea7ea21a0dd974e306000d0"><td class="memItemLeft"><a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#ae523bcdf8f33516376cf871161304f47">ProbeHeadType</a>&#160;</td><td class="memItemRight"><a class="el" href="#adff292542ea7ea21a0dd974e306000d0">HeadType</a> = <a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#ae523bcdf8f33516376cf871161304f47a0bcff42b5aed2b0e4501ed178e4f2510">ProbeHeadType.Indexable</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adff292542ea7ea21a0dd974e306000d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematic operating mechanism: Indexable (discrete Hirth teeth) or Continuous (5-axis servo).  <br /></td></tr>
+<tr class="memitem:afcbd5f17e29ae35860d5279c909dec95" id="r_afcbd5f17e29ae35860d5279c909dec95"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afcbd5f17e29ae35860d5279c909dec95">EnablePAOOptimization</a> = true<code> [get, set]</code></td></tr>
+<tr class="memdesc:afcbd5f17e29ae35860d5279c909dec95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master switch enabling PAO-aware trajectory optimization.  <br /></td></tr>
+<tr class="memitem:a276da576178d542f66f76cfc1d255a22" id="r_a276da576178d542f66f76cfc1d255a22"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a276da576178d542f66f76cfc1d255a22">EnableIsoOrientationClustering</a> = true<code> [get, set]</code></td></tr>
+<tr class="memdesc:a276da576178d542f66f76cfc1d255a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, prioritizes points with identical or compatible head orientations within color/face groups.  <br /></td></tr>
+<tr class="memitem:aacfff352471478bccdddd97f6136464d" id="r_aacfff352471478bccdddd97f6136464d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aacfff352471478bccdddd97f6136464d">StepADeg</a> = 7.5<code> [get, set]</code></td></tr>
+<tr class="memdesc:aacfff352471478bccdddd97f6136464d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discrete step for head axis A in degrees (7.5° for PH10; 0.0° for continuous PH20).  <br /></td></tr>
+<tr class="memitem:a0a833dde487b8881d6bfaacf12764cf2" id="r_a0a833dde487b8881d6bfaacf12764cf2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0a833dde487b8881d6bfaacf12764cf2">StepBDeg</a> = 7.5<code> [get, set]</code></td></tr>
+<tr class="memdesc:a0a833dde487b8881d6bfaacf12764cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discrete step for head axis B in degrees (7.5° for PH10; 0.0° for continuous PH20).  <br /></td></tr>
+<tr class="memitem:a9954d252fd8141cc9249e2f49a17ff63" id="r_a9954d252fd8141cc9249e2f49a17ff63"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a9954d252fd8141cc9249e2f49a17ff63">MaxADeg</a> = 105.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a9954d252fd8141cc9249e2f49a17ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum permissible A inclination angle in degrees (105.0° for PH10; 115.0° for PH20).  <br /></td></tr>
+<tr class="memitem:af649fa66f80e8adeaf52ae2895ffe47d" id="r_af649fa66f80e8adeaf52ae2895ffe47d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#af649fa66f80e8adeaf52ae2895ffe47d">AngleReuseThresholdDeg</a> = 15.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:af649fa66f80e8adeaf52ae2895ffe47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angular reuse threshold in degrees to reuse current head orientation without indexing.  <br /></td></tr>
+<tr class="memitem:ace8082c9587f93a8e37a10556b09821e" id="r_ace8082c9587f93a8e37a10556b09821e"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ace8082c9587f93a8e37a10556b09821e">RotationTimeBaseSec</a> = 2.4<code> [get, set]</code></td></tr>
+<tr class="memdesc:ace8082c9587f93a8e37a10556b09821e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed mechanical latency in seconds for uncoupling/coupling Hirth teeth and seating (2.4s for PH10; 0.0s for PH20).  <br /></td></tr>
+<tr class="memitem:a213c7c06743c6c0707d787ec36a1d29a" id="r_a213c7c06743c6c0707d787ec36a1d29a"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a213c7c06743c6c0707d787ec36a1d29a">TimePerStepSec</a> = 0.091<code> [get, set]</code></td></tr>
+<tr class="memdesc:a213c7c06743c6c0707d787ec36a1d29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotational time in seconds per 7.5° step (0.091s for PH10: 2.5s for 7.5°, 3.5s for 90°; 0.0s for PH20).  <br /></td></tr>
+<tr class="memitem:acb6869282fe614ab2ca0325b31e8e9f1" id="r_acb6869282fe614ab2ca0325b31e8e9f1"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#acb6869282fe614ab2ca0325b31e8e9f1">MaxAngularVelocityDegPerSec</a> = 60.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:acb6869282fe614ab2ca0325b31e8e9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum angular velocity in deg/s (60.0°/s for PH10; 360.0°/s to 1080.0°/s for PH20).  <br /></td></tr>
+<tr class="memitem:adfa57d0c8244e21f9e3aa0cdc63302b9" id="r_adfa57d0c8244e21f9e3aa0cdc63302b9"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#adfa57d0c8244e21f9e3aa0cdc63302b9">AngularAccelerationDegPerSec2</a> = 300.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:adfa57d0c8244e21f9e3aa0cdc63302b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angular acceleration in deg/s² (300.0°/s² for PH10; 3000.0°/s² for PH20).  <br /></td></tr>
+<tr class="memitem:abb78d3c6ac1fc7ccc14f6cf6bf484626" id="r_abb78d3c6ac1fc7ccc14f6cf6bf484626"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#abb78d3c6ac1fc7ccc14f6cf6bf484626">LinearVelocityMmPerSec</a> = 300.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:abb78d3c6ac1fc7ccc14f6cf6bf484626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nominal linear velocity of CMM Cartesian axes in mm/s (e.g. 300 mm/s).  <br /></td></tr>
+<tr class="memitem:a4ac6b046429a9e3e2c4ec376c90440f3" id="r_a4ac6b046429a9e3e2c4ec376c90440f3"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a4ac6b046429a9e3e2c4ec376c90440f3">WeightRotation</a> = 1.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a4ac6b046429a9e3e2c4ec376c90440f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cost weighting factor for head rotation time in combined objective function.  <br /></td></tr>
+<tr class="memitem:a2fcd873838850c314e4bb8bb4ba77db1" id="r_a2fcd873838850c314e4bb8bb4ba77db1"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a2fcd873838850c314e4bb8bb4ba77db1">WeightDistance</a> = 1.0<code> [get, set]</code></td></tr>
+<tr class="memdesc:a2fcd873838850c314e4bb8bb4ba77db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cost weighting factor for linear transit time in combined objective function.  <br /></td></tr>
+<tr class="memitem:a8a8752aa7d810f609c278610314c8962" id="r_a8a8752aa7d810f609c278610314c8962"><td class="memItemLeft"><a class="el" href="../../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html">CmmHeadDefinition</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a8a8752aa7d810f609c278610314c8962">AssociatedCmmHead</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8a8752aa7d810f609c278610314c8962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the associated real DMIS CMM head definition from the standard catalog if resolved.  <br /></td></tr>
+<tr class="memitem:ace31785f2030eba7114768c0584c47b0" id="r_ace31785f2030eba7114768c0584c47b0"><td class="memItemLeft">string?&#160;</td><td class="memItemRight"><a class="el" href="#ace31785f2030eba7114768c0584c47b0">AssociatedToolName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ace31785f2030eba7114768c0584c47b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the associated tool/montage identifier.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p><a class="el" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">Configuration</a> data holding CMM probe head kinematic parameters, velocities, and cost weighting factors for PAO (Probe Approach Orientation) trajectory optimization. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00031">31</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="acfede6046edd453db45582d8bb6b9077" name="acfede6046edd453db45582d8bb6b9077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfede6046edd453db45582d8bb6b9077">&#9670;&#160;</a></span>CreateFromCmmHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.CreateFromCmmHead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html">CmmHeadDefinition</a></td>          <td class="paramname"><span class="paramname"><em>head</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string?</td>          <td class="paramname"><span class="paramname"><em>toolName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>?</td>          <td class="paramname"><span class="paramname"><em>baseConfig</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a dynamic kinematic configuration directly from a real DMIS head definition. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>The CMM head definition (e.g. Renishaw PH10M or PH20).</td></tr>
+    <tr><td class="paramname">toolName</td><td>Optional tool/montage name.</td></tr>
+    <tr><td class="paramname">baseConfig</td><td>Optional base configuration to inherit global weights and velocities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html" title="Configuration data holding CMM probe head kinematic parameters, velocities, and cost weighting factor...">ProbeHeadKinematicsConfig</a> with kinematics calibrated to the specified head.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00104">104</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00008">HirEV_SmartFitSystemsApp.Models.CmmHeadDefinition.ModelId</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00090">CreateFromTool()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_acfede6046edd453db45582d8bb6b9077_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_acfede6046edd453db45582d8bb6b9077_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_acfede6046edd453db45582d8bb6b9077_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_acfede6046edd453db45582d8bb6b9077_icgraph">
+<area shape="rect" title="Creates a dynamic kinematic configuration directly from a real DMIS head definition." alt="" coords="539,5,799,64"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html#a26f25995b47df623fb439a14c3cae03a" title="Creates a dynamic kinematic configuration corresponding directly to a specific CMM tool montage and r..." alt="" coords="270,5,491,64"/>
+<area shape="poly" title=" " alt="" coords="521,35,492,37,491,32,526,35"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adae12147e36771b63c3994b0d24ec5d5" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,5,222,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,222,37,222,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26f25995b47df623fb439a14c3cae03a" name="a26f25995b47df623fb439a14c3cae03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f25995b47df623fb439a14c3cae03a">&#9670;&#160;</a></span>CreateFromTool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.CreateFromTool </td>
+          <td>(</td>
+          <td class="paramtype">string?</td>          <td class="paramname"><span class="paramname"><em>toolName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a>?</td>          <td class="paramname"><span class="paramname"><em>baseConfig</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a dynamic kinematic configuration corresponding directly to a specific CMM tool montage and real DMIS head. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toolName</td><td>The tool or montage name assigned to the color/face.</td></tr>
+    <tr><td class="paramname">baseConfig</td><td>Optional base configuration to inherit global switches, weights and velocities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A <a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html" title="Configuration data holding CMM probe head kinematic parameters, velocities, and cost weighting factor...">ProbeHeadKinematicsConfig</a> tailored to the real CMM head.</dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00090">90</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00104">CreateFromCmmHead()</a> e <a class="el" href="../../da/d02/_cmm_standard_tool_catalog_8cs_source.html#l00741">HirEV_SmartFitSystemsApp.Models.CmmStandardToolCatalog.ResolveToolMontage()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l06729">HirEV_SmartFitSystemsApp.Utilities.PathManager.CreatePathHeuristicAsync()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_cgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_cgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_cgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_cgraph">
+<area shape="rect" title="Creates a dynamic kinematic configuration corresponding directly to a specific CMM tool montage and r..." alt="" coords="5,47,227,105"/>
+<area shape="rect" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html#acfede6046edd453db45582d8bb6b9077" title="Creates a dynamic kinematic configuration directly from a real DMIS head definition." alt="" coords="275,5,535,64"/>
+<area shape="poly" title=" " alt="" coords="226,58,262,55,257,56,228,63"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#a85db193ee133556275d7759acd74eb77" title="Resolves any tool name (montage ID, folder name, or legacy alias) into a complete paired CmmToolMonta..." alt="" coords="293,88,517,147"/>
+<area shape="poly" title=" " alt="" coords="227,89,280,99,274,100,227,95"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#ae98043774eb85da77af2a05dda4425e9" title="Associates a standalone ruby stylus with the standard Renishaw CMM montage that best adapts to it." alt="" coords="583,47,807,105"/>
+<area shape="poly" title=" " alt="" coords="517,99,570,94,565,95,518,104"/>
+<area shape="rect" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_standard_tool_catalog.html#a5a4cbf1f6747678ff8538d5166a8f5c8" title="Determines if the tool name corresponds to a standalone ruby stylus." alt="" coords="583,129,807,188"/>
+<area shape="poly" title=" " alt="" coords="517,131,570,140,565,140,517,136"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a26f25995b47df623fb439a14c3cae03a_icgraph">
+<area shape="rect" title="Creates a dynamic kinematic configuration corresponding directly to a specific CMM tool montage and r..." alt="" coords="270,5,491,64"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#adae12147e36771b63c3994b0d24ec5d5" title="Generates measurement paths for each color group with control point filtering and optimization." alt="" coords="5,5,222,64"/>
+<area shape="poly" title=" " alt="" coords="252,35,222,37,222,32,257,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c1a01abbbe44e3b5e1c6a2eec8e3ef9" name="a3c1a01abbbe44e3b5e1c6a2eec8e3ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1a01abbbe44e3b5e1c6a2eec8e3ef9">&#9670;&#160;</a></span>LoadFromConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.LoadFromConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads probe head kinematics and PAO configuration from application configuration (<code>App.config</code>). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00156">156</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../da/d00/_path_manager_8cs_source.html#l00570">HirEV_SmartFitSystemsApp.Utilities.ControlPointFilterConfig.LoadFromConfig()</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a3c1a01abbbe44e3b5e1c6a2eec8e3ef9_icgraph.png" border="0" usemap="#ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a3c1a01abbbe44e3b5e1c6a2eec8e3ef9_icgraph" loading="lazy" alt=""/></div>
+<map name="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a3c1a01abbbe44e3b5e1c6a2eec8e3ef9_icgraph" id="ad4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config_a3c1a01abbbe44e3b5e1c6a2eec8e3ef9_icgraph">
+<area shape="rect" title="Loads probe head kinematics and PAO configuration from application configuration (App...." alt="" coords="2311,188,2535,247"/>
+<area shape="rect" href="../../da/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_control_point_filter_config.html#a60c2886e9028a17a926dcc3b4c7c3997" title="Loads configuration settings from App.config." alt="" coords="2051,188,2263,247"/>
+<area shape="poly" title=" " alt="" coords="2293,217,2263,220,2263,215,2298,217"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a399733ecb3c0988ae1177f433dcb4eab" title="Initializes a new instance of the PathManager class." alt="" coords="1775,196,2003,239"/>
+<area shape="poly" title=" " alt="" coords="2033,217,2003,220,2003,215,2038,217"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a8960d536fb5895c5a711be519bc2a3fb" title="Removes all collision markers from the scene and clears collision highlights, reverting points and pa..." alt="" coords="1474,88,1708,147"/>
+<area shape="poly" title=" " alt="" coords="1806,190,1680,150,1681,145,1811,191"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a02cd04e938aa334149d3007927fe06c3" title="Executes the SimulationTimer_Tick method." alt="" coords="624,159,835,217"/>
+<area shape="poly" title=" " alt="" coords="1757,211,1727,212,1227,199,835,192,835,187,1228,193,1727,207,1762,211"/>
+<area shape="rect" href="../../da/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager_1_1_simulation_block_reference.html#a3561f8e265591f754f7dc0b4df549f4c" title="Executes the SimulationBlockReference method." alt="" coords="1455,221,1727,280"/>
+<area shape="poly" title=" " alt="" coords="1762,232,1728,238,1727,233,1757,232"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a725e1abd3e683aef4022461e8c77c3d5" title="Executes the ClearAllPaths method." alt="" coords="1177,17,1407,60"/>
+<area shape="poly" title=" " alt="" coords="1459,83,1376,63,1376,58,1465,84"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aee97c0891dd433e9eb91094b6588855f" title=" " alt="" coords="1188,88,1396,147"/>
+<area shape="poly" title=" " alt="" coords="1456,118,1396,120,1396,115,1461,117"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad471ab95635b70be352b52f0019126e2" title="Loads paths from a PathExportDTO." alt="" coords="923,5,1128,64"/>
+<area shape="poly" title=" " alt="" coords="1158,37,1129,39,1129,34,1163,36"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd1bd072f94804c6030db3f35c8c9ea1" title="Imports paths from a JSON or XML file and loads them into the PathManager for display." alt="" coords="622,13,836,56"/>
+<area shape="poly" title=" " alt="" coords="905,35,837,37,836,32,910,34"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#aa3d40e668328a91636be7136008e064d" title="Executes the CompleteSimulation method." alt="" coords="922,88,1129,147"/>
+<area shape="poly" title=" " alt="" coords="1169,118,1129,120,1129,115,1174,117"/>
+<area shape="poly" title=" " alt="" coords="910,145,836,165,835,160,905,146"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#afd602eb8c7f8fc179563175597172f85" title="Executes the UpdateSimulationFrame method." alt="" coords="584,92,874,135"/>
+<area shape="poly" title=" " alt="" coords="904,116,875,118,875,113,909,115"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#a3192e8c18e89594cd7df07aa7917a28a" title=" " alt="" coords="315,229,514,288"/>
+<area shape="poly" title=" " alt="" coords="611,215,514,239,513,234,606,216"/>
+<area shape="poly" title=" " alt="" coords="529,273,757,301,891,311,1024,315,1293,315,1512,320,1607,313,1727,289,1793,265,1849,240,1854,238,1796,270,1728,295,1608,319,1513,325,1293,320,1024,320,891,316,757,306,529,279"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ae781a97da2683c27280f024b44ba6176" title=" " alt="" coords="293,84,536,143"/>
+<area shape="poly" title=" " alt="" coords="566,114,537,116,536,111,571,113"/>
+<area shape="rect" href="../../d4/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_path_manager.html#ad322c07d67c2966fa60820646865ea56" title="Executes the StartSimulation method." alt="" coords="5,92,245,135"/>
+<area shape="poly" title=" " alt="" coords="275,114,246,116,244,111,280,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Documentação das propriedades</h2>
+<a id="af649fa66f80e8adeaf52ae2895ffe47d" name="af649fa66f80e8adeaf52ae2895ffe47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af649fa66f80e8adeaf52ae2895ffe47d">&#9670;&#160;</a></span>AngleReuseThresholdDeg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.AngleReuseThresholdDeg = 15.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Angular reuse threshold in degrees to reuse current head orientation without indexing. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00055">55</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="adfa57d0c8244e21f9e3aa0cdc63302b9" name="adfa57d0c8244e21f9e3aa0cdc63302b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa57d0c8244e21f9e3aa0cdc63302b9">&#9670;&#160;</a></span>AngularAccelerationDegPerSec2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.AngularAccelerationDegPerSec2 = 300.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Angular acceleration in deg/s² (300.0°/s² for PH10; 3000.0°/s² for PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00067">67</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a8a8752aa7d810f609c278610314c8962" name="a8a8752aa7d810f609c278610314c8962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8752aa7d810f609c278610314c8962">&#9670;&#160;</a></span>AssociatedCmmHead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d00/class_hir_e_v___smart_fit_systems_app_1_1_models_1_1_cmm_head_definition.html">CmmHeadDefinition</a>? HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.AssociatedCmmHead</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the associated real DMIS CMM head definition from the standard catalog if resolved. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00079">79</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ace31785f2030eba7114768c0584c47b0" name="ace31785f2030eba7114768c0584c47b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace31785f2030eba7114768c0584c47b0">&#9670;&#160;</a></span>AssociatedToolName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string? HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.AssociatedToolName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the associated tool/montage identifier. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00082">82</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a276da576178d542f66f76cfc1d255a22" name="a276da576178d542f66f76cfc1d255a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276da576178d542f66f76cfc1d255a22">&#9670;&#160;</a></span>EnableIsoOrientationClustering</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.EnableIsoOrientationClustering = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When true, prioritizes points with identical or compatible head orientations within color/face groups. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00043">43</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00380">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.OrderPairsWithPAO()</a> e <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00593">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.OrderPointsWithPAO&lt; T &gt;()</a>.</p>
+
+</div>
+</div>
+<a id="afcbd5f17e29ae35860d5279c909dec95" name="afcbd5f17e29ae35860d5279c909dec95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbd5f17e29ae35860d5279c909dec95">&#9670;&#160;</a></span>EnablePAOOptimization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.EnablePAOOptimization = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Master switch enabling PAO-aware trajectory optimization. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00040">40</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00380">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.OrderPairsWithPAO()</a> e <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00593">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.OrderPointsWithPAO&lt; T &gt;()</a>.</p>
+
+</div>
+</div>
+<a id="adff292542ea7ea21a0dd974e306000d0" name="adff292542ea7ea21a0dd974e306000d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff292542ea7ea21a0dd974e306000d0">&#9670;&#160;</a></span>HeadType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#ae523bcdf8f33516376cf871161304f47">ProbeHeadType</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.HeadType = <a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#ae523bcdf8f33516376cf871161304f47a0bcff42b5aed2b0e4501ed178e4f2510">ProbeHeadType.Indexable</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kinematic operating mechanism: Indexable (discrete Hirth teeth) or Continuous (5-axis servo). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00037">37</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="abb78d3c6ac1fc7ccc14f6cf6bf484626" name="abb78d3c6ac1fc7ccc14f6cf6bf484626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb78d3c6ac1fc7ccc14f6cf6bf484626">&#9670;&#160;</a></span>LinearVelocityMmPerSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.LinearVelocityMmPerSec = 300.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nominal linear velocity of CMM Cartesian axes in mm/s (e.g. 300 mm/s). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00070">70</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00349">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateTranslationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a9954d252fd8141cc9249e2f49a17ff63" name="a9954d252fd8141cc9249e2f49a17ff63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9954d252fd8141cc9249e2f49a17ff63">&#9670;&#160;</a></span>MaxADeg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.MaxADeg = 105.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum permissible A inclination angle in degrees (105.0° for PH10; 115.0° for PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00052">52</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="acb6869282fe614ab2ca0325b31e8e9f1" name="acb6869282fe614ab2ca0325b31e8e9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6869282fe614ab2ca0325b31e8e9f1">&#9670;&#160;</a></span>MaxAngularVelocityDegPerSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.MaxAngularVelocityDegPerSec = 60.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum angular velocity in deg/s (60.0°/s for PH10; 360.0°/s to 1080.0°/s for PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00064">64</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a79e5b47ccca1eb26ba274b70f033c060" name="a79e5b47ccca1eb26ba274b70f033c060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e5b47ccca1eb26ba274b70f033c060">&#9670;&#160;</a></span>Preset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#a0727a0cb1f86bc9ba6b610bc5a50f4c4">ProbeHeadPreset</a> HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.Preset = <a class="el" href="../../d6/d01/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms.html#a0727a0cb1f86bc9ba6b610bc5a50f4c4abaf7194db678ec6c4b136af52490bf88">ProbeHeadPreset.PH10M</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Active probe head preset. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00034">34</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ace8082c9587f93a8e37a10556b09821e" name="ace8082c9587f93a8e37a10556b09821e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace8082c9587f93a8e37a10556b09821e">&#9670;&#160;</a></span>RotationTimeBaseSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.RotationTimeBaseSec = 2.4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fixed mechanical latency in seconds for uncoupling/coupling Hirth teeth and seating (2.4s for PH10; 0.0s for PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00058">58</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="aacfff352471478bccdddd97f6136464d" name="aacfff352471478bccdddd97f6136464d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfff352471478bccdddd97f6136464d">&#9670;&#160;</a></span>StepADeg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.StepADeg = 7.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Discrete step for head axis A in degrees (7.5° for PH10; 0.0° for continuous PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00046">46</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a0a833dde487b8881d6bfaacf12764cf2" name="a0a833dde487b8881d6bfaacf12764cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a833dde487b8881d6bfaacf12764cf2">&#9670;&#160;</a></span>StepBDeg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.StepBDeg = 7.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Discrete step for head axis B in degrees (7.5° for PH10; 0.0° for continuous PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00049">49</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a213c7c06743c6c0707d787ec36a1d29a" name="a213c7c06743c6c0707d787ec36a1d29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213c7c06743c6c0707d787ec36a1d29a">&#9670;&#160;</a></span>TimePerStepSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.TimePerStepSec = 0.091</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotational time in seconds per 7.5° step (0.091s for PH10: 2.5s for 7.5°, 3.5s for 90°; 0.0s for PH20). </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00061">61</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00295">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateRotationTime()</a>.</p>
+
+</div>
+</div>
+<a id="a2fcd873838850c314e4bb8bb4ba77db1" name="a2fcd873838850c314e4bb8bb4ba77db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcd873838850c314e4bb8bb4ba77db1">&#9670;&#160;</a></span>WeightDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.WeightDistance = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cost weighting factor for linear transit time in combined objective function. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00076">76</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00365">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeApproachOptimizer.CalculateTransitionCost()</a>.</p>
+
+</div>
+</div>
+<a id="a4ac6b046429a9e3e2c4ec376c90440f3" name="a4ac6b046429a9e3e2c4ec376c90440f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac6b046429a9e3e2c4ec376c90440f3">&#9670;&#160;</a></span>WeightRotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadKinematicsConfig.WeightRotation = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cost weighting factor for head rotation time in combined objective function. </p>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00073">73</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/Users/JOAO-SARKKIS/OneDrive - AGT Robotique Inc/SARKKIS/SmartFitSystems - Hi-rEV/HirEV_SmartFitSystemsApp/HirEV_SmartFitSystemsApp/Utilities/Algorithms/<a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <img src="../../logo.png" style="height: 48px;" alt="SARKKIS Logo">
+    <span id="label" style="font-size: larger; color: #ffffff;">
+      &copy; SKK 2025-2026
+    </span>
+  </div>
+  <div class="footer-logo" style="margin-right: 1%;">
+    <img src="../../hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
+  </div>
+</div>
+</body>
+</html>

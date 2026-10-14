@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../website_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.36</span>
+   <div id="projectname">HirEV SmartFitSystems<span id="projectnumber">&#160;v0.0.37</span>
    </div>
    <div id="projectbrief">Automated metrology and path planning application for CMM systems</div>
   </td>
@@ -124,6 +124,10 @@ Componentes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Summary data structure reporting the outcome of a probe angle standardization pass.  <a href="../../d6/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_standardization_pass_summary.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:ProbeAngleStandardizer" id="r_ProbeAngleStandardizer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html">ProbeAngleStandardizer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class providing CMM bi-axial probe angle kinematics, angular reuse threshold optimization, measuring angle tolerance evaluation, and base avoidance coordination for path planning.  <a href="../../d6/d02/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_angle_standardizer.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:ProbeHeadKinematicsConfig" id="r_ProbeHeadKinematicsConfig"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html">ProbeHeadKinematicsConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/d00/namespace_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_configuration.html">Configuration</a> data holding CMM probe head kinematic parameters, velocities, and cost weighting factors for PAO (Probe Approach Orientation) trajectory optimization.  <a href="../../d4/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_head_kinematics_config.html#details">Mais...</a><br /></td></tr>
+<tr class="memitem:ProbeApproachOptimizer" id="r_ProbeApproachOptimizer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html">ProbeApproachOptimizer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-performance optimizer for CMM probe trajectory planning based on Probe Approach Orientation (PAO), multi-objective kinematic cost evaluation, and iso-orientation clustering.  <a href="../../db/d03/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_probe_approach_optimizer.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:SdfShellGenerator" id="r_SdfShellGenerator"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html">SdfShellGenerator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a continuous, watertight offset shell mesh from a BRep solid using a Signed Distance Field (SDF) + Extended Marching Cubes (EMC) pipeline.  <a href="../../db/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_generator.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:SdfShellVisualizer" id="r_SdfShellVisualizer"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../d6/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_sdf_shell_visualizer.html">SdfShellVisualizer</a></td></tr>
@@ -148,7 +152,65 @@ Componentes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure pairing a measurement point with its corresponding approach point.  <a href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_approach_measurement_pair.html#details">Mais...</a><br /></td></tr>
 <tr class="memitem:ShellProjectionUtils" id="r_ShellProjectionUtils"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html">ShellProjectionUtils</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for computing approach points, outward normals, and shell projections. Provides the foundation for mapping measurement points to their corresponding approach points on the exterior shell mesh for shell-constrained path planning.  <a href="../../dd/d00/class_hir_e_v___smart_fit_systems_app_1_1_utilities_1_1_algorithms_1_1_shell_projection_utils.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a0727a0cb1f86bc9ba6b610bc5a50f4c4" id="r_a0727a0cb1f86bc9ba6b610bc5a50f4c4"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4">ProbeHeadPreset</a> { <a class="el" href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4abaf7194db678ec6c4b136af52490bf88">PH10M</a>
+, <a class="el" href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4aaef7a91e33707aa6d867cda2dc9eebbe">PH20</a>
+, <a class="el" href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4a90589c47f06eb971d548591f23c285af">Custom</a>
+ }</td></tr>
+<tr class="memdesc:a0727a0cb1f86bc9ba6b610bc5a50f4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported CMM probe head presets.  <a href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4">Mais...</a><br /></td></tr>
+<tr class="memitem:ae523bcdf8f33516376cf871161304f47" id="r_ae523bcdf8f33516376cf871161304f47"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ae523bcdf8f33516376cf871161304f47">ProbeHeadType</a> { <a class="el" href="#ae523bcdf8f33516376cf871161304f47a0bcff42b5aed2b0e4501ed178e4f2510">Indexable</a>
+, <a class="el" href="#ae523bcdf8f33516376cf871161304f47a535863a82f163709557e59e2eb8139a7">Continuous</a>
+ }</td></tr>
+<tr class="memdesc:ae523bcdf8f33516376cf871161304f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematic operating type of the CMM probe head.  <a href="#ae523bcdf8f33516376cf871161304f47">Mais...</a><br /></td></tr>
 </table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="a0727a0cb1f86bc9ba6b610bc5a50f4c4" name="a0727a0cb1f86bc9ba6b610bc5a50f4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4">&#9670;&#160;</a></span>ProbeHeadPreset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a0727a0cb1f86bc9ba6b610bc5a50f4c4">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadPreset</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supported CMM probe head presets. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="a0727a0cb1f86bc9ba6b610bc5a50f4c4abaf7194db678ec6c4b136af52490bf88" name="a0727a0cb1f86bc9ba6b610bc5a50f4c4abaf7194db678ec6c4b136af52490bf88"></a>PH10M&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0727a0cb1f86bc9ba6b610bc5a50f4c4aaef7a91e33707aa6d867cda2dc9eebbe" name="a0727a0cb1f86bc9ba6b610bc5a50f4c4aaef7a91e33707aa6d867cda2dc9eebbe"></a>PH20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0727a0cb1f86bc9ba6b610bc5a50f4c4a90589c47f06eb971d548591f23c285af" name="a0727a0cb1f86bc9ba6b610bc5a50f4c4a90589c47f06eb971d548591f23c285af"></a>Custom&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00011">11</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae523bcdf8f33516376cf871161304f47" name="ae523bcdf8f33516376cf871161304f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae523bcdf8f33516376cf871161304f47">&#9670;&#160;</a></span>ProbeHeadType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae523bcdf8f33516376cf871161304f47">HirEV_SmartFitSystemsApp.Utilities.Algorithms.ProbeHeadType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kinematic operating type of the CMM probe head. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="ae523bcdf8f33516376cf871161304f47a0bcff42b5aed2b0e4501ed178e4f2510" name="ae523bcdf8f33516376cf871161304f47a0bcff42b5aed2b0e4501ed178e4f2510"></a>Indexable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae523bcdf8f33516376cf871161304f47a535863a82f163709557e59e2eb8139a7" name="ae523bcdf8f33516376cf871161304f47a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definido na linha <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html#l00021">21</a> do ficheiro <a class="el" href="../../d9/d02/_probe_approach_optimizer_8cs_source.html">ProbeApproachOptimizer.cs</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
