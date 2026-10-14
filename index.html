@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HirEV SmartFitSystems: Documentação</title>
+<title>HirEV SmartFitSystems: Documentação / Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +18,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<style>
-  .custom-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #000000;
-    border-top: 3px solid #bc0016;
-    box-sizing: border-box;
-    margin-top: 20px;
-  }
-</style>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -103,15 +90,15 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Documentação </div></div>
+  <div class="headertitle"><div class="title">Documentação / Documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">
-
-<div style="background-color: #f8f9fa; border-left: 4px solid #bc0016; padding: 10px 15px; margin-bottom: 20px;">
-  <p style="margin: 0;"><strong>Language / Idioma:</strong> 🇵🇹 Português (abaixo) | 🇬🇧 <a href="documentation_en.html">English Documentation</a></p>
-</div>
-
+<div class="textblock"><dl class="section note"><dt>Nota</dt><dd><ul>
+<li>🇵🇹 <b>Português:</b> Consulte a documentação principal abaixo.</li>
+<li>🇬🇧 <b>English:</b> For the English version, navigate to <a class="el" href="df/d03/documentation_en.html" title="Documentation (English)">Documentation (English)</a>.</li>
+</ul>
+</dd></dl>
+<hr  />
 <h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
 Introdução</h1>
 <p>Bem-vindo(a) à documentação da aplicação <b>HirEV SmartFitSystems</b>, um projeto desenvolvido pela <b>SARKKIS Robotics</b> como parte integrante da iniciativa <b>Hi-rEV</b>. O projeto Hi-rEV visa impulsionar a modernização tecnológica da indústria de produção de veículos elétricos.</p>
@@ -138,17 +125,17 @@ Capacidades Atuais da Aplicação (v0.0.37)</h2>
 <ul>
 <li><b>Processamento de CAD e Características:</b> Carregamento de peças CAD na área de trabalho do Eyeshot (STEP, IGES, OBJ, STL), auto-alinhamento à origem (<span class="tt">MovePartToOriginByDefault</span>), importação incremental de peças sem limpar o espaço de trabalho (<span class="tt">ImportModelWithoutClearingAsync</span>), decomposição topológica B-Rep de faces, vértices, cores, normais, determinação de sentido normal (<span class="tt">CylinderInwardNormalDot</span>), vetor de orientação geométrica (<span class="tt">AxisOrNormal</span>), suporte para múltiplas peças e montagens com origens independentes, e sistema de sobreposição visual em três níveis (faces ignoradas a cinzento, normais invertidas a amarelo com controlo de visibilidade de menu por <span class="tt">InvertNormalsButton</span>, e aviso de faces ativas não medidas a vermelho quando amostradas sem geração de pontos).</li>
 <li><b>Deteção Avançada de Furos:</b> Deteção de características de furos cilíndricos e cónicos (incluindo faces divididas em metades e furos escalonados), identificação de faces separadoras planas marcadas como pontes (<span class="tt">MarkSeparatorFacesAsBridge</span>) para evitar planeamento em divisórias internas, deteção de furos côncavos isolados de face única (rasgos em U, entalhes fresados), deteção de degraus anulares/ombros (shoulder bridges), e avaliação automática de acessibilidade pelo topo (<span class="tt">AutoIgnoreTopUnreachableHoles</span>) para ignorar furos bloqueados por gargalos ou tampas sólidas.</li>
-<li><b>Probe Approach Optimizer (PAO) & Cinemática de Cabeçote CMM (v0.0.37):</b> Otimização da sequência de trajetórias modelando explicitamente a cinemática da cabeça CMM para minimizar rotações de indexação e tempo de ciclo. Suporta cabeças indexáveis (Renishaw PH10M com resolução de 7.5°, bloqueio/desbloqueio de 2.4s) e cabeças de 5 eixos contínuas (Renishaw PH20 com velocidade angular até 1080°/s). Agrupamento por iso-orientação (<span class="tt">PathPlanning_ProbeEnableIsoOrientationClustering</span>) e resolução de ferramentas via <span class="tt">CmmStandardToolCatalog.ResolveToolMontage</span>.</li>
-<li><b>Estandardização Dinâmica de Ângulos por Cabeça (v0.0.37):</b> Resolução de ângulos (<span class="tt">ProbeAngleStandardizer</span>) e variáveis DMIS (<span class="tt">PathPointExportDTO.HeadAngleA/B</span>) baseadas na resolução física e inclinação máxima do cabeçote montado.</li>
-<li><b>Motor de Recálculo Assíncrono Integral (v0.0.37):</b> Pipeline <span class="tt">RecalculatePathsAsync</span> permitindo ajustes pontuais com recálculo multi-threaded e suporte a desfazer/refazer.</li>
-<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de aproximação, medição, subida, descida e ligação geodésica; validação contínua de transições (<span class="tt">IsSegmentSafe</span> e <span class="tt">IsRouteSafe</span> a cada 2mm); encaminhamento seguro via AirTop (<span class="tt">_macroNavigator</span>); consolidação de aproximações (< 0.10mm); e ordenação TSP (Nearest-Neighbor 2-Opt).</li>
-<li><b>Sistema de Prevenção de Base (Base Avoidance):</b> Classificação automática (<span class="tt">AutoIgnoredByBaseAvoidance</span>) com cone de folga angular (15mm de altura e 30° de ângulo seguro) e tolerância de corte a 0.1mm.</li>
-<li><b>Validação Cinemática de Colisão da Sonda:</b> Verificação volumétrica sólida contra geometria CAD (<span class="tt">FastBVH</span>, <span class="tt">EyeshotSubdivision</span>, <span class="tt">PipelinedWorker</span>), realce desacoplado (<span class="tt">ProbeCollision_HighlightCollidingPathsAndPoints</span>), Modo Rápido vs. Modo Normal com animação, marcadores 3D e exportação para relatório.</li>
-<li><b>Planeamento e Verificação do Scanner:</b> Perfis via <span class="tt">ScannerConfigurations.xml</span>, sincronização dinâmica de modelos CAD (<span class="tt">DynamicToolScanner.SyncConfigurations</span>) com suporte ao Creality Raptor, amostragem de Fibonacci com prevenção de base, verificação interativa com seguimento de câmara e descarte de oclusão por raycasting ou buffer de profundidade GPU (1024x1024).</li>
-<li><b>Envolvente SDF com Extended Marching Cubes (EMC):</b> Geração de malhas estanques (0.75mm a 1.5mm), votação por 6 raios, extração EMC preservando arestas vivas (<span class="tt">protectedFeatures</span>), suavização de Laplace e suporte a malhas individuais por peça em montagens (<span class="tt">ResultMeshes</span>, <span class="tt">SdfShellCacheDTO.ShellMeshes</span>).</li>
-<li><b>Navegação Geodésica A*:</b> Encaminhamento geodésico na envolvente com algoritmos A*, Dijkstra, Greedy, BFS e atracamento de trajetórias (<span class="tt">ProjectSegmentToShell</span>).</li>
-<li><b>Simulação com Seguimento Orientado por Eventos:</b> Simulação 3D com interpolação SLERP na cadeia cinemática montada dinamicamente, atualização de UI fluida com <span class="tt">DispatcherPriority.Normal</span>, perspetiva oblíqua de scanner (45° a 50°) e evasão de oclusão por raycasting.</li>
-<li><b>Interface, Manipulação 3D e Exportação:</b> Painel flutuante de manipulação (<span class="tt">PartManipulationPanel</span>), Vista de Secção avançada com atração magnética circular/cilíndrica (15-20px), pré-visualização cinemática de cabeçote, histórico de anulação bilíngue (<span class="tt">UndoManager</span>), programas executáveis <b>ANSI/DMIS 5.3</b> com calibração 3-2-1 (<span class="tt">DATDEF</span>/<span class="tt">DATSET</span>) e exportação estruturada em JSON e XML.</li>
+<li><b>Probe Approach Optimizer (PAO) &amp; Cinemática de Cabeçote CMM (v0.0.37):</b> Otimização da sequência de trajetórias modelando explicitamente a cinemática da cabeça CMM para minimizar rotações de indexação e tempo de ciclo. Suporta <b>cabeças indexáveis</b> (junta Hirth discreta como Renishaw PH10M com resolução angular de 7.5°, atraso mecânico de bloqueio/desbloqueio de 2.4 s e penalização de passo de 0.091 s) e <b>cabeças contínuas de 5 eixos</b> (Renishaw PH20 com velocidade angular de 360 a 1080 °/s e aceleração de 3000 °/s² sem latência de bloqueio). Inclui <b>Agrupamento por Iso-Orientação</b> (<span class="tt">PathPlanning_ProbeEnableIsoOrientationClustering</span>) para medir pontos com orientações idênticas ou compatíveis sequencialmente, função custo balanceada ($W_{\text{dist}} \cdot T_{\text{trans}} + W_{\text{rot}} \cdot T_{\text{rot}}$) e resolução dinâmica a partir do catálogo (<span class="tt">CmmStandardToolCatalog.ResolveToolMontage</span>).</li>
+<li><b>Estandardização Dinâmica de Ângulos por Cabeça (v0.0.37):</b> Cálculos de ângulos discretos (<span class="tt">ProbeAngleStandardizer</span>) e ângulos para DMIS (<span class="tt">PathPointExportDTO.HeadAngleA/B</span>) adotam o passo angular exato (A, B) e inclinação máxima (A_max) da cabeça ativa (ex.: 105° para PH10, 115° para PH20).</li>
+<li><b>Motor de Recálculo Assíncrono Integral (v0.0.37):</b> Pipeline de recálculo (<span class="tt">RecalculatePathsAsync</span> no <span class="tt">MainViewModel</span>) que extrai pontos editados e vetores ajustados, invoca o motor de planeamento assíncrono com otimização PAO completa e emite tokens compósitos de undo/redo.</li>
+<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos ponto a ponto com pontos de aproximação, medição, subida, descida e ligação geodésica; validação contínua com micro-amostragem (<span class="tt">IsSegmentSafe</span> e <span class="tt">IsRouteSafe</span> a cada 2mm contra campo contínuo SDF e sólidos B-Rep); encaminhamento via grafo AirTop; consolidação de aproximações (&lt; 0.10mm); e ordenação TSP (Nearest-Neighbor 2-Opt).</li>
+<li><b>Sistema de Prevenção de Base (Base Avoidance):</b> Classificação automática com <span class="tt">AutoIgnoredByBaseAvoidance</span>, envelope cónico de folga angular (15mm de altura e 30° de ângulo seguro) e validação de colisão com corte de extremidades (0.1mm).</li>
+<li><b>Validação Cinemática de Colisão da Sonda:</b> Verificação volumétrica do modelo 3D contra geometria CAD (<b>All</b>, <b>Percentage</b>, <b>Count</b>), motores <span class="tt">FastBVH</span>, <span class="tt">EyeshotSubdivision</span>, <span class="tt">PipelinedWorker</span>, realce desacoplado de colisões (<span class="tt">ProbeCollision_HighlightCollidingPathsAndPoints</span>), Modo Rápido vs. Modo Normal com animação, marcadores 3D e exportação de relatório.</li>
+<li><b>Planeamento e Verificação do Scanner:</b> Perfis via <span class="tt">ScannerConfigurations.xml</span>, sincronização de modelos CAD (<span class="tt">DynamicToolScanner.SyncConfigurations</span>) com suporte a Creality Raptor, amostragem de Fibonacci com prevenção de base, verificação interativa com seguimento de câmara e descarte de oclusão por raycasting/GPU depth buffer.</li>
+<li><b>Envolvente SDF com Extended Marching Cubes (EMC):</b> Malhas estanques em grelha de voxels (0.75mm a 1.5mm), votação por 6 raios, preservação de arestas vivas (<span class="tt">protectedFeatures</span>), suavização de Laplace e suporte a malhas individuais por peça em montagens (<span class="tt">ResultMeshes</span>, <span class="tt">SdfShellCacheDTO.ShellMeshes</span>).</li>
+<li><b>Navegação Geodésica A*:</b> Encaminhamento geodésico na envolvente via A* (com Dijkstra, Greedy, BFS e AStarLine) e projeção de trajetórias (<span class="tt">ProjectSegmentToShell</span>).</li>
+<li><b>Simulação com Seguimento Orientado por Eventos:</b> Simulação com SLERP na cadeia cinemática dinâmica (cabeça, extensor, módulo e ponta), despacho assíncrono via <span class="tt">DispatcherPriority.Normal</span>, vista oblíqua de scanner (45° a 50°) e evasão de oclusão por raycasting.</li>
+<li><b>Interface, Manipulação 3D e Exportação:</b> Painel flutuante de manipulação (<span class="tt">PartManipulationPanel</span>), ferramenta avançada de Vista de Secção (<span class="tt">SectionViewModelSelectDialog</span>) com atração magnética a furos (15-20px), pré-visualização cinemática articulada de cabeçote, histórico de anulação bilíngue (<span class="tt">UndoManager</span>), programas <b>ANSI/DMIS 5.3</b> com calibração 3-2-1 (<span class="tt">DATDEF</span>/<span class="tt">DATSET</span>), e exportação JSON/XML.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="quick_start_sec"></a>
 Guia de Início Rápido</h1>
@@ -169,13 +156,13 @@ Execução</h2>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="quick_config_sec"></a>
 Ficheiros de Configuração Principais</h2>
 <ul>
-<li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: idioma, modo CMM, parâmetros do scanner, planeamento de caminhos, geração da envolvente, simulação, exportação e predefinições da UI.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/APP_CONFIG_GUIDE.md</span>: guia compreensivo de chaves e parâmetros de execução.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/CMM_SETUP_GUIDE.md</span>: guia operacional de configuração física da CMM e racks de calibração.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: predefinições do scanner, dados de FOV, gamas de distância, caminhos de modelos 3D e transformações do sensor.</li>
-<li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: atribuição da ferramenta de medição por cor da face extraída.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: configurações gerais de idioma, hardware, tolerâncias e UI.</li>
+<li><span class="tt"><a class="el" href="d5/d01/_a_p_p___c_o_n_f_i_g___g_u_i_d_e_8md.html">HirEV_SmartFitSystemsApp/APP_CONFIG_GUIDE.md</a></span>: guia detalhado de todas as chaves de configuração.</li>
+<li><span class="tt"><a class="el" href="da/d00/_c_m_m___s_e_t_u_p___g_u_i_d_e_8md.html">HirEV_SmartFitSystemsApp/CMM_SETUP_GUIDE.md</a></span>: guia operacional de preparação física da CMM e calibração de racks (MCR20, SCR200, FCR25).</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: predefinições do scanner, FOV e caminhos de modelos 3D.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: mapeamento de ferramenta por cor de face.</li>
 <li><span class="tt">HirEV_SmartFitSystemsApp/ColorTolerances.xml</span>: tolerâncias de correspondência de cores.</li>
-<li><span class="tt">ProtectedConfig.dat</span>: definições da máquina encriptadas e dados sensíveis gerados em tempo de execução.</li>
+<li><span class="tt">ProtectedConfig.dat</span>: definições encriptadas da máquina.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="workflow_sec"></a>
 Fluxo de Trabalho Típico</h1>
@@ -192,64 +179,99 @@ Fluxo de Trabalho Típico</h1>
 <h1 class="doxsection"><a class="anchor" id="tech_sec"></a>
 Destaques Técnicos</h1>
 <ul>
-<li><b>Plataforma:</b> Construída com a moderna framework .NET 8 utilizando C# e Windows Presentation Foundation (WPF) para uma interface de utilizador responsiva.</li>
-<li><b>Arquitetura:</b> Emprega o padrão de design Model-View-ViewModel (MVVM) para uma separação clara de preocupações, sendo o <span class="tt">MainViewModel</span> o núcleo da lógica da aplicação.</li>
-<li><b>Motor 3D:</b> Potencia a poderosa biblioteca <span class="tt">devDept.Eyeshot</span> para todo o processamento de dados CAD, visualização e interação.</li>
-<li><b>Modos de Inspeção:</b> Suporta fluxos de trabalho de planeamento de sondas e scanners, simulação, verificação e exportação.</li>
-<li><b>Suporte ao Planeamento:</b> Utiliza geração de envolventes, encaminhamento sensível a colisões, verificação de digitalização, edição de caminhos e persistência de sessões de múltiplas peças.</li>
-<li><b>Configuração:</b> Usa predefinições de scanner através de XML, tolerâncias de cor, atribuições de ferramentas e definições protegidas em tempo de execução.</li>
+<li><b>Plataforma:</b> .NET 8 em C# e WPF.</li>
+<li><b>Arquitetura:</b> Padrão MVVM com <span class="tt">MainViewModel</span> como controlador central.</li>
+<li><b>Motor 3D:</b> Biblioteca <span class="tt">devDept.Eyeshot</span> para processamento e interação CAD.</li>
+<li><b>Modos de Inspeção:</b> Sonda de contacto táctil e scanner ótico 3D.</li>
+<li><b>Suporte ao Planeamento:</b> Geodésicas sobre malhas SDF discretizadas, verificação de linha de visão e persistência de sessões.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="tech_details_sec"></a>
 Detalhes Técnicos</h1>
-<p>Esta secção fornece informações técnicas importantes para programadores que procuram compilar, executar e contribuir para o projeto.</p>
 <h2 class="doxsection"><a class="anchor" id="reqs_sec"></a>
 Requisitos do Sistema</h2>
 <ul>
 <li><b>Sistema Operativo:</b> Windows 10/11 x64.</li>
-<li><b>IDE:</b> Microsoft Visual Studio 2022 (recomendado).</li>
+<li><b>IDE:</b> Microsoft Visual Studio 2022.</li>
 <li><b>SDK:</b> SDK ou Runtime do .NET 8.</li>
-<li><b>Controlo CAD:</b> Licença do devDept Eyeshot Ultimate.</li>
-<li><b>Fontes de Pacotes:</b> Acesso aos pacotes NuGet proprietários da SARKKIS utilizados pelo projeto.</li>
+<li><b>Controlo CAD:</b> Licença devDept Eyeshot Ultimate.</li>
+<li><b>Fontes de Pacotes:</b> NuGet proprietário da SARKKIS Robotics.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="dependencies_sec"></a>
 Dependências Principais</h2>
-<p>O projeto depende de várias bibliotecas chave internas e externas:</p><ul>
-<li><b>ColorNamesSharp (1.0.0):</b> Uma biblioteca de utilitários para trabalhar com nomes de cores.</li>
-<li><b>devDept.Eyeshot.Control.Wpf (2025.3.457):</b> Um controlo CAD 3D de alto desempenho para aplicações .NET WPF. Esta é uma <b>biblioteca comercial</b> e é necessária uma licença válida para desenvolvimento e compilação. O projeto tem de ser capaz de resolver as referências para os seus assemblies.</li>
-<li><b>Microsoft.Xaml.Behaviors.Wpf (1.1.135):</b> Fornece um conjunto de comportamentos úteis para aplicações WPF.</li>
-<li><b>SARKKIS.Utilities (3.6.2):</b> Uma biblioteca de utilitários personalizados da SARKKIS Robotics.</li>
-<li><b>SARKKIS.WPFTools (2.12.4):</b> Uma biblioteca de ferramentas WPF personalizadas da SARKKIS Robotics.</li>
-<li><b>.NET 8 &amp; WPF:</b> A aplicação é construída utilizando a framework .NET 8 e o Windows Presentation Foundation (WPF) para a interface do utilizador.</li>
-<li><b>Doxygen:</b> A ferramenta utilizada para gerar esta documentação. É necessária uma instalação local para executar o script de geração da documentação.</li>
-<li><b>Graphviz (Opcional):</b> Para gerar diagramas de classes e outros gráficos dentro da documentação, o Graphviz tem de estar instalado e acessível através da variável de ambiente PATH do sistema.</li>
+<ul>
+<li><b>ColorNamesSharp (1.0.0)</b></li>
+<li><b>devDept.Eyeshot.Control.Wpf (2025.3.457)</b></li>
+<li><b>Microsoft.Xaml.Behaviors.Wpf (1.1.135)</b></li>
+<li><b>SARKKIS.Utilities (3.6.2)</b></li>
+<li><b>SARKKIS.WPFTools (2.12.4)</b></li>
+<li><b>.NET 8 &amp; WPF</b></li>
+<li><b>Doxygen &amp; Graphviz</b></li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="build_sec"></a>
 Compilar o Projeto</h2>
 <ol type="1">
-<li><b>Clonar o Repositório:</b> Obtenha uma cópia local do código-fonte.</li>
-<li><b>Instalar Dependências:</b> Assegure-se de que o SDK do .NET 8 e o Visual Studio 2022 estão instalados.</li>
-<li><b>Instalar o Eyeshot:</b> Certifique-se de que tem uma versão licenciada do devDept Eyeshot Ultimate instalada na sua máquina.</li>
-<li><b>Abrir a Solução:</b> Abra o ficheiro <span class="tt">HirEV_SmartFitSystemsApp.sln</span> no Visual Studio.</li>
-<li><b>Restaurar Pacotes NuGet:</b> O Visual Studio deverá restaurar automaticamente os pacotes NuGet padrão assim que abrir a solução.</li>
-<li><b>Compilar:</b> Compile a solução (Ctrl+Shift+B). O executável de saída principal estará localizado no diretório <span class="tt">HirEV_SmartFitSystemsApp/bin/Debug</span> (ou <span class="tt">Release</span>).</li>
+<li>Clonar o repositório.</li>
+<li>Garantir instalação do .NET 8 SDK, Visual Studio 2022 e licença Eyeshot.</li>
+<li>Abrir <span class="tt">HirEV_SmartFitSystemsApp.sln</span>.</li>
+<li>Restaurar os pacotes NuGet e compilar (Ctrl+Shift+B).</li>
 </ol>
 <h2 class="doxsection"><a class="anchor" id="docs_sec"></a>
 Gerar a Documentação</h2>
-<p>Esta documentação é gerada utilizando o Doxygen. Para a voltar a gerar:</p><ol type="1">
-<li>Assegure-se de que o <b>Doxygen</b> está instalado e de que a sua localização se encontra na variável de ambiente PATH do seu sistema.</li>
-<li>Para suporte total a diagramas, certifique-se de que o <b>Graphviz</b> também está instalado e no PATH.</li>
-<li>Execute o script <b><span class="tt">generate_docs.bat</span></b> localizado no diretório raiz do projeto.</li>
-<li>O script irá processar o código-fonte e abrir a página principal da documentação gerada no seu navegador predefinido.</li>
-</ol>
+<p>Execute o script <b><span class="tt">generate_docs.bat</span></b> na raiz do projeto.</p>
 <h1 class="doxsection"><a class="anchor" id="footer_sec"></a>
 Direitos de Autor</h1>
 <p>© 2025-2026 SARKKIS Robotics, Lda. Todos os Direitos Reservados. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
+</div><!-- doc-content -->
 </div><!-- contents -->
-
-<!-- Custom SARKKIS Footer cleanly placed inside the doc body -->
-<div class="custom-footer">
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      /* Add other styling for your content area */
+    }
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #000000;
+      border-top: 3px solid #bc0016;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <!-- Your content goes here -->
+</div>
+<script>
+  // Check if the content exceeds the viewport height
+  if (document.body.scrollHeight > window.innerHeight) {
+    // Set position: fixed for the footer if needed
+    document.querySelector('.footer').style.position = 'fixed';
+    document.querySelector('.footer').style.bottom = '0';
+  }
+</script>
+<div class="footer">
   <div style="display: flex; align-items: center; gap: 20px;">
     <img src="logo.png" style="height: 48px;" alt="SARKKIS Logo">
     <span id="label" style="font-size: larger; color: #ffffff;">
@@ -260,8 +282,5 @@ Direitos de Autor</h1>
     <img src="hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
   </div>
 </div>
-
-</div><!-- doc-content -->
-</div><!-- container -->
 </body>
 </html>
