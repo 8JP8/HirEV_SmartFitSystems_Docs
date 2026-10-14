@@ -18,6 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .custom-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-top: 3px solid #bc0016;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+</style>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -93,7 +106,13 @@ $(function(){initNavTree('index.html','',''); });
   <div class="headertitle"><div class="title">Documentação </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
+<div class="textblock">
+
+<div style="background-color: #f8f9fa; border-left: 4px solid #bc0016; padding: 10px 15px; margin-bottom: 20px;">
+  <p style="margin: 0;"><strong>Language / Idioma:</strong> 🇵🇹 Português (abaixo) | 🇬🇧 <a href="documentation_en.html">English Documentation</a></p>
+</div>
+
+<h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
 Introdução</h1>
 <p>Bem-vindo(a) à documentação da aplicação <b>HirEV SmartFitSystems</b>, um projeto desenvolvido pela <b>SARKKIS Robotics</b> como parte integrante da iniciativa <b>Hi-rEV</b>. O projeto Hi-rEV visa impulsionar a modernização tecnológica da indústria de produção de veículos elétricos.</p>
 <p>Esta aplicação fornece uma solução sofisticada para o controlo de qualidade automático de peças maquinadas. Tira partido de modelos CAD 3D para simplificar e automatizar a inspeção metrológica, garantindo que os componentes fabricados cumprem rigorosamente as suas especificações de design.</p>
@@ -114,19 +133,22 @@ Funcionalidades Principais</h1>
 <li><b>Sistema Dinâmico de Ferramentas e Câmara:</b> O ambiente de simulação não se limita a sondas predefinidas. Suporta totalmente o carregamento e visualização de modelos 3D personalizados de ferramentas de medição. Um sistema robusto de seguimento de câmara garante que a ferramenta está sempre focada durante a simulação, mesmo para modelos personalizados complexos.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="current_capabilities_sec"></a>
-Capacidades Atuais da Aplicação (v0.0.36)</h2>
+Capacidades Atuais da Aplicação (v0.0.37)</h2>
 <p>O fluxo de trabalho atual da aplicação expande essas funcionalidades principais com:</p>
 <ul>
 <li><b>Processamento de CAD e Características:</b> Carregamento de peças CAD na área de trabalho do Eyeshot (STEP, IGES, OBJ, STL), auto-alinhamento à origem (<span class="tt">MovePartToOriginByDefault</span>), importação incremental de peças sem limpar o espaço de trabalho (<span class="tt">ImportModelWithoutClearingAsync</span>), decomposição topológica B-Rep de faces, vértices, cores, normais, determinação de sentido normal (<span class="tt">CylinderInwardNormalDot</span>), vetor de orientação geométrica (<span class="tt">AxisOrNormal</span>), suporte para múltiplas peças e montagens com origens independentes, e sistema de sobreposição visual em três níveis (faces ignoradas a cinzento, normais invertidas a amarelo com controlo de visibilidade de menu por <span class="tt">InvertNormalsButton</span>, e aviso de faces ativas não medidas a vermelho quando amostradas sem geração de pontos).</li>
 <li><b>Deteção Avançada de Furos:</b> Deteção de características de furos cilíndricos e cónicos (incluindo faces divididas em metades e furos escalonados), identificação de faces separadoras planas marcadas como pontes (<span class="tt">MarkSeparatorFacesAsBridge</span>) para evitar planeamento em divisórias internas, deteção de furos côncavos isolados de face única (rasgos em U, entalhes fresados), deteção de degraus anulares/ombros (shoulder bridges), e avaliação automática de acessibilidade pelo topo (<span class="tt">AutoIgnoreTopUnreachableHoles</span>) para ignorar furos bloqueados por gargalos ou tampas sólidas.</li>
-<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de aproximação, medição, subida, descida e ligação geodésica; <b>estandardização de ângulos da cabeça CMM</b> (agregação de normais contínuas em eixos discretos para minimizar rotações mecânicas); <b>validação contínua de transições com micro-amostragem</b> (<span class="tt">IsSegmentSafe</span> e <span class="tt">IsRouteSafe</span> a cada 2mm contra o campo contínuo SDF e sólidos B-Rep); <b>encaminhamento via grafo de aproximação e retração segura AirTop</b> (recorrendo ao <span class="tt">_macroNavigator</span> e ativando recuo vertical de segurança ao transpor desníveis acentuados ou falésias geométricas); <b>consolidação de pontos de aproximação</b> (reutilização de waypoints para pontos adjacentes a menos de 0.10mm); <b>seleção de rota de acesso a furos</b> (avaliação de entrada pelo topo vs. fundo); e ordenação otimizada por proximidade TSP (Nearest-Neighbor 2-Opt).</li>
-<li><b>Sistema de Prevenção de Base (Base Avoidance):</b> Classificação automática de faces de assentamento/base e transições inferiores com marcação <span class="tt">AutoIgnoredByBaseAvoidance</span>, aplicando um envelope cónico de folga angular ($15\text{mm}$ de altura e ângulo seguro de $30^\circ$) e validação de colisão de segmentos com corte de extremidades (<span class="tt">0.1mm</span>) para evitar colisões com mesas de fixação.</li>
-<li><b>Validação Cinemática de Colisão da Sonda (v0.0.36):</b> Verificação volumétrica pós-planeamento do modelo 3D sólido da sonda contra a geometria CAD com modos de amostragem configuráveis (<b>All</b>, <b>Percentage</b>, <b>Count</b>), passo de distância, motores intercambiáveis por <span class="tt">ProbeCollision_Engine</span> (<span class="tt">FastBVH</span> thread-safe, <span class="tt">EyeshotSubdivision</span>, <span class="tt">PipelinedWorker</span>), <b>realce desacoplado de colisões</b> (<span class="tt">ProbeCollision_HighlightCollidingPathsAndPoints</span>) colorindo segmentos e pontos a vermelho independentemente dos marcadores esféricos, diálogo interativo de seleção entre <b>Modo Rápido</b> (sem renderização da ferramenta, máxima velocidade e inserção de marcadores no final) e <b>Modo Normal</b> (passo a passo com seguimento de câmara e animação cinemática por <span class="tt">ProbeCollision_AnimateProbe</span>), pausa/retoma interativa dinâmica, filtragem estrita de entidades da cena (<span class="tt">IsProbeCollisionPartEntity</span>), estratégia em dois passos com tolerância por deslocamento normal (+Normal * tolerância), marcadores visuais 3D vermelhos, limpeza integral de marcadores e realces (<span class="tt">CleanCollisionMarkers</span>), e exportação para relatório de colisões.</li>
-<li><b>Planeamento e Verificação do Scanner (v0.0.36):</b> Configuração de perfis de scanner a partir de <span class="tt">ScannerConfigurations.xml</span> (Linha, Área/Raster, Luz Estruturada), <b>sincronização dinâmica de modelos CAD</b> (<span class="tt">DynamicToolScanner.SyncConfigurations</span>) com deteção automática de ficheiros <span class="tt">.stp</span>, <span class="tt">.step</span>, <span class="tt">.stl</span>, <span class="tt">.obj</span> e suporte nativo ao scanner Creality Raptor, amostragem esférica de Fibonacci com <b>prevenção esférica de base</b> (<span class="tt">AdjustScanPositionForBaseAvoidance</span>), rotinas dedicadas para furos (anéis de profundidade e amostras radiais), <b>passo interativo de verificação</b> (<span class="tt">RunScannerVerificationPassAsync</span>) com pausa/retoma interativa, seguimento dinâmico de câmara, cancelamento gracioso e restauro de cena (<span class="tt">PerformScannerVerificationCleanup</span>), e verificação de linha de visão com oclusão via raycasting CPU ou renderização de buffer de profundidade GPU (1024x1024) com descarte rápido por frustum.</li>
-<li><b>Envolvente SDF com Extended Marching Cubes (EMC):</b> Geração de malhas de envolvente estanques com grelha de voxels de alta resolução ($0.75\text{mm}$ a $1.5\text{mm}$), votação de paridade por 6 raios ($\pm X, \pm Y, \pm Z$) para determinação exata de sinal interior/exterior, extração EMC preservando arestas vivas (<span class="tt">protectedFeatures</span>), suavização de Laplace otimizada para 30 passagens, <b>suporte para malhas individuais por peça em montagens</b> (<span class="tt">ResultMeshes</span>, <span class="tt">SdfShellCacheDTO.ShellMeshes</span>), visualização multi-malha (<span class="tt">ShowMultiple</span>) e transformação seletiva em tempo real (<span class="tt">TransformShellCache(trans, partIndex)</span>).</li>
-<li><b>Navegação Geodésica A*:</b> Encaminhamento geodésico de menor distância na malha da envolvente utilizando o algoritmo A* (com suporte para Dijkstra, Greedy, BFS e AStarLine), projeção e atracamento de trajetórias à envolvente (<span class="tt">ProjectSegmentToShell</span>) e mecanismo de recuperação com projeção de linha direta.</li>
-<li><b>Simulação com Seguimento Orientado por Eventos:</b> Simulação de movimento 3D com interpolação esférica linear de orientação (SLERP) utilizando a <b>cadeia cinemática montada dinamicamente</b> (cabeça, extensor, módulo e ponta), fitas de rasto coloridas, despacho de fila de renderização via <span class="tt">DispatcherPriority.Normal</span> para prevenir impasses na interface, atualização dinâmica instantânea ao mover o slider de offset da câmara, suporte a seguimento ativo na verificação do scanner, e modos de seguimento (<span class="tt">SphericalOrbital</span> e <span class="tt">ProbeFixation</span>) suportando <b>perspetiva oblíqua do scanner 3D</b> (aproximadamente 45° a 50° para garantir excelente visibilidade do cone de varrimento), <b>evasão dinâmica de oclusão</b> por raycasting e inclinação do ponto de vista orientada pelo eixo de furos.</li>
-<li><b>Interface, Manipulação 3D e Exportação:</b> <b>Painel flutuante de manipulação de peças</b> (<span class="tt">PartManipulationPanel</span>) com controlo de translação ($TX, TY, TZ$) e rotação ($RX, RY, RZ$) por sliders e campos numéricos em unidades de projeto; seleção de escopo para peça única ou montagem global; opções configuráveis de retenção de envolvente (<span class="tt">AttachShellMeshToPart</span>) e translação automática de trajetórias associadas (<span class="tt">AskUserToMovePaths</span>); <b>ferramenta avançada de Vista de Secção (Section View)</b> com seleção multi-modelo de peças (<span class="tt">SectionViewModelSelectDialog</span>), medição interativa de coordenadas e deteção automática de centros e raios de arcos circulares e furos cilíndricos (<span class="tt">TryGetCylindricalInfo</span>) com raio de atração magnética de 15 a 20 px; <b>pré-visualização cinemática articulada</b> de cabeçote CMM em tempo real no painel de rotação de nós; histórico de anulação bilíngue localizado (<span class="tt">UndoManager</span>); normalização de sessões (<span class="tt">NormalizeSessionConfig</span>); geração de programas executáveis <b>ANSI/DMIS 5.3</b> com rotina de calibração automática de posição 3-2-1 (<span class="tt">DATDEF</span>/<span class="tt">DATSET</span>), controlo de visibilidade condicional por <span class="tt">GenerateDmisButtonVisibility</span> (oculto no modo scanner, visível apenas para sonda táctil com trajetórias geradas) e sincronização ao vivo a partir do painel de configurações; e exportação estruturada em JSON (<span class="tt">PathExportDTO</span>) e XML (<span class="tt">PathExportModels</span>).</li>
+<li><b>Probe Approach Optimizer (PAO) & Cinemática de Cabeçote CMM (v0.0.37):</b> Otimização da sequência de trajetórias modelando explicitamente a cinemática da cabeça CMM para minimizar rotações de indexação e tempo de ciclo. Suporta cabeças indexáveis (Renishaw PH10M com resolução de 7.5°, bloqueio/desbloqueio de 2.4s) e cabeças de 5 eixos contínuas (Renishaw PH20 com velocidade angular até 1080°/s). Agrupamento por iso-orientação (<span class="tt">PathPlanning_ProbeEnableIsoOrientationClustering</span>) e resolução de ferramentas via <span class="tt">CmmStandardToolCatalog.ResolveToolMontage</span>.</li>
+<li><b>Estandardização Dinâmica de Ângulos por Cabeça (v0.0.37):</b> Resolução de ângulos (<span class="tt">ProbeAngleStandardizer</span>) e variáveis DMIS (<span class="tt">PathPointExportDTO.HeadAngleA/B</span>) baseadas na resolução física e inclinação máxima do cabeçote montado.</li>
+<li><b>Motor de Recálculo Assíncrono Integral (v0.0.37):</b> Pipeline <span class="tt">RecalculatePathsAsync</span> permitindo ajustes pontuais com recálculo multi-threaded e suporte a desfazer/refazer.</li>
+<li><b>Planeamento do Caminho da Sonda:</b> Geração de caminhos de sondagem ponto a ponto com pontos de aproximação, medição, subida, descida e ligação geodésica; validação contínua de transições (<span class="tt">IsSegmentSafe</span> e <span class="tt">IsRouteSafe</span> a cada 2mm); encaminhamento seguro via AirTop (<span class="tt">_macroNavigator</span>); consolidação de aproximações (< 0.10mm); e ordenação TSP (Nearest-Neighbor 2-Opt).</li>
+<li><b>Sistema de Prevenção de Base (Base Avoidance):</b> Classificação automática (<span class="tt">AutoIgnoredByBaseAvoidance</span>) com cone de folga angular (15mm de altura e 30° de ângulo seguro) e tolerância de corte a 0.1mm.</li>
+<li><b>Validação Cinemática de Colisão da Sonda:</b> Verificação volumétrica sólida contra geometria CAD (<span class="tt">FastBVH</span>, <span class="tt">EyeshotSubdivision</span>, <span class="tt">PipelinedWorker</span>), realce desacoplado (<span class="tt">ProbeCollision_HighlightCollidingPathsAndPoints</span>), Modo Rápido vs. Modo Normal com animação, marcadores 3D e exportação para relatório.</li>
+<li><b>Planeamento e Verificação do Scanner:</b> Perfis via <span class="tt">ScannerConfigurations.xml</span>, sincronização dinâmica de modelos CAD (<span class="tt">DynamicToolScanner.SyncConfigurations</span>) com suporte ao Creality Raptor, amostragem de Fibonacci com prevenção de base, verificação interativa com seguimento de câmara e descarte de oclusão por raycasting ou buffer de profundidade GPU (1024x1024).</li>
+<li><b>Envolvente SDF com Extended Marching Cubes (EMC):</b> Geração de malhas estanques (0.75mm a 1.5mm), votação por 6 raios, extração EMC preservando arestas vivas (<span class="tt">protectedFeatures</span>), suavização de Laplace e suporte a malhas individuais por peça em montagens (<span class="tt">ResultMeshes</span>, <span class="tt">SdfShellCacheDTO.ShellMeshes</span>).</li>
+<li><b>Navegação Geodésica A*:</b> Encaminhamento geodésico na envolvente com algoritmos A*, Dijkstra, Greedy, BFS e atracamento de trajetórias (<span class="tt">ProjectSegmentToShell</span>).</li>
+<li><b>Simulação com Seguimento Orientado por Eventos:</b> Simulação 3D com interpolação SLERP na cadeia cinemática montada dinamicamente, atualização de UI fluida com <span class="tt">DispatcherPriority.Normal</span>, perspetiva oblíqua de scanner (45° a 50°) e evasão de oclusão por raycasting.</li>
+<li><b>Interface, Manipulação 3D e Exportação:</b> Painel flutuante de manipulação (<span class="tt">PartManipulationPanel</span>), Vista de Secção avançada com atração magnética circular/cilíndrica (15-20px), pré-visualização cinemática de cabeçote, histórico de anulação bilíngue (<span class="tt">UndoManager</span>), programas executáveis <b>ANSI/DMIS 5.3</b> com calibração 3-2-1 (<span class="tt">DATDEF</span>/<span class="tt">DATSET</span>) e exportação estruturada em JSON e XML.</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="quick_start_sec"></a>
 Guia de Início Rápido</h1>
@@ -148,6 +170,8 @@ Execução</h2>
 Ficheiros de Configuração Principais</h2>
 <ul>
 <li><span class="tt">HirEV_SmartFitSystemsApp/App.config</span>: idioma, modo CMM, parâmetros do scanner, planeamento de caminhos, geração da envolvente, simulação, exportação e predefinições da UI.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/APP_CONFIG_GUIDE.md</span>: guia compreensivo de chaves e parâmetros de execução.</li>
+<li><span class="tt">HirEV_SmartFitSystemsApp/CMM_SETUP_GUIDE.md</span>: guia operacional de configuração física da CMM e racks de calibração.</li>
 <li><span class="tt">HirEV_SmartFitSystemsApp/ScannerConfigurations.xml</span>: predefinições do scanner, dados de FOV, gamas de distância, caminhos de modelos 3D e transformações do sensor.</li>
 <li><span class="tt">HirEV_SmartFitSystemsApp/MeasuringToolByColor.xml</span>: atribuição da ferramenta de medição por cor da face extraída.</li>
 <li><span class="tt">HirEV_SmartFitSystemsApp/ColorTolerances.xml</span>: tolerâncias de correspondência de cores.</li>
@@ -223,47 +247,9 @@ Direitos de Autor</h1>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
-</div><!-- doc-content -->
-</div><!-- container -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Page Title</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .content {
-      /* Add other styling for your content area */
-    }
-    .footer {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #000000;
-      border-top: 3px solid #bc0016;
-      box-sizing: border-box;
-    }
-  </style>
-</head>
-<body>
-<div class="content">
-  <!-- Your content goes here -->
-</div>
-<script>
-  // Check if the content exceeds the viewport height
-  if (document.body.scrollHeight > window.innerHeight) {
-    // Set position: fixed for the footer if needed
-    document.querySelector('.footer').style.position = 'fixed';
-    document.querySelector('.footer').style.bottom = '0';
-  }
-</script>
-<div class="footer">
+
+<!-- Custom SARKKIS Footer cleanly placed inside the doc body -->
+<div class="custom-footer">
   <div style="display: flex; align-items: center; gap: 20px;">
     <img src="logo.png" style="height: 48px;" alt="SARKKIS Logo">
     <span id="label" style="font-size: larger; color: #ffffff;">
@@ -274,5 +260,8 @@ Direitos de Autor</h1>
     <img src="hi-rev.png" style="height: 48px;" alt="Hi-rEV Logo">
   </div>
 </div>
+
+</div><!-- doc-content -->
+</div><!-- container -->
 </body>
 </html>
